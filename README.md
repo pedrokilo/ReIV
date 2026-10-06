@@ -22,10 +22,12 @@ La segunda etapa reducirá las llamadas directas y transitivas al ejecutable. El
 | Dato | Objetivo |
 | --- | --- |
 | Juego | GTA IV PC |
-| Versión | 1.0.7.0 EFIGS, pendiente de verificar el binario concreto |
+| Versión | 1.0.7.0, verificada en FileVersion y ProductVersion; edición EFIGS pendiente de confirmar |
 | Arquitectura | x86 / 32 bits |
 | Ejecutable | `GTAIV.exe` |
-| SHA-256 canónico | Pendiente de obtener y registrar |
+| SHA-256 canónico | `ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c` |
+
+Verificación local del 6 de octubre de 2026: archivo de **15.505.792 bytes**, cabecera PE válida, máquina `0x014C` (Intel i386) y formato PE32 `0x010B`. Detalles en [el registro del binario de referencia](docs/ReferenceBinary.md). La versión declarada y el hash identifican esta copia; no acreditan por sí solos que sea un ejecutable original sin modificaciones.
 
 Cada dirección, offset y evidencia deberá corresponder al binario identificado por ese hash. Otras versiones se estudiarán por separado.
 
@@ -71,7 +73,7 @@ LibertyRecomp, Xbox 360, otras versiones PC y EFLC podrán incorporarse posterio
 
 ### Estado del trabajo
 
-**Inicio documental: 6 de octubre de 2026.** Se dispone de referencias locales y herramientas de debugging. Quedan pendientes el hash canónico, el catálogo, la compilación, los hooks y la primera validación.
+**Inicio documental: 6 de octubre de 2026.** Se dispone de referencias locales y herramientas de debugging. La versión 1.0.7.0, arquitectura x86 y SHA-256 del ejecutable local están registrados. Quedan pendientes el catálogo, la compilación, los hooks y la primera validación.
 
 | Dimensión | Estado |
 | --- | --- |
@@ -126,7 +128,7 @@ La automatización detectará, entre otros casos, hooks activos fuera del catál
 
 ### Primer hito
 
-- [ ] Verificar `GTAIV.exe` 1.0.7.0 y registrar SHA-256.
+- [x] Verificar `GTAIV.exe` 1.0.7.0 y registrar SHA-256.
 - [ ] Importar el binario en Ghidra.
 - [ ] Seleccionar una clase pequeña y catalogar sus funciones.
 - [ ] Contrastar firmas y layouts con las referencias.
