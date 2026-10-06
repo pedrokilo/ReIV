@@ -6,7 +6,7 @@ La primera compilación usa IV-SDK directamente desde `contrib/IV SDK/IV-SDK-mai
 powershell -ExecutionPolicy Bypass -File .\contrib\build-reiv.ps1
 ```
 
-Genera `bin/ReIV.asi` y `bin/ReIV.pdb`, x86. Incluye los hooks de eventos del SDK y registra la inicialización, `gameLoadEvent` e `ingameStartupEvent` en `ReIV.log`, junto al ejecutable. Todavía no reconstruye funciones del juego ni acredita equivalencia.
+Genera `bin/ReIV.asi` y `bin/ReIV.pdb`, x86. Incluye los hooks de eventos del SDK y registra la inicialización, `gameLoadEvent` e `ingameStartupEvent` en `ReIV.log`, junto al ejecutable. Ahora incluye también la [primera función reconstruida y validada](AtStringHash/README.md), `rage::atStringHash`.
 
 ## Copia de pruebas
 
@@ -38,4 +38,4 @@ powershell -ExecutionPolicy Bypass -File .\contrib\start-reiv.ps1
 
 La ejecución directa confirmó mediante `ReIV.log` la carga del ASI y la detección de 1.0.7.0. Se debe abrir con ventana normal para la prueba interactiva.
 
-El 6 de octubre de 2026 se comprobó una ventana visible de GTAIV y el renderizador en modo windowed con parámetros 800×600. El área útil es **782×553**, aceptada por el usuario; se conserva el tamaño exterior sin compensar los bordes. La carga del ASI está confirmada; todavía no se ha acreditado equivalencia de funciones ni una sesión de juego estable.
+El 6 de octubre de 2026 se comprobó una ventana visible de GTAIV y el renderizador en modo windowed con parámetros 800×600. El área útil es **782×553**, aceptada por el usuario; se conserva el tamaño exterior sin compensar los bordes. La prueba de `atStringHash` confirmó ambos eventos de carga y un cierre con código 0. Es una prueba breve, no una campaña de estabilidad general.

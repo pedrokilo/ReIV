@@ -7,7 +7,7 @@ Recrear **GTA IV PC 1.0.7.0** de forma funcionalmente equivalente mediante códi
 **[📊 Estado](#estado-del-trabajo) · [🧭 Plan](#plan-de-trabajo) · [🧪 Validación](#validación-contra-el-original) · [📁 Estructura](#estructura-del-repositorio)**
 
 > [!NOTE]
-> Primera base x86 compilada como `ReIV.asi` usando IV-SDK; carga confirmada por log en la copia de pruebas. Todavía no hay funciones reconstruidas y validadas de ReIV ni un ejecutable independiente. [Compilación y configuración de pruebas](reversing/Bootstrap.md).
+> Primera función reconstruida, hookeada y validada: [rage::atStringHash](reversing/AtStringHash/README.md). `ReIV.asi` usa IV-SDK y la copia de pruebas arranca directamente con `GTAIV.exe`, en ventana. Todavía no existe un ejecutable independiente. [Compilación y configuración de pruebas](reversing/Bootstrap.md).
 
 ## Intro
 
@@ -73,15 +73,15 @@ LibertyRecomp, Xbox 360, otras versiones PC y EFLC podrán incorporarse posterio
 
 ### Estado del trabajo
 
-**Inicio documental: 6 de octubre de 2026.** Se dispone de referencias locales y herramientas de debugging. La versión 1.0.7.0, arquitectura x86 y SHA-256 del ejecutable local están registrados. Quedan pendientes el catálogo, la compilación, los hooks y la primera validación.
+**Entrega del 6 de octubre de 2026:** binario canónico registrado, proyecto importado en Ghidra y primera función reconstruida y validada. [rage::atStringHash](reversing/AtStringHash/README.md) pasó 8.320 comparaciones sintéticas y 4.096 comparaciones durante llamadas reales, sin diferencias. El hook recibió 381.840 llamadas; llegaron ambos eventos de carga, se procesaron 425 ciclos de scripts y el juego cerró con código 0 sin terminación forzada. El usuario confirmó la entrada a partida y una cinemática. Esto valida el primer caso, no todos los sistemas del juego.
 
 | Dimensión | Estado |
 | --- | --- |
-| Funciones identificadas | Sin catálogo propio todavía |
-| Funciones reconstruidas | Sin implementaciones propias todavía |
-| Hooks instalados y comprobados | Pendiente |
-| Funciones validadas contra el original | Sin evidencias de ReIV todavía |
-| Funciones independientes del EXE | Sin auditoría todavía |
+| Funciones identificadas | 1 en el [catálogo inicial](docs/functions.csv) |
+| Funciones reconstruidas | 1: `rage::atStringHash` |
+| Hooks instalados y comprobados | 1 propio, además de los eventos de IV-SDK |
+| Funciones validadas contra el original | 1, con [evidencia vinculada](reversing/AtStringHash/evidence/validation-summary.json) |
+| Funciones independientes del EXE | La implementación pura del hash es independiente; la sonda aún llama al original para comparar |
 | Standalone | Objetivo a largo plazo |
 
 No se publicarán porcentajes hasta definir y comprobar los denominadores del catálogo.
@@ -129,12 +129,14 @@ La automatización detectará, entre otros casos, hooks activos fuera del catál
 ### Primer hito
 
 - [x] Verificar `GTAIV.exe` 1.0.7.0 y registrar SHA-256.
-- [ ] Importar el binario en Ghidra.
+- [x] Importar el binario en Ghidra.
 - [ ] Seleccionar una clase pequeña y catalogar sus funciones.
 - [ ] Contrastar firmas y layouts con las referencias.
-- [ ] Preparar una compilación C++ x86 reproducible.
+- [x] Preparar una compilación C++ x86 reproducible.
 - [ ] Reconstruir, hookear y comparar la clase contra el original.
-- [ ] Archivar evidencia y comprobar la restauración de la instalación de pruebas.
+- [x] Archivar evidencia y comprobar la restauración de la instalación de pruebas.
+
+El primer recorrido completo se hizo con una función libre de RAGE, `atStringHash`. La selección y reconstrucción de una clase completa siguen pendientes.
 
 ## Créditos
 
