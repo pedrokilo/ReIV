@@ -136,9 +136,9 @@ La automatización detectará, entre otros casos, hooks activos fuera del catál
 - [ ] Reconstruir, hookear y comparar la clase contra el original.
 - [ ] Archivar evidencia y comprobar la restauración de la instalación de pruebas.
 
-## Repositorios
+## Créditos
 
-- [ReIV](https://github.com/pedrokilo/ReIV): reconstrucción de GTA IV.
-- [ReSA](https://github.com/pedrokilo/ReSA): referencia de estructura documental y metodología de reconstrucción y validación.
-
-El README adapta la organización del README de ReSA al estado inicial de ReIV. Sus cifras, bancos y resultados no se atribuyen a GTA IV.
+- Todos los colaboradores del proyecto [plugin-sdk](https://github.com/DK22Pac/plugin-sdk).
+- [IV-SDK de Zolika1351](https://github.com/Zolika1351/iv-sdk), referencia principal del proyecto para GTA IV 1.0.7.0.
+- [IV-SDK-DotNet de ClonkAndre](https://github.com/ClonkAndre/IV-SDK-DotNet).
+- Cientos de personas que han compartido sus conocimientos en [gtaforums.com](https://gtaforums.com/topic/194199-documenting-gta-sa-memory-addresses).
