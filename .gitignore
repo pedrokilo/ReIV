@@ -1,0 +1,6 @@
+/build/
+/bin/*.asi
+/bin/*.pdb
+/bin/*.lib
+/bin/*.exp
+/reversing/artifacts/

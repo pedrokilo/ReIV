@@ -7,7 +7,7 @@ Recrear **GTA IV PC 1.0.7.0** de forma funcionalmente equivalente mediante códi
 **[📊 Estado](#estado-del-trabajo) · [🧭 Plan](#plan-de-trabajo) · [🧪 Validación](#validación-contra-el-original) · [📁 Estructura](#estructura-del-repositorio)**
 
 > [!NOTE]
-> Proyecto en preparación. Los SDK incluidos son referencias: su presencia no significa que sus funciones estén reconstruidas, hookeadas o validadas en ReIV. Todavía no existe una compilación de ReIV ni un ejecutable independiente.
+> Primera base x86 compilada como `ReIV.asi` usando IV-SDK; carga confirmada por log en la copia de pruebas. Todavía no hay funciones reconstruidas y validadas de ReIV ni un ejecutable independiente. [Compilación y configuración de pruebas](reversing/Bootstrap.md).
 
 ## Intro
 
@@ -36,7 +36,7 @@ Cada dirección, offset y evidencia deberá corresponder al binario identificado
 1. Conservar una copia original de `GTAIV.exe` fuera del repositorio y crear otra instalación para pruebas.
 2. Verificar versión y arquitectura; calcular el hash con `Get-FileHash .\GTAIV.exe -Algorithm SHA256`.
 3. Importar ese binario en Ghidra para análisis estático x86; usar x32dbg para comprobaciones dinámicas.
-4. Preparar Visual Studio con herramientas C++, CMake y Python. El sistema de compilación de ReIV está pendiente de implementar.
+4. Compilar con Visual Studio y herramientas C++ mediante `contrib/build-reiv.ps1`. La base actual usa MSBuild; la integración con CMake está pendiente.
 5. Elegir una clase pequeña y llevarla por todo el recorrido: identificación, C++, hook y comparación con el original.
 
 Las partidas y configuraciones personales se conservarán fuera de los bancos. Las sondas deberán respaldar y restaurar los archivos que sustituyan, registrar hashes y cerrar únicamente el proceso que ellas mismas abran.
@@ -61,7 +61,7 @@ ReIV/
 └── README.md
 ```
 
-`bin`, `cmake`, `reversing` y `source` comienzan vacías; `.gitkeep` permite conservarlas en Git. Los catálogos y herramientas del plan se añadirán dentro de estas carpetas conforme se implementen.
+Las carpetas existentes se conservan. La base de compilación, fuente y documentación está en `cmake`, `source` y `reversing`; los binarios locales se generan en `bin`. Los catálogos se añadirán conforme se implementen.
 
 ### Referencias y criterio de evidencia
 
