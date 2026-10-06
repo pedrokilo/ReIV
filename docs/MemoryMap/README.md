@@ -59,6 +59,7 @@ Por ejemplo, la vtable de `CPed` tiene RVA `0x00969844`. Si el módulo se carga 
 ### Fichas por clase
 
 - [CEntity](classes/CEntity.md): RTTI, 51 slots candidatos contrastados con el EXE y tres nombres referenciados al SDK. Incluye [datos estructurados](classes/CEntity.json). Los nombres, firmas y offsets del SDK conservan su estado pendiente de validación.
+- [CPhysical](classes/CPhysical.md): RTTI, 72 slots candidatos y comparación por índice con CEntity: 25 destinos iguales, 26 diferentes y 21 fuera de su inventario. Incluye [datos estructurados](classes/CPhysical.json), referencias de funciones y offsets del SDK pendientes de validar.
 
 | Archivo | Contenido |
 | --- | --- |
