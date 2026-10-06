@@ -1,0 +1,287 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Preview|Win32">
+      <Configuration>Preview</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <Keyword>Win32Proj</Keyword>
+    <ProjectGuid>{b3a578f3-bb48-4cb0-a160-104905cd4bb5}</ProjectGuid>
+    <RootNamespace>IVSDKDotNet</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0</WindowsTargetPlatformVersion>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v143</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+    <CLRSupport>true</CLRSupport>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetExt>.asi</TargetExt>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+    <ManagedAssembly>true</ManagedAssembly>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.asi</TargetExt>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <TargetExt>.asi</TargetExt>
+    <IncludePath>$(DXSDK_DIR)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(DXSDK_DIR)Lib\x86;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)IVSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+      <InlineFunctionExpansion>Default</InlineFunctionExpansion>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>version.lib;Hooking.Patterns_DBG.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)IVSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Hooking.Patterns_REL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Preview|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <ConformanceMode>true</ConformanceMode>
+      <LanguageStandard>stdcpp20</LanguageStandard>
+      <AdditionalIncludeDirectories>$(ProjectDir)IVSDK;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <AdditionalOptions>/Zc:twoPhase- %(AdditionalOptions)</AdditionalOptions>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <AdditionalLibraryDirectories>%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>Hooking.Patterns_REL.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="IVSDK\IVSDK.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="AdvancedPatcher.h" />
+    <ClInclude Include="Hooking.Patterns.h" />
+    <ClInclude Include="INI.h" />
+    <ClInclude Include="IVSDK\audEngine.h" />
+    <ClInclude Include="IVSDK\audRadioAudioEntity.h" />
+    <ClInclude Include="IVSDK\CAchievements.h" />
+    <ClInclude Include="IVSDK\CAERadioTrackManager.h" />
+    <ClInclude Include="IVSDK\CAnimManager.h" />
+    <ClInclude Include="IVSDK\CAudioZones.h" />
+    <ClInclude Include="IVSDK\CBaseDC.h" />
+    <ClInclude Include="IVSDK\CBuilding.h" />
+    <ClInclude Include="IVSDK\CCam.h" />
+    <ClInclude Include="IVSDK\CCamera.h" />
+    <ClInclude Include="IVSDK\CCheat.h" />
+    <ClInclude Include="IVSDK\CClock.h" />
+    <ClInclude Include="IVSDK\CCustomShaderEffectBase.h" />
+    <ClInclude Include="IVSDK\CCutsceneMgr.h" />
+    <ClInclude Include="IVSDK\CDraw.h" />
+    <ClInclude Include="IVSDK\CDrawCurvedWindowDC.h" />
+    <ClInclude Include="IVSDK\CDrawRadioHudTextDC.h" />
+    <ClInclude Include="IVSDK\CDrawRectDC.h" />
+    <ClInclude Include="IVSDK\CDrawSpriteDC.h" />
+    <ClInclude Include="IVSDK\CDrawSpriteUVDC.h" />
+    <ClInclude Include="IVSDK\CdStream.h" />
+    <ClInclude Include="IVSDK\CDynamicEntity.h" />
+    <ClInclude Include="IVSDK\CEntity.h" />
+    <ClInclude Include="IVSDK\CEpisodes.h" />
+    <ClInclude Include="IVSDK\CExplosion.h" />
+    <ClInclude Include="IVSDK\CFileLoader.h" />
+    <ClInclude Include="IVSDK\CFileMgr.h" />
+    <ClInclude Include="IVSDK\CFont.h" />
+    <ClInclude Include="IVSDK\CFrontEnd.h" />
+    <ClInclude Include="IVSDK\CGame.h" />
+    <ClInclude Include="IVSDK\CGameConfigReader.h" />
+    <ClInclude Include="IVSDK\CGameLogic.h" />
+    <ClInclude Include="IVSDK\CGangs.h" />
+    <ClInclude Include="IVSDK\CGarage.h" />
+    <ClInclude Include="IVSDK\CGenericGameStorage.h" />
+    <ClInclude Include="IVSDK\cHandlingDataMgr.h" />
+    <ClInclude Include="IVSDK\CHudColours.h" />
+    <ClInclude Include="IVSDK\CInteriorInst.h" />
+    <ClInclude Include="IVSDK\CIplStore.h" />
+    <ClInclude Include="IVSDK\CMatrix.h" />
+    <ClInclude Include="IVSDK\CMenuManager.h" />
+    <ClInclude Include="IVSDK\CModelInfo.h" />
+    <ClInclude Include="IVSDK\CNetwork.h" />
+    <ClInclude Include="IVSDK\CObject.h" />
+    <ClInclude Include="IVSDK\CPad.h" />
+    <ClInclude Include="IVSDK\CPed.h" />
+    <ClInclude Include="IVSDK\CPedFactoryNY.h" />
+    <ClInclude Include="IVSDK\CPedType.h" />
+    <ClInclude Include="IVSDK\CPhysical.h" />
+    <ClInclude Include="IVSDK\CPickups.h" />
+    <ClInclude Include="IVSDK\CPlayerInfo.h" />
+    <ClInclude Include="IVSDK\CPool.h" />
+    <ClInclude Include="IVSDK\CPools.h" />
+    <ClInclude Include="IVSDK\CPopulation.h" />
+    <ClInclude Include="IVSDK\CProjectileInfo.h" />
+    <ClInclude Include="IVSDK\CQuadTreeNode.h" />
+    <ClInclude Include="IVSDK\CQuaternion.h" />
+    <ClInclude Include="IVSDK\CRadar.h" />
+    <ClInclude Include="IVSDK\CRect.h" />
+    <ClInclude Include="IVSDK\CRenderPhase.h" />
+    <ClInclude Include="IVSDK\CReplay.h" />
+    <ClInclude Include="IVSDK\CRestart.h" />
+    <ClInclude Include="IVSDK\CRGBA.h" />
+    <ClInclude Include="IVSDK\CShaderLib.h" />
+    <ClInclude Include="IVSDK\CShadows.h" />
+    <ClInclude Include="IVSDK\CSimpleTransform.h" />
+    <ClInclude Include="IVSDK\CSprite2d.h" />
+    <ClInclude Include="IVSDK\CStats.h" />
+    <ClInclude Include="IVSDK\CStore.h" />
+    <ClInclude Include="IVSDK\CStreaming.h" />
+    <ClInclude Include="IVSDK\CStuntJumpManager.h" />
+    <ClInclude Include="IVSDK\CTask.h" />
+    <ClInclude Include="IVSDK\CTaskComplexClimbLadder.h" />
+    <ClInclude Include="IVSDK\CTaskComplexDie.h" />
+    <ClInclude Include="IVSDK\CTaskComplexInWater.h" />
+    <ClInclude Include="IVSDK\CTaskComplexMobileMakeCall.h" />
+    <ClInclude Include="IVSDK\CTaskComplexNewGetInVehicle.h" />
+    <ClInclude Include="IVSDK\CTaskComplexNM.h" />
+    <ClInclude Include="IVSDK\CTaskComplexPlayerOnFoot.h" />
+    <ClInclude Include="IVSDK\CTaskComplexPlayerSettingsTask.h" />
+    <ClInclude Include="IVSDK\CTaskComplexWander.h" />
+    <ClInclude Include="IVSDK\CTaskSimpleNMHighFall.h" />
+    <ClInclude Include="IVSDK\CTaskSimpleNMJumpRollFromRoadVehicle.h" />
+    <ClInclude Include="IVSDK\CTaskSimpleSidewaysDive.h" />
+    <ClInclude Include="IVSDK\CText.h" />
+    <ClInclude Include="IVSDK\CTheScripts.h" />
+    <ClInclude Include="IVSDK\CTheZones.h" />
+    <ClInclude Include="IVSDK\CTimeCycle.h" />
+    <ClInclude Include="IVSDK\CTimer.h" />
+    <ClInclude Include="IVSDK\CTxdStore.h" />
+    <ClInclude Include="IVSDK\CVector.h" />
+    <ClInclude Include="IVSDK\CVector2D.h" />
+    <ClInclude Include="IVSDK\CVehicle.h" />
+    <ClInclude Include="IVSDK\CVehicleFactoryNY.h" />
+    <ClInclude Include="IVSDK\CVisibilityPlugins.h" />
+    <ClInclude Include="IVSDK\CWanted.h" />
+    <ClInclude Include="IVSDK\CWeaponInfo.h" />
+    <ClInclude Include="IVSDK\CWeather.h" />
+    <ClInclude Include="IVSDK\CWorld.h" />
+    <ClInclude Include="IVSDK\C_PcSave.h" />
+    <ClInclude Include="IVSDK\eHudColour.h" />
+    <ClInclude Include="IVSDK\ePadControls.h" />
+    <ClInclude Include="IVSDK\eRadarSprite.h" />
+    <ClInclude Include="IVSDK\eVehiclePart.h" />
+    <ClInclude Include="IVSDK\fiDevice.h" />
+    <ClInclude Include="IVSDK\fiPackfile.h" />
+    <ClInclude Include="IVSDK\grcTexture.h" />
+    <ClInclude Include="IVSDK\grcTextureFactory.h" />
+    <ClInclude Include="IVSDK\grcWindow.h" />
+    <ClInclude Include="IVSDK\Hooks.h" />
+    <ClInclude Include="IVSDK\injector\assembly.hpp" />
+    <ClInclude Include="IVSDK\injector\calling.hpp" />
+    <ClInclude Include="IVSDK\injector\gvm\gvm.hpp" />
+    <ClInclude Include="IVSDK\injector\gvm\translator.hpp" />
+    <ClInclude Include="IVSDK\injector\hooking.hpp" />
+    <ClInclude Include="IVSDK\injector\injector.hpp" />
+    <ClInclude Include="IVSDK\injector\utility.hpp" />
+    <ClInclude Include="IVSDK\IVSDK.h" />
+    <ClInclude Include="IVSDK\NewAddressSet.h" />
+    <ClInclude Include="IVSDK\pgDictionary.h" />
+    <ClInclude Include="IVSDK\phBound.h" />
+    <ClInclude Include="IVSDK\phConstrainedCollider.h" />
+    <ClInclude Include="IVSDK\phInstGta.h" />
+    <ClInclude Include="IVSDK\rage.h" />
+    <ClInclude Include="IVSDK\SkyDome.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\IVSDKDotNetWrapper\IVSDKDotNetWrapper.vcxproj">
+      <Project>{b674035b-d958-4876-b593-1e44e5385e95}</Project>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

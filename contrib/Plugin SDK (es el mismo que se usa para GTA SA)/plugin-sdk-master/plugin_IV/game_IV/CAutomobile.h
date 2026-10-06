@@ -1,0 +1,17 @@
+/*
+    Plugin-SDK (Grand Theft Auto IV) header file
+    Authors: GTA Community. See more here
+    https://github.com/DK22Pac/plugin-sdk
+    Do not delete this comment block. Respect others' work!
+*/
+#pragma once
+#include "PluginBase.h"
+#include "CVehicle.h"
+
+class CAutomobile : public CVehicle {
+public:
+    CAutomobile(uint8_t createdBy);
+
+};
+VALIDATE_SIZE(CAutomobile, 0x2080);
+

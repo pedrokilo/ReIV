@@ -1,0 +1,62 @@
+/*
+    Plugin-SDK (Grand Theft Auto 3) header file
+    Authors: GTA Community. See more here
+    https://github.com/DK22Pac/plugin-sdk
+    Do not delete this comment block. Respect others' work!
+*/
+#pragma once
+
+#include "PluginBase.h"
+#include "CVector.h"
+
+class PLUGIN_API CCarGenerator {
+    PLUGIN_NO_DEFAULT_CONSTRUCTION(CCarGenerator)
+
+public:
+    int            m_nModelId;
+    CVector        m_vecPos;
+    float          m_fAngle;
+    short          m_nPrimaryColor;
+    short          m_nSecondaryColor;
+    unsigned char  m_nForceSpawn;
+    unsigned char  m_nAlarm;
+    unsigned char  m_nDoorLock;
+    unsigned short m_nMinDelay;
+    unsigned short m_nMaxDelay;
+    unsigned int   m_nTimeNextGen;
+    unsigned int   m_nVehicleHandle;
+    short          m_nEnabled;
+    bool           m_bIsBlocking;
+    CVector        m_vecInf;
+    CVector        m_vecSup;
+    float          m_fDistance;
+
+    SUPPORTED_10EN_11EN_STEAM unsigned int CalcNextGen();
+    SUPPORTED_10EN_11EN_STEAM bool CheckForBlockage();
+    SUPPORTED_10EN_11EN_STEAM bool CheckIfWithinRangeOfAnyPlayers();
+    SUPPORTED_10EN_11EN_STEAM void DoInternalProcessing();
+    SUPPORTED_10EN_11EN_STEAM void Process();
+    SUPPORTED_10EN_11EN_STEAM void Setup(float x, float y, float z, float angle, int modelId, short primaryColor, short secondaryColor, unsigned char forceSpawn, unsigned char alarm, unsigned char doorLock, unsigned short minDelay, unsigned short maxDelay);
+    SUPPORTED_10EN_11EN_STEAM void SwitchOff();
+    SUPPORTED_10EN_11EN_STEAM void SwitchOn();
+};
+VALIDATE_OFFSET(CCarGenerator, m_nModelId, 0x0);
+VALIDATE_OFFSET(CCarGenerator, m_vecPos, 0x4);
+VALIDATE_OFFSET(CCarGenerator, m_fAngle, 0x10);
+VALIDATE_OFFSET(CCarGenerator, m_nPrimaryColor, 0x14);
+VALIDATE_OFFSET(CCarGenerator, m_nSecondaryColor, 0x16);
+VALIDATE_OFFSET(CCarGenerator, m_nForceSpawn, 0x18);
+VALIDATE_OFFSET(CCarGenerator, m_nAlarm, 0x19);
+VALIDATE_OFFSET(CCarGenerator, m_nDoorLock, 0x1A);
+VALIDATE_OFFSET(CCarGenerator, m_nMinDelay, 0x1C);
+VALIDATE_OFFSET(CCarGenerator, m_nMaxDelay, 0x1E);
+VALIDATE_OFFSET(CCarGenerator, m_nTimeNextGen, 0x20);
+VALIDATE_OFFSET(CCarGenerator, m_nVehicleHandle, 0x24);
+VALIDATE_OFFSET(CCarGenerator, m_nEnabled, 0x28);
+VALIDATE_OFFSET(CCarGenerator, m_bIsBlocking, 0x2A);
+VALIDATE_OFFSET(CCarGenerator, m_vecInf, 0x2C);
+VALIDATE_OFFSET(CCarGenerator, m_vecSup, 0x38);
+VALIDATE_OFFSET(CCarGenerator, m_fDistance, 0x44);
+VALIDATE_SIZE(CCarGenerator, 0x48);
+
+#include "meta/meta.CCarGenerator.h"

@@ -1,0 +1,80 @@
+name: Plugin GTA VC (Clang)
+
+on:
+  workflow_dispatch:
+
+  push:
+    paths:
+      - "!**.dll"
+      - "!**.md"
+      - "!**.txt"
+      - "tools/premake/**"
+      - "hooking/**"
+      - "injector/**"
+      - "modutils/**"
+      - "safetyhook/**"
+      - "shared/**"
+      - "plugin_vc/**"
+
+  pull_request:
+    paths:
+      - "!**.dll"
+      - "!**.md"
+      - "!**.txt"
+      - "tools/premake/**"
+      - "hooking/**"
+      - "injector/**"
+      - "modutils/**"
+      - "safetyhook/**"
+      - "shared/**"
+      - "plugin_vc/**"
+
+jobs:
+  build:
+    name: Build
+    
+    # skip on pull request inside forks
+    if: github.event_name != 'pull_request' || github.repository == 'DK22Pac/plugin-sdk'
+    
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v6
+        with:
+          submodules: "recursive"
+
+      - name: Install dependencies
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y wget gnupg software-properties-common lsb-release g++-mingw-w64-i686
+
+          # Download LLVM installer script
+          wget https://apt.llvm.org/llvm.sh
+          chmod +x llvm.sh
+
+          # Install Clang 23
+          sudo ./llvm.sh 23
+
+      - name: Verify Clang
+        run: |
+          clang-23 --version
+          clang++-23 --version
+
+      - name: Install premake5
+        uses: Jarod42/install-premake5@v7
+
+      - name: Premake gmake project
+        run: |
+          export PLUGIN_SDK_DIR=$GITHUB_WORKSPACE
+          premake5 gmake --file=tools/premake/premake5.lua
+
+      - name: Build SDK
+        run: |
+          export PLUGIN_SDK_DIR=$GITHUB_WORKSPACE
+          make config=release CXX=clang++-23 CC=clang-23 AR=ar -C plugin_vc -j$(nproc)
+
+      - name: Build test plugin
+        run: |
+          export PLUGIN_SDK_DIR=$GITHUB_WORKSPACE
+          make config=release_gta-vc CXX=clang++-23 CC=clang-23 AR=ar -C examples/Test -j$(nproc)
