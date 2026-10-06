@@ -1,0 +1,68 @@
+[
+  {
+    "name": ".text",
+    "rva": 4096,
+    "va": 4198400,
+    "virtual_size": 9744465,
+    "raw_size": 9748480,
+    "raw_offset": 4096,
+    "executable": true,
+    "writable": false,
+    "readable": true
+  },
+  {
+    "name": ".rdata",
+    "rva": 9752576,
+    "va": 13946880,
+    "virtual_size": 1827444,
+    "raw_size": 1830912,
+    "raw_offset": 9752576,
+    "executable": false,
+    "writable": false,
+    "readable": true
+  },
+  {
+    "name": ".data",
+    "rva": 11583488,
+    "va": 15777792,
+    "virtual_size": 11817980,
+    "raw_size": 1818624,
+    "raw_offset": 11583488,
+    "executable": false,
+    "writable": true,
+    "readable": true
+  },
+  {
+    "name": ".tls",
+    "rva": 23404544,
+    "va": 27598848,
+    "virtual_size": 2285,
+    "raw_size": 4096,
+    "raw_offset": 13402112,
+    "executable": false,
+    "writable": true,
+    "readable": true
+  },
+  {
+    "name": ".rsrc",
+    "rva": 23408640,
+    "va": 27602944,
+    "virtual_size": 1121568,
+    "raw_size": 1122304,
+    "raw_offset": 13406208,
+    "executable": false,
+    "writable": false,
+    "readable": true
+  },
+  {
+    "name": ".reloc",
+    "rva": 24530944,
+    "va": 28725248,
+    "virtual_size": 964192,
+    "raw_size": 966656,
+    "raw_offset": 14528512,
+    "executable": false,
+    "writable": false,
+    "readable": true
+  }
+]

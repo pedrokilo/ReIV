@@ -6,6 +6,8 @@ Recrear **GTA IV PC 1.0.7.0** de forma funcionalmente equivalente mediante códi
 
 **[📊 Estado](#estado-del-trabajo) · [🧭 Plan](#plan-de-trabajo) · [🧪 Validación](#validación-contra-el-original) · [📁 Estructura](#estructura-del-repositorio)**
 
+**[🗺 Mapa de memoria](docs/MemoryMap/README.md) · [Visor local de direcciones](docs/MemoryMap/index.html)** — 4.016 tipos RTTI, 3.478 vtables y 34.141 direcciones de código fichadas, con procedencia y referencias separadas del SDK y del documento histórico. Este inventario no añade reconstrucciones ni validaciones.
+
 > [!NOTE]
 > Primera función reconstruida, hookeada y validada: [rage::atStringHash](reversing/AtStringHash/README.md). `ReIV.asi` usa IV-SDK y la copia de pruebas arranca directamente con `GTAIV.exe`, en ventana. Todavía no existe un ejecutable independiente. [Compilación y configuración de pruebas](reversing/Bootstrap.md).
 

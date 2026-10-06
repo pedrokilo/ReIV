@@ -1,0 +1,22 @@
+{
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "image_base": "0x00400000",
+  "ghidra_global_analysis_complete": false,
+  "rtti_type_records": 4016,
+  "rtti_unique_names": 4016,
+  "rtti_classes_with_vtables": 3431,
+  "vtables": 3478,
+  "virtual_slots": 45503,
+  "ghidra_function_entries": 28035,
+  "unique_virtual_targets": 9892,
+  "additional_virtual_targets": 6106,
+  "code_address_entries": 34141,
+  "sdk_classes_matching_rtti": 69,
+  "sdk_declarations": 181,
+  "sdk_unique_declarations": 181,
+  "sdk_address_references": 438,
+  "historical_address_mentions": 219,
+  "historical_reference_sha256": "dada16f8e53a3aeb4432618f9aa2b0db70590fa1982afa30ef1fb6e858665e8b",
+  "total_game_classes": "unknown",
+  "total_game_functions": "unknown"
+}
