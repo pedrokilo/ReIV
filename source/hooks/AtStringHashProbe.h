@@ -1,5 +1,5 @@
 #pragma once
-#include "AtStringHash.h"
+#include "../rage/AtStringHash.h"
 #include "AtStringHashSignature.h"
 #include <cstring>
 #include <vector>

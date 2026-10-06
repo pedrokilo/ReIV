@@ -1,8 +1,8 @@
 # rage::atStringHash — primer caso de ReIV
 
-**Reconstruida, hookeada y validada en GTA IV PC 1.0.7.0.** Banco aprobado el 6 de octubre de 2026: **8.320 comparaciones sintéticas y 4.096 comparaciones durante llamadas reales**, con cero diferencias. La sesión recibió ambos eventos de carga, procesó 425 ciclos de scripts y cerró con código 0, sin terminación forzada.
+**Reconstruida, hookeada y validada en GTA IV PC 1.0.7.0.** Banco aprobado el 6 de octubre de 2026: **8.320 comparaciones sintéticas y 4.096 comparaciones durante llamadas reales**, con cero diferencias. La sesión recibió ambos eventos de carga, procesó 428 ciclos de scripts y cerró con código 0, sin terminación forzada.
 
-La evidencia vinculada a hashes está en [validation-summary.json](evidence/validation-summary.json). Los logs, respaldos y partidas temporales están localmente en `reversing/artifacts/atStringHash-20261006-165943/` y no se publican.
+La evidencia vinculada a hashes está en [validation-summary.json](evidence/validation-summary.json). Los logs, respaldos y partidas temporales están localmente en `reversing/artifacts/atStringHash-20261006-170938/` y no se publican.
 
 ## Identificación
 
@@ -14,8 +14,8 @@ La evidencia vinculada a hashes está en [validation-summary.json](evidence/vali
 | Dirección estática en Ghidra | `0x005B1C30` |
 | Tamaño | 106 bytes, hasta el RET |
 | Firma real | `uint32_t __cdecl(const char* text, uint32_t seed)` |
-| Fuente reconstruida | [AtStringHash.h](../../source/AtStringHash.h) |
-| Banco y hook | [AtStringHashProbe.h](../../source/AtStringHashProbe.h) |
+| Fuente reconstruida | [AtStringHash.h](../../source/rage/AtStringHash.h) |
+| Banco y hook | [AtStringHashProbe.h](../../source/hooks/AtStringHashProbe.h) |
 
 Se eligió una función corta con dirección documentada y sin dependencias de subsistemas. Los métodos de `CVector` del SDK son implementaciones en línea sin una entrada del EXE identificada: no bastaban para construir el primer banco contra el original.
 
@@ -39,7 +39,7 @@ Antes de alterar memoria se comprueban los 106 bytes de la función contra la co
 
 Sólo después de aprobar el banco se instala un JMP. El trampoline conserva las dos primeras instrucciones completas (MOV de cuatro bytes y PUSH de un byte) y salta al original después de ellas. Se prueba explícitamente la entrada parcheada y se comprueba que aumenta el contador del reemplazo. Las primeras 4.096 llamadas reales se contrastan con el trampoline.
 
-Se contaron **381.840 llamadas al reemplazo** durante la sesión. Eso mide uso real, no 381.840 comparaciones: únicamente las primeras 4.096 se compararon con el original. No constituye una prueba exhaustiva de todos los inputs ni una campaña de estabilidad general.
+Se contaron **383.860 llamadas al reemplazo** durante la sesión. Eso mide uso real, no 383.860 comparaciones: únicamente las primeras 4.096 se compararon con el original. No constituye una prueba exhaustiva de todos los inputs ni una campaña de estabilidad general.
 
 `standalone=0` en el catálogo: aunque la implementación matemática es independiente, la sonda conserva llamadas al original para la comparación. Todavía no existe un ejecutable standalone.
 

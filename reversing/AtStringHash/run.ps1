@@ -44,8 +44,8 @@ try {
     $summary = [ordered]@{
         date = (Get-Date -Format o); exe_sha256 = (Get-FileHash $gameExe).Hash.ToLower()
         asi_sha256 = (Get-FileHash (Join-Path $repoRoot 'bin\ReIV.asi')).Hash.ToLower()
-        implementation_sha256 = (Get-FileHash (Join-Path $repoRoot 'source\AtStringHash.h')).Hash.ToLower()
-        probe_sha256 = (Get-FileHash (Join-Path $repoRoot 'source\AtStringHashProbe.h')).Hash.ToLower()
+        implementation_sha256 = (Get-FileHash (Join-Path $repoRoot 'source\rage\AtStringHash.h')).Hash.ToLower()
+        probe_sha256 = (Get-FileHash (Join-Path $repoRoot 'source\hooks\AtStringHashProbe.h')).Hash.ToLower()
         pid = $probeProcess.Id; exit_code = $exitCode; forced_stop = $forcedStop; passed = $passed; result = $report
     }
     $summary | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath (Join-Path $runDir 'summary.json') -Encoding UTF8

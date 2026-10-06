@@ -1,8 +1,8 @@
 #include <cstdio>
 #define DllMain SdkDllMain
-#include "../contrib/IV SDK/IV-SDK-main/include/IVSDK.cpp"
+#include "../../contrib/IV SDK/IV-SDK-main/include/IVSDK.cpp"
 #undef DllMain
-#include "AtStringHashProbe.h"
+#include "../hooks/AtStringHashProbe.h"
 
 namespace {
 void Log(const char* message) {

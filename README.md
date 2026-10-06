@@ -57,7 +57,12 @@ ReIV/
 ├── docs/
 │   └── images/
 ├── reversing/                   Bancos, direcciones y evidencias previstos
-├── source/                      Implementaciones propias previstas
+├── source/                      Implementaciones propias, organizadas según la base del SDK
+│   ├── core/                    Entrada del ASI y eventos
+│   ├── rage/                    Funciones del motor RAGE
+│   ├── game/                    Clases y sistemas del juego
+│   ├── Scripting/               Scripting
+│   └── hooks/                   Hooks y bancos integrados
 └── README.md
 ```
 
@@ -73,7 +78,7 @@ LibertyRecomp, Xbox 360, otras versiones PC y EFLC podrán incorporarse posterio
 
 ### Estado del trabajo
 
-**Entrega del 6 de octubre de 2026:** binario canónico registrado, proyecto importado en Ghidra y primera función reconstruida y validada. [rage::atStringHash](reversing/AtStringHash/README.md) pasó 8.320 comparaciones sintéticas y 4.096 comparaciones durante llamadas reales, sin diferencias. El hook recibió 381.840 llamadas; llegaron ambos eventos de carga, se procesaron 425 ciclos de scripts y el juego cerró con código 0 sin terminación forzada. El usuario confirmó la entrada a partida y una cinemática. Esto valida el primer caso, no todos los sistemas del juego.
+**Entrega del 6 de octubre de 2026:** binario canónico registrado, proyecto importado en Ghidra y primera función reconstruida y validada. [rage::atStringHash](reversing/AtStringHash/README.md) pasó 8.320 comparaciones sintéticas y 4.096 comparaciones durante llamadas reales, sin diferencias. El hook recibió 383.860 llamadas; llegaron ambos eventos de carga, se procesaron 428 ciclos de scripts y el juego cerró con código 0 sin terminación forzada. El usuario confirmó la entrada a partida y una cinemática. Esto valida el primer caso, no todos los sistemas del juego.
 
 | Dimensión | Estado |
 | --- | --- |
