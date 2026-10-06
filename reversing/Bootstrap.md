@@ -30,4 +30,12 @@ SHA-256 de la primera compilación:
 6167480e0a14b80d19e41268baa0dc98c642a414065fd70e0bbe58c7799a4cc9
 ```
 
-La ejecución directa confirmó mediante `ReIV.log` la carga del ASI y la detección de 1.0.7.0. Ese proceso no creó una ventana durante la comprobación y se cerró; después se arrancó mediante `LaunchGTAIV.exe`. El tamaño efectivo de la ventana y la llegada al menú requieren comprobación en runtime.
+El arranque se realiza exclusivamente mediante `GTAIV.exe`, por instrucción del usuario. Usar:
+
+```powershell
+powershell -ExecutionPolicy Bypass -File .\contrib\start-reiv.ps1
+```
+
+La ejecución directa confirmó mediante `ReIV.log` la carga del ASI y la detección de 1.0.7.0. Se debe abrir con ventana normal para la prueba interactiva.
+
+El 6 de octubre de 2026 se comprobó una ventana visible de GTAIV y el renderizador en modo windowed con parámetros 800×600. El área útil inicial era 782×553 porque el tamaño incluía los bordes; se ajustó con `SetWindowPos` y se verificaron **800×600 de área útil**. El script de arranque aplica esa compensación automáticamente. La carga del ASI está confirmada; todavía no se ha acreditado equivalencia de funciones ni una sesión de juego estable.
