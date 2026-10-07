@@ -17,6 +17,9 @@
   "sdk_address_references": 438,
   "historical_address_mentions": 219,
   "historical_reference_sha256": "dada16f8e53a3aeb4432618f9aa2b0db70590fa1982afa30ef1fb6e858665e8b",
+  "sdk_virtual_wrappers": 16,
+  "sdk_slot_crossrefs": 1723,
+  "virtual_slots_with_sdk_names": 1713,
   "total_game_classes": "unknown",
   "total_game_functions": "unknown"
 }

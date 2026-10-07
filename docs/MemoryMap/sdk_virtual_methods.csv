@@ -1,0 +1,17 @@
+owner,name,slot,file,line,status
+CCam,CCam::Process,4,contrib/IV SDK/IV-SDK-main/include/CCam.h,70,sdk_virtual_wrapper_not_validated
+CCustomShaderEffectBase,CCustomShaderEffectBase::Update,3,contrib/IV SDK/IV-SDK-main/include/CCustomShaderEffectBase.h,6,sdk_virtual_wrapper_not_validated
+CEntity,CEntity::Teleport,1,contrib/IV SDK/IV-SDK-main/include/CEntity.h,43,sdk_virtual_wrapper_not_validated
+CEntity,CEntity::Teleport,2,contrib/IV SDK/IV-SDK-main/include/CEntity.h,48,sdk_virtual_wrapper_not_validated
+CEntity,CEntity::PreRender,35,contrib/IV SDK/IV-SDK-main/include/CEntity.h,53,sdk_virtual_wrapper_not_validated
+CBaseModelInfo,CBaseModelInfo::GetModelType,3,contrib/IV SDK/IV-SDK-main/include/CModelInfo.h,39,sdk_virtual_wrapper_not_validated
+CPed,CPed::SetHealth,61,contrib/IV SDK/IV-SDK-main/include/CPed.h,176,sdk_virtual_wrapper_not_validated
+CPed,CPed::AddHealth,62,contrib/IV SDK/IV-SDK-main/include/CPed.h,180,sdk_virtual_wrapper_not_validated
+CPedFactoryNY,CPedFactoryNY::CreatePed,5,contrib/IV SDK/IV-SDK-main/include/CPedFactoryNY.h,19,sdk_virtual_wrapper_not_validated
+CPhysical,CPhysical::GetVelocity,59,contrib/IV SDK/IV-SDK-main/include/CPhysical.h,46,sdk_virtual_wrapper_not_validated
+CPhysical,CPhysical::ProcessWater,71,contrib/IV SDK/IV-SDK-main/include/CPhysical.h,58,sdk_virtual_wrapper_not_validated
+CPhysical,CPhysical::GetHealth,63,contrib/IV SDK/IV-SDK-main/include/CPhysical.h,63,sdk_virtual_wrapper_not_validated
+CVehicle,CVehicle::Fix,101,contrib/IV SDK/IV-SDK-main/include/CVehicle.h,570,sdk_virtual_wrapper_not_validated
+CVehicleFactoryNY,CVehicleFactoryNY::CreateVehicle,1,contrib/IV SDK/IV-SDK-main/include/CVehicleFactoryNY.h,13,sdk_virtual_wrapper_not_validated
+rage::grcTextureFactoryPC,rage::grcTextureFactoryPC::CreateTexture,3,contrib/IV SDK/IV-SDK-main/include/grcTextureFactory.h,15,sdk_virtual_wrapper_not_validated
+rage::phConstrainedCollider,rage::phConstrainedCollider::SetVelocity,42,contrib/IV SDK/IV-SDK-main/include/phConstrainedCollider.h,55,sdk_virtual_wrapper_not_validated

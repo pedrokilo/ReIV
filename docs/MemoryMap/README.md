@@ -58,16 +58,33 @@ Por ejemplo, la vtable de `CPed` tiene RVA `0x00969844`. Si el módulo se carga 
 
 ### Fichas por clase
 
+El visor enlaza estas fichas al seleccionar su clase en **Tipos RTTI**, mediante «Abrir ficha documentada» y «Abrir datos JSON».
+
 - [CEntity](classes/CEntity.md): RTTI, 51 slots candidatos contrastados con el EXE y tres nombres referenciados al SDK. Incluye [datos estructurados](classes/CEntity.json). Los nombres, firmas y offsets del SDK conservan su estado pendiente de validación.
 - [CPhysical](classes/CPhysical.md): RTTI, 72 slots candidatos y comparación por índice con CEntity: 25 destinos iguales, 26 diferentes y 21 fuera de su inventario. Incluye [datos estructurados](classes/CPhysical.json), referencias de funciones y offsets del SDK pendientes de validar.
 - [CPed](classes/CPed.md): RTTI, 81 slots candidatos y comparación con CPhysical: 33 destinos iguales, 39 diferentes y nueve fuera de su inventario. Incluye [datos estructurados](classes/CPed.json), referencias de métodos y offsets del SDK pendientes de validar.
 - [CVehicle](classes/CVehicle.md): RTTI, 111 slots candidatos y comparación con CPhysical: 60 destinos iguales, 12 diferentes y 39 fuera de su inventario. Incluye [datos estructurados](classes/CVehicle.json), el slot de Fix y 11 referencias de funciones del SDK pendientes de validar.
+- [CDynamicEntity](classes/CDynamicEntity.md): eslabón entre CEntity y CPhysical, con 55 slots candidatos: 33 destinos iguales a CEntity, 18 diferentes y cuatro fuera de su inventario. Incluye [datos estructurados](classes/CDynamicEntity.json) y las referencias GetBoneMatrix/GetBoneMatrix2 del SDK.
+
+### Cruce automático de nombres del SDK
+
+La pestaña **Cruces de nombres SDK** permite buscar clase, destino y nombre propuesto. Se detectaron 16 wrappers virtuales de sintaxis explícita en los headers raíz del SDK; el parser es conservador y no cubre todas las maneras de expresar una llamada virtual. Los cruces generan 1.723 referencias para 1.713 slots, sin modificar las etiquetas originales de Ghidra.
+
+Se distinguen tres criterios:
+
+- `sdk_exact_function_address`: el destino coincide con una referencia de función de dirección fija del SDK.
+- `sdk_exact_owner_slot`: el nombre de clase RTTI y el índice coinciden con los de un wrapper virtual del SDK.
+- `sdk_shared_virtual_target`: un slot apunta al mismo destino que un wrapper enlazado en otra tabla. Se conservan clase, slot y tabla de origen; **no demuestra que el método tenga el mismo significado ni firma**. Puede tratarse de un thunk o un cuerpo compartido.
+
+No se propagan nombres por herencia ni se elige uno cuando hay varios candidatos. Todos estos cruces tienen estado `sdk_name_not_validated`; no constituyen funciones identificadas semánticamente, reconstruidas ni validadas. El generador actualiza los cruces y enlaces del visor al regenerar el mapa.
 
 | Archivo | Contenido |
 | --- | --- |
 | [classes.csv](classes.csv) | Nombre decorado y legible, dirección del descriptor, vtables y bases RTTI |
 | [vtables.csv](vtables.csv) | Dirección de tabla y locator, desplazamiento del subobjeto y slots estimados |
 | [virtual_slots.csv](virtual_slots.csv) | Clase, tabla, índice del slot y destino a código |
+| [sdk_virtual_methods.csv](sdk_virtual_methods.csv) | Wrappers virtuales explícitos del SDK, clase, índice y fuente |
+| [sdk_slot_crossrefs.csv](sdk_slot_crossrefs.csv) | Nombres candidatos por slot, criterio de coincidencia y procedencia |
 | [function_entries.csv](function_entries.csv) | Entradas de Ghidra en secciones ejecutables, sin equipararlas a funciones validadas |
 | [code_addresses.csv](code_addresses.csv) | Entradas de Ghidra y destinos virtuales adicionales, sin duplicar direcciones |
 | [sdk_classes.csv](sdk_classes.csv) | Declaraciones del SDK y sus coincidencias RTTI por nombre |
