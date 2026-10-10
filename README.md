@@ -76,7 +76,7 @@ Las carpetas existentes se conservan. La base de compilación, fuente y document
 
 ### Referencias y criterio de evidencia
 
-IV-SDK y el componente de GTA IV de plugin-sdk servirán para contrastar nombres, tamaños, herencia, miembros, virtuales, firmas y direcciones. IV-SDK-DotNet aportará contexto sobre sus wrappers y usos. **El ejecutable canónico decide cuando haya discrepancias.** Una coincidencia entre SDKs es una pista y debe contrastarse con el binario.
+IV-SDK y el componente de GTA IV de plugin-sdk servirán para contrastar nombres, tamaños, herencia, miembros, virtuales, firmas y direcciones. IV-SDK-DotNet aportará contexto sobre sus wrappers y usos. **El ejecutable canónico decide cuando haya discrepancias.** El cruce automático de offsets entre los tres SDKs y el layout observado de CPlayerPed está en [SdkCrossReference.md](docs/MemoryMap/SdkCrossReference.md) (`build/crossref-sdks.py`). Una coincidencia entre SDKs es una pista y debe contrastarse con el binario.
 
 LibertyRecomp, Xbox 360, otras versiones PC y EFLC podrán incorporarse posteriormente como referencias comparativas. Sus direcciones y layouts no se trasladarán automáticamente a PC 1.0.7.0. El código de terceros conserva sus licencias y avisos originales.
 

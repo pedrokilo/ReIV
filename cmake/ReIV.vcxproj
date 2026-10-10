@@ -66,6 +66,7 @@
     <ClCompile Include="..\source\core\OriginalCall.cpp" />
     <ClCompile Include="..\source\core\DebugLog.cpp" />
     <ClCompile Include="..\source\game\scene\CDynamicEntity.cpp" />
+    <ClCompile Include="..\source\game\Peds\PlayerPedCounter.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
