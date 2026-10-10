@@ -1,50 +1,52 @@
 {
-  "concurrent_execution_tested": false,
-  "templates_origin": "Compiled reconstructed source COFF snapshots",
-  "native_clones_executed": true,
-  "hashes": {
-    "reversing/CPlayerPed/generate-clone-checks.py": "b47671ac0e1f4ecf261f5d10167292a828e68dd72c8fb9f7232da0bf9d0b455d",
-    "reversing/CPlayerPed/native-clone/check-input-select.cpp": "04907d0cef8e53d28d93b0a311560afd4abcf8b7fb714d3f6bad67e776a48a08",
-    "reversing/CPlayerPed/CoffClone.h": "677eb1e06507744df1efea089832e512f3156fa05c97e7ed617ac93d81be5822",
-    "reversing/CPlayerPed/native-clone/check-update.cpp": "72e45d8f4d1dd9fab05ab9b3522af6ef3c8040885ed68dfd094d87fab1a3f9f7",
-    "reversing/CPlayerPed/native-clone/check-loader-contract.cpp": "d320b57a4746548c518f66c32caab2c56faa039672cf1f717369a7474d60eded",
-    "reversing/CPlayerPed/native-clone/check-value-adjust.cpp": "8aeaedca93188cb10b666148462afa6ac41476b93a1e2033031689c71112e5aa",
-    "reversing/CPlayerPed/native-clone/templates.h": "435226a030fc7a0d59b5d90a35b24e5c0ef7bcd2ead21bbf1ad42da8285599cb"
-  },
-  "scenario_counts": {
-    "Adjust": 2457600,
-    "Update": 139920,
-    "Select": 74448
-  },
-  "results": [
-    {
-      "bank": "loader-contract",
-      "output": "PASS loader_contract_checks=14 invalid_inputs_unpublished=1",
-      "exe_sha256": "49dd97f99a8fe412e870d2ec4559771f81384e73a24ff378803cddddf6b5cf75",
-      "exit_code": 0
-    },
-    {
-      "bank": "update",
-      "output": "group rounding=0 denorm=0 precision=0 passed\ngroup rounding=0 denorm=0 precision=512 passed\ngroup rounding=0 denorm=0 precision=768 passed\ngroup rounding=0 denorm=1 precision=0 passed\ngroup rounding=0 denorm=1 precision=512 passed\ngroup rounding=0 denorm=1 precision=768 passed\ngroup rounding=0 denorm=2 precision=0 passed\ngroup rounding=0 denorm=2 precision=512 passed\ngroup rounding=0 denorm=2 precision=768 passed\ngroup rounding=0 denorm=3 precision=0 passed\ngroup rounding=0 denorm=3 precision=512 passed\ngroup rounding=0 denorm=3 precision=768 passed\ngroup rounding=1 denorm=0 precision=0 passed\ngroup rounding=1 denorm=0 precision=512 passed\ngroup rounding=1 denorm=0 precision=768 passed\ngroup rounding=1 denorm=1 precision=0 passed\ngroup rounding=1 denorm=1 precision=512 passed\ngroup rounding=1 denorm=1 precision=768 passed\ngroup rounding=1 denorm=2 precision=0 passed\ngroup rounding=1 denorm=2 precision=512 passed\ngroup rounding=1 denorm=2 precision=768 passed\ngroup rounding=1 denorm=3 precision=0 passed\ngroup rounding=1 denorm=3 precision=512 passed\ngroup rounding=1 denorm=3 precision=768 passed\ngroup rounding=2 denorm=0 precision=0 passed\ngroup rounding=2 denorm=0 precision=512 passed\ngroup rounding=2 denorm=0 precision=768 passed\ngroup rounding=2 denorm=1 precision=0 passed\ngroup rounding=2 denorm=1 precision=512 passed\ngroup rounding=2 denorm=1 precision=768 passed\ngroup rounding=2 denorm=2 precision=0 passed\ngroup rounding=2 denorm=2 precision=512 passed\ngroup rounding=2 denorm=2 precision=768 passed\ngroup rounding=2 denorm=3 precision=0 passed\ngroup rounding=2 denorm=3 precision=512 passed\ngroup rounding=2 denorm=3 precision=768 passed\ngroup rounding=3 denorm=0 precision=0 passed\ngroup rounding=3 denorm=0 precision=512 passed\ngroup rounding=3 denorm=0 precision=768 passed\ngroup rounding=3 denorm=1 precision=0 passed\ngroup rounding=3 denorm=1 precision=512 passed\ngroup rounding=3 denorm=1 precision=768 passed\ngroup rounding=3 denorm=2 precision=0 passed\ngroup rounding=3 denorm=2 precision=512 passed\ngroup rounding=3 denorm=2 precision=768 passed\ngroup rounding=3 denorm=3 precision=0 passed\ngroup rounding=3 denorm=3 precision=512 passed\ngroup rounding=3 denorm=3 precision=768 passed\nCLONE PASS two_allocations original_source_and_clones_match immutable_bindings=1\nPASS comparisons=139920 failures=0 masked_fp_state_matched=1\ndependency 00401950 calls=154176\ndependency 004269B0 calls=209088\ndependency 004389D0 calls=131904\ndependency 00462F90 calls=105600\ndependency 0088F5D0 calls=38016\ndependency 0089EA80 calls=209088\ndependency 008AADC0 calls=559680\ndependency 008AE670 calls=38016\ndependency 0091A050 calls=103488\ndependency 0091A0A0 calls=103488\ndependency 00922850 calls=416064\ndependency 00924E80 calls=204864\ndependency 00976E90 calls=105600\ndependency 0097D7C0 calls=105600\ndependency 00987730 calls=84960\ndependency 009A9CF0 calls=933504\ndependency 009BE5D0 calls=416064\ndependency 009BE7D0 calls=209088\ndependency 009BEE70 calls=206976\ndependency 009BEED0 calls=416064\ndependency 009BFD80 calls=331584\ndependency 009E6630 calls=416064\ndependency 00AA80D0 calls=103488\ndependency 00AA83F0 calls=103488\ndependency 00AB3B60 calls=103488\ndependency 00AFE160 calls=38016\ndependency 00AFEA00 calls=38016\nvirtual 59 calls=209088\nvirtual 3 calls=103488",
-      "exe_sha256": "62d1e8f1eed63ed0bb6b4d1a23741627fa679c27dbf8b80fb595685759b7f849",
-      "exit_code": 0
-    },
-    {
-      "bank": "value-adjust",
-      "output": "CLONE PASS two_allocations original_source_and_clones_match immutable_bindings=1\nPASS comparisons=2457600 failures=0 return_AL_buffers_trace_x87_MXCSR_matched=1",
-      "exe_sha256": "a31c3f8f0f5be65fb0093ac131eef6c226fcc9b2ce592fd6a818c0b974bbbb42",
-      "exit_code": 0
-    },
-    {
-      "bank": "input-select",
-      "output": "CLONE PASS two_allocations original_source_and_clones_match immutable_bindings=1\nPASS comparisons=74448 failures=0 mapped_tables_full_buffers_ordered_trace_fp_state_matched=1\ndependency 004255A0 calls=1560\ndependency 00426780 calls=92856\ndependency 00426910 calls=12672\ndependency 00462F90 calls=92928\ndependency 00785EB0 calls=528\ndependency 0089E300 calls=26256\ndependency 008FF470 calls=41712\ndependency 00924E80 calls=1536\ndependency 009252D0 calls=768\ndependency 00987730 calls=4224\ndependency 0099C5E0 calls=4704\ndependency 009A9CF0 calls=46176\ndependency 009AA330 calls=20660\ndependency 009AC110 calls=4224\ndependency 009ADB90 calls=240\ndependency 009B3B00 calls=14832\ndependency 009BE4A0 calls=4224\ndependency 009BE5D0 calls=297792\ndependency 009C5D60 calls=1056\njump_mode 2 calls=2308\njump_mode 3 calls=2308\njump_mode 4 calls=2308\njump_mode 5 calls=2308\njump_mode 20 calls=2068\njump_mode 21 calls=2068\njump_mode 22 calls=2068\njump_mode 23 calls=2068",
-      "exe_sha256": "558a6da4e790a3f7fdff2ea11df8675e84f468b38c270365b5824587e6f4b641",
-      "exit_code": 0
-    }
-  ],
-  "allocations_per_body": 2,
-  "fixture_cases_exhaustive": false,
-  "game_runtime_validated": false,
-  "hooks_installed": false,
-  "clone_executions": 5343936
+    "results":  [
+                    {
+                        "output":  "PASS loader_contract_checks=14 invalid_inputs_unpublished=1",
+                        "bank":  "loader-contract",
+                        "exe_sha256":  "2a233fb3f75e796994a751bb57f6d040b5896e2afb18cfacb0a50bb01b90bb83",
+                        "exit_code":  0
+                    },
+                    {
+                        "output":  "group rounding=0 denorm=0 precision=0 passed\ngroup rounding=0 denorm=0 precision=512 passed\ngroup rounding=0 denorm=0 precision=768 passed\ngroup rounding=0 denorm=1 precision=0 passed\ngroup rounding=0 denorm=1 precision=512 passed\ngroup rounding=0 denorm=1 precision=768 passed\ngroup rounding=0 denorm=2 precision=0 passed\ngroup rounding=0 denorm=2 precision=512 passed\ngroup rounding=0 denorm=2 precision=768 passed\ngroup rounding=0 denorm=3 precision=0 passed\ngroup rounding=0 denorm=3 precision=512 passed\ngroup rounding=0 denorm=3 precision=768 passed\ngroup rounding=1 denorm=0 precision=0 passed\ngroup rounding=1 denorm=0 precision=512 passed\ngroup rounding=1 denorm=0 precision=768 passed\ngroup rounding=1 denorm=1 precision=0 passed\ngroup rounding=1 denorm=1 precision=512 passed\ngroup rounding=1 denorm=1 precision=768 passed\ngroup rounding=1 denorm=2 precision=0 passed\ngroup rounding=1 denorm=2 precision=512 passed\ngroup rounding=1 denorm=2 precision=768 passed\ngroup rounding=1 denorm=3 precision=0 passed\ngroup rounding=1 denorm=3 precision=512 passed\ngroup rounding=1 denorm=3 precision=768 passed\ngroup rounding=2 denorm=0 precision=0 passed\ngroup rounding=2 denorm=0 precision=512 passed\ngroup rounding=2 denorm=0 precision=768 passed\ngroup rounding=2 denorm=1 precision=0 passed\ngroup rounding=2 denorm=1 precision=512 passed\ngroup rounding=2 denorm=1 precision=768 passed\ngroup rounding=2 denorm=2 precision=0 passed\ngroup rounding=2 denorm=2 precision=512 passed\ngroup rounding=2 denorm=2 precision=768 passed\ngroup rounding=2 denorm=3 precision=0 passed\ngroup rounding=2 denorm=3 precision=512 passed\ngroup rounding=2 denorm=3 precision=768 passed\ngroup rounding=3 denorm=0 precision=0 passed\ngroup rounding=3 denorm=0 precision=512 passed\ngroup rounding=3 denorm=0 precision=768 passed\ngroup rounding=3 denorm=1 precision=0 passed\ngroup rounding=3 denorm=1 precision=512 passed\ngroup rounding=3 denorm=1 precision=768 passed\ngroup rounding=3 denorm=2 precision=0 passed\ngroup rounding=3 denorm=2 precision=512 passed\ngroup rounding=3 denorm=2 precision=768 passed\ngroup rounding=3 denorm=3 precision=0 passed\ngroup rounding=3 denorm=3 precision=512 passed\ngroup rounding=3 denorm=3 precision=768 passed\nCLONE PASS two_allocations original_source_and_clones_match immutable_bindings=1\nPASS comparisons=139920 failures=0 masked_fp_state_matched=1\ndependency 00401950 calls=154176\ndependency 004269B0 calls=209088\ndependency 004389D0 calls=131904\ndependency 00462F90 calls=105600\ndependency 0088F5D0 calls=38016\ndependency 0089EA80 calls=209088\ndependency 008AADC0 calls=559680\ndependency 008AE670 calls=38016\ndependency 0091A050 calls=103488\ndependency 0091A0A0 calls=103488\ndependency 00922850 calls=416064\ndependency 00924E80 calls=204864\ndependency 00976E90 calls=105600\ndependency 0097D7C0 calls=105600\ndependency 00987730 calls=84960\ndependency 009A9CF0 calls=933504\ndependency 009BE5D0 calls=416064\ndependency 009BE7D0 calls=209088\ndependency 009BEE70 calls=206976\ndependency 009BEED0 calls=416064\ndependency 009BFD80 calls=331584\ndependency 009E6630 calls=416064\ndependency 00AA80D0 calls=103488\ndependency 00AA83F0 calls=103488\ndependency 00AB3B60 calls=103488\ndependency 00AFE160 calls=38016\ndependency 00AFEA00 calls=38016\nvirtual 59 calls=209088\nvirtual 3 calls=103488",
+                        "bank":  "update",
+                        "exe_sha256":  "b904d7d47d87da4c7ef864e5decd553b44d2595414e77382ea891fc4e6476569",
+                        "exit_code":  0
+                    },
+                    {
+                        "output":  "CLONE PASS two_allocations original_source_and_clones_match immutable_bindings=1\nPASS comparisons=2457600 failures=0 return_AL_buffers_trace_x87_MXCSR_matched=1",
+                        "bank":  "value-adjust",
+                        "exe_sha256":  "fc4091aae4f1eed57269244b937f8f7d38670b1c6ad1f8f6c17deb75300beb2d",
+                        "exit_code":  0
+                    },
+                    {
+                        "output":  "CLONE PASS two_allocations original_source_and_clones_match immutable_bindings=1\nPASS comparisons=74448 failures=0 mapped_tables_full_buffers_ordered_trace_fp_state_matched=1\ndependency 004255A0 calls=1560\ndependency 00426780 calls=92856\ndependency 00426910 calls=12672\ndependency 00462F90 calls=92928\ndependency 00785EB0 calls=528\ndependency 0089E300 calls=26256\ndependency 008FF470 calls=41712\ndependency 00924E80 calls=1536\ndependency 009252D0 calls=768\ndependency 00987730 calls=4224\ndependency 0099C5E0 calls=4704\ndependency 009A9CF0 calls=46176\ndependency 009AA330 calls=20660\ndependency 009AC110 calls=4224\ndependency 009ADB90 calls=240\ndependency 009B3B00 calls=14832\ndependency 009BE4A0 calls=4224\ndependency 009BE5D0 calls=297792\ndependency 009C5D60 calls=1056\njump_mode 2 calls=2308\njump_mode 3 calls=2308\njump_mode 4 calls=2308\njump_mode 5 calls=2308\njump_mode 20 calls=2068\njump_mode 21 calls=2068\njump_mode 22 calls=2068\njump_mode 23 calls=2068",
+                        "bank":  "input-select",
+                        "exe_sha256":  "c4cea004c3d44df040509cfe6e63a0403e181deb9dafb6ba8a5241a833be43a2",
+                        "exit_code":  0
+                    }
+                ],
+    "clone_executions":  5343936,
+    "fixture_cases_exhaustive":  false,
+    "native_clones_executed":  true,
+    "concurrent_execution_tested":  false,
+    "templates_origin":  "Compiled reconstructed source COFF snapshots",
+    "hooks_installed":  false,
+    "scenario_counts":  {
+                            "Adjust":  2457600,
+                            "Select":  74448,
+                            "Update":  139920
+                        },
+    "allocations_per_body":  2,
+    "hashes":  {
+                   "reversing/CPlayerPed/native-clone/check-input-select.cpp":  "04907d0cef8e53d28d93b0a311560afd4abcf8b7fb714d3f6bad67e776a48a08",
+                   "reversing/CPlayerPed/generate-clone-checks.py":  "b47671ac0e1f4ecf261f5d10167292a828e68dd72c8fb9f7232da0bf9d0b455d",
+                   "reversing/CPlayerPed/native-clone/check-value-adjust.cpp":  "8aeaedca93188cb10b666148462afa6ac41476b93a1e2033031689c71112e5aa",
+                   "reversing/CPlayerPed/native-clone/check-update.cpp":  "72e45d8f4d1dd9fab05ab9b3522af6ef3c8040885ed68dfd094d87fab1a3f9f7",
+                   "reversing/CPlayerPed/native-clone/templates.h":  "435226a030fc7a0d59b5d90a35b24e5c0ef7bcd2ead21bbf1ad42da8285599cb",
+                   "reversing/CPlayerPed/CoffClone.h":  "677eb1e06507744df1efea089832e512f3156fa05c97e7ed617ac93d81be5822",
+                   "reversing/CPlayerPed/native-clone/check-native-resolver.cpp":  "d67c56c6fe3abebc91442dd593366f3ca5e4d41ef093453a5a0ae3cc048af4c3",
+                   "reversing/CPlayerPed/native-clone/check-loader-contract.cpp":  "d320b57a4746548c518f66c32caab2c56faa039672cf1f717369a7474d60eded",
+                   "reversing/CPlayerPed/native-clone/check-observer-bridge.cpp":  "c71a9b6bd6acfdc7f84095bd14b5460070148ded5bb323a268b9841b117df224"
+               },
+    "game_runtime_validated":  false
 }

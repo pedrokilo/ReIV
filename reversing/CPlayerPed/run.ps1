@@ -7,7 +7,7 @@ $implementationHash=(Get-FileHash -LiteralPath $implementation -Algorithm SHA256
 $probeHash=(Get-FileHash -LiteralPath (Join-Path $repoRoot 'source/hooks/PlayerPedProbe.h') -Algorithm SHA256).Hash.ToLower()
 $asiHash=(Get-FileHash -LiteralPath (Join-Path $repoRoot 'bin/ReIV.asi') -Algorithm SHA256).Hash.ToLower()
 $additionalSources=[ordered]@{}
-Get-ChildItem -LiteralPath (Join-Path $repoRoot 'source/game/Peds') -Filter 'PlayerPed*.h' | ForEach-Object {
+Get-ChildItem -Path (Join-Path (Join-Path $repoRoot 'source/game/Peds') '*') -Include 'PlayerPed*.h','PlayerPed*.cpp' | ForEach-Object {
     $additionalSources[('source/game/Peds/'+$_.Name)]=(Get-FileHash -LiteralPath $_.FullName -Algorithm SHA256).Hash.ToLower()
 }
 $started=Get-Date

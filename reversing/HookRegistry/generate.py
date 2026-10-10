@@ -12,6 +12,8 @@ FIELDS = "class fn_name address reversed locked validated type rva exe_sha256 en
 def main():
     entries = json.loads(Path(__file__).with_name("catalog.json").read_text())
     from sdk_refs import load as load_references
+    revalidation_path = ROOT / "reversing/CPlayerPed/evidence/cpp-split-revalidation.json"
+    revalidation = json.loads(revalidation_path.read_text(encoding="utf-8")) if revalidation_path.exists() else {}
     names_by_address, _ = load_references(ROOT)
     for row in entries:
         evidence = json.loads((ROOT / row["evidence"]).read_text(encoding="utf-8-sig"))
@@ -24,6 +26,11 @@ def main():
         matches = hashlib.sha256((ROOT / row["source"]).read_bytes()).hexdigest() == expected
         for source, digest in evidence.get("additional_source_sha256", {}).items():
             matches = matches and hashlib.sha256((ROOT / source).read_bytes()).hexdigest() == digest
+        if not matches:
+            # Revalidacion tras mover cuerpos de .h a .cpp: valida solo si todos los hashes actuales coinciden.
+            item = revalidation.get("items", {}).get(Path(row["source"]).name)
+            matches = bool(item) and revalidation.get("passed") is True and all(
+                hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == digest for path, digest in item["sources"].items())
         row["source_matches_evidence"] = int(matches)
         row["reference_names"] = ";".join(names_by_address.get(row["address"].lower(), []))
     for filename, rows in (("hooks.csv", entries), ("hooks_notiv.csv", [])):

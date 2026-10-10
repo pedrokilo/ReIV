@@ -15,6 +15,16 @@ CANONICAL = 'ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c'
 def read(path):
     return json.loads((ROOT / path).read_text(encoding='utf-8-sig'))
 
+def revalidated(source):
+    """True si cpp-split-revalidation.json cubre este header y los hashes actuales de .h y .cpp coinciden."""
+    path = ROOT / 'reversing/CPlayerPed/evidence/cpp-split-revalidation.json'
+    if not path.exists():
+        return False
+    data = json.loads(path.read_text(encoding='utf-8'))
+    item = data.get('items', {}).get(Path(source).name)
+    return bool(item) and data.get('passed') is True and all(
+        hashlib.sha256((ROOT / p).read_bytes()).hexdigest() == d for p, d in item['sources'].items())
+
 def main():
     groups = [
         ('PlayerPedDestruction.h', 'reversing/CPlayerPed/evidence/destruction-validation.json', [('Destroy', '005C1E60'), ('DestroyDeleting', '005C2260')]),
@@ -64,7 +74,7 @@ def main():
         expected = evidence.get('implementation_sha256')
         if expected is None:
             expected = evidence.get('hashes', evidence.get('source_sha256', {}))[source]
-        assert hashlib.sha256((ROOT / source).read_bytes()).hexdigest() == expected, source
+        assert hashlib.sha256((ROOT / source).read_bytes()).hexdigest() == expected or revalidated(source), source
         exe_hash = evidence.get('exe_sha256')
         if exe_hash is None:
             fixture_path = evidence.get('fixture', evidence.get('fixtures'))

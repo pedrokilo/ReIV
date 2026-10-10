@@ -67,6 +67,13 @@
     <ClCompile Include="..\source\core\DebugLog.cpp" />
     <ClCompile Include="..\source\game\scene\CDynamicEntity.cpp" />
     <ClCompile Include="..\source\game\Peds\PlayerPedCounter.cpp" />
+    <ClCompile Include="..\source\game\Peds\PlayerPedActionRange.cpp" />
+    <ClCompile Include="..\source\game\Peds\PlayerPedActionRequest.cpp" />
+    <ClCompile Include="..\source\game\Peds\PlayerPedActionSelection.cpp" />
+    <ClCompile Include="..\source\game\Peds\PlayerPedFloatCopy.cpp" />
+    <ClCompile Include="..\source\game\Peds\PlayerPedProtectedValue.cpp" />
+    <ClCompile Include="..\source\game\Peds\PlayerPedReceiverHelpers.cpp" />
+    <ClCompile Include="..\source\game\Peds\PlayerPedStateHelpers.cpp" />
     <ClCompile Include="..\source\game\Peds\PlayerPedAccumulation.cpp" />
     <ClCompile Include="..\source\game\Peds\PlayerPedConstruction.cpp" />
     <ClCompile Include="..\source\game\Peds\PlayerPedControl.cpp" />
