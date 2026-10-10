@@ -1,0 +1,135 @@
+[
+  {
+    "va": "0x4255a0",
+    "pop": 0,
+    "stack_words": 1,
+    "thiscall": false,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x426780",
+    "pop": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x426910",
+    "pop": 8,
+    "stack_words": 2,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x462f90",
+    "pop": 0,
+    "stack_words": 0,
+    "thiscall": false,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x785eb0",
+    "pop": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x89e300",
+    "pop": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x8ff470",
+    "pop": 0,
+    "stack_words": 0,
+    "thiscall": false,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x924e80",
+    "pop": 0,
+    "stack_words": 1,
+    "thiscall": false,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x9252d0",
+    "pop": 4,
+    "stack_words": 1,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x987730",
+    "pop": 0,
+    "stack_words": 6,
+    "thiscall": false,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x99c5e0",
+    "pop": 0,
+    "stack_words": 1,
+    "thiscall": false,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x9a9cf0",
+    "pop": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x9aa330",
+    "pop": 16,
+    "stack_words": 4,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x9ac110",
+    "pop": 12,
+    "stack_words": 3,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x9adb90",
+    "pop": 0,
+    "stack_words": 0,
+    "thiscall": false,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x9b3b00",
+    "pop": 0,
+    "stack_words": 1,
+    "thiscall": false,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x9be4a0",
+    "pop": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x9be5d0",
+    "pop": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  },
+  {
+    "va": "0x9c5d60",
+    "pop": 4,
+    "stack_words": 1,
+    "thiscall": true,
+    "evidence": "Canonical callee RET;4255A0 tail98CA30 has RET0"
+  }
+]

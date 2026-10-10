@@ -1,0 +1,74 @@
+[
+  {
+    "va": "0x9be5f0",
+    "status": "pending_receiver_adjudication",
+    "reason": "proximity and decompilation alone do not establish player method ownership",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9be790",
+    "status": "pending_receiver_adjudication",
+    "reason": "proximity and decompilation alone do not establish player method ownership",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9bee90",
+    "status": "pending_receiver_adjudication",
+    "reason": "proximity and decompilation alone do not establish player method ownership",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9beef0",
+    "status": "pending_receiver_adjudication",
+    "reason": "proximity and decompilation alone do not establish player method ownership",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9bef20",
+    "status": "pending_receiver_adjudication",
+    "reason": "proximity and decompilation alone do not establish player method ownership",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9bef70",
+    "status": "pending_receiver_adjudication",
+    "reason": "proximity and decompilation alone do not establish player method ownership",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9bf070",
+    "status": "implemented_player_receiver_caller",
+    "reason": "CPlayerInfo+58C receiver correlation and same receiver sequence",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9bf250",
+    "status": "pending_receiver_adjudication",
+    "reason": "proximity and decompilation alone do not establish player method ownership",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9bf2d0",
+    "status": "implemented_player_receiver_caller",
+    "reason": "same receiver follows proved player-state helper at7B7C82",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9bf310",
+    "status": "implemented_player_receiver_caller",
+    "reason": "nonnull ECX and player219 flag at callsites",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9bf360",
+    "status": "excluded_static_helper",
+    "reason": "explicit parameter predicate; no receiver use",
+    "defining_cpp_class_confirmed": false
+  },
+  {
+    "va": "0x9c0a70",
+    "status": "excluded_static_helper",
+    "reason": "static pool handle reference helper; no player receiver",
+    "defining_cpp_class_confirmed": false
+  }
+]

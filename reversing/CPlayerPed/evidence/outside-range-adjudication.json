@@ -1,0 +1,108 @@
+{
+  "schema": 1,
+  "class_inventory_exhaustive": false,
+  "remaining_confirmed_player_receiver_body": {
+    "va": "0x9bf250",
+    "complete_body_size": 114,
+    "incoming_thiscall_receiver_confirmed": true,
+    "original_defining_cpp_class_unknown": true,
+    "proof": [
+      {
+        "caller": "0x9274c0",
+        "body_ranges": [
+          {
+            "start": "0x9274c0",
+            "end": "0x9274ec"
+          },
+          {
+            "start": "0x9274f0",
+            "end": "0x927f9e"
+          }
+        ],
+        "trace": [
+          "0x927c39: PUSH 0x0",
+          "0x927c3b: CALL 0x009bfd20",
+          "0x927c40: MOV ECX, dword ptr [ESI + 0x58c]",
+          "0x927c46: CALL 0x009bf250"
+        ]
+      },
+      {
+        "caller": "0xb91d70",
+        "body_ranges": [
+          {
+            "start": "0xb91d70",
+            "end": "0xb91d7b"
+          }
+        ],
+        "trace": [
+          "0xb91d70: CALL 0x00817f40",
+          "0xb91d75: MOV ECX, EAX",
+          "0xb91d77: JMP 0x009bf250"
+        ]
+      }
+    ],
+    "source_evidence": "rea-seven-player-callers.json",
+    "dependencies": [
+      "0x4389d0 player link receiver",
+      "0xa66b70 indexed receiver global1662178+handle*5C, argumentindex",
+      "virtualslot12 player receiver argument1"
+    ],
+    "body_reconstruction_pending_at_snapshot": true
+  },
+  "excluded_member_attribution": [
+    {
+      "va": "0x9bee90",
+      "reason": "Four stack arguments and caller cleanup; no incomingECX preserved. Auxiliary, exact ABI/memberstatic identity pending."
+    },
+    {
+      "va": "0x9bf360",
+      "reason": "Complete canonical body reads explicit stackentity; ECX overwritten scratch; RET4 on both exits. Auxiliary callee-cleaned helper; not inferred thiscall."
+    },
+    {
+      "va": "0x9c0a70",
+      "reason": "Full39bytes overwritesECX from global13D9A38, readsstackindex, RET0. Pool/reference helper cdecl; input not player receiver."
+    }
+  ],
+  "outside_range_confirmed_player_consumers": [
+    {
+      "va": "0xb92a00",
+      "player_source": "CALL817F20(index) then +58C",
+      "operation": "WritesbyteEA7 fromstackarg2; nullplayer guard",
+      "role": "script wrapper cdecl, not incomingplayer thiscall"
+    },
+    {
+      "va": "0xb92b90",
+      "player_source": "CALL817F20(index) then +58C",
+      "operation": "WritesDWORD EF4=2",
+      "role": "script wrappercdecl, not incomingplayer thiscall"
+    },
+    {
+      "va": "0x9c56e0",
+      "player_source": "CALL817F40 currentplayer",
+      "operation": "ReadsDWORD EF4>0 alongside explicitargument encodedinput295C..296E",
+      "role": "stackargumenthelper RET4, not incomingplayer thiscall"
+    }
+  ],
+  "new_embedded_dependency_candidates": [
+    {
+      "va": "0x88f660",
+      "receiver": "player+E7C",
+      "caller_evidence": [
+        "0xa606f3 LEAECX[EDI+E7C];CALLA606FC88F660",
+        "0x9b431a LEAECX[EBX+E7C];CALL9B432388F660"
+      ],
+      "body_reconstructed": false,
+      "own_CPlayerPed_receiver": false,
+      "scope": "Auxiliaryembeddedcomponent; callerboundaryproof and callee body pending"
+    }
+  ],
+  "scan_limits": {
+    "raw_instruction_candidates": 397,
+    "raw_function_candidates": 133,
+    "aligned_instruction_candidates": 316,
+    "aligned_function_candidates": 119,
+    "excluded_unaligned_or_stale_bounds": 81,
+    "scope": "PE executable sections disp32 memory offsetsE7C..EF4 excludingESP/EBP,outside9BE000..9C4000; not whole-program ECX/dataflow enumeration",
+    "own_player_method_outside_range_confirmed": []
+  }
+}

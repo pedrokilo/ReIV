@@ -1,0 +1,90 @@
+{
+  "passed": true,
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "asi_sha256": "8c94f053bfebd3a0fd3d3c22f0050ae7f5e95d4efcba17a31a1db712a1616ef5",
+  "implementation_sha256": "1618353380cf990df8695e1ac51b93325eaacf4f920627073683f66bb9139d0a",
+  "probe_sha256": "af32f044ca5c4afe86cbfa761888d92804b9ff00c096ce1142a011d4d7b949e2",
+  "additional_source_sha256": {
+    "source/game/Peds/PlayerPedAccumulation.h": "058d1598989c017806387a9ebe0768a968c2da25ef517ae31eb75f5305c19182",
+    "source/game/Peds/PlayerPedActionRange.h": "2ced4f992159205d8b16a399d73c365cce71bf669ce1a8a61324a8b30a7cd858",
+    "source/game/Peds/PlayerPedActionRequest.h": "f91f89120f243da59d8053285a94d7938a6d55d42c078af17f6d707e1e34b243",
+    "source/game/Peds/PlayerPedConstruction.h": "4e909879619d4cfcf104467388154e59a6054daed746e75b37e6c7e38f5bae49",
+    "source/game/Peds/PlayerPedControl.h": "c0228ce6cd13d80642f6ea0ea0e91526a071c238ce25f508d6ce4004b9c8af68",
+    "source/game/Peds/PlayerPedCounter.h": "8ae5fddb57d6171d6b30178e879feccd53870184293c7755b78566b4adbfef8c",
+    "source/game/Peds/PlayerPedDestruction.h": "7de976f75a22ae627b8d108924ff53ee420b7fb8e8a0a598da6c51dcc3abe0b9",
+    "source/game/Peds/PlayerPedExtraFields.h": "1fdcade217752d1af803eff5e852c5e1772b4ede54efc3798fdb47492585a02a",
+    "source/game/Peds/PlayerPedFloatCopy.h": "38304005a214d44154b5084fbb194d328ce6bb4c3ec3a13f8994fef70b08e12a",
+    "source/game/Peds/PlayerPedInputSelection.h": "05f32ef6b09ed86af00b8141f6ece3e48f8ae4a599d3ef0a92564a94707d49ab",
+    "source/game/Peds/PlayerPedLayout.h": "cf116cf19c854ef9c4d9701f790a35b971592f427890fcaad22df6ba8fdb9948",
+    "source/game/Peds/PlayerPedModelReset.h": "163526e1eac02c5d76363115e7f994ed841137c15695b8711587192d2ea3c880",
+    "source/game/Peds/PlayerPedNonvirtual.h": "ebb2834b8a7b9af30515c027586b369fe37c42c5cc13f872542824a9337b8079",
+    "source/game/Peds/PlayerPedProtectedValue.h": "f8b0a0fecfade363781377e5d495227414eaf95fc05a30222fbb9e9a5b0a7bfd",
+    "source/game/Peds/PlayerPedReferenceClear.h": "30ae34a8c195267335b88bda32198c6651a1d20af13514d1a2a23802ad98900d",
+    "source/game/Peds/PlayerPedStateHelpers.h": "748c1ad2b307c7414428c39bfe9e4e94752bc4c2a37d555dc5e34467abc2dea7",
+    "source/game/Peds/PlayerPedUpdate.h": "1b07c4f36a9fef859a3f361b32fb819112e95276e1d720f02fb171869d4c2d97",
+    "source/game/Peds/PlayerPedValueAdjustment.h": "84036a3bba98e3be804478614d56f5a17b4bccf3d00607c513ca96603954a978"
+  },
+  "result": {
+    "passed": true,
+    "samples_per_method": 64,
+    "comparisons": 768,
+    "method_count": 12,
+    "accumulator_scope": "isolated-buffer-only",
+    "extra_fields_scope": "isolated-buffer-only",
+    "failures": 0,
+    "exceptions": 0,
+    "player": "0x071567F0",
+    "live_writes": "same-value only",
+    "replacement_installed": false
+  },
+  "baseline": {
+    "date": "2026-10-09T23:59:52.2756486-06:00",
+    "passed": true,
+    "forced_stop": false,
+    "exit_code": 0,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "asi_sha256": "8c94f053bfebd3a0fd3d3c22f0050ae7f5e95d4efcba17a31a1db712a1616ef5",
+    "wrapper_sha256": "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
+    "probe_sha256": "c9eac0fd31fbefba9520983f372ca49332c17935501fbf6dd3f47ce5d69b7970",
+    "result": {
+      "phase": "passed",
+      "rva": "0x005c7710",
+      "bone_index": 0,
+      "calls": 64,
+      "failures": 0,
+      "exceptions": 0,
+      "ticks": 253,
+      "entity": "0x071567F0",
+      "matrix": "0x0876ED60",
+      "position": [
+        -0.00069932302,
+        -0.000993386027,
+        -0.0100673493
+      ],
+      "game_loaded": true,
+      "ingame_started": false
+    },
+    "evidence_directory": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261009-235901",
+    "console": {
+      "console_window": "0x005E2340",
+      "visible": true,
+      "writable": true,
+      "always_enabled": true
+    },
+    "atStringHash": {
+      "phase": "process_detach",
+      "rva": "0x1b1c30",
+      "bank_pairs": 8320,
+      "bank_failures": 0,
+      "hooked": true,
+      "hook_calls": 368056,
+      "runtime_pairs": 4096,
+      "runtime_failures": 0,
+      "game_loaded": true,
+      "ingame_started": true,
+      "script_ticks": 254
+    },
+    "atStringHash_passed": true
+  },
+  "scope": "Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed."
+}

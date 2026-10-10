@@ -24,6 +24,8 @@
 #include "../hooks/ARTComplexProbe.h"
 #include "../hooks/DestructorModeProbe.h"
 #include "../hooks/RageComplexProbe.h"
+#include "../hooks/PlayerPedProbe.h"
+#include "../hooks/PlayerPedNativeProbe.h"
 
 namespace {
 #define Log(message) REIV_INFO("%s", message)
@@ -89,6 +91,10 @@ void plugin::gameStartupEvent() {
     processScriptsEvent::Add(artcomplex::Tick);
     destructormode::Initialize();
     processScriptsEvent::Add(destructormode::Tick);
+    playerprobe::Initialize();
+    processScriptsEvent::Add(playerprobe::Tick);
+    playernativeprobe::Initialize();
+    processScriptsEvent::Add(playernativeprobe::Tick);
     ragecomplex::Initialize();
     processScriptsEvent::Add(ragecomplex::Tick);
     Log(hashprobe::Install() ? "atStringHash bank passed; replacement installed"
@@ -99,6 +105,7 @@ void plugin::gameStartupEvent() {
 
 BOOL APIENTRY DllMain(HMODULE module, DWORD reason, LPVOID reserved) {
     if (reason == DLL_PROCESS_DETACH) {
+        if (playernativeprobe::installed) playernativeprobe::Restore();
         hashprobe::Report("process_detach");
         Log("ReIV process detach");
     }

@@ -1,0 +1,37 @@
+{
+  "schema": 1,
+  "native_class_abi_complete": false,
+  "required_binary_contracts": [
+    {
+      "dependency": "0x8abf10 CPed constructor",
+      "known": "CPlayerPed constructor calls base on originalplayer, two stackwords a1/a2 in canonical order.",
+      "missing": "Reconstructfullbasebody, all transitive member initializers, field extents, own basevtable install, exception/lifetime contracts; deterministiccallback substitution didnotvalidateintegration."
+    },
+    {
+      "dependency": "0x8ac1e0 CPed destructor",
+      "known": "CPlayerPed destructor finalJMP preservesoriginalreceiver; deletingwrapper flags&1 releasespedpool slot afterward.",
+      "missing": "Reconstructbase destructor and transitive member cleanup, allocation ownership, base/subobject boundaries; callback bodycomparison is not full lifetimeimplementation."
+    },
+    {
+      "dependency": "CPlayerPed dependent subsystems",
+      "known": "Own bodies have explicitcallback arguments/order and canonicalfloat/global behavior.",
+      "missing": "Native binding for every callback including caller/calleecleanup, AL vsEAX, x87 ST0, callee-savedregisters, liveglobal relocation, reentrancy/globalread invariants. Embedded protectedhandles,xliveordinal5020/5021,playerlinks1662170 indexedtable andcomponentmodelsEA8 lifetime."
+    },
+    {
+      "dependency": "Layout/storage",
+      "known": "PoolstrideF00,minimumobservedEF8,82virtualslots77targets,fieldoffsets and actual accesswidths,observedstorageview.",
+      "missing": "ExactC++CPedbaseextent, embeddedE80 componentextent, complete inheritance ABI and unobservedbytesEF8..EFF semantics; cannot derive by empty SDK CPed/CPlayerPedbothF00."
+    },
+    {
+      "dependency": "Exhaustive callable surface",
+      "known": "18initialcandidates,12neighbors,82vtable slots; source bodies and proofledgers.",
+      "missing": "Whole-PEnonvirtual receiver dataflow/callers, derivedsubclassusage, inherited64sharedslots behavior, independentmember/static declaration identities."
+    }
+  ],
+  "semantic_names_not_required_for_behavior": [
+    "Readable originalmethod names can remain VA-based if ABI and algorithm verified.",
+    "Gameplay meanings offieldEBC/EF0/EF4/counterEB0 can remain offset labels; exactwidth and memoryorder required.",
+    "Global andembeddedclass names may remainaddress-based; nativecontracts,ownershipand extent must be correct."
+  ],
+  "snapshot_limits": "Some bodies are sourcealgorithms with explicitdependencies or ASM instruction reconstruction; that validates scope only, not nativeclass completion."
+}

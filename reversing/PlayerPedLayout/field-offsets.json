@@ -1,0 +1,308 @@
+[
+  {
+    "offset": "0x0",
+    "width": 4,
+    "name": "vtable_address",
+    "evidence": "ctor009C1930; RTTI vtable"
+  },
+  {
+    "offset": "0x20",
+    "width": 4,
+    "name": "matrix_address",
+    "evidence": "update009C0B00; SDK CEntity+20"
+  },
+  {
+    "offset": "0x28",
+    "width": 4,
+    "name": "entity_flags_28",
+    "evidence": "update009C0B00; SDK CEntity+28"
+  },
+  {
+    "offset": "0x63",
+    "width": 1,
+    "name": "alpha_63",
+    "evidence": "ctor009C1BFA; SDK CEntity+63"
+  },
+  {
+    "offset": "0x68",
+    "width": 4,
+    "name": "field_68",
+    "evidence": "ctor009C1BB0"
+  },
+  {
+    "offset": "0x6c",
+    "width": 4,
+    "name": "network_object_address",
+    "evidence": "slot47 009C1E10; SDK CEntity+6C"
+  },
+  {
+    "offset": "0x118",
+    "width": 4,
+    "name": "physical_flags_118",
+    "evidence": "update009C0B00; SDK CPhysical+118"
+  },
+  {
+    "offset": "0x210",
+    "width": 1,
+    "name": "dead_flag_210",
+    "evidence": "helper0089E5A0; SDK CPed"
+  },
+  {
+    "offset": "0x211",
+    "width": 1,
+    "name": "injured_flag_211",
+    "evidence": "helper0089E5A0; SDK CPed"
+  },
+  {
+    "offset": "0x212",
+    "width": 1,
+    "name": "fatal_injury_flag_212",
+    "evidence": "helper0089E5A0; SDK CPed"
+  },
+  {
+    "offset": "0x214",
+    "width": 4,
+    "name": "health_bits_214",
+    "evidence": "helper0089E5A0; SDK CPed"
+  },
+  {
+    "offset": "0x218",
+    "width": 1,
+    "name": "player_index_218",
+    "evidence": "ctor009C1A5C; SDK CPed"
+  },
+  {
+    "offset": "0x219",
+    "width": 1,
+    "name": "is_player_219",
+    "evidence": "ctor009C1A64; SDK CPed"
+  },
+  {
+    "offset": "0x21c",
+    "width": 4,
+    "name": "drawable_info_address",
+    "evidence": "ctor009C1A50; SDK CPed"
+  },
+  {
+    "offset": "0x224",
+    "width": 4,
+    "name": "intelligence_address",
+    "evidence": "ctor009C1B5D; SDK CPed"
+  },
+  {
+    "offset": "0x228",
+    "width": 4,
+    "name": "player_info_address",
+    "evidence": "ctor009C19DE; SDK CPed"
+  },
+  {
+    "offset": "0x260",
+    "width": 4,
+    "name": "ped_flags_260",
+    "evidence": "ctor009C1ACC; SDK CPed"
+  },
+  {
+    "offset": "0x26c",
+    "width": 4,
+    "name": "ped_flags_26c",
+    "evidence": "update009C0B00; SDK CPed"
+  },
+  {
+    "offset": "0x29c",
+    "width": 4,
+    "name": "field_29c",
+    "evidence": "update009C0B00 index0xA7"
+  },
+  {
+    "offset": "0x2dc",
+    "width": 4,
+    "name": "weapon_object_address",
+    "evidence": "update009C0B00 index0xB7; SDK CPed"
+  },
+  {
+    "offset": "0x3a8",
+    "width": 4,
+    "name": "field_3a8",
+    "evidence": "update009C0B00 index0xEA"
+  },
+  {
+    "offset": "0x7c4",
+    "width": 4,
+    "name": "field_7c4",
+    "evidence": "update009C0B00 index0x1F1"
+  },
+  {
+    "offset": "0xa84",
+    "width": 4,
+    "name": "field_a84",
+    "evidence": "update009C0B00 index0x2A1"
+  },
+  {
+    "offset": "0xa94",
+    "width": 4,
+    "name": "max_health_bits_a94",
+    "evidence": "ctor009C1AEA; SDK CPed"
+  },
+  {
+    "offset": "0xac0",
+    "width": 4,
+    "name": "field_ac0",
+    "evidence": "update009C0B00 index0x2B0"
+  },
+  {
+    "offset": "0xb38",
+    "width": 4,
+    "name": "field_b38",
+    "evidence": "update009C0B00 index0x2CE"
+  },
+  {
+    "offset": "0xb40",
+    "width": 4,
+    "name": "vehicle_address",
+    "evidence": "update009C0B00 index0x2D0; SDK CPed"
+  },
+  {
+    "offset": "0xb90",
+    "width": 4,
+    "name": "field_b90",
+    "evidence": "update009C0B00 index0x2E4"
+  },
+  {
+    "offset": "0xe70",
+    "width": 1,
+    "name": "field_e70",
+    "evidence": "ctor009C1B40"
+  },
+  {
+    "offset": "0xe71",
+    "width": 1,
+    "name": "field_e71",
+    "evidence": "ctor009C1B63"
+  },
+  {
+    "offset": "0xe74",
+    "width": 4,
+    "name": "field_e74",
+    "evidence": "ctor009C1B34"
+  },
+  {
+    "offset": "0xe78",
+    "width": 4,
+    "name": "field_e78",
+    "evidence": "ctor009C1B3A"
+  },
+  {
+    "offset": "0xe7c",
+    "width": 4,
+    "name": "self_address_e7c",
+    "evidence": "ctor009C1BCE"
+  },
+  {
+    "offset": "0xea4",
+    "width": 1,
+    "name": "field_ea4",
+    "evidence": "ctor0x009c1c04"
+  },
+  {
+    "offset": "0xea5",
+    "width": 1,
+    "name": "field_ea5",
+    "evidence": "ctor0x009c1c0a"
+  },
+  {
+    "offset": "0xea6",
+    "width": 1,
+    "name": "field_ea6",
+    "evidence": "ctor0x009c1bfe"
+  },
+  {
+    "offset": "0xea7",
+    "width": 1,
+    "name": "field_ea7",
+    "evidence": "ctor0x009c1c10"
+  },
+  {
+    "offset": "0xea8",
+    "width": 4,
+    "name": "component_models_address",
+    "evidence": "ctor009C1BF4; SDK CPed"
+  },
+  {
+    "offset": "0xeac",
+    "width": 4,
+    "name": "protected_handle_eac",
+    "evidence": "helpers00447610/00447640"
+  },
+  {
+    "offset": "0xeb0",
+    "width": 4,
+    "name": "counter_eb0",
+    "evidence": "ctor009C1C16; helper009BE610"
+  },
+  {
+    "offset": "0xeb4",
+    "width": 4,
+    "name": "counter_eb4",
+    "evidence": "ctor009C1C1C; helper009BE610"
+  },
+  {
+    "offset": "0xeb8",
+    "width": 4,
+    "name": "field_eb8",
+    "evidence": "ctor009C1C22"
+  },
+  {
+    "offset": "0xebc",
+    "width": 4,
+    "name": "field_ebc",
+    "evidence": "slot75/78"
+  },
+  {
+    "offset": "0xec0",
+    "width": 16,
+    "name": "block_ec0",
+    "evidence": "slot76/79"
+  },
+  {
+    "offset": "0xed0",
+    "width": 16,
+    "name": "block_ed0",
+    "evidence": "slot77/80"
+  },
+  {
+    "offset": "0xee0",
+    "width": 4,
+    "name": "field_ee0",
+    "evidence": "ctor009C1C28"
+  },
+  {
+    "offset": "0xee4",
+    "width": 4,
+    "name": "field_ee4",
+    "evidence": "ctor009C1C30"
+  },
+  {
+    "offset": "0xee8",
+    "width": 4,
+    "name": "field_ee8",
+    "evidence": "ctor009C1C40"
+  },
+  {
+    "offset": "0xeec",
+    "width": 4,
+    "name": "field_eec",
+    "evidence": "ctor009C1C50"
+  },
+  {
+    "offset": "0xef0",
+    "width": 4,
+    "name": "field_ef0",
+    "evidence": "slot81; ctor009C1C58"
+  },
+  {
+    "offset": "0xef4",
+    "width": 4,
+    "name": "field_ef4",
+    "evidence": "ctor009C1C62"
+  }
+]

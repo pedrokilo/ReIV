@@ -1,0 +1,24 @@
+{
+  "timestamp_utc": "2026-10-10T05:16:22.296034+00:00",
+  "passed": true,
+  "comparisons": 256,
+  "failures": 0,
+  "return_and_ordered_events_and_three_4096_byte_buffers_compared": true,
+  "null_member_fault": "Both EXCEPTION_ACCESS_VIOLATION, expected original precondition",
+  "live_game_test": false,
+  "dependencies_reconstructed": false,
+  "dependency_mode": "Ten deterministic stubs; original calls/tail jump replaced; three absolute global operands relocated to local fixtures",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "hashes": {
+    "source/game/Peds/PlayerPedDestruction.h": "7de976f75a22ae627b8d108924ff53ee420b7fb8e8a0a598da6c51dcc3abe0b9",
+    "reversing/CPlayerPed/check-destructor.cpp": "a83e13ba79c12c0917306816414543e07783337da5cc3d196e732b9dc0731c5a",
+    "reversing/CPlayerPed/destruction-fixture.h": "b725a1a9d4d089b674249815ca50745838a3a592fdc0ff00a48f297e9b75c8a0",
+    "reversing/CPlayerPed/destruction_evidence.py": "56a3cbc38b05e467ebfa78d7b4a08197da15f9361fe68cead5d80f4de24ac549",
+    "build/check-destructor.exe": "f16ecb45186434823e4e61423410f869e77f4b62b12e6b0f8cee80ed7ada1ea5",
+    "build/cplayerped-destructor-patched.bin": "ac8edcd4e0ef2272bcd3e172dbd00456d388c574dd8f79b4a116fdcba2c2220a",
+    "build/cplayerped-destructor-baseline.bin": "3459ce4bdc507e6ccaf93c3f135d800a279b8937818582cbfb04ef27a2784ecc",
+    "build/cplayerped-destructor-reconstruction.bin": "3459ce4bdc507e6ccaf93c3f135d800a279b8937818582cbfb04ef27a2784ecc"
+  },
+  "output": "PASS comparisons=256 failures=0 null_member_access_violation=matched dependencies=deterministic_stubs",
+  "implementation_sha256": "7de976f75a22ae627b8d108924ff53ee420b7fb8e8a0a598da6c51dcc3abe0b9"
+}

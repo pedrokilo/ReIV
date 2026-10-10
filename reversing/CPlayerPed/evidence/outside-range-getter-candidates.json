@@ -1,0 +1,689 @@
+{
+  "candidate_functions": [
+    {
+      "candidate_function": "0x83f530",
+      "candidate_size": 473,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0x83f609",
+          "instruction": "mov ecx, dword ptr [esi + 0xe88]",
+          "offset": "0xe88",
+          "base_register": "esi",
+          "bytes": "8b8e880e0000",
+          "candidate_function": "0x83f530",
+          "candidate_body_bytes": "473",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0x83f658: add esp, 8",
+          "0x83f65b: cmp eax, 4",
+          "0x83f65e: jl 0x83f6fa",
+          "0x83f664: call 0x817f40",
+          "0x83f669: test eax, eax",
+          "0x83f66b: je 0x83f6fa",
+          "0x83f671: call 0x817f40",
+          "0x83f676: mov eax, dword ptr [eax + 0x20]",
+          "0x83f679: movss xmm1, dword ptr [eax + 0x34]",
+          "0x83f67e: subss xmm1, dword ptr [esp + 0x14]",
+          "0x83f684: movss xmm0, dword ptr [eax + 0x30]",
+          "0x83f689: subss xmm0, dword ptr [esp + 0x10]",
+          "0x83f68f: movss xmm2, dword ptr [eax + 0x38]",
+          "0x83f694: subss xmm2, dword ptr [esp + 0x18]",
+          "0x83f69a: add eax, 0x30",
+          "0x83f69d: movaps xmm3, xmm1",
+          "0x83f6a0: mulss xmm3, xmm1",
+          "0x83f6a4: movaps xmm1, xmm0",
+          "0x83f6a7: mulss xmm1, xmm0",
+          "0x83f6ab: movaps xmm0, xmm2",
+          "0x83f6ae: mulss xmm0, xmm2",
+          "0x83f6b2: addss xmm3, xmm1",
+          "0x83f6b6: addss xmm3, xmm0"
+        ],
+        [
+          "0x83f664: call 0x817f40",
+          "0x83f669: test eax, eax",
+          "0x83f66b: je 0x83f6fa",
+          "0x83f671: call 0x817f40",
+          "0x83f676: mov eax, dword ptr [eax + 0x20]",
+          "0x83f679: movss xmm1, dword ptr [eax + 0x34]",
+          "0x83f67e: subss xmm1, dword ptr [esp + 0x14]",
+          "0x83f684: movss xmm0, dword ptr [eax + 0x30]",
+          "0x83f689: subss xmm0, dword ptr [esp + 0x10]",
+          "0x83f68f: movss xmm2, dword ptr [eax + 0x38]",
+          "0x83f694: subss xmm2, dword ptr [esp + 0x18]",
+          "0x83f69a: add eax, 0x30",
+          "0x83f69d: movaps xmm3, xmm1",
+          "0x83f6a0: mulss xmm3, xmm1",
+          "0x83f6a4: movaps xmm1, xmm0",
+          "0x83f6a7: mulss xmm1, xmm0",
+          "0x83f6ab: movaps xmm0, xmm2",
+          "0x83f6ae: mulss xmm0, xmm2",
+          "0x83f6b2: addss xmm3, xmm1",
+          "0x83f6b6: addss xmm3, xmm0",
+          "0x83f6ba: sqrtss xmm0, xmm3",
+          "0x83f6be: comiss xmm0, dword ptr [0xd55f30]",
+          "0x83f6c5: jbe 0x83f6fa"
+        ]
+      ]
+    },
+    {
+      "candidate_function": "0x8b9290",
+      "candidate_size": 886,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0x8b9388",
+          "instruction": "lea edi, [esi + 0xe98]",
+          "offset": "0xe98",
+          "base_register": "esi",
+          "bytes": "8dbe980e0000",
+          "candidate_function": "0x8b9290",
+          "candidate_body_bytes": "886",
+          "entry_is_candidate_not_boundary_proof": true
+        },
+        {
+          "instruction_va": "0x8b937f",
+          "instruction": "cmp byte ptr [esi + 0xebe], 7",
+          "offset": "0xebe",
+          "base_register": "esi",
+          "bytes": "80bebe0e000007",
+          "candidate_function": "0x8b9290",
+          "candidate_body_bytes": "886",
+          "entry_is_candidate_not_boundary_proof": true
+        },
+        {
+          "instruction_va": "0x8b9443",
+          "instruction": "cmp byte ptr [esi + 0xebe], 0x10",
+          "offset": "0xebe",
+          "base_register": "esi",
+          "bytes": "80bebe0e000010",
+          "candidate_function": "0x8b9290",
+          "candidate_body_bytes": "886",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0x8b936b: jne 0x8b937f",
+          "0x8b936d: mov byte ptr [esp + 0xe], 1",
+          "0x8b9372: mov byte ptr [esp + 0xf], 1",
+          "0x8b9377: call 0x817f40",
+          "0x8b937c: push eax",
+          "0x8b937d: jmp 0x8b93b8",
+          "0x8b937f: cmp byte ptr [esi + 0xebe], 7",
+          "0x8b9386: jne 0x8b93b6",
+          "0x8b9388: lea edi, [esi + 0xe98]",
+          "0x8b938e: mov ecx, edi",
+          "0x8b9390: call 0xa33550",
+          "0x8b9395: test eax, eax",
+          "0x8b9397: je 0x8b93b6",
+          "0x8b9399: test byte ptr [esi + 0x1f00], 2",
+          "0x8b93a0: je 0x8b93b6",
+          "0x8b93a2: mov ecx, edi",
+          "0x8b93a4: mov byte ptr [esp + 0xe], 1",
+          "0x8b93a9: mov byte ptr [esp + 0xf], 0",
+          "0x8b93ae: call 0xa33550",
+          "0x8b93b3: push eax",
+          "0x8b93b4: jmp 0x8b93b8",
+          "0x8b93b6: push 0",
+          "0x8b93b8: mov ecx, esi"
+        ]
+      ]
+    },
+    {
+      "candidate_function": "0x8bb8b0",
+      "candidate_size": 1110,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0x8bba22",
+          "instruction": "mov byte ptr [esi + 0xebe], bl",
+          "offset": "0xebe",
+          "base_register": "esi",
+          "bytes": "889ebe0e0000",
+          "candidate_function": "0x8bb8b0",
+          "candidate_body_bytes": "1110",
+          "entry_is_candidate_not_boundary_proof": true
+        },
+        {
+          "instruction_va": "0x8bbcb2",
+          "instruction": "cmp byte ptr [esi + 0xebe], bl",
+          "offset": "0xebe",
+          "base_register": "esi",
+          "bytes": "389ebe0e0000",
+          "candidate_function": "0x8bb8b0",
+          "candidate_body_bytes": "1110",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0x8bb9d4: jl 0x8bba09",
+          "0x8bb9d6: movsx edx, al",
+          "0x8bb9d9: push edx",
+          "0x8bb9da: call 0x817f20",
+          "0x8bb9df: add esp, 4",
+          "0x8bb9e2: test eax, eax",
+          "0x8bb9e4: je 0x8bba02",
+          "0x8bb9e6: movsx eax, byte ptr [esi + 0x1f5a]",
+          "0x8bb9ed: mov edi, dword ptr [0x11dde74]",
+          "0x8bb9f3: push eax",
+          "0x8bb9f4: call 0x817f20",
+          "0x8bb9f9: add esp, 4",
+          "0x8bb9fc: mov dword ptr [eax + 0x4c8], edi",
+          "0x8bba02: mov byte ptr [esi + 0x1f5a], 0xff",
+          "0x8bba09: mov eax, dword ptr [esi + 0x28]",
+          "0x8bba0c: shr eax, 0xa",
+          "0x8bba0f: and eax, 0x1f",
+          "0x8bba12: mov ebx, 0x14",
+          "0x8bba17: je 0x8bba28",
+          "0x8bba19: cmp eax, 2",
+          "0x8bba1c: jne 0x8bbc79",
+          "0x8bba22: mov byte ptr [esi + 0xebe], bl",
+          "0x8bba28: mov edi, dword ptr [ebp + 8]"
+        ],
+        [
+          "0x8bb9e6: movsx eax, byte ptr [esi + 0x1f5a]",
+          "0x8bb9ed: mov edi, dword ptr [0x11dde74]",
+          "0x8bb9f3: push eax",
+          "0x8bb9f4: call 0x817f20",
+          "0x8bb9f9: add esp, 4",
+          "0x8bb9fc: mov dword ptr [eax + 0x4c8], edi",
+          "0x8bba02: mov byte ptr [esi + 0x1f5a], 0xff",
+          "0x8bba09: mov eax, dword ptr [esi + 0x28]",
+          "0x8bba0c: shr eax, 0xa",
+          "0x8bba0f: and eax, 0x1f",
+          "0x8bba12: mov ebx, 0x14",
+          "0x8bba17: je 0x8bba28",
+          "0x8bba19: cmp eax, 2",
+          "0x8bba1c: jne 0x8bbc79",
+          "0x8bba22: mov byte ptr [esi + 0xebe], bl",
+          "0x8bba28: mov edi, dword ptr [ebp + 8]",
+          "0x8bba2b: test edi, edi",
+          "0x8bba2d: je 0x8bba4b",
+          "0x8bba2f: mov edx, dword ptr [edi + 0x28]",
+          "0x8bba32: and edx, 0x3c0",
+          "0x8bba38: cmp edx, 0xc0",
+          "0x8bba3e: jne 0x8bba4b",
+          "0x8bba40: mov ecx, edi"
+        ],
+        [
+          "0x8bba54: add esp, 8",
+          "0x8bba57: cmp edi, eax",
+          "0x8bba59: jne 0x8bba6c",
+          "0x8bba5b: call 0x817f40",
+          "0x8bba60: mov eax, dword ptr [eax + 0x228]",
+          "0x8bba66: add dword ptr [eax + 0x540], ebx",
+          "0x8bba6c: mov eax, dword ptr [esi + 0x28]",
+          "0x8bba6f: and eax, 0xffff8fff",
+          "0x8bba74: or eax, 0xc00",
+          "0x8bba79: push edi",
+          "0x8bba7a: mov ecx, esi",
+          "0x8bba7c: mov dword ptr [esi + 0x28], eax",
+          "0x8bba7f: call 0xa47990",
+          "0x8bba84: fldz ",
+          "0x8bba86: or dword ptr [esi + 0x118], 0x10000",
+          "0x8bba90: mov ecx, dword ptr [0x11dde74]",
+          "0x8bba96: mov edx, dword ptr [esi]",
+          "0x8bba98: mov eax, dword ptr [edx + 0xf4]",
+          "0x8bba9e: push 0",
+          "0x8bbaa0: push ecx",
+          "0x8bbaa1: mov dword ptr [esi + 0x1308], ecx",
+          "0x8bbaa7: fstp dword ptr [esp]",
+          "0x8bbaaa: mov ecx, esi"
+        ]
+      ]
+    },
+    {
+      "candidate_function": "0x94ce70",
+      "candidate_size": 4636,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0x94cfda",
+          "instruction": "movzx eax, byte ptr [esi + 0xebf]",
+          "offset": "0xebf",
+          "base_register": "esi",
+          "bytes": "0fb686bf0e0000",
+          "candidate_function": "0x94ce70",
+          "candidate_body_bytes": "4636",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0x94d01f: je 0x94d028",
+          "0x94d021: mov ebx, 0x5f5e0ff",
+          "0x94d026: jmp 0x94d052",
+          "0x94d028: call 0x817f40",
+          "0x94d02d: mov ecx, eax",
+          "0x94d02f: call 0x89dd80",
+          "0x94d034: test eax, eax",
+          "0x94d036: je 0x94d04d",
+          "0x94d038: lea ecx, [eax + 8]",
+          "0x94d03b: test ecx, ecx",
+          "0x94d03d: je 0x94d04d",
+          "0x94d03f: call 0xa66cf0",
+          "0x94d044: test eax, eax",
+          "0x94d046: mov ebx, 0x55f0",
+          "0x94d04b: jg 0x94d052",
+          "0x94d04d: mov ebx, 0x1770",
+          "0x94d052: mov eax, dword ptr [esi + 0x1514]",
+          "0x94d058: add eax, -1",
+          "0x94d05b: cmp eax, 3",
+          "0x94d05e: ja 0x94d35e",
+          "0x94d064: jmp dword ptr [eax*4 + 0x94e09c]",
+          "0x94d06b: and byte ptr [esi + 0x1535], 0x7f",
+          "0x94d072: test byte ptr [esi + 0x1534], 2"
+        ],
+        [
+          "0x94d167: call 0x817fa0",
+          "0x94d16c: test eax, eax",
+          "0x94d16e: je 0x94d208",
+          "0x94d174: call 0x817f40",
+          "0x94d179: test eax, eax",
+          "0x94d17b: je 0x94d208",
+          "0x94d181: call 0x817f40",
+          "0x94d186: mov ecx, dword ptr [eax + 0x224]",
+          "0x94d18c: push 0",
+          "0x94d18e: push 0x2e2",
+          "0x94d193: add ecx, 0x2e0",
+          "0x94d199: call 0x426910",
+          "0x94d19e: test al, al",
+          "0x94d1a0: je 0x94d208",
+          "0x94d1a2: mov byte ptr [esp + 0x1b], 1",
+          "0x94d1a7: mov ebx, esi",
+          "0x94d1a9: lea esp, [esp]",
+          "0x94d1b0: call 0x817fa0",
+          "0x94d1b5: mov ebx, dword ptr [ebx + 0x1524]",
+          "0x94d1bb: test ebx, ebx",
+          "0x94d1bd: jne 0x94d1b0",
+          "0x94d1bf: mov bl, byte ptr [esp + 0x1b]",
+          "0x94d1c3: lea ecx, [esi + 0x260]"
+        ],
+        [
+          "0x94d174: call 0x817f40",
+          "0x94d179: test eax, eax",
+          "0x94d17b: je 0x94d208",
+          "0x94d181: call 0x817f40",
+          "0x94d186: mov ecx, dword ptr [eax + 0x224]",
+          "0x94d18c: push 0",
+          "0x94d18e: push 0x2e2",
+          "0x94d193: add ecx, 0x2e0",
+          "0x94d199: call 0x426910",
+          "0x94d19e: test al, al",
+          "0x94d1a0: je 0x94d208",
+          "0x94d1a2: mov byte ptr [esp + 0x1b], 1",
+          "0x94d1a7: mov ebx, esi",
+          "0x94d1a9: lea esp, [esp]",
+          "0x94d1b0: call 0x817fa0",
+          "0x94d1b5: mov ebx, dword ptr [ebx + 0x1524]",
+          "0x94d1bb: test ebx, ebx",
+          "0x94d1bd: jne 0x94d1b0",
+          "0x94d1bf: mov bl, byte ptr [esp + 0x1b]",
+          "0x94d1c3: lea ecx, [esi + 0x260]",
+          "0x94d1c9: call 0xca5bd0",
+          "0x94d1ce: mov edx, dword ptr [0x11dde74]",
+          "0x94d1d4: sub edx, dword ptr [esi + 0x1510]"
+        ]
+      ]
+    },
+    {
+      "candidate_function": "0x95a290",
+      "candidate_size": 416,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0x95a34f",
+          "instruction": "mov edx, dword ptr [eax + 0xea8]",
+          "offset": "0xea8",
+          "base_register": "eax",
+          "bytes": "8b90a80e0000",
+          "candidate_function": "0x95a290",
+          "candidate_body_bytes": "416",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0x95a334: movss xmm0, dword ptr [0xf12f74]",
+          "0x95a33c: mov dword ptr [0x15c0744], ecx",
+          "0x95a342: movss dword ptr [0x15c0764], xmm0",
+          "0x95a34a: call 0x817f40",
+          "0x95a34f: mov edx, dword ptr [eax + 0xea8]",
+          "0x95a355: lea ecx, [esp + 8]",
+          "0x95a359: mov dword ptr [0x15c0768], edx",
+          "0x95a35f: mov dword ptr [0x1716540], 0x15c0730",
+          "0x95a369: call 0x5bc400",
+          "0x95a36e: push 0x94",
+          "0x95a373: lea eax, [esp + 0xc]",
+          "0x95a377: push 0",
+          "0x95a379: push eax",
+          "0x95a37a: call 0xd0ff80",
+          "0x95a37f: add esp, 0xc",
+          "0x95a382: cmp dword ptr [0xf2a88c], -1",
+          "0x95a389: jne 0x95a3ad",
+          "0x95a38b: push 1",
+          "0x95a38d: push 7",
+          "0x95a38f: push 1",
+          "0x95a391: push 0x2000",
+          "0x95a396: push 0x8000",
+          "0x95a39b: push 0xd793c8"
+        ]
+      ]
+    },
+    {
+      "candidate_function": "0x9c56e0",
+      "candidate_size": 115,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0x9c5700",
+          "instruction": "cmp dword ptr [eax + 0xef4], 0",
+          "offset": "0xef4",
+          "base_register": "eax",
+          "bytes": "83b8f40e000000",
+          "candidate_function": "0x9c56e0",
+          "candidate_body_bytes": "115",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0x9c56e7: je 0x9c574d",
+          "0x9c56e9: cmp dword ptr [0x10f8044], 2",
+          "0x9c56f0: jne 0x9c570d",
+          "0x9c56f2: call 0x817f40",
+          "0x9c56f7: test eax, eax",
+          "0x9c56f9: je 0x9c570d",
+          "0x9c56fb: call 0x817f40",
+          "0x9c5700: cmp dword ptr [eax + 0xef4], 0",
+          "0x9c5707: jle 0x9c570d",
+          "0x9c5709: mov al, 1",
+          "0x9c570b: jmp 0x9c570f",
+          "0x9c570d: xor al, al",
+          "0x9c570f: mov cl, byte ptr [esi + 0x295e]",
+          "0x9c5715: xor cl, byte ptr [esi + 0x295c]",
+          "0x9c571b: cmp cl, 0x7f",
+          "0x9c571e: ja 0x9c5744",
+          "0x9c5720: cmp byte ptr [0x1724286], 0",
+          "0x9c5727: jne 0x9c573e",
+          "0x9c5729: test al, al",
+          "0x9c572b: jne 0x9c573e",
+          "0x9c572d: mov dl, byte ptr [esi + 0x296e]",
+          "0x9c5733: xor dl, byte ptr [esi + 0x296c]",
+          "0x9c5739: cmp dl, 0x7f"
+        ],
+        [
+          "0x9c56f2: call 0x817f40",
+          "0x9c56f7: test eax, eax",
+          "0x9c56f9: je 0x9c570d",
+          "0x9c56fb: call 0x817f40",
+          "0x9c5700: cmp dword ptr [eax + 0xef4], 0",
+          "0x9c5707: jle 0x9c570d",
+          "0x9c5709: mov al, 1",
+          "0x9c570b: jmp 0x9c570f",
+          "0x9c570d: xor al, al",
+          "0x9c570f: mov cl, byte ptr [esi + 0x295e]",
+          "0x9c5715: xor cl, byte ptr [esi + 0x295c]",
+          "0x9c571b: cmp cl, 0x7f",
+          "0x9c571e: ja 0x9c5744",
+          "0x9c5720: cmp byte ptr [0x1724286], 0",
+          "0x9c5727: jne 0x9c573e",
+          "0x9c5729: test al, al",
+          "0x9c572b: jne 0x9c573e",
+          "0x9c572d: mov dl, byte ptr [esi + 0x296e]",
+          "0x9c5733: xor dl, byte ptr [esi + 0x296c]",
+          "0x9c5739: cmp dl, 0x7f",
+          "0x9c573c: ja 0x9c5744",
+          "0x9c573e: xor eax, eax",
+          "0x9c5740: pop esi"
+        ]
+      ]
+    },
+    {
+      "candidate_function": "0xa1bad0",
+      "candidate_size": 873,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0xa1bb51",
+          "instruction": "mov byte ptr [esi + 0xebe], bl",
+          "offset": "0xebe",
+          "base_register": "esi",
+          "bytes": "889ebe0e0000",
+          "candidate_function": "0xa1bad0",
+          "candidate_body_bytes": "873",
+          "entry_is_candidate_not_boundary_proof": true
+        },
+        {
+          "instruction_va": "0xa1be04",
+          "instruction": "cmp byte ptr [esi + 0xebe], bl",
+          "offset": "0xebe",
+          "base_register": "esi",
+          "bytes": "389ebe0e0000",
+          "candidate_function": "0xa1bad0",
+          "candidate_body_bytes": "873",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0xa1bb83: add esp, 8",
+          "0xa1bb86: cmp edi, eax",
+          "0xa1bb88: jne 0xa1bb9b",
+          "0xa1bb8a: call 0x817f40",
+          "0xa1bb8f: mov eax, dword ptr [eax + 0x228]",
+          "0xa1bb95: add dword ptr [eax + 0x540], ebx",
+          "0xa1bb9b: test dword ptr [esi + 0x28], 0x7c00",
+          "0xa1bba2: xorps xmm0, xmm0",
+          "0xa1bba5: jne 0xa1bc1f",
+          "0xa1bba7: mov eax, dword ptr [esi + 0xfa0]",
+          "0xa1bbad: test eax, eax",
+          "0xa1bbaf: mov ebx, 2",
+          "0xa1bbb4: je 0xa1bbbc",
+          "0xa1bbb6: or dword ptr [eax + 0x29c], ebx",
+          "0xa1bbbc: lea eax, [esi + 0xfa4]",
+          "0xa1bbc2: mov edx, 8",
+          "0xa1bbc7: cmp dword ptr [eax], 0",
+          "0xa1bbca: je 0xa1bbd4",
+          "0xa1bbcc: mov ecx, dword ptr [eax]",
+          "0xa1bbce: or dword ptr [ecx + 0x29c], ebx",
+          "0xa1bbd4: add eax, 4",
+          "0xa1bbd7: sub edx, 1",
+          "0xa1bbda: jne 0xa1bbc7"
+        ]
+      ]
+    },
+    {
+      "candidate_function": "0xb925e0",
+      "candidate_size": 141,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0xb92a23",
+          "instruction": "mov byte ptr [eax + 0xea7], cl",
+          "offset": "0xea7",
+          "base_register": "eax",
+          "bytes": "8888a70e0000",
+          "candidate_function": "0xb925e0",
+          "candidate_body_bytes": "141",
+          "entry_is_candidate_not_boundary_proof": true
+        },
+        {
+          "instruction_va": "0xb92bb5",
+          "instruction": "mov dword ptr [eax + 0xef4], 2",
+          "offset": "0xef4",
+          "base_register": "eax",
+          "bytes": "c780f40e000002000000",
+          "candidate_function": "0xb925e0",
+          "candidate_body_bytes": "141",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0xb925e9: sub esp, 0x1c",
+          "0xb925ec: push esi",
+          "0xb925ed: push eax",
+          "0xb925ee: call 0x817f20",
+          "0xb925f3: mov esi, eax",
+          "0xb925f5: mov ecx, dword ptr [esi + 0x58c]",
+          "0xb925fb: add esp, 4",
+          "0xb925fe: test ecx, ecx",
+          "0xb92600: je 0xb92668",
+          "0xb92602: movss xmm0, dword ptr [ebp + 0xc]",
+          "0xb92607: movss dword ptr [esp + 0x10], xmm0",
+          "0xb9260d: movss xmm0, dword ptr [ebp + 0x10]",
+          "0xb92612: movss dword ptr [esp + 0x14], xmm0",
+          "0xb92618: movss xmm0, dword ptr [ebp + 0x14]",
+          "0xb9261d: movss dword ptr [esp + 0x18], xmm0",
+          "0xb92623: mov edx, dword ptr [ecx]",
+          "0xb92625: mov edx, dword ptr [edx + 0x13c]",
+          "0xb9262b: lea eax, [esp + 0x10]",
+          "0xb9262f: push eax",
+          "0xb92630: call edx",
+          "0xb92632: movss xmm0, dword ptr [ebp + 0x18]",
+          "0xb92637: mov ecx, dword ptr [esi + 0x58c]",
+          "0xb9263d: movss dword ptr [esp + 0x10], xmm0"
+        ]
+      ]
+    },
+    {
+      "candidate_function": "0xb9c1b0",
+      "candidate_size": 126,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0xb9c1d6",
+          "instruction": "adc byte ptr [esi + 0xeec], al",
+          "offset": "0xeec",
+          "base_register": "esi",
+          "bytes": "1086ec0e0000",
+          "candidate_function": "0xb9c1b0",
+          "candidate_body_bytes": "126",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0xb9c1c3: push eax",
+          "0xb9c1c4: call 0x426700",
+          "0xb9c1c9: mov esi, eax",
+          "0xb9c1cb: call 0x817f40",
+          "0xb9c1d0: cmp eax, esi",
+          "0xb9c1d2: jne 0xb9c1fc",
+          "0xb9c1d4: movss xmm0, dword ptr [esi + 0xeec]",
+          "0xb9c1dc: comiss xmm0, dword ptr [0xdecd60]",
+          "0xb9c1e3: jbe 0xb9c1fc",
+          "0xb9c1e5: movss xmm1, dword ptr [0xdadd84]",
+          "0xb9c1ed: movss xmm0, dword ptr [ebp + 0x14]",
+          "0xb9c1f2: comiss xmm1, xmm0",
+          "0xb9c1f5: ja 0xb9c201",
+          "0xb9c1f7: movaps xmm0, xmm1",
+          "0xb9c1fa: jmp 0xb9c201",
+          "0xb9c1fc: movss xmm0, dword ptr [ebp + 0x14]",
+          "0xb9c201: movss xmm1, dword ptr [ebp + 0xc]",
+          "0xb9c206: lea ecx, [esp + 0x10]",
+          "0xb9c20a: movss dword ptr [esp + 0x10], xmm1",
+          "0xb9c210: movss xmm1, dword ptr [ebp + 0x10]",
+          "0xb9c215: push ecx",
+          "0xb9c216: mov ecx, esi",
+          "0xb9c218: movss dword ptr [esp + 0x18], xmm1"
+        ]
+      ]
+    },
+    {
+      "candidate_function": "0xc29390",
+      "candidate_size": 386,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0xc294df",
+          "instruction": "mov edx, dword ptr [eax + 0xea8]",
+          "offset": "0xea8",
+          "base_register": "eax",
+          "bytes": "8b90a80e0000",
+          "candidate_function": "0xc29390",
+          "candidate_body_bytes": "386",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0xc294d7: push eax",
+          "0xc294d8: push ecx",
+          "0xc294d9: push ebx",
+          "0xc294da: call 0x817f40",
+          "0xc294df: mov edx, dword ptr [eax + 0xea8]",
+          "0xc294e5: push edx",
+          "0xc294e6: push edi",
+          "0xc294e7: mov ecx, ebp",
+          "0xc294e9: call 0x7c2b00",
+          "0xc294ee: mov ecx, eax",
+          "0xc294f0: call 0x404e90",
+          "0xc294f5: pop edi",
+          "0xc294f6: pop esi",
+          "0xc294f7: pop ebp",
+          "0xc294f8: pop ebx",
+          "0xc294f9: add esp, 8",
+          "0xc294fc: ret 8",
+          "0xc294ff: xor eax, eax",
+          "0xc29501: mov ecx, eax",
+          "0xc29503: call 0x404e90",
+          "0xc29508: pop edi",
+          "0xc29509: pop esi",
+          "0xc2950a: pop ebp"
+        ]
+      ]
+    },
+    {
+      "candidate_function": "0xc2a1f0",
+      "candidate_size": 2705,
+      "receiver_proof_pending": true,
+      "hits": [
+        {
+          "instruction_va": "0xc2a267",
+          "instruction": "mov edx, dword ptr [eax + 0xea8]",
+          "offset": "0xea8",
+          "base_register": "eax",
+          "bytes": "8b90a80e0000",
+          "candidate_function": "0xc2a1f0",
+          "candidate_body_bytes": "2705",
+          "entry_is_candidate_not_boundary_proof": true
+        }
+      ],
+      "getter_windows": [
+        [
+          "0xc2a25e: mov esp, ebp",
+          "0xc2a260: pop ebp",
+          "0xc2a261: ret ",
+          "0xc2a262: call 0x817f40",
+          "0xc2a267: mov edx, dword ptr [eax + 0xea8]",
+          "0xc2a26d: push edx",
+          "0xc2a26e: call 0xc28820",
+          "0xc2a273: add esp, 4",
+          "0xc2a276: pop edi",
+          "0xc2a277: pop esi",
+          "0xc2a278: pop ebx",
+          "0xc2a279: mov esp, ebp",
+          "0xc2a27b: pop ebp",
+          "0xc2a27c: ret ",
+          "0xc2a27d: mov eax, dword ptr [edi]",
+          "0xc2a27f: mov edx, dword ptr [eax + 0x28]",
+          "0xc2a282: mov ecx, edi",
+          "0xc2a284: call edx",
+          "0xc2a286: test al, al",
+          "0xc2a288: je 0xc2ac7a",
+          "0xc2a28e: movsx eax, word ptr [edi + 0x2e]",
+          "0xc2a292: mov ecx, dword ptr [edi + 0x34]",
+          "0xc2a295: mov ebx, dword ptr [eax*4 + 0x15f73b0]"
+        ]
+      ]
+    }
+  ],
+  "scope": "Instruction decode from old candidate function entries; receiver and boundaries must be verified before ownership attribution"
+}

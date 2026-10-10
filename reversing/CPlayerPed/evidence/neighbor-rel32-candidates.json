@@ -1,0 +1,241 @@
+{
+  "0x9be5f0": [
+    {
+      "va": "0x93724e",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xb91743",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9be790": [
+    {
+      "va": "0x935ca5",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0x935ff6",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9bee90": [
+    {
+      "va": "0x9c068e",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9beef0": [
+    {
+      "va": "0x9017bd",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0x935453",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xb90ebd",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xb90eea",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xb91167",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xc5f8f8",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xc61d34",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9bef20": [
+    {
+      "va": "0x45d4a7",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0x8af3d3",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xa6977b",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xa69d9a",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xa6c1ce",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xa6cb90",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xab3d7f",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xab3dd3",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xab3e0f",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xab3e52",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xb90f1d",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9bef70": [
+    {
+      "va": "0xc0066d",
+      "kind": "jmp",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9bf070": [
+    {
+      "va": "0x7b7c7b",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0x7b808a",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0x7b80ef",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0x8792ff",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xaa092e",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9bf250": [
+    {
+      "va": "0x927c46",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xb91d77",
+      "kind": "jmp",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9bf2d0": [
+    {
+      "va": "0x7b7c82",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9bf310": [
+    {
+      "va": "0xbfe97e",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xbfe9a6",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xc05e62",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xc05e8f",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9bf360": [
+    {
+      "va": "0x9c178d",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    }
+  ],
+  "0x9c0a70": [
+    {
+      "va": "0x9c1edc",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0x9c1f3d",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0x9ee804",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0x9ef68b",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0x9ef6e7",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    },
+    {
+      "va": "0xa4d992",
+      "kind": "call",
+      "raw_scan_not_instruction_proof": true
+    }
+  ]
+}

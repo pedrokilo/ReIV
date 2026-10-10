@@ -1,0 +1,812 @@
+{
+  "decompilation": {
+    "result": {
+      "items": [
+        {
+          "address": "0x009be4c0",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_009be4c0(void)\r\n\r\n{\r\n  uint *puVar1;\r\n  undefined4 uVar2;\r\n  int iVar3;\r\n  int in_ECX;\r\n  \r\n  if (*(int *)(in_ECX + 0x228) == 0) {\r\n    iVar3 = 0;\r\n  }\r\n  else {\r\n    iVar3 = *(int *)(in_ECX + 0x228) + 0x60;\r\n  }\r\n  if (-1 < *(int *)(iVar3 + 0x3d4)) {\r\n    FUN_00a677d0(1,1);\r\n  }\r\n  if (*(int *)(in_ECX + 0x228) == 0) {\r\n    iVar3 = 0;\r\n  }\r\n  else {\r\n    iVar3 = *(int *)(in_ECX + 0x228) + 0x60;\r\n  }\r\n  uVar2 = FUN_00a66f20();\r\n  *(undefined4 *)(iVar3 + 0x3d4) = uVar2;\r\n  FUN_00a67aa0(in_ECX);\r\n  FUN_00a67d70();\r\n  if (*(int *)(in_ECX + 0x228) == 0) {\r\n    iVar3 = 0;\r\n  }\r\n  else {\r\n    iVar3 = *(int *)(in_ECX + 0x228) + 0x60;\r\n  }\r\n  *(uint *)(iVar3 + 0x3d0) = *(uint *)(iVar3 + 0x3d0) & 0xfffffeff;\r\n  if (*(int *)(in_ECX + 0x228) == 0) {\r\n    iVar3 = 0;\r\n  }\r\n  else {\r\n    iVar3 = *(int *)(in_ECX + 0x228) + 0x60;\r\n  }\r\n  *(uint *)(iVar3 + 0x3d0) = *(uint *)(iVar3 + 0x3d0) & 0xfffffdff;\r\n  if (*(int *)(in_ECX + 0x228) != 0) {\r\n    puVar1 = (uint *)(*(int *)(in_ECX + 0x228) + 0x430);\r\n    *puVar1 = *puVar1 & 0xfffffbff;\r\n    return;\r\n  }\r\n  uRam000003d0 = uRam000003d0 & 0xfffffbff;\r\n  return;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x009bf660",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_009bf660(char param_1)\r\n\r\n{\r\n  int iVar1;\r\n  int *in_ECX;\r\n  \r\n  DAT_00f1d9d8 = 0x3f800000;\r\n  in_ECX[9] = in_ECX[9] | 1;\r\n  in_ECX[0x2a0] = 0;\r\n  FUN_008a92c0(0);\r\n  FUN_008a07e0(1);\r\n  FUN_008a70c0(0,0xffffffff);\r\n  FUN_0089c8b0(0xffffffff);\r\n  iVar1 = in_ECX[0x8a];\r\n  in_ECX[0x9b] = in_ECX[0x9b] | 0x20000;\r\n  if ((iVar1 != 0) && (iVar1 != -0x60)) {\r\n    *(uint *)(iVar1 + 0x430) = *(uint *)(iVar1 + 0x430) & 0xfffffffd;\r\n  }\r\n  (**(code **)(*in_ECX + 0x110))();\r\n  in_ECX[9] = in_ECX[9] | 1;\r\n  if (param_1 == '\\0') {\r\n    FUN_009bf0d0(1,0,1);\r\n  }\r\n  if ((in_ECX[0x8a] != 0) && (in_ECX[0x8a] != -0x60)) {\r\n    FUN_008793f0();\r\n  }\r\n  return;\r\n}\r\n\r\n"
+        }
+      ],
+      "total": 2,
+      "succeeded": 2,
+      "failed": 0
+    },
+    "evidence_id": "ev_3898e621519eb9df8cee1aea7e07665f96a57406f690a8e898e3422ce4d7f270",
+    "evidence": {
+      "evidence_id": "ev_3898e621519eb9df8cee1aea7e07665f96a57406f690a8e898e3422ce4d7f270",
+      "subject": {
+        "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+        "digest": {
+          "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+        },
+        "format": "pe",
+        "architecture": "x86",
+        "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+      },
+      "provider": {
+        "id": "rea-workflow",
+        "name": "REA composed investigation workflow",
+        "version": "1"
+      },
+      "predicate_type": "rea.analysis",
+      "operation": "batch_decompile",
+      "parameters": {
+        "addresses": [
+          "0x009be4c0",
+          "0x009bf660"
+        ]
+      },
+      "raw_result": null,
+      "normalized_result": {
+        "items": [
+          {
+            "address": "0x009be4c0",
+            "status": "ok",
+            "pseudocode": "\r\nvoid FUN_009be4c0(void)\r\n\r\n{\r\n  uint *puVar1;\r\n  undefined4 uVar2;\r\n  int iVar3;\r\n  int in_ECX;\r\n  \r\n  if (*(int *)(in_ECX + 0x228) == 0) {\r\n    iVar3 = 0;\r\n  }\r\n  else {\r\n    iVar3 = *(int *)(in_ECX + 0x228) + 0x60;\r\n  }\r\n  if (-1 < *(int *)(iVar3 + 0x3d4)) {\r\n    FUN_00a677d0(1,1);\r\n  }\r\n  if (*(int *)(in_ECX + 0x228) == 0) {\r\n    iVar3 = 0;\r\n  }\r\n  else {\r\n    iVar3 = *(int *)(in_ECX + 0x228) + 0x60;\r\n  }\r\n  uVar2 = FUN_00a66f20();\r\n  *(undefined4 *)(iVar3 + 0x3d4) = uVar2;\r\n  FUN_00a67aa0(in_ECX);\r\n  FUN_00a67d70();\r\n  if (*(int *)(in_ECX + 0x228) == 0) {\r\n    iVar3 = 0;\r\n  }\r\n  else {\r\n    iVar3 = *(int *)(in_ECX + 0x228) + 0x60;\r\n  }\r\n  *(uint *)(iVar3 + 0x3d0) = *(uint *)(iVar3 + 0x3d0) & 0xfffffeff;\r\n  if (*(int *)(in_ECX + 0x228) == 0) {\r\n    iVar3 = 0;\r\n  }\r\n  else {\r\n    iVar3 = *(int *)(in_ECX + 0x228) + 0x60;\r\n  }\r\n  *(uint *)(iVar3 + 0x3d0) = *(uint *)(iVar3 + 0x3d0) & 0xfffffdff;\r\n  if (*(int *)(in_ECX + 0x228) != 0) {\r\n    puVar1 = (uint *)(*(int *)(in_ECX + 0x228) + 0x430);\r\n    *puVar1 = *puVar1 & 0xfffffbff;\r\n    return;\r\n  }\r\n  uRam000003d0 = uRam000003d0 & 0xfffffbff;\r\n  return;\r\n}\r\n\r\n"
+          },
+          {
+            "address": "0x009bf660",
+            "status": "ok",
+            "pseudocode": "\r\nvoid FUN_009bf660(char param_1)\r\n\r\n{\r\n  int iVar1;\r\n  int *in_ECX;\r\n  \r\n  DAT_00f1d9d8 = 0x3f800000;\r\n  in_ECX[9] = in_ECX[9] | 1;\r\n  in_ECX[0x2a0] = 0;\r\n  FUN_008a92c0(0);\r\n  FUN_008a07e0(1);\r\n  FUN_008a70c0(0,0xffffffff);\r\n  FUN_0089c8b0(0xffffffff);\r\n  iVar1 = in_ECX[0x8a];\r\n  in_ECX[0x9b] = in_ECX[0x9b] | 0x20000;\r\n  if ((iVar1 != 0) && (iVar1 != -0x60)) {\r\n    *(uint *)(iVar1 + 0x430) = *(uint *)(iVar1 + 0x430) & 0xfffffffd;\r\n  }\r\n  (**(code **)(*in_ECX + 0x110))();\r\n  in_ECX[9] = in_ECX[9] | 1;\r\n  if (param_1 == '\\0') {\r\n    FUN_009bf0d0(1,0,1);\r\n  }\r\n  if ((in_ECX[0x8a] != 0) && (in_ECX[0x8a] != -0x60)) {\r\n    FUN_008793f0();\r\n  }\r\n  return;\r\n}\r\n\r\n"
+          }
+        ],
+        "total": 2,
+        "succeeded": 2,
+        "failed": 0
+      },
+      "confidence": "derived",
+      "authority": "shipped-artifact",
+      "environment": null,
+      "limitations": [
+        "Derived by an REA workflow from one or more provider observations."
+      ],
+      "locations": [],
+      "evidence_links": [],
+      "analysis_profile": {
+        "provider": {
+          "id": "rea-workflow",
+          "name": "REA composed investigation workflow",
+          "version": "1"
+        },
+        "parameters": {
+          "upstream_analysis_profile": {
+            "provider": {
+              "id": "ghidra",
+              "name": "Ghidra",
+              "version": "12.1.4"
+            },
+            "parameters": {
+              "target_kind": "executable",
+              "target_format": "pe",
+              "architecture": "x86",
+              "available_architectures": [
+                "x86"
+              ],
+              "import_mode": "ephemeral-source-immutable",
+              "annotation_policy": "atomic-function-entry-metadata-v1",
+              "load_image_observations": "source-mappings-entry-context-v2",
+              "function_body_evidence": "complete-inclusive-ranges-v1",
+              "jump_table_evidence": "typed-case-default-blocks-v1",
+              "decompiler_jump_loads": true,
+              "loader": "auto-from-header",
+              "language_id": "auto-from-header",
+              "compiler_spec_id": "auto-default",
+              "analyzer_preset": "ghidra-default",
+              "local_provider_extension": "gta-x86-sha256-bound-v2"
+            },
+            "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+          }
+        },
+        "digest": "fe71db632b57bd0c478c5bbd9ca5b17a8189d25db100beff7846c8bf5205be9d"
+      }
+    }
+  },
+  "instructions": [
+    {
+      "result": {
+        "procedure": {
+          "address": "0x9be4c0",
+          "name": "FUN_009be4c0",
+          "classification": {
+            "external": false,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x9be4c0",
+                "end": "0x9be5c6"
+              }
+            ],
+            "total_bytes": 263,
+            "span_bytes": 263,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        },
+        "instructions": [
+          "0x9be4c0: PUSH ESI",
+          "0x9be4c1: MOV ESI, ECX",
+          "0x9be4c3: MOV EAX, dword ptr [ESI + 0x228]",
+          "0x9be4c9: TEST EAX, EAX",
+          "0x9be4cb: JZ 0x009be4d2",
+          "0x9be4cd: LEA ECX, [EAX + 0x60]",
+          "0x9be4d0: JMP 0x009be4d4",
+          "0x9be4d2: XOR ECX, ECX",
+          "0x9be4d4: CMP dword ptr [ECX + 0x3d4], 0x0",
+          "0x9be4db: JL 0x009be500",
+          "0x9be4dd: TEST EAX, EAX",
+          "0x9be4df: JZ 0x009be4e6",
+          "0x9be4e1: ADD EAX, 0x60",
+          "0x9be4e4: JMP 0x009be4e8",
+          "0x9be4e6: XOR EAX, EAX",
+          "0x9be4e8: MOV ECX, dword ptr [EAX + 0x3d4]",
+          "0x9be4ee: IMUL ECX, ECX, 0x5c",
+          "0x9be4f1: PUSH 0x1",
+          "0x9be4f3: PUSH 0x1",
+          "0x9be4f5: ADD ECX, 0x1662170",
+          "0x9be4fb: CALL 0x00a677d0",
+          "0x9be500: MOV EAX, dword ptr [ESI + 0x228]",
+          "0x9be506: TEST EAX, EAX",
+          "0x9be508: PUSH EDI",
+          "0x9be509: JZ 0x009be510",
+          "0x9be50b: LEA EDI, [EAX + 0x60]",
+          "0x9be50e: JMP 0x009be512",
+          "0x9be510: XOR EDI, EDI",
+          "0x9be512: PUSH ESI",
+          "0x9be513: CALL 0x00a66f20",
+          "0x9be518: MOV dword ptr [EDI + 0x3d4], EAX",
+          "0x9be51e: MOV EAX, dword ptr [ESI + 0x228]",
+          "0x9be524: ADD ESP, 0x4",
+          "0x9be527: TEST EAX, EAX",
+          "0x9be529: POP EDI",
+          "0x9be52a: JZ 0x009be531",
+          "0x9be52c: ADD EAX, 0x60",
+          "0x9be52f: JMP 0x009be533",
+          "0x9be531: XOR EAX, EAX",
+          "0x9be533: MOV ECX, dword ptr [EAX + 0x3d4]",
+          "0x9be539: IMUL ECX, ECX, 0x5c",
+          "0x9be53c: PUSH ESI",
+          "0x9be53d: ADD ECX, 0x1662178",
+          "0x9be543: CALL 0x00a67aa0",
+          "0x9be548: MOV EAX, dword ptr [ESI + 0x228]",
+          "0x9be54e: TEST EAX, EAX",
+          "0x9be550: JZ 0x009be557",
+          "0x9be552: ADD EAX, 0x60",
+          "0x9be555: JMP 0x009be559",
+          "0x9be557: XOR EAX, EAX",
+          "0x9be559: MOV ECX, dword ptr [EAX + 0x3d4]",
+          "0x9be55f: IMUL ECX, ECX, 0x5c",
+          "0x9be562: ADD ECX, 0x1662170",
+          "0x9be568: CALL 0x00a67d70",
+          "0x9be56d: MOV EAX, dword ptr [ESI + 0x228]",
+          "0x9be573: TEST EAX, EAX",
+          "0x9be575: JZ 0x009be57c",
+          "0x9be577: ADD EAX, 0x60",
+          "0x9be57a: JMP 0x009be57e",
+          "0x9be57c: XOR EAX, EAX",
+          "0x9be57e: AND dword ptr [EAX + 0x3d0], 0xfffffeff",
+          "0x9be588: MOV EAX, dword ptr [ESI + 0x228]",
+          "0x9be58e: TEST EAX, EAX",
+          "0x9be590: JZ 0x009be597",
+          "0x9be592: ADD EAX, 0x60",
+          "0x9be595: JMP 0x009be599",
+          "0x9be597: XOR EAX, EAX",
+          "0x9be599: AND dword ptr [EAX + 0x3d0], 0xfffffdff",
+          "0x9be5a3: MOV ESI, dword ptr [ESI + 0x228]",
+          "0x9be5a9: TEST ESI, ESI",
+          "0x9be5ab: JZ 0x009be5b9",
+          "0x9be5ad: AND dword ptr [ESI + 0x430], 0xfffffbff",
+          "0x9be5b7: POP ESI",
+          "0x9be5b8: RET",
+          "0x9be5b9: XOR EAX, EAX",
+          "0x9be5bb: AND dword ptr [EAX + 0x3d0], 0xfffffbff",
+          "0x9be5c5: POP ESI",
+          "0x9be5c6: RET"
+        ],
+        "limitations": [
+          "Instruction text and ordering are Ghidra-specific representations.",
+          "The fast path does not invoke the decompiler or scan whole-program names and strings."
+        ]
+      },
+      "evidence_id": "ev_c6467236cd7bdb4f341497670598e2173cb378cc859ca6e0388f791db310133b",
+      "evidence": {
+        "evidence_id": "ev_c6467236cd7bdb4f341497670598e2173cb378cc859ca6e0388f791db310133b",
+        "subject": {
+          "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+          "digest": {
+            "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+          },
+          "format": "pe",
+          "architecture": "x86",
+          "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+        },
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "predicate_type": "rea.analysis",
+        "operation": "read_function_instructions",
+        "parameters": {
+          "procedure": "0x009be4c0",
+          "document": null
+        },
+        "raw_result": {
+          "procedure": {
+            "address": "0x9be4c0",
+            "name": "FUN_009be4c0",
+            "classification": {
+              "external": false,
+              "thunk": false,
+              "thunk_target": null,
+              "provenance": "ghidra-function-manager"
+            },
+            "body": {
+              "available": true,
+              "provenance": "ghidra-function-body-address-set",
+              "ranges": [
+                {
+                  "start": "0x9be4c0",
+                  "end": "0x9be5c6"
+                }
+              ],
+              "total_bytes": 263,
+              "span_bytes": 263,
+              "non_contiguous": false,
+              "contains_entry": true
+            }
+          },
+          "instructions": [
+            "0x9be4c0: PUSH ESI",
+            "0x9be4c1: MOV ESI, ECX",
+            "0x9be4c3: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be4c9: TEST EAX, EAX",
+            "0x9be4cb: JZ 0x009be4d2",
+            "0x9be4cd: LEA ECX, [EAX + 0x60]",
+            "0x9be4d0: JMP 0x009be4d4",
+            "0x9be4d2: XOR ECX, ECX",
+            "0x9be4d4: CMP dword ptr [ECX + 0x3d4], 0x0",
+            "0x9be4db: JL 0x009be500",
+            "0x9be4dd: TEST EAX, EAX",
+            "0x9be4df: JZ 0x009be4e6",
+            "0x9be4e1: ADD EAX, 0x60",
+            "0x9be4e4: JMP 0x009be4e8",
+            "0x9be4e6: XOR EAX, EAX",
+            "0x9be4e8: MOV ECX, dword ptr [EAX + 0x3d4]",
+            "0x9be4ee: IMUL ECX, ECX, 0x5c",
+            "0x9be4f1: PUSH 0x1",
+            "0x9be4f3: PUSH 0x1",
+            "0x9be4f5: ADD ECX, 0x1662170",
+            "0x9be4fb: CALL 0x00a677d0",
+            "0x9be500: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be506: TEST EAX, EAX",
+            "0x9be508: PUSH EDI",
+            "0x9be509: JZ 0x009be510",
+            "0x9be50b: LEA EDI, [EAX + 0x60]",
+            "0x9be50e: JMP 0x009be512",
+            "0x9be510: XOR EDI, EDI",
+            "0x9be512: PUSH ESI",
+            "0x9be513: CALL 0x00a66f20",
+            "0x9be518: MOV dword ptr [EDI + 0x3d4], EAX",
+            "0x9be51e: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be524: ADD ESP, 0x4",
+            "0x9be527: TEST EAX, EAX",
+            "0x9be529: POP EDI",
+            "0x9be52a: JZ 0x009be531",
+            "0x9be52c: ADD EAX, 0x60",
+            "0x9be52f: JMP 0x009be533",
+            "0x9be531: XOR EAX, EAX",
+            "0x9be533: MOV ECX, dword ptr [EAX + 0x3d4]",
+            "0x9be539: IMUL ECX, ECX, 0x5c",
+            "0x9be53c: PUSH ESI",
+            "0x9be53d: ADD ECX, 0x1662178",
+            "0x9be543: CALL 0x00a67aa0",
+            "0x9be548: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be54e: TEST EAX, EAX",
+            "0x9be550: JZ 0x009be557",
+            "0x9be552: ADD EAX, 0x60",
+            "0x9be555: JMP 0x009be559",
+            "0x9be557: XOR EAX, EAX",
+            "0x9be559: MOV ECX, dword ptr [EAX + 0x3d4]",
+            "0x9be55f: IMUL ECX, ECX, 0x5c",
+            "0x9be562: ADD ECX, 0x1662170",
+            "0x9be568: CALL 0x00a67d70",
+            "0x9be56d: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be573: TEST EAX, EAX",
+            "0x9be575: JZ 0x009be57c",
+            "0x9be577: ADD EAX, 0x60",
+            "0x9be57a: JMP 0x009be57e",
+            "0x9be57c: XOR EAX, EAX",
+            "0x9be57e: AND dword ptr [EAX + 0x3d0], 0xfffffeff",
+            "0x9be588: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be58e: TEST EAX, EAX",
+            "0x9be590: JZ 0x009be597",
+            "0x9be592: ADD EAX, 0x60",
+            "0x9be595: JMP 0x009be599",
+            "0x9be597: XOR EAX, EAX",
+            "0x9be599: AND dword ptr [EAX + 0x3d0], 0xfffffdff",
+            "0x9be5a3: MOV ESI, dword ptr [ESI + 0x228]",
+            "0x9be5a9: TEST ESI, ESI",
+            "0x9be5ab: JZ 0x009be5b9",
+            "0x9be5ad: AND dword ptr [ESI + 0x430], 0xfffffbff",
+            "0x9be5b7: POP ESI",
+            "0x9be5b8: RET",
+            "0x9be5b9: XOR EAX, EAX",
+            "0x9be5bb: AND dword ptr [EAX + 0x3d0], 0xfffffbff",
+            "0x9be5c5: POP ESI",
+            "0x9be5c6: RET"
+          ],
+          "limitations": [
+            "Instruction text and ordering are Ghidra-specific representations.",
+            "The fast path does not invoke the decompiler or scan whole-program names and strings."
+          ]
+        },
+        "normalized_result": {
+          "procedure": {
+            "address": "0x9be4c0",
+            "name": "FUN_009be4c0",
+            "classification": {
+              "external": false,
+              "thunk": false,
+              "thunk_target": null,
+              "provenance": "ghidra-function-manager"
+            },
+            "body": {
+              "available": true,
+              "provenance": "ghidra-function-body-address-set",
+              "ranges": [
+                {
+                  "start": "0x9be4c0",
+                  "end": "0x9be5c6"
+                }
+              ],
+              "total_bytes": 263,
+              "span_bytes": 263,
+              "non_contiguous": false,
+              "contains_entry": true
+            }
+          },
+          "instructions": [
+            "0x9be4c0: PUSH ESI",
+            "0x9be4c1: MOV ESI, ECX",
+            "0x9be4c3: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be4c9: TEST EAX, EAX",
+            "0x9be4cb: JZ 0x009be4d2",
+            "0x9be4cd: LEA ECX, [EAX + 0x60]",
+            "0x9be4d0: JMP 0x009be4d4",
+            "0x9be4d2: XOR ECX, ECX",
+            "0x9be4d4: CMP dword ptr [ECX + 0x3d4], 0x0",
+            "0x9be4db: JL 0x009be500",
+            "0x9be4dd: TEST EAX, EAX",
+            "0x9be4df: JZ 0x009be4e6",
+            "0x9be4e1: ADD EAX, 0x60",
+            "0x9be4e4: JMP 0x009be4e8",
+            "0x9be4e6: XOR EAX, EAX",
+            "0x9be4e8: MOV ECX, dword ptr [EAX + 0x3d4]",
+            "0x9be4ee: IMUL ECX, ECX, 0x5c",
+            "0x9be4f1: PUSH 0x1",
+            "0x9be4f3: PUSH 0x1",
+            "0x9be4f5: ADD ECX, 0x1662170",
+            "0x9be4fb: CALL 0x00a677d0",
+            "0x9be500: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be506: TEST EAX, EAX",
+            "0x9be508: PUSH EDI",
+            "0x9be509: JZ 0x009be510",
+            "0x9be50b: LEA EDI, [EAX + 0x60]",
+            "0x9be50e: JMP 0x009be512",
+            "0x9be510: XOR EDI, EDI",
+            "0x9be512: PUSH ESI",
+            "0x9be513: CALL 0x00a66f20",
+            "0x9be518: MOV dword ptr [EDI + 0x3d4], EAX",
+            "0x9be51e: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be524: ADD ESP, 0x4",
+            "0x9be527: TEST EAX, EAX",
+            "0x9be529: POP EDI",
+            "0x9be52a: JZ 0x009be531",
+            "0x9be52c: ADD EAX, 0x60",
+            "0x9be52f: JMP 0x009be533",
+            "0x9be531: XOR EAX, EAX",
+            "0x9be533: MOV ECX, dword ptr [EAX + 0x3d4]",
+            "0x9be539: IMUL ECX, ECX, 0x5c",
+            "0x9be53c: PUSH ESI",
+            "0x9be53d: ADD ECX, 0x1662178",
+            "0x9be543: CALL 0x00a67aa0",
+            "0x9be548: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be54e: TEST EAX, EAX",
+            "0x9be550: JZ 0x009be557",
+            "0x9be552: ADD EAX, 0x60",
+            "0x9be555: JMP 0x009be559",
+            "0x9be557: XOR EAX, EAX",
+            "0x9be559: MOV ECX, dword ptr [EAX + 0x3d4]",
+            "0x9be55f: IMUL ECX, ECX, 0x5c",
+            "0x9be562: ADD ECX, 0x1662170",
+            "0x9be568: CALL 0x00a67d70",
+            "0x9be56d: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be573: TEST EAX, EAX",
+            "0x9be575: JZ 0x009be57c",
+            "0x9be577: ADD EAX, 0x60",
+            "0x9be57a: JMP 0x009be57e",
+            "0x9be57c: XOR EAX, EAX",
+            "0x9be57e: AND dword ptr [EAX + 0x3d0], 0xfffffeff",
+            "0x9be588: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9be58e: TEST EAX, EAX",
+            "0x9be590: JZ 0x009be597",
+            "0x9be592: ADD EAX, 0x60",
+            "0x9be595: JMP 0x009be599",
+            "0x9be597: XOR EAX, EAX",
+            "0x9be599: AND dword ptr [EAX + 0x3d0], 0xfffffdff",
+            "0x9be5a3: MOV ESI, dword ptr [ESI + 0x228]",
+            "0x9be5a9: TEST ESI, ESI",
+            "0x9be5ab: JZ 0x009be5b9",
+            "0x9be5ad: AND dword ptr [ESI + 0x430], 0xfffffbff",
+            "0x9be5b7: POP ESI",
+            "0x9be5b8: RET",
+            "0x9be5b9: XOR EAX, EAX",
+            "0x9be5bb: AND dword ptr [EAX + 0x3d0], 0xfffffbff",
+            "0x9be5c5: POP ESI",
+            "0x9be5c6: RET"
+          ],
+          "limitations": [
+            "Instruction text and ordering are Ghidra-specific representations.",
+            "The fast path does not invoke the decompiler or scan whole-program names and strings."
+          ]
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "This fast path reads only the requested function and does not invoke the decompiler or whole-program string/name inventories.",
+          "Instruction text is Ghidra-specific and does not claim textual equivalence with Hopper output.",
+          "Local REA 5.0.0 fork: additionally admits SHA-256-bound GTAIV 1.0.7.0 and GTA San Andreas 1.0 US x86 references. This extension is not upstream Windows P0 coverage. DLL, managed, hostile, sensitive, and mutable-path targets remain unsupported.",
+          "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+          "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+        ],
+        "locations": [],
+        "evidence_links": [],
+        "analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      }
+    },
+    {
+      "result": {
+        "procedure": {
+          "address": "0x9bf660",
+          "name": "FUN_009bf660",
+          "classification": {
+            "external": false,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x9bf660",
+                "end": "0x9bf702"
+              }
+            ],
+            "total_bytes": 163,
+            "span_bytes": 163,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        },
+        "instructions": [
+          "0x9bf660: MOVSS XMM0, dword ptr [0x00d50398]",
+          "0x9bf668: PUSH ESI",
+          "0x9bf669: MOV ESI, ECX",
+          "0x9bf66b: MOVSS dword ptr [0x00f1d9d8], XMM0",
+          "0x9bf673: OR dword ptr [ESI + 0x24], 0x1",
+          "0x9bf677: PUSH 0x0",
+          "0x9bf679: MOV dword ptr [ESI + 0xa80], 0x0",
+          "0x9bf683: CALL 0x008a92c0",
+          "0x9bf688: PUSH 0x1",
+          "0x9bf68a: MOV ECX, ESI",
+          "0x9bf68c: CALL 0x008a07e0",
+          "0x9bf691: PUSH -0x1",
+          "0x9bf693: PUSH 0x0",
+          "0x9bf695: MOV ECX, ESI",
+          "0x9bf697: CALL 0x008a70c0",
+          "0x9bf69c: PUSH -0x1",
+          "0x9bf69e: MOV ECX, ESI",
+          "0x9bf6a0: CALL 0x0089c8b0",
+          "0x9bf6a5: MOV EAX, dword ptr [ESI + 0x228]",
+          "0x9bf6ab: OR dword ptr [ESI + 0x26c], 0x20000",
+          "0x9bf6b5: TEST EAX, EAX",
+          "0x9bf6b7: JZ 0x009bf6c5",
+          "0x9bf6b9: ADD EAX, 0x60",
+          "0x9bf6bc: JZ 0x009bf6c5",
+          "0x9bf6be: AND dword ptr [EAX + 0x3d0], 0xfffffffd",
+          "0x9bf6c5: MOV EAX, dword ptr [ESI]",
+          "0x9bf6c7: MOV EDX, dword ptr [EAX + 0x110]",
+          "0x9bf6cd: MOV ECX, ESI",
+          "0x9bf6cf: CALL EDX",
+          "0x9bf6d1: OR dword ptr [ESI + 0x24], 0x1",
+          "0x9bf6d5: CMP byte ptr [ESP + 0x8], 0x0",
+          "0x9bf6da: JNZ 0x009bf6e9",
+          "0x9bf6dc: PUSH 0x1",
+          "0x9bf6de: PUSH 0x0",
+          "0x9bf6e0: PUSH 0x1",
+          "0x9bf6e2: MOV ECX, ESI",
+          "0x9bf6e4: CALL 0x009bf0d0",
+          "0x9bf6e9: MOV ESI, dword ptr [ESI + 0x228]",
+          "0x9bf6ef: TEST ESI, ESI",
+          "0x9bf6f1: JZ 0x009bf6ff",
+          "0x9bf6f3: LEA ECX, [ESI + 0x60]",
+          "0x9bf6f6: TEST ECX, ECX",
+          "0x9bf6f8: JZ 0x009bf6ff",
+          "0x9bf6fa: CALL 0x008793f0",
+          "0x9bf6ff: POP ESI",
+          "0x9bf700: RET 0x4"
+        ],
+        "limitations": [
+          "Instruction text and ordering are Ghidra-specific representations.",
+          "The fast path does not invoke the decompiler or scan whole-program names and strings."
+        ]
+      },
+      "evidence_id": "ev_cc3a6d66a599467402c12adc6b029d6ec14efeda4f4cd268939978b1258ebe0a",
+      "evidence": {
+        "evidence_id": "ev_cc3a6d66a599467402c12adc6b029d6ec14efeda4f4cd268939978b1258ebe0a",
+        "subject": {
+          "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+          "digest": {
+            "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+          },
+          "format": "pe",
+          "architecture": "x86",
+          "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+        },
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "predicate_type": "rea.analysis",
+        "operation": "read_function_instructions",
+        "parameters": {
+          "procedure": "0x009bf660",
+          "document": null
+        },
+        "raw_result": {
+          "procedure": {
+            "address": "0x9bf660",
+            "name": "FUN_009bf660",
+            "classification": {
+              "external": false,
+              "thunk": false,
+              "thunk_target": null,
+              "provenance": "ghidra-function-manager"
+            },
+            "body": {
+              "available": true,
+              "provenance": "ghidra-function-body-address-set",
+              "ranges": [
+                {
+                  "start": "0x9bf660",
+                  "end": "0x9bf702"
+                }
+              ],
+              "total_bytes": 163,
+              "span_bytes": 163,
+              "non_contiguous": false,
+              "contains_entry": true
+            }
+          },
+          "instructions": [
+            "0x9bf660: MOVSS XMM0, dword ptr [0x00d50398]",
+            "0x9bf668: PUSH ESI",
+            "0x9bf669: MOV ESI, ECX",
+            "0x9bf66b: MOVSS dword ptr [0x00f1d9d8], XMM0",
+            "0x9bf673: OR dword ptr [ESI + 0x24], 0x1",
+            "0x9bf677: PUSH 0x0",
+            "0x9bf679: MOV dword ptr [ESI + 0xa80], 0x0",
+            "0x9bf683: CALL 0x008a92c0",
+            "0x9bf688: PUSH 0x1",
+            "0x9bf68a: MOV ECX, ESI",
+            "0x9bf68c: CALL 0x008a07e0",
+            "0x9bf691: PUSH -0x1",
+            "0x9bf693: PUSH 0x0",
+            "0x9bf695: MOV ECX, ESI",
+            "0x9bf697: CALL 0x008a70c0",
+            "0x9bf69c: PUSH -0x1",
+            "0x9bf69e: MOV ECX, ESI",
+            "0x9bf6a0: CALL 0x0089c8b0",
+            "0x9bf6a5: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9bf6ab: OR dword ptr [ESI + 0x26c], 0x20000",
+            "0x9bf6b5: TEST EAX, EAX",
+            "0x9bf6b7: JZ 0x009bf6c5",
+            "0x9bf6b9: ADD EAX, 0x60",
+            "0x9bf6bc: JZ 0x009bf6c5",
+            "0x9bf6be: AND dword ptr [EAX + 0x3d0], 0xfffffffd",
+            "0x9bf6c5: MOV EAX, dword ptr [ESI]",
+            "0x9bf6c7: MOV EDX, dword ptr [EAX + 0x110]",
+            "0x9bf6cd: MOV ECX, ESI",
+            "0x9bf6cf: CALL EDX",
+            "0x9bf6d1: OR dword ptr [ESI + 0x24], 0x1",
+            "0x9bf6d5: CMP byte ptr [ESP + 0x8], 0x0",
+            "0x9bf6da: JNZ 0x009bf6e9",
+            "0x9bf6dc: PUSH 0x1",
+            "0x9bf6de: PUSH 0x0",
+            "0x9bf6e0: PUSH 0x1",
+            "0x9bf6e2: MOV ECX, ESI",
+            "0x9bf6e4: CALL 0x009bf0d0",
+            "0x9bf6e9: MOV ESI, dword ptr [ESI + 0x228]",
+            "0x9bf6ef: TEST ESI, ESI",
+            "0x9bf6f1: JZ 0x009bf6ff",
+            "0x9bf6f3: LEA ECX, [ESI + 0x60]",
+            "0x9bf6f6: TEST ECX, ECX",
+            "0x9bf6f8: JZ 0x009bf6ff",
+            "0x9bf6fa: CALL 0x008793f0",
+            "0x9bf6ff: POP ESI",
+            "0x9bf700: RET 0x4"
+          ],
+          "limitations": [
+            "Instruction text and ordering are Ghidra-specific representations.",
+            "The fast path does not invoke the decompiler or scan whole-program names and strings."
+          ]
+        },
+        "normalized_result": {
+          "procedure": {
+            "address": "0x9bf660",
+            "name": "FUN_009bf660",
+            "classification": {
+              "external": false,
+              "thunk": false,
+              "thunk_target": null,
+              "provenance": "ghidra-function-manager"
+            },
+            "body": {
+              "available": true,
+              "provenance": "ghidra-function-body-address-set",
+              "ranges": [
+                {
+                  "start": "0x9bf660",
+                  "end": "0x9bf702"
+                }
+              ],
+              "total_bytes": 163,
+              "span_bytes": 163,
+              "non_contiguous": false,
+              "contains_entry": true
+            }
+          },
+          "instructions": [
+            "0x9bf660: MOVSS XMM0, dword ptr [0x00d50398]",
+            "0x9bf668: PUSH ESI",
+            "0x9bf669: MOV ESI, ECX",
+            "0x9bf66b: MOVSS dword ptr [0x00f1d9d8], XMM0",
+            "0x9bf673: OR dword ptr [ESI + 0x24], 0x1",
+            "0x9bf677: PUSH 0x0",
+            "0x9bf679: MOV dword ptr [ESI + 0xa80], 0x0",
+            "0x9bf683: CALL 0x008a92c0",
+            "0x9bf688: PUSH 0x1",
+            "0x9bf68a: MOV ECX, ESI",
+            "0x9bf68c: CALL 0x008a07e0",
+            "0x9bf691: PUSH -0x1",
+            "0x9bf693: PUSH 0x0",
+            "0x9bf695: MOV ECX, ESI",
+            "0x9bf697: CALL 0x008a70c0",
+            "0x9bf69c: PUSH -0x1",
+            "0x9bf69e: MOV ECX, ESI",
+            "0x9bf6a0: CALL 0x0089c8b0",
+            "0x9bf6a5: MOV EAX, dword ptr [ESI + 0x228]",
+            "0x9bf6ab: OR dword ptr [ESI + 0x26c], 0x20000",
+            "0x9bf6b5: TEST EAX, EAX",
+            "0x9bf6b7: JZ 0x009bf6c5",
+            "0x9bf6b9: ADD EAX, 0x60",
+            "0x9bf6bc: JZ 0x009bf6c5",
+            "0x9bf6be: AND dword ptr [EAX + 0x3d0], 0xfffffffd",
+            "0x9bf6c5: MOV EAX, dword ptr [ESI]",
+            "0x9bf6c7: MOV EDX, dword ptr [EAX + 0x110]",
+            "0x9bf6cd: MOV ECX, ESI",
+            "0x9bf6cf: CALL EDX",
+            "0x9bf6d1: OR dword ptr [ESI + 0x24], 0x1",
+            "0x9bf6d5: CMP byte ptr [ESP + 0x8], 0x0",
+            "0x9bf6da: JNZ 0x009bf6e9",
+            "0x9bf6dc: PUSH 0x1",
+            "0x9bf6de: PUSH 0x0",
+            "0x9bf6e0: PUSH 0x1",
+            "0x9bf6e2: MOV ECX, ESI",
+            "0x9bf6e4: CALL 0x009bf0d0",
+            "0x9bf6e9: MOV ESI, dword ptr [ESI + 0x228]",
+            "0x9bf6ef: TEST ESI, ESI",
+            "0x9bf6f1: JZ 0x009bf6ff",
+            "0x9bf6f3: LEA ECX, [ESI + 0x60]",
+            "0x9bf6f6: TEST ECX, ECX",
+            "0x9bf6f8: JZ 0x009bf6ff",
+            "0x9bf6fa: CALL 0x008793f0",
+            "0x9bf6ff: POP ESI",
+            "0x9bf700: RET 0x4"
+          ],
+          "limitations": [
+            "Instruction text and ordering are Ghidra-specific representations.",
+            "The fast path does not invoke the decompiler or scan whole-program names and strings."
+          ]
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "This fast path reads only the requested function and does not invoke the decompiler or whole-program string/name inventories.",
+          "Instruction text is Ghidra-specific and does not claim textual equivalence with Hopper output.",
+          "Local REA 5.0.0 fork: additionally admits SHA-256-bound GTAIV 1.0.7.0 and GTA San Andreas 1.0 US x86 references. This extension is not upstream Windows P0 coverage. DLL, managed, hostile, sensitive, and mutable-path targets remain unsupported.",
+          "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+          "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+        ],
+        "locations": [],
+        "evidence_links": [],
+        "analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      }
+    }
+  ]
+}

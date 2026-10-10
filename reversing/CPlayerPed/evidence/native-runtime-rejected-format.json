@@ -1,0 +1,1 @@
+{"passed":false,"phase":"binding_rejected","original_calls":0,"clone_calls":0,"exceptions":0,"restored":false,"natural_calls_only":true,"external_callees":"original game","scope":"Update slot29 only; no duplicate stateful comparison"}

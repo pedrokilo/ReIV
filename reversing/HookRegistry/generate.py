@@ -17,7 +17,12 @@ def main():
         row["address"] = f"0x{0x400000 + int(row['rva'],16):08X}"
         row["exe_sha256"] = HASH
         expected = evidence.get("implementation_sha256", evidence.get("wrapper_sha256"))
-        row["source_matches_evidence"] = int(hashlib.sha256((ROOT / row["source"]).read_bytes()).hexdigest() == expected)
+        if expected is None:
+            expected = evidence.get("hashes", evidence.get("source_sha256", {})).get(row["source"])
+        matches = hashlib.sha256((ROOT / row["source"]).read_bytes()).hexdigest() == expected
+        for source, digest in evidence.get("additional_source_sha256", {}).items():
+            matches = matches and hashlib.sha256((ROOT / source).read_bytes()).hexdigest() == digest
+        row["source_matches_evidence"] = int(matches)
     for filename, rows in (("hooks.csv", entries), ("hooks_notiv.csv", [])):
         with (ROOT / "docs" / filename).open("w", encoding="utf-8", newline="") as stream:
             writer = csv.DictWriter(stream, fieldnames=FIELDS)

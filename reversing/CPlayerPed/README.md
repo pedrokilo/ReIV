@@ -1,0 +1,23 @@
+# CPlayerPed: reconstrucción parcial
+
+Se reconstruyeron los cuerpos de los 18 slots que CPlayerPed cambia o añade frente a CPed y otras operaciones con receptor de jugador confirmado: **42 direcciones** en el registro. Incluyen constructor, destrucción, actualización, control, contadores, valores protegidos, copias, acciones y ayudas relacionadas. Sus operaciones se exponen en `source/game/Peds/CPlayerPed.h` y módulos PlayerPed*. Esto todavía no acredita una clase nativa completa: faltan el inventario exhaustivo no virtual, layout, herencia y adaptadores reales de todas las dependencias. La atribución histórica de algunos métodos a la clase C++ original sigue desconocida.
+
+Se comprobaron los bytes completos contra GTAIV.exe 1.0.7.0 y se ejecutaron 256 comparaciones por método en un proceso Win32, usando los cuerpos originales sin dependencias ni reubicaciones. Las escrituras se compararon sobre todo el objeto de 4096 bytes. Prueba: `check.cpp`; evidencia: `evidence/validation-summary.json`. Esta primera prueba fue independiente del juego; la validación posterior dentro del juego se describe abajo.
+
+Las copias de los slots 79/80 pasaron 62.976 comparaciones aisladas que conservan x87, SSE y orden con entradas solapadas. Valores protegidos: 325.248 comparaciones, incluyendo cuatro métodos y tres ayudantes. Contador: 258.048; constructor: 49.152; modelo/control: 512; destrucción: 256; actualización: 139.920. Los cuerpos complejos usan dependencias simuladas: estas pruebas no acreditan todos los efectos de los subsistemas externos. PlayerPedUpdate usa almacenamiento compartido exclusivo de fixtures, sin reemplazo nativo ni concurrencia.
+
+La clase tiene 82 slots conocidos; 64 conservan destinos de CPed. El inventario no incluye necesariamente todos sus métodos no virtuales. `evidence/nonvirtual-candidates.json` distingue candidatos de métodos confirmados. `register_results.py` verifica hashes y registra pruebas aisladas con `runtime_checked=0`.
+
+La declaración se conserva también en `reversing/MemoryMap/declarations/CPlayerPed.inc` para futuras regeneraciones.
+
+## Validación dentro del juego
+
+Doce operaciones pasaron 64 muestras cada una (768 comparaciones), sin fallos ni excepciones. Se verificó la vtable del jugador real, los cuerpos completos y el EXE canónico. Getters y direcciones se compararon sobre el jugador; setters repitieron el valor actual. Valores variados, copias y operaciones sobre EE0/EE4/EEC se compararon en buffers aislados de 4096 bytes; las constantes de estas últimas se leyeron del juego. En esta comparación no se instalaron reemplazos CPlayerPed; la prueba de sustitución de Update se describe aparte abajo. El juego cerró normalmente, con consola visible. `run.ps1` registra fuente y ASI exactos en `evidence/runtime-summary.json`; cambios posteriores de fuente requieren nueva prueba. La clase permanece parcialmente revertida hasta completar el inventario, layout e integración real.
+
+## Rutinas adicionales e integración pendiente
+
+El registro contiene 42 operaciones del jugador con evidencia de reconstrucción. Los bancos aislados previos de sus módulos suman 4.125.408 comparaciones; ese total incluye ayudantes y no representa pruebas dentro del juego. Las dos acciones adicionales y el auxiliar embebido tienen evidencia separada en [Actions.md](Actions.md): 42.320 y 168.960 comparaciones respectivamente. Los cinco nuevos [ReceiverHelpers.md](ReceiverHelpers.md) suman 38.400, y la actualización de relaciones suma 4.096. El auxiliar embebido no se atribuye como método directo de CPlayerPed.
+
+La vinculación de actualización, ajuste e input usa las reubicaciones COFF del código reconstruido; su diseño está en [NativeBindingDesign.md](NativeBindingDesign.md). Los clones pasaron 5.343.936 ejecuciones aisladas. **Update también pasó una sustitución real en el juego:** 32 llamadas originales observadas, 64 al cuerpo reconstruido, cero excepciones, vtable restaurada y cierre normal con consola visible. Sus dependencias externas siguieron siendo las originales. La evidencia exacta está en `evidence/native-runtime-summary.json`; runner `run-native.ps1`. Es una prueba acotada de ejecución, no una comparación duplicada con efectos sobre el jugador ni certificación de toda la clase.
+
+El alcance pendiente y los candidatos excluidos están en [EXHAUSTIVENESS.md](EXHAUSTIVENESS.md) y `evidence/native-abi-completion-gaps.json`. Para regenerar los registros conservando ambas pruebas del juego, ejecutar `python reversing/CPlayerPed/register_results.py --runtime --native` y luego `python reversing/HookRegistry/generate.py`, siempre con fuentes coincidentes con sus hashes de evidencia.

@@ -1,0 +1,185 @@
+{
+  "result": {
+    "items": [
+      {
+        "address": "0x96d520",
+        "status": "ok",
+        "pseudocode": "\r\nint FUN_0096d520(void)\r\n\r\n{\r\n  byte *pbVar1;\r\n  bool bVar2;\r\n  byte bVar3;\r\n  int *in_ECX;\r\n  int iVar4;\r\n  \r\n  iVar4 = in_ECX[4];\r\n  bVar2 = false;\r\n  do {\r\n    iVar4 = iVar4 + 1;\r\n    if (iVar4 == in_ECX[2]) {\r\n      iVar4 = 0;\r\n      if (bVar2) {\r\n        return 0;\r\n      }\r\n      bVar2 = true;\r\n    }\r\n  } while ((*(byte *)(iVar4 + in_ECX[1]) & 0x80) == 0);\r\n  pbVar1 = (byte *)(in_ECX[1] + iVar4);\r\n  *pbVar1 = *pbVar1 & 0x7f;\r\n  pbVar1 = (byte *)(in_ECX[1] + iVar4);\r\n  bVar3 = (*(byte *)(in_ECX[1] + iVar4) & 0x7f) + 1;\r\n  if ((bVar3 & 0x7f) < 2) {\r\n    bVar3 = 1;\r\n  }\r\n  else {\r\n    bVar3 = bVar3 & 0x7f;\r\n  }\r\n  *pbVar1 = *pbVar1 & 0x80 | bVar3;\r\n  in_ECX[5] = in_ECX[5] + 1;\r\n  in_ECX[4] = iVar4;\r\n  return in_ECX[3] * iVar4 + *in_ECX;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x8abf10",
+        "status": "ok",
+        "pseudocode": "\r\nvoid FUN_008abf10(undefined1 *param_1,int param_2)\r\n\r\n{\r\n  int iVar1;\r\n  undefined4 *in_ECX;\r\n  \r\n  FUN_00a4b290();\r\n  *in_ECX = CPed::vftable;\r\n  *(undefined1 *)(in_ECX + 0x84) = 0;\r\n  *(undefined1 *)((int)in_ECX + 0x211) = 0;\r\n  *(undefined1 *)((int)in_ECX + 0x212) = 0;\r\n  in_ECX[0x85] = 0;\r\n  *(undefined1 *)(in_ECX + 0x86) = *param_1;\r\n  *(undefined1 *)((int)in_ECX + 0x219) = param_1[1];\r\n  in_ECX[0x87] = 0;\r\n  *(undefined1 *)(in_ECX + 0x88) = 0;\r\n  FUN_009e2320();\r\n  FUN_009ab4a0();\r\n  FUN_00aad110();\r\n  FUN_00ce8270();\r\n  in_ECX[0x160] = audSpeechAudioEntity::vftable;\r\n  FUN_00ced1d0();\r\n  FUN_00ced1d0();\r\n  FUN_00cecf80();\r\n  FUN_00cecf80();\r\n  FUN_00cf0e80();\r\n  in_ECX[0x1e4] = audPlaceableTracker::vftable;\r\n  in_ECX[0x1e6] = 0;\r\n  in_ECX[0x2d0] = 0;\r\n  in_ECX[0x2d1] = 0;\r\n  in_ECX[0x2d4] = 0;\r\n  in_ECX[0x2d2] = 0;\r\n  in_ECX[0x2d3] = 0;\r\n  in_ECX[0x2d5] = 0;\r\n  in_ECX[0x2d6] = 0;\r\n  in_ECX[0x2d7] = 0;\r\n  in_ECX[0x2d8] = 0;\r\n  in_ECX[0x2d9] = 0;\r\n  in_ECX[0x2da] = 0;\r\n  in_ECX[0x2db] = 0;\r\n  in_ECX[0x2dc] = 0;\r\n  in_ECX[0x2dd] = 0;\r\n  in_ECX[0x2de] = 0;\r\n  in_ECX[0x2df] = 0;\r\n  in_ECX[0x2e0] = 0;\r\n  in_ECX[0x2e1] = 0;\r\n  in_ECX[0x2e2] = 0;\r\n  FUN_004475c0();\r\n  FUN_00447290();\r\n  FUN_0094e500();\r\n  FUN_009eb2c0();\r\n  in_ECX[0x385] = 0;\r\n  in_ECX[0x386] = 0;\r\n  in_ECX[0x387] = 0;\r\n  *(undefined1 *)(in_ECX + 0x388) = 0;\r\n  in_ECX[0x38c] = 0;\r\n  in_ECX[0x38d] = 0;\r\n  in_ECX[0x38e] = 0;\r\n  in_ECX[0x390] = 0;\r\n  in_ECX[0x391] = 0;\r\n  in_ECX[0x392] = 0;\r\n  in_ECX[0x394] = 0;\r\n  in_ECX[0x395] = 0xffffffff;\r\n  in_ECX[0x396] = 0xffffffff;\r\n  in_ECX[0x397] = 0xffffffff;\r\n  in_ECX[10] = in_ECX[10] & 0xfffffcff | 0xc0;\r\n  iVar1 = FUN_0096d520();\r\n  if (iVar1 == 0) {\r\n    iVar1 = 0;\r\n  }\r\n  else {\r\n    iVar1 = FUN_00a66720();\r\n  }\r\n  in_ECX[0x87] = iVar1;\r\n  *(undefined1 *)(in_ECX + 0x88) = 1;\r\n  *(undefined4 *)(iVar1 + 300) = *(undefined4 *)((&DAT_015f73b0)[param_2] + 0x90);\r\n  FUN_008aa570();\r\n  return;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x4475c0",
+        "status": "ok",
+        "pseudocode": "\r\nvoid FUN_004475c0(void)\r\n\r\n{\r\n  undefined4 *in_ECX;\r\n  \r\n  *in_ECX = 0;\r\n  if (DAT_0108f49c != 0x2694) {\r\n    FUN_00447660(in_ECX);\r\n    return;\r\n  }\r\n  Ordinal_5016(4);\r\n  return;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x4475f0",
+        "status": "ok",
+        "pseudocode": "\r\nvoid FUN_004475f0(void)\r\n\r\n{\r\n  int *in_ECX;\r\n  \r\n  if (*in_ECX != 0) {\r\n    Ordinal_5017(*in_ECX);\r\n    *in_ECX = 0;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0xc68b50",
+        "status": "ok",
+        "pseudocode": "\r\nvoid FUN_00c68b50(void)\r\n\r\n{\r\n  int in_ECX;\r\n  \r\n  *(undefined4 *)(in_ECX + 0x10) = 0;\r\n  *(undefined4 *)(in_ECX + 0x14) = 0;\r\n  *(undefined4 *)(in_ECX + 0x18) = 0;\r\n  *(undefined4 *)(in_ECX + 0x1c) = 0;\r\n  *(undefined4 *)(in_ECX + 0x20) = 0;\r\n  return;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x817f20",
+        "status": "ok",
+        "pseudocode": "\r\nundefined4 FUN_00817f20(uint param_1)\r\n\r\n{\r\n  if (param_1 < 0x20) {\r\n    return (&DAT_011a7008)[param_1];\r\n  }\r\n  return 0;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x8a3990",
+        "status": "ok",
+        "pseudocode": "\r\nvoid FUN_008a3990(void)\r\n\r\n{\r\n  int iVar1;\r\n  char cVar2;\r\n  int in_ECX;\r\n  \r\n  cVar2 = FUN_00444370();\r\n  if ((((cVar2 == '\\0') && (DAT_010d0170 != 1)) && (DAT_010e1984 == -1)) && (DAT_00f0e4a0 != 0x12))\r\n  {\r\n    FUN_009c31d0();\r\n    iVar1 = *(int *)(in_ECX + 0x228);\r\n    if ((iVar1 != 0) && (iVar1 != -0x60)) {\r\n      *(undefined4 *)(iVar1 + 0x6c) = 0;\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x9c2720",
+        "status": "ok",
+        "pseudocode": "\r\nuint FUN_009c2720(undefined4 *param_1,undefined1 *param_2)\r\n\r\n{\r\n  uint *puVar1;\r\n  char cVar2;\r\n  undefined4 *puVar3;\r\n  int iVar4;\r\n  undefined4 uVar5;\r\n  undefined4 uVar6;\r\n  undefined4 uVar7;\r\n  int in_ECX;\r\n  undefined4 *puVar8;\r\n  undefined4 uVar9;\r\n  uint local_2c;\r\n  undefined1 local_28 [4];\r\n  undefined1 local_24 [4];\r\n  float local_20;\r\n  float local_1c;\r\n  \r\n  *param_1 = 0xffffffff;\r\n  *param_2 = 0;\r\n  iVar4 = *(int *)(in_ECX + 0x2e0);\r\n  puVar3 = param_1;\r\n  if (iVar4 != 0) {\r\n    puVar8 = (undefined4 *)(*(uint *)(iVar4 + 8) >> 1 & 7);\r\n    while ((puVar3 = (undefined4 *)(*(uint *)(iVar4 + 8) >> 1 & 7), puVar3 <= puVar8 ||\r\n           (puVar8 < (undefined4 *)0x2))) {\r\n      if (*(int *)(iVar4 + 4) == 0x41e) {\r\n        iVar4 = FUN_00426850(0x41e);\r\n        puVar3 = (undefined4 *)0x0;\r\n        if (iVar4 != 0) {\r\n          *param_1 = *(undefined4 *)(iVar4 + 0x38);\r\n          if (*(int *)(*(int *)(in_ECX + 0x40) + 0xd78) != 0) {\r\n            uVar9 = 0;\r\n            local_2c = CONCAT31(local_2c._1_3_,*(byte *)(iVar4 + 0x35) >> 1) & 0xffffff01;\r\n            uVar5 = FUN_00a78090(*(int *)(in_ECX + 0x40));\r\n            uVar6 = FUN_00a78030(*(undefined4 *)(in_ECX + 0x40));\r\n            uVar7 = FUN_00a78060(*(undefined4 *)(in_ECX + 0x40));\r\n            cVar2 = FUN_00a7d630(*(undefined4 *)(in_ECX + 0x40),local_24,local_28,8,uVar7,uVar6,\r\n                                 local_2c,uVar5,uVar9);\r\n            if (cVar2 != '\\0') {\r\n              *param_2 = 1;\r\n              return 1;\r\n            }\r\n          }\r\n          puVar3 = (undefined4 *)0x0;\r\n          *param_2 = 0;\r\n        }\r\n        goto LAB_009c289b;\r\n      }\r\n      iVar4 = *(int *)(iVar4 + 0xc);\r\n      puVar8 = puVar3;\r\n      if (iVar4 == 0) break;\r\n    }\r\n  }\r\n  puVar1 = *(uint **)(*(int *)(in_ECX + 0x40) + 0xd78);\r\n  if (puVar1 != (uint *)0x0) {\r\n    puVar3 = (undefined4 *)FUN_00426910(0x414,0);\r\n    if (((char)puVar3 != '\\0') &&\r\n       (puVar3 = (undefined4 *)(*puVar1 & 0xffffff07), (char)puVar3 != '\\x01')) {\r\n      puVar3 = (undefined4 *)FUN_00c697a0(&local_20,0);\r\n      if ((char)puVar3 != '\\0') {\r\n        iVar4 = *(int *)(*(int *)(in_ECX + 0x40) + 0x20);\r\n        local_20 = *(float *)(iVar4 + 0x30) - local_20;\r\n        local_1c = *(float *)(iVar4 + 0x34) - local_1c;\r\n        puVar3 = (undefined4 *)(iVar4 + 0x30);\r\n        if (local_20 * local_20 + local_1c * local_1c < DAT_00f31804 * DAT_00f31804) {\r\nLAB_009c289b:\r\n          return CONCAT31((int3)((uint)puVar3 >> 8),1);\r\n        }\r\n      }\r\n    }\r\n  }\r\n  return (uint)puVar3 & 0xffffff00;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x448330",
+        "status": "ok",
+        "pseudocode": "\r\nundefined4 FUN_00448330(void)\r\n\r\n{\r\n  undefined4 local_8;\r\n  \r\n  local_8 = (undefined4)(longlong)ROUND(DAT_011dde7c * DAT_01083ff0);\r\n  return local_8;\r\n}\r\n\r\n"
+      }
+    ],
+    "total": 9,
+    "succeeded": 9,
+    "failed": 0
+  },
+  "evidence_id": "ev_67cb39c2b0efaf1a2060dd1872e8764ede8840c80942632d9e5d16359ed098a7",
+  "evidence": {
+    "evidence_id": "ev_67cb39c2b0efaf1a2060dd1872e8764ede8840c80942632d9e5d16359ed098a7",
+    "subject": {
+      "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+      "digest": {
+        "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+    },
+    "provider": {
+      "id": "rea-workflow",
+      "name": "REA composed investigation workflow",
+      "version": "1"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "batch_decompile",
+    "parameters": {
+      "addresses": [
+        "0x96d520",
+        "0x8abf10",
+        "0x4475c0",
+        "0x4475f0",
+        "0xc68b50",
+        "0x817f20",
+        "0x8a3990",
+        "0x9c2720",
+        "0x448330"
+      ]
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "items": [
+        {
+          "address": "0x96d520",
+          "status": "ok",
+          "pseudocode": "\r\nint FUN_0096d520(void)\r\n\r\n{\r\n  byte *pbVar1;\r\n  bool bVar2;\r\n  byte bVar3;\r\n  int *in_ECX;\r\n  int iVar4;\r\n  \r\n  iVar4 = in_ECX[4];\r\n  bVar2 = false;\r\n  do {\r\n    iVar4 = iVar4 + 1;\r\n    if (iVar4 == in_ECX[2]) {\r\n      iVar4 = 0;\r\n      if (bVar2) {\r\n        return 0;\r\n      }\r\n      bVar2 = true;\r\n    }\r\n  } while ((*(byte *)(iVar4 + in_ECX[1]) & 0x80) == 0);\r\n  pbVar1 = (byte *)(in_ECX[1] + iVar4);\r\n  *pbVar1 = *pbVar1 & 0x7f;\r\n  pbVar1 = (byte *)(in_ECX[1] + iVar4);\r\n  bVar3 = (*(byte *)(in_ECX[1] + iVar4) & 0x7f) + 1;\r\n  if ((bVar3 & 0x7f) < 2) {\r\n    bVar3 = 1;\r\n  }\r\n  else {\r\n    bVar3 = bVar3 & 0x7f;\r\n  }\r\n  *pbVar1 = *pbVar1 & 0x80 | bVar3;\r\n  in_ECX[5] = in_ECX[5] + 1;\r\n  in_ECX[4] = iVar4;\r\n  return in_ECX[3] * iVar4 + *in_ECX;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x8abf10",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_008abf10(undefined1 *param_1,int param_2)\r\n\r\n{\r\n  int iVar1;\r\n  undefined4 *in_ECX;\r\n  \r\n  FUN_00a4b290();\r\n  *in_ECX = CPed::vftable;\r\n  *(undefined1 *)(in_ECX + 0x84) = 0;\r\n  *(undefined1 *)((int)in_ECX + 0x211) = 0;\r\n  *(undefined1 *)((int)in_ECX + 0x212) = 0;\r\n  in_ECX[0x85] = 0;\r\n  *(undefined1 *)(in_ECX + 0x86) = *param_1;\r\n  *(undefined1 *)((int)in_ECX + 0x219) = param_1[1];\r\n  in_ECX[0x87] = 0;\r\n  *(undefined1 *)(in_ECX + 0x88) = 0;\r\n  FUN_009e2320();\r\n  FUN_009ab4a0();\r\n  FUN_00aad110();\r\n  FUN_00ce8270();\r\n  in_ECX[0x160] = audSpeechAudioEntity::vftable;\r\n  FUN_00ced1d0();\r\n  FUN_00ced1d0();\r\n  FUN_00cecf80();\r\n  FUN_00cecf80();\r\n  FUN_00cf0e80();\r\n  in_ECX[0x1e4] = audPlaceableTracker::vftable;\r\n  in_ECX[0x1e6] = 0;\r\n  in_ECX[0x2d0] = 0;\r\n  in_ECX[0x2d1] = 0;\r\n  in_ECX[0x2d4] = 0;\r\n  in_ECX[0x2d2] = 0;\r\n  in_ECX[0x2d3] = 0;\r\n  in_ECX[0x2d5] = 0;\r\n  in_ECX[0x2d6] = 0;\r\n  in_ECX[0x2d7] = 0;\r\n  in_ECX[0x2d8] = 0;\r\n  in_ECX[0x2d9] = 0;\r\n  in_ECX[0x2da] = 0;\r\n  in_ECX[0x2db] = 0;\r\n  in_ECX[0x2dc] = 0;\r\n  in_ECX[0x2dd] = 0;\r\n  in_ECX[0x2de] = 0;\r\n  in_ECX[0x2df] = 0;\r\n  in_ECX[0x2e0] = 0;\r\n  in_ECX[0x2e1] = 0;\r\n  in_ECX[0x2e2] = 0;\r\n  FUN_004475c0();\r\n  FUN_00447290();\r\n  FUN_0094e500();\r\n  FUN_009eb2c0();\r\n  in_ECX[0x385] = 0;\r\n  in_ECX[0x386] = 0;\r\n  in_ECX[0x387] = 0;\r\n  *(undefined1 *)(in_ECX + 0x388) = 0;\r\n  in_ECX[0x38c] = 0;\r\n  in_ECX[0x38d] = 0;\r\n  in_ECX[0x38e] = 0;\r\n  in_ECX[0x390] = 0;\r\n  in_ECX[0x391] = 0;\r\n  in_ECX[0x392] = 0;\r\n  in_ECX[0x394] = 0;\r\n  in_ECX[0x395] = 0xffffffff;\r\n  in_ECX[0x396] = 0xffffffff;\r\n  in_ECX[0x397] = 0xffffffff;\r\n  in_ECX[10] = in_ECX[10] & 0xfffffcff | 0xc0;\r\n  iVar1 = FUN_0096d520();\r\n  if (iVar1 == 0) {\r\n    iVar1 = 0;\r\n  }\r\n  else {\r\n    iVar1 = FUN_00a66720();\r\n  }\r\n  in_ECX[0x87] = iVar1;\r\n  *(undefined1 *)(in_ECX + 0x88) = 1;\r\n  *(undefined4 *)(iVar1 + 300) = *(undefined4 *)((&DAT_015f73b0)[param_2] + 0x90);\r\n  FUN_008aa570();\r\n  return;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x4475c0",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_004475c0(void)\r\n\r\n{\r\n  undefined4 *in_ECX;\r\n  \r\n  *in_ECX = 0;\r\n  if (DAT_0108f49c != 0x2694) {\r\n    FUN_00447660(in_ECX);\r\n    return;\r\n  }\r\n  Ordinal_5016(4);\r\n  return;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x4475f0",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_004475f0(void)\r\n\r\n{\r\n  int *in_ECX;\r\n  \r\n  if (*in_ECX != 0) {\r\n    Ordinal_5017(*in_ECX);\r\n    *in_ECX = 0;\r\n  }\r\n  return;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0xc68b50",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_00c68b50(void)\r\n\r\n{\r\n  int in_ECX;\r\n  \r\n  *(undefined4 *)(in_ECX + 0x10) = 0;\r\n  *(undefined4 *)(in_ECX + 0x14) = 0;\r\n  *(undefined4 *)(in_ECX + 0x18) = 0;\r\n  *(undefined4 *)(in_ECX + 0x1c) = 0;\r\n  *(undefined4 *)(in_ECX + 0x20) = 0;\r\n  return;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x817f20",
+          "status": "ok",
+          "pseudocode": "\r\nundefined4 FUN_00817f20(uint param_1)\r\n\r\n{\r\n  if (param_1 < 0x20) {\r\n    return (&DAT_011a7008)[param_1];\r\n  }\r\n  return 0;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x8a3990",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_008a3990(void)\r\n\r\n{\r\n  int iVar1;\r\n  char cVar2;\r\n  int in_ECX;\r\n  \r\n  cVar2 = FUN_00444370();\r\n  if ((((cVar2 == '\\0') && (DAT_010d0170 != 1)) && (DAT_010e1984 == -1)) && (DAT_00f0e4a0 != 0x12))\r\n  {\r\n    FUN_009c31d0();\r\n    iVar1 = *(int *)(in_ECX + 0x228);\r\n    if ((iVar1 != 0) && (iVar1 != -0x60)) {\r\n      *(undefined4 *)(iVar1 + 0x6c) = 0;\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x9c2720",
+          "status": "ok",
+          "pseudocode": "\r\nuint FUN_009c2720(undefined4 *param_1,undefined1 *param_2)\r\n\r\n{\r\n  uint *puVar1;\r\n  char cVar2;\r\n  undefined4 *puVar3;\r\n  int iVar4;\r\n  undefined4 uVar5;\r\n  undefined4 uVar6;\r\n  undefined4 uVar7;\r\n  int in_ECX;\r\n  undefined4 *puVar8;\r\n  undefined4 uVar9;\r\n  uint local_2c;\r\n  undefined1 local_28 [4];\r\n  undefined1 local_24 [4];\r\n  float local_20;\r\n  float local_1c;\r\n  \r\n  *param_1 = 0xffffffff;\r\n  *param_2 = 0;\r\n  iVar4 = *(int *)(in_ECX + 0x2e0);\r\n  puVar3 = param_1;\r\n  if (iVar4 != 0) {\r\n    puVar8 = (undefined4 *)(*(uint *)(iVar4 + 8) >> 1 & 7);\r\n    while ((puVar3 = (undefined4 *)(*(uint *)(iVar4 + 8) >> 1 & 7), puVar3 <= puVar8 ||\r\n           (puVar8 < (undefined4 *)0x2))) {\r\n      if (*(int *)(iVar4 + 4) == 0x41e) {\r\n        iVar4 = FUN_00426850(0x41e);\r\n        puVar3 = (undefined4 *)0x0;\r\n        if (iVar4 != 0) {\r\n          *param_1 = *(undefined4 *)(iVar4 + 0x38);\r\n          if (*(int *)(*(int *)(in_ECX + 0x40) + 0xd78) != 0) {\r\n            uVar9 = 0;\r\n            local_2c = CONCAT31(local_2c._1_3_,*(byte *)(iVar4 + 0x35) >> 1) & 0xffffff01;\r\n            uVar5 = FUN_00a78090(*(int *)(in_ECX + 0x40));\r\n            uVar6 = FUN_00a78030(*(undefined4 *)(in_ECX + 0x40));\r\n            uVar7 = FUN_00a78060(*(undefined4 *)(in_ECX + 0x40));\r\n            cVar2 = FUN_00a7d630(*(undefined4 *)(in_ECX + 0x40),local_24,local_28,8,uVar7,uVar6,\r\n                                 local_2c,uVar5,uVar9);\r\n            if (cVar2 != '\\0') {\r\n              *param_2 = 1;\r\n              return 1;\r\n            }\r\n          }\r\n          puVar3 = (undefined4 *)0x0;\r\n          *param_2 = 0;\r\n        }\r\n        goto LAB_009c289b;\r\n      }\r\n      iVar4 = *(int *)(iVar4 + 0xc);\r\n      puVar8 = puVar3;\r\n      if (iVar4 == 0) break;\r\n    }\r\n  }\r\n  puVar1 = *(uint **)(*(int *)(in_ECX + 0x40) + 0xd78);\r\n  if (puVar1 != (uint *)0x0) {\r\n    puVar3 = (undefined4 *)FUN_00426910(0x414,0);\r\n    if (((char)puVar3 != '\\0') &&\r\n       (puVar3 = (undefined4 *)(*puVar1 & 0xffffff07), (char)puVar3 != '\\x01')) {\r\n      puVar3 = (undefined4 *)FUN_00c697a0(&local_20,0);\r\n      if ((char)puVar3 != '\\0') {\r\n        iVar4 = *(int *)(*(int *)(in_ECX + 0x40) + 0x20);\r\n        local_20 = *(float *)(iVar4 + 0x30) - local_20;\r\n        local_1c = *(float *)(iVar4 + 0x34) - local_1c;\r\n        puVar3 = (undefined4 *)(iVar4 + 0x30);\r\n        if (local_20 * local_20 + local_1c * local_1c < DAT_00f31804 * DAT_00f31804) {\r\nLAB_009c289b:\r\n          return CONCAT31((int3)((uint)puVar3 >> 8),1);\r\n        }\r\n      }\r\n    }\r\n  }\r\n  return (uint)puVar3 & 0xffffff00;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x448330",
+          "status": "ok",
+          "pseudocode": "\r\nundefined4 FUN_00448330(void)\r\n\r\n{\r\n  undefined4 local_8;\r\n  \r\n  local_8 = (undefined4)(longlong)ROUND(DAT_011dde7c * DAT_01083ff0);\r\n  return local_8;\r\n}\r\n\r\n"
+        }
+      ],
+      "total": 9,
+      "succeeded": 9,
+      "failed": 0
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Derived by an REA workflow from one or more provider observations."
+    ],
+    "locations": [],
+    "evidence_links": [],
+    "analysis_profile": {
+      "provider": {
+        "id": "rea-workflow",
+        "name": "REA composed investigation workflow",
+        "version": "1"
+      },
+      "parameters": {
+        "upstream_analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      },
+      "digest": "fe71db632b57bd0c478c5bbd9ca5b17a8189d25db100beff7846c8bf5205be9d"
+    }
+  }
+}

@@ -1,0 +1,8 @@
+[
+  {
+    "source": "reversing\\PendingAnalysis\\evidence\\decompilation\\batch-018.json",
+    "address": "0x8a3990",
+    "status": "ok",
+    "pseudocode": "\r\nvoid FUN_008a3990(void)\r\n\r\n{\r\n  int iVar1;\r\n  char cVar2;\r\n  int in_ECX;\r\n  \r\n  cVar2 = FUN_00444370();\r\n  if ((((cVar2 == '\\0') && (DAT_010d0170 != 1)) && (DAT_010e1984 == -1)) && (DAT_00f0e4a0 != 0x12))\r\n  {\r\n    FUN_009c31d0();\r\n    iVar1 = *(int *)(in_ECX + 0x228);\r\n    if ((iVar1 != 0) && (iVar1 != -0x60)) {\r\n      *(undefined4 *)(iVar1 + 0x6c) = 0;\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+  }
+]

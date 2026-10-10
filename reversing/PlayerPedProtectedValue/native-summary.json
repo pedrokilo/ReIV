@@ -1,0 +1,66 @@
+{
+  "date": "2026-10-09T23:21:48.9284545-06:00",
+  "passed": true,
+  "comparisons": 325248,
+  "comparisons_per_body": 46464,
+  "failures": 0,
+  "scope": "seven canonical bodies with patched explicit dependencies; mocked xlive callbacks; complete object and callback log, x87/MXCSR, float edge cases and rounding; no in-game calls",
+  "in_game": false,
+  "implementation_kind": "MSVC x86 inline assembly reconstruction",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "implementation_sha256": "f8b0a0fecfade363781377e5d495227414eaf95fc05a30222fbb9e9a5b0a7bfd",
+  "test_sha256": "7736033b3eda4381d8b57f37e81e97eb570e00787ee6297d899d51d4a510cd78",
+  "comparison_exe_sha256": "6eb393057a5880c7b6c71272d335fafcb291649463c368351ddabf66fb7cc539",
+  "compiler": "C:\\Program Files\\Microsoft Visual Studio\\18\\Community\\VC\\Tools\\MSVC\\14.51.36231",
+  "entries": [
+    {
+      "name": "Write",
+      "va": "0x00447610",
+      "rva": "0x00047610",
+      "body_size": 36,
+      "bytes": "f3 0f 10 44 24 04 56 f3 0f 11 44 24 08 8b 44 24 08 50 8b f1 8b 0e 6a 00 51 e8 ea 8c 8e 00 8b c6 5e c2 04 00"
+    },
+    {
+      "name": "Read",
+      "va": "0x00447640",
+      "rva": "0x00047640",
+      "body_size": 25,
+      "bytes": "51 8b 09 d9 ee 8d 04 24 d9 1c 24 50 6a 00 51 e8 ca 8c 8e 00 d9 04 24 59 c3"
+    },
+    {
+      "name": "Flags",
+      "va": "0x0089e5a0",
+      "rva": "0x0049e5a0",
+      "body_size": 111,
+      "bytes": "f3 0f 10 0d 38 ea dc 00 f3 0f 10 44 24 04 0f 2f c8 76 07 b8 01 00 00 00 eb 02 33 c0 f3 0f 10 0d 40 f3 d8 00 0f 2f c8 88 81 12 02 00 00 76 07 b8 01 00 00 00 eb 02 33 c0 0f 57 c9 0f 2f c8 88 81 11 02 00 00 72 16 b8 01 00 00 00 88 81 10 02 00 00 f3 0f 11 81 14 02 00 00 c2 04 00 33 c0 88 81 10 02 00 00 f3 0f 11 81 14 02 00 00 c2 04 00"
+    },
+    {
+      "name": "Set60",
+      "va": "0x009c1cf0",
+      "rva": "0x005c1cf0",
+      "body_size": 41,
+      "bytes": "d9 44 24 04 56 8b f1 51 8d 8e ac 0e 00 00 d9 1c 24 e8 0a 59 a8 ff d9 44 24 08 51 8b ce d9 1c 24 e8 8b c8 ed ff 5e c2 04 00"
+    },
+    {
+      "name": "Set61",
+      "va": "0x009c1d20",
+      "rva": "0x005c1d20",
+      "body_size": 41,
+      "bytes": "d9 44 24 04 56 8b f1 51 8d 8e ac 0e 00 00 d9 1c 24 e8 da 58 a8 ff d9 44 24 08 51 8b ce d9 1c 24 e8 5b c8 ed ff 5e c2 08 00"
+    },
+    {
+      "name": "Add62",
+      "va": "0x009c1d50",
+      "rva": "0x005c1d50",
+      "body_size": 56,
+      "bytes": "56 8b f1 57 8d be ac 0e 00 00 8b cf e8 df 58 a8 ff d8 44 24 0c 51 8b cf d9 54 24 10 d9 1c 24 e8 9c 58 a8 ff d9 44 24 0c 51 8b ce d9 1c 24 e8 1d c8 ed ff 5f 5e c2 04 00"
+    },
+    {
+      "name": "Get63",
+      "va": "0x009c1ce0",
+      "rva": "0x005c1ce0",
+      "body_size": 11,
+      "bytes": "81 c1 ac 0e 00 00 e9 55 59 a8 ff"
+    }
+  ]
+}

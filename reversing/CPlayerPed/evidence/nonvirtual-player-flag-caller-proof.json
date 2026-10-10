@@ -1,0 +1,204 @@
+[
+  {
+    "caller_va": "0xab94c0",
+    "target_va": "0x9bf5d0",
+    "windows": [
+      [
+        {
+          "va": "0xab9532",
+          "bytes": "0f84e7000000",
+          "asm": "je 0xab961f"
+        },
+        {
+          "va": "0xab9538",
+          "bytes": "3da0360000",
+          "asm": "cmp eax, 0x36a0"
+        },
+        {
+          "va": "0xab953d",
+          "bytes": "0f84dc000000",
+          "asm": "je 0xab961f"
+        },
+        {
+          "va": "0xab9543",
+          "bytes": "3da1360000",
+          "asm": "cmp eax, 0x36a1"
+        },
+        {
+          "va": "0xab9548",
+          "bytes": "0f84d1000000",
+          "asm": "je 0xab961f"
+        },
+        {
+          "va": "0xab954e",
+          "bytes": "80be1902000000",
+          "asm": "cmp byte ptr [esi + 0x219], 0"
+        },
+        {
+          "va": "0xab9555",
+          "bytes": "7446",
+          "asm": "je 0xab959d"
+        },
+        {
+          "va": "0xab9557",
+          "bytes": "8b8628020000",
+          "asm": "mov eax, dword ptr [esi + 0x228]"
+        },
+        {
+          "va": "0xab955d",
+          "bytes": "85c0",
+          "asm": "test eax, eax"
+        },
+        {
+          "va": "0xab955f",
+          "bytes": "7405",
+          "asm": "je 0xab9566"
+        }
+      ],
+      [
+        {
+          "va": "0xab957e",
+          "bytes": "837d0c04",
+          "asm": "cmp dword ptr [ebp + 0xc], 4"
+        },
+        {
+          "va": "0xab9582",
+          "bytes": "0f8497000000",
+          "asm": "je 0xab961f"
+        },
+        {
+          "va": "0xab9588",
+          "bytes": "837f0c3b",
+          "asm": "cmp dword ptr [edi + 0xc], 0x3b"
+        },
+        {
+          "va": "0xab958c",
+          "bytes": "750f",
+          "asm": "jne 0xab959d"
+        },
+        {
+          "va": "0xab958e",
+          "bytes": "8bce",
+          "asm": "mov ecx, esi"
+        },
+        {
+          "va": "0xab9590",
+          "bytes": "e83b60f0ff",
+          "asm": "call 0x9bf5d0"
+        },
+        {
+          "va": "0xab9595",
+          "bytes": "84c0",
+          "asm": "test al, al"
+        },
+        {
+          "va": "0xab9597",
+          "bytes": "0f8482000000",
+          "asm": "je 0xab961f"
+        },
+        {
+          "va": "0xab959d",
+          "bytes": "8b07",
+          "asm": "mov eax, dword ptr [edi]"
+        }
+      ]
+    ],
+    "confidence": "Player-flag219 guard and register receiver preserved; original C++defining class declaration remains inferred."
+  },
+  {
+    "caller_va": "0x956680",
+    "target_va": "0x9bf640",
+    "windows": [
+      [
+        {
+          "va": "0x95668b",
+          "bytes": "8bd9",
+          "asm": "mov ebx, ecx"
+        },
+        {
+          "va": "0x95668d",
+          "bytes": "57",
+          "asm": "push edi"
+        },
+        {
+          "va": "0x95668e",
+          "bytes": "8b7b40",
+          "asm": "mov edi, dword ptr [ebx + 0x40]"
+        },
+        {
+          "va": "0x956691",
+          "bytes": "85ff",
+          "asm": "test edi, edi"
+        },
+        {
+          "va": "0x956693",
+          "bytes": "0f84a4060000",
+          "asm": "je 0x956d3d"
+        },
+        {
+          "va": "0x956699",
+          "bytes": "80bf1902000000",
+          "asm": "cmp byte ptr [edi + 0x219], 0"
+        },
+        {
+          "va": "0x9566a0",
+          "bytes": "0f8497060000",
+          "asm": "je 0x956d3d"
+        },
+        {
+          "va": "0x9566a6",
+          "bytes": "833d70010d0101",
+          "asm": "cmp dword ptr [0x10d0170], 1"
+        },
+        {
+          "va": "0x9566ad",
+          "bytes": "0f848a060000",
+          "asm": "je 0x956d3d"
+        },
+        {
+          "va": "0x9566b3",
+          "bytes": "a184190e01",
+          "asm": "mov eax, dword ptr [0x10e1984]"
+        }
+      ],
+      [
+        {
+          "va": "0x956769",
+          "bytes": "8b4b40",
+          "asm": "mov ecx, dword ptr [ebx + 0x40]"
+        },
+        {
+          "va": "0x95676c",
+          "bytes": "51",
+          "asm": "push ecx"
+        },
+        {
+          "va": "0x95676d",
+          "bytes": "8bce",
+          "asm": "mov ecx, esi"
+        },
+        {
+          "va": "0x95676f",
+          "bytes": "e8ac90f8ff",
+          "asm": "call 0x8df820"
+        },
+        {
+          "va": "0x956774",
+          "bytes": "8bcf",
+          "asm": "mov ecx, edi"
+        },
+        {
+          "va": "0x956776",
+          "bytes": "e8c58e0600",
+          "asm": "call 0x9bf640"
+        },
+        {
+          "va": "0x95677b",
+          "bytes": "f30f100590a7f200",
+          "asm": "movss xmm0, dword ptr [0xf2a790]"
+        }
+      ]
+    ],
+    "confidence": "Player-flag219 guard and register receiver preserved; original C++defining class declaration remains inferred."
+  }
+]

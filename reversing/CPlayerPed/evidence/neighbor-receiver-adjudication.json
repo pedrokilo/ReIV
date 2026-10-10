@@ -1,0 +1,86 @@
+{
+  "canonical_provider_evidence": "rea-neighbor-caller-proof.json",
+  "original_cpp_declarations_recovered": false,
+  "items": [
+    {
+      "va": "0x9bef20",
+      "player_receiver_flag_guard_confirmed": true,
+      "caller": "0x45d440",
+      "caller_boundary_end": "0x45d4b1",
+      "trace": [
+        "45D495 CMP byte[EDI+219],0",
+        "45D49C JZ skip",
+        "45D49E PUSH1000",
+        "45D4A3 PUSH1",
+        "45D4A5 MOVECXEDI",
+        "45D4A7 CALL9BEF20"
+      ],
+      "original_cpp_defining_class_recovered": false
+    },
+    {
+      "va": "0x9be5f0",
+      "playerinfo_58c_receiver_confirmed": true,
+      "caller": "0xb91730",
+      "trace": [
+        "B91735 CALL817F20(index)",
+        "B9173A MOVECX[EAX+58C]",
+        "B91743 CALL9BE5F0"
+      ],
+      "sdk_corrob": "contrib/IV SDK.Net/IV-SDK-DotNet-main/IVSDKDotNet/IVSDK/CPlayerInfo.h:44,73",
+      "original_cpp_defining_class_recovered": false
+    },
+    {
+      "va": "0x9beef0",
+      "playerinfo_58c_receiver_confirmed": true,
+      "caller": "0xb91150",
+      "trace": [
+        "B91155 CALL817F20(index)",
+        "B9115A MOVECX[EAX+58C]",
+        "B91163 PUSH0",
+        "B91165 PUSH0",
+        "B91167 CALL9BEEF0"
+      ],
+      "original_cpp_defining_class_recovered": false
+    },
+    {
+      "va": "0x9be790",
+      "playerinfo_58c_receiver_strong_candidate": true,
+      "caller": "0x935870",
+      "trace": [
+        "93589E MOVECX[ESP+68] firstarg",
+        "9358AD MOVESI[ECX+58C]",
+        "9358B3 MOV[ESP+C],ESI",
+        "9358FD PUSH EBX /9358FE PUSH EDI: local nowESP14",
+        "935C89 MOVEDI[ESP14]/935CA3 MOVECXEDI/CALL935CA5",
+        "935FED MOVESI[ESP14]/935FF4 MOVECXESI/CALL935FF6"
+      ],
+      "playerinfo_58c_receiver_confirmed": true,
+      "stack_contract_confirmed": "Root REA933090 fullbody RET4@93313D and933147; balances PUSH9358C9. LocalESP+C becomesESP+14 afterEBX/EDI pushes."
+    },
+    {
+      "va": "0x9bef70",
+      "caller": "0xc00580",
+      "trace": [
+        "C00665 CALL817F40",
+        "C0066A MOVECXEAX",
+        "C0066C POPESI",
+        "C0066D JMP9BEF70"
+      ],
+      "player_getter_receiver_confirmed": true,
+      "getter_contract_confirmed": "Root REA817F40 resolves current playerinfo from11A7008[F1CC68] then returns pointer+58C; canonical player getter."
+    },
+    {
+      "va": "0x9bee90",
+      "status": "four_argument_caller_cleaned_helper_not_adjudicated_as_member",
+      "trace": [
+        "9C0688 MOVECX[ECX]",
+        "9C068A PUSHarg4",
+        "9C068B PUSHarg3",
+        "9C068C PUSHarg2",
+        "9C068D PUSHarg1",
+        "9C068E CALL9BEE90",
+        "9C0693 ADDESP16"
+      ]
+    }
+  ]
+}

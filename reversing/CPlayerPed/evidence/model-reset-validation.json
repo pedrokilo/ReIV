@@ -1,0 +1,38 @@
+{
+  "timestamp_utc": "2026-10-10T05:38:56.281836+00:00",
+  "passed": true,
+  "comparisons": 10752,
+  "failures": 0,
+  "va": "0x009BF660",
+  "rva": "0x005BF660",
+  "complete_body_bytes": 163,
+  "implementation_kind": "C++_own_caller_body_with_explicit_dependencies",
+  "implementation_sha256": "163526e1eac02c5d76363115e7f994ed841137c15695b8711587192d2ea3c880",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "game_runtime_validated": false,
+  "external_dependencies_reconstructed": false,
+  "dependency_scope": "Six direct callees and virtual slot68 deterministic substitutes, original thiscall stack cleanup preserved",
+  "checks": [
+    "256 combinations of null/validA/validB/FFFFFFA0 member states across callbacks",
+    "6 DWORD argument patterns exercising low-byte-zero and nonzero with varying upper bits",
+    "7 global bit patterns including NaN/sNaN and signed zero",
+    "Ordered callback traces with argument/flags/global observations",
+    "Three full4096byte buffers and both global words",
+    "x87 status and MXCSR identical; masked exceptions"
+  ],
+  "limitations": [
+    "Own caller behavior tested against complete canonical body with external CALLs and two global operands patched.",
+    "The original virtual callee selected by slot68 remains a dependency.",
+    "No real-player reset or replacement installed.",
+    "Complete class layout and external subsystem semantics remain unresolved."
+  ],
+  "hashes": {
+    "source/game/Peds/PlayerPedModelReset.h": "163526e1eac02c5d76363115e7f994ed841137c15695b8711587192d2ea3c880",
+    "reversing/CPlayerPed/check-model-reset.cpp": "f7ce81da6c495a406499052df6d7cf87659bac82c8ebcb209d32640a00367751",
+    "reversing/CPlayerPed/model-reset-fixture.h": "5ce9ad2bd040aa125f927c514c33b54c13eee24a9b383d1b7be44980de3bc8fe",
+    "reversing/CPlayerPed/model_reset_evidence.py": "db7060010960aa8891743813d78628369ffff7b5a759827c44db6a1be419e122",
+    "build/player-model-reset-check.exe": "5d37565611d2a6f59e39b501ba32aba18832f0e14a1bb271bad6a237ce532376",
+    "build/player-model-reset-patched.bin": "368c32fda8897122ccc70adb665a604d692f7fdc1834b313eace32cc77b6e9e2"
+  },
+  "output": "PASS comparisons=10752 failures=0 globals_trace_buffers_fp_state_matched=1"
+}

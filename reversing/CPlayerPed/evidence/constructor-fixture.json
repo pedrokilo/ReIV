@@ -1,0 +1,303 @@
+{
+  "canonical_va": "0x009C1910",
+  "end_exclusive": "0x009C1C84",
+  "body": "8b44240883ec08535556578bf18b4c241c50518bcee8e6a5eeff8d8e800e0000c706c419d800e815722a008daeac0e00008bcde8785ca8ff8b15b00823018996bc0e0000f30f1005101ff200f30f1186c00e0000f30f1005141ff200f30f1186c40e0000f30f1005181ff200f30f1186c80e0000f30f1005201ff200f30f1186d00e0000f30f1005241ff200f30f1186d40e0000f30f1005281ff2008dbe800000006a018bcff30f1186d80e0000e82d8f160057e8878416008b44242833db50891d00427201e84565e5ff83c408898628020000833d70010d0101743e8b0d84190e013b0d7c44e3007530833da0e4f0001274273bc374058d4860eb0233c956e8bbf2f5ff8b86280200003bc374058d4860eb0233c9e825f6f5ffc70510427201640000008b86280200003bc3740583c060eb0233c0c780d4030000ffffffff8b961c020000899a2c010000389e180200007408389e1902000075078bcee84dcaffff8b3d74de1d01e89cb7340025ffff000089442420db442420685c19d800d97c24240fb7442424d80dd8e1eb000d000c000089442420d80dbc19d800d96c2420df7c24148b4424142bf881c760ea0000d96c2424893dec806101818e6002000080000000e80517eafff30f10050cd7d8008bcda3fc806101f30f1186940a0000d9050cd7d800d91c24e8105ba8ffd986940a000051d91c248bcee88fcaedff8b8e1c02000081c110010000e8be05fbffc70514427201e88061018b86280200003bc3899e740e0000899e780e0000889e700e0000740583c060eb0233c0f30f10057809d5008898160400008b8624020000889e710e0000f30f1180ec000000c780e800000002000000833d70010d010174178b0d84190e013b0d7c44e3007509833da0e4f000127518e8d061ddff3905a0000d01a1e0f70c01750383c0018946688b1540427201a1344272016800427201535250ff15b8d4d4006a6089b67c0e0000e8f7f5a3ff83c4043bc374098bc8e8b98df1ffeb0233c00f57c08b8e280200008986a80e0000c64663ff889ea60e0000889ea40e0000889ea50e0000889ea70e0000899eb00e0000899eb40e0000899eb80e0000f30f1186e00e0000f30f1186e40e0000f30f10055819d800f30f1186e80e0000f30f10055819d800f30f1186ec0e0000c786f00e0000ffffffff899ef40e0000e8936debff84c08bc67407c605dcfdf300015f5e5d5b83c408c20c00",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "patches": [
+    {
+      "offset": 34,
+      "va": 14162372,
+      "kind": "canonical_pointer"
+    },
+    {
+      "offset": 58,
+      "va": 19073200,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 72,
+      "va": 15867664,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 88,
+      "va": 15867668,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 104,
+      "va": 15867672,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 120,
+      "va": 15867680,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 136,
+      "va": 15867684,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 152,
+      "va": 15867688,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 194,
+      "va": 24265216,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 214,
+      "va": 17629552,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 223,
+      "va": 17701252,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 229,
+      "va": 14894204,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 237,
+      "va": 15787168,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 285,
+      "va": 24265232,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 357,
+      "va": 18734708,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 380,
+      "va": 14162268,
+      "kind": "canonical_pointer"
+    },
+    {
+      "offset": 395,
+      "va": 15458776,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 410,
+      "va": 14162364,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 440,
+      "va": 23167212,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 463,
+      "va": 14210828,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 470,
+      "va": 23167228,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 484,
+      "va": 14210828,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 532,
+      "va": 24265236,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 536,
+      "va": 23167208,
+      "kind": "canonical_pointer"
+    },
+    {
+      "offset": 579,
+      "va": 13961592,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 621,
+      "va": 17629552,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 630,
+      "va": 17701252,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 636,
+      "va": 14894204,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 644,
+      "va": 15787168,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 658,
+      "va": 17629344,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 663,
+      "va": 17627104,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 677,
+      "va": 24265280,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 682,
+      "va": 24265268,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 687,
+      "va": 24265216,
+      "kind": "canonical_pointer"
+    },
+    {
+      "offset": 696,
+      "va": 13948088,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 812,
+      "va": 14162264,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 828,
+      "va": 14162264,
+      "kind": "absolute_memory"
+    },
+    {
+      "offset": 869,
+      "va": 15990236,
+      "kind": "absolute_memory"
+    }
+  ],
+  "calls": [
+    {
+      "offset": 21,
+      "target": 9092880
+    },
+    {
+      "offset": 38,
+      "target": 13011792
+    },
+    {
+      "offset": 51,
+      "target": 4486592
+    },
+    {
+      "offset": 174,
+      "target": 11708656
+    },
+    {
+      "offset": 180,
+      "target": 11705936
+    },
+    {
+      "offset": 198,
+      "target": 8486688
+    },
+    {
+      "offset": 256,
+      "target": 9571536
+    },
+    {
+      "offset": 278,
+      "target": 9572432
+    },
+    {
+      "offset": 350,
+      "target": 10216640
+    },
+    {
+      "offset": 361,
+      "target": 13685274
+    },
+    {
+      "offset": 454,
+      "target": 8794592
+    },
+    {
+      "offset": 491,
+      "target": 4486672
+    },
+    {
+      "offset": 508,
+      "target": 9037216
+    },
+    {
+      "offset": 525,
+      "target": 9904352
+    },
+    {
+      "offset": 651,
+      "target": 7961968
+    },
+    {
+      "offset": 708,
+      "target": 4198864
+    },
+    {
+      "offset": 722,
+      "target": 9284000
+    },
+    {
+      "offset": 856,
+      "target": 8882688
+    }
+  ],
+  "global_va": [
+    13948088,
+    13961592,
+    14162264,
+    14162364,
+    14210828,
+    14894204,
+    15458776,
+    15787168,
+    15867664,
+    15867668,
+    15867672,
+    15867680,
+    15867684,
+    15867688,
+    15990236,
+    17627104,
+    17629344,
+    17629552,
+    17701252,
+    18734708,
+    19073200,
+    23167212,
+    23167228,
+    24265216,
+    24265232,
+    24265236,
+    24265268,
+    24265280
+  ],
+  "scope": "isolated body with dependency contracts only"
+}

@@ -1,0 +1,342 @@
+{
+  "passed": true,
+  "failures": 0,
+  "comparisons": 4096,
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "implementation_sha256": "7860c275a4e7dd6a7dcf802f41df781df10110483760f13d518c22a667a266d4",
+  "implementation_kind": "CXX_x86_raw_fields_explicit_dependencies",
+  "methods": [
+    {
+      "va": "0x9bf250",
+      "size": 114,
+      "instruction_count": 37,
+      "body_sha256": "32c7f6185f1f6a77ae89522a6ef87aa6891872185012ed11d7a0a52faf592c1d",
+      "body_bytes": "55 56 57 8b e9 33 ff 8b cd e8 72 97 a7 ff 8b 88 d4 03 00 00 6b c9 5c 81 c1 78 21 66 01 57 e8 fd 78 0a 00 8b f0 85 f6 74 3d 80 be 70 0a 00 00 02 74 34 8b 45 00 8b 50 30 6a 01 8b cd ff d2 f6 86 6c 02 00 00 04 75 04 83 4e 24 01 0f b6 87 e0 80 61 01 c1 e0 0c 33 86 60 02 00 00 25 00 10 00 00 31 86 60 02 00 00 83 c7 01 83 ff 07 7c 99 5f 5e 5d c3",
+      "instructions": [
+        {
+          "va": "0x9bf250",
+          "bytes": "55",
+          "mnemonic": "push",
+          "operands": "ebp"
+        },
+        {
+          "va": "0x9bf251",
+          "bytes": "56",
+          "mnemonic": "push",
+          "operands": "esi"
+        },
+        {
+          "va": "0x9bf252",
+          "bytes": "57",
+          "mnemonic": "push",
+          "operands": "edi"
+        },
+        {
+          "va": "0x9bf253",
+          "bytes": "8b e9",
+          "mnemonic": "mov",
+          "operands": "ebp, ecx"
+        },
+        {
+          "va": "0x9bf255",
+          "bytes": "33 ff",
+          "mnemonic": "xor",
+          "operands": "edi, edi"
+        },
+        {
+          "va": "0x9bf257",
+          "bytes": "8b cd",
+          "mnemonic": "mov",
+          "operands": "ecx, ebp"
+        },
+        {
+          "va": "0x9bf259",
+          "bytes": "e8 72 97 a7 ff",
+          "mnemonic": "call",
+          "operands": "0x4389d0"
+        },
+        {
+          "va": "0x9bf25e",
+          "bytes": "8b 88 d4 03 00 00",
+          "mnemonic": "mov",
+          "operands": "ecx, dword ptr [eax + 0x3d4]"
+        },
+        {
+          "va": "0x9bf264",
+          "bytes": "6b c9 5c",
+          "mnemonic": "imul",
+          "operands": "ecx, ecx, 0x5c"
+        },
+        {
+          "va": "0x9bf267",
+          "bytes": "81 c1 78 21 66 01",
+          "mnemonic": "add",
+          "operands": "ecx, 0x1662178"
+        },
+        {
+          "va": "0x9bf26d",
+          "bytes": "57",
+          "mnemonic": "push",
+          "operands": "edi"
+        },
+        {
+          "va": "0x9bf26e",
+          "bytes": "e8 fd 78 0a 00",
+          "mnemonic": "call",
+          "operands": "0xa66b70"
+        },
+        {
+          "va": "0x9bf273",
+          "bytes": "8b f0",
+          "mnemonic": "mov",
+          "operands": "esi, eax"
+        },
+        {
+          "va": "0x9bf275",
+          "bytes": "85 f6",
+          "mnemonic": "test",
+          "operands": "esi, esi"
+        },
+        {
+          "va": "0x9bf277",
+          "bytes": "74 3d",
+          "mnemonic": "je",
+          "operands": "0x9bf2b6"
+        },
+        {
+          "va": "0x9bf279",
+          "bytes": "80 be 70 0a 00 00 02",
+          "mnemonic": "cmp",
+          "operands": "byte ptr [esi + 0xa70], 2"
+        },
+        {
+          "va": "0x9bf280",
+          "bytes": "74 34",
+          "mnemonic": "je",
+          "operands": "0x9bf2b6"
+        },
+        {
+          "va": "0x9bf282",
+          "bytes": "8b 45 00",
+          "mnemonic": "mov",
+          "operands": "eax, dword ptr [ebp]"
+        },
+        {
+          "va": "0x9bf285",
+          "bytes": "8b 50 30",
+          "mnemonic": "mov",
+          "operands": "edx, dword ptr [eax + 0x30]"
+        },
+        {
+          "va": "0x9bf288",
+          "bytes": "6a 01",
+          "mnemonic": "push",
+          "operands": "1"
+        },
+        {
+          "va": "0x9bf28a",
+          "bytes": "8b cd",
+          "mnemonic": "mov",
+          "operands": "ecx, ebp"
+        },
+        {
+          "va": "0x9bf28c",
+          "bytes": "ff d2",
+          "mnemonic": "call",
+          "operands": "edx"
+        },
+        {
+          "va": "0x9bf28e",
+          "bytes": "f6 86 6c 02 00 00 04",
+          "mnemonic": "test",
+          "operands": "byte ptr [esi + 0x26c], 4"
+        },
+        {
+          "va": "0x9bf295",
+          "bytes": "75 04",
+          "mnemonic": "jne",
+          "operands": "0x9bf29b"
+        },
+        {
+          "va": "0x9bf297",
+          "bytes": "83 4e 24 01",
+          "mnemonic": "or",
+          "operands": "dword ptr [esi + 0x24], 1"
+        },
+        {
+          "va": "0x9bf29b",
+          "bytes": "0f b6 87 e0 80 61 01",
+          "mnemonic": "movzx",
+          "operands": "eax, byte ptr [edi + 0x16180e0]"
+        },
+        {
+          "va": "0x9bf2a2",
+          "bytes": "c1 e0 0c",
+          "mnemonic": "shl",
+          "operands": "eax, 0xc"
+        },
+        {
+          "va": "0x9bf2a5",
+          "bytes": "33 86 60 02 00 00",
+          "mnemonic": "xor",
+          "operands": "eax, dword ptr [esi + 0x260]"
+        },
+        {
+          "va": "0x9bf2ab",
+          "bytes": "25 00 10 00 00",
+          "mnemonic": "and",
+          "operands": "eax, 0x1000"
+        },
+        {
+          "va": "0x9bf2b0",
+          "bytes": "31 86 60 02 00 00",
+          "mnemonic": "xor",
+          "operands": "dword ptr [esi + 0x260], eax"
+        },
+        {
+          "va": "0x9bf2b6",
+          "bytes": "83 c7 01",
+          "mnemonic": "add",
+          "operands": "edi, 1"
+        },
+        {
+          "va": "0x9bf2b9",
+          "bytes": "83 ff 07",
+          "mnemonic": "cmp",
+          "operands": "edi, 7"
+        },
+        {
+          "va": "0x9bf2bc",
+          "bytes": "7c 99",
+          "mnemonic": "jl",
+          "operands": "0x9bf257"
+        },
+        {
+          "va": "0x9bf2be",
+          "bytes": "5f",
+          "mnemonic": "pop",
+          "operands": "edi"
+        },
+        {
+          "va": "0x9bf2bf",
+          "bytes": "5e",
+          "mnemonic": "pop",
+          "operands": "esi"
+        },
+        {
+          "va": "0x9bf2c0",
+          "bytes": "5d",
+          "mnemonic": "pop",
+          "operands": "ebp"
+        },
+        {
+          "va": "0x9bf2c1",
+          "bytes": "c3",
+          "mnemonic": "ret",
+          "operands": ""
+        }
+      ],
+      "direct_dependencies": [
+        "0x4389d0",
+        "0xa66b70"
+      ],
+      "global_uses": {},
+      "jump_tables": [],
+      "reconstructed": false,
+      "runtime_validated": false
+    }
+  ],
+  "contracts": [
+    {
+      "va": "0x4389d0",
+      "size": 17,
+      "callee_pop": 0,
+      "body_sha256": "2a5366050333ff228aaaa50963ddcb9d2d954e8ece541377ff66076b60193695",
+      "instructions": [
+        "0x4389d0 mov eax, dword ptr [ecx + 0x228]",
+        "0x4389d6 test eax, eax",
+        "0x4389d8 je 0x4389de",
+        "0x4389da add eax, 0x60",
+        "0x4389dd ret ",
+        "0x4389de xor eax, eax",
+        "0x4389e0 ret "
+      ]
+    },
+    {
+      "va": "0xa66b70",
+      "size": 11,
+      "callee_pop": 4,
+      "body_sha256": "9000dcf4923e5c47274ce960943005b3870550bf1571e80c779b3ed5967317b6",
+      "instructions": [
+        "0xa66b70 mov eax, dword ptr [esp + 4]",
+        "0xa66b74 mov eax, dword ptr [ecx + eax*8 + 4]",
+        "0xa66b78 ret 4"
+      ]
+    },
+    {
+      "va": "0x89e4b0",
+      "size": 62,
+      "callee_pop": 4,
+      "body_sha256": "10de24965e9c89e1867b40400c782c7a3278c92832ad4e108e283c5a39249ce5",
+      "instructions": [
+        "0x89e4b0 push ebx",
+        "0x89e4b1 mov ebx, dword ptr [esp + 8]",
+        "0x89e4b5 movzx eax, bl",
+        "0x89e4b8 shl eax, 5",
+        "0x89e4bb xor eax, dword ptr [ecx + 0x24]",
+        "0x89e4be push esi",
+        "0x89e4bf and eax, 0x20",
+        "0x89e4c2 xor dword ptr [ecx + 0x24], eax",
+        "0x89e4c5 push edi",
+        "0x89e4c6 lea esi, [ecx + 0xd68]",
+        "0x89e4cc mov edi, 4",
+        "0x89e4d1 cmp dword ptr [esi], 0",
+        "0x89e4d4 je 0x89e4e0",
+        "0x89e4d6 mov ecx, dword ptr [esi]",
+        "0x89e4d8 mov edx, dword ptr [ecx]",
+        "0x89e4da mov eax, dword ptr [edx + 0x30]",
+        "0x89e4dd push ebx",
+        "0x89e4de call eax",
+        "0x89e4e0 add esi, 4",
+        "0x89e4e3 sub edi, 1",
+        "0x89e4e6 jne 0x89e4d1",
+        "0x89e4e8 pop edi",
+        "0x89e4e9 pop esi",
+        "0x89e4ea pop ebx",
+        "0x89e4eb ret 4"
+      ]
+    }
+  ],
+  "virtual_slot_12": {
+    "vtable": "0xD819C4",
+    "target": "0x89E4B0",
+    "callee_pop": 4,
+    "argument_byte": 1
+  },
+  "external_storage": {
+    "array_base_1662178": "uint32 immutable supplied base; model-index multiplication/addition wrap32",
+    "flags_16180E0": "seven supplied bytes, read after virtual callback"
+  },
+  "output": "PASS comparisons=4096 failures=0 raw_eax_full_buffers_trace_wrap_reloads_virtual_dispatch_fp_matched=1\n",
+  "hashes": {
+    "source/game/Peds/PlayerPedRelatedFlags.h": "7860c275a4e7dd6a7dcf802f41df781df10110483760f13d518c22a667a266d4",
+    "reversing/CPlayerPed/check-related-flags.cpp": "de5eea6ca71aacfb760a8febb3f984fd369cea4dcf369d78098cade9318b3a5d",
+    "reversing/CPlayerPed/related-flags-fixture.h": "c79cb3378717dd8bb7fa32db1a677b1557e9fed723f0d07bae13a49a00527d0f",
+    "reversing/CPlayerPed/evidence/rea-seven-player-callers.json": "f1516b0558ef66a2d7c50194e9f4bbf75f085d6adbc0c6a7f728d1e67627b673",
+    "build/player-related-flags-check.exe": "42cb2b5efdd1e6922450004a5722a491ebbf604bff89dcd67c76459c991c584a",
+    "build/player-related-flags-patched.bin": "cc5063f9cf4c5c9af222f6fa330b0410ed9ac3ee313e538d314920e7f949913a"
+  },
+  "scope": {
+    "isolated_only": true,
+    "runtime_checked": false,
+    "dependencies_reconstructed": false,
+    "original_declaring_cpp_class_recovered": false,
+    "receiver_player_confirmed": true,
+    "concurrent_bindings_supported": false,
+    "bindings_immutable_during_call": true,
+    "virtual_dependency_must_dispatch_current_player_vtable": true,
+    "get_block_nonnull_storage_required_for_bank": true,
+    "exhaustive_edge_coverage": false,
+    "live_player_execution": false
+  }
+}

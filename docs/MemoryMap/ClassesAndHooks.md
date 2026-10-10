@@ -7,10 +7,10 @@ Cruce por **igualdad exacta** entre `classes.csv:name` y `hooks.csv:class`. No s
 | Medición | Cantidad |
 | --- | ---: |
 | Tipos RTTI | 4,016 |
-| Entradas del catálogo de hooks | 15,960 |
+| Entradas del catálogo de hooks | 15,995 |
 | Tipos con entradas asociadas | 3,103 |
 | Tipos sin entradas asociadas | 913 |
-| Entradas asociadas por nombre exacto | 15,959 |
+| Entradas asociadas por nombre exacto | 15,994 |
 | Entradas sin tipo RTTI asociado | 1 |
 
 Un TypeDescriptor, un locator y una vtable son metadatos del tipo; **no son direcciones de métodos**. Las bases RTTI pueden ser transitivas. Una clase sin entradas aquí puede tener numerosos destinos en [virtual_slots.csv](virtual_slots.csv); simplemente no están incorporados a `hooks.csv`. No hay un porcentaje de métodos completados por clase porque su total todavía se desconoce.
@@ -11696,40 +11696,110 @@ Header: [abrir archivo](../../source/game/Peds/CPlayerPed.h). Bases registradas:
 | `ReturnStub_RVA_00149100` | `0x00549100` | `0x00149100` | `pure_stub_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GameStubsProbe.h) · [Evidencia](../../reversing/GameValidation/evidence/runtime-summary.json) |
 | `ReturnStub_RVA_001FDCD0` | `0x005FDCD0` | `0x001FDCD0` | `pure_stub_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GameStubsProbe.h) · [Evidencia](../../reversing/GameValidation/evidence/runtime-summary.json) |
 | `ReturnStub_RVA_00307920` | `0x00707920` | `0x00307920` | `pure_stub_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GameStubsProbe.h) · [Evidencia](../../reversing/GameValidation/evidence/runtime-summary.json) |
-| `ReturnStub_RVA_003BDC00` | `0x007BDC00` | `0x003BDC00` | `pure_stub_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GameStubsProbe.h) · [Evidencia](../../reversing/GameValidation/evidence/runtime-summary.json) |
-| `ReturnStub_RVA_008FAEE0` | `0x00CFAEE0` | `0x008FAEE0` | `pure_stub_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GameStubsProbe.h) · [Evidencia](../../reversing/GameValidation/evidence/runtime-summary.json) |
 | `ReturnStub_RVA_00047970` | `0x00447970` | `0x00047970` | `pure_stub_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/ExtraStubsProbe.h) · [Evidencia](../../reversing/ExtraStubValidation/evidence/runtime-summary.json) |
 | `ReturnStub_RVA_00150FF0` | `0x00550FF0` | `0x00150FF0` | `pure_stub_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/ExtraStubsProbe.h) · [Evidencia](../../reversing/ExtraStubValidation/evidence/runtime-summary.json) |
 | `PendingFixture_RVA_00047B90` | `0x00447B90` | `0x00047B90` | `original_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GamePendingProbe.h) · [Evidencia](../../reversing/PendingAnalysis/game/evidence/runtime-summary.json) |
 | `PendingFixture_RVA_00047C00` | `0x00447C00` | `0x00047C00` | `original_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GamePendingProbe.h) · [Evidencia](../../reversing/PendingAnalysis/game/evidence/runtime-summary.json) |
 | `PendingFixture_RVA_00047C10` | `0x00447C10` | `0x00047C10` | `original_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GamePendingProbe.h) · [Evidencia](../../reversing/PendingAnalysis/game/evidence/runtime-summary.json) |
-| `PendingFixture_RVA_005C1C90` | `0x009C1C90` | `0x005C1C90` | `original_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GamePendingProbe.h) · [Evidencia](../../reversing/PendingAnalysis/game/evidence/runtime-summary.json) |
-| `PendingFixture_RVA_005C1CA0` | `0x009C1CA0` | `0x005C1CA0` | `original_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GamePendingProbe.h) · [Evidencia](../../reversing/PendingAnalysis/game/evidence/runtime-summary.json) |
-| `PendingFixture_RVA_005C1CB0` | `0x009C1CB0` | `0x005C1CB0` | `original_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GamePendingProbe.h) · [Evidencia](../../reversing/PendingAnalysis/game/evidence/runtime-summary.json) |
-| `PendingFixture_RVA_005C1CC0` | `0x009C1CC0` | `0x005C1CC0` | `original_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GamePendingProbe.h) · [Evidencia](../../reversing/PendingAnalysis/game/evidence/runtime-summary.json) |
-| `PendingFixture_RVA_005C1CD0` | `0x009C1CD0` | `0x005C1CD0` | `original_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GamePendingProbe.h) · [Evidencia](../../reversing/PendingAnalysis/game/evidence/runtime-summary.json) |
 | `ComplexFixture_RVA_00047B20` | `0x00447B20` | `0x00047B20` | `original_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GameComplexProbe.h) · [Evidencia](../../reversing/ComplexValidation/game/evidence/runtime-summary.json) |
 | `ComplexFixture_RVA_00047B40` | `0x00447B40` | `0x00047B40` | `original_call` | 1 | 0 | 1 | 0 | [Código](../../source/hooks/GameComplexScalarProbe.h) · [Evidencia](../../reversing/ComplexValidation/game/evidence/scalar-runtime-summary.json) |
+| `GetFieldEBC` | `0x009C1C90` | `0x005C1C90` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `GetBlockEC0` | `0x009C1CA0` | `0x005C1CA0` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `GetBlockED0` | `0x009C1CB0` | `0x005C1CB0` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `SetFieldEBC` | `0x009C1CC0` | `0x005C1CC0` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `SetFieldEF0` | `0x009C1CD0` | `0x005C1CD0` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `CopyBlockEC0` | `0x009C1D90` | `0x005C1D90` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `CopyBlockED0` | `0x009C1DD0` | `0x005C1DD0` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `ReturnZeroSlot48` | `0x007BDC00` | `0x003BDC00` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `ReturnOneSlot74` | `0x00CFAEE0` | `0x008FAEE0` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `AdvanceFieldEE0` | `0x009BF5F0` | `0x005BF5F0` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `TestFieldEE4` | `0x009BF5D0` | `0x005BF5D0` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `ResetFieldEEC` | `0x009BF640` | `0x005BF640` | `runtime_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/CPlayerPed.h) · [Evidencia](../../reversing/CPlayerPed/evidence/runtime-summary.json) |
+| `Destroy` | `0x009C1E60` | `0x005C1E60` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedDestruction.h) · [Evidencia](../../reversing/CPlayerPed/evidence/destruction-validation.json) |
+| `DestroyDeleting` | `0x009C2260` | `0x005C2260` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedDestruction.h) · [Evidencia](../../reversing/CPlayerPed/evidence/destruction-validation.json) |
+| `ApplyModel` | `0x009C0AA0` | `0x005C0AA0` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedControl.h) · [Evidencia](../../reversing/CPlayerPed/evidence/control-validation.json) |
+| `CreateControl` | `0x009C1E10` | `0x005C1E10` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedControl.h) · [Evidencia](../../reversing/CPlayerPed/evidence/control-validation.json) |
+| `UpdateCounter` | `0x009BE610` | `0x005BE610` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedCounter.h) · [Evidencia](../../reversing/CPlayerPed/evidence/counter-validation-summary.json) |
+| `UpdateSlot73` | `0x009BE770` | `0x005BE770` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedCounter.h) · [Evidencia](../../reversing/CPlayerPed/evidence/counter-validation-summary.json) |
+| `SetProtectedAndFlags` | `0x009C1CF0` | `0x005C1CF0` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedProtectedValue.h) · [Evidencia](../../reversing/PlayerPedProtectedValue/native-summary.json) |
+| `SetProtectedAndFlagsWithUnused` | `0x009C1D20` | `0x005C1D20` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedProtectedValue.h) · [Evidencia](../../reversing/PlayerPedProtectedValue/native-summary.json) |
+| `AddProtectedAndFlags` | `0x009C1D50` | `0x005C1D50` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedProtectedValue.h) · [Evidencia](../../reversing/PlayerPedProtectedValue/native-summary.json) |
+| `GetPlayerProtected` | `0x009C1CE0` | `0x005C1CE0` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedProtectedValue.h) · [Evidencia](../../reversing/PlayerPedProtectedValue/native-summary.json) |
+| `Construct` | `0x009C1910` | `0x005C1910` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedConstruction.h) · [Evidencia](../../reversing/CPlayerPed/evidence/constructor-validation-summary.json) |
+| `UpdateIsolated` | `0x009C0B00` | `0x005C0B00` | `runtime_replacement_smoke` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedUpdate.h) · [Evidencia](../../reversing/CPlayerPed/evidence/native-runtime-summary.json) |
+| `ResetModelState` | `0x009BF660` | `0x005BF660` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedModelReset.h) · [Evidencia](../../reversing/CPlayerPed/evidence/model-reset-validation.json) |
+| `ResolveIfPlayerFlags` | `0x009BE5D0` | `0x005BE5D0` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedNonvirtual.h) · [Evidencia](../../reversing/CPlayerPed/evidence/nonvirtual-validation-summary.json) |
+| `CallBlockIfPlayerFlags` | `0x009BEE70` | `0x005BEE70` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedNonvirtual.h) · [Evidencia](../../reversing/CPlayerPed/evidence/nonvirtual-validation-summary.json) |
+| `InitializeRelations` | `0x009BE4C0` | `0x005BE4C0` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedNonvirtual.h) · [Evidencia](../../reversing/CPlayerPed/evidence/nonvirtual-validation-summary.json) |
+| `ClearState3D8` | `0x009BF070` | `0x005BF070` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedStateHelpers.h) · [Evidencia](../../reversing/PlayerPedStateHelpers/native-summary.json) |
+| `StoreQuery7` | `0x009BF2D0` | `0x005BF2D0` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedStateHelpers.h) · [Evidencia](../../reversing/PlayerPedStateHelpers/native-summary.json) |
+| `StoreQuery8AndClearFlag` | `0x009BF310` | `0x005BF310` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedStateHelpers.h) · [Evidencia](../../reversing/PlayerPedStateHelpers/native-summary.json) |
+| `ClearReferenceE74` | `0x009BEED0` | `0x005BEED0` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedReferenceClear.h) · [Evidencia](../../reversing/CPlayerPed/evidence/reference-clear-validation.json) |
+| `AdjustValueIsolated` | `0x009BFD80` | `0x005BFD80` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedValueAdjustment.h) · [Evidencia](../../reversing/CPlayerPed/evidence/value-adjustment-validation.json) |
+| `SelectInputIsolated` | `0x009BE7D0` | `0x005BE7D0` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedInputSelection.h) · [Evidencia](../../reversing/CPlayerPed/evidence/input-selection-validation.json) |
+| `TestEitherPredicate` | `0x009BE5F0` | `0x005BE5F0` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedReceiverHelpers.h) · [Evidencia](../../reversing/CPlayerPed/evidence/receiver-helpers-validation.json) |
+| `DispatchPairFirstRaw` | `0x009BEEF0` | `0x005BEEF0` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedReceiverHelpers.h) · [Evidencia](../../reversing/CPlayerPed/evidence/receiver-helpers-validation.json) |
+| `DispatchPairSecondRaw` | `0x009BEF20` | `0x005BEF20` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedReceiverHelpers.h) · [Evidencia](../../reversing/CPlayerPed/evidence/receiver-helpers-validation.json) |
+| `DispatchRelatedRaw` | `0x009BEF70` | `0x005BEF70` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedReceiverHelpers.h) · [Evidencia](../../reversing/CPlayerPed/evidence/receiver-helpers-validation.json) |
+| `TestActionAllowed` | `0x009BE790` | `0x005BE790` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedReceiverHelpers.h) · [Evidencia](../../reversing/CPlayerPed/evidence/receiver-helpers-validation.json) |
+| `UpdateRelatedFlagsRaw` | `0x009BF250` | `0x005BF250` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedRelatedFlags.h) · [Evidencia](../../reversing/CPlayerPed/evidence/related-flags-validation.json) |
+| `ActInRangeIsolated` | `0x009C1F90` | `0x005C1F90` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedActionRange.h) · [Evidencia](../../reversing/CPlayerPed/evidence/actions-validation.json) |
+| `RequestActionIsolated` | `0x009C2180` | `0x005C2180` | `isolated_reconstruction_comparison` | 1 | 1 | 1 | 1 | [Código](../../source/game/Peds/PlayerPedActionRequest.h) · [Evidencia](../../reversing/CPlayerPed/evidence/actions-validation.json) |
 
 Alcance de las pruebas:
 
 - `ReturnStub_RVA_00149100`: 64 calls of complete return_only machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name.
 - `ReturnStub_RVA_001FDCD0`: 64 calls of complete return_al_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name.
 - `ReturnStub_RVA_00307920`: 64 calls of complete return_al_constant machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name.
-- `ReturnStub_RVA_003BDC00`: 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name.
-- `ReturnStub_RVA_008FAEE0`: 64 calls of complete return_al_constant machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name.
 - `ReturnStub_RVA_00047970`: 64 calls; complete XOR AL,AL/RET 12 body; three synthetic arguments discarded; low-byte zero checked; no class ABI or gameplay semantics established; inferred descriptive name.
 - `ReturnStub_RVA_00150FF0`: 64 calls; complete RET 4 body; one explicit synthetic stack argument discarded; no class ABI or gameplay semantics established; inferred descriptive name.
 - `PendingFixture_RVA_00047B90`: 64 isolated-storage calls; get_u32; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction.
 - `PendingFixture_RVA_00047C00`: 64 isolated-storage calls; get_u32; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction.
 - `PendingFixture_RVA_00047C10`: 64 isolated-storage calls; get_u32; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction.
-- `PendingFixture_RVA_005C1C90`: 64 isolated-storage calls; get_u32; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction.
-- `PendingFixture_RVA_005C1CA0`: 64 isolated-storage calls; address_offset; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction.
-- `PendingFixture_RVA_005C1CB0`: 64 isolated-storage calls; address_offset; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction.
-- `PendingFixture_RVA_005C1CC0`: 64 isolated-storage calls; set_u32; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction.
-- `PendingFixture_RVA_005C1CD0`: 64 isolated-storage calls; set_u32; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction.
 - `ComplexFixture_RVA_00047B20`: 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; comparison/bit/scalar bodies only; EDX/high return not established.
 - `ComplexFixture_RVA_00047B40`: 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; comparison/bit/scalar bodies only; EDX/high return not established.
+- `GetFieldEBC`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `GetBlockEC0`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `GetBlockED0`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `SetFieldEBC`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `SetFieldEF0`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `CopyBlockEC0`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `CopyBlockED0`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `ReturnZeroSlot48`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `ReturnOneSlot74`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `AdvanceFieldEE0`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `TestFieldEE4`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `ResetFieldEEC`: Twelve methods, 64 samples each. Live reads and same-value setters; varied writes, float copies, accumulator and extra fields on isolated buffers. Float routines use real read-only globals with full memory and MXCSR comparison; no replacement installed..
+- `Destroy`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `DestroyDeleting`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `ApplyModel`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `CreateControl`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `UpdateCounter`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `UpdateSlot73`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `SetProtectedAndFlags`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `SetProtectedAndFlagsWithUnused`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `AddProtectedAndFlags`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `GetPlayerProtected`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `Construct`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `UpdateIsolated`: Natural Update calls redirected to compiled reconstructed caller with original external callees. No duplicate update comparison or complete class certification..
+- `ResetModelState`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `ResolveIfPlayerFlags`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `CallBlockIfPlayerFlags`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `InitializeRelations`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `ClearState3D8`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `StoreQuery7`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `StoreQuery8AndClearFlag`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `ClearReferenceE74`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `AdjustValueIsolated`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `SelectInputIsolated`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `TestEitherPredicate`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `DispatchPairFirstRaw`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `DispatchPairSecondRaw`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `DispatchRelatedRaw`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `TestActionAllowed`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `UpdateRelatedFlagsRaw`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `ActInRangeIsolated`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
+- `RequestActionIsolated`: Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation..
 
 ### `CPlayerTauntEvent`
 
@@ -69847,7 +69917,7 @@ Cada uno de los tipos del CSV aparece una sola vez. La última columna cuenta en
 | `CPhysical` | [Header](../../source/game/scene/CPhysical.h) | `0x0108f524`<br>`0x00c8f524` | `0x00ec7cac` | `0x00d89f2c` | `CDynamicEntity;CEntity;CVirtualBase` | 21 / 0 / 21 |
 | `CPlane` | [Header](../../source/game/Vehicles/CPlane.h) | `0x00f352f0`<br>`0x00b352f0` | `0x00ec6edc` | `0x00d86104` | `CAutomobile;CVehicle;CPhysical;CDynamicEntity;CEntity;CVirtualBase` | 21 / 0 / 21 |
 | `CPlayerInfoArrayHandler` | [Header](../../source/game/network/Arrays/CPlayerInfoArrayHandler.h) | `0x010bf674`<br>`0x00cbf674` | `0x00efb4ac` | `0x00eb5464` | `CNetworkArrayHandler` | 8 / 0 / 8 |
-| `CPlayerPed` | [Header](../../source/game/Peds/CPlayerPed.h) | `0x00f317bc`<br>`0x00b317bc` | `0x00ec58ac` | `0x00d819c4` | `CPed;CPhysical;CDynamicEntity;CEntity;CVirtualBase` | 17 / 0 / 17 |
+| `CPlayerPed` | [Header](../../source/game/Peds/CPlayerPed.h) | `0x00f317bc`<br>`0x00b317bc` | `0x00ec58ac` | `0x00d819c4` | `CPed;CPhysical;CDynamicEntity;CEntity;CVirtualBase` | 52 / 42 / 52 |
 | `CPlayerTauntEvent` | [Header](../../source/game/network/Events/CPlayerTauntEvent.h) | `0x010904e4`<br>`0x00c904e4` | `0x00ed5358` | `0x00ea0784` | `CNetworkEvent` | 7 / 0 / 7 |
 | `CPlayRandomAmbientsInfo` | [Header](../../source/game/task/Scenario/CPlayRandomAmbientsInfo.h) | `0x00f2cbc4`<br>`0x00b2cbc4` | `0x00ec4a60` | `0x00d7fbb4` | `CTaskInfoWithCloneTask;CTaskInfo` | 6 / 0 / 6 |
 | `CPlayStatBase` | [Header](../../source/game/Stats/CPlayStatBase.h) | `0x00f1ccc0`<br>`0x00b1ccc0` | `0x00ecdb78` | `0x00db071c` | — | 1 / 0 / 1 |
@@ -73232,7 +73302,7 @@ Regenerar con `python reversing/HookRegistry/correlate_classes.py`, o con el gen
 SHA-256 de las fuentes usadas:
 
 - `docs/MemoryMap/classes.csv`: `8ae4cd3af3eccf750400d883445c1759a358d5c3695ec4522f8072db3d181f60`.
-- `docs/hooks.csv`: `f76187427654b580919f6f7fa4a4d30789d7ba95f4323a09a0476fa960df6577`.
+- `docs/hooks.csv`: `608a5e81462e3e50a0765b0e79476b413f43b11a632ca669c652b6acbab4fec6`.
 - `source/class-files.csv`: `ba7b8bfae19c49aeda7d54b89946960571541e3b846458e4f6bd69cbeb3510c3`.
 
 [Proceso de vinculación](../AddressBindingProcess.md) · [Progreso de reconstrucción](../ReversedClasses.md).

@@ -1,0 +1,62 @@
+{
+  "timestamp_utc": "2026-10-10T05:52:38.957650+00:00",
+  "passed": true,
+  "comparisons": 74448,
+  "failures": 0,
+  "va": "0x009BE7D0",
+  "rva": "0x005BE7D0",
+  "complete_body_bytes": 1652,
+  "implementation_kind": "MSVC_x86_inline_assembly_caller_transcription",
+  "implementation_sha256": "05f32ef6b09ed86af00b8141f6ece3e48f8ae4a599d3ef0a92564a94707d49ab",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "game_runtime_validated": false,
+  "external_dependencies_reconstructed": false,
+  "scope": [
+    "MSVCx86 caller assembly;19external callbacks and2globalDWORDs",
+    "Two original four-entry tables relocated for native fixture; source LEA/MOV resolves local labels before original prologue",
+    "Table setup preserves flags; EAX caller-saved and overwritten by first dependency",
+    "Eight table destinations verified through unique callback modes2/3/4/5/20/21/22/23",
+    "Five4096byte and two16384byte buffers, ordered ABI trace/globals/x87/MXCSR matched",
+    "Single-thread isolated storage/callback binding; no game mapping/replacement; no exhaustive edge coverage claimed"
+  ],
+  "hashes": {
+    "source/game/Peds/PlayerPedInputSelection.h": "05f32ef6b09ed86af00b8141f6ece3e48f8ae4a599d3ef0a92564a94707d49ab",
+    "reversing/CPlayerPed/check-input-select.cpp": "e9ab4d71985001437aa0bdc28c052afddcfe98c7b7512e7740812a2f0da2f04a",
+    "build/player-input-select-check.exe": "37be9b8eb3dc7c92bfaba6da4f60e22f89393f79f6a7a2310ddd83fb4befb974",
+    "reversing/CPlayerPed/input-fixture.h": "9b5cb9d7d2f9ee64328aa29bc8e699a868516953d0d8db6a776d830ab0b98af1",
+    "reversing/CPlayerPed/input-stubs.h": "9bc3180f0e828ae96913d3911863a25d20767421e993fa22580d8a5e14630a9d",
+    "build/player-input-select-patched.bin": "11a3cef301793d0018c4402d65853f6d4ebc0919c33dcaf021e8a2bbd94e01a8"
+  },
+  "output": "PASS comparisons=74448 failures=0 mapped_tables_full_buffers_ordered_trace_fp_state_matched=1\ndependency 004255A0 calls=780\ndependency 00426780 calls=46428\ndependency 00426910 calls=6336\ndependency 00462F90 calls=46464\ndependency 00785EB0 calls=264\ndependency 0089E300 calls=13128\ndependency 008FF470 calls=20856\ndependency 00924E80 calls=768\ndependency 009252D0 calls=384\ndependency 00987730 calls=2112\ndependency 0099C5E0 calls=2352\ndependency 009A9CF0 calls=23088\ndependency 009AA330 calls=10330\ndependency 009AC110 calls=2112\ndependency 009ADB90 calls=120\ndependency 009B3B00 calls=7416\ndependency 009BE4A0 calls=2112\ndependency 009BE5D0 calls=148896\ndependency 009C5D60 calls=528\njump_mode 2 calls=1154\njump_mode 3 calls=1154\njump_mode 4 calls=1154\njump_mode 5 calls=1154\njump_mode 20 calls=1034\njump_mode 21 calls=1034\njump_mode 22 calls=1034\njump_mode 23 calls=1034",
+  "dependency_counts": {
+    "004255A0": 780,
+    "00426780": 46428,
+    "00426910": 6336,
+    "00462F90": 46464,
+    "00785EB0": 264,
+    "0089E300": 13128,
+    "008FF470": 20856,
+    "00924E80": 768,
+    "009252D0": 384,
+    "00987730": 2112,
+    "0099C5E0": 2352,
+    "009A9CF0": 23088,
+    "009AA330": 10330,
+    "009AC110": 2112,
+    "009ADB90": 120,
+    "009B3B00": 7416,
+    "009BE4A0": 2112,
+    "009BE5D0": 148896,
+    "009C5D60": 528
+  },
+  "jump_mode_counts": {
+    "2": 1154,
+    "3": 1154,
+    "4": 1154,
+    "5": 1154,
+    "20": 1034,
+    "21": 1034,
+    "22": 1034,
+    "23": 1034
+  }
+}

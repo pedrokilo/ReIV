@@ -1,0 +1,11 @@
+[info][23:06:16.761][DebugLog.cpp:57]: Debug console always enabled | visible=true writable=true hwnd=0x002D1F0E
+[info][23:06:16.762][ReIV.cpp:46]: ReIV bootstrap loaded | GTA IV 1.0.7.0 | x86
+[info][23:06:16.807][ReIV.cpp:54]: CDynamicEntity::GetBoneMatrix original binding available | RVA 0x005C7710 | root-bone historical test passed
+[debug][23:06:16.809][GetBoneMatrixProbe.h:50]: GetBoneMatrix test enabled: waiting for a live player
+[info][23:06:16.828][ReIV.cpp:98]: atStringHash bank passed; replacement installed
+[debug][23:06:16.856][ReIV.cpp:100]: Runtime catalog exported to ReIV-runtime-hooks.csv
+[info][23:06:33.605][ReIV.cpp:32]: SDK gameLoadEvent received
+[info][23:06:50.310][PlayerPedProbe.h:35]: CPlayerPed comparison samples=64 failures=0 exceptions=0
+[info][23:06:57.543][GetBoneMatrixProbe.h:64]: GetBoneMatrix PASSED | calls=64 failures=0 exceptions=0 | entity=0x06DCD6D0 matrix=0x083E5CE0
+[info][23:06:59.641][ReIV.cpp:37]: SDK ingameStartupEvent received
+[info][23:07:00.270][ReIV.cpp:106]: ReIV process detach

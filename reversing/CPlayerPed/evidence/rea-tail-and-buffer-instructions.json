@@ -1,0 +1,560 @@
+[
+  {
+    "address": "0x9164b0",
+    "data": {
+      "result": {
+        "procedure": {
+          "address": "0x9164b0",
+          "name": "FUN_009164b0",
+          "classification": {
+            "external": false,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x9164b0",
+                "end": "0x9164b6"
+              }
+            ],
+            "total_bytes": 7,
+            "span_bytes": 7,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        },
+        "instructions": [
+          "0x9164b0: MOV dword ptr [ECX], 0xd70e1c",
+          "0x9164b6: RET"
+        ],
+        "limitations": [
+          "Instruction text and ordering are Ghidra-specific representations.",
+          "The fast path does not invoke the decompiler or scan whole-program names and strings."
+        ]
+      },
+      "evidence_id": "ev_2d44eb2c1f78b85d2a398d67a566cb259adc4342887374c439ca9519bb579833",
+      "evidence": {
+        "evidence_id": "ev_2d44eb2c1f78b85d2a398d67a566cb259adc4342887374c439ca9519bb579833",
+        "subject": {
+          "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+          "digest": {
+            "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+          },
+          "format": "pe",
+          "architecture": "x86",
+          "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+        },
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "predicate_type": "rea.analysis",
+        "operation": "read_function_instructions",
+        "parameters": {
+          "procedure": "0x9164b0",
+          "document": null
+        },
+        "raw_result": {
+          "procedure": {
+            "address": "0x9164b0",
+            "name": "FUN_009164b0",
+            "classification": {
+              "external": false,
+              "thunk": false,
+              "thunk_target": null,
+              "provenance": "ghidra-function-manager"
+            },
+            "body": {
+              "available": true,
+              "provenance": "ghidra-function-body-address-set",
+              "ranges": [
+                {
+                  "start": "0x9164b0",
+                  "end": "0x9164b6"
+                }
+              ],
+              "total_bytes": 7,
+              "span_bytes": 7,
+              "non_contiguous": false,
+              "contains_entry": true
+            }
+          },
+          "instructions": [
+            "0x9164b0: MOV dword ptr [ECX], 0xd70e1c",
+            "0x9164b6: RET"
+          ],
+          "limitations": [
+            "Instruction text and ordering are Ghidra-specific representations.",
+            "The fast path does not invoke the decompiler or scan whole-program names and strings."
+          ]
+        },
+        "normalized_result": {
+          "procedure": {
+            "address": "0x9164b0",
+            "name": "FUN_009164b0",
+            "classification": {
+              "external": false,
+              "thunk": false,
+              "thunk_target": null,
+              "provenance": "ghidra-function-manager"
+            },
+            "body": {
+              "available": true,
+              "provenance": "ghidra-function-body-address-set",
+              "ranges": [
+                {
+                  "start": "0x9164b0",
+                  "end": "0x9164b6"
+                }
+              ],
+              "total_bytes": 7,
+              "span_bytes": 7,
+              "non_contiguous": false,
+              "contains_entry": true
+            }
+          },
+          "instructions": [
+            "0x9164b0: MOV dword ptr [ECX], 0xd70e1c",
+            "0x9164b6: RET"
+          ],
+          "limitations": [
+            "Instruction text and ordering are Ghidra-specific representations.",
+            "The fast path does not invoke the decompiler or scan whole-program names and strings."
+          ]
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "This fast path reads only the requested function and does not invoke the decompiler or whole-program string/name inventories.",
+          "Instruction text is Ghidra-specific and does not claim textual equivalence with Hopper output.",
+          "Local REA 5.0.0 fork: additionally admits SHA-256-bound GTAIV 1.0.7.0 and GTA San Andreas 1.0 US x86 references. This extension is not upstream Windows P0 coverage. DLL, managed, hostile, sensitive, and mutable-path targets remain unsupported.",
+          "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+          "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+        ],
+        "locations": [],
+        "evidence_links": [],
+        "analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      }
+    }
+  },
+  {
+    "address": "0x9e6490",
+    "data": {
+      "result": {
+        "procedure": {
+          "address": "0x9e6490",
+          "name": "FUN_009e6490",
+          "classification": {
+            "external": false,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x9e6490",
+                "end": "0x9e6497"
+              }
+            ],
+            "total_bytes": 8,
+            "span_bytes": 8,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        },
+        "instructions": [
+          "0x9e6490: SUB dword ptr [0x0163955c], 0x1",
+          "0x9e6497: RET"
+        ],
+        "limitations": [
+          "Instruction text and ordering are Ghidra-specific representations.",
+          "The fast path does not invoke the decompiler or scan whole-program names and strings."
+        ]
+      },
+      "evidence_id": "ev_73cd2843f3c12569ad81f2f89b882d8feaba7bb3b1b304f42a60c49f792875c1",
+      "evidence": {
+        "evidence_id": "ev_73cd2843f3c12569ad81f2f89b882d8feaba7bb3b1b304f42a60c49f792875c1",
+        "subject": {
+          "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+          "digest": {
+            "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+          },
+          "format": "pe",
+          "architecture": "x86",
+          "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+        },
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "predicate_type": "rea.analysis",
+        "operation": "read_function_instructions",
+        "parameters": {
+          "procedure": "0x9e6490",
+          "document": null
+        },
+        "raw_result": {
+          "procedure": {
+            "address": "0x9e6490",
+            "name": "FUN_009e6490",
+            "classification": {
+              "external": false,
+              "thunk": false,
+              "thunk_target": null,
+              "provenance": "ghidra-function-manager"
+            },
+            "body": {
+              "available": true,
+              "provenance": "ghidra-function-body-address-set",
+              "ranges": [
+                {
+                  "start": "0x9e6490",
+                  "end": "0x9e6497"
+                }
+              ],
+              "total_bytes": 8,
+              "span_bytes": 8,
+              "non_contiguous": false,
+              "contains_entry": true
+            }
+          },
+          "instructions": [
+            "0x9e6490: SUB dword ptr [0x0163955c], 0x1",
+            "0x9e6497: RET"
+          ],
+          "limitations": [
+            "Instruction text and ordering are Ghidra-specific representations.",
+            "The fast path does not invoke the decompiler or scan whole-program names and strings."
+          ]
+        },
+        "normalized_result": {
+          "procedure": {
+            "address": "0x9e6490",
+            "name": "FUN_009e6490",
+            "classification": {
+              "external": false,
+              "thunk": false,
+              "thunk_target": null,
+              "provenance": "ghidra-function-manager"
+            },
+            "body": {
+              "available": true,
+              "provenance": "ghidra-function-body-address-set",
+              "ranges": [
+                {
+                  "start": "0x9e6490",
+                  "end": "0x9e6497"
+                }
+              ],
+              "total_bytes": 8,
+              "span_bytes": 8,
+              "non_contiguous": false,
+              "contains_entry": true
+            }
+          },
+          "instructions": [
+            "0x9e6490: SUB dword ptr [0x0163955c], 0x1",
+            "0x9e6497: RET"
+          ],
+          "limitations": [
+            "Instruction text and ordering are Ghidra-specific representations.",
+            "The fast path does not invoke the decompiler or scan whole-program names and strings."
+          ]
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "This fast path reads only the requested function and does not invoke the decompiler or whole-program string/name inventories.",
+          "Instruction text is Ghidra-specific and does not claim textual equivalence with Hopper output.",
+          "Local REA 5.0.0 fork: additionally admits SHA-256-bound GTAIV 1.0.7.0 and GTA San Andreas 1.0 US x86 references. This extension is not upstream Windows P0 coverage. DLL, managed, hostile, sensitive, and mutable-path targets remain unsupported.",
+          "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+          "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+        ],
+        "locations": [],
+        "evidence_links": [],
+        "analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      }
+    }
+  },
+  {
+    "address": "0x4475c0",
+    "data": {
+      "result": {
+        "procedure": {
+          "address": "0x4475c0",
+          "name": "FUN_004475c0",
+          "classification": {
+            "external": false,
+            "thunk": false,
+            "thunk_target": null,
+            "provenance": "ghidra-function-manager"
+          },
+          "body": {
+            "available": true,
+            "provenance": "ghidra-function-body-address-set",
+            "ranges": [
+              {
+                "start": "0x4475c0",
+                "end": "0x4475e9"
+              }
+            ],
+            "total_bytes": 42,
+            "span_bytes": 42,
+            "non_contiguous": false,
+            "contains_entry": true
+          }
+        },
+        "instructions": [
+          "0x4475c0: PUSH ESI",
+          "0x4475c1: MOV ESI, ECX",
+          "0x4475c3: MOV dword ptr [ESI], 0x0",
+          "0x4475c9: CMP dword ptr [0x0108f49c], 0x2694",
+          "0x4475d3: PUSH ESI",
+          "0x4475d4: JZ 0x004475df",
+          "0x4475d6: CALL 0x00447660",
+          "0x4475db: MOV EAX, ESI",
+          "0x4475dd: POP ESI",
+          "0x4475de: RET",
+          "0x4475df: PUSH 0x4",
+          "0x4475e1: CALL 0x00d30312",
+          "0x4475e6: MOV EAX, ESI",
+          "0x4475e8: POP ESI",
+          "0x4475e9: RET"
+        ],
+        "limitations": [
+          "Instruction text and ordering are Ghidra-specific representations.",
+          "The fast path does not invoke the decompiler or scan whole-program names and strings."
+        ]
+      },
+      "evidence_id": "ev_8f1de04dc29dce9abd52f63841d1d91822ed22787eae0e52f4d0ab61b16fb610",
+      "evidence": {
+        "evidence_id": "ev_8f1de04dc29dce9abd52f63841d1d91822ed22787eae0e52f4d0ab61b16fb610",
+        "subject": {
+          "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+          "digest": {
+            "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+          },
+          "format": "pe",
+          "architecture": "x86",
+          "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+        },
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "predicate_type": "rea.analysis",
+        "operation": "read_function_instructions",
+        "parameters": {
+          "procedure": "0x4475c0",
+          "document": null
+        },
+        "raw_result": {
+          "procedure": {
+            "address": "0x4475c0",
+            "name": "FUN_004475c0",
+            "classification": {
+              "external": false,
+              "thunk": false,
+              "thunk_target": null,
+              "provenance": "ghidra-function-manager"
+            },
+            "body": {
+              "available": true,
+              "provenance": "ghidra-function-body-address-set",
+              "ranges": [
+                {
+                  "start": "0x4475c0",
+                  "end": "0x4475e9"
+                }
+              ],
+              "total_bytes": 42,
+              "span_bytes": 42,
+              "non_contiguous": false,
+              "contains_entry": true
+            }
+          },
+          "instructions": [
+            "0x4475c0: PUSH ESI",
+            "0x4475c1: MOV ESI, ECX",
+            "0x4475c3: MOV dword ptr [ESI], 0x0",
+            "0x4475c9: CMP dword ptr [0x0108f49c], 0x2694",
+            "0x4475d3: PUSH ESI",
+            "0x4475d4: JZ 0x004475df",
+            "0x4475d6: CALL 0x00447660",
+            "0x4475db: MOV EAX, ESI",
+            "0x4475dd: POP ESI",
+            "0x4475de: RET",
+            "0x4475df: PUSH 0x4",
+            "0x4475e1: CALL 0x00d30312",
+            "0x4475e6: MOV EAX, ESI",
+            "0x4475e8: POP ESI",
+            "0x4475e9: RET"
+          ],
+          "limitations": [
+            "Instruction text and ordering are Ghidra-specific representations.",
+            "The fast path does not invoke the decompiler or scan whole-program names and strings."
+          ]
+        },
+        "normalized_result": {
+          "procedure": {
+            "address": "0x4475c0",
+            "name": "FUN_004475c0",
+            "classification": {
+              "external": false,
+              "thunk": false,
+              "thunk_target": null,
+              "provenance": "ghidra-function-manager"
+            },
+            "body": {
+              "available": true,
+              "provenance": "ghidra-function-body-address-set",
+              "ranges": [
+                {
+                  "start": "0x4475c0",
+                  "end": "0x4475e9"
+                }
+              ],
+              "total_bytes": 42,
+              "span_bytes": 42,
+              "non_contiguous": false,
+              "contains_entry": true
+            }
+          },
+          "instructions": [
+            "0x4475c0: PUSH ESI",
+            "0x4475c1: MOV ESI, ECX",
+            "0x4475c3: MOV dword ptr [ESI], 0x0",
+            "0x4475c9: CMP dword ptr [0x0108f49c], 0x2694",
+            "0x4475d3: PUSH ESI",
+            "0x4475d4: JZ 0x004475df",
+            "0x4475d6: CALL 0x00447660",
+            "0x4475db: MOV EAX, ESI",
+            "0x4475dd: POP ESI",
+            "0x4475de: RET",
+            "0x4475df: PUSH 0x4",
+            "0x4475e1: CALL 0x00d30312",
+            "0x4475e6: MOV EAX, ESI",
+            "0x4475e8: POP ESI",
+            "0x4475e9: RET"
+          ],
+          "limitations": [
+            "Instruction text and ordering are Ghidra-specific representations.",
+            "The fast path does not invoke the decompiler or scan whole-program names and strings."
+          ]
+        },
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "This fast path reads only the requested function and does not invoke the decompiler or whole-program string/name inventories.",
+          "Instruction text is Ghidra-specific and does not claim textual equivalence with Hopper output.",
+          "Local REA 5.0.0 fork: additionally admits SHA-256-bound GTAIV 1.0.7.0 and GTA San Andreas 1.0 US x86 references. This extension is not upstream Windows P0 coverage. DLL, managed, hostile, sensitive, and mutable-path targets remain unsupported.",
+          "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+          "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+        ],
+        "locations": [],
+        "evidence_links": [],
+        "analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      }
+    }
+  }
+]

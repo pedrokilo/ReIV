@@ -1,0 +1,76 @@
+{
+  "result": [
+    "0x96d870"
+  ],
+  "evidence_id": "ev_cd615290a8d6554f8a16e59d83bfda16ee642a16aa10c12b1af747ab9d6efdb7",
+  "evidence": {
+    "evidence_id": "ev_cd615290a8d6554f8a16e59d83bfda16ee642a16aa10c12b1af747ab9d6efdb7",
+    "subject": {
+      "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+      "digest": {
+        "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+    },
+    "provider": {
+      "id": "ghidra",
+      "name": "Ghidra",
+      "version": "12.1.4"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "procedure_callers",
+    "parameters": {
+      "procedure": "0x9c1910",
+      "document": null
+    },
+    "raw_result": [
+      "0x96d870"
+    ],
+    "normalized_result": [
+      "0x96d870"
+    ],
+    "confidence": "observed",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+      "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+      "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+      "Only resolved Ghidra call references are returned; unresolved computed or indirect calls remain unknown, while function classifications distinguish thunks and externals.",
+      "Local REA 5.0.0 fork: additionally admits SHA-256-bound GTAIV 1.0.7.0 and GTA San Andreas 1.0 US x86 references. This extension is not upstream Windows P0 coverage. DLL, managed, hostile, sensitive, and mutable-path targets remain unsupported.",
+      "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+      "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+    ],
+    "locations": [],
+    "evidence_links": [],
+    "analysis_profile": {
+      "provider": {
+        "id": "ghidra",
+        "name": "Ghidra",
+        "version": "12.1.4"
+      },
+      "parameters": {
+        "target_kind": "executable",
+        "target_format": "pe",
+        "architecture": "x86",
+        "available_architectures": [
+          "x86"
+        ],
+        "import_mode": "ephemeral-source-immutable",
+        "annotation_policy": "atomic-function-entry-metadata-v1",
+        "load_image_observations": "source-mappings-entry-context-v2",
+        "function_body_evidence": "complete-inclusive-ranges-v1",
+        "jump_table_evidence": "typed-case-default-blocks-v1",
+        "decompiler_jump_loads": true,
+        "loader": "auto-from-header",
+        "language_id": "auto-from-header",
+        "compiler_spec_id": "auto-default",
+        "analyzer_preset": "ghidra-default",
+        "local_provider_extension": "gta-x86-sha256-bound-v2"
+      },
+      "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+    }
+  }
+}

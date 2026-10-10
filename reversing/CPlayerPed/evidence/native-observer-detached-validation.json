@@ -1,0 +1,28 @@
+{
+  "resolver_checks": 14,
+  "hook_installed": false,
+  "results": [
+    {
+      "executable_sha256": "b4f1a387d12904b8dab010a0905ab0611e1c026d5763eff3fcf4c1adb2fc878a",
+      "name": "observer-bridge",
+      "output": "PASS observer_bridge_cases=16384 all_registers_flags_stack_FP_preserved=1 exception_continue_search=1"
+    },
+    {
+      "executable_sha256": "7c73839c6e28a4823e6039b1e65d3378f0bed55d59325ebfd68c819b25e58158",
+      "name": "native-resolver",
+      "output": "PASS native_resolver_checks=14 exact_file_sha_verified=1 non_game_process_rejected=1 game_runtime_validated=0"
+    }
+  ],
+  "exception_notification_scope": "IP inside clone only; CONTINUE_SEARCH; external callee exceptions not attributed",
+  "accepted_game_mappings_tested": false,
+  "bridge_cases": 16384,
+  "game_runtime_validated": false,
+  "hashes": {
+    "reversing/CPlayerPed/NativeObserverBridge.h": "41703e431fcfb981bb2c959ee4dca9d141873f10131c53d2ad4c6d3c0bdf2048",
+    "reversing/CPlayerPed/generate-native-validation.py": "2aebba519e90531699ab50e8d1c4092b157c3f1348e118e78d424c1bcffb618e",
+    "reversing/CPlayerPed/native-clone/check-observer-bridge.cpp": "c71a9b6bd6acfdc7f84095bd14b5460070148ded5bb323a268b9841b117df224",
+    "reversing/CPlayerPed/NativeValidatedResolver.h": "ed710ac7d1b96fe1c62f04c1e3334fa49fe618047be7468af94feedb0da4d3d9",
+    "reversing/CPlayerPed/native-clone/native-validation.h": "5277cbd7bfa825a2e892e6f601a23e66e35f51f1e6e8f9acf771fc24876ab784",
+    "reversing/CPlayerPed/native-clone/check-native-resolver.cpp": "d67c56c6fe3abebc91442dd593366f3ca5e4d41ef093453a5a0ae3cc048af4c3"
+  }
+}

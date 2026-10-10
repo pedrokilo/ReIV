@@ -1,0 +1,191 @@
+[
+  {
+    "va": "0x401950",
+    "callee_pop_bytes": 0,
+    "stack_words": 2,
+    "thiscall": false,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x4269b0",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x4389d0",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x462f90",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": false,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x88f5d0",
+    "callee_pop_bytes": 4,
+    "stack_words": 1,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x89ea80",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x8aadc0",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x8ae670",
+    "callee_pop_bytes": 4,
+    "stack_words": 1,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x91a050",
+    "callee_pop_bytes": 12,
+    "stack_words": 3,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x91a0a0",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "reversing/CPlayerPed/evidence/rea-tail-and-buffer-instructions.json; terminal targets 9164B0/9E6490 RET with zero pop"
+  },
+  {
+    "va": "0x922850",
+    "callee_pop_bytes": 8,
+    "stack_words": 2,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x924e80",
+    "callee_pop_bytes": 0,
+    "stack_words": 1,
+    "thiscall": false,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x976e90",
+    "callee_pop_bytes": 16,
+    "stack_words": 4,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x97d7c0",
+    "callee_pop_bytes": 36,
+    "stack_words": 9,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x987730",
+    "callee_pop_bytes": 0,
+    "stack_words": 6,
+    "thiscall": false,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x9a9cf0",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x9be5d0",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x9be7d0",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x9bee70",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x9beed0",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x9bfd80",
+    "callee_pop_bytes": 8,
+    "stack_words": 2,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0x9e6630",
+    "callee_pop_bytes": 0,
+    "stack_words": 0,
+    "thiscall": true,
+    "evidence": "reversing/CPlayerPed/evidence/rea-tail-and-buffer-instructions.json; terminal targets 9164B0/9E6490 RET with zero pop"
+  },
+  {
+    "va": "0xaa80d0",
+    "callee_pop_bytes": 12,
+    "stack_words": 3,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0xaa83f0",
+    "callee_pop_bytes": 0,
+    "stack_words": 3,
+    "thiscall": false,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0xab3b60",
+    "callee_pop_bytes": 0,
+    "stack_words": 3,
+    "thiscall": false,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0xafe160",
+    "callee_pop_bytes": 12,
+    "stack_words": 3,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  },
+  {
+    "va": "0xafea00",
+    "callee_pop_bytes": 4,
+    "stack_words": 1,
+    "thiscall": true,
+    "evidence": "Canonical callee RET and original caller pushes"
+  }
+]

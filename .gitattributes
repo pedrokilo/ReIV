@@ -2,3 +2,12 @@
 /source/hooks/*.h -text
 /source/game/scene/CDynamicEntity.cpp -text
 /source/rage/AtStringHash.h -text
+/source/core/ReIV.cpp -text
+/source/game/Peds/CPlayerPed.h -text
+/source/game/Peds/PlayerPed*.h -text
+/reversing/CPlayerPed/** -text
+/reversing/PlayerPedFloatCopy/** -text
+/reversing/PlayerPedProtectedValue/** -text
+/reversing/PlayerPedStateHelpers/** -text
+/reversing/PlayerPedLayout/** -text
+/reversing/MemoryMap/declarations/CPlayerPed.inc -text

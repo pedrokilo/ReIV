@@ -1,0 +1,298 @@
+[
+  {
+    "address": "0x956680",
+    "data": {
+      "result": "\r\nvoid FUN_00956680(void)\r\n\r\n{\r\n  float fVar1;\r\n  float fVar2;\r\n  float fVar3;\r\n  int *piVar4;\r\n  char cVar5;\r\n  int *piVar6;\r\n  undefined4 uVar7;\r\n  int iVar8;\r\n  int iVar9;\r\n  int in_ECX;\r\n  float fVar10;\r\n  float fVar11;\r\n  float fVar12;\r\n  float local_20;\r\n  float local_1c;\r\n  float local_18;\r\n  \r\n  piVar4 = *(int **)(in_ECX + 0x40);\r\n  if ((((piVar4 == (int *)0x0) || (*(char *)((int)piVar4 + 0x219) == '\\0')) || (DAT_010d0170 == 1))\r\n     || ((DAT_010e1984 != -1 || (DAT_00f0e4a0 == 0x12)))) {\r\n    return;\r\n  }\r\n  iVar8 = piVar4[0x3bc];\r\n  if (iVar8 != -1) {\r\n    DAT_00f2a74c = iVar8;\r\n  }\r\n  cVar5 = FUN_00444370();\r\n  iVar9 = DAT_00f2a74c;\r\n  if (cVar5 == '\\0') {\r\n    (**(code **)(*piVar4 + 0x144))(0xffffffff);\r\n    iVar9 = iVar8;\r\n  }\r\n  if (iVar9 != -1) {\r\n    piVar6 = (int *)FUN_00426700(iVar9);\r\n    if (piVar6 != (int *)0x0) {\r\n      if (*(short *)((int)piVar6 + 0x2e) != DAT_01230964) {\r\n        (**(code **)(*piVar4 + 0x144))(0xffffffff);\r\n        FUN_008df850();\r\n        DAT_00f2a74c = 0xffffffff;\r\n        return;\r\n      }\r\n      FUN_008df820(*(undefined4 *)(in_ECX + 0x40));\r\n      FUN_009bf640();\r\n      iVar8 = *(int *)(in_ECX + 0x40);\r\n      local_20 = DAT_00f2a790;\r\n      local_1c = DAT_00f2a794;\r\n      local_18 = DAT_00f2a798;\r\n      FUN_00516c60(&local_20);\r\n      iVar8 = *(int *)(iVar8 + 0x20);\r\n      local_20 = *(float *)(iVar8 + 0x30) + local_20;\r\n      local_1c = *(float *)(iVar8 + 0x34) + local_1c;\r\n      local_18 = *(float *)(iVar8 + 0x38) + local_18;\r\n      (**(code **)(*piVar6 + 8))(&local_20,0,1);\r\n      FUN_009e1190();\r\n      uVar7 = FUN_00447ae0(0x4c3);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 != -1) {\r\n        iVar8 = FUN_00447a60(iVar8);\r\n        uVar7 = FUN_00447ae0(0x3b12);\r\n        iVar9 = FUN_00a4b8d0(uVar7);\r\n        if (iVar9 != -1) {\r\n          iVar9 = FUN_00447a60(iVar9);\r\n          fVar12 = DAT_00f2a7a8;\r\n          fVar11 = DAT_00f2a7a4;\r\n          fVar10 = DAT_00f2a7a0;\r\n          if (DAT_00f2a748 != '\\0') {\r\n            FUN_00516c60(&stack0xffffffc4);\r\n            fVar1 = *(float *)(iVar8 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            *(float *)(iVar9 + 0x30) = *(float *)(iVar8 + 0x30) + fVar10;\r\n            *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n            *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n            *(float *)(iVar9 + 0x3c) = local_20;\r\n          }\r\n          uVar7 = FUN_00447ae0(0x3b10);\r\n          iVar8 = FUN_00a4b8d0(uVar7);\r\n          if (iVar8 != -1) {\r\n            iVar8 = FUN_00447a60(iVar8);\r\n            fVar10 = *(float *)(iVar8 + 0x30);\r\n            fVar11 = *(float *)(iVar9 + 0x30);\r\n            fVar12 = *(float *)(iVar8 + 0x34);\r\n            fVar1 = *(float *)(iVar9 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            fVar3 = *(float *)(iVar9 + 0x38);\r\n            FUN_0042f5d0();\r\n            fVar10 = (fVar10 - fVar11) * DAT_00f2a874;\r\n            fVar11 = (fVar12 - fVar1) * DAT_00f2a874;\r\n            fVar12 = (fVar2 - fVar3) * DAT_00f2a874;\r\n            uVar7 = FUN_00447ae0(0x3b11);\r\n            iVar8 = FUN_00a4b8d0(uVar7);\r\n            if (iVar8 != -1) {\r\n              iVar8 = FUN_00447a60(iVar8);\r\n              fVar1 = *(float *)(iVar9 + 0x34);\r\n              fVar2 = *(float *)(iVar9 + 0x38);\r\n              *(float *)(iVar8 + 0x30) = fVar10 + *(float *)(iVar9 + 0x30);\r\n              *(float *)(iVar8 + 0x34) = fVar1 + fVar11;\r\n              *(float *)(iVar8 + 0x38) = fVar2 + fVar12;\r\n              *(float *)(iVar8 + 0x3c) = local_20;\r\n            }\r\n          }\r\n        }\r\n      }\r\n      uVar7 = FUN_00447ae0(0x4d0);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 != -1) {\r\n        iVar8 = FUN_00447a60(iVar8);\r\n        uVar7 = FUN_00447ae0(0x3af5);\r\n        iVar9 = FUN_00a4b8d0(uVar7);\r\n        if (iVar9 != -1) {\r\n          iVar9 = FUN_00447a60(iVar9);\r\n          fVar12 = DAT_00f2a7b8;\r\n          fVar11 = DAT_00f2a7b4;\r\n          fVar10 = DAT_00f2a7b0;\r\n          if (DAT_00f2a748 != '\\0') {\r\n            FUN_00516c60(&stack0xffffffc4);\r\n            fVar1 = *(float *)(iVar8 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            *(float *)(iVar9 + 0x30) = fVar10 + *(float *)(iVar8 + 0x30);\r\n            *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n            *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n            *(float *)(iVar9 + 0x3c) = local_20;\r\n          }\r\n          uVar7 = FUN_00447ae0(0x3af3);\r\n          iVar8 = FUN_00a4b8d0(uVar7);\r\n          if (iVar8 != -1) {\r\n            iVar8 = FUN_00447a60(iVar8);\r\n            fVar10 = *(float *)(iVar8 + 0x30);\r\n            fVar11 = *(float *)(iVar9 + 0x30);\r\n            fVar12 = *(float *)(iVar8 + 0x34);\r\n            fVar1 = *(float *)(iVar9 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            fVar3 = *(float *)(iVar9 + 0x38);\r\n            FUN_0042f5d0();\r\n            fVar10 = (fVar10 - fVar11) * DAT_00f2a874;\r\n            fVar11 = (fVar12 - fVar1) * DAT_00f2a874;\r\n            fVar12 = (fVar2 - fVar3) * DAT_00f2a874;\r\n            uVar7 = FUN_00447ae0(0x3af4);\r\n            iVar8 = FUN_00a4b8d0(uVar7);\r\n            if (iVar8 != -1) {\r\n              iVar8 = FUN_00447a60(iVar8);\r\n              fVar1 = *(float *)(iVar9 + 0x34);\r\n              fVar2 = *(float *)(iVar9 + 0x38);\r\n              *(float *)(iVar8 + 0x30) = *(float *)(iVar9 + 0x30) + fVar10;\r\n              *(float *)(iVar8 + 0x34) = fVar1 + fVar11;\r\n              *(float *)(iVar8 + 0x38) = fVar2 + fVar12;\r\n              *(float *)(iVar8 + 0x3c) = local_20;\r\n            }\r\n          }\r\n        }\r\n      }\r\n      uVar7 = FUN_00447ae0(0x4c0);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 != -1) {\r\n        iVar8 = FUN_00447a60(iVar8);\r\n        uVar7 = FUN_00447ae0(0x3b21);\r\n        iVar9 = FUN_00a4b8d0(uVar7);\r\n        if ((iVar9 != -1) &&\r\n           (iVar9 = FUN_00447a60(iVar9), fVar12 = DAT_00f2a7c8, fVar11 = DAT_00f2a7c4,\r\n           fVar10 = DAT_00f2a7c0, DAT_00f2a748 != '\\0')) {\r\n          FUN_00516c60(&stack0xffffffc4);\r\n          fVar1 = *(float *)(iVar8 + 0x34);\r\n          fVar2 = *(float *)(iVar8 + 0x38);\r\n          *(float *)(iVar9 + 0x30) = *(float *)(iVar8 + 0x30) + fVar10;\r\n          *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n          *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n          *(float *)(iVar9 + 0x3c) = local_20;\r\n        }\r\n      }\r\n      uVar7 = FUN_00447ae0(0x4c7);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 == -1) {\r\n        return;\r\n      }\r\n      iVar8 = FUN_00447a60(iVar8);\r\n      uVar7 = FUN_00447ae0(0x3b04);\r\n      iVar9 = FUN_00a4b8d0(uVar7);\r\n      if (iVar9 == -1) {\r\n        return;\r\n      }\r\n      iVar9 = FUN_00447a60(iVar9);\r\n      fVar12 = DAT_00f2a7d8;\r\n      fVar11 = DAT_00f2a7d4;\r\n      fVar10 = DAT_00f2a7d0;\r\n      if (DAT_00f2a748 == '\\0') {\r\n        return;\r\n      }\r\n      FUN_00516c60(&stack0xffffffc4);\r\n      fVar1 = *(float *)(iVar8 + 0x34);\r\n      fVar2 = *(float *)(iVar8 + 0x38);\r\n      *(float *)(iVar9 + 0x30) = *(float *)(iVar8 + 0x30) + fVar10;\r\n      *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n      *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n      *(float *)(iVar9 + 0x3c) = local_20;\r\n      return;\r\n    }\r\n    (**(code **)(*piVar4 + 0x144))(0xffffffff);\r\n  }\r\n  DAT_00f2a74c = 0xffffffff;\r\n  return;\r\n}\r\n\r\n",
+      "evidence_id": "ev_002c0c9050acff0b500da4460e34e57b91f185235fc919b3590b5df818be8195",
+      "evidence": {
+        "evidence_id": "ev_002c0c9050acff0b500da4460e34e57b91f185235fc919b3590b5df818be8195",
+        "subject": {
+          "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+          "digest": {
+            "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+          },
+          "format": "pe",
+          "architecture": "x86",
+          "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+        },
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "predicate_type": "rea.analysis",
+        "operation": "procedure_pseudo_code",
+        "parameters": {
+          "procedure": "0x00956680",
+          "document": null
+        },
+        "raw_result": "\r\nvoid FUN_00956680(void)\r\n\r\n{\r\n  float fVar1;\r\n  float fVar2;\r\n  float fVar3;\r\n  int *piVar4;\r\n  char cVar5;\r\n  int *piVar6;\r\n  undefined4 uVar7;\r\n  int iVar8;\r\n  int iVar9;\r\n  int in_ECX;\r\n  float fVar10;\r\n  float fVar11;\r\n  float fVar12;\r\n  float local_20;\r\n  float local_1c;\r\n  float local_18;\r\n  \r\n  piVar4 = *(int **)(in_ECX + 0x40);\r\n  if ((((piVar4 == (int *)0x0) || (*(char *)((int)piVar4 + 0x219) == '\\0')) || (DAT_010d0170 == 1))\r\n     || ((DAT_010e1984 != -1 || (DAT_00f0e4a0 == 0x12)))) {\r\n    return;\r\n  }\r\n  iVar8 = piVar4[0x3bc];\r\n  if (iVar8 != -1) {\r\n    DAT_00f2a74c = iVar8;\r\n  }\r\n  cVar5 = FUN_00444370();\r\n  iVar9 = DAT_00f2a74c;\r\n  if (cVar5 == '\\0') {\r\n    (**(code **)(*piVar4 + 0x144))(0xffffffff);\r\n    iVar9 = iVar8;\r\n  }\r\n  if (iVar9 != -1) {\r\n    piVar6 = (int *)FUN_00426700(iVar9);\r\n    if (piVar6 != (int *)0x0) {\r\n      if (*(short *)((int)piVar6 + 0x2e) != DAT_01230964) {\r\n        (**(code **)(*piVar4 + 0x144))(0xffffffff);\r\n        FUN_008df850();\r\n        DAT_00f2a74c = 0xffffffff;\r\n        return;\r\n      }\r\n      FUN_008df820(*(undefined4 *)(in_ECX + 0x40));\r\n      FUN_009bf640();\r\n      iVar8 = *(int *)(in_ECX + 0x40);\r\n      local_20 = DAT_00f2a790;\r\n      local_1c = DAT_00f2a794;\r\n      local_18 = DAT_00f2a798;\r\n      FUN_00516c60(&local_20);\r\n      iVar8 = *(int *)(iVar8 + 0x20);\r\n      local_20 = *(float *)(iVar8 + 0x30) + local_20;\r\n      local_1c = *(float *)(iVar8 + 0x34) + local_1c;\r\n      local_18 = *(float *)(iVar8 + 0x38) + local_18;\r\n      (**(code **)(*piVar6 + 8))(&local_20,0,1);\r\n      FUN_009e1190();\r\n      uVar7 = FUN_00447ae0(0x4c3);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 != -1) {\r\n        iVar8 = FUN_00447a60(iVar8);\r\n        uVar7 = FUN_00447ae0(0x3b12);\r\n        iVar9 = FUN_00a4b8d0(uVar7);\r\n        if (iVar9 != -1) {\r\n          iVar9 = FUN_00447a60(iVar9);\r\n          fVar12 = DAT_00f2a7a8;\r\n          fVar11 = DAT_00f2a7a4;\r\n          fVar10 = DAT_00f2a7a0;\r\n          if (DAT_00f2a748 != '\\0') {\r\n            FUN_00516c60(&stack0xffffffc4);\r\n            fVar1 = *(float *)(iVar8 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            *(float *)(iVar9 + 0x30) = *(float *)(iVar8 + 0x30) + fVar10;\r\n            *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n            *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n            *(float *)(iVar9 + 0x3c) = local_20;\r\n          }\r\n          uVar7 = FUN_00447ae0(0x3b10);\r\n          iVar8 = FUN_00a4b8d0(uVar7);\r\n          if (iVar8 != -1) {\r\n            iVar8 = FUN_00447a60(iVar8);\r\n            fVar10 = *(float *)(iVar8 + 0x30);\r\n            fVar11 = *(float *)(iVar9 + 0x30);\r\n            fVar12 = *(float *)(iVar8 + 0x34);\r\n            fVar1 = *(float *)(iVar9 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            fVar3 = *(float *)(iVar9 + 0x38);\r\n            FUN_0042f5d0();\r\n            fVar10 = (fVar10 - fVar11) * DAT_00f2a874;\r\n            fVar11 = (fVar12 - fVar1) * DAT_00f2a874;\r\n            fVar12 = (fVar2 - fVar3) * DAT_00f2a874;\r\n            uVar7 = FUN_00447ae0(0x3b11);\r\n            iVar8 = FUN_00a4b8d0(uVar7);\r\n            if (iVar8 != -1) {\r\n              iVar8 = FUN_00447a60(iVar8);\r\n              fVar1 = *(float *)(iVar9 + 0x34);\r\n              fVar2 = *(float *)(iVar9 + 0x38);\r\n              *(float *)(iVar8 + 0x30) = fVar10 + *(float *)(iVar9 + 0x30);\r\n              *(float *)(iVar8 + 0x34) = fVar1 + fVar11;\r\n              *(float *)(iVar8 + 0x38) = fVar2 + fVar12;\r\n              *(float *)(iVar8 + 0x3c) = local_20;\r\n            }\r\n          }\r\n        }\r\n      }\r\n      uVar7 = FUN_00447ae0(0x4d0);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 != -1) {\r\n        iVar8 = FUN_00447a60(iVar8);\r\n        uVar7 = FUN_00447ae0(0x3af5);\r\n        iVar9 = FUN_00a4b8d0(uVar7);\r\n        if (iVar9 != -1) {\r\n          iVar9 = FUN_00447a60(iVar9);\r\n          fVar12 = DAT_00f2a7b8;\r\n          fVar11 = DAT_00f2a7b4;\r\n          fVar10 = DAT_00f2a7b0;\r\n          if (DAT_00f2a748 != '\\0') {\r\n            FUN_00516c60(&stack0xffffffc4);\r\n            fVar1 = *(float *)(iVar8 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            *(float *)(iVar9 + 0x30) = fVar10 + *(float *)(iVar8 + 0x30);\r\n            *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n            *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n            *(float *)(iVar9 + 0x3c) = local_20;\r\n          }\r\n          uVar7 = FUN_00447ae0(0x3af3);\r\n          iVar8 = FUN_00a4b8d0(uVar7);\r\n          if (iVar8 != -1) {\r\n            iVar8 = FUN_00447a60(iVar8);\r\n            fVar10 = *(float *)(iVar8 + 0x30);\r\n            fVar11 = *(float *)(iVar9 + 0x30);\r\n            fVar12 = *(float *)(iVar8 + 0x34);\r\n            fVar1 = *(float *)(iVar9 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            fVar3 = *(float *)(iVar9 + 0x38);\r\n            FUN_0042f5d0();\r\n            fVar10 = (fVar10 - fVar11) * DAT_00f2a874;\r\n            fVar11 = (fVar12 - fVar1) * DAT_00f2a874;\r\n            fVar12 = (fVar2 - fVar3) * DAT_00f2a874;\r\n            uVar7 = FUN_00447ae0(0x3af4);\r\n            iVar8 = FUN_00a4b8d0(uVar7);\r\n            if (iVar8 != -1) {\r\n              iVar8 = FUN_00447a60(iVar8);\r\n              fVar1 = *(float *)(iVar9 + 0x34);\r\n              fVar2 = *(float *)(iVar9 + 0x38);\r\n              *(float *)(iVar8 + 0x30) = *(float *)(iVar9 + 0x30) + fVar10;\r\n              *(float *)(iVar8 + 0x34) = fVar1 + fVar11;\r\n              *(float *)(iVar8 + 0x38) = fVar2 + fVar12;\r\n              *(float *)(iVar8 + 0x3c) = local_20;\r\n            }\r\n          }\r\n        }\r\n      }\r\n      uVar7 = FUN_00447ae0(0x4c0);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 != -1) {\r\n        iVar8 = FUN_00447a60(iVar8);\r\n        uVar7 = FUN_00447ae0(0x3b21);\r\n        iVar9 = FUN_00a4b8d0(uVar7);\r\n        if ((iVar9 != -1) &&\r\n           (iVar9 = FUN_00447a60(iVar9), fVar12 = DAT_00f2a7c8, fVar11 = DAT_00f2a7c4,\r\n           fVar10 = DAT_00f2a7c0, DAT_00f2a748 != '\\0')) {\r\n          FUN_00516c60(&stack0xffffffc4);\r\n          fVar1 = *(float *)(iVar8 + 0x34);\r\n          fVar2 = *(float *)(iVar8 + 0x38);\r\n          *(float *)(iVar9 + 0x30) = *(float *)(iVar8 + 0x30) + fVar10;\r\n          *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n          *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n          *(float *)(iVar9 + 0x3c) = local_20;\r\n        }\r\n      }\r\n      uVar7 = FUN_00447ae0(0x4c7);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 == -1) {\r\n        return;\r\n      }\r\n      iVar8 = FUN_00447a60(iVar8);\r\n      uVar7 = FUN_00447ae0(0x3b04);\r\n      iVar9 = FUN_00a4b8d0(uVar7);\r\n      if (iVar9 == -1) {\r\n        return;\r\n      }\r\n      iVar9 = FUN_00447a60(iVar9);\r\n      fVar12 = DAT_00f2a7d8;\r\n      fVar11 = DAT_00f2a7d4;\r\n      fVar10 = DAT_00f2a7d0;\r\n      if (DAT_00f2a748 == '\\0') {\r\n        return;\r\n      }\r\n      FUN_00516c60(&stack0xffffffc4);\r\n      fVar1 = *(float *)(iVar8 + 0x34);\r\n      fVar2 = *(float *)(iVar8 + 0x38);\r\n      *(float *)(iVar9 + 0x30) = *(float *)(iVar8 + 0x30) + fVar10;\r\n      *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n      *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n      *(float *)(iVar9 + 0x3c) = local_20;\r\n      return;\r\n    }\r\n    (**(code **)(*piVar4 + 0x144))(0xffffffff);\r\n  }\r\n  DAT_00f2a74c = 0xffffffff;\r\n  return;\r\n}\r\n\r\n",
+        "normalized_result": "\r\nvoid FUN_00956680(void)\r\n\r\n{\r\n  float fVar1;\r\n  float fVar2;\r\n  float fVar3;\r\n  int *piVar4;\r\n  char cVar5;\r\n  int *piVar6;\r\n  undefined4 uVar7;\r\n  int iVar8;\r\n  int iVar9;\r\n  int in_ECX;\r\n  float fVar10;\r\n  float fVar11;\r\n  float fVar12;\r\n  float local_20;\r\n  float local_1c;\r\n  float local_18;\r\n  \r\n  piVar4 = *(int **)(in_ECX + 0x40);\r\n  if ((((piVar4 == (int *)0x0) || (*(char *)((int)piVar4 + 0x219) == '\\0')) || (DAT_010d0170 == 1))\r\n     || ((DAT_010e1984 != -1 || (DAT_00f0e4a0 == 0x12)))) {\r\n    return;\r\n  }\r\n  iVar8 = piVar4[0x3bc];\r\n  if (iVar8 != -1) {\r\n    DAT_00f2a74c = iVar8;\r\n  }\r\n  cVar5 = FUN_00444370();\r\n  iVar9 = DAT_00f2a74c;\r\n  if (cVar5 == '\\0') {\r\n    (**(code **)(*piVar4 + 0x144))(0xffffffff);\r\n    iVar9 = iVar8;\r\n  }\r\n  if (iVar9 != -1) {\r\n    piVar6 = (int *)FUN_00426700(iVar9);\r\n    if (piVar6 != (int *)0x0) {\r\n      if (*(short *)((int)piVar6 + 0x2e) != DAT_01230964) {\r\n        (**(code **)(*piVar4 + 0x144))(0xffffffff);\r\n        FUN_008df850();\r\n        DAT_00f2a74c = 0xffffffff;\r\n        return;\r\n      }\r\n      FUN_008df820(*(undefined4 *)(in_ECX + 0x40));\r\n      FUN_009bf640();\r\n      iVar8 = *(int *)(in_ECX + 0x40);\r\n      local_20 = DAT_00f2a790;\r\n      local_1c = DAT_00f2a794;\r\n      local_18 = DAT_00f2a798;\r\n      FUN_00516c60(&local_20);\r\n      iVar8 = *(int *)(iVar8 + 0x20);\r\n      local_20 = *(float *)(iVar8 + 0x30) + local_20;\r\n      local_1c = *(float *)(iVar8 + 0x34) + local_1c;\r\n      local_18 = *(float *)(iVar8 + 0x38) + local_18;\r\n      (**(code **)(*piVar6 + 8))(&local_20,0,1);\r\n      FUN_009e1190();\r\n      uVar7 = FUN_00447ae0(0x4c3);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 != -1) {\r\n        iVar8 = FUN_00447a60(iVar8);\r\n        uVar7 = FUN_00447ae0(0x3b12);\r\n        iVar9 = FUN_00a4b8d0(uVar7);\r\n        if (iVar9 != -1) {\r\n          iVar9 = FUN_00447a60(iVar9);\r\n          fVar12 = DAT_00f2a7a8;\r\n          fVar11 = DAT_00f2a7a4;\r\n          fVar10 = DAT_00f2a7a0;\r\n          if (DAT_00f2a748 != '\\0') {\r\n            FUN_00516c60(&stack0xffffffc4);\r\n            fVar1 = *(float *)(iVar8 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            *(float *)(iVar9 + 0x30) = *(float *)(iVar8 + 0x30) + fVar10;\r\n            *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n            *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n            *(float *)(iVar9 + 0x3c) = local_20;\r\n          }\r\n          uVar7 = FUN_00447ae0(0x3b10);\r\n          iVar8 = FUN_00a4b8d0(uVar7);\r\n          if (iVar8 != -1) {\r\n            iVar8 = FUN_00447a60(iVar8);\r\n            fVar10 = *(float *)(iVar8 + 0x30);\r\n            fVar11 = *(float *)(iVar9 + 0x30);\r\n            fVar12 = *(float *)(iVar8 + 0x34);\r\n            fVar1 = *(float *)(iVar9 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            fVar3 = *(float *)(iVar9 + 0x38);\r\n            FUN_0042f5d0();\r\n            fVar10 = (fVar10 - fVar11) * DAT_00f2a874;\r\n            fVar11 = (fVar12 - fVar1) * DAT_00f2a874;\r\n            fVar12 = (fVar2 - fVar3) * DAT_00f2a874;\r\n            uVar7 = FUN_00447ae0(0x3b11);\r\n            iVar8 = FUN_00a4b8d0(uVar7);\r\n            if (iVar8 != -1) {\r\n              iVar8 = FUN_00447a60(iVar8);\r\n              fVar1 = *(float *)(iVar9 + 0x34);\r\n              fVar2 = *(float *)(iVar9 + 0x38);\r\n              *(float *)(iVar8 + 0x30) = fVar10 + *(float *)(iVar9 + 0x30);\r\n              *(float *)(iVar8 + 0x34) = fVar1 + fVar11;\r\n              *(float *)(iVar8 + 0x38) = fVar2 + fVar12;\r\n              *(float *)(iVar8 + 0x3c) = local_20;\r\n            }\r\n          }\r\n        }\r\n      }\r\n      uVar7 = FUN_00447ae0(0x4d0);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 != -1) {\r\n        iVar8 = FUN_00447a60(iVar8);\r\n        uVar7 = FUN_00447ae0(0x3af5);\r\n        iVar9 = FUN_00a4b8d0(uVar7);\r\n        if (iVar9 != -1) {\r\n          iVar9 = FUN_00447a60(iVar9);\r\n          fVar12 = DAT_00f2a7b8;\r\n          fVar11 = DAT_00f2a7b4;\r\n          fVar10 = DAT_00f2a7b0;\r\n          if (DAT_00f2a748 != '\\0') {\r\n            FUN_00516c60(&stack0xffffffc4);\r\n            fVar1 = *(float *)(iVar8 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            *(float *)(iVar9 + 0x30) = fVar10 + *(float *)(iVar8 + 0x30);\r\n            *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n            *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n            *(float *)(iVar9 + 0x3c) = local_20;\r\n          }\r\n          uVar7 = FUN_00447ae0(0x3af3);\r\n          iVar8 = FUN_00a4b8d0(uVar7);\r\n          if (iVar8 != -1) {\r\n            iVar8 = FUN_00447a60(iVar8);\r\n            fVar10 = *(float *)(iVar8 + 0x30);\r\n            fVar11 = *(float *)(iVar9 + 0x30);\r\n            fVar12 = *(float *)(iVar8 + 0x34);\r\n            fVar1 = *(float *)(iVar9 + 0x34);\r\n            fVar2 = *(float *)(iVar8 + 0x38);\r\n            fVar3 = *(float *)(iVar9 + 0x38);\r\n            FUN_0042f5d0();\r\n            fVar10 = (fVar10 - fVar11) * DAT_00f2a874;\r\n            fVar11 = (fVar12 - fVar1) * DAT_00f2a874;\r\n            fVar12 = (fVar2 - fVar3) * DAT_00f2a874;\r\n            uVar7 = FUN_00447ae0(0x3af4);\r\n            iVar8 = FUN_00a4b8d0(uVar7);\r\n            if (iVar8 != -1) {\r\n              iVar8 = FUN_00447a60(iVar8);\r\n              fVar1 = *(float *)(iVar9 + 0x34);\r\n              fVar2 = *(float *)(iVar9 + 0x38);\r\n              *(float *)(iVar8 + 0x30) = *(float *)(iVar9 + 0x30) + fVar10;\r\n              *(float *)(iVar8 + 0x34) = fVar1 + fVar11;\r\n              *(float *)(iVar8 + 0x38) = fVar2 + fVar12;\r\n              *(float *)(iVar8 + 0x3c) = local_20;\r\n            }\r\n          }\r\n        }\r\n      }\r\n      uVar7 = FUN_00447ae0(0x4c0);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 != -1) {\r\n        iVar8 = FUN_00447a60(iVar8);\r\n        uVar7 = FUN_00447ae0(0x3b21);\r\n        iVar9 = FUN_00a4b8d0(uVar7);\r\n        if ((iVar9 != -1) &&\r\n           (iVar9 = FUN_00447a60(iVar9), fVar12 = DAT_00f2a7c8, fVar11 = DAT_00f2a7c4,\r\n           fVar10 = DAT_00f2a7c0, DAT_00f2a748 != '\\0')) {\r\n          FUN_00516c60(&stack0xffffffc4);\r\n          fVar1 = *(float *)(iVar8 + 0x34);\r\n          fVar2 = *(float *)(iVar8 + 0x38);\r\n          *(float *)(iVar9 + 0x30) = *(float *)(iVar8 + 0x30) + fVar10;\r\n          *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n          *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n          *(float *)(iVar9 + 0x3c) = local_20;\r\n        }\r\n      }\r\n      uVar7 = FUN_00447ae0(0x4c7);\r\n      iVar8 = FUN_00a4b8d0(uVar7);\r\n      if (iVar8 == -1) {\r\n        return;\r\n      }\r\n      iVar8 = FUN_00447a60(iVar8);\r\n      uVar7 = FUN_00447ae0(0x3b04);\r\n      iVar9 = FUN_00a4b8d0(uVar7);\r\n      if (iVar9 == -1) {\r\n        return;\r\n      }\r\n      iVar9 = FUN_00447a60(iVar9);\r\n      fVar12 = DAT_00f2a7d8;\r\n      fVar11 = DAT_00f2a7d4;\r\n      fVar10 = DAT_00f2a7d0;\r\n      if (DAT_00f2a748 == '\\0') {\r\n        return;\r\n      }\r\n      FUN_00516c60(&stack0xffffffc4);\r\n      fVar1 = *(float *)(iVar8 + 0x34);\r\n      fVar2 = *(float *)(iVar8 + 0x38);\r\n      *(float *)(iVar9 + 0x30) = *(float *)(iVar8 + 0x30) + fVar10;\r\n      *(float *)(iVar9 + 0x34) = fVar1 + fVar11;\r\n      *(float *)(iVar9 + 0x38) = fVar2 + fVar12;\r\n      *(float *)(iVar9 + 0x3c) = local_20;\r\n      return;\r\n    }\r\n    (**(code **)(*piVar4 + 0x144))(0xffffffff);\r\n  }\r\n  DAT_00f2a74c = 0xffffffff;\r\n  return;\r\n}\r\n\r\n",
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+          "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+          "Local REA 5.0.0 fork: additionally admits SHA-256-bound GTAIV 1.0.7.0 and GTA San Andreas 1.0 US x86 references. This extension is not upstream Windows P0 coverage. DLL, managed, hostile, sensitive, and mutable-path targets remain unsupported.",
+          "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+          "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+        ],
+        "locations": [],
+        "evidence_links": [],
+        "analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      }
+    }
+  },
+  {
+    "address": "0xab94c0",
+    "data": {
+      "result": "\r\nuint FUN_00ab94c0(int param_1,int param_2)\r\n\r\n{\r\n  int iVar1;\r\n  uint uVar2;\r\n  uint *in_ECX;\r\n  int iVar3;\r\n  \r\n  uVar2 = in_ECX[3];\r\n  if (((uVar2 == 0x35) && ((*(byte *)(param_1 + 0x260) & 8) == 0)) ||\r\n     ((uVar2 == 0x3a && ((*(byte *)(param_1 + 0x260) & 0x10) == 0)))) {\r\n    return uVar2 & 0xffffff00;\r\n  }\r\n  iVar1 = FUN_00924e80(uVar2);\r\n  uVar2 = 0;\r\n  if ((iVar1 != 0) &&\r\n     ((((*(byte *)(param_1 + 0x260) & 0x40) == 0 || ((*(uint *)(iVar1 + 0x20) >> 5 & 1) == 0)) ||\r\n      ((uVar2 = FUN_00a4bbe0(param_1,in_ECX[2]), uVar2 != 0x4b2 &&\r\n       (((uVar2 != 0x4b3 && (uVar2 != 0x36a0)) && (uVar2 != 0x36a1)))))))) {\r\n    if (*(char *)(param_1 + 0x219) != '\\0') {\r\n      uVar2 = *(uint *)(param_1 + 0x228);\r\n      if (uVar2 == 0) {\r\n        iVar3 = 0;\r\n      }\r\n      else {\r\n        iVar3 = uVar2 + 0x60;\r\n      }\r\n      if ((((*(byte *)(iVar3 + 0x3d0) & 0x10) == 0) ||\r\n          ((*(char *)(uVar2 + 0x548) != '\\0' && (*(int *)(iVar1 + 0xc) == 4)))) ||\r\n         ((in_ECX[3] == 0x3b && (uVar2 = FUN_009bf5d0(), (char)uVar2 == '\\0')))) goto LAB_00ab961f;\r\n    }\r\n    uVar2 = *in_ECX;\r\n    if ((((uVar2 == 0) || ((*(uint *)(uVar2 + 0x28) & 0x3c0) != 0xc0)) ||\r\n        ((*(char *)(uVar2 + 0x219) != '\\0' ||\r\n         ((uVar2 = FUN_00a66f40(param_1,uVar2), (char)uVar2 == '\\0' || (in_ECX[3] == 0x33)))))) &&\r\n       ((*(int *)(iVar1 + 0xc) != 2 ||\r\n        (((*(byte *)(param_1 + 0x26c) & 4) == 0 || ((*(byte *)(param_1 + 0x260) & 2) != 0)))))) {\r\n      uVar2 = FUN_00a4acb0(*in_ECX,in_ECX[3],~(*(byte *)(param_2 + 4) >> 6) & 1);\r\n      if (in_ECX[3] != 0x36) {\r\n        return uVar2;\r\n      }\r\n      if ((*(byte *)(param_1 + 0x1e2) & 0xf) < 2) {\r\n        return uVar2;\r\n      }\r\n    }\r\n  }\r\nLAB_00ab961f:\r\n  return uVar2 & 0xffffff00;\r\n}\r\n\r\n",
+      "evidence_id": "ev_72f81c27be3e48b04e897a4e8278af590f9b810305110fd794a21d3ff991f4c2",
+      "evidence": {
+        "evidence_id": "ev_72f81c27be3e48b04e897a4e8278af590f9b810305110fd794a21d3ff991f4c2",
+        "subject": {
+          "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+          "digest": {
+            "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+          },
+          "format": "pe",
+          "architecture": "x86",
+          "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+        },
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "predicate_type": "rea.analysis",
+        "operation": "procedure_pseudo_code",
+        "parameters": {
+          "procedure": "0x00ab94c0",
+          "document": null
+        },
+        "raw_result": "\r\nuint FUN_00ab94c0(int param_1,int param_2)\r\n\r\n{\r\n  int iVar1;\r\n  uint uVar2;\r\n  uint *in_ECX;\r\n  int iVar3;\r\n  \r\n  uVar2 = in_ECX[3];\r\n  if (((uVar2 == 0x35) && ((*(byte *)(param_1 + 0x260) & 8) == 0)) ||\r\n     ((uVar2 == 0x3a && ((*(byte *)(param_1 + 0x260) & 0x10) == 0)))) {\r\n    return uVar2 & 0xffffff00;\r\n  }\r\n  iVar1 = FUN_00924e80(uVar2);\r\n  uVar2 = 0;\r\n  if ((iVar1 != 0) &&\r\n     ((((*(byte *)(param_1 + 0x260) & 0x40) == 0 || ((*(uint *)(iVar1 + 0x20) >> 5 & 1) == 0)) ||\r\n      ((uVar2 = FUN_00a4bbe0(param_1,in_ECX[2]), uVar2 != 0x4b2 &&\r\n       (((uVar2 != 0x4b3 && (uVar2 != 0x36a0)) && (uVar2 != 0x36a1)))))))) {\r\n    if (*(char *)(param_1 + 0x219) != '\\0') {\r\n      uVar2 = *(uint *)(param_1 + 0x228);\r\n      if (uVar2 == 0) {\r\n        iVar3 = 0;\r\n      }\r\n      else {\r\n        iVar3 = uVar2 + 0x60;\r\n      }\r\n      if ((((*(byte *)(iVar3 + 0x3d0) & 0x10) == 0) ||\r\n          ((*(char *)(uVar2 + 0x548) != '\\0' && (*(int *)(iVar1 + 0xc) == 4)))) ||\r\n         ((in_ECX[3] == 0x3b && (uVar2 = FUN_009bf5d0(), (char)uVar2 == '\\0')))) goto LAB_00ab961f;\r\n    }\r\n    uVar2 = *in_ECX;\r\n    if ((((uVar2 == 0) || ((*(uint *)(uVar2 + 0x28) & 0x3c0) != 0xc0)) ||\r\n        ((*(char *)(uVar2 + 0x219) != '\\0' ||\r\n         ((uVar2 = FUN_00a66f40(param_1,uVar2), (char)uVar2 == '\\0' || (in_ECX[3] == 0x33)))))) &&\r\n       ((*(int *)(iVar1 + 0xc) != 2 ||\r\n        (((*(byte *)(param_1 + 0x26c) & 4) == 0 || ((*(byte *)(param_1 + 0x260) & 2) != 0)))))) {\r\n      uVar2 = FUN_00a4acb0(*in_ECX,in_ECX[3],~(*(byte *)(param_2 + 4) >> 6) & 1);\r\n      if (in_ECX[3] != 0x36) {\r\n        return uVar2;\r\n      }\r\n      if ((*(byte *)(param_1 + 0x1e2) & 0xf) < 2) {\r\n        return uVar2;\r\n      }\r\n    }\r\n  }\r\nLAB_00ab961f:\r\n  return uVar2 & 0xffffff00;\r\n}\r\n\r\n",
+        "normalized_result": "\r\nuint FUN_00ab94c0(int param_1,int param_2)\r\n\r\n{\r\n  int iVar1;\r\n  uint uVar2;\r\n  uint *in_ECX;\r\n  int iVar3;\r\n  \r\n  uVar2 = in_ECX[3];\r\n  if (((uVar2 == 0x35) && ((*(byte *)(param_1 + 0x260) & 8) == 0)) ||\r\n     ((uVar2 == 0x3a && ((*(byte *)(param_1 + 0x260) & 0x10) == 0)))) {\r\n    return uVar2 & 0xffffff00;\r\n  }\r\n  iVar1 = FUN_00924e80(uVar2);\r\n  uVar2 = 0;\r\n  if ((iVar1 != 0) &&\r\n     ((((*(byte *)(param_1 + 0x260) & 0x40) == 0 || ((*(uint *)(iVar1 + 0x20) >> 5 & 1) == 0)) ||\r\n      ((uVar2 = FUN_00a4bbe0(param_1,in_ECX[2]), uVar2 != 0x4b2 &&\r\n       (((uVar2 != 0x4b3 && (uVar2 != 0x36a0)) && (uVar2 != 0x36a1)))))))) {\r\n    if (*(char *)(param_1 + 0x219) != '\\0') {\r\n      uVar2 = *(uint *)(param_1 + 0x228);\r\n      if (uVar2 == 0) {\r\n        iVar3 = 0;\r\n      }\r\n      else {\r\n        iVar3 = uVar2 + 0x60;\r\n      }\r\n      if ((((*(byte *)(iVar3 + 0x3d0) & 0x10) == 0) ||\r\n          ((*(char *)(uVar2 + 0x548) != '\\0' && (*(int *)(iVar1 + 0xc) == 4)))) ||\r\n         ((in_ECX[3] == 0x3b && (uVar2 = FUN_009bf5d0(), (char)uVar2 == '\\0')))) goto LAB_00ab961f;\r\n    }\r\n    uVar2 = *in_ECX;\r\n    if ((((uVar2 == 0) || ((*(uint *)(uVar2 + 0x28) & 0x3c0) != 0xc0)) ||\r\n        ((*(char *)(uVar2 + 0x219) != '\\0' ||\r\n         ((uVar2 = FUN_00a66f40(param_1,uVar2), (char)uVar2 == '\\0' || (in_ECX[3] == 0x33)))))) &&\r\n       ((*(int *)(iVar1 + 0xc) != 2 ||\r\n        (((*(byte *)(param_1 + 0x26c) & 4) == 0 || ((*(byte *)(param_1 + 0x260) & 2) != 0)))))) {\r\n      uVar2 = FUN_00a4acb0(*in_ECX,in_ECX[3],~(*(byte *)(param_2 + 4) >> 6) & 1);\r\n      if (in_ECX[3] != 0x36) {\r\n        return uVar2;\r\n      }\r\n      if ((*(byte *)(param_1 + 0x1e2) & 0xf) < 2) {\r\n        return uVar2;\r\n      }\r\n    }\r\n  }\r\nLAB_00ab961f:\r\n  return uVar2 & 0xffffff00;\r\n}\r\n\r\n",
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+          "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+          "Local REA 5.0.0 fork: additionally admits SHA-256-bound GTAIV 1.0.7.0 and GTA San Andreas 1.0 US x86 references. This extension is not upstream Windows P0 coverage. DLL, managed, hostile, sensitive, and mutable-path targets remain unsupported.",
+          "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+          "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+        ],
+        "locations": [],
+        "evidence_links": [],
+        "analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      }
+    }
+  },
+  {
+    "address": "0x9c1f90",
+    "data": {
+      "result": "\r\nundefined4 FUN_009c1f90(char param_1)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  int in_ECX;\r\n  float *pfVar3;\r\n  int iVar4;\r\n  undefined4 uVar5;\r\n  float fVar6;\r\n  float fVar7;\r\n  float local_10;\r\n  \r\n  iVar2 = FUN_00924e80(*(undefined4 *)(in_ECX + 0x2b0 + (*(int *)(in_ECX + 0x2c8) + 5) * 0xc));\r\n  local_10 = *(float *)(iVar2 + 0x14);\r\n  if (((DAT_010f8044 == 2) && (cVar1 = FUN_00462f90(), cVar1 != '\\0')) &&\r\n     (*(int *)(in_ECX + 0x228) != 0)) {\r\n    local_10 = *(float *)(*(int *)(in_ECX + 0x228) + 0x5a8) * local_10;\r\n  }\r\n  uVar5 = 0x26e3;\r\n  if (param_1 != '\\0') {\r\n    uVar5 = 0x22e3;\r\n  }\r\n  iVar4 = *(int *)(in_ECX + 0x3a8);\r\n  if ((iVar4 == 0) ||\r\n     (((((*(uint *)(*(int *)(in_ECX + 0xe7c) + 0x264) & 0x800000) != 0 || (DAT_010c7a08 == 0)) ||\r\n       ((cVar1 = FUN_00462f90(), cVar1 != '\\0' && (DAT_00fc7eff == '\\0')))) &&\r\n      (((*(uint *)(iVar4 + 0x28) & 0x3c0) != 0xc0 || ((*(uint *)(iVar4 + 0x270) >> 4 & 1) == 0))))))\r\n  {\r\n    if (*(int *)(iVar2 + 0xc) == 1) {\r\n      uVar5 = 0x36f3;\r\n    }\r\n    iVar2 = FUN_009c1300(uVar5,local_10,0,0,0);\r\n    if (iVar2 != 0) {\r\n      FUN_009a9ef0(iVar2);\r\n      if (*(int *)(in_ECX + 0x228) == 0) {\r\n        uRam00000415 = 1;\r\n        return 1;\r\n      }\r\n      *(undefined1 *)(*(int *)(in_ECX + 0x228) + 0x475) = 1;\r\n      return 1;\r\n    }\r\n  }\r\n  else {\r\n    iVar2 = *(int *)(in_ECX + 0x3a8);\r\n    pfVar3 = (float *)(*(int *)(iVar2 + 0x20) + 0x30);\r\n    if (*(int *)(iVar2 + 0x20) == 0) {\r\n      pfVar3 = (float *)(iVar2 + 0x10);\r\n    }\r\n    fVar6 = *pfVar3 - *(float *)(*(int *)(in_ECX + 0x20) + 0x30);\r\n    if (*(int *)(iVar2 + 0x20) == 0) {\r\n      iVar4 = iVar2 + 0x10;\r\n    }\r\n    else {\r\n      iVar4 = *(int *)(iVar2 + 0x20) + 0x30;\r\n    }\r\n    fVar7 = *(float *)(iVar4 + 4) - *(float *)(*(int *)(in_ECX + 0x20) + 0x34);\r\n    FUN_00c28820(iVar2);\r\n    if (SQRT(fVar7 * fVar7 + fVar6 * fVar6) <= local_10) {\r\n      return 1;\r\n    }\r\n    FUN_009a9ef0(0);\r\n  }\r\n  return 0;\r\n}\r\n\r\n",
+      "evidence_id": "ev_f9baae732d4d21d6a2a77744a9da02f0e279662755dc0db53958b2f0e862cb2a",
+      "evidence": {
+        "evidence_id": "ev_f9baae732d4d21d6a2a77744a9da02f0e279662755dc0db53958b2f0e862cb2a",
+        "subject": {
+          "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+          "digest": {
+            "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+          },
+          "format": "pe",
+          "architecture": "x86",
+          "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+        },
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "predicate_type": "rea.analysis",
+        "operation": "procedure_pseudo_code",
+        "parameters": {
+          "procedure": "0x009c1f90",
+          "document": null
+        },
+        "raw_result": "\r\nundefined4 FUN_009c1f90(char param_1)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  int in_ECX;\r\n  float *pfVar3;\r\n  int iVar4;\r\n  undefined4 uVar5;\r\n  float fVar6;\r\n  float fVar7;\r\n  float local_10;\r\n  \r\n  iVar2 = FUN_00924e80(*(undefined4 *)(in_ECX + 0x2b0 + (*(int *)(in_ECX + 0x2c8) + 5) * 0xc));\r\n  local_10 = *(float *)(iVar2 + 0x14);\r\n  if (((DAT_010f8044 == 2) && (cVar1 = FUN_00462f90(), cVar1 != '\\0')) &&\r\n     (*(int *)(in_ECX + 0x228) != 0)) {\r\n    local_10 = *(float *)(*(int *)(in_ECX + 0x228) + 0x5a8) * local_10;\r\n  }\r\n  uVar5 = 0x26e3;\r\n  if (param_1 != '\\0') {\r\n    uVar5 = 0x22e3;\r\n  }\r\n  iVar4 = *(int *)(in_ECX + 0x3a8);\r\n  if ((iVar4 == 0) ||\r\n     (((((*(uint *)(*(int *)(in_ECX + 0xe7c) + 0x264) & 0x800000) != 0 || (DAT_010c7a08 == 0)) ||\r\n       ((cVar1 = FUN_00462f90(), cVar1 != '\\0' && (DAT_00fc7eff == '\\0')))) &&\r\n      (((*(uint *)(iVar4 + 0x28) & 0x3c0) != 0xc0 || ((*(uint *)(iVar4 + 0x270) >> 4 & 1) == 0))))))\r\n  {\r\n    if (*(int *)(iVar2 + 0xc) == 1) {\r\n      uVar5 = 0x36f3;\r\n    }\r\n    iVar2 = FUN_009c1300(uVar5,local_10,0,0,0);\r\n    if (iVar2 != 0) {\r\n      FUN_009a9ef0(iVar2);\r\n      if (*(int *)(in_ECX + 0x228) == 0) {\r\n        uRam00000415 = 1;\r\n        return 1;\r\n      }\r\n      *(undefined1 *)(*(int *)(in_ECX + 0x228) + 0x475) = 1;\r\n      return 1;\r\n    }\r\n  }\r\n  else {\r\n    iVar2 = *(int *)(in_ECX + 0x3a8);\r\n    pfVar3 = (float *)(*(int *)(iVar2 + 0x20) + 0x30);\r\n    if (*(int *)(iVar2 + 0x20) == 0) {\r\n      pfVar3 = (float *)(iVar2 + 0x10);\r\n    }\r\n    fVar6 = *pfVar3 - *(float *)(*(int *)(in_ECX + 0x20) + 0x30);\r\n    if (*(int *)(iVar2 + 0x20) == 0) {\r\n      iVar4 = iVar2 + 0x10;\r\n    }\r\n    else {\r\n      iVar4 = *(int *)(iVar2 + 0x20) + 0x30;\r\n    }\r\n    fVar7 = *(float *)(iVar4 + 4) - *(float *)(*(int *)(in_ECX + 0x20) + 0x34);\r\n    FUN_00c28820(iVar2);\r\n    if (SQRT(fVar7 * fVar7 + fVar6 * fVar6) <= local_10) {\r\n      return 1;\r\n    }\r\n    FUN_009a9ef0(0);\r\n  }\r\n  return 0;\r\n}\r\n\r\n",
+        "normalized_result": "\r\nundefined4 FUN_009c1f90(char param_1)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  int in_ECX;\r\n  float *pfVar3;\r\n  int iVar4;\r\n  undefined4 uVar5;\r\n  float fVar6;\r\n  float fVar7;\r\n  float local_10;\r\n  \r\n  iVar2 = FUN_00924e80(*(undefined4 *)(in_ECX + 0x2b0 + (*(int *)(in_ECX + 0x2c8) + 5) * 0xc));\r\n  local_10 = *(float *)(iVar2 + 0x14);\r\n  if (((DAT_010f8044 == 2) && (cVar1 = FUN_00462f90(), cVar1 != '\\0')) &&\r\n     (*(int *)(in_ECX + 0x228) != 0)) {\r\n    local_10 = *(float *)(*(int *)(in_ECX + 0x228) + 0x5a8) * local_10;\r\n  }\r\n  uVar5 = 0x26e3;\r\n  if (param_1 != '\\0') {\r\n    uVar5 = 0x22e3;\r\n  }\r\n  iVar4 = *(int *)(in_ECX + 0x3a8);\r\n  if ((iVar4 == 0) ||\r\n     (((((*(uint *)(*(int *)(in_ECX + 0xe7c) + 0x264) & 0x800000) != 0 || (DAT_010c7a08 == 0)) ||\r\n       ((cVar1 = FUN_00462f90(), cVar1 != '\\0' && (DAT_00fc7eff == '\\0')))) &&\r\n      (((*(uint *)(iVar4 + 0x28) & 0x3c0) != 0xc0 || ((*(uint *)(iVar4 + 0x270) >> 4 & 1) == 0))))))\r\n  {\r\n    if (*(int *)(iVar2 + 0xc) == 1) {\r\n      uVar5 = 0x36f3;\r\n    }\r\n    iVar2 = FUN_009c1300(uVar5,local_10,0,0,0);\r\n    if (iVar2 != 0) {\r\n      FUN_009a9ef0(iVar2);\r\n      if (*(int *)(in_ECX + 0x228) == 0) {\r\n        uRam00000415 = 1;\r\n        return 1;\r\n      }\r\n      *(undefined1 *)(*(int *)(in_ECX + 0x228) + 0x475) = 1;\r\n      return 1;\r\n    }\r\n  }\r\n  else {\r\n    iVar2 = *(int *)(in_ECX + 0x3a8);\r\n    pfVar3 = (float *)(*(int *)(iVar2 + 0x20) + 0x30);\r\n    if (*(int *)(iVar2 + 0x20) == 0) {\r\n      pfVar3 = (float *)(iVar2 + 0x10);\r\n    }\r\n    fVar6 = *pfVar3 - *(float *)(*(int *)(in_ECX + 0x20) + 0x30);\r\n    if (*(int *)(iVar2 + 0x20) == 0) {\r\n      iVar4 = iVar2 + 0x10;\r\n    }\r\n    else {\r\n      iVar4 = *(int *)(iVar2 + 0x20) + 0x30;\r\n    }\r\n    fVar7 = *(float *)(iVar4 + 4) - *(float *)(*(int *)(in_ECX + 0x20) + 0x34);\r\n    FUN_00c28820(iVar2);\r\n    if (SQRT(fVar7 * fVar7 + fVar6 * fVar6) <= local_10) {\r\n      return 1;\r\n    }\r\n    FUN_009a9ef0(0);\r\n  }\r\n  return 0;\r\n}\r\n\r\n",
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+          "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+          "Local REA 5.0.0 fork: additionally admits SHA-256-bound GTAIV 1.0.7.0 and GTA San Andreas 1.0 US x86 references. This extension is not upstream Windows P0 coverage. DLL, managed, hostile, sensitive, and mutable-path targets remain unsupported.",
+          "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+          "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+        ],
+        "locations": [],
+        "evidence_links": [],
+        "analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      }
+    }
+  },
+  {
+    "address": "0x9c2180",
+    "data": {
+      "result": "\r\nundefined4 FUN_009c2180(undefined4 param_1,char param_2)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  int in_ECX;\r\n  undefined4 uVar3;\r\n  undefined4 local_4;\r\n  \r\n  iVar2 = FUN_009a9cf0();\r\n  if (iVar2 != 0) {\r\n    iVar2 = FUN_00924e80(*(undefined4 *)(iVar2 + 0x18));\r\n    local_4 = *(float *)(iVar2 + 0x14);\r\n    if (DAT_010f8044 == 2) {\r\n      cVar1 = FUN_00462f90();\r\n      if ((cVar1 != '\\0') && (*(int *)(in_ECX + 0x228) != 0)) {\r\n        local_4 = *(float *)(*(int *)(in_ECX + 0x228) + 0x5a8) * local_4;\r\n      }\r\n    }\r\n    if (param_2 == '\\0') {\r\n      uVar3 = 0x22e8;\r\n    }\r\n    else {\r\n      uVar3 = 0x22e4;\r\n    }\r\n    iVar2 = FUN_009c1300(uVar3,local_4,param_1,0,0);\r\n    if (iVar2 != 0) {\r\n      FUN_009a9ef0(iVar2);\r\n      iVar2 = *(int *)(in_ECX + 0x228);\r\n      if (iVar2 != 0) {\r\n        *(undefined1 *)(iVar2 + 0x475) = 1;\r\n        return CONCAT31((int3)((uint)(iVar2 + 0x60) >> 8),1);\r\n      }\r\n      uRam00000415 = 1;\r\n      return 1;\r\n    }\r\n  }\r\n  return 0;\r\n}\r\n\r\n",
+      "evidence_id": "ev_0b8b7fda31ff3327c2f390de71cbfcc9663e6b0205c4d6a494a1df9f4ffd2126",
+      "evidence": {
+        "evidence_id": "ev_0b8b7fda31ff3327c2f390de71cbfcc9663e6b0205c4d6a494a1df9f4ffd2126",
+        "subject": {
+          "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+          "digest": {
+            "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+          },
+          "format": "pe",
+          "architecture": "x86",
+          "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+        },
+        "provider": {
+          "id": "ghidra",
+          "name": "Ghidra",
+          "version": "12.1.4"
+        },
+        "predicate_type": "rea.analysis",
+        "operation": "procedure_pseudo_code",
+        "parameters": {
+          "procedure": "0x009c2180",
+          "document": null
+        },
+        "raw_result": "\r\nundefined4 FUN_009c2180(undefined4 param_1,char param_2)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  int in_ECX;\r\n  undefined4 uVar3;\r\n  undefined4 local_4;\r\n  \r\n  iVar2 = FUN_009a9cf0();\r\n  if (iVar2 != 0) {\r\n    iVar2 = FUN_00924e80(*(undefined4 *)(iVar2 + 0x18));\r\n    local_4 = *(float *)(iVar2 + 0x14);\r\n    if (DAT_010f8044 == 2) {\r\n      cVar1 = FUN_00462f90();\r\n      if ((cVar1 != '\\0') && (*(int *)(in_ECX + 0x228) != 0)) {\r\n        local_4 = *(float *)(*(int *)(in_ECX + 0x228) + 0x5a8) * local_4;\r\n      }\r\n    }\r\n    if (param_2 == '\\0') {\r\n      uVar3 = 0x22e8;\r\n    }\r\n    else {\r\n      uVar3 = 0x22e4;\r\n    }\r\n    iVar2 = FUN_009c1300(uVar3,local_4,param_1,0,0);\r\n    if (iVar2 != 0) {\r\n      FUN_009a9ef0(iVar2);\r\n      iVar2 = *(int *)(in_ECX + 0x228);\r\n      if (iVar2 != 0) {\r\n        *(undefined1 *)(iVar2 + 0x475) = 1;\r\n        return CONCAT31((int3)((uint)(iVar2 + 0x60) >> 8),1);\r\n      }\r\n      uRam00000415 = 1;\r\n      return 1;\r\n    }\r\n  }\r\n  return 0;\r\n}\r\n\r\n",
+        "normalized_result": "\r\nundefined4 FUN_009c2180(undefined4 param_1,char param_2)\r\n\r\n{\r\n  char cVar1;\r\n  int iVar2;\r\n  int in_ECX;\r\n  undefined4 uVar3;\r\n  undefined4 local_4;\r\n  \r\n  iVar2 = FUN_009a9cf0();\r\n  if (iVar2 != 0) {\r\n    iVar2 = FUN_00924e80(*(undefined4 *)(iVar2 + 0x18));\r\n    local_4 = *(float *)(iVar2 + 0x14);\r\n    if (DAT_010f8044 == 2) {\r\n      cVar1 = FUN_00462f90();\r\n      if ((cVar1 != '\\0') && (*(int *)(in_ECX + 0x228) != 0)) {\r\n        local_4 = *(float *)(*(int *)(in_ECX + 0x228) + 0x5a8) * local_4;\r\n      }\r\n    }\r\n    if (param_2 == '\\0') {\r\n      uVar3 = 0x22e8;\r\n    }\r\n    else {\r\n      uVar3 = 0x22e4;\r\n    }\r\n    iVar2 = FUN_009c1300(uVar3,local_4,param_1,0,0);\r\n    if (iVar2 != 0) {\r\n      FUN_009a9ef0(iVar2);\r\n      iVar2 = *(int *)(in_ECX + 0x228);\r\n      if (iVar2 != 0) {\r\n        *(undefined1 *)(iVar2 + 0x475) = 1;\r\n        return CONCAT31((int3)((uint)(iVar2 + 0x60) >> 8),1);\r\n      }\r\n      uRam00000415 = 1;\r\n      return 1;\r\n    }\r\n  }\r\n  return 0;\r\n}\r\n\r\n",
+        "confidence": "observed",
+        "authority": "shipped-artifact",
+        "environment": null,
+        "limitations": [
+          "The session serves operations only after Ghidra reports default auto-analysis complete; incomplete analysis does not expose partial results.",
+          "The imported Program and temporary project are ephemeral and deleted on close. Annotation operations edit session database metadata; original executable bytes are never written.",
+          "Default-space addresses use lowercase 0x-prefixed hexadecimal; other address spaces use <percent-encoded-space>:0x<hex>.",
+          "Pseudocode is Ghidra decompiler output, not original source and not text-equivalent to Hopper output.",
+          "External functions and functions without an analyzable body return null; other decompiler failures remain explicit.",
+          "Local REA 5.0.0 fork: additionally admits SHA-256-bound GTAIV 1.0.7.0 and GTA San Andreas 1.0 US x86 references. This extension is not upstream Windows P0 coverage. DLL, managed, hostile, sensitive, and mutable-path targets remain unsupported.",
+          "The Windows bridge uses authenticated IPv4 loopback because Node path-based IPC does not expose Java AF_UNIX sockets; the endpoint file contains no bearer token.",
+          "Windows sessions require the matching packaged Windows x64 native addon, local NTFS targets and runtimes, and Windows 10 or later. Native handles enforce path admission, private DACLs, and Job Object ownership automatically."
+        ],
+        "locations": [],
+        "evidence_links": [],
+        "analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      }
+    }
+  }
+]

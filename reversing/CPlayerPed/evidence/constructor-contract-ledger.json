@@ -1,0 +1,448 @@
+{
+  "candidate_constructor": "0x009C1910",
+  "end_exclusive": "0x009C1C84",
+  "source": "GTAIV.exe canonical disassembly",
+  "validated": false,
+  "all_internal_branch_targets_match_instruction_boundaries": true,
+  "branches": [
+    {
+      "source_va": "0x9c19eb",
+      "condition_opcode": "je",
+      "target_va": "0x9c1a2b",
+      "fallthrough_va": "0x9c19ed",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c19f9",
+      "condition_opcode": "jne",
+      "target_va": "0x9c1a2b",
+      "fallthrough_va": "0x9c19fb",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1a02",
+      "condition_opcode": "je",
+      "target_va": "0x9c1a2b",
+      "fallthrough_va": "0x9c1a04",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1a06",
+      "condition_opcode": "je",
+      "target_va": "0x9c1a0d",
+      "fallthrough_va": "0x9c1a08",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1a0b",
+      "condition_opcode": "jmp",
+      "target_va": "0x9c1a0f",
+      "fallthrough_va": null,
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1a1d",
+      "condition_opcode": "je",
+      "target_va": "0x9c1a24",
+      "fallthrough_va": "0x9c1a1f",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1a22",
+      "condition_opcode": "jmp",
+      "target_va": "0x9c1a26",
+      "fallthrough_va": null,
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1a3d",
+      "condition_opcode": "je",
+      "target_va": "0x9c1a44",
+      "fallthrough_va": "0x9c1a3f",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1a42",
+      "condition_opcode": "jmp",
+      "target_va": "0x9c1a46",
+      "fallthrough_va": null,
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1a62",
+      "condition_opcode": "je",
+      "target_va": "0x9c1a6c",
+      "fallthrough_va": "0x9c1a64",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1a6a",
+      "condition_opcode": "jne",
+      "target_va": "0x9c1a73",
+      "fallthrough_va": "0x9c1a6c",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1b46",
+      "condition_opcode": "je",
+      "target_va": "0x9c1b4d",
+      "fallthrough_va": "0x9c1b48",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1b4b",
+      "condition_opcode": "jmp",
+      "target_va": "0x9c1b4f",
+      "fallthrough_va": null,
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1b82",
+      "condition_opcode": "je",
+      "target_va": "0x9c1b9b",
+      "fallthrough_va": "0x9c1b84",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1b90",
+      "condition_opcode": "jne",
+      "target_va": "0x9c1b9b",
+      "fallthrough_va": "0x9c1b92",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1b99",
+      "condition_opcode": "jne",
+      "target_va": "0x9c1bb3",
+      "fallthrough_va": "0x9c1b9b",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1bab",
+      "condition_opcode": "jne",
+      "target_va": "0x9c1bb0",
+      "fallthrough_va": "0x9c1bad",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1bde",
+      "condition_opcode": "je",
+      "target_va": "0x9c1be9",
+      "fallthrough_va": "0x9c1be0",
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1be7",
+      "condition_opcode": "jmp",
+      "target_va": "0x9c1beb",
+      "fallthrough_va": null,
+      "target_is_instruction_boundary": true
+    },
+    {
+      "source_va": "0x9c1c71",
+      "condition_opcode": "je",
+      "target_va": "0x9c1c7a",
+      "fallthrough_va": "0x9c1c73",
+      "target_is_instruction_boundary": true
+    }
+  ],
+  "arguments": [
+    {
+      "index": 1,
+      "entry_stack_offset": 4,
+      "usage": "passed to008ABF10 via currentESP+1C after24-byte prologue"
+    },
+    {
+      "index": 2,
+      "entry_stack_offset": 8,
+      "usage": "read before prologue, passed to008ABF10"
+    },
+    {
+      "index": 3,
+      "entry_stack_offset": 12,
+      "usage": "passed to00817F20; ESP19C9=initialESP-28 and displacement0x28 yields initialESP+12"
+    }
+  ],
+  "calls": [
+    {
+      "va": "0x9c1925",
+      "instruction": "call 0x8abf10",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1936",
+      "instruction": "call 0xc68b50",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1943",
+      "instruction": "call 0x4475c0",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c19be",
+      "instruction": "call 0xb2a8f0",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c19c4",
+      "instruction": "call 0xb29e50",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c19d6",
+      "instruction": "call 0x817f20",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1a10",
+      "instruction": "call 0x920cd0",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1a26",
+      "instruction": "call 0x921050",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1a6e",
+      "instruction": "call 0x9be4c0",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1a79",
+      "instruction": "call 0xd0d21a",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1ad6",
+      "instruction": "call 0x8631e0",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1afb",
+      "instruction": "call 0x447610",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1b0c",
+      "instruction": "call 0x89e5a0",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1b1d",
+      "instruction": "call 0x9720e0",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1b9b",
+      "instruction": "call 0x797d70",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1bc6",
+      "instruction": "call dword ptr [0xd4d4b8]",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1bd4",
+      "instruction": "call 0x4011d0",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1be2",
+      "instruction": "call 0x8da9a0",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    },
+    {
+      "va": "0x9c1c68",
+      "instruction": "call 0x878a00",
+      "abi_validated": false,
+      "semantics_reconstructed": false
+    }
+  ],
+  "direct_storage_lower_bound": 3832,
+  "exact_allocation_size_confirmed": false,
+  "pointer_preconditions": [
+    {
+      "source": "this+228",
+      "required_access": "p+60+3D4 dword, p+60+416 byte; null p leads low-memory write"
+    },
+    {
+      "source": "this+21C",
+      "required_access": "+12C dword and receiver+110 called"
+    },
+    {
+      "source": "this+224",
+      "required_access": "+EC dword,+E8 dword"
+    }
+  ],
+  "fp_contract": "x87 FILD signed32; FMUL float32 twice with active precision; controlword|C00 truncation FISTP signed64; restored controlword; low32 arithmetic wrap",
+  "fresh_REA_crosscheck": "rea-deep-0.json: all ctor observed memory offsets and order agree; decompiler447640return anomalous, assembly stronger",
+  "caller_96D870_disassembly": [
+    {
+      "va": "0x96d870",
+      "bytes": "8b0dac828a01",
+      "asm": "mov ecx, dword ptr [0x18a82ac]"
+    },
+    {
+      "va": "0x96d876",
+      "bytes": "e8a5fcffff",
+      "asm": "call 0x96d520"
+    },
+    {
+      "va": "0x96d87b",
+      "bytes": "85c0",
+      "asm": "test eax, eax"
+    },
+    {
+      "va": "0x96d87d",
+      "bytes": "7407",
+      "asm": "je 0x96d886"
+    },
+    {
+      "va": "0x96d87f",
+      "bytes": "8bc8",
+      "asm": "mov ecx, eax"
+    },
+    {
+      "va": "0x96d881",
+      "bytes": "e98a400500",
+      "asm": "jmp 0x9c1910"
+    },
+    {
+      "va": "0x96d886",
+      "bytes": "33c0",
+      "asm": "xor eax, eax"
+    },
+    {
+      "va": "0x96d888",
+      "bytes": "c20c00",
+      "asm": "ret 0xc"
+    }
+  ],
+  "constants_observed": {
+    "0xebe1d8": {
+      "bits": "0x38000000",
+      "float32": 3.0517578125e-05
+    },
+    "0xd819bc": {
+      "bits": "0xc808b800",
+      "float32": -140000.0
+    },
+    "0xd8d70c": {
+      "bits": "0x43480000",
+      "float32": 200.0
+    },
+    "0xd50978": {
+      "bits": "0x41f00000",
+      "float32": 30.0
+    },
+    "0xd81958": {
+      "bits": "0x40000000",
+      "float32": 2.0
+    },
+    "0xe3447c": {
+      "bits": "0xffffffff",
+      "signed32": -1
+    }
+  },
+  "imports_observed": [
+    {
+      "iat_va": "0xd4d4b8",
+      "dll": "USER32.dll",
+      "export": "SendMessageA"
+    }
+  ],
+  "rand_implementation_entry_bounded": [
+    {
+      "va": "0xd0d21a",
+      "bytes": "e837b90000",
+      "asm": "call 0xd18b56"
+    },
+    {
+      "va": "0xd0d21f",
+      "bytes": "8b4814",
+      "asm": "mov ecx, dword ptr [eax + 0x14]"
+    },
+    {
+      "va": "0xd0d222",
+      "bytes": "69c9fd430300",
+      "asm": "imul ecx, ecx, 0x343fd"
+    },
+    {
+      "va": "0xd0d228",
+      "bytes": "81c1c39e2600",
+      "asm": "add ecx, 0x269ec3"
+    },
+    {
+      "va": "0xd0d22e",
+      "bytes": "894814",
+      "asm": "mov dword ptr [eax + 0x14], ecx"
+    },
+    {
+      "va": "0xd0d231",
+      "bytes": "8bc1",
+      "asm": "mov eax, ecx"
+    },
+    {
+      "va": "0xd0d233",
+      "bytes": "c1e810",
+      "asm": "shr eax, 0x10"
+    },
+    {
+      "va": "0xd0d236",
+      "bytes": "25ff7f0000",
+      "asm": "and eax, 0x7fff"
+    },
+    {
+      "va": "0xd0d23b",
+      "bytes": "c3",
+      "asm": "ret "
+    },
+    {
+      "va": "0xd0d23c",
+      "bytes": "6a0c",
+      "asm": "push 0xc"
+    },
+    {
+      "va": "0xd0d23e",
+      "bytes": "681888f000",
+      "asm": "push 0xf08818"
+    },
+    {
+      "va": "0xd0d243",
+      "bytes": "e898bc0000",
+      "asm": "call 0xd18ee0"
+    }
+  ],
+  "x87_semantics_correction": "Ghidra ROUND is not an independent round-to-nearest claim; CW|C00 proves truncation.",
+  "constructor_reference_confirmed": {
+    "caller_va": "0x96d870",
+    "tail_jump_va": "0x96d881",
+    "target": "0x9c1910",
+    "allocation_helper": "0x96d520",
+    "precondition": "EAX96D520!=0"
+  },
+  "body_reconstruction_source": "source/game/Peds/PlayerPedConstruction.h",
+  "body_validation": "reversing/CPlayerPed/evidence/constructor-validation-summary.json",
+  "native_ownership_abi_validated": false
+}

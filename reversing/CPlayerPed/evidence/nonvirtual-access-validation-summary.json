@@ -1,0 +1,49 @@
+{
+  "schema": 1,
+  "passed": true,
+  "comparisons": 16384,
+  "failures": 0,
+  "methods": [
+    {
+      "va": "0x009BE5D0",
+      "comparisons": 8192
+    },
+    {
+      "va": "0x009BEE70",
+      "comparisons": 8192
+    }
+  ],
+  "validation_kind": "isolated_win32_complete_original_bodies_with_patched_dependency_contracts",
+  "runtime_game_validated": false,
+  "replacements_installed": false,
+  "source_sha256": {
+    "source/game/Peds/PlayerPedNonvirtual.h": "ebb2834b8a7b9af30515c027586b369fe37c42c5cc13f872542824a9337b8079",
+    "reversing/CPlayerPed/nonvirtual-check.cpp": "26b0fa7302008d38a848a25d73f8580969bc805d4531cb9d8b69ceb5810133f9",
+    "reversing/CPlayerPed/nonvirtual-body.inc": "2293e4b36f98cd991fcde11ff77d62ab0cf8d6f7c85ed7aa68d823e9db071b32",
+    "reversing/CPlayerPed/initialization-check.cpp": "705c1d5f79e6364763cc485626ac516483c2931f62294fb0b35bbc9bd568fe9e",
+    "reversing/CPlayerPed/initialization-body.inc": "a3116cb528c2cce63c7d0e6796d9ee963d7cea0492b14f5f79670175acb7e664"
+  },
+  "checks": [
+    "full4096byte_playerbuffers",
+    "dependency_order_receiver_arguments_return",
+    "byteflag218/219values0,1,128,255",
+    "initializer4buffersfullguards",
+    "initializer16callbackpointermutationsequences",
+    "9oldhandlepatternsby9createdhandlepatternsby32buffers"
+  ],
+  "limitations": [
+    "Originalcallee bodies replaced by deterministic callbacks.",
+    "PlayerInfo-null paths accesslowmemory and were not executed.",
+    "Defining sourceC++class ownership is not recovered; player receiver is established from original callsites.",
+    "Native class layout and all nonvirtual methods remain incomplete."
+  ],
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "fixture": "reversing/CPlayerPed/evidence/nonvirtual-fixture.json",
+  "fixture_sha256": "ba4d59e96f971b4dcd04e350b22651250a69a8f7725cae804ec73f00d28ac967",
+  "implementation_sha256": "ebb2834b8a7b9af30515c027586b369fe37c42c5cc13f872542824a9337b8079",
+  "test_executable_sha256": {
+    "nonvirtual-check.exe": "c94d6a97b8a3bbf71df232050a9e0318251fa8df7cb850a2d90beddcce78d12d",
+    "initialization-check.exe": "0982dc7e1ec65dd95b420780d2aa0af56caec4c767ce8b2affc3e26ccad6328c"
+  },
+  "all_fixture_bodies_verified_against_canonical_exe": true
+}

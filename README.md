@@ -84,6 +84,14 @@ LibertyRecomp, Xbox 360, otras versiones PC y EFLC podrán incorporarse posterio
 
 ### Estado del trabajo
 
+**Actualización del 10 de octubre de 2026:** el [catálogo de hooks](docs/hooks.csv) contiene 15.995 entradas por propietario y dirección, correspondientes a 2.078 destinos únicos. Las direcciones y llamadas comprobadas tienen alcances separados de la reconstrucción. [Progreso de clases](docs/ReversedClasses.md) y [correlación con el inventario](docs/MemoryMap/ClassesAndHooks.md) se generan desde las evidencias.
+
+[CPlayerPed](reversing/CPlayerPed/README.md) tiene 42 operaciones reconstruidas con pruebas acotadas, incluidos sus 18 slots virtuales propios. Doce operaciones pasaron 768 comparaciones dentro del juego. La sustitución de `Update` pasó 64 llamadas naturales al cuerpo reconstruido, después de observar 32 originales; se restauró la vtable y el juego cerró normalmente. La consola permaneció visible. La clase sigue **parcialmente revertida**: su estructura nativa completa, herencia, inventario exhaustivo y todas las dependencias todavía no están reconstruidos. Los hashes identifican las fuentes y los ASI concretos probados; no certifican cualquier compilación posterior.
+
+El catálogo registra 43 entradas reconstruidas: 42 de CPlayerPed y atStringHash. Los cuerpos con callbacks simulados y las llamadas al original conservan su alcance explícito; no acreditan independencia del EXE. Los runners y pendientes están en la documentación de cada banco.
+
+La tabla siguiente conserva el estado histórico de la primera entrega.
+
 **Entrega del 6 de octubre de 2026:** binario canónico registrado, proyecto importado en Ghidra y primera función reconstruida y validada. [rage::atStringHash](reversing/AtStringHash/README.md) pasó 8.320 comparaciones sintéticas y 4.096 comparaciones durante llamadas reales, sin diferencias. El hook recibió 383.860 llamadas; llegaron ambos eventos de carga, se procesaron 428 ciclos de scripts y el juego cerró con código 0 sin terminación forzada. El usuario confirmó la entrada a partida y una cinemática. Esto valida el primer caso, no todos los sistemas del juego.
 
 | Dimensión | Estado |

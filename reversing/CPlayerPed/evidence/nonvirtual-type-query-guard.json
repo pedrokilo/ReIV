@@ -1,0 +1,231 @@
+{
+  "caller": "0x00A4FB50",
+  "instructions": [
+    {
+      "va": "0xa4fb50",
+      "bytes": "53",
+      "asm": "push ebx"
+    },
+    {
+      "va": "0xa4fb51",
+      "bytes": "56",
+      "asm": "push esi"
+    },
+    {
+      "va": "0xa4fb52",
+      "bytes": "57",
+      "asm": "push edi"
+    },
+    {
+      "va": "0xa4fb53",
+      "bytes": "8bf9",
+      "asm": "mov edi, ecx"
+    },
+    {
+      "va": "0xa4fb55",
+      "bytes": "8b8f34040000",
+      "asm": "mov ecx, dword ptr [edi + 0x434]"
+    },
+    {
+      "va": "0xa4fb5b",
+      "bytes": "85c9",
+      "asm": "test ecx, ecx"
+    },
+    {
+      "va": "0xa4fb5d",
+      "bytes": "7422",
+      "asm": "je 0xa4fb81"
+    },
+    {
+      "va": "0xa4fb5f",
+      "bytes": "8b416c",
+      "asm": "mov eax, dword ptr [ecx + 0x6c]"
+    },
+    {
+      "va": "0xa4fb62",
+      "bytes": "85c0",
+      "asm": "test eax, eax"
+    },
+    {
+      "va": "0xa4fb64",
+      "bytes": "7406",
+      "asm": "je 0xa4fb6c"
+    },
+    {
+      "va": "0xa4fb66",
+      "bytes": "80780e00",
+      "asm": "cmp byte ptr [eax + 0xe], 0"
+    },
+    {
+      "va": "0xa4fb6a",
+      "bytes": "7515",
+      "asm": "jne 0xa4fb81"
+    },
+    {
+      "va": "0xa4fb6c",
+      "bytes": "6a00",
+      "asm": "push 0"
+    },
+    {
+      "va": "0xa4fb6e",
+      "bytes": "8d8750040000",
+      "asm": "lea eax, [edi + 0x450]"
+    },
+    {
+      "va": "0xa4fb74",
+      "bytes": "50",
+      "asm": "push eax"
+    },
+    {
+      "va": "0xa4fb75",
+      "bytes": "8d9740040000",
+      "asm": "lea edx, [edi + 0x440]"
+    },
+    {
+      "va": "0xa4fb7b",
+      "bytes": "52",
+      "asm": "push edx"
+    },
+    {
+      "va": "0xa4fb7c",
+      "bytes": "e8ff7fffff",
+      "asm": "call 0xa47b80"
+    },
+    {
+      "va": "0xa4fb81",
+      "bytes": "8db760040000",
+      "asm": "lea esi, [edi + 0x460]"
+    },
+    {
+      "va": "0xa4fb87",
+      "bytes": "81c780040000",
+      "asm": "add edi, 0x480"
+    },
+    {
+      "va": "0xa4fb8d",
+      "bytes": "bb05000000",
+      "asm": "mov ebx, 5"
+    },
+    {
+      "va": "0xa4fb92",
+      "bytes": "8b0e",
+      "asm": "mov ecx, dword ptr [esi]"
+    },
+    {
+      "va": "0xa4fb94",
+      "bytes": "85c9",
+      "asm": "test ecx, ecx"
+    },
+    {
+      "va": "0xa4fb96",
+      "bytes": "7432",
+      "asm": "je 0xa4fbca"
+    },
+    {
+      "va": "0xa4fb98",
+      "bytes": "8b4138",
+      "asm": "mov eax, dword ptr [ecx + 0x38]"
+    },
+    {
+      "va": "0xa4fb9b",
+      "bytes": "85c0",
+      "asm": "test eax, eax"
+    },
+    {
+      "va": "0xa4fb9d",
+      "bytes": "742b",
+      "asm": "je 0xa4fbca"
+    },
+    {
+      "va": "0xa4fb9f",
+      "bytes": "3b81c4070000",
+      "asm": "cmp eax, dword ptr [ecx + 0x7c4]"
+    },
+    {
+      "va": "0xa4fba5",
+      "bytes": "7523",
+      "asm": "jne 0xa4fbca"
+    },
+    {
+      "va": "0xa4fba7",
+      "bytes": "6a00",
+      "asm": "push 0"
+    },
+    {
+      "va": "0xa4fba9",
+      "bytes": "8d4750",
+      "asm": "lea eax, [edi + 0x50]"
+    },
+    {
+      "va": "0xa4fbac",
+      "bytes": "50",
+      "asm": "push eax"
+    },
+    {
+      "va": "0xa4fbad",
+      "bytes": "57",
+      "asm": "push edi"
+    },
+    {
+      "va": "0xa4fbae",
+      "bytes": "e8cd7fffff",
+      "asm": "call 0xa47b80"
+    },
+    {
+      "va": "0xa4fbb3",
+      "bytes": "8b0e",
+      "asm": "mov ecx, dword ptr [esi]"
+    },
+    {
+      "va": "0xa4fbb5",
+      "bytes": "8b11",
+      "asm": "mov edx, dword ptr [ecx]"
+    },
+    {
+      "va": "0xa4fbb7",
+      "bytes": "8b8228010000",
+      "asm": "mov eax, dword ptr [edx + 0x128]"
+    },
+    {
+      "va": "0xa4fbbd",
+      "bytes": "ffd0",
+      "asm": "call eax"
+    },
+    {
+      "va": "0xa4fbbf",
+      "bytes": "84c0",
+      "asm": "test al, al"
+    },
+    {
+      "va": "0xa4fbc1",
+      "bytes": "7407",
+      "asm": "je 0xa4fbca"
+    },
+    {
+      "va": "0xa4fbc3",
+      "bytes": "8b0e",
+      "asm": "mov ecx, dword ptr [esi]"
+    },
+    {
+      "va": "0xa4fbc5",
+      "bytes": "e826faf6ff",
+      "asm": "call 0x9bf5f0"
+    },
+    {
+      "va": "0xa4fbca",
+      "bytes": "83c710",
+      "asm": "add edi, 0x10"
+    },
+    {
+      "va": "0xa4fbcd",
+      "bytes": "83c604",
+      "asm": "add esi, 4"
+    }
+  ],
+  "virtual_slot74_CP\u200bed": "0x005FDCD0 lowALzero",
+  "virtual_slot74_CPlayerPed": "0x00CFAEE0 lowALone",
+  "known_RTTI_tables_slot74_one_target_owners": [
+    "CPlayerPed"
+  ],
+  "limits": "Type query is strong runtime CPlayerPed receiver evidence in known RTTI inventory; defining source class and unseen tables are not proved."
+}

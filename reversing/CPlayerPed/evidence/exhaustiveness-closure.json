@@ -1,0 +1,229 @@
+{
+  "schema": 1,
+  "date": "2026-10-10",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "inventory_exhaustive": false,
+  "full_class_reconstructed": false,
+  "initial_candidates": [
+    {
+      "va": "0x9be5d0",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedNonvirtual.h",
+      "source_sha256": "ebb2834b8a7b9af30515c027586b369fe37c42c5cc13f872542824a9337b8079",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9be610",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedCounter.h",
+      "source_sha256": "8ae5fddb57d6171d6b30178e879feccd53870184293c7755b78566b4adbfef8c",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9be7d0",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedInputSelection.h",
+      "source_sha256": "05f32ef6b09ed86af00b8141f6ece3e48f8ae4a599d3ef0a92564a94707d49ab",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9bee70",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedNonvirtual.h",
+      "source_sha256": "ebb2834b8a7b9af30515c027586b369fe37c42c5cc13f872542824a9337b8079",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9beed0",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedReferenceClear.h",
+      "source_sha256": "30ae34a8c195267335b88bda32198c6651a1d20af13514d1a2a23802ad98900d",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9bf5d0",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedExtraFields.h",
+      "source_sha256": "1fdcade217752d1af803eff5e852c5e1772b4ede54efc3798fdb47492585a02a",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9bf5f0",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedAccumulation.h",
+      "source_sha256": "058d1598989c017806387a9ebe0768a968c2da25ef517ae31eb75f5305c19182",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9bf640",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedExtraFields.h",
+      "source_sha256": "1fdcade217752d1af803eff5e852c5e1772b4ede54efc3798fdb47492585a02a",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9bf660",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedModelReset.h",
+      "source_sha256": "163526e1eac02c5d76363115e7f994ed841137c15695b8711587192d2ea3c880",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9bfd80",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedValueAdjustment.h",
+      "source_sha256": "84036a3bba98e3be804478614d56f5a17b4bccf3d00607c513ca96603954a978",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9c1910",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedConstruction.h",
+      "source_sha256": "4e909879619d4cfcf104467388154e59a6054daed746e75b37e6c7e38f5bae49",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9c1e60",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedDestruction.h",
+      "source_sha256": "7de976f75a22ae627b8d108924ff53ee420b7fb8e8a0a598da6c51dcc3abe0b9",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9c1f90",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedActionRange.h",
+      "source_sha256": "2ced4f992159205d8b16a399d73c365cce71bf669ce1a8a61324a8b30a7cd858",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9c2180",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedActionRequest.h",
+      "source_sha256": "f91f89120f243da59d8053285a94d7938a6d55d42c078af17f6d707e1e34b243",
+      "full_dependency_graph_reconstructed": false
+    },
+    {
+      "va": "0x9c2680",
+      "original_cpp_defining_class_recovered": false,
+      "status": "excluded_from_child_attribution",
+      "reason": "Called from slots inherited unchanged from CPed; player dynamic receiver alone does not identify defining class."
+    },
+    {
+      "va": "0x9c2960",
+      "original_cpp_defining_class_recovered": false,
+      "status": "excluded_from_child_attribution",
+      "reason": "Called from slots inherited unchanged from CPed; player dynamic receiver alone does not identify defining class."
+    },
+    {
+      "va": "0x9c3090",
+      "original_cpp_defining_class_recovered": false,
+      "status": "excluded_from_child_attribution",
+      "reason": "Called from slots inherited unchanged from CPed; player dynamic receiver alone does not identify defining class."
+    },
+    {
+      "va": "0x9be4c0",
+      "original_cpp_defining_class_recovered": false,
+      "status": "body_source_exists_with_explicit_dependencies_or_globals",
+      "source": "source/game/Peds/PlayerPedNonvirtual.h",
+      "source_sha256": "ebb2834b8a7b9af30515c027586b369fe37c42c5cc13f872542824a9337b8079",
+      "full_dependency_graph_reconstructed": false
+    }
+  ],
+  "additional_pending_candidates": [
+    {
+      "va": "0x9be790",
+      "status": "body_not_reconstructed_receiver_adjudication_pending",
+      "evidence": "PlayerInfo58C receiver and stack local confirmed:933090 RET4 onboth exits; detailed proofneighbor-receiver-adjudication.json. Body not reconstructed in this snapshot.",
+      "canonical_windows": "neighbor-caller-windows.json"
+    },
+    {
+      "va": "0x9be5f0",
+      "status": "body_not_reconstructed_receiver_adjudication_pending",
+      "evidence": "Confirmed bounded script caller resolves817F20 then passes PlayerInfo+58C (SDK player pointer) as ECX; original defining C++ class unknown.",
+      "canonical_windows": "neighbor-caller-windows.json"
+    },
+    {
+      "va": "0x9bee90",
+      "status": "body_not_reconstructed_receiver_adjudication_pending",
+      "evidence": "Bounded9C0660 pushes4stackargs thenADDESP16; treat helper without class-member attribution.",
+      "canonical_windows": "neighbor-caller-windows.json"
+    },
+    {
+      "va": "0x9beef0",
+      "status": "body_not_reconstructed_receiver_adjudication_pending",
+      "evidence": "Confirmed bounded script caller resolves817F20 then passes PlayerInfo+58C (SDK player pointer) as ECX; original defining C++ class unknown.",
+      "canonical_windows": "neighbor-caller-windows.json"
+    },
+    {
+      "va": "0x9bef20",
+      "status": "body_not_reconstructed_receiver_adjudication_pending",
+      "evidence": "Confirmed bounded caller45D440 guards receiver flag219 before CALL45D4A7; player receiver confirmed, defining C++ class unknown.",
+      "canonical_windows": "neighbor-caller-windows.json"
+    },
+    {
+      "va": "0x9bef70",
+      "status": "body_not_reconstructed_receiver_adjudication_pending",
+      "evidence": "BoundedC00580 CALL817F40 canonical current player getter\u2192MOVECXEAX\u2192tailJMP; player receiver confirmed. Body not reconstructed in this snapshot.",
+      "canonical_windows": "neighbor-caller-windows.json"
+    },
+    {
+      "va": "0x9bf250",
+      "status": "body_not_reconstructed_receiver_adjudication_pending",
+      "evidence": "Virtual call on receiver and seven-element loop; ownership unproven.",
+      "canonical_windows": "neighbor-caller-windows.json"
+    },
+    {
+      "va": "0x9bf360",
+      "status": "body_not_reconstructed_receiver_adjudication_pending",
+      "evidence": "Pseudocode only accesses explicit parameter, candidate free/static helper, no this ownership proof.",
+      "canonical_windows": "neighbor-caller-windows.json"
+    },
+    {
+      "va": "0x9c0a70",
+      "status": "body_not_reconstructed_receiver_adjudication_pending",
+      "evidence": "Pool global13D9A38 and explicit parameter; candidate pool/reference helper, no player ownership proof.",
+      "canonical_windows": "neighbor-caller-windows.json"
+    }
+  ],
+  "limitations": [
+    "64 virtual slots shared with CPed are inherited behavior, not separately reconstructed child bodies.",
+    "82 virtual slots / 77 unique targets are an exact vtable enumeration, not complete nonvirtual enumeration.",
+    "Nonvirtual methods outside examined range cannot be ruled out; complete ECX receiver dataflow across whole PE not performed.",
+    "CALL/JMP byte scan windows can start at unaligned byte; boundary/type evidence required before class adjudication.",
+    "Explicit callback source and isolated full-body equivalence do not reconstruct external dependencies nor prove native ABI integrations.",
+    "Pool stride F00 is established storage capacity; original complete field types, base boundaries and C++ class declaration remain unrecovered.",
+    "Historical reconstructed:false fields in nonvirtual-candidates.json are not current source absence; this snapshot records concrete source presence without claiming whole class completion."
+  ],
+  "additional_existing_bodies": [
+    {
+      "va": "0x9bf070",
+      "source": "source/game/Peds/PlayerPedStateHelpers.h",
+      "ownership_pending_independent_callers": true
+    },
+    {
+      "va": "0x9bf2d0",
+      "source": "source/game/Peds/PlayerPedStateHelpers.h",
+      "ownership_pending_independent_callers": true
+    },
+    {
+      "va": "0x9bf310",
+      "source": "source/game/Peds/PlayerPedStateHelpers.h",
+      "ownership_pending_independent_callers": true
+    }
+  ]
+}

@@ -1,0 +1,764 @@
+{
+  "schema": 1,
+  "scope": "17originalcode-range/callee candidates plus confirmedconstructor dependency9BE4C0 (18total); receiver evidence distinguished from sourceclass ownership",
+  "class_inventory_complete": false,
+  "items": [
+    {
+      "va": "0x9be5d0",
+      "name": "FUN_009be5d0",
+      "body_bytes_candidate": "26",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [],
+      "called_from_CPlayerPed_slots": [
+        29
+      ],
+      "direct_call_targets": [],
+      "reconstructed": false,
+      "player_receiver_confirmed": true,
+      "receiver_evidence": "nonvirtual-player-receiver-proof.json: MOV ECX,ESI before call from CPlayerPed virtualslot29",
+      "original_CPP_defining_class_recovered": false,
+      "reconstruction_source": "source/game/Peds/PlayerPedNonvirtual.h",
+      "receiver_scope": "Known CPlayerPed method passes preserved object ECX; original defining C++class declaration not recovered.",
+      "body_reconstructed_with_dependency_contracts": true,
+      "body_validation": "nonvirtual-validation-summary.json"
+    },
+    {
+      "va": "0x9be610",
+      "name": "FUN_009be610",
+      "body_bytes_candidate": "338",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": true,
+      "observed_extension_offset_operands": [
+        {
+          "instruction_va": "0x9be6d3",
+          "instruction": "sub dword ptr [esi + 0xeb0], eax",
+          "offset": "0xeb0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9be6db",
+          "instruction": "mov dword ptr [esi + 0xeb0], 0",
+          "offset": "0xeb0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9be6f3",
+          "instruction": "add dword ptr [esi + 0xeb0], eax",
+          "offset": "0xeb0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9be6f9",
+          "instruction": "mov eax, dword ptr [esi + 0xeb0]",
+          "offset": "0xeb0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9be706",
+          "instruction": "mov dword ptr [esi + 0xeb0], 0x2710",
+          "offset": "0xeb0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9be734",
+          "instruction": "mov eax, dword ptr [esi + 0xeb0]",
+          "offset": "0xeb0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9be73b",
+          "instruction": "mov dword ptr [esi + 0xeb4], eax",
+          "offset": "0xeb4",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9be746",
+          "instruction": "mov ecx, dword ptr [esi + 0xeb0]",
+          "offset": "0xeb0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9be74c",
+          "instruction": "mov dword ptr [esi + 0xeb4], ecx",
+          "offset": "0xeb4",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9be752",
+          "instruction": "mov dword ptr [esi + 0xeb0], 0",
+          "offset": "0xeb0",
+          "base_register": "esi",
+          "width": 4
+        }
+      ],
+      "called_from_CPlayerPed_slots": [
+        73
+      ],
+      "direct_call_targets": [
+        "0x426910",
+        "0x448330",
+        "0x9be5d0",
+        "0x9c2720"
+      ],
+      "reconstructed": false,
+      "relation_evidence": "Slot73 tailcall with player receiver andextension counters",
+      "player_receiver_confirmed": true,
+      "receiver_scope": "Known CPlayerPed method passes preserved object ECX; original defining C++class declaration not recovered."
+    },
+    {
+      "va": "0x9be7d0",
+      "name": "FUN_009be7d0",
+      "body_bytes_candidate": "1652",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [],
+      "called_from_CPlayerPed_slots": [
+        29
+      ],
+      "direct_call_targets": [
+        "0x4255a0",
+        "0x426780",
+        "0x426910",
+        "0x462f90",
+        "0x785eb0",
+        "0x89e300",
+        "0x8ff470",
+        "0x924e80",
+        "0x9252d0",
+        "0x987730",
+        "0x99c5e0",
+        "0x9a9cf0",
+        "0x9aa330",
+        "0x9ac110",
+        "0x9adb90",
+        "0x9b3b00",
+        "0x9be4a0",
+        "0x9be5d0",
+        "0x9c5d60"
+      ],
+      "reconstructed": false,
+      "player_receiver_confirmed": true,
+      "receiver_scope": "Known CPlayerPed method passes preserved object ECX; original defining C++class declaration not recovered."
+    },
+    {
+      "va": "0x9bee70",
+      "name": "FUN_009bee70",
+      "body_bytes_candidate": "32",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [],
+      "called_from_CPlayerPed_slots": [
+        29
+      ],
+      "direct_call_targets": [
+        "0x9a9ef0"
+      ],
+      "reconstructed": false,
+      "player_receiver_confirmed": true,
+      "receiver_evidence": "nonvirtual-player-receiver-proof.json: MOV ECX,ESI before call from CPlayerPed virtualslot29",
+      "original_CPP_defining_class_recovered": false,
+      "reconstruction_source": "source/game/Peds/PlayerPedNonvirtual.h",
+      "receiver_scope": "Known CPlayerPed method passes preserved object ECX; original defining C++class declaration not recovered.",
+      "body_reconstructed_with_dependency_contracts": true,
+      "body_validation": "nonvirtual-validation-summary.json"
+    },
+    {
+      "va": "0x9beed0",
+      "name": "FUN_009beed0",
+      "body_bytes_candidate": "27",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [
+        {
+          "instruction_va": "0x9beed1",
+          "instruction": "lea esi, [ecx + 0xe74]",
+          "offset": "0xe74",
+          "base_register": "ecx",
+          "width": 4
+        }
+      ],
+      "called_from_CPlayerPed_slots": [
+        29
+      ],
+      "direct_call_targets": [
+        "0x9e6580"
+      ],
+      "reconstructed": false,
+      "player_receiver_confirmed": true,
+      "receiver_scope": "Known CPlayerPed method passes preserved object ECX; original defining C++class declaration not recovered."
+    },
+    {
+      "va": "0x9bf5d0",
+      "name": "FUN_009bf5d0",
+      "body_bytes_candidate": "23",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [
+        {
+          "instruction_va": "0x9bf5d0",
+          "instruction": "movss xmm0, dword ptr [ecx + 0xee4]",
+          "offset": "0xee4",
+          "base_register": "ecx",
+          "width": 4
+        }
+      ],
+      "called_from_CPlayerPed_slots": [],
+      "direct_call_targets": [],
+      "reconstructed": false,
+      "player_flag219_receiver_guard_confirmed": true,
+      "receiver_evidence": "nonvirtual-player-flag-caller-proof.json",
+      "body_reconstructed": false,
+      "body_reconstructed_with_explicit_globals": true,
+      "reconstruction_source": "source/game/Peds/PlayerPedExtraFields.h",
+      "body_validation": "extra-fields-validation-summary.json"
+    },
+    {
+      "va": "0x9bf5f0",
+      "name": "FUN_009bf5f0",
+      "body_bytes_candidate": "69",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [
+        {
+          "instruction_va": "0x9bf600",
+          "instruction": "addss xmm0, dword ptr [ecx + 0xee0]",
+          "offset": "0xee0",
+          "base_register": "ecx",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9bf60f",
+          "instruction": "movss dword ptr [ecx + 0xee0], xmm0",
+          "offset": "0xee0",
+          "base_register": "ecx",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9bf621",
+          "instruction": "movss dword ptr [ecx + 0xee4], xmm0",
+          "offset": "0xee4",
+          "base_register": "ecx",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9bf62c",
+          "instruction": "movss dword ptr [ecx + 0xee0], xmm0",
+          "offset": "0xee0",
+          "base_register": "ecx",
+          "width": 4
+        }
+      ],
+      "called_from_CPlayerPed_slots": [],
+      "direct_call_targets": [],
+      "reconstructed": false,
+      "receiver_dynamic_type_strong_candidate": true,
+      "receiver_evidence": "nonvirtual-type-query-guard.json",
+      "body_reconstructed_with_explicit_globals": true,
+      "reconstruction_source": "source/game/Peds/PlayerPedAccumulation.h",
+      "body_validation": "accumulation-validation-summary.json",
+      "type_query_guard_confirmed": true
+    },
+    {
+      "va": "0x9bf640",
+      "name": "FUN_009bf640",
+      "body_bytes_candidate": "29",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [
+        {
+          "instruction_va": "0x9bf643",
+          "instruction": "comiss xmm0, dword ptr [ecx + 0xeec]",
+          "offset": "0xeec",
+          "base_register": "ecx",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9bf654",
+          "instruction": "movss dword ptr [ecx + 0xeec], xmm0",
+          "offset": "0xeec",
+          "base_register": "ecx",
+          "width": 4
+        }
+      ],
+      "called_from_CPlayerPed_slots": [],
+      "direct_call_targets": [],
+      "reconstructed": false,
+      "player_flag219_receiver_guard_confirmed": true,
+      "receiver_evidence": "nonvirtual-player-flag-caller-proof.json",
+      "body_reconstructed": false,
+      "body_reconstructed_with_explicit_globals": true,
+      "reconstruction_source": "source/game/Peds/PlayerPedExtraFields.h",
+      "body_validation": "extra-fields-validation-summary.json"
+    },
+    {
+      "va": "0x9bf660",
+      "name": "FUN_009bf660",
+      "body_bytes_candidate": "163",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [],
+      "called_from_CPlayerPed_slots": [
+        14
+      ],
+      "direct_call_targets": [
+        "0x8793f0",
+        "0x89c8b0",
+        "0x8a07e0",
+        "0x8a70c0",
+        "0x8a92c0",
+        "0x9bf0d0"
+      ],
+      "reconstructed": false
+    },
+    {
+      "va": "0x9bfd80",
+      "name": "FUN_009bfd80",
+      "body_bytes_candidate": "332",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [],
+      "called_from_CPlayerPed_slots": [
+        29
+      ],
+      "direct_call_targets": [
+        "0x4389d0",
+        "0x462f90",
+        "0x962b20"
+      ],
+      "reconstructed": false,
+      "player_receiver_confirmed": true,
+      "receiver_scope": "Known CPlayerPed method passes preserved object ECX; original defining C++class declaration not recovered."
+    },
+    {
+      "va": "0x9c1910",
+      "name": "FUN_009c1910",
+      "body_bytes_candidate": "884",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": true,
+      "observed_extension_offset_operands": [
+        {
+          "instruction_va": "0x9c192a",
+          "instruction": "lea ecx, [esi + 0xe80]",
+          "offset": "0xe80",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c193b",
+          "instruction": "lea ebp, [esi + 0xeac]",
+          "offset": "0xeac",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c194e",
+          "instruction": "mov dword ptr [esi + 0xebc], edx",
+          "offset": "0xebc",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c195c",
+          "instruction": "movss dword ptr [esi + 0xec0], xmm0",
+          "offset": "0xec0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c196c",
+          "instruction": "movss dword ptr [esi + 0xec4], xmm0",
+          "offset": "0xec4",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c197c",
+          "instruction": "movss dword ptr [esi + 0xec8], xmm0",
+          "offset": "0xec8",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c198c",
+          "instruction": "movss dword ptr [esi + 0xed0], xmm0",
+          "offset": "0xed0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c199c",
+          "instruction": "movss dword ptr [esi + 0xed4], xmm0",
+          "offset": "0xed4",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c19b6",
+          "instruction": "movss dword ptr [esi + 0xed8], xmm0",
+          "offset": "0xed8",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1b34",
+          "instruction": "mov dword ptr [esi + 0xe74], ebx",
+          "offset": "0xe74",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1b3a",
+          "instruction": "mov dword ptr [esi + 0xe78], ebx",
+          "offset": "0xe78",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1b40",
+          "instruction": "mov byte ptr [esi + 0xe70], bl",
+          "offset": "0xe70",
+          "base_register": "esi",
+          "width": 1
+        },
+        {
+          "instruction_va": "0x9c1b63",
+          "instruction": "mov byte ptr [esi + 0xe71], bl",
+          "offset": "0xe71",
+          "base_register": "esi",
+          "width": 1
+        },
+        {
+          "instruction_va": "0x9c1bce",
+          "instruction": "mov dword ptr [esi + 0xe7c], esi",
+          "offset": "0xe7c",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1bf4",
+          "instruction": "mov dword ptr [esi + 0xea8], eax",
+          "offset": "0xea8",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1bfe",
+          "instruction": "mov byte ptr [esi + 0xea6], bl",
+          "offset": "0xea6",
+          "base_register": "esi",
+          "width": 1
+        },
+        {
+          "instruction_va": "0x9c1c04",
+          "instruction": "mov byte ptr [esi + 0xea4], bl",
+          "offset": "0xea4",
+          "base_register": "esi",
+          "width": 1
+        },
+        {
+          "instruction_va": "0x9c1c0a",
+          "instruction": "mov byte ptr [esi + 0xea5], bl",
+          "offset": "0xea5",
+          "base_register": "esi",
+          "width": 1
+        },
+        {
+          "instruction_va": "0x9c1c10",
+          "instruction": "mov byte ptr [esi + 0xea7], bl",
+          "offset": "0xea7",
+          "base_register": "esi",
+          "width": 1
+        },
+        {
+          "instruction_va": "0x9c1c16",
+          "instruction": "mov dword ptr [esi + 0xeb0], ebx",
+          "offset": "0xeb0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1c1c",
+          "instruction": "mov dword ptr [esi + 0xeb4], ebx",
+          "offset": "0xeb4",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1c22",
+          "instruction": "mov dword ptr [esi + 0xeb8], ebx",
+          "offset": "0xeb8",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1c28",
+          "instruction": "movss dword ptr [esi + 0xee0], xmm0",
+          "offset": "0xee0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1c30",
+          "instruction": "movss dword ptr [esi + 0xee4], xmm0",
+          "offset": "0xee4",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1c40",
+          "instruction": "movss dword ptr [esi + 0xee8], xmm0",
+          "offset": "0xee8",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1c50",
+          "instruction": "movss dword ptr [esi + 0xeec], xmm0",
+          "offset": "0xeec",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1c58",
+          "instruction": "mov dword ptr [esi + 0xef0], 0xffffffff",
+          "offset": "0xef0",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1c62",
+          "instruction": "mov dword ptr [esi + 0xef4], ebx",
+          "offset": "0xef4",
+          "base_register": "esi",
+          "width": 4
+        }
+      ],
+      "called_from_CPlayerPed_slots": [],
+      "direct_call_targets": [
+        "0x4011d0",
+        "0x4475c0",
+        "0x447610",
+        "0x797d70",
+        "0x817f20",
+        "0x8631e0",
+        "0x878a00",
+        "0x89e5a0",
+        "0x8abf10",
+        "0x8da9a0",
+        "0x920cd0",
+        "0x921050",
+        "0x9720e0",
+        "0x9be4c0",
+        "0xb29e50",
+        "0xb2a8f0",
+        "0xc68b50",
+        "0xd0d21a"
+      ],
+      "reconstructed": false,
+      "relation_evidence": "Ctor vtable store and factorytailcall",
+      "player_receiver_confirmed": true,
+      "receiver_scope": "Known CPlayerPed method passes preserved object ECX; original defining C++class declaration not recovered."
+    },
+    {
+      "va": "0x9c1e60",
+      "name": "FUN_009c1e60",
+      "body_bytes_candidate": "299",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": true,
+      "observed_extension_offset_operands": [
+        {
+          "instruction_va": "0x9c1e63",
+          "instruction": "mov ecx, dword ptr [esi + 0xea8]",
+          "offset": "0xea8",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1e79",
+          "instruction": "mov edi, dword ptr [esi + 0xea8]",
+          "offset": "0xea8",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1e93",
+          "instruction": "mov dword ptr [esi + 0xea8], 0",
+          "offset": "0xea8",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c1f78",
+          "instruction": "lea ecx, [esi + 0xeac]",
+          "offset": "0xeac",
+          "base_register": "esi",
+          "width": 4
+        }
+      ],
+      "called_from_CPlayerPed_slots": [
+        0
+      ],
+      "direct_call_targets": [
+        "0x4475f0",
+        "0x5b1c10",
+        "0x8631e0",
+        "0x8dd270",
+        "0x8dd8b0",
+        "0x920cd0",
+        "0x92f4d0",
+        "0x9c0a70"
+      ],
+      "reconstructed": false,
+      "relation_evidence": "Dtor vtable store and slot0 call",
+      "player_receiver_confirmed": true,
+      "receiver_scope": "Known CPlayerPed method passes preserved object ECX; original defining C++class declaration not recovered."
+    },
+    {
+      "va": "0x9c1f90",
+      "name": "FUN_009c1f90",
+      "body_bytes_candidate": "483",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [
+        {
+          "instruction_va": "0x9c2017",
+          "instruction": "mov ecx, dword ptr [esi + 0xe7c]",
+          "offset": "0xe7c",
+          "base_register": "esi",
+          "width": 4
+        },
+        {
+          "instruction_va": "0x9c211b",
+          "instruction": "lea ecx, [esi + 0xe7c]",
+          "offset": "0xe7c",
+          "base_register": "esi",
+          "width": 4
+        }
+      ],
+      "called_from_CPlayerPed_slots": [],
+      "direct_call_targets": [
+        "0x462f90",
+        "0x924e80",
+        "0x9a9ef0",
+        "0x9c1300",
+        "0xc28820"
+      ],
+      "reconstructed": false
+    },
+    {
+      "va": "0x9c2180",
+      "name": "FUN_009c2180",
+      "body_bytes_candidate": "218",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [
+        {
+          "instruction_va": "0x9c220e",
+          "instruction": "lea ecx, [esi + 0xe7c]",
+          "offset": "0xe7c",
+          "base_register": "esi",
+          "width": 4
+        }
+      ],
+      "called_from_CPlayerPed_slots": [],
+      "direct_call_targets": [
+        "0x462f90",
+        "0x924e80",
+        "0x9a9cf0",
+        "0x9a9ef0",
+        "0x9c1300"
+      ],
+      "reconstructed": false
+    },
+    {
+      "va": "0x9c2680",
+      "name": "FUN_009c2680",
+      "body_bytes_candidate": "59",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [],
+      "called_from_CPlayerPed_slots": [
+        33
+      ],
+      "direct_call_targets": [],
+      "reconstructed": false,
+      "caller_scope": "Inherited CPed slot; ownership to CPlayerPed not proved."
+    },
+    {
+      "va": "0x9c2960",
+      "name": "FUN_009c2960",
+      "body_bytes_candidate": "114",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [],
+      "called_from_CPlayerPed_slots": [
+        65
+      ],
+      "direct_call_targets": [],
+      "reconstructed": false,
+      "caller_scope": "Inherited CPed slot; ownership to CPlayerPed not proved."
+    },
+    {
+      "va": "0x9c3090",
+      "name": "FUN_009c3090",
+      "body_bytes_candidate": "48",
+      "function_boundary_source": "docs/MemoryMap/function_entries.csv, older Ghidra candidates",
+      "virtual_method": false,
+      "owning_class_confirmed": false,
+      "observed_extension_offset_operands": [],
+      "called_from_CPlayerPed_slots": [
+        33
+      ],
+      "direct_call_targets": [
+        "0x426910"
+      ],
+      "reconstructed": false,
+      "caller_scope": "Inherited CPed slot; ownership to CPlayerPed not proved."
+    },
+    {
+      "va": "0x9be4c0",
+      "virtual_method": false,
+      "player_receiver_confirmed": true,
+      "receiver_evidence": "Constructor9C1A6C MOVECX,ESI\u21929C1A6E CALL9BE4C0; rea-extra-nonvirtual.json",
+      "body_reconstructed_with_dependency_contracts": true,
+      "reconstruction_source": "source/game/Peds/PlayerPedNonvirtual.h",
+      "body_validation": "nonvirtual-validation-summary.json",
+      "original_CPP_defining_class_recovered": false
+    }
+  ],
+  "limitations": [
+    "Code-range proximity and ESI/ECX offset access are clues, not definitive method ownership.",
+    "Register origins may change across body; originalthis identity requires CFG and caller analysis.",
+    "Methods outside selected code range remain unenumerated.",
+    "OldGhidra boundary candidate must be checked against fresh REA when implementing."
+  ],
+  "original_defining_class_exhaustive": false,
+  "candidate_count": 18,
+  "inventory_exhaustive": false
+}

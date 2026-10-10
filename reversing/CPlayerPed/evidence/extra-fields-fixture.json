@@ -1,0 +1,28 @@
+{
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "routines": [
+    {
+      "va": "0x009BF5D0",
+      "end_exclusive": "0x009BF5E7",
+      "bytes": "f30f1081e40e00000f2f0560cdde00760332c0c3b001c3",
+      "globals_patched": {
+        "11": "0x00DECD60"
+      },
+      "return_mask": "0x000000FF"
+    },
+    {
+      "va": "0x009BF640",
+      "end_exclusive": "0x009BF65D",
+      "bytes": "0f57c00f2f81ec0e00007210f30f10055819d800f30f1181ec0e0000c3",
+      "globals_patched": {
+        "16": "0x00D81958"
+      }
+    }
+  ],
+  "global_initial_file_bits": {
+    "0x00DECD60": "00000000",
+    "0x00D81958": "00000040"
+  },
+  "receiver_evidence": "nonvirtual-player-flag-caller-proof.json",
+  "game_runtime_validated": false
+}
