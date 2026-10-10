@@ -1,0 +1,181 @@
+Canonical GTAIV.exe preferred VA 007b8d70
+Entry bytes: 53 33 db 56 8b f1 68 f0 48 d5 00 89 5e 48 89 5e 4c 89 5e 50 88 9e 3e 04 
+Body size: 457
+007b8d70 PUSH EBX
+007b8d71 XOR EBX,EBX
+007b8d73 PUSH ESI
+007b8d74 MOV ESI,ECX
+007b8d76 PUSH 0xd548f0
+007b8d7b MOV dword ptr [ESI + 0x48],EBX
+007b8d7e MOV dword ptr [ESI + 0x4c],EBX
+007b8d81 MOV dword ptr [ESI + 0x50],EBX
+007b8d84 MOV byte ptr [ESI + 0x43e],BL
+007b8d8a MOV dword ptr [ESI + 0x41c],EBX
+007b8d90 MOV byte ptr [ESI + 0x340],BL
+007b8d96 MOV dword ptr [ESI + 0x344],EBX
+007b8d9c MOV dword ptr [ESI + 0x348],0xffffffff
+007b8da6 MOV dword ptr [ESI + 0x34c],EBX
+007b8dac MOV byte ptr [ESI + 0x3f8],BL
+007b8db2 MOV byte ptr [ESI + 0x3f9],BL
+007b8db8 MOV byte ptr [ESI + 0x3fa],BL
+007b8dbe MOV byte ptr [ESI + 0x400],BL
+007b8dc4 CALL 0x00cdf870
+007b8dc9 XORPS XMM0,XMM0
+007b8dcc MOVSS XMM1,dword ptr [0x00d50398]
+007b8dd4 MOV dword ptr [ESI + 0x3fc],EAX
+007b8dda MOV dword ptr [ESI + 0x404],EBX
+007b8de0 MOV dword ptr [ESI + 0x408],EBX
+007b8de6 MOV dword ptr [ESI + 0x40c],EBX
+007b8dec MOV dword ptr [ESI + 0x410],EBX
+007b8df2 MOV EAX,[0x017192d0]
+007b8df7 MOV dword ptr [ESI + 0x414],EAX
+007b8dfd ADD ESP,0x4
+007b8e00 MOV dword ptr [ESI + 0x418],EBX
+007b8e06 MOV dword ptr [ESI + 0x7c],EBX
+007b8e09 LEA EAX,[ESI + 0xe8]
+007b8e0f LEA ECX,[EBX + 0xd]
+007b8e12 MOV dword ptr [EAX + -0x68],EBX
+007b8e15 MOVSS dword ptr [EAX],XMM0
+007b8e19 MOVSS dword ptr [EAX + 0x34],XMM1
+007b8e1e MOVSS dword ptr [EAX + 0x68],XMM0
+007b8e23 MOVSS dword ptr [EAX + 0x9c],XMM0
+007b8e2b MOV dword ptr [EAX + -0x34],EBX
+007b8e2e ADD EAX,0x4
+007b8e31 SUB ECX,0x1
+007b8e34 JNZ 0x007b8e12
+007b8e36 PUSH EBX
+007b8e37 PUSH 0xd548f4
+007b8e3c MOVSS dword ptr [ESI + 0x20c],XMM0
+007b8e44 MOVSS dword ptr [ESI + 0x210],XMM1
+007b8e4c MOV dword ptr [ESI + 0x200],EBX
+007b8e52 MOV dword ptr [ESI + 0x204],EBX
+007b8e58 MOV dword ptr [ESI + 0x214],EBX
+007b8e5e MOV dword ptr [ESI + 0x218],EBX
+007b8e64 MOV dword ptr [ESI + 0x21c],EBX
+007b8e6a MOV byte ptr [ESI + 0x402],BL
+007b8e70 CALL 0x005b1c30
+007b8e75 ADD ESP,0x8
+007b8e78 PUSH EAX
+007b8e79 MOV ECX,0x1716ca0
+007b8e7e CALL 0x00cdc1b0
+007b8e83 MOV [0x010f85a0],EAX
+007b8e88 PUSH EBX
+007b8e89 PUSH 0xd54914
+007b8e8e MOV dword ptr [ESI + 0x228],EBX
+007b8e94 MOV dword ptr [ESI + 0x234],EBX
+007b8e9a MOV byte ptr [ESI + 0x208],0x1
+007b8ea1 MOV byte ptr [ESI + 0x43d],BL
+007b8ea7 MOV byte ptr [ESI + 0x401],BL
+007b8ead MOV byte ptr [ESI + 0x43c],BL
+007b8eb3 MOV byte ptr [ESI + 0x43f],BL
+007b8eb9 MOV dword ptr [ESI + 0x438],EBX
+007b8ebf MOV dword ptr [ESI + 0x474],EBX
+007b8ec5 MOV dword ptr [ESI + 0x470],EBX
+007b8ecb MOV dword ptr [ESI + 0x468],EBX
+007b8ed1 MOV dword ptr [ESI + 0x478],EBX
+007b8ed7 MOV byte ptr [ESI + 0x480],BL
+007b8edd MOV dword ptr [ESI + 0x47c],EBX
+007b8ee3 CALL 0x005b1c30
+007b8ee8 ADD ESP,0x8
+007b8eeb PUSH EAX
+007b8eec MOV ECX,0x1716ca0
+007b8ef1 CALL 0x00cdc1b0
+007b8ef6 MOV ECX,ESI
+007b8ef8 MOV dword ptr [ESI + 0x484],EAX
+007b8efe MOV dword ptr [ESI + 0x46c],EBX
+007b8f04 CALL 0x00ce8420
+007b8f09 FLD float ptr [0x00ebe4ac]
+007b8f0f SUB ESP,0x8
+007b8f12 FST float ptr [ESP + 0x4]
+007b8f16 LEA ECX,[ESI + 0x44c]
+007b8f1c FSTP float ptr [ESP]
+007b8f1f MOV byte ptr [ESI + 0x440],BL
+007b8f25 MOV dword ptr [ESI + 0x444],EBX
+007b8f2b MOV dword ptr [ESI + 0x448],EBX
+007b8f31 CALL 0x00cecfc0
+007b8f36 POP ESI
+007b8f37 POP EBX
+007b8f38 RET
+
+void __fastcall FUN_007b8d70(int param_1)
+
+{
+  undefined4 uVar1;
+  undefined4 *puVar2;
+  uint uVar3;
+  undefined4 uVar4;
+  int iVar5;
+  
+  *(undefined4 *)(param_1 + 0x48) = 0;
+  *(undefined4 *)(param_1 + 0x4c) = 0;
+  *(undefined4 *)(param_1 + 0x50) = 0;
+  *(undefined1 *)(param_1 + 0x43e) = 0;
+  *(undefined4 *)(param_1 + 0x41c) = 0;
+  *(undefined1 *)(param_1 + 0x340) = 0;
+  *(undefined4 *)(param_1 + 0x344) = 0;
+  *(undefined4 *)(param_1 + 0x348) = 0xffffffff;
+  *(undefined4 *)(param_1 + 0x34c) = 0;
+  *(undefined1 *)(param_1 + 0x3f8) = 0;
+  *(undefined1 *)(param_1 + 0x3f9) = 0;
+  *(undefined1 *)(param_1 + 0x3fa) = 0;
+  *(undefined1 *)(param_1 + 0x400) = 0;
+  uVar1 = FUN_00cdf870(&DAT_00d548f0);
+  uVar4 = DAT_00d50398;
+  *(undefined4 *)(param_1 + 0x3fc) = uVar1;
+  *(undefined4 *)(param_1 + 0x404) = 0;
+  *(undefined4 *)(param_1 + 0x408) = 0;
+  *(undefined4 *)(param_1 + 0x40c) = 0;
+  *(undefined4 *)(param_1 + 0x410) = 0;
+  *(undefined4 *)(param_1 + 0x414) = DAT_017192d0;
+  *(undefined4 *)(param_1 + 0x418) = 0;
+  *(undefined4 *)(param_1 + 0x7c) = 0;
+  puVar2 = (undefined4 *)(param_1 + 0xe8);
+  iVar5 = 0xd;
+  do {
+    puVar2[-0x1a] = 0;
+    *puVar2 = 0;
+    puVar2[0xd] = uVar4;
+    puVar2[0x1a] = 0;
+    puVar2[0x27] = 0;
+    puVar2[-0xd] = 0;
+    puVar2 = puVar2 + 1;
+    iVar5 = iVar5 + -1;
+  } while (iVar5 != 0);
+  *(undefined4 *)(param_1 + 0x20c) = 0;
+  *(undefined4 *)(param_1 + 0x210) = uVar4;
+  *(undefined4 *)(param_1 + 0x200) = 0;
+  *(undefined4 *)(param_1 + 0x204) = 0;
+  *(undefined4 *)(param_1 + 0x214) = 0;
+  *(undefined4 *)(param_1 + 0x218) = 0;
+  *(undefined4 *)(param_1 + 0x21c) = 0;
+  *(undefined1 *)(param_1 + 0x402) = 0;
+  uVar3 = ReIV_atStringHash("FRONTEND_GAME_WEAPON_PICKUPS",0);
+  DAT_010f85a0 = FUN_00cdc1b0(uVar3);
+  *(undefined4 *)(param_1 + 0x228) = 0;
+  *(undefined4 *)(param_1 + 0x234) = 0;
+  *(undefined1 *)(param_1 + 0x208) = 1;
+  *(undefined1 *)(param_1 + 0x43d) = 0;
+  *(undefined1 *)(param_1 + 0x401) = 0;
+  *(undefined1 *)(param_1 + 0x43c) = 0;
+  *(undefined1 *)(param_1 + 0x43f) = 0;
+  *(undefined4 *)(param_1 + 0x438) = 0;
+  *(undefined4 *)(param_1 + 0x474) = 0;
+  *(undefined4 *)(param_1 + 0x470) = 0;
+  *(undefined4 *)(param_1 + 0x468) = 0;
+  *(undefined4 *)(param_1 + 0x478) = 0;
+  *(undefined1 *)(param_1 + 0x480) = 0;
+  *(undefined4 *)(param_1 + 0x47c) = 0;
+  uVar3 = ReIV_atStringHash("MONTAGE_MUSIC",0);
+  uVar4 = FUN_00cdc1b0(uVar3);
+  *(undefined4 *)(param_1 + 0x484) = uVar4;
+  *(undefined4 *)(param_1 + 0x46c) = 0;
+  FUN_00ce8420();
+  uVar4 = DAT_00ebe4ac;
+  *(undefined1 *)(param_1 + 0x440) = 0;
+  *(undefined4 *)(param_1 + 0x444) = 0;
+  *(undefined4 *)(param_1 + 0x448) = 0;
+  FUN_00cecfc0(uVar4,uVar4);
+  return;
+}
+
+

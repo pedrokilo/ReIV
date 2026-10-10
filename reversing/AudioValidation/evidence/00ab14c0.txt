@@ -1,0 +1,55 @@
+Canonical GTAIV.exe preferred VA 00ab14c0
+Entry bytes: 55 8b ec 83 e4 f0 83 ec 18 56 8b 75 08 0f b6 56 04 81 fa ff 00 00 00 57 
+Body size: 98
+00ab14c0 PUSH EBP
+00ab14c1 MOV EBP,ESP
+00ab14c3 AND ESP,0xfffffff0
+00ab14c6 SUB ESP,0x18
+00ab14c9 PUSH ESI
+00ab14ca MOV ESI,dword ptr [EBP + 0x8]
+00ab14cd MOVZX EDX,byte ptr [ESI + 0x4]
+00ab14d1 CMP EDX,0xff
+00ab14d7 PUSH EDI
+00ab14d8 JZ 0x00ab14fb
+00ab14da MOVZX EDI,byte ptr [ESI + 0x40]
+00ab14de MOV EAX,[0x01719040]
+00ab14e3 IMUL EDI,EDI,0x6f40
+00ab14e9 IMUL EAX,EDX
+00ab14ec MOV EDX,dword ptr [0x01719060]
+00ab14f2 ADD EAX,dword ptr [EDI + EDX*0x1 + 0x6f14]
+00ab14f9 JMP 0x00ab14fd
+00ab14fb XOR EAX,EAX
+00ab14fd MOV EAX,dword ptr [EAX + 0xcc]
+00ab1503 LEA EDX,[ESP + 0x10]
+00ab1507 PUSH EDX
+00ab1508 PUSH EAX
+00ab1509 CALL 0x00aadc90
+00ab150e LEA ECX,[ESP + 0x10]
+00ab1512 PUSH ECX
+00ab1513 MOV ECX,ESI
+00ab1515 CALL 0x007b9610
+00ab151a POP EDI
+00ab151b POP ESI
+00ab151c MOV ESP,EBP
+00ab151e POP EBP
+00ab151f RET 0x8
+
+void FUN_00ab14c0(int param_1)
+
+{
+  int iVar1;
+  undefined1 auStack_20 [28];
+  
+  if (*(byte *)(param_1 + 4) == 0xff) {
+    iVar1 = 0;
+  }
+  else {
+    iVar1 = DAT_01719040 * (uint)*(byte *)(param_1 + 4) +
+            *(int *)((uint)*(byte *)(param_1 + 0x40) * 0x6f40 + 0x6f14 + DAT_01719060);
+  }
+  FUN_00aadc90(*(undefined4 *)(iVar1 + 0xcc),auStack_20);
+  FUN_007b9610(auStack_20);
+  return;
+}
+
+

@@ -1,0 +1,14 @@
+Canonical GTAIV.exe preferred VA 00afc010
+Entry bytes: e8 db fa ff ff c2 04 00 cc cc cc cc cc cc cc cc 8b 44 24 08 56 8b f1 8a 
+Body size: 8
+00afc010 CALL 0x00afbaf0
+00afc015 RET 0x4
+
+void FUN_00afc010(void)
+
+{
+  FUN_00afbaf0();
+  return;
+}
+
+

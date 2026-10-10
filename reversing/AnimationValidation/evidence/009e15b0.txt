@@ -1,0 +1,24 @@
+Canonical GTAIV.exe preferred VA 009e15b0
+009e15b0 PUSH ESI
+009e15b1 MOV ESI,ECX
+009e15b3 CALL 0x009e14a0
+009e15b8 CMP byte ptr [0x015bff22],0x0
+009e15bf JNZ 0x009e15c8
+009e15c1 MOV ECX,ESI
+009e15c3 CALL 0x009dfed0
+009e15c8 MOV ECX,ESI
+009e15ca POP ESI
+009e15cb JMP 0x009e9ba0
+
+void FUN_009e15b0(void)
+
+{
+  FUN_009e14a0();
+  if (DAT_015bff22 == '\0') {
+    FUN_009dfed0();
+  }
+  FUN_009e9ba0();
+  return;
+}
+
+

@@ -1,0 +1,49 @@
+Canonical GTAIV.exe preferred VA 0050f4d0
+0050f4d0 MOV EAX,dword ptr [ECX]
+0050f4d2 MOV EDX,dword ptr [EAX + 0x10]
+0050f4d5 CALL EDX
+0050f4d7 TEST EAX,EAX
+0050f4d9 JZ 0x0050f501
+0050f4db PUSH ESI
+0050f4dc MOV ESI,dword ptr [EAX + 0x8]
+0050f4df TEST ESI,ESI
+0050f4e1 JZ 0x0050f500
+0050f4e3 ADD word ptr [ESI + 0x4],0x1
+0050f4e8 MOV EAX,ESI
+0050f4ea CALL 0x00510cc0
+0050f4ef MOV EAX,dword ptr [ESI]
+0050f4f1 MOV EDX,dword ptr [EAX + 0x4]
+0050f4f4 MOV ECX,ESI
+0050f4f6 CALL EDX
+0050f4f8 MOV EAX,ESI
+0050f4fa POP ESI
+0050f4fb JMP 0x0050cb00
+0050f500 POP ESI
+0050f501 RET
+
+uint __fastcall FUN_0050f4d0(int *param_1)
+
+{
+  int *piVar1;
+  uint uVar2;
+  undefined4 unaff_ESI;
+  
+  uVar2 = (**(code **)(*param_1 + 0x10))();
+  if ((uVar2 != 0) && (piVar1 = *(int **)(uVar2 + 8), piVar1 != (int *)0x0)) {
+    *(short *)(piVar1 + 1) = (short)piVar1[1] + 1;
+    FUN_00510cc0();
+    (**(code **)(*piVar1 + 4))();
+    *(short *)(piVar1 + 1) = (short)piVar1[1] + -1;
+    if ((short)piVar1[1] == 0) {
+      if (piVar1[6] != 0) {
+        FUN_0050c890(piVar1[6]);
+        return (uint)*(ushort *)(piVar1 + 1);
+      }
+      (**(code **)*piVar1)(1,unaff_ESI);
+    }
+    return (uint)*(ushort *)(piVar1 + 1);
+  }
+  return uVar2;
+}
+
+

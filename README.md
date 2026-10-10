@@ -11,6 +11,10 @@ Recrear **GTA IV PC 1.0.7.0** de forma funcionalmente equivalente mediante códi
 > [!NOTE]
 > Primera función reconstruida, hookeada y validada: [rage::atStringHash](reversing/AtStringHash/README.md). `ReIV.asi` usa IV-SDK y la copia de pruebas arranca directamente con `GTAIV.exe`, en ventana. Todavía no existe un ejecutable independiente. [Compilación y configuración de pruebas](reversing/Bootstrap.md).
 
+[REA y Ghidra para este ejecutable x86](docs/ReaGhidra.md): instalación local, adaptaciones, evidencia y recuperación.
+
+[FLOSS: instalación local y análisis de cadenas](docs/FLOSS.md). Disponible para Codex y Claude en `C:\Users\pedro\Tools\FLOSS\floss.exe`; todavía no hay resultados de FLOSS registrados para ReIV.
+
 ## Intro
 
 ### Cómo funciona

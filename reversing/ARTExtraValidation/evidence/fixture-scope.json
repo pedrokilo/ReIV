@@ -1,0 +1,295 @@
+[
+  {
+    "va": "0x004ee420",
+    "rva": "0x000ee420",
+    "operation": "return_minus_one",
+    "value": 0,
+    "argument": 0,
+    "entry_bytes": "83 c8 ff c3",
+    "body_size": 4,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::ARTFeedbackInterface"
+    ],
+    "reference_count": 6,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x00784520",
+    "rva": "0x00384520",
+    "operation": "return_one_pop4",
+    "value": 0,
+    "argument": 0,
+    "entry_bytes": "b0 01 c2 04 00",
+    "body_size": 5,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::phInstNM"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005fdd00",
+    "rva": "0x001fdd00",
+    "operation": "echo_u8_pop4",
+    "value": 0,
+    "argument": 0,
+    "entry_bytes": "8a 44 24 04 c2 04 00",
+    "body_size": 7,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::phInstNM"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005e39e0",
+    "rva": "0x001e39e0",
+    "operation": "zero_u32",
+    "value": 228,
+    "argument": 0,
+    "entry_bytes": "c7 81 e4 00 00 00 00 00 00 00 c3",
+    "body_size": 11,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector",
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 2,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005e6340",
+    "rva": "0x001e6340",
+    "operation": "and_u8",
+    "value": 232,
+    "argument": 231,
+    "entry_bytes": "80 a1 e8 00 00 00 e7 c3",
+    "body_size": 8,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsEffectorBase"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005efc70",
+    "rva": "0x001efc70",
+    "operation": "zero_pair",
+    "value": 12,
+    "argument": 0,
+    "entry_bytes": "33 c0 89 41 0c 89 41 10 c3",
+    "body_size": 9,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::CBUTaskBase",
+      "ART::Rockstar::NmRsCBUArmsWindmillAdaptive",
+      "ART::Rockstar::NmRsCBUBodyBalance",
+      "ART::Rockstar::NmRsCBUBodyFoetal",
+      "ART::Rockstar::NmRsCBUBodyWrithe",
+      "ART::Rockstar::NmRsCBUBraceForImpact",
+      "ART::Rockstar::NmRsCBUCatchFall",
+      "ART::Rockstar::NmRsCBUDynamicBalancer",
+      "ART::Rockstar::NmRsCBUFallOverWall",
+      "ART::Rockstar::NmRsCBUFlinch",
+      "ART::Rockstar::NmRsCBUGrab",
+      "ART::Rockstar::NmRsCBUHeadLook",
+      "ART::Rockstar::NmRsCBUHighFall",
+      "ART::Rockstar::NmRsCBUPedal",
+      "ART::Rockstar::NmRsCBUPointArm",
+      "ART::Rockstar::NmRsCBURollDownStairs",
+      "ART::Rockstar::NmRsCBURollUp",
+      "ART::Rockstar::NmRsCBUShot",
+      "ART::Rockstar::NmRsCBUSpineTwist"
+    ],
+    "reference_count": 19,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x00686be0",
+    "rva": "0x00286be0",
+    "operation": "zero_output3",
+    "value": 0,
+    "argument": 0,
+    "entry_bytes": "8b 44 24 04 0f 57 c0 f3 0f 11 40 08 f3 0f 11 40 04 f3 0f 11 00 c2 04 00",
+    "body_size": 24,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::phInstNM"
+    ],
+    "reference_count": 2,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005e35a0",
+    "rva": "0x001e35a0",
+    "operation": "bit_u8",
+    "value": 232,
+    "argument": 1,
+    "entry_bytes": "8a 81 e8 00 00 00 d0 e8 24 01 c3",
+    "body_size": 11,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector",
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 2,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005f1e70",
+    "rva": "0x001f1e70",
+    "operation": "bit_u8",
+    "value": 636,
+    "argument": 0,
+    "entry_bytes": "8a 81 7c 02 00 00 24 01 c3",
+    "body_size": 9,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUShot"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005f3ce0",
+    "rva": "0x001f3ce0",
+    "operation": "bit_u8",
+    "value": 324,
+    "argument": 0,
+    "entry_bytes": "8a 81 44 01 00 00 24 01 c3",
+    "body_size": 9,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUBodyBalance",
+      "ART::Rockstar::NmRsCBUBraceForImpact"
+    ],
+    "reference_count": 2,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005f76a0",
+    "rva": "0x001f76a0",
+    "operation": "bit_u8",
+    "value": 3068,
+    "argument": 0,
+    "entry_bytes": "8a 81 fc 0b 00 00 24 01 c3",
+    "body_size": 9,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUDynamicBalancer"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x00600200",
+    "rva": "0x00200200",
+    "operation": "bit_u8",
+    "value": 168,
+    "argument": 0,
+    "entry_bytes": "8a 81 a8 00 00 00 24 01 c3",
+    "body_size": 9,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUFlinch"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x00602440",
+    "rva": "0x00202440",
+    "operation": "bit_u8",
+    "value": 152,
+    "argument": 0,
+    "entry_bytes": "8a 81 98 00 00 00 24 01 c3",
+    "body_size": 9,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUHeadLook"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x00605870",
+    "rva": "0x00205870",
+    "operation": "bit_u8",
+    "value": 180,
+    "argument": 0,
+    "entry_bytes": "8a 81 b4 00 00 00 24 01 c3",
+    "body_size": 9,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUSpineTwist"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x00605fe0",
+    "rva": "0x00205fe0",
+    "operation": "bit_u8",
+    "value": 144,
+    "argument": 0,
+    "entry_bytes": "8a 81 90 00 00 00 24 01 c3",
+    "body_size": 9,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUArmsWindmillAdaptive"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x00608760",
+    "rva": "0x00208760",
+    "operation": "bit_u8",
+    "value": 140,
+    "argument": 0,
+    "entry_bytes": "8a 81 8c 00 00 00 24 01 c3",
+    "body_size": 9,
+    "abi": "x86_synthetic_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUHighFall"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  }
+]

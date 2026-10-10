@@ -1,0 +1,33 @@
+Canonical GTAIV.exe preferred VA 005d67a0
+005d67a0 MOV ECX,dword ptr [ESP + 0xc]
+005d67a4 SUB ESP,0x800
+005d67aa LEA EAX,[ESP + 0x810]
+005d67b1 PUSH EAX
+005d67b2 PUSH ECX
+005d67b3 LEA EDX,[ESP + 0x8]
+005d67b7 PUSH 0x3ff
+005d67bc PUSH EDX
+005d67bd CALL 0x00d11d73
+005d67c2 MOV ECX,dword ptr [ESP + 0x814]
+005d67c9 MOV EAX,dword ptr [ECX]
+005d67cb MOV EAX,dword ptr [EAX + 0x8]
+005d67ce ADD ESP,0x10
+005d67d1 LEA EDX,[ESP]
+005d67d4 PUSH EDX
+005d67d5 MOV EDX,dword ptr [ESP + 0x80c]
+005d67dc PUSH EDX
+005d67dd CALL EAX
+005d67df ADD ESP,0x800
+005d67e5 RET
+
+void FUN_005d67a0(int *param_1,undefined4 param_2,undefined4 param_3)
+
+{
+  undefined1 auStack_800 [2048];
+  
+  FUN_00d11d73(auStack_800,0x3ff,param_3,&stack0x00000010);
+  (**(code **)(*param_1 + 8))(param_2,auStack_800);
+  return;
+}
+
+

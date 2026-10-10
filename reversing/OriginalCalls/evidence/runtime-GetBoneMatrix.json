@@ -1,0 +1,14 @@
+{
+  "phase": "passed",
+  "rva": "0x005c7710",
+  "bone_index": 0,
+  "calls": 64,
+  "failures": 0,
+  "exceptions": 0,
+  "ticks": 253,
+  "entity": "0x06C34710",
+  "matrix": "0x0824CC70",
+  "position": [-0.000840277586, -0.000976281706, -0.0099518802],
+  "game_loaded": true,
+  "ingame_started": false
+}

@@ -1,0 +1,86 @@
+Canonical GTAIV.exe preferred VA 00cbbe20
+Entry bytes: 55 8b ec 83 e4 f0 83 ec 4c 56 8b 75 08 0f b6 4e 04 81 f9 ff 00 00 00 74 
+Body size: 173
+00cbbe20 PUSH EBP
+00cbbe21 MOV EBP,ESP
+00cbbe23 AND ESP,0xfffffff0
+00cbbe26 SUB ESP,0x4c
+00cbbe29 PUSH ESI
+00cbbe2a MOV ESI,dword ptr [EBP + 0x8]
+00cbbe2d MOVZX ECX,byte ptr [ESI + 0x4]
+00cbbe31 CMP ECX,0xff
+00cbbe37 JZ 0x00cbbe5a
+00cbbe39 MOVZX EDX,byte ptr [ESI + 0x40]
+00cbbe3d MOV EAX,[0x01719040]
+00cbbe42 IMUL EDX,EDX,0x6f40
+00cbbe48 IMUL EAX,ECX
+00cbbe4b MOV ECX,dword ptr [0x01719060]
+00cbbe51 ADD EAX,dword ptr [EDX + ECX*0x1 + 0x6f14]
+00cbbe58 JMP 0x00cbbe5c
+00cbbe5a XOR EAX,EAX
+00cbbe5c MOV EAX,dword ptr [EAX + 0xcc]
+00cbbe62 TEST EAX,EAX
+00cbbe64 JZ 0x00cbbec6
+00cbbe66 LEA EDX,[ESP + 0x10]
+00cbbe6a PUSH EDX
+00cbbe6b MOV ECX,EAX
+00cbbe6d CALL 0x00a28e00
+00cbbe72 LEA EAX,[ESP + 0x10]
+00cbbe76 PUSH EAX
+00cbbe77 MOV ECX,ESI
+00cbbe79 CALL 0x007b9610
+00cbbe7e PUSH 0x27
+00cbbe80 LEA ECX,[ESP + 0x24]
+00cbbe84 CALL 0x00b22a90
+00cbbe89 MOVSS XMM0,dword ptr [ESP + 0x10]
+00cbbe8f MOV EDX,dword ptr [ESI + 0xa4]
+00cbbe95 OR byte ptr [ESP + 0x4d],0x4
+00cbbe9a MOVSS dword ptr [ESP + 0x30],XMM0
+00cbbea0 MOVSS XMM0,dword ptr [ESP + 0x14]
+00cbbea6 LEA ECX,[ESP + 0x20]
+00cbbeaa PUSH ECX
+00cbbeab MOVSS dword ptr [ESP + 0x38],XMM0
+00cbbeb1 MOVSS XMM0,dword ptr [ESP + 0x1c]
+00cbbeb7 PUSH EDX
+00cbbeb8 MOVSS dword ptr [ESP + 0x40],XMM0
+00cbbebe CALL 0x007a9990
+00cbbec3 ADD ESP,0x8
+00cbbec6 POP ESI
+00cbbec7 MOV ESP,EBP
+00cbbec9 POP EBP
+00cbbeca RET 0x8
+
+void FUN_00cbbe20(int param_1)
+
+{
+  int iVar1;
+  undefined4 uStack_50;
+  undefined4 uStack_4c;
+  undefined4 uStack_48;
+  undefined1 auStack_40 [16];
+  undefined4 uStack_30;
+  undefined4 uStack_2c;
+  undefined4 uStack_28;
+  byte bStack_13;
+  
+  if (*(byte *)(param_1 + 4) == 0xff) {
+    iVar1 = 0;
+  }
+  else {
+    iVar1 = DAT_01719040 * (uint)*(byte *)(param_1 + 4) +
+            *(int *)((uint)*(byte *)(param_1 + 0x40) * 0x6f40 + 0x6f14 + DAT_01719060);
+  }
+  if (*(int *)(iVar1 + 0xcc) != 0) {
+    FUN_00a28e00(&uStack_50);
+    FUN_007b9610(&uStack_50);
+    FUN_00b22a90(0x27);
+    bStack_13 = bStack_13 | 4;
+    uStack_30 = uStack_50;
+    uStack_2c = uStack_4c;
+    uStack_28 = uStack_48;
+    FUN_007a9990(*(undefined4 *)(param_1 + 0xa4),auStack_40);
+  }
+  return;
+}
+
+

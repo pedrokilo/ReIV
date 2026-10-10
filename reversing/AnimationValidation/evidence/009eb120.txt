@@ -1,0 +1,177 @@
+Canonical GTAIV.exe preferred VA 009eb120
+009eb120 MOV AL,byte ptr [ESP + 0x4]
+009eb124 SUB ESP,0x4c8
+009eb12a CMP AL,0x1
+009eb12c JBE 0x009eb136
+009eb12e CMP AL,0x15
+009eb130 JNZ 0x009eb250
+009eb136 MOVSS XMM0,dword ptr [0x00d50398]
+009eb13e PUSH EBX
+009eb13f MOV EBX,dword ptr [ESP + 0x4d8]
+009eb146 PUSH ESI
+009eb147 MOV ESI,dword ptr [ESP + 0x4e0]
+009eb14e PXOR XMM1,XMM1
+009eb152 PUSH EDI
+009eb153 MOV EDI,dword ptr [ECX + 0x8]
+009eb156 XOR ECX,ECX
+009eb158 CMP EBX,ECX
+009eb15a MOVQ qword ptr [ESP + 0xc],XMM1
+009eb160 MOVQ qword ptr [ESP + 0x14],XMM1
+009eb166 MOVQ qword ptr [ESP + 0x1c],XMM1
+009eb16c MOVQ qword ptr [ESP + 0x24],XMM1
+009eb172 PXOR XMM1,XMM1
+009eb176 MOV dword ptr [ESP + 0x2c],ECX
+009eb17a MOVQ qword ptr [ESP + 0x30],XMM1
+009eb180 MOVQ qword ptr [ESP + 0x38],XMM1
+009eb186 MOVQ qword ptr [ESP + 0x40],XMM1
+009eb18c MOVQ qword ptr [ESP + 0x48],XMM1
+009eb192 MOV dword ptr [ESP + 0x50],ECX
+009eb196 JLE 0x009eb1dd
+009eb198 MOV EDX,ESI
+009eb19a SUB EDI,ESI
+009eb19c PUSH EBP
+009eb19d LEA ECX,[ECX]
+009eb1a0 MOV EAX,dword ptr [EDI + EDX*0x1]
+009eb1a3 MOV ESI,dword ptr [ESP + EAX*0x4 + 0x10]
+009eb1a7 MOVSS XMM1,dword ptr [ESP + EAX*0x4 + 0x34]
+009eb1ad ADDSS XMM1,dword ptr [EDX]
+009eb1b1 MOV EBP,EAX
+009eb1b3 SHL EBP,0x5
+009eb1b6 ADD EBP,ESI
+009eb1b8 ADD ESI,0x1
+009eb1bb MOV dword ptr [ESP + EAX*0x4 + 0x10],ESI
+009eb1bf LEA EAX,[ESP + EAX*0x4 + 0x34]
+009eb1c3 MOV dword ptr [ESP + EBP*0x4 + 0x58],ECX
+009eb1c7 ADD ECX,0x1
+009eb1ca ADD EDX,0x4
+009eb1cd CMP ECX,EBX
+009eb1cf MOVSS dword ptr [EAX],XMM1
+009eb1d3 JL 0x009eb1a0
+009eb1d5 MOV ESI,dword ptr [ESP + 0x4e8]
+009eb1dc POP EBP
+009eb1dd XORPS XMM2,XMM2
+009eb1e0 LEA EBX,[ESP + 0x454]
+009eb1e7 XOR EDI,EDI
+009eb1e9 LEA ESP,[ESP]
+009eb1f0 MOVSS XMM1,dword ptr [ESP + EDI*0x1 + 0x50]
+009eb1f6 COMISS XMM1,XMM0
+009eb1f9 JBE 0x009eb23b
+009eb1fb MOV EDX,dword ptr [ESP + EDI*0x1 + 0x2c]
+009eb1ff CMP EDX,0x1
+009eb202 JLE 0x009eb22f
+009eb204 TEST EDX,EDX
+009eb206 JLE 0x009eb236
+009eb208 MOV ECX,EBX
+009eb20a LEA EBX,[EBX]
+009eb210 MOV EAX,dword ptr [ECX]
+009eb212 MOVSS XMM1,dword ptr [ESI + EAX*0x4]
+009eb217 LEA EAX,[ESI + EAX*0x4]
+009eb21a ADD ECX,0x4
+009eb21d SUB EDX,0x1
+009eb220 MULSS XMM1,XMM0
+009eb224 MOVSS dword ptr [EAX],XMM1
+009eb228 JNZ 0x009eb210
+009eb22a MOVAPS XMM0,XMM2
+009eb22d JMP 0x009eb23f
+009eb22f MOV ECX,dword ptr [EBX]
+009eb231 MOVSS dword ptr [ESI + ECX*0x4],XMM0
+009eb236 MOVAPS XMM0,XMM2
+009eb239 JMP 0x009eb23f
+009eb23b SUBSS XMM0,XMM1
+009eb23f SUB EDI,0x4
+009eb242 SUB EBX,0x80
+009eb248 CMP EDI,-0x20
+009eb24b JGE 0x009eb1f0
+009eb24d POP EDI
+009eb24e POP ESI
+009eb24f POP EBX
+009eb250 ADD ESP,0x4c8
+009eb256 RET 0x10
+
+void __thiscall FUN_009eb120(int param_1,byte param_2,undefined4 param_3,int param_4,float *param_5)
+
+{
+  float fVar1;
+  int iVar2;
+  int iVar3;
+  int iVar4;
+  int *piVar5;
+  float *pfVar6;
+  int *piVar7;
+  int iVar8;
+  float fVar9;
+  int aiStack_4c8 [9];
+  float afStack_4a4 [9];
+  int aiStack_480 [288];
+  
+  if ((param_2 < 2) || (param_2 == 0x15)) {
+    iVar8 = *(int *)(param_1 + 8);
+    aiStack_4c8[0] = 0;
+    aiStack_4c8[1] = 0;
+    aiStack_4c8[2] = 0;
+    aiStack_4c8[3] = 0;
+    aiStack_4c8[4] = 0;
+    aiStack_4c8[5] = 0;
+    aiStack_4c8[6] = 0;
+    aiStack_4c8[7] = 0;
+    aiStack_4c8[8] = 0;
+    afStack_4a4[0] = 0.0;
+    afStack_4a4[1] = 0.0;
+    afStack_4a4[2] = 0.0;
+    afStack_4a4[3] = 0.0;
+    afStack_4a4[4] = 0.0;
+    afStack_4a4[5] = 0.0;
+    afStack_4a4[6] = 0.0;
+    afStack_4a4[7] = 0.0;
+    afStack_4a4[8] = 0.0;
+    if (0 < param_4) {
+      iVar4 = 0;
+      pfVar6 = param_5;
+      do {
+        iVar2 = *(int *)((iVar8 - (int)param_5) + (int)pfVar6);
+        iVar3 = aiStack_4c8[iVar2];
+        fVar9 = afStack_4a4[iVar2];
+        fVar1 = *pfVar6;
+        aiStack_4c8[iVar2] = iVar3 + 1;
+        aiStack_480[iVar2 * 0x20 + iVar3] = iVar4;
+        iVar4 = iVar4 + 1;
+        pfVar6 = pfVar6 + 1;
+        afStack_4a4[iVar2] = fVar9 + fVar1;
+      } while (iVar4 < param_4);
+    }
+    iVar8 = 0;
+    fVar9 = DAT_00d50398;
+    piVar7 = (int *)register0x00000010;
+    do {
+      piVar7 = piVar7 + -0x20;
+      fVar1 = *(float *)((int)aiStack_480 + iVar8 + -4);
+      if (fVar1 <= fVar9) {
+        fVar9 = fVar9 - fVar1;
+      }
+      else {
+        iVar4 = *(int *)((int)aiStack_4c8 + iVar8 + 0x20);
+        if (iVar4 < 2) {
+          param_5[*piVar7] = fVar9;
+        }
+        else {
+          piVar5 = piVar7;
+          if (0 < iVar4) {
+            do {
+              iVar4 = iVar4 + -1;
+              param_5[*piVar5] = param_5[*piVar5] * fVar9;
+              piVar5 = piVar5 + 1;
+            } while (iVar4 != 0);
+            fVar9 = 0.0;
+            goto LAB_009eb23f;
+          }
+        }
+        fVar9 = 0.0;
+      }
+LAB_009eb23f:
+      iVar8 = iVar8 + -4;
+    } while (-0x21 < iVar8);
+  }
+  return;
+}
+
+

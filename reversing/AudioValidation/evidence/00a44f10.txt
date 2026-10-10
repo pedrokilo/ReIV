@@ -1,0 +1,31 @@
+Canonical GTAIV.exe preferred VA 00a44f10
+Entry bytes: 56 8b f1 e8 a8 e7 ff ff 8b 46 5c 50 e8 ef cc b6 ff 83 c4 04 33 c0 89 46 
+Body size: 41
+00a44f10 PUSH ESI
+00a44f11 MOV ESI,ECX
+00a44f13 CALL 0x00a436c0
+00a44f18 MOV EAX,dword ptr [ESI + 0x5c]
+00a44f1b PUSH EAX
+00a44f1c CALL 0x005b1c10
+00a44f21 ADD ESP,0x4
+00a44f24 XOR EAX,EAX
+00a44f26 MOV dword ptr [ESI + 0x5c],EAX
+00a44f29 MOV word ptr [ESI + 0x60],AX
+00a44f2d MOV word ptr [ESI + 0x62],AX
+00a44f31 MOV ECX,ESI
+00a44f33 POP ESI
+00a44f34 JMP 0x00ce8280
+
+void __fastcall FUN_00a44f10(int param_1)
+
+{
+  FUN_00a436c0();
+  FUN_005b1c10(*(undefined4 *)(param_1 + 0x5c));
+  *(undefined4 *)(param_1 + 0x5c) = 0;
+  *(undefined2 *)(param_1 + 0x60) = 0;
+  *(undefined2 *)(param_1 + 0x62) = 0;
+  FUN_00ce8280();
+  return;
+}
+
+

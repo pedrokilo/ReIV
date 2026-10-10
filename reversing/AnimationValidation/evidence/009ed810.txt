@@ -1,0 +1,94 @@
+Canonical GTAIV.exe preferred VA 009ed810
+009ed810 SUB ESP,0x19c
+009ed816 PUSH ESI
+009ed817 PUSH EDI
+009ed818 MOV ESI,ECX
+009ed81a MOV EDI,dword ptr [ESI + 0x4]
+009ed81d PUSH 0x10
+009ed81f CALL 0x004011d0
+009ed824 ADD ESP,0x4
+009ed827 TEST EAX,EAX
+009ed829 JZ 0x009ed834
+009ed82b MOV ECX,EAX
+009ed82d CALL 0x0050b710
+009ed832 JMP 0x009ed836
+009ed834 XOR EAX,EAX
+009ed836 MOV dword ptr [ESI + 0x8],EAX
+009ed839 MOV EDX,dword ptr [EAX]
+009ed83b MOV ECX,EAX
+009ed83d MOV EAX,dword ptr [EDX + 0x4]
+009ed840 CALL EAX
+009ed842 CMP byte ptr [ESI + 0x824],0x0
+009ed849 LEA ECX,[ESP + 0x8]
+009ed84d JZ 0x009ed88e
+009ed84f CALL 0x0050fbc0
+009ed854 MOV ECX,dword ptr [ESP + 0x1a8]
+009ed85b PUSH ECX
+009ed85c LEA EDX,[ESP + 0xc]
+009ed860 PUSH EDX
+009ed861 MOV ECX,EDI
+009ed863 CALL 0x0050cc90
+009ed868 LEA ECX,[ESP + 0x8]
+009ed86c CALL 0x0050fef0
+009ed871 MOV ECX,dword ptr [ESI + 0x8]
+009ed874 PUSH EAX
+009ed875 CALL 0x0050b7b0
+009ed87a LEA ECX,[ESP + 0x8]
+009ed87e CALL 0x0050fc20
+009ed883 POP EDI
+009ed884 POP ESI
+009ed885 ADD ESP,0x19c
+009ed88b RET 0x4
+009ed88e CALL 0x0050f760
+009ed893 MOV EAX,dword ptr [ESP + 0x1a8]
+009ed89a PUSH EAX
+009ed89b LEA ECX,[ESP + 0xc]
+009ed89f PUSH ECX
+009ed8a0 MOV ECX,EDI
+009ed8a2 CALL 0x0050cc90
+009ed8a7 LEA ECX,[ESP + 0x8]
+009ed8ab CALL 0x0050fef0
+009ed8b0 MOV ECX,dword ptr [ESI + 0x8]
+009ed8b3 PUSH EAX
+009ed8b4 CALL 0x0050b7b0
+009ed8b9 LEA ECX,[ESP + 0x8]
+009ed8bd CALL 0x0050f7c0
+009ed8c2 POP EDI
+009ed8c3 POP ESI
+009ed8c4 ADD ESP,0x19c
+009ed8ca RET 0x4
+
+void __thiscall FUN_009ed810(int param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  int *piVar2;
+  undefined4 uVar3;
+  undefined1 auStack_19c [412];
+  
+  iVar1 = FUN_004011d0(0x10);
+  if (iVar1 == 0) {
+    piVar2 = (int *)0x0;
+  }
+  else {
+    piVar2 = (int *)FUN_0050b710();
+  }
+  *(int **)(param_1 + 8) = piVar2;
+  (**(code **)(*piVar2 + 4))();
+  if (*(char *)(param_1 + 0x824) != '\0') {
+    FUN_0050fbc0();
+    FUN_0050cc90(auStack_19c,param_2);
+    uVar3 = FUN_0050fef0();
+    FUN_0050b7b0(uVar3);
+    FUN_0050fc20();
+    return;
+  }
+  FUN_0050f760();
+  FUN_0050cc90(auStack_19c,param_2);
+  uVar3 = FUN_0050fef0();
+  FUN_0050b7b0(uVar3);
+  FUN_0050f7c0();
+  return;
+}
+
+

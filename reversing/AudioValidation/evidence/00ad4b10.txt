@@ -1,0 +1,71 @@
+Canonical GTAIV.exe preferred VA 00ad4b10
+Entry bytes: 56 8b f1 8b 86 94 00 00 00 85 c0 74 59 53 33 db 38 58 0a 76 46 57 33 ff 
+Body size: 113
+00ad4b10 PUSH ESI
+00ad4b11 MOV ESI,ECX
+00ad4b13 MOV EAX,dword ptr [ESI + 0x94]
+00ad4b19 TEST EAX,EAX
+00ad4b1b JZ 0x00ad4b76
+00ad4b1d PUSH EBX
+00ad4b1e XOR EBX,EBX
+00ad4b20 CMP byte ptr [EAX + 0xa],BL
+00ad4b23 JBE 0x00ad4b6b
+00ad4b25 PUSH EDI
+00ad4b26 XOR EDI,EDI
+00ad4b28 JMP 0x00ad4b30
+00ad4b30 MOV EAX,dword ptr [ESI + 0x94]
+00ad4b36 MOV ECX,dword ptr [EDI + EAX*0x1 + 0xb]
+00ad4b3a PUSH ECX
+00ad4b3b MOV ECX,0x1716ca0
+00ad4b40 CALL 0x00cdc1b0
+00ad4b45 TEST EAX,EAX
+00ad4b47 JZ 0x00ad4b56
+00ad4b49 FLDZ
+00ad4b4b PUSH ECX
+00ad4b4c MOV ECX,EAX
+00ad4b4e FSTP float ptr [ESP]
+00ad4b51 CALL 0x0088ff10
+00ad4b56 MOV EDX,dword ptr [ESI + 0x94]
+00ad4b5c MOVZX EAX,byte ptr [EDX + 0xa]
+00ad4b60 ADD EBX,0x1
+00ad4b63 ADD EDI,0x5
+00ad4b66 CMP EBX,EAX
+00ad4b68 JC 0x00ad4b30
+00ad4b6a POP EDI
+00ad4b6b MOV dword ptr [ESI + 0x94],0x0
+00ad4b75 POP EBX
+00ad4b76 PUSH 0x1
+00ad4b78 MOV ECX,ESI
+00ad4b7a CALL 0x00ad4a30
+00ad4b7f MOV ECX,ESI
+00ad4b81 POP ESI
+00ad4b82 JMP 0x00ce8280
+
+void __fastcall FUN_00ad4b10(int param_1)
+
+{
+  int iVar1;
+  uint uVar2;
+  int iVar3;
+  
+  if (*(int *)(param_1 + 0x94) != 0) {
+    uVar2 = 0;
+    if (*(char *)(*(int *)(param_1 + 0x94) + 10) != '\0') {
+      iVar3 = 0;
+      do {
+        iVar1 = FUN_00cdc1b0(*(undefined4 *)(iVar3 + 0xb + *(int *)(param_1 + 0x94)));
+        if (iVar1 != 0) {
+          FUN_0088ff10(0);
+        }
+        uVar2 = uVar2 + 1;
+        iVar3 = iVar3 + 5;
+      } while (uVar2 < *(byte *)(*(int *)(param_1 + 0x94) + 10));
+    }
+    *(undefined4 *)(param_1 + 0x94) = 0;
+  }
+  FUN_00ad4a30(1);
+  FUN_00ce8280();
+  return;
+}
+
+

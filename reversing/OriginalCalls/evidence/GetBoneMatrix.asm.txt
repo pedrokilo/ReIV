@@ -1,0 +1,80 @@
+
+Dump of file D:\GTA IV\Grand Theft Auto IV\GTAIV.exe
+
+File Type: EXECUTABLE IMAGE
+
+  009C7710: 56                 push        esi
+  009C7711: 8B F1              mov         esi,ecx
+  009C7713: 8B 06              mov         eax,dword ptr [esi]
+  009C7715: 8B 90 A0 00 00 00  mov         edx,dword ptr [eax+000000A0h]
+  009C771B: 57                 push        edi
+  009C771C: FF D2              call        edx
+  009C771E: 85 C0              test        eax,eax
+  009C7720: 74 1C              je          009C773E
+  009C7722: 8B 06              mov         eax,dword ptr [esi]
+  009C7724: 8B 90 A0 00 00 00  mov         edx,dword ptr [eax+000000A0h]
+  009C772A: 8B CE              mov         ecx,esi
+  009C772C: FF D2              call        edx
+  009C772E: 8B 10              mov         edx,dword ptr [eax]
+  009C7730: 8B C8              mov         ecx,eax
+  009C7732: 8B 82 E0 00 00 00  mov         eax,dword ptr [edx+000000E0h]
+  009C7738: FF D0              call        eax
+  009C773A: 8B F8              mov         edi,eax
+  009C773C: EB 06              jmp         009C7744
+  009C773E: 8B BE 00 01 00 00  mov         edi,dword ptr [esi+00000100h]
+  009C7744: 85 FF              test        edi,edi
+  009C7746: 75 75              jne         009C77BD
+  009C7748: 0F 57 C0           xorps       xmm0,xmm0
+  009C774B: F3 0F 10 0D 98 03  movss       xmm1,dword ptr ds:[00D50398h]
+            D5 00
+  009C7753: 5F                 pop         edi
+  009C7754: F3 0F 11 0D 60 94  movss       dword ptr ds:[01639460h],xmm1
+            63 01
+  009C775C: F3 0F 11 05 64 94  movss       dword ptr ds:[01639464h],xmm0
+            63 01
+  009C7764: F3 0F 11 05 68 94  movss       dword ptr ds:[01639468h],xmm0
+            63 01
+  009C776C: F3 0F 11 05 70 94  movss       dword ptr ds:[01639470h],xmm0
+            63 01
+  009C7774: F3 0F 11 0D 74 94  movss       dword ptr ds:[01639474h],xmm1
+            63 01
+  009C777C: F3 0F 11 05 78 94  movss       dword ptr ds:[01639478h],xmm0
+            63 01
+  009C7784: F3 0F 11 05 80 94  movss       dword ptr ds:[01639480h],xmm0
+            63 01
+  009C778C: F3 0F 11 05 84 94  movss       dword ptr ds:[01639484h],xmm0
+            63 01
+  009C7794: F3 0F 11 0D 88 94  movss       dword ptr ds:[01639488h],xmm1
+            63 01
+  009C779C: F3 0F 11 05 98 94  movss       dword ptr ds:[01639498h],xmm0
+            63 01
+  009C77A4: F3 0F 11 05 94 94  movss       dword ptr ds:[01639494h],xmm0
+            63 01
+  009C77AC: F3 0F 11 05 90 94  movss       dword ptr ds:[01639490h],xmm0
+            63 01
+  009C77B4: B8 60 94 63 01     mov         eax,1639460h
+  009C77B9: 5E                 pop         esi
+  009C77BA: C2 04 00           ret         4
+  009C77BD: 8B 76 78           mov         esi,dword ptr [esi+78h]
+  009C77C0: 85 F6              test        esi,esi
+  009C77C2: 74 18              je          009C77DC
+  009C77C4: F6 06 01           test        byte ptr [esi],1
+  009C77C7: 74 13              je          009C77DC
+  009C77C9: 6A 01              push        1
+  009C77CB: 81 C6 04 1A 00 00  add         esi,1A04h
+  009C77D1: 56                 push        esi
+  009C77D2: B9 D0 97 63 01     mov         ecx,16397D0h
+  009C77D7: E8 14 28 B4 FF     call        00509FF0
+  009C77DC: 8B 44 24 0C        mov         eax,dword ptr [esp+0Ch]
+  009C77E0: 8D 04 80           lea         eax,[eax+eax*4]
+  009C77E3: C1 E0 04           shl         eax,4
+  009C77E6: 03 47 0C           add         eax,dword ptr [edi+0Ch]
+  009C77E9: 5F                 pop         edi
+  009C77EA: 5E                 pop         esi
+  009C77EB: C2 04 00           ret         4
+  009C77EE: CC                 int         3
+  009C77EF: CC                 int         3
+
+  Summary
+
+      94C000 .text

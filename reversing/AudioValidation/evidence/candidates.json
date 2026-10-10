@@ -1,0 +1,517 @@
+[
+  {
+    "va": "0x004d7030",
+    "rva": "0x000d7030",
+    "operation": "constant_u8",
+    "value": 0,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "32 c0 c3",
+    "body_size": 3,
+    "owners": [
+      "audAmbientAudioEntity",
+      "audBoatAudioEntity",
+      "audCollisionAudioEntity",
+      "audCutsceneAudioEntity",
+      "audDoorAudioEntity",
+      "audEmitterAudioEntity",
+      "audEntityRadioEmitter",
+      "audExplosionAudioEntity",
+      "audFireAudioEntity",
+      "audGtaAudioEntity",
+      "audObjectAudioEntity",
+      "audPedAudioEntity",
+      "audPoliceScanner",
+      "audRadioEmitter",
+      "audScriptAudioEntity",
+      "audSmashableAudioEntity",
+      "audSpeechAudioEntity",
+      "audSpeechManager",
+      "audStaticRadioEmitter",
+      "audVehicleAudioEntity",
+      "audWeaponAudioEntity",
+      "audWeatherAudioEntity"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/004d7030.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x004d8bc0",
+    "rva": "0x000d8bc0",
+    "operation": "address_offset",
+    "value": 4,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8d 41 04 c3",
+    "body_size": 4,
+    "owners": [
+      "audGtaOcclusionGroup"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/004d8bc0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x007bdc00",
+    "rva": "0x003bdc00",
+    "operation": "constant_u32",
+    "value": 0,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "33 c0 c3",
+    "body_size": 3,
+    "owners": [
+      "CAudioAttr",
+      "audAmbientAudioEntity",
+      "audCollisionAudioEntity",
+      "audCutsceneAudioEntity",
+      "audDoorAudioEntity",
+      "audEmitterAudioEntity",
+      "audExplosionAudioEntity",
+      "audFireAudioEntity",
+      "audFrontendAudioEntity",
+      "audGtaAudioEntity",
+      "audObjectAudioEntity",
+      "audPoliceScanner",
+      "audRadioAudioEntity",
+      "audRadioEmitter",
+      "audScriptAudioEntity",
+      "audSmashableAudioEntity",
+      "audSpeechAudioEntity",
+      "audWeaponAudioEntity",
+      "audWeatherAudioEntity"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/007bdc00.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008155a0",
+    "rva": "0x004155a0",
+    "operation": "outputs_minus_one",
+    "value": 0,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 44 24 04 8b 4c 24 08 c7 00 ff ff ff ff c7 01 ff ff ff ff c2 08 00",
+    "body_size": 23,
+    "owners": [
+      "audEntityRadioEmitter",
+      "audRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008155a0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008155c0",
+    "rva": "0x004155c0",
+    "operation": "constant_u32",
+    "value": 23900,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "b8 5c 5d 00 00 c3",
+    "body_size": 6,
+    "owners": [
+      "audRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008155c0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008161d0",
+    "rva": "0x004161d0",
+    "operation": "compare_u32",
+    "value": 4,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 54 24 04 33 c0 3b 51 04 0f 94 c0 c2 04 00",
+    "body_size": 15,
+    "owners": [
+      "audEntityRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008161d0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x0089bbb0",
+    "rva": "0x0049bbb0",
+    "operation": "set_u32",
+    "value": 8,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 44 24 04 89 41 08 c2 04 00",
+    "body_size": 10,
+    "owners": [
+      "audPlaceableTracker"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/0089bbb0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008b4d00",
+    "rva": "0x004b4d00",
+    "operation": "get_float",
+    "value": 32,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "d9 41 20 c3",
+    "body_size": 4,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008b4d00.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008b4d10",
+    "rva": "0x004b4d10",
+    "operation": "get_u32",
+    "value": 52,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 41 34 c3",
+    "body_size": 4,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008b4d10.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008b4d20",
+    "rva": "0x004b4d20",
+    "operation": "compare_u32",
+    "value": 48,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 54 24 04 33 c0 3b 51 30 0f 94 c0 c2 04 00",
+    "body_size": 15,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008b4d20.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008b4d30",
+    "rva": "0x004b4d30",
+    "operation": "set_pair",
+    "value": 56,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 44 24 04 8b 54 24 08 89 41 38 89 51 3c c2 08 00",
+    "body_size": 17,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008b4d30.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008b4d50",
+    "rva": "0x004b4d50",
+    "operation": "get_pair",
+    "value": 56,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 41 38 8b 54 24 04 89 02 8b 41 3c 8b 4c 24 08 89 01 c2 08 00",
+    "body_size": 21,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008b4d50.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008b4d70",
+    "rva": "0x004b4d70",
+    "operation": "constant_u32",
+    "value": 3,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "b8 03 00 00 00 c3",
+    "body_size": 6,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008b4d70.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008b4d80",
+    "rva": "0x004b4d80",
+    "operation": "get_u32",
+    "value": 36,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 41 24 c3",
+    "body_size": 4,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008b4d80.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008b4d90",
+    "rva": "0x004b4d90",
+    "operation": "get_u32",
+    "value": 40,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 41 28 c3",
+    "body_size": 4,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008b4d90.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x008b4da0",
+    "rva": "0x004b4da0",
+    "operation": "get_float",
+    "value": 44,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "d9 41 2c c3",
+    "body_size": 4,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/008b4da0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x0092c4d0",
+    "rva": "0x0052c4d0",
+    "operation": "noop_two_args",
+    "value": 0,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "c2 08 00",
+    "body_size": 3,
+    "owners": [
+      "audAmbientAudioEntity",
+      "audBoatAudioEntity",
+      "audCollisionAudioEntity",
+      "audCutsceneAudioEntity",
+      "audDoorAudioEntity",
+      "audEntityRadioEmitter",
+      "audExplosionAudioEntity",
+      "audFrontendAudioEntity",
+      "audGtaAudioEntity",
+      "audObjectAudioEntity",
+      "audPoliceScanner",
+      "audRadioAudioEntity",
+      "audRadioEmitter",
+      "audScriptAudioEntity",
+      "audSpeechAudioEntity",
+      "audSpeechManager",
+      "audWeaponAudioEntity"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/0092c4d0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00988ac0",
+    "rva": "0x00588ac0",
+    "operation": "identity_this",
+    "value": 0,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b c1 c3",
+    "body_size": 3,
+    "owners": [
+      "CAudioAttr"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00988ac0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00988b60",
+    "rva": "0x00588b60",
+    "operation": "constant_u8",
+    "value": 15,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "b0 0f c3",
+    "body_size": 3,
+    "owners": [
+      "CAudioAttr"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00988b60.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00a2bd60",
+    "rva": "0x0062bd60",
+    "operation": "set_u32",
+    "value": 52,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 44 24 04 89 41 34 c2 04 00",
+    "body_size": 10,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00a2bd60.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00aaaf20",
+    "rva": "0x006aaf20",
+    "operation": "noop_one_arg",
+    "value": 0,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "c2 04 00",
+    "body_size": 3,
+    "owners": [
+      "audAmbientAudioEntity",
+      "audBoatAudioEntity",
+      "audDoorAudioEntity",
+      "audEmitterAudioEntity",
+      "audEntityRadioEmitter",
+      "audExplosionAudioEntity",
+      "audFireAudioEntity",
+      "audGtaAudioEntity",
+      "audGtaOcclusionGroup",
+      "audObjectAudioEntity",
+      "audPoliceScanner",
+      "audSmashableAudioEntity",
+      "audSpeechAudioEntity",
+      "audSpeechManager",
+      "audStaticRadioEmitter",
+      "audWeaponAudioEntity"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00aaaf20.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00aad200",
+    "rva": "0x006ad200",
+    "operation": "get_u32",
+    "value": 288,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 81 20 01 00 00 c3",
+    "body_size": 7,
+    "owners": [
+      "audPedAudioEntity"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00aad200.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00ac7ba0",
+    "rva": "0x006c7ba0",
+    "operation": "set_u32",
+    "value": 164,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 44 24 04 89 81 a4 00 00 00 c2 04 00",
+    "body_size": 13,
+    "owners": [
+      "audGtaOcclusionGroup"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00ac7ba0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00aec4d0",
+    "rva": "0x006ec4d0",
+    "operation": "get_u32",
+    "value": 2080,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 81 20 08 00 00 c3",
+    "body_size": 7,
+    "owners": [
+      "audVehicleAudioEntity"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00aec4d0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00c28820",
+    "rva": "0x00828820",
+    "operation": "noop",
+    "value": 0,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "c3",
+    "body_size": 1,
+    "owners": [
+      "audBoatAudioEntity",
+      "audFireAudioEntity",
+      "audPedAudioEntity",
+      "audSmashableAudioEntity",
+      "audSpeechAudioEntity",
+      "audVehicleAudioEntity",
+      "audWeaponAudioEntity"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00c28820.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00c5d610",
+    "rva": "0x0085d610",
+    "operation": "get_u8",
+    "value": 64,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8a 41 40 c3",
+    "body_size": 4,
+    "owners": [
+      "audStaticRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00c5d610.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00c87a50",
+    "rva": "0x00887a50",
+    "operation": "constant_float",
+    "value": 1,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "d9 e8 c3",
+    "body_size": 3,
+    "owners": [
+      "audEntityRadioEmitter",
+      "audRadioEmitter"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00c87a50.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00ccf450",
+    "rva": "0x008cf450",
+    "operation": "get_u32",
+    "value": 592,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "8b 81 50 02 00 00 c3",
+    "body_size": 7,
+    "owners": [
+      "audBoatAudioEntity"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00ccf450.txt",
+    "runtime_tested": false,
+    "enabled": false
+  },
+  {
+    "va": "0x00cfaee0",
+    "rva": "0x008faee0",
+    "operation": "constant_u8",
+    "value": 1,
+    "abi": "x86_thiscall_fixture",
+    "entry_bytes": "b0 01 c3",
+    "body_size": 3,
+    "owners": [
+      "audEntityRadioEmitter",
+      "audFrontendAudioEntity",
+      "audRadioAudioEntity"
+    ],
+    "evidence": "reversing/AudioValidation/evidence/00cfaee0.txt",
+    "runtime_tested": false,
+    "enabled": false
+  }
+]

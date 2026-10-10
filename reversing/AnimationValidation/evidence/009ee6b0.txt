@@ -1,0 +1,29 @@
+Canonical GTAIV.exe preferred VA 009ee6b0
+009ee6b0 PUSH ESI
+009ee6b1 MOV ESI,ECX
+009ee6b3 LEA ECX,[ESI + 0x4]
+009ee6b6 MOV dword ptr [ESI],0xd83f94
+009ee6bc CALL 0x00a4d980
+009ee6c1 TEST byte ptr [ESP + 0x8],0x1
+009ee6c6 MOV dword ptr [ESI],0xd83f7c
+009ee6cc JZ 0x009ee6da
+009ee6ce MOV ECX,dword ptr [0x016397b4]
+009ee6d4 PUSH ESI
+009ee6d5 CALL 0x00c79660
+009ee6da MOV EAX,ESI
+009ee6dc POP ESI
+009ee6dd RET 0x4
+
+undefined4 * __thiscall FUN_009ee6b0(undefined4 *param_1,byte param_2)
+
+{
+  *param_1 = &DAT_00d83f94;
+  FUN_00a4d980();
+  *param_1 = &DAT_00d83f7c;
+  if ((param_2 & 1) != 0) {
+    FUN_00c79660(param_1);
+  }
+  return param_1;
+}
+
+

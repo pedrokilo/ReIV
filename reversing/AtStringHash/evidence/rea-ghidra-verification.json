@@ -1,0 +1,26 @@
+{
+  "date": "2026-10-07",
+  "timezone": "America/Mexico_City",
+  "status": "passed",
+  "target_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "architecture": "x86",
+  "language": "x86:LE:32:default",
+  "compiler": "windows",
+  "address": "0x5b1c30",
+  "file_offset": 1776688,
+  "compared_bytes": 106,
+  "callers": 694,
+  "incoming_references": 1638,
+  "dossier_file_bytes": 19455935,
+  "evidence_ids": {
+    "read_bytes": "ev_380f444f850e3df660f474ce2536c25a3567e475b5a92202d4c91c71ed2af650",
+    "source_mapping": "ev_869302f8753cb69ea93f0c25a89816cc19b7c5769fcac00f41b9a3ffd185b39a",
+    "pseudocode": "ev_38f123aeadf3bbd5ecdec7f4b5379433a16ce722dcdf53247b063c724bc1414f",
+    "function": "ev_341dc47d405b83a6d2a4320bc70b46a49efb8bb163efeaa4c0ad79bead2ef661"
+  },
+  "closure": {
+    "tool_success": true,
+    "result": null
+  },
+  "limits": "Static Ghidra analysis of the hash-bound reference; no game execution or claim of complete semantic reconstruction."
+}

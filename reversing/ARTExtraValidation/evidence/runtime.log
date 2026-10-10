@@ -1,0 +1,61 @@
+[info][21:39:42.971][DebugLog.cpp:57]: Debug console always enabled | visible=true writable=true hwnd=0x07A715B8
+[info][21:39:42.971][ReIV.cpp:39]: ReIV bootstrap loaded | GTA IV 1.0.7.0 | x86
+[info][21:39:43.018][ReIV.cpp:47]: CDynamicEntity::GetBoneMatrix original binding available | RVA 0x005C7710 | root-bone historical test passed
+[debug][21:39:43.019][GetBoneMatrixProbe.h:50]: GetBoneMatrix test enabled: waiting for a live player
+[info][21:39:43.036][ReIV.cpp:77]: atStringHash bank passed; replacement installed
+[debug][21:39:43.062][ReIV.cpp:79]: Runtime catalog exported to ReIV-runtime-hooks.csv
+[info][21:40:02.083][ReIV.cpp:25]: SDK gameLoadEvent received
+[info][21:40:14.812][ARTStubsProbe.h:36]: ART virtual slot audit checked=353 failures=0 (addresses only; not calls)
+[info][21:40:14.813][ARTStubsProbe.h:99]: Pure art stub RVA 0x00047970 calls=64 failures=0
+[info][21:40:14.814][ARTStubsProbe.h:99]: Pure art stub RVA 0x000487A0 calls=64 failures=0
+[info][21:40:14.815][ARTStubsProbe.h:99]: Pure art stub RVA 0x000489D0 calls=64 failures=0
+[info][21:40:14.816][ARTStubsProbe.h:99]: Pure art stub RVA 0x00149100 calls=64 failures=0
+[info][21:40:14.816][ARTStubsProbe.h:99]: Pure art stub RVA 0x00150FF0 calls=64 failures=0
+[info][21:40:14.817][ARTStubsProbe.h:99]: Pure art stub RVA 0x0015A850 calls=64 failures=0
+[info][21:40:14.817][ARTStubsProbe.h:99]: Pure art stub RVA 0x0015C600 calls=64 failures=0
+[info][21:40:14.817][ARTStubsProbe.h:99]: Pure art stub RVA 0x0019BA00 calls=64 failures=0
+[info][21:40:14.817][ARTStubsProbe.h:99]: Pure art stub RVA 0x001FDCD0 calls=64 failures=0
+[info][21:40:14.818][ARTStubsProbe.h:99]: Pure art stub RVA 0x00307920 calls=64 failures=0
+[info][21:40:14.818][ARTFixtureProbe.h:91]: ART fixture RVA 0x0004CB40 calls=64 failures=0
+[info][21:40:14.819][ARTFixtureProbe.h:91]: ART fixture RVA 0x001879B0 calls=64 failures=0
+[info][21:40:14.819][ARTFixtureProbe.h:91]: ART fixture RVA 0x001E3570 calls=64 failures=0
+[info][21:40:14.819][ARTFixtureProbe.h:91]: ART fixture RVA 0x001E3580 calls=64 failures=0
+[info][21:40:14.819][ARTFixtureProbe.h:91]: ART fixture RVA 0x001E3590 calls=64 failures=0
+[info][21:40:14.820][ARTFixtureProbe.h:91]: ART fixture RVA 0x001E35B0 calls=64 failures=0
+[info][21:40:14.820][ARTFixtureProbe.h:91]: ART fixture RVA 0x001E35E0 calls=64 failures=0
+[info][21:40:14.820][ARTFixtureProbe.h:91]: ART fixture RVA 0x001E3610 calls=64 failures=0
+[info][21:40:14.820][ARTFixtureProbe.h:91]: ART fixture RVA 0x001E3640 calls=64 failures=0
+[info][21:40:14.820][ARTFixtureProbe.h:91]: ART fixture RVA 0x001EE880 calls=64 failures=0
+[info][21:40:14.821][ARTFixtureProbe.h:91]: ART fixture RVA 0x001EE890 calls=64 failures=0
+[info][21:40:14.821][ARTFixtureProbe.h:91]: ART fixture RVA 0x001EE8A0 calls=64 failures=0
+[info][21:40:14.822][ARTFixtureProbe.h:91]: ART fixture RVA 0x001EE8B0 calls=64 failures=0
+[info][21:40:14.822][ARTFixtureProbe.h:91]: ART fixture RVA 0x001EE8E0 calls=64 failures=0
+[info][21:40:14.823][ARTFixtureProbe.h:91]: ART fixture RVA 0x001EE910 calls=64 failures=0
+[info][21:40:14.823][ARTFixtureProbe.h:91]: ART fixture RVA 0x001EE940 calls=64 failures=0
+[info][21:40:14.824][ARTFixtureProbe.h:91]: ART fixture RVA 0x001EFD40 calls=64 failures=0
+[info][21:40:14.824][ARTFixtureProbe.h:91]: ART fixture RVA 0x001F03B0 calls=64 failures=0
+[info][21:40:14.825][ARTFixtureProbe.h:91]: ART fixture RVA 0x001FF420 calls=64 failures=0
+[info][21:40:14.825][ARTFixtureProbe.h:91]: ART fixture RVA 0x002038E0 calls=64 failures=0
+[info][21:40:14.826][ARTFixtureProbe.h:91]: ART fixture RVA 0x00204060 calls=64 failures=0
+[info][21:40:14.827][ARTFixtureProbe.h:91]: ART fixture RVA 0x00206880 calls=64 failures=0
+[info][21:40:14.827][ARTFixtureProbe.h:91]: ART fixture RVA 0x0020B000 calls=64 failures=0
+[info][21:40:14.827][ARTFixtureProbe.h:91]: ART fixture RVA 0x0020F090 calls=64 failures=0
+[info][21:40:14.828][ARTExtraProbe.h:74]: ART extra RVA 0x000EE420 calls=64 failures=0
+[info][21:40:14.828][ARTExtraProbe.h:74]: ART extra RVA 0x00384520 calls=64 failures=0
+[info][21:40:14.829][ARTExtraProbe.h:74]: ART extra RVA 0x001FDD00 calls=64 failures=0
+[info][21:40:14.829][ARTExtraProbe.h:74]: ART extra RVA 0x001E39E0 calls=64 failures=0
+[info][21:40:14.829][ARTExtraProbe.h:74]: ART extra RVA 0x001E6340 calls=64 failures=0
+[info][21:40:14.829][ARTExtraProbe.h:74]: ART extra RVA 0x001EFC70 calls=64 failures=0
+[info][21:40:14.830][ARTExtraProbe.h:74]: ART extra RVA 0x00286BE0 calls=64 failures=0
+[info][21:40:14.830][ARTExtraProbe.h:74]: ART extra RVA 0x001E35A0 calls=64 failures=0
+[info][21:40:14.830][ARTExtraProbe.h:74]: ART extra RVA 0x001F1E70 calls=64 failures=0
+[info][21:40:14.830][ARTExtraProbe.h:74]: ART extra RVA 0x001F3CE0 calls=64 failures=0
+[info][21:40:14.830][ARTExtraProbe.h:74]: ART extra RVA 0x001F76A0 calls=64 failures=0
+[info][21:40:14.830][ARTExtraProbe.h:74]: ART extra RVA 0x00200200 calls=64 failures=0
+[info][21:40:14.830][ARTExtraProbe.h:74]: ART extra RVA 0x00202440 calls=64 failures=0
+[info][21:40:14.830][ARTExtraProbe.h:74]: ART extra RVA 0x00205870 calls=64 failures=0
+[info][21:40:14.831][ARTExtraProbe.h:74]: ART extra RVA 0x00205FE0 calls=64 failures=0
+[info][21:40:14.831][ARTExtraProbe.h:74]: ART extra RVA 0x00208760 calls=64 failures=0
+[info][21:40:26.323][GetBoneMatrixProbe.h:64]: GetBoneMatrix PASSED | calls=64 failures=0 exceptions=0 | entity=0x072216D0 matrix=0x08839CE0
+[info][21:40:28.419][ReIV.cpp:30]: SDK ingameStartupEvent received
+[info][21:40:29.046][ReIV.cpp:85]: ReIV process detach

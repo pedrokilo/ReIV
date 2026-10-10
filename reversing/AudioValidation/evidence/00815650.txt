@@ -1,0 +1,114 @@
+Canonical GTAIV.exe preferred VA 00815650
+Entry bytes: d9 e8 0f 57 c0 53 33 db 56 8b f1 83 ec 10 d9 5c 24 0c b8 fe 00 00 00 d9 
+Body size: 252
+00815650 FLD1
+00815652 XORPS XMM0,XMM0
+00815655 PUSH EBX
+00815656 XOR EBX,EBX
+00815658 PUSH ESI
+00815659 MOV ESI,ECX
+0081565b SUB ESP,0x10
+0081565e FSTP float ptr [ESP + 0xc]
+00815662 MOV EAX,0xfe
+00815667 FLDZ
+00815669 MOV dword ptr [ESI + 0x6c],EBX
+0081566c FSTP float ptr [ESP + 0x8]
+00815670 MOV dword ptr [ESI + 0x70],EBX
+00815673 FLD float ptr [0x00dcb2ac]
+00815679 MOV byte ptr [ESI + 0x84],BL
+0081567f MOV byte ptr [ESI + 0x85],BL
+00815685 FST float ptr [ESP + 0x4]
+00815689 MOV byte ptr [0x011a36f8],BL
+0081568f FSTP float ptr [ESP]
+00815692 MOV byte ptr [ESI + 0x86],BL
+00815698 MOV byte ptr [ESI + 0x88],BL
+0081569e MOV dword ptr [ESI + 0x28],EBX
+008156a1 MOV dword ptr [ESI + 0x2c],EBX
+008156a4 MOV dword ptr [ESI + 0x1c],EBX
+008156a7 MOV dword ptr [ESI + 0x74],EAX
+008156aa MOV dword ptr [ESI + 0x78],EAX
+008156ad MOV dword ptr [ESI + 0x7c],EAX
+008156b0 MOV dword ptr [ESI + 0x80],EAX
+008156b6 MOV dword ptr [ESI + 0x68],EAX
+008156b9 MOVSS dword ptr [ESI + 0x20],XMM0
+008156be MOV dword ptr [ESI + 0x10],EBX
+008156c1 MOV dword ptr [ESI + 0x14],EBX
+008156c4 MOV byte ptr [ESI + 0x89],BL
+008156ca MOV word ptr [ESI + 0x98],BX
+008156d1 MOV dword ptr [ESI + 0x18],EBX
+008156d4 MOV byte ptr [ESI + 0x8b],BL
+008156da MOV byte ptr [0x011a36f9],BL
+008156e0 LEA ECX,[ESI + 0x30]
+008156e3 MOV byte ptr [ESI + 0x8c],BL
+008156e9 MOV byte ptr [ESI + 0x8d],BL
+008156ef MOV byte ptr [ESI + 0x8e],BL
+008156f5 CALL 0x00cecff0
+008156fa FLD float ptr [0x00f1cbd8]
+00815700 SUB ESP,0x8
+00815703 FST float ptr [ESP + 0x4]
+00815707 LEA ECX,[ESI + 0x4c]
+0081570a FSTP float ptr [ESP]
+0081570d CALL 0x00cecfc0
+00815712 MOV byte ptr [ESI + 0x8a],BL
+00815718 MOV byte ptr [ESI + 0x87],BL
+0081571e MOV dword ptr [ESI + 0x90],EBX
+00815724 MOV byte ptr [ESI + 0x94],BL
+0081572a MOV byte ptr [ESI + 0x95],0x1
+00815731 CALL 0x00ac4ba0
+00815736 MOV ECX,ESI
+00815738 CALL 0x00ce8420
+0081573d MOV byte ptr [ESI + 0x96],BL
+00815743 MOV byte ptr [ESI + 0x97],BL
+00815749 POP ESI
+0081574a POP EBX
+0081574b RET
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __fastcall FUN_00815650(int param_1)
+
+{
+  undefined4 uVar1;
+  
+  *(undefined4 *)(param_1 + 0x6c) = 0;
+  *(undefined4 *)(param_1 + 0x70) = 0;
+  uVar1 = DAT_00dcb2ac;
+  *(undefined1 *)(param_1 + 0x84) = 0;
+  *(undefined1 *)(param_1 + 0x85) = 0;
+  DAT_011a36f8 = 0;
+  *(undefined1 *)(param_1 + 0x86) = 0;
+  *(undefined1 *)(param_1 + 0x88) = 0;
+  *(undefined4 *)(param_1 + 0x28) = 0;
+  *(undefined4 *)(param_1 + 0x2c) = 0;
+  *(undefined4 *)(param_1 + 0x1c) = 0;
+  *(undefined4 *)(param_1 + 0x74) = 0xfe;
+  *(undefined4 *)(param_1 + 0x78) = 0xfe;
+  *(undefined4 *)(param_1 + 0x7c) = 0xfe;
+  *(undefined4 *)(param_1 + 0x80) = 0xfe;
+  *(undefined4 *)(param_1 + 0x68) = 0xfe;
+  *(undefined4 *)(param_1 + 0x20) = 0;
+  *(undefined4 *)(param_1 + 0x10) = 0;
+  *(undefined4 *)(param_1 + 0x14) = 0;
+  *(undefined1 *)(param_1 + 0x89) = 0;
+  *(undefined2 *)(param_1 + 0x98) = 0;
+  *(undefined4 *)(param_1 + 0x18) = 0;
+  *(undefined1 *)(param_1 + 0x8b) = 0;
+  DAT_011a36f9 = 0;
+  *(undefined1 *)(param_1 + 0x8c) = 0;
+  *(undefined1 *)(param_1 + 0x8d) = 0;
+  *(undefined1 *)(param_1 + 0x8e) = 0;
+  FUN_00cecff0(uVar1,uVar1,0,0x3f800000);
+  FUN_00cecfc0(_DAT_00f1cbd8,_DAT_00f1cbd8);
+  *(undefined1 *)(param_1 + 0x8a) = 0;
+  *(undefined1 *)(param_1 + 0x87) = 0;
+  *(undefined4 *)(param_1 + 0x90) = 0;
+  *(undefined1 *)(param_1 + 0x94) = 0;
+  *(undefined1 *)(param_1 + 0x95) = 1;
+  FUN_00ac4ba0();
+  FUN_00ce8420();
+  *(undefined1 *)(param_1 + 0x96) = 0;
+  *(undefined1 *)(param_1 + 0x97) = 0;
+  return;
+}
+
+

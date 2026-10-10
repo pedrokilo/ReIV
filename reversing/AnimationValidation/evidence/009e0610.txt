@@ -1,0 +1,48 @@
+Canonical GTAIV.exe preferred VA 009e0610
+009e0610 PUSH ESI
+009e0611 MOV ESI,ECX
+009e0613 MOV EAX,dword ptr [ESI]
+009e0615 MOV EDX,dword ptr [EAX + 0xa0]
+009e061b CALL EDX
+009e061d TEST EAX,EAX
+009e061f JNZ 0x009e0628
+009e0621 MOV EAX,dword ptr [ESI + 0x38]
+009e0624 TEST EAX,EAX
+009e0626 JZ 0x009e0647
+009e0628 MOV EAX,dword ptr [EAX + 0x4]
+009e062b MOV EDX,dword ptr [ESP + 0x8]
+009e062f PUSH EDI
+009e0630 MOV EDI,dword ptr [EAX + 0xc]
+009e0633 LEA ECX,[EDI + 0x30]
+009e0636 PUSH ECX
+009e0637 PUSH EDX
+009e0638 MOV ECX,ESI
+009e063a CALL 0x007d6880
+009e063f FLD float ptr [EDI + 0x8]
+009e0642 POP EDI
+009e0643 POP ESI
+009e0644 RET 0x4
+009e0647 MOV EAX,dword ptr [ESP + 0x8]
+009e064b PUSH EAX
+009e064c MOV ECX,ESI
+009e064e CALL 0x009e8490
+009e0653 POP ESI
+009e0654 RET 0x4
+
+float10 __thiscall FUN_009e0610(int *param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  float10 fVar2;
+  
+  iVar1 = (**(code **)(*param_1 + 0xa0))();
+  if ((iVar1 == 0) && (iVar1 = param_1[0xe], iVar1 == 0)) {
+    fVar2 = (float10)FUN_009e8490(param_2);
+    return fVar2;
+  }
+  iVar1 = *(int *)(*(int *)(iVar1 + 4) + 0xc);
+  FUN_007d6880(param_2,iVar1 + 0x30);
+  return (float10)*(float *)(iVar1 + 8);
+}
+
+

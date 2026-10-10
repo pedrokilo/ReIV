@@ -1,0 +1,111 @@
+#pragma once
+#include <cstdint>
+
+// GTA IV PC 1.0.7.0, x86. Reference from docs/MemoryMap/classes.csv.
+// RTTI type: CNetObjEntity
+// Layout, inheritance, signatures and behavior remain unverified.
+// Runtime VA = module base + RVA; these addresses are not instances.
+
+namespace reiv { namespace game {
+class CNetObjEntity;
+} }
+
+namespace reiv { namespace memory_map { namespace type_2535743888aac0e9 {
+inline constexpr char name[] = "CNetObjEntity";
+inline constexpr char mangled[] = ".?AVCNetObjEntity@@";
+inline constexpr char kind[] = "class";
+inline constexpr char section[] = ".data";
+inline constexpr char status[] = "exe_rtti_with_vtable";
+inline constexpr char bases[] = "CNetworkObject";
+inline constexpr std::uint32_t type_descriptor_va = 0x0109095cu;
+inline constexpr std::uint32_t type_descriptor_rva = 0x00c9095cu;
+inline constexpr bool in_sdk = false;
+inline constexpr std::uint32_t locators[] = {0x00ed5bc4u};
+inline constexpr std::uint32_t locators_count = 1u;
+inline constexpr std::uint32_t vtables[] = {0x00ea0a0cu};
+inline constexpr std::uint32_t vtables_count = 1u;
+} } }
+// BEGIN GENERATED PENDING HOOK ADDRESSES
+#include "core/PendingHook.h"
+namespace reiv { namespace memory_map { namespace type_2535743888aac0e9 {
+// Destinations from the inventory; names/ABI remain candidates. Never auto-install.
+inline constexpr std::uint32_t pending_hook_count = 74u;
+inline constexpr PendingHook pending_hook_storage[] = {
+    {0x00493fb0u, 0x00093fb0u, 0x00ea0a0cu, 0, "FUN_00493fb0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00496870u, 0x00096870u, 0x00ea0a0cu, 1, "FUN_00496870", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 2, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 3, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 4, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 5, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 6, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 7, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 8, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 9, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 10, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 11, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 12, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x007bdc00u, 0x003bdc00u, 0x00ea0a0cu, 13, "FUN_007bdc00", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x0049f3d0u, 0x0009f3d0u, 0x00ea0a0cu, 14, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0049f3e0u, 0x0009f3e0u, 0x00ea0a0cu, 15, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00c28820u, 0x00828820u, 0x00ea0a0cu, 16, "FUN_00c28820", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_only machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x00401210u, 0x00001210u, 0x00ea0a0cu, 17, "fatal_assertion_handler_do_not_call", "", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCam.h:70; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00cfaee0u, 0x008faee0u, 0x00ea0a0cu, 18, "FUN_00cfaee0", "CBaseModelInfo::GetModelType", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CModelInfo.h:39; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_al_constant machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x004940a0u, 0x000940a0u, 0x00ea0a0cu, 19, "FUN_004940a0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004950b0u, 0x000950b0u, 0x00ea0a0cu, 20, "FUN_004950b0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00c28820u, 0x00828820u, 0x00ea0a0cu, 21, "FUN_00c28820", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_only machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x00cfaee0u, 0x008faee0u, 0x00ea0a0cu, 22, "FUN_00cfaee0", "CBaseModelInfo::GetModelType", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CModelInfo.h:39; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_al_constant machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x004a0660u, 0x000a0660u, 0x00ea0a0cu, 23, "FUN_004a0660", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004a0750u, 0x000a0750u, 0x00ea0a0cu, 24, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004943c0u, 0x000943c0u, 0x00ea0a0cu, 25, "FUN_004943c0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004a0060u, 0x000a0060u, 0x00ea0a0cu, 26, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00cfaee0u, 0x008faee0u, 0x00ea0a0cu, 27, "FUN_00cfaee0", "CBaseModelInfo::GetModelType", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CModelInfo.h:39; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_al_constant machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x00493f80u, 0x00093f80u, 0x00ea0a0cu, 28, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00494460u, 0x00094460u, 0x00ea0a0cu, 29, "FUN_00494460", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00cfaee0u, 0x008faee0u, 0x00ea0a0cu, 30, "FUN_00cfaee0", "CBaseModelInfo::GetModelType", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CModelInfo.h:39; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_al_constant machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x004942a0u, 0x000942a0u, 0x00ea0a0cu, 31, "FUN_004942a0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00aaaf20u, 0x006aaf20u, 0x00ea0a0cu, 32, "FUN_00aaaf20", "CCustomShaderEffectBase::Update", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCustomShaderEffectBase.h:6; reversing/ExtraStubValidation/evidence/runtime-summary.json; 64 calls; complete RET 4 body; one explicit synthetic stack argument discarded; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x004a0320u, 0x000a0320u, 0x00ea0a0cu, 33, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00aaaf20u, 0x006aaf20u, 0x00ea0a0cu, 34, "FUN_00aaaf20", "CCustomShaderEffectBase::Update", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCustomShaderEffectBase.h:6; reversing/ExtraStubValidation/evidence/runtime-summary.json; 64 calls; complete RET 4 body; one explicit synthetic stack argument discarded; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x00aaaf20u, 0x006aaf20u, 0x00ea0a0cu, 35, "FUN_00aaaf20", "CCustomShaderEffectBase::Update", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCustomShaderEffectBase.h:6; reversing/ExtraStubValidation/evidence/runtime-summary.json; 64 calls; complete RET 4 body; one explicit synthetic stack argument discarded; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x0092c4d0u, 0x0052c4d0u, 0x00ea0a0cu, 36, "FUN_0092c4d0", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ExtraStubValidation/evidence/runtime-summary.json; 64 calls; complete RET 8 body; two explicit synthetic stack arguments discarded; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x008b8740u, 0x004b8740u, 0x00ea0a0cu, 37, "FUN_008b8740", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00401210u, 0x00001210u, 0x00ea0a0cu, 38, "fatal_assertion_handler_do_not_call", "", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCam.h:70; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0049f7e0u, 0x0009f7e0u, 0x00ea0a0cu, 39, "FUN_0049f7e0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00494110u, 0x00094110u, 0x00ea0a0cu, 40, "FUN_00494110", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00494520u, 0x00094520u, 0x00ea0a0cu, 41, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00494530u, 0x00094530u, 0x00ea0a0cu, 42, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00494550u, 0x00094550u, 0x00ea0a0cu, 43, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00494640u, 0x00094640u, 0x00ea0a0cu, 44, "FUN_00494640", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00494740u, 0x00094740u, 0x00ea0a0cu, 45, "FUN_00494740", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004a0470u, 0x000a0470u, 0x00ea0a0cu, 46, "FUN_004a0470", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004a0560u, 0x000a0560u, 0x00ea0a0cu, 47, "FUN_004a0560", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00494810u, 0x00094810u, 0x00ea0a0cu, 48, "FUN_00494810", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004c8500u, 0x000c8500u, 0x00ea0a0cu, 49, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_constant machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x00494970u, 0x00094970u, 0x00ea0a0cu, 50, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004949a0u, 0x000949a0u, 0x00ea0a0cu, 51, "FUN_004949a0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00c28820u, 0x00828820u, 0x00ea0a0cu, 52, "FUN_00c28820", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_only machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x00c71460u, 0x00871460u, 0x00ea0a0cu, 53, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004a0840u, 0x000a0840u, 0x00ea0a0cu, 54, "FUN_004a0840", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00494a90u, 0x00094a90u, 0x00ea0a0cu, 55, "FUN_00494a90", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004a0a80u, 0x000a0a80u, 0x00ea0a0cu, 56, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004a0b10u, 0x000a0b10u, 0x00ea0a0cu, 57, "FUN_004a0b10", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00494e60u, 0x00094e60u, 0x00ea0a0cu, 58, "FUN_00494e60", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004950a0u, 0x000950a0u, 0x00ea0a0cu, 59, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00401210u, 0x00001210u, 0x00ea0a0cu, 60, "fatal_assertion_handler_do_not_call", "", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCam.h:70; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00401210u, 0x00001210u, 0x00ea0a0cu, 61, "fatal_assertion_handler_do_not_call", "", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCam.h:70; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004d7030u, 0x000d7030u, 0x00ea0a0cu, 62, "FUN_004d7030", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_al_zero machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x00496370u, 0x00096370u, 0x00ea0a0cu, 63, "FUN_00496370", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00401210u, 0x00001210u, 0x00ea0a0cu, 64, "fatal_assertion_handler_do_not_call", "", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCam.h:70; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004951e0u, 0x000951e0u, 0x00ea0a0cu, 65, "FUN_004951e0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00495290u, 0x00095290u, 0x00ea0a0cu, 66, "FUN_00495290", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00495330u, 0x00095330u, 0x00ea0a0cu, 67, "FUN_00495330", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00495630u, 0x00095630u, 0x00ea0a0cu, 68, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00495800u, 0x00095800u, 0x00ea0a0cu, 69, "FUN_00495800", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00495bd0u, 0x00095bd0u, 0x00ea0a0cu, 70, "FUN_00495bd0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00493fe0u, 0x00093fe0u, 0x00ea0a0cu, 71, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00493ff0u, 0x00093ff0u, 0x00ea0a0cu, 72, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004966c0u, 0x000966c0u, 0x00ea0a0cu, 73, "FUN_004966c0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+};
+inline constexpr const PendingHook* pending_hooks = pending_hook_storage;
+} } }
+// END GENERATED PENDING HOOK ADDRESSES

@@ -1,0 +1,59 @@
+Canonical GTAIV.exe preferred VA 008b4ea0
+Entry bytes: 53 56 8b f1 33 db 38 9e 52 a5 04 00 75 3f 68 00 08 00 00 8d 8e 40 82 03 
+Body size: 108
+008b4ea0 PUSH EBX
+008b4ea1 PUSH ESI
+008b4ea2 MOV ESI,ECX
+008b4ea4 XOR EBX,EBX
+008b4ea6 CMP byte ptr [ESI + 0x4a552],BL
+008b4eac JNZ 0x008b4eed
+008b4eae PUSH 0x800
+008b4eb3 LEA ECX,[ESI + 0x38240]
+008b4eb9 CALL 0x004a2230
+008b4ebe MOV dword ptr [ESI + 0x3a248],EBX
+008b4ec4 MOV dword ptr [ESI + 0x4a548],EBX
+008b4eca MOV dword ptr [ESI + 0x4a54c],EBX
+008b4ed0 LEA EAX,[ESI + 0x3a34c]
+008b4ed6 MOV ECX,0xff
+008b4edb JMP 0x008b4ee0
+008b4ee0 MOV word ptr [EAX],BX
+008b4ee3 ADD EAX,0x104
+008b4ee8 SUB ECX,0x1
+008b4eeb JNZ 0x008b4ee0
+008b4eed MOV byte ptr [ESI + 0x4a550],BL
+008b4ef3 MOV dword ptr [0x01230eb0],EBX
+008b4ef9 PUSH 0xd6abb4
+008b4efe LEA ECX,[ESI + 0x8]
+008b4f01 MOV byte ptr [ESI + 0x4a551],BL
+008b4f07 CALL 0x00ce4cf0
+008b4f0c POP ESI
+008b4f0d POP EBX
+008b4f0e RET
+
+void __fastcall FUN_008b4ea0(int param_1)
+
+{
+  undefined2 *puVar1;
+  int iVar2;
+  
+  if (*(char *)(param_1 + 0x4a552) == '\0') {
+    FUN_004a2230(0x800);
+    *(undefined4 *)(param_1 + 0x3a248) = 0;
+    *(undefined4 *)(param_1 + 0x4a548) = 0;
+    *(undefined4 *)(param_1 + 0x4a54c) = 0;
+    puVar1 = (undefined2 *)(param_1 + 0x3a34c);
+    iVar2 = 0xff;
+    do {
+      *puVar1 = 0;
+      puVar1 = puVar1 + 0x82;
+      iVar2 = iVar2 + -1;
+    } while (iVar2 != 0);
+  }
+  *(undefined1 *)(param_1 + 0x4a550) = 0;
+  DAT_01230eb0 = 0;
+  *(undefined1 *)(param_1 + 0x4a551) = 0;
+  FUN_00ce4cf0(&DAT_00d6abb4);
+  return;
+}
+
+

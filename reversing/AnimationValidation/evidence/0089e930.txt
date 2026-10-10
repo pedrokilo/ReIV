@@ -1,0 +1,49 @@
+Canonical GTAIV.exe preferred VA 0089e930
+0089e930 MOV EAX,dword ptr [ECX + 0x20]
+0089e933 TEST EAX,EAX
+0089e935 JZ 0x0089e95d
+0089e937 MOV ECX,dword ptr [ESP + 0x4]
+0089e93b FLD float ptr [ECX]
+0089e93d MOVSS XMM0,dword ptr [ECX + 0x4]
+0089e942 MOVSS XMM1,dword ptr [ECX + 0x8]
+0089e947 FSTP float ptr [EAX + 0x30]
+0089e94a MOVSS dword ptr [EAX + 0x34],XMM0
+0089e94f MOVSS dword ptr [EAX + 0x38],XMM1
+0089e954 FLD float ptr [ECX + 0xc]
+0089e957 FSTP float ptr [EAX + 0x3c]
+0089e95a RET 0xc
+0089e95d MOV EAX,dword ptr [ESP + 0x4]
+0089e961 FLD float ptr [EAX]
+0089e963 MOVSS XMM0,dword ptr [EAX + 0x4]
+0089e968 MOVSS XMM1,dword ptr [EAX + 0x8]
+0089e96d FSTP float ptr [ECX + 0x10]
+0089e970 MOVSS dword ptr [ECX + 0x14],XMM0
+0089e975 MOVSS dword ptr [ECX + 0x18],XMM1
+0089e97a RET 0xc
+
+void __thiscall FUN_0089e930(int param_1,undefined4 *param_2)
+
+{
+  undefined4 uVar1;
+  undefined4 uVar2;
+  int iVar3;
+  
+  iVar3 = *(int *)(param_1 + 0x20);
+  if (iVar3 != 0) {
+    uVar1 = param_2[1];
+    uVar2 = param_2[2];
+    *(undefined4 *)(iVar3 + 0x30) = *param_2;
+    *(undefined4 *)(iVar3 + 0x34) = uVar1;
+    *(undefined4 *)(iVar3 + 0x38) = uVar2;
+    *(undefined4 *)(iVar3 + 0x3c) = param_2[3];
+    return;
+  }
+  uVar1 = param_2[1];
+  uVar2 = param_2[2];
+  *(undefined4 *)(param_1 + 0x10) = *param_2;
+  *(undefined4 *)(param_1 + 0x14) = uVar1;
+  *(undefined4 *)(param_1 + 0x18) = uVar2;
+  return;
+}
+
+

@@ -1,0 +1,31 @@
+Canonical GTAIV.exe preferred VA 009e8710
+009e8710 PUSH ESI
+009e8711 MOV ESI,ECX
+009e8713 MOV EAX,dword ptr [ESI + 0x38]
+009e8716 TEST EAX,EAX
+009e8718 JZ 0x009e873d
+009e871a CMP dword ptr [EAX + 0x4],0x0
+009e871e JZ 0x009e873d
+009e8720 MOV EAX,dword ptr [ESI]
+009e8722 MOV EDX,dword ptr [EAX + 0xb4]
+009e8728 PUSH 0x1
+009e872a CALL EDX
+009e872c MOV EAX,dword ptr [ESI + 0x38]
+009e872f MOV ECX,dword ptr [0x01666884]
+009e8735 PUSH 0x0
+009e8737 PUSH EAX
+009e8738 CALL 0x0069a2c0
+009e873d POP ESI
+009e873e RET
+
+void __fastcall FUN_009e8710(int *param_1)
+
+{
+  if ((param_1[0xe] != 0) && (*(int *)(param_1[0xe] + 4) != 0)) {
+    (**(code **)(*param_1 + 0xb4))(1);
+    FUN_0069a2c0(param_1[0xe],0);
+  }
+  return;
+}
+
+

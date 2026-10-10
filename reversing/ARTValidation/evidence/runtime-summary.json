@@ -1,0 +1,137 @@
+{
+  "passed": true,
+  "date": "2026-10-09T21:40:29.3336558-06:00",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "asi_sha256": "2fdabb3a9334f15a379876197f6357f25bd560d06873def6957462ecb3e0a274",
+  "implementation_sha256": "71cbe0d5683ad7fb6f3ec9d291f41a864f18551ceb0e9ab90f33e4bf5271dac0",
+  "result": {
+    "phase": "passed",
+    "exceptions": 0,
+    "slots_checked": 353,
+    "slots_failed": 0,
+    "scope": "complete pure stub bodies only; slot audit is address-only; no class ABI or gameplay semantics established",
+    "entries": [
+      {
+        "rva": "0x00047970",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 0
+      },
+      {
+        "rva": "0x000487A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 100
+      },
+      {
+        "rva": "0x000489D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 2
+      },
+      {
+        "rva": "0x00149100",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x00150FF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x0015A850",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 0
+      },
+      {
+        "rva": "0x0015C600",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x0019BA00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x001FDCD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 0
+      },
+      {
+        "rva": "0x00307920",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 1
+      }
+    ]
+  },
+  "game_run": {
+    "date": "2026-10-09T21:40:29.3336558-06:00",
+    "passed": true,
+    "forced_stop": false,
+    "exit_code": 0,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "asi_sha256": "2fdabb3a9334f15a379876197f6357f25bd560d06873def6957462ecb3e0a274",
+    "wrapper_sha256": "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
+    "probe_sha256": "c9eac0fd31fbefba9520983f372ca49332c17935501fbf6dd3f47ce5d69b7970",
+    "result": {
+      "phase": "passed",
+      "rva": "0x005c7710",
+      "bone_index": 0,
+      "calls": 64,
+      "failures": 0,
+      "exceptions": 0,
+      "ticks": 253,
+      "entity": "0x072216D0",
+      "matrix": "0x08839CE0",
+      "position": [
+        -0.000840883586,
+        -0.000975700619,
+        -0.00995009113
+      ],
+      "game_loaded": true,
+      "ingame_started": false
+    },
+    "evidence_directory": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261009-213941",
+    "console": {
+      "console_window": "0x07A715B8",
+      "visible": true,
+      "writable": true,
+      "always_enabled": true
+    },
+    "atStringHash": {
+      "phase": "process_detach",
+      "rva": "0x1b1c30",
+      "bank_pairs": 8320,
+      "bank_failures": 0,
+      "hooked": true,
+      "hook_calls": 366933,
+      "runtime_pairs": 4096,
+      "runtime_failures": 0,
+      "game_loaded": true,
+      "ingame_started": true,
+      "script_ticks": 254
+    },
+    "atStringHash_passed": true
+  },
+  "stub_bindings_sha256": "8e818c65f91cb3128a30bf1739448ea8226c1876b7f3cb4ab1e4c10ea2e1e246",
+  "slot_bindings_sha256": "7593e3bbc5511dae2a6d11bcd30939e58907ab2840fc3fc059a765aa7cc7bfc9"
+}

@@ -1,0 +1,25 @@
+Canonical GTAIV.exe preferred VA 00c57900
+Entry bytes: 8b 41 08 8b 48 20 85 c9 74 06 8d 41 30 c2 04 00 83 c0 10 c2 04 00 cc cc 
+Body size: 22
+00c57900 MOV EAX,dword ptr [ECX + 0x8]
+00c57903 MOV ECX,dword ptr [EAX + 0x20]
+00c57906 TEST ECX,ECX
+00c57908 JZ 0x00c57910
+00c5790a LEA EAX,[ECX + 0x30]
+00c5790d RET 0x4
+00c57910 ADD EAX,0x10
+00c57913 RET 0x4
+
+int __fastcall FUN_00c57900(int param_1)
+
+{
+  int iVar1;
+  
+  iVar1 = *(int *)(*(int *)(param_1 + 8) + 0x20);
+  if (iVar1 != 0) {
+    return iVar1 + 0x30;
+  }
+  return *(int *)(param_1 + 8) + 0x10;
+}
+
+

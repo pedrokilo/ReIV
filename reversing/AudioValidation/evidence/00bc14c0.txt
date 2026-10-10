@@ -1,0 +1,53 @@
+Canonical GTAIV.exe preferred VA 00bc14c0
+Entry bytes: 8b 41 04 85 c0 74 1c 8b 48 28 81 e1 c0 03 00 00 81 f9 80 00 00 00 75 0b 
+Body size: 42
+00bc14c0 MOV EAX,dword ptr [ECX + 0x4]
+00bc14c3 TEST EAX,EAX
+00bc14c5 JZ 0x00bc14e3
+00bc14c7 MOV ECX,dword ptr [EAX + 0x28]
+00bc14ca AND ECX,0x3c0
+00bc14d0 CMP ECX,0x80
+00bc14d6 JNZ 0x00bc14e3
+00bc14d8 LEA ECX,[EAX + 0x260]
+00bc14de JMP 0x00aecfb0
+00bc14e3 FLD float ptr [0x00d529a4]
+00bc14e9 RET
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+float10 __fastcall FUN_00bc14c0(int param_1)
+
+{
+  int iVar1;
+  char cVar2;
+  int iVar3;
+  float fVar4;
+  undefined4 uStack_8;
+  
+  iVar1 = *(int *)(param_1 + 4);
+  if ((iVar1 != 0) && ((*(uint *)(iVar1 + 0x28) & 0x3c0) == 0x80)) {
+    cVar2 = FUN_00aeac60();
+    if (cVar2 != '\0') {
+      return (float10)DAT_00d97a94;
+    }
+    uStack_8 = 0.0;
+    if (*(int *)(iVar1 + 0xc40) != 0) {
+      uStack_8 = (float)(int)*(char *)(*(int *)(iVar1 + 0xc40) + 0x15f);
+    }
+    if (*(char *)(iVar1 + 0xd99) != '\0') {
+      uStack_8 = uStack_8 + _DAT_00d97ac8;
+    }
+    iVar3 = FUN_00ac4cc0(*(undefined1 *)(iVar1 + 0xd60));
+    if (iVar3 == 0) {
+      fVar4 = 0.0;
+    }
+    else {
+      iVar3 = FUN_00ac4cc0(*(undefined1 *)(iVar1 + 0xd60));
+      fVar4 = *(float *)(iVar3 + 0x18fc);
+    }
+    return (float10)*(float *)(iVar1 + 0xd54) + (float10)fVar4 + (float10)uStack_8;
+  }
+  return (float10)DAT_00d529a4;
+}
+
+

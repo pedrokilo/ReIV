@@ -1,0 +1,177 @@
+{
+  "passed": true,
+  "date": "2026-10-09T21:01:23.8044156-06:00",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "asi_sha256": "14bc7290beab588a7f96567847da06c524e589e3163e7e1638abfe3a1ca73671",
+  "implementation_sha256": "d0baa6e43d50b06b4b206a023f5a326cbef7f513d1ff437b0a944afecf88f460",
+  "result": {
+    "phase": "passed",
+    "fixture_only": true,
+    "exceptions": 0,
+    "entries": [
+      {
+        "rva": "0x000D8BC0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x004155A0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x004161D0",
+        "calls": 128,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0049BBB0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x004B4D00",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x004B4D10",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x004B4D20",
+        "calls": 128,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x004B4D30",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x004B4D50",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x004B4D80",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x004B4D90",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x004B4DA0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00588AC0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0062BD60",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x006AD200",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x006C7BA0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x006EC4D0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0085D610",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x008CF450",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      }
+    ]
+  },
+  "game_run": {
+    "date": "2026-10-09T21:01:23.8044156-06:00",
+    "passed": true,
+    "forced_stop": false,
+    "exit_code": 0,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "asi_sha256": "14bc7290beab588a7f96567847da06c524e589e3163e7e1638abfe3a1ca73671",
+    "wrapper_sha256": "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
+    "probe_sha256": "c9eac0fd31fbefba9520983f372ca49332c17935501fbf6dd3f47ce5d69b7970",
+    "result": {
+      "phase": "passed",
+      "rva": "0x005c7710",
+      "bone_index": 0,
+      "calls": 64,
+      "failures": 0,
+      "exceptions": 0,
+      "ticks": 253,
+      "entity": "0x06CF8710",
+      "matrix": "0x08310C70",
+      "position": [
+        -0.00078639749,
+        -0.000991852721,
+        -0.0100193797
+      ],
+      "game_loaded": true,
+      "ingame_started": false
+    },
+    "evidence_directory": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261009-210040",
+    "console": {
+      "console_window": "0x001C1FE2",
+      "visible": true,
+      "writable": true,
+      "always_enabled": true
+    },
+    "atStringHash": {
+      "phase": "process_detach",
+      "rva": "0x1b1c30",
+      "bank_pairs": 8320,
+      "bank_failures": 0,
+      "hooked": true,
+      "hook_calls": 366941,
+      "runtime_pairs": 4096,
+      "runtime_failures": 0,
+      "game_loaded": true,
+      "ingame_started": true,
+      "script_ticks": 254
+    },
+    "atStringHash_passed": true
+  }
+}

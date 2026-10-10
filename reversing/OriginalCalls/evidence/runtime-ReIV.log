@@ -1,0 +1,6 @@
+2026-10-09 20:12:35 | ReIV bootstrap loaded | GTA IV 1.0.7.0 | x86
+2026-10-09 20:12:35 | CDynamicEntity::GetBoneMatrix original binding available | RVA 0x005C7710 | runtime call pending
+2026-10-09 20:12:35 | atStringHash bank passed; replacement installed
+2026-10-09 20:12:52 | SDK gameLoadEvent received
+2026-10-09 20:13:18 | SDK ingameStartupEvent received
+2026-10-09 20:13:19 | ReIV process detach

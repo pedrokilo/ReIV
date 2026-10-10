@@ -1,0 +1,134 @@
+[
+  {
+    "va": "0x00554660",
+    "rva": "0x00154660",
+    "operation": "set_u8",
+    "value": 32,
+    "entry_bytes": "8a 44 24 04 88 41 20 c2 04 00",
+    "body_size": 10,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "rage::rmPtfxShaderVar_Bool"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x00554710",
+    "rva": "0x00154710",
+    "operation": "set_u32",
+    "value": 32,
+    "entry_bytes": "8b 44 24 04 89 41 20 c2 04 00",
+    "body_size": 10,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "rage::rmPtfxShaderVar_Int"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x0055de60",
+    "rva": "0x0015de60",
+    "operation": "set_u32",
+    "value": 388,
+    "entry_bytes": "8b 44 24 04 89 81 84 01 00 00 c2 04 00",
+    "body_size": 13,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "rage::ptxSprite"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x0056a9e0",
+    "rva": "0x0016a9e0",
+    "operation": "set_u32",
+    "value": 368,
+    "entry_bytes": "8b 44 24 04 89 81 70 01 00 00 c2 04 00",
+    "body_size": 13,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "rage::ptxModel"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x0059b9c0",
+    "rva": "0x0019b9c0",
+    "operation": "set_u32",
+    "value": 8,
+    "entry_bytes": "8b 44 24 04 89 41 08 c2 04 00",
+    "body_size": 10,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "rage::crCreatureComponent",
+      "rage::crCreatureComponentBlendShapes",
+      "rage::crCreatureComponentExtraDofs",
+      "rage::crCreatureComponentMover",
+      "rage::crCreatureComponentSkeleton"
+    ],
+    "reference_count": 5,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005aa230",
+    "rva": "0x001aa230",
+    "operation": "set_u32",
+    "value": 4,
+    "entry_bytes": "8b 44 24 04 89 41 04 c2 04 00",
+    "body_size": 10,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "rage::sysMemBuddyAllocator"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x006848f0",
+    "rva": "0x002848f0",
+    "operation": "set_u8",
+    "value": 7,
+    "entry_bytes": "8a 44 24 04 88 41 07 c2 04 00",
+    "body_size": 10,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "rage::TriangleShape",
+      "rage::phBound",
+      "rage::phBoundBVH",
+      "rage::phBoundBox",
+      "rage::phBoundCapsule",
+      "rage::phBoundComposite",
+      "rage::phBoundCurvedGeometry",
+      "rage::phBoundGeomCullable",
+      "rage::phBoundGeometry",
+      "rage::phBoundGrid",
+      "rage::phBoundOctree",
+      "rage::phBoundPolyhedron",
+      "rage::phBoundQuadtree",
+      "rage::phBoundRibbon",
+      "rage::phBoundSphere",
+      "rage::phBoundSurface",
+      "rage::phBoundTaperedCapsule"
+    ],
+    "reference_count": 17,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  }
+]

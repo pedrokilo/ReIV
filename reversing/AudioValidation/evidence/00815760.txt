@@ -1,0 +1,19 @@
+Canonical GTAIV.exe preferred VA 00815760
+Entry bytes: 56 8b f1 e8 28 07 2b 00 8b ce 5e e9 10 2b 4d 00 80 b9 89 00 00 00 00 75 
+Body size: 16
+00815760 PUSH ESI
+00815761 MOV ESI,ECX
+00815763 CALL 0x00ac5e90
+00815768 MOV ECX,ESI
+0081576a POP ESI
+0081576b JMP 0x00ce8280
+
+void FUN_00815760(void)
+
+{
+  FUN_00ac5e90();
+  FUN_00ce8280();
+  return;
+}
+
+

@@ -1,0 +1,462 @@
+Canonical GTAIV.exe preferred VA 009e06c0
+009e06c0 PUSH EBP
+009e06c1 MOV EBP,ESP
+009e06c3 AND ESP,0xfffffff0
+009e06c6 MOVSS XMM0,dword ptr [0x00ebe030]
+009e06ce SUB ESP,0x34
+009e06d1 PUSH EBX
+009e06d2 PUSH ESI
+009e06d3 MOV ESI,dword ptr [EBP + 0x8]
+009e06d6 PUSH EDI
+009e06d7 MOV EDI,ECX
+009e06d9 MOVSX EAX,word ptr [EDI + 0x2e]
+009e06dd MOV EDX,dword ptr [EDI]
+009e06df MOV EBX,dword ptr [EAX*0x4 + 0x15f73b0]
+009e06e6 MOV EAX,dword ptr [EDX + 0xa0]
+009e06ec MOVSS dword ptr [ESI],XMM0
+009e06f0 MOVSS dword ptr [ESI + 0xc],XMM0
+009e06f5 MOVSS XMM0,dword ptr [0x00ebe02c]
+009e06fd MOVSS dword ptr [ESI + 0x8],XMM0
+009e0702 MOVSS dword ptr [ESI + 0x4],XMM0
+009e0707 CALL EAX
+009e0709 TEST EAX,EAX
+009e070b JNZ 0x009e0714
+009e070d MOV EAX,dword ptr [EDI + 0x38]
+009e0710 TEST EAX,EAX
+009e0712 JZ 0x009e077a
+009e0714 MOV ECX,dword ptr [EAX + 0x4]
+009e0717 MOV ECX,dword ptr [ECX + 0xc]
+009e071a MOVSS XMM4,dword ptr [ECX + 0x24]
+009e071f MOVSS XMM3,dword ptr [ECX + 0x28]
+009e0724 MOVSS XMM5,dword ptr [ECX + 0x20]
+009e0729 ADD ECX,0x20
+009e072c MOVSS dword ptr [ESP + 0x30],XMM5
+009e0732 MOVSS dword ptr [ESP + 0x34],XMM4
+009e0738 MOVSS dword ptr [ESP + 0x38],XMM3
+009e073e MOVSS XMM0,dword ptr [ECX + 0xc]
+009e0743 MOVSS dword ptr [ESP + 0x3c],XMM0
+009e0749 MOV EDX,dword ptr [EAX + 0x4]
+009e074c MOV EAX,dword ptr [EDX + 0xc]
+009e074f MOVSS XMM0,dword ptr [EAX + 0x14]
+009e0754 MOVSS XMM6,dword ptr [EAX + 0x18]
+009e0759 MOVSS XMM1,dword ptr [EAX + 0x10]
+009e075e ADD EAX,0x10
+009e0761 MOVSS dword ptr [ESP + 0x20],XMM1
+009e0767 MOVSS dword ptr [ESP + 0x24],XMM0
+009e076d MOVSS dword ptr [ESP + 0x28],XMM6
+009e0773 MOVSS XMM0,dword ptr [EAX + 0xc]
+009e0778 JMP 0x009e07cc
+009e077a MOVSS XMM4,dword ptr [EBX + 0x24]
+009e077f MOVSS XMM3,dword ptr [EBX + 0x28]
+009e0784 MOVSS XMM5,dword ptr [EBX + 0x20]
+009e0789 MOVSS dword ptr [ESP + 0x30],XMM5
+009e078f MOVSS dword ptr [ESP + 0x34],XMM4
+009e0795 MOVSS dword ptr [ESP + 0x38],XMM3
+009e079b MOVSS XMM0,dword ptr [EBX + 0x2c]
+009e07a0 MOVSS dword ptr [ESP + 0x3c],XMM0
+009e07a6 MOVSS XMM0,dword ptr [EBX + 0x34]
+009e07ab MOVSS XMM6,dword ptr [EBX + 0x38]
+009e07b0 MOVSS XMM1,dword ptr [EBX + 0x30]
+009e07b5 MOVSS dword ptr [ESP + 0x20],XMM1
+009e07bb MOVSS dword ptr [ESP + 0x24],XMM0
+009e07c1 MOVSS dword ptr [ESP + 0x28],XMM6
+009e07c7 MOVSS XMM0,dword ptr [EBX + 0x3c]
+009e07cc MOV EAX,dword ptr [EDI + 0x20]
+009e07cf TEST EAX,EAX
+009e07d1 MOVSS dword ptr [ESP + 0x2c],XMM0
+009e07d7 JZ 0x009e0874
+009e07dd MOVSS XMM0,dword ptr [EAX + 0x20]
+009e07e2 MOVSS XMM1,dword ptr [EAX + 0x10]
+009e07e7 MOVSS XMM2,dword ptr [EAX + 0x14]
+009e07ec MOVSS XMM7,dword ptr [EAX + 0x18]
+009e07f1 MULSS XMM1,XMM4
+009e07f5 MULSS XMM0,XMM3
+009e07f9 ADDSS XMM0,XMM1
+009e07fd MOVSS XMM1,dword ptr [EAX]
+009e0801 MULSS XMM1,XMM5
+009e0805 MULSS XMM2,XMM4
+009e0809 ADDSS XMM0,XMM1
+009e080d MOVSS XMM1,dword ptr [EAX + 0x24]
+009e0812 ADDSS XMM0,dword ptr [EAX + 0x30]
+009e0817 MULSS XMM1,XMM3
+009e081b ADDSS XMM1,XMM2
+009e081f MOVSS XMM2,dword ptr [EAX + 0x4]
+009e0824 MULSS XMM2,XMM5
+009e0828 ADDSS XMM1,XMM2
+009e082c MOVSS XMM2,dword ptr [EAX + 0x28]
+009e0831 ADDSS XMM1,dword ptr [EAX + 0x34]
+009e0836 MULSS XMM2,XMM3
+009e083a MULSS XMM7,XMM4
+009e083e ADDSS XMM2,XMM7
+009e0842 MOVSS XMM7,dword ptr [EAX + 0x8]
+009e0847 MULSS XMM7,XMM5
+009e084b ADDSS XMM2,XMM7
+009e084f ADDSS XMM2,dword ptr [EAX + 0x38]
+009e0854 MOVSS dword ptr [ESP + 0x18],XMM2
+009e085a MOVSS XMM2,dword ptr [ESP + 0x3c]
+009e0860 MOVSS dword ptr [ESP + 0x10],XMM0
+009e0866 MOVSS dword ptr [ESP + 0x14],XMM1
+009e086c MOVSS dword ptr [ESP + 0x1c],XMM2
+009e0872 JMP 0x009e08ae
+009e0874 LEA EAX,[ESP + 0x30]
+009e0878 PUSH EAX
+009e0879 LEA ECX,[EDI + 0x10]
+009e087c PUSH ECX
+009e087d LEA EDX,[ESP + 0x18]
+009e0881 PUSH EDX
+009e0882 CALL 0x009e77f0
+009e0887 MOVSS XMM3,dword ptr [ESP + 0x44]
+009e088d MOVSS XMM4,dword ptr [ESP + 0x40]
+009e0893 MOVSS XMM5,dword ptr [ESP + 0x3c]
+009e0899 MOVSS XMM6,dword ptr [ESP + 0x34]
+009e089f MOVSS XMM1,dword ptr [ESP + 0x20]
+009e08a5 MOVSS XMM0,dword ptr [ESP + 0x1c]
+009e08ab ADD ESP,0xc
+009e08ae MOVSS XMM2,dword ptr [ESI]
+009e08b2 COMISS XMM2,XMM0
+009e08b5 JBE 0x009e08bb
+009e08b7 MOVSS dword ptr [ESI],XMM0
+009e08bb COMISS XMM0,dword ptr [ESI + 0x8]
+009e08bf JBE 0x009e08c6
+009e08c1 MOVSS dword ptr [ESI + 0x8],XMM0
+009e08c6 MOVSS XMM0,dword ptr [ESI + 0xc]
+009e08cb COMISS XMM0,XMM1
+009e08ce JBE 0x009e08d5
+009e08d0 MOVSS dword ptr [ESI + 0xc],XMM1
+009e08d5 COMISS XMM1,dword ptr [ESI + 0x4]
+009e08d9 JBE 0x009e08e0
+009e08db MOVSS dword ptr [ESI + 0x4],XMM1
+009e08e0 MOV EAX,dword ptr [EDI + 0x20]
+009e08e3 TEST EAX,EAX
+009e08e5 JZ 0x009e0990
+009e08eb MOVSS XMM0,dword ptr [EAX + 0x20]
+009e08f0 MOVSS XMM1,dword ptr [EAX + 0x10]
+009e08f5 MOVSS XMM2,dword ptr [ESP + 0x24]
+009e08fb MOVSS XMM7,dword ptr [EAX + 0x14]
+009e0900 MULSS XMM1,XMM2
+009e0904 MULSS XMM0,XMM6
+009e0908 ADDSS XMM0,XMM1
+009e090c MOVSS XMM1,dword ptr [EAX]
+009e0910 MULSS XMM1,dword ptr [ESP + 0x20]
+009e0916 MULSS XMM7,XMM2
+009e091a MOVSS XMM2,dword ptr [EAX + 0x4]
+009e091f MULSS XMM2,dword ptr [ESP + 0x20]
+009e0925 ADDSS XMM0,XMM1
+009e0929 MOVSS XMM1,dword ptr [EAX + 0x24]
+009e092e ADDSS XMM0,dword ptr [EAX + 0x30]
+009e0933 MULSS XMM1,XMM6
+009e0937 ADDSS XMM1,XMM7
+009e093b ADDSS XMM1,XMM2
+009e093f MOVSS XMM2,dword ptr [EAX + 0x28]
+009e0944 ADDSS XMM1,dword ptr [EAX + 0x34]
+009e0949 MULSS XMM2,XMM6
+009e094d MOVSS XMM6,dword ptr [EAX + 0x18]
+009e0952 MULSS XMM6,dword ptr [ESP + 0x24]
+009e0958 ADDSS XMM2,XMM6
+009e095c MOVSS XMM6,dword ptr [EAX + 0x8]
+009e0961 MULSS XMM6,dword ptr [ESP + 0x20]
+009e0967 ADDSS XMM2,XMM6
+009e096b ADDSS XMM2,dword ptr [EAX + 0x38]
+009e0970 MOVSS dword ptr [ESP + 0x18],XMM2
+009e0976 MOVSS XMM2,dword ptr [ESP + 0x3c]
+009e097c MOVSS dword ptr [ESP + 0x10],XMM0
+009e0982 MOVSS dword ptr [ESP + 0x14],XMM1
+009e0988 MOVSS dword ptr [ESP + 0x1c],XMM2
+009e098e JMP 0x009e09c4
+009e0990 LEA EAX,[ESP + 0x20]
+009e0994 PUSH EAX
+009e0995 LEA ECX,[EDI + 0x10]
+009e0998 PUSH ECX
+009e0999 LEA EDX,[ESP + 0x18]
+009e099d PUSH EDX
+009e099e CALL 0x009e77f0
+009e09a3 MOVSS XMM3,dword ptr [ESP + 0x44]
+009e09a9 MOVSS XMM4,dword ptr [ESP + 0x40]
+009e09af MOVSS XMM5,dword ptr [ESP + 0x3c]
+009e09b5 MOVSS XMM1,dword ptr [ESP + 0x20]
+009e09bb MOVSS XMM0,dword ptr [ESP + 0x1c]
+009e09c1 ADD ESP,0xc
+009e09c4 MOVSS XMM2,dword ptr [ESI]
+009e09c8 COMISS XMM2,XMM0
+009e09cb JBE 0x009e09d1
+009e09cd MOVSS dword ptr [ESI],XMM0
+009e09d1 COMISS XMM0,dword ptr [ESI + 0x8]
+009e09d5 JBE 0x009e09dc
+009e09d7 MOVSS dword ptr [ESI + 0x8],XMM0
+009e09dc MOVSS XMM0,dword ptr [ESI + 0xc]
+009e09e1 COMISS XMM0,XMM1
+009e09e4 JBE 0x009e09eb
+009e09e6 MOVSS dword ptr [ESI + 0xc],XMM1
+009e09eb COMISS XMM1,dword ptr [ESI + 0x4]
+009e09ef JBE 0x009e09f6
+009e09f1 MOVSS dword ptr [ESI + 0x4],XMM1
+009e09f6 MOV EAX,dword ptr [EDI + 0x20]
+009e09f9 TEST EAX,EAX
+009e09fb MOVSS XMM6,dword ptr [ESP + 0x20]
+009e0a01 MOVSS dword ptr [ESP + 0x30],XMM6
+009e0a07 MOVSS dword ptr [ESP + 0x20],XMM5
+009e0a0d JZ 0x009e0aaa
+009e0a13 MOVSS XMM0,dword ptr [EAX + 0x20]
+009e0a18 MOVSS XMM1,dword ptr [EAX + 0x10]
+009e0a1d MOVSS XMM2,dword ptr [EAX + 0x14]
+009e0a22 MULSS XMM1,XMM4
+009e0a26 MULSS XMM0,XMM3
+009e0a2a ADDSS XMM0,XMM1
+009e0a2e MOVSS XMM1,dword ptr [EAX]
+009e0a32 MULSS XMM1,XMM6
+009e0a36 MULSS XMM2,XMM4
+009e0a3a ADDSS XMM0,XMM1
+009e0a3e MOVSS XMM1,dword ptr [EAX + 0x24]
+009e0a43 ADDSS XMM0,dword ptr [EAX + 0x30]
+009e0a48 MULSS XMM1,XMM3
+009e0a4c ADDSS XMM1,XMM2
+009e0a50 MOVSS XMM2,dword ptr [EAX + 0x4]
+009e0a55 MULSS XMM2,XMM6
+009e0a59 ADDSS XMM1,XMM2
+009e0a5d MOVSS XMM2,dword ptr [EAX + 0x28]
+009e0a62 ADDSS XMM1,dword ptr [EAX + 0x34]
+009e0a67 MULSS XMM2,XMM3
+009e0a6b MOVSS XMM3,dword ptr [EAX + 0x18]
+009e0a70 MULSS XMM3,XMM4
+009e0a74 ADDSS XMM2,XMM3
+009e0a78 MOVSS XMM3,dword ptr [EAX + 0x8]
+009e0a7d MULSS XMM3,XMM6
+009e0a81 ADDSS XMM2,XMM3
+009e0a85 ADDSS XMM2,dword ptr [EAX + 0x38]
+009e0a8a MOVSS dword ptr [ESP + 0x18],XMM2
+009e0a90 MOVSS XMM2,dword ptr [ESP + 0x3c]
+009e0a96 MOVSS dword ptr [ESP + 0x10],XMM0
+009e0a9c MOVSS dword ptr [ESP + 0x14],XMM1
+009e0aa2 MOVSS dword ptr [ESP + 0x1c],XMM2
+009e0aa8 JMP 0x009e0ad2
+009e0aaa LEA EAX,[ESP + 0x30]
+009e0aae PUSH EAX
+009e0aaf LEA ECX,[EDI + 0x10]
+009e0ab2 PUSH ECX
+009e0ab3 LEA EDX,[ESP + 0x18]
+009e0ab7 PUSH EDX
+009e0ab8 CALL 0x009e77f0
+009e0abd MOVSS XMM5,dword ptr [ESP + 0x2c]
+009e0ac3 MOVSS XMM1,dword ptr [ESP + 0x20]
+009e0ac9 MOVSS XMM0,dword ptr [ESP + 0x1c]
+009e0acf ADD ESP,0xc
+009e0ad2 MOVSS XMM2,dword ptr [ESI]
+009e0ad6 COMISS XMM2,XMM0
+009e0ad9 JBE 0x009e0adf
+009e0adb MOVSS dword ptr [ESI],XMM0
+009e0adf COMISS XMM0,dword ptr [ESI + 0x8]
+009e0ae3 JBE 0x009e0aea
+009e0ae5 MOVSS dword ptr [ESI + 0x8],XMM0
+009e0aea MOVSS XMM0,dword ptr [ESI + 0xc]
+009e0aef COMISS XMM0,XMM1
+009e0af2 JBE 0x009e0af9
+009e0af4 MOVSS dword ptr [ESI + 0xc],XMM1
+009e0af9 COMISS XMM1,dword ptr [ESI + 0x4]
+009e0afd JBE 0x009e0b04
+009e0aff MOVSS dword ptr [ESI + 0x4],XMM1
+009e0b04 MOV EAX,dword ptr [EDI + 0x20]
+009e0b07 TEST EAX,EAX
+009e0b09 JZ 0x009e0b68
+009e0b0b MOVSS XMM2,dword ptr [ESP + 0x28]
+009e0b11 MOVSS XMM3,dword ptr [ESP + 0x24]
+009e0b17 MOVSS XMM0,dword ptr [EAX + 0x20]
+009e0b1c MOVSS XMM1,dword ptr [EAX + 0x10]
+009e0b21 MULSS XMM1,XMM3
+009e0b25 MULSS XMM0,XMM2
+009e0b29 ADDSS XMM0,XMM1
+009e0b2d MOVSS XMM1,dword ptr [EAX]
+009e0b31 MULSS XMM1,XMM5
+009e0b35 ADDSS XMM0,XMM1
+009e0b39 MOVSS XMM1,dword ptr [EAX + 0x24]
+009e0b3e ADDSS XMM0,dword ptr [EAX + 0x30]
+009e0b43 MULSS XMM1,XMM2
+009e0b47 MOVSS XMM2,dword ptr [EAX + 0x14]
+009e0b4c MULSS XMM2,XMM3
+009e0b50 ADDSS XMM1,XMM2
+009e0b54 MOVSS XMM2,dword ptr [EAX + 0x4]
+009e0b59 MULSS XMM2,XMM5
+009e0b5d ADDSS XMM1,XMM2
+009e0b61 ADDSS XMM1,dword ptr [EAX + 0x34]
+009e0b66 JMP 0x009e0b8a
+009e0b68 LEA EAX,[ESP + 0x20]
+009e0b6c PUSH EAX
+009e0b6d ADD EDI,0x10
+009e0b70 LEA ECX,[ESP + 0x14]
+009e0b74 PUSH EDI
+009e0b75 PUSH ECX
+009e0b76 CALL 0x009e77f0
+009e0b7b MOVSS XMM1,dword ptr [ESP + 0x20]
+009e0b81 MOVSS XMM0,dword ptr [ESP + 0x1c]
+009e0b87 ADD ESP,0xc
+009e0b8a MOVSS XMM2,dword ptr [ESI]
+009e0b8e COMISS XMM2,XMM0
+009e0b91 JBE 0x009e0b97
+009e0b93 MOVSS dword ptr [ESI],XMM0
+009e0b97 COMISS XMM0,dword ptr [ESI + 0x8]
+009e0b9b JBE 0x009e0ba2
+009e0b9d MOVSS dword ptr [ESI + 0x8],XMM0
+009e0ba2 MOVSS XMM0,dword ptr [ESI + 0xc]
+009e0ba7 COMISS XMM0,XMM1
+009e0baa JBE 0x009e0bb1
+009e0bac MOVSS dword ptr [ESI + 0xc],XMM1
+009e0bb1 COMISS XMM1,dword ptr [ESI + 0x4]
+009e0bb5 MOV EAX,ESI
+009e0bb7 JBE 0x009e0bbe
+009e0bb9 MOVSS dword ptr [ESI + 0x4],XMM1
+009e0bbe POP EDI
+009e0bbf POP ESI
+009e0bc0 POP EBX
+009e0bc1 MOV ESP,EBP
+009e0bc3 POP EBP
+009e0bc4 RET 0x4
+
+float * __thiscall FUN_009e06c0(int *param_1,float *param_2)
+
+{
+  int iVar1;
+  code *pcVar2;
+  float *pfVar3;
+  int iVar4;
+  float fVar5;
+  float fStack_40;
+  float fStack_3c;
+  float fStack_38;
+  undefined4 uStack_34;
+  float fStack_30;
+  float fStack_2c;
+  float fStack_28;
+  undefined4 uStack_24;
+  float fStack_20;
+  float fStack_1c;
+  float fStack_18;
+  undefined4 uStack_14;
+  
+  fVar5 = DAT_00ebe030;
+  iVar1 = (&DAT_015f73b0)[*(short *)((int)param_1 + 0x2e)];
+  pcVar2 = *(code **)(*param_1 + 0xa0);
+  *param_2 = DAT_00ebe030;
+  param_2[3] = fVar5;
+  fVar5 = DAT_00ebe02c;
+  param_2[2] = DAT_00ebe02c;
+  param_2[1] = fVar5;
+  iVar4 = (*pcVar2)();
+  if ((iVar4 == 0) && (iVar4 = param_1[0xe], iVar4 == 0)) {
+    fStack_1c = *(float *)(iVar1 + 0x24);
+    fStack_18 = *(float *)(iVar1 + 0x28);
+    fStack_20 = *(float *)(iVar1 + 0x20);
+    uStack_14 = *(undefined4 *)(iVar1 + 0x2c);
+    fStack_2c = *(float *)(iVar1 + 0x34);
+    fStack_28 = *(float *)(iVar1 + 0x38);
+    fStack_30 = *(float *)(iVar1 + 0x30);
+    uStack_24 = *(undefined4 *)(iVar1 + 0x3c);
+  }
+  else {
+    iVar1 = *(int *)(*(int *)(iVar4 + 4) + 0xc);
+    fStack_1c = *(float *)(iVar1 + 0x24);
+    fStack_18 = *(float *)(iVar1 + 0x28);
+    fStack_20 = *(float *)(iVar1 + 0x20);
+    uStack_14 = *(undefined4 *)(iVar1 + 0x2c);
+    iVar1 = *(int *)(*(int *)(iVar4 + 4) + 0xc);
+    fStack_2c = *(float *)(iVar1 + 0x14);
+    fStack_28 = *(float *)(iVar1 + 0x18);
+    fStack_30 = *(float *)(iVar1 + 0x10);
+    uStack_24 = *(undefined4 *)(iVar1 + 0x1c);
+  }
+  pfVar3 = (float *)param_1[8];
+  if (pfVar3 == (float *)0x0) {
+    FUN_009e77f0(&fStack_40,param_1 + 4,&fStack_20);
+  }
+  else {
+    fStack_40 = pfVar3[8] * fStack_18 + pfVar3[4] * fStack_1c + *pfVar3 * fStack_20 + pfVar3[0xc];
+    fStack_3c = pfVar3[9] * fStack_18 + pfVar3[5] * fStack_1c + pfVar3[1] * fStack_20 + pfVar3[0xd];
+    fStack_38 = pfVar3[10] * fStack_18 + pfVar3[6] * fStack_1c + pfVar3[2] * fStack_20 + pfVar3[0xe]
+    ;
+    uStack_34 = uStack_14;
+  }
+  if (fStack_40 < *param_2) {
+    *param_2 = fStack_40;
+  }
+  if (param_2[2] <= fStack_40 && fStack_40 != param_2[2]) {
+    param_2[2] = fStack_40;
+  }
+  if (fStack_3c < param_2[3]) {
+    param_2[3] = fStack_3c;
+  }
+  if (param_2[1] <= fStack_3c && fStack_3c != param_2[1]) {
+    param_2[1] = fStack_3c;
+  }
+  pfVar3 = (float *)param_1[8];
+  if (pfVar3 == (float *)0x0) {
+    FUN_009e77f0(&fStack_40,param_1 + 4,&fStack_30);
+    fVar5 = fStack_20;
+  }
+  else {
+    fStack_40 = pfVar3[8] * fStack_28 + pfVar3[4] * fStack_2c + *pfVar3 * fStack_30 + pfVar3[0xc];
+    fStack_3c = pfVar3[9] * fStack_28 + pfVar3[5] * fStack_2c + pfVar3[1] * fStack_30 + pfVar3[0xd];
+    fStack_38 = pfVar3[10] * fStack_28 + pfVar3[6] * fStack_2c + pfVar3[2] * fStack_30 + pfVar3[0xe]
+    ;
+    uStack_34 = uStack_14;
+    fVar5 = fStack_20;
+  }
+  if (fStack_40 < *param_2) {
+    *param_2 = fStack_40;
+  }
+  if (param_2[2] <= fStack_40 && fStack_40 != param_2[2]) {
+    param_2[2] = fStack_40;
+  }
+  if (fStack_3c < param_2[3]) {
+    param_2[3] = fStack_3c;
+  }
+  if (param_2[1] <= fStack_3c && fStack_3c != param_2[1]) {
+    param_2[1] = fStack_3c;
+  }
+  pfVar3 = (float *)param_1[8];
+  fStack_20 = fStack_30;
+  if (pfVar3 == (float *)0x0) {
+    fStack_30 = fVar5;
+    FUN_009e77f0(&fStack_40,param_1 + 4,&fStack_20);
+  }
+  else {
+    fStack_40 = pfVar3[8] * fStack_18 + pfVar3[4] * fStack_1c + *pfVar3 * fStack_30 + pfVar3[0xc];
+    fStack_3c = pfVar3[9] * fStack_18 + pfVar3[5] * fStack_1c + pfVar3[1] * fStack_30 + pfVar3[0xd];
+    fStack_38 = pfVar3[10] * fStack_18 + pfVar3[6] * fStack_1c + pfVar3[2] * fStack_30 + pfVar3[0xe]
+    ;
+    uStack_34 = uStack_14;
+    fStack_30 = fVar5;
+  }
+  if (fStack_40 < *param_2) {
+    *param_2 = fStack_40;
+  }
+  if (param_2[2] <= fStack_40 && fStack_40 != param_2[2]) {
+    param_2[2] = fStack_40;
+  }
+  if (fStack_3c < param_2[3]) {
+    param_2[3] = fStack_3c;
+  }
+  if (param_2[1] <= fStack_3c && fStack_3c != param_2[1]) {
+    param_2[1] = fStack_3c;
+  }
+  pfVar3 = (float *)param_1[8];
+  if (pfVar3 == (float *)0x0) {
+    FUN_009e77f0(&fStack_40,param_1 + 4,&fStack_30);
+  }
+  else {
+    fStack_40 = pfVar3[8] * fStack_28 + pfVar3[4] * fStack_2c + *pfVar3 * fStack_30 + pfVar3[0xc];
+    fStack_3c = pfVar3[9] * fStack_28 + pfVar3[5] * fStack_2c + pfVar3[1] * fStack_30 + pfVar3[0xd];
+  }
+  if (fStack_40 < *param_2) {
+    *param_2 = fStack_40;
+  }
+  if (param_2[2] <= fStack_40 && fStack_40 != param_2[2]) {
+    param_2[2] = fStack_40;
+  }
+  if (fStack_3c < param_2[3]) {
+    param_2[3] = fStack_3c;
+  }
+  if (param_2[1] <= fStack_3c && fStack_3c != param_2[1]) {
+    param_2[1] = fStack_3c;
+  }
+  return param_2;
+}
+
+

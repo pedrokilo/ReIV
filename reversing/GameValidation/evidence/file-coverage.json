@@ -1,0 +1,10 @@
+{
+  "manifest_headers": 1223,
+  "disk_headers": 1223,
+  "missing_manifest_files": [],
+  "unlisted_disk_headers": [],
+  "headers_with_references": 1206,
+  "headers_without_references": 17,
+  "audio_headers": 28,
+  "animation_headers": 14
+}

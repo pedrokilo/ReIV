@@ -1,0 +1,13 @@
+Canonical GTAIV.exe preferred VA 00c87a50
+Entry bytes: d9 e8 c3 cc cc cc cc cc cc cc cc cc cc cc cc cc d9 e8 c2 08 00 cc cc cc 
+Body size: 3
+00c87a50 FLD1
+00c87a52 RET
+
+float10 FUN_00c87a50(void)
+
+{
+  return (float10)1;
+}
+
+

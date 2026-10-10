@@ -1,0 +1,101 @@
+Canonical GTAIV.exe preferred VA 009eebd0
+009eebd0 SUB ESP,0x10
+009eebd3 PUSH EBX
+009eebd4 PUSH ESI
+009eebd5 PUSH EDI
+009eebd6 MOV EDI,dword ptr [ESP + 0x20]
+009eebda PUSH EDI
+009eebdb MOV ESI,ECX
+009eebdd CALL 0x0050c410
+009eebe2 MOV ECX,dword ptr [ESI + EDI*0x4 + 0x30c]
+009eebe9 CALL 0x0050b7e0
+009eebee PUSH 0x0
+009eebf0 PUSH 0x0
+009eebf2 PUSH 0xc28820
+009eebf7 PUSH 0x0
+009eebf9 LEA ECX,[ESP + 0x1c]
+009eebfd CALL 0x005af9f0
+009eec02 MOV EAX,dword ptr [ESI + EDI*0x4 + 0x78c]
+009eec09 MOVQ XMM0,qword ptr [ESP + 0xc]
+009eec0f PUSH 0x0
+009eec11 PUSH 0x0
+009eec13 MOV EBX,0xbbeac0
+009eec18 MOV dword ptr [ESP + 0x20],EBX
+009eec1c MOVQ qword ptr [EAX],XMM0
+009eec20 MOVQ XMM0,qword ptr [ESP + 0x1c]
+009eec26 PUSH 0xc28820
+009eec2b PUSH 0x0
+009eec2d LEA ECX,[ESP + 0x1c]
+009eec31 MOVQ qword ptr [EAX + 0x8],XMM0
+009eec36 CALL 0x005af9f0
+009eec3b MOV EAX,dword ptr [ESI + EDI*0x4 + 0x78c]
+009eec42 MOVQ XMM0,qword ptr [ESP + 0xc]
+009eec48 ADD EAX,0x10
+009eec4b MOV dword ptr [ESP + 0x18],EBX
+009eec4f MOVQ qword ptr [EAX],XMM0
+009eec53 MOVQ XMM0,qword ptr [ESP + 0x14]
+009eec59 MOVQ qword ptr [EAX + 0x8],XMM0
+009eec5e MOV ECX,dword ptr [ESI + EDI*0x4 + 0x30c]
+009eec65 CALL 0x0050b930
+009eec6a LEA EAX,[EDI + 0x1]
+009eec6d CMP EAX,0x20
+009eec70 JNC 0x009eeca7
+009eec72 MOV EBX,0x20
+009eec77 LEA ESI,[ESI + EAX*0x4 + 0x308]
+009eec7e SUB EBX,EAX
+009eec80 LEA EDI,[ESI + 0x4]
+009eec83 PUSH EDI
+009eec84 PUSH ESI
+009eec85 CALL 0x009ebb90
+009eec8a LEA EAX,[ESI + 0x484]
+009eec90 PUSH EAX
+009eec91 ADD ESI,0x480
+009eec97 PUSH ESI
+009eec98 CALL 0x009ebb90
+009eec9d ADD ESP,0x10
+009eeca0 SUB EBX,0x1
+009eeca3 MOV ESI,EDI
+009eeca5 JNZ 0x009eec80
+009eeca7 POP EDI
+009eeca8 POP ESI
+009eeca9 POP EBX
+009eecaa ADD ESP,0x10
+009eecad RET 0x4
+
+void __thiscall FUN_009eebd0(int param_1,int param_2)
+
+{
+  uint uVar1;
+  undefined8 *puVar2;
+  undefined4 unaff_EBX;
+  int iVar3;
+  int iVar4;
+  undefined4 uStack_10;
+  undefined4 uStack_c;
+  
+  func_0x0050c410(param_2);
+  FUN_0050b7e0();
+  FUN_005af9f0(0,FUN_00c28820,0,0);
+  puVar2 = *(undefined8 **)(param_1 + 0x78c + param_2 * 4);
+  *puVar2 = CONCAT44(uStack_10,unaff_EBX);
+  puVar2[1] = CONCAT44(&DAT_00bbeac0,uStack_c);
+  FUN_005af9f0(0,FUN_00c28820,0,0);
+  iVar4 = *(int *)(param_1 + 0x78c + param_2 * 4);
+  *(ulonglong *)(iVar4 + 0x10) = CONCAT44(uStack_10,unaff_EBX);
+  *(ulonglong *)(iVar4 + 0x18) = CONCAT44(&DAT_00bbeac0,uStack_c);
+  FUN_0050b930();
+  uVar1 = param_2 + 1;
+  if (uVar1 < 0x20) {
+    iVar3 = 0x20 - uVar1;
+    iVar4 = param_1 + 0x308 + uVar1 * 4;
+    do {
+      FUN_009ebb90(iVar4,iVar4 + 4);
+      FUN_009ebb90(iVar4 + 0x480,iVar4 + 0x484);
+      iVar3 = iVar3 + -1;
+      iVar4 = iVar4 + 4;
+    } while (iVar3 != 0);
+  }
+  return;
+}
+
+

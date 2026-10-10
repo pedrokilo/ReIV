@@ -1,0 +1,171 @@
+Canonical GTAIV.exe preferred VA 009e1b70
+009e1b70 PUSH ECX
+009e1b71 PUSH ESI
+009e1b72 MOV ESI,ECX
+009e1b74 MOV AL,byte ptr [ESI + 0xf4]
+009e1b7a MOV CL,AL
+009e1b7c AND CL,0x20
+009e1b7f AND AL,0x9f
+009e1b81 ADD CL,CL
+009e1b83 OR CL,AL
+009e1b85 MOV byte ptr [ESI + 0xf4],CL
+009e1b8b MOVSS XMM0,dword ptr [0x018a8c64]
+009e1b93 MOVSS XMM1,dword ptr [0x018a8c68]
+009e1b9b MOVSS XMM2,dword ptr [0x018a8c60]
+009e1ba3 MOVSS dword ptr [ESI + 0xe4],XMM0
+009e1bab MOVSS dword ptr [ESI + 0xe0],XMM2
+009e1bb3 MOVSS dword ptr [ESI + 0xe8],XMM1
+009e1bbb MOVSS XMM0,dword ptr [0x018a8c6c]
+009e1bc3 MOVSS dword ptr [ESI + 0xec],XMM0
+009e1bcb AND byte ptr [ESI + 0xf4],0xef
+009e1bd2 MOV AL,byte ptr [ESI + 0xf4]
+009e1bd8 TEST AL,0x84
+009e1bda XORPS XMM0,XMM0
+009e1bdd MOVSS dword ptr [ESI + 0xf0],XMM0
+009e1be5 JNZ 0x009e1beb
+009e1be7 XOR CL,CL
+009e1be9 JMP 0x009e1bed
+009e1beb MOV CL,0x1
+009e1bed AND AL,0x7f
+009e1bef TEST CL,CL
+009e1bf1 MOV byte ptr [ESI + 0xf4],AL
+009e1bf7 JNZ 0x009e1c37
+009e1bf9 MOV EAX,dword ptr [ESI + 0x28]
+009e1bfc SHR EAX,0x6
+009e1bff AND EAX,0xf
+009e1c02 CMP EAX,0x3
+009e1c05 JZ 0x009e1c37
+009e1c07 CMP EAX,0x6
+009e1c0a JZ 0x009e1c37
+009e1c0c MOV EDX,dword ptr [ESI]
+009e1c0e MOV EAX,dword ptr [EDX + 0x24]
+009e1c11 MOV ECX,ESI
+009e1c13 CALL EAX
+009e1c15 TEST AL,AL
+009e1c17 JNZ 0x009e1c37
+009e1c19 MOV EDX,dword ptr [ESI]
+009e1c1b MOV EAX,dword ptr [EDX + 0x28]
+009e1c1e MOV ECX,ESI
+009e1c20 CALL EAX
+009e1c22 TEST AL,AL
+009e1c24 JNZ 0x009e1c37
+009e1c26 MOV EDX,dword ptr [ESI]
+009e1c28 MOV EAX,dword ptr [EDX + 0x2c]
+009e1c2b MOV ECX,ESI
+009e1c2d CALL EAX
+009e1c2f TEST AL,AL
+009e1c31 JZ 0x009e1ce9
+009e1c37 CALL 0x007955d0
+009e1c3c TEST AL,AL
+009e1c3e JNZ 0x009e1ce9
+009e1c44 MOV EDX,dword ptr [ESI]
+009e1c46 MOV EAX,dword ptr [EDX + 0xa0]
+009e1c4c MOV ECX,ESI
+009e1c4e CALL EAX
+009e1c50 TEST EAX,EAX
+009e1c52 JZ 0x009e1c6e
+009e1c54 MOV EDX,dword ptr [ESI]
+009e1c56 MOV EAX,dword ptr [EDX + 0xa0]
+009e1c5c MOV ECX,ESI
+009e1c5e CALL EAX
+009e1c60 MOV EDX,dword ptr [EAX]
+009e1c62 MOV ECX,EAX
+009e1c64 MOV EAX,dword ptr [EDX + 0xe0]
+009e1c6a CALL EAX
+009e1c6c JMP 0x009e1c74
+009e1c6e MOV EAX,dword ptr [ESI + 0x100]
+009e1c74 TEST EAX,EAX
+009e1c76 JZ 0x009e1ce9
+009e1c78 CMP dword ptr [ESI + 0x78],0x0
+009e1c7c JZ 0x009e1ce9
+009e1c7e TEST byte ptr [ESI + 0xf4],0x1
+009e1c85 JZ 0x009e1ce9
+009e1c87 MOV EDX,dword ptr [ESI]
+009e1c89 MOV EAX,dword ptr [EDX + 0x24]
+009e1c8c MOV ECX,ESI
+009e1c8e CALL EAX
+009e1c90 TEST AL,AL
+009e1c92 JNZ 0x009e1cb8
+009e1c94 MOV EDX,dword ptr [ESI]
+009e1c96 MOV EAX,dword ptr [EDX + 0x2c]
+009e1c99 MOV ECX,ESI
+009e1c9b CALL EAX
+009e1c9d TEST AL,AL
+009e1c9f JNZ 0x009e1cb8
+009e1ca1 MOV EDX,dword ptr [ESI]
+009e1ca3 MOV EAX,dword ptr [EDX + 0x28]
+009e1ca6 MOV ECX,ESI
+009e1ca8 CALL EAX
+009e1caa TEST AL,AL
+009e1cac JNZ 0x009e1cb8
+009e1cae MOVSS XMM0,dword ptr [0x011dde7c]
+009e1cb6 JMP 0x009e1cbb
+009e1cb8 XORPS XMM0,XMM0
+009e1cbb CMP byte ptr [0x010c7cd0],0x0
+009e1cc2 MOVSS dword ptr [ESP + 0x4],XMM0
+009e1cc8 JZ 0x009e1cd8
+009e1cca MOVSS XMM0,dword ptr [0x011dde8c]
+009e1cd2 MOVSS dword ptr [ESP + 0x4],XMM0
+009e1cd8 FLD float ptr [ESP + 0x4]
+009e1cdc PUSH ECX
+009e1cdd MOV ECX,dword ptr [ESI + 0x78]
+009e1ce0 FSTP float ptr [ESP]
+009e1ce3 PUSH ESI
+009e1ce4 CALL 0x009efb80
+009e1ce9 POP ESI
+009e1cea POP ECX
+009e1ceb RET
+
+void __fastcall FUN_009e1b70(int *param_1)
+
+{
+  byte bVar1;
+  int iVar2;
+  char cVar3;
+  uint uVar4;
+  int iVar5;
+  int *piVar6;
+  undefined4 uStack_4;
+  
+  *(byte *)(param_1 + 0x3d) =
+       (*(byte *)(param_1 + 0x3d) & 0x20) * '\x02' | *(byte *)(param_1 + 0x3d) & 0x9f;
+  iVar2 = DAT_018a8c68;
+  iVar5 = DAT_018a8c60;
+  param_1[0x39] = DAT_018a8c64;
+  param_1[0x38] = iVar5;
+  param_1[0x3a] = iVar2;
+  param_1[0x3b] = DAT_018a8c6c;
+  *(byte *)(param_1 + 0x3d) = *(byte *)(param_1 + 0x3d) & 0xef;
+  bVar1 = *(byte *)(param_1 + 0x3d);
+  param_1[0x3c] = 0;
+  *(byte *)(param_1 + 0x3d) = bVar1 & 0x7f;
+  if ((((((bVar1 & 0x84) != 0) || (uVar4 = (uint)param_1[10] >> 6 & 0xf, uVar4 == 3)) ||
+       (uVar4 == 6)) ||
+      (((cVar3 = (**(code **)(*param_1 + 0x24))(), cVar3 != '\0' ||
+        (cVar3 = (**(code **)(*param_1 + 0x28))(), cVar3 != '\0')) ||
+       (cVar3 = (**(code **)(*param_1 + 0x2c))(), cVar3 != '\0')))) &&
+     (cVar3 = FUN_007955d0(), cVar3 == '\0')) {
+    iVar5 = (**(code **)(*param_1 + 0xa0))();
+    if (iVar5 == 0) {
+      iVar5 = param_1[0x40];
+    }
+    else {
+      piVar6 = (int *)(**(code **)(*param_1 + 0xa0))();
+      iVar5 = (**(code **)(*piVar6 + 0xe0))();
+    }
+    if (((iVar5 != 0) && (param_1[0x1e] != 0)) && ((*(byte *)(param_1 + 0x3d) & 1) != 0)) {
+      cVar3 = (**(code **)(*param_1 + 0x24))();
+      if (((cVar3 != '\0') || (cVar3 = (**(code **)(*param_1 + 0x2c))(), cVar3 != '\0')) ||
+         (cVar3 = (**(code **)(*param_1 + 0x28))(), uStack_4 = DAT_011dde7c, cVar3 != '\0')) {
+        uStack_4 = 0;
+      }
+      if (DAT_010c7cd0 != '\0') {
+        uStack_4 = DAT_011dde8c;
+      }
+      FUN_009efb80(param_1,uStack_4);
+    }
+  }
+  return;
+}
+
+

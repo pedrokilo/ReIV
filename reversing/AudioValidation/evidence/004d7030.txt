@@ -1,0 +1,13 @@
+Canonical GTAIV.exe preferred VA 004d7030
+Entry bytes: 32 c0 c3 cc cc cc cc cc cc cc cc cc cc cc cc cc 33 c9 89 48 04 89 48 08 
+Body size: 3
+004d7030 XOR AL,AL
+004d7032 RET
+
+undefined1 FUN_004d7030(void)
+
+{
+  return 0;
+}
+
+

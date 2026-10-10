@@ -1,0 +1,12 @@
+Canonical GTAIV.exe preferred VA 0050b6e0
+0050b6e0 ADD dword ptr [ECX + 0x4],0x1
+0050b6e4 RET
+
+void __fastcall FUN_0050b6e0(int param_1)
+
+{
+  *(int *)(param_1 + 4) = *(int *)(param_1 + 4) + 1;
+  return;
+}
+
+

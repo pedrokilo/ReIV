@@ -1,0 +1,13 @@
+Canonical GTAIV.exe preferred VA 00aec4d0
+Entry bytes: 8b 81 20 08 00 00 c3 cc cc cc cc cc cc cc cc cc 55 8b ec 83 e4 f0 83 ec 
+Body size: 7
+00aec4d0 MOV EAX,dword ptr [ECX + 0x820]
+00aec4d6 RET
+
+undefined4 __fastcall FUN_00aec4d0(int param_1)
+
+{
+  return *(undefined4 *)(param_1 + 0x820);
+}
+
+

@@ -1,0 +1,17 @@
+Canonical GTAIV.exe preferred VA 0089bbf0
+0089bbf0 MOVZX EAX,byte ptr [ESP + 0x4]
+0089bbf5 SHL EAX,0x5
+0089bbf8 XOR EAX,dword ptr [ECX + 0x24]
+0089bbfb AND EAX,0x20
+0089bbfe XOR dword ptr [ECX + 0x24],EAX
+0089bc01 RET 0x4
+
+void __thiscall FUN_0089bbf0(int param_1,byte param_2)
+
+{
+  *(uint *)(param_1 + 0x24) =
+       *(uint *)(param_1 + 0x24) ^ ((uint)param_2 << 5 ^ *(uint *)(param_1 + 0x24)) & 0x20;
+  return;
+}
+
+

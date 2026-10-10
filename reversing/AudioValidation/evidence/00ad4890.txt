@@ -1,0 +1,186 @@
+Canonical GTAIV.exe preferred VA 00ad4890
+Entry bytes: 80 3d d9 2c 1e 01 00 53 55 56 8b f1 57 b9 02 00 00 00 75 16 8b 46 08 85 
+Body size: 403
+00ad4890 CMP byte ptr [0x011e2cd9],0x0
+00ad4897 PUSH EBX
+00ad4898 PUSH EBP
+00ad4899 PUSH ESI
+00ad489a MOV ESI,ECX
+00ad489c PUSH EDI
+00ad489d MOV ECX,0x2
+00ad48a2 JNZ 0x00ad48ba
+00ad48a4 MOV EAX,dword ptr [ESI + 0x8]
+00ad48a7 TEST EAX,EAX
+00ad48a9 JZ 0x00ad48ba
+00ad48ab CMP word ptr [EAX + 0x6],CX
+00ad48af JZ 0x00ad48d0
+00ad48b1 CMP byte ptr [ESI + 0xa2],0x0
+00ad48b8 JNZ 0x00ad48d0
+00ad48ba MOV EAX,dword ptr [ESI + 0xc]
+00ad48bd TEST EAX,EAX
+00ad48bf JZ 0x00ad48d4
+00ad48c1 CMP word ptr [EAX + 0x6],CX
+00ad48c5 JZ 0x00ad48d0
+00ad48c7 CMP byte ptr [ESI + 0xa2],0x0
+00ad48ce JZ 0x00ad48d4
+00ad48d0 MOV BL,0x1
+00ad48d2 JMP 0x00ad48d6
+00ad48d4 XOR BL,BL
+00ad48d6 MOV EAX,dword ptr [ESI + 0x98]
+00ad48dc ADD EAX,0x1f4
+00ad48e1 CMP dword ptr [0x011dde74],EAX
+00ad48e7 SETC CL
+00ad48ea CMP dword ptr [0x010d0170],0x1
+00ad48f1 JZ 0x00ad49b7
+00ad48f7 MOV EDX,dword ptr [0x010e1984]
+00ad48fd CMP EDX,dword ptr [0x00e3447c]
+00ad4903 JNZ 0x00ad49b7
+00ad4909 CMP dword ptr [0x00f0e4a0],0x12
+00ad4910 JZ 0x00ad49b7
+00ad4916 TEST BL,BL
+00ad4918 MOV AL,[0x01668037]
+00ad491d JNZ 0x00ad492b
+00ad491f TEST CL,CL
+00ad4921 JNZ 0x00ad492b
+00ad4923 TEST AL,AL
+00ad4925 JZ 0x00ad49b7
+00ad492b TEST AL,AL
+00ad492d MOV byte ptr [0x011a378d],0x1
+00ad4934 JZ 0x00ad4941
+00ad4936 MOV EAX,[0x01674c48]
+00ad493b MOV dword ptr [ESI + 0x94],EAX
+00ad4941 MOV EAX,dword ptr [ESI + 0x94]
+00ad4947 TEST EAX,EAX
+00ad4949 JZ 0x00ad499e
+00ad494b XOR EBP,EBP
+00ad494d CMP byte ptr [EAX + 0xa],0x0
+00ad4951 JBE 0x00ad499e
+00ad4953 XOR EDI,EDI
+00ad4955 MOV ECX,dword ptr [ESI + 0x94]
+00ad495b MOV EDX,dword ptr [ECX + EDI*0x1 + 0xb]
+00ad495f PUSH EDX
+00ad4960 MOV ECX,0x1716ca0
+00ad4965 CALL 0x00cdc1b0
+00ad496a TEST EAX,EAX
+00ad496c JZ 0x00ad498a
+00ad496e MOV ECX,dword ptr [ESI + 0x94]
+00ad4974 MOVSX EDX,byte ptr [ECX + EDI*0x1 + 0xf]
+00ad4979 PUSH ECX
+00ad497a CVTSI2SS XMM0,EDX
+00ad497e MOV ECX,EAX
+00ad4980 MOVSS dword ptr [ESP],XMM0
+00ad4985 CALL 0x0088ff10
+00ad498a MOV EAX,dword ptr [ESI + 0x94]
+00ad4990 MOVZX ECX,byte ptr [EAX + 0xa]
+00ad4994 ADD EBP,0x1
+00ad4997 ADD EDI,0x5
+00ad499a CMP EBP,ECX
+00ad499c JC 0x00ad4955
+00ad499e TEST BL,BL
+00ad49a0 MOV byte ptr [ESI + 0xa2],0x0
+00ad49a7 JZ 0x00ad4a1f
+00ad49a9 POP EDI
+00ad49aa MOV byte ptr [ESI + 0xa1],0x1
+00ad49b1 POP ESI
+00ad49b2 POP EBP
+00ad49b3 POP EBX
+00ad49b4 RET 0x4
+00ad49b7 MOV EAX,dword ptr [ESI + 0x94]
+00ad49bd TEST EAX,EAX
+00ad49bf JZ 0x00ad4a0a
+00ad49c1 XOR EBP,EBP
+00ad49c3 CMP byte ptr [EAX + 0xa],0x0
+00ad49c7 JBE 0x00ad4a0a
+00ad49c9 XOR EDI,EDI
+00ad49cb JMP 0x00ad49d0
+00ad49d0 MOV EDX,dword ptr [ESI + 0x94]
+00ad49d6 MOV EAX,dword ptr [EDX + EDI*0x1 + 0xb]
+00ad49da PUSH EAX
+00ad49db MOV ECX,0x1716ca0
+00ad49e0 CALL 0x00cdc1b0
+00ad49e5 TEST EAX,EAX
+00ad49e7 JZ 0x00ad49f6
+00ad49e9 FLDZ
+00ad49eb PUSH ECX
+00ad49ec MOV ECX,EAX
+00ad49ee FSTP float ptr [ESP]
+00ad49f1 CALL 0x0088ff10
+00ad49f6 MOV ECX,dword ptr [ESI + 0x94]
+00ad49fc MOVZX EDX,byte ptr [ECX + 0xa]
+00ad4a00 ADD EBP,0x1
+00ad4a03 ADD EDI,0x5
+00ad4a06 CMP EBP,EDX
+00ad4a08 JC 0x00ad49d0
+00ad4a0a MOV byte ptr [ESI + 0xa1],0x0
+00ad4a11 MOV byte ptr [0x011a378d],0x0
+00ad4a18 MOV byte ptr [ESI + 0xa2],0x0
+00ad4a1f POP EDI
+00ad4a20 POP ESI
+00ad4a21 POP EBP
+00ad4a22 POP EBX
+00ad4a23 RET 0x4
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void __fastcall FUN_00ad4890(int param_1)
+
+{
+  bool bVar1;
+  int iVar2;
+  uint uVar3;
+  int iVar4;
+  
+  if ((((DAT_011e2cd9 == '\0') && (*(int *)(param_1 + 8) != 0)) &&
+      ((*(short *)(*(int *)(param_1 + 8) + 6) == 2 || (*(char *)(param_1 + 0xa2) != '\0')))) ||
+     ((*(int *)(param_1 + 0xc) != 0 &&
+      ((*(short *)(*(int *)(param_1 + 0xc) + 6) == 2 || (*(char *)(param_1 + 0xa2) != '\0')))))) {
+    bVar1 = true;
+  }
+  else {
+    bVar1 = false;
+  }
+  if ((((DAT_010d0170 == 1) || (DAT_010e1984 != DAT_00e3447c)) || (DAT_00f0e4a0 == 0x12)) ||
+     (((!bVar1 && (*(int *)(param_1 + 0x98) + 500U <= DAT_011dde74)) && (DAT_01668037 == '\0')))) {
+    if ((*(int *)(param_1 + 0x94) != 0) &&
+       (uVar3 = 0, *(char *)(*(int *)(param_1 + 0x94) + 10) != '\0')) {
+      iVar4 = 0;
+      do {
+        iVar2 = FUN_00cdc1b0(*(undefined4 *)(*(int *)(param_1 + 0x94) + 0xb + iVar4));
+        if (iVar2 != 0) {
+          FUN_0088ff10(0);
+        }
+        uVar3 = uVar3 + 1;
+        iVar4 = iVar4 + 5;
+      } while (uVar3 < *(byte *)(*(int *)(param_1 + 0x94) + 10));
+    }
+    *(undefined1 *)(param_1 + 0xa1) = 0;
+    DAT_011a378d = 0;
+    *(undefined1 *)(param_1 + 0xa2) = 0;
+  }
+  else {
+    DAT_011a378d = 1;
+    if (DAT_01668037 != '\0') {
+      *(undefined4 *)(param_1 + 0x94) = _DAT_01674c48;
+    }
+    if ((*(int *)(param_1 + 0x94) != 0) &&
+       (uVar3 = 0, *(char *)(*(int *)(param_1 + 0x94) + 10) != '\0')) {
+      iVar4 = 0;
+      do {
+        iVar2 = FUN_00cdc1b0(*(undefined4 *)(*(int *)(param_1 + 0x94) + 0xb + iVar4));
+        if (iVar2 != 0) {
+          FUN_0088ff10((float)(int)*(char *)(*(int *)(param_1 + 0x94) + 0xf + iVar4));
+        }
+        uVar3 = uVar3 + 1;
+        iVar4 = iVar4 + 5;
+      } while (uVar3 < *(byte *)(*(int *)(param_1 + 0x94) + 10));
+    }
+    *(undefined1 *)(param_1 + 0xa2) = 0;
+    if (bVar1) {
+      *(undefined1 *)(param_1 + 0xa1) = 1;
+      return;
+    }
+  }
+  return;
+}
+
+

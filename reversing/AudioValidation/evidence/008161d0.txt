@@ -1,0 +1,16 @@
+Canonical GTAIV.exe preferred VA 008161d0
+Entry bytes: 8b 54 24 04 33 c0 3b 51 04 0f 94 c0 c2 04 00 cc 56 8b f1 e8 88 20 4d 00 
+Body size: 15
+008161d0 MOV EDX,dword ptr [ESP + 0x4]
+008161d4 XOR EAX,EAX
+008161d6 CMP EDX,dword ptr [ECX + 0x4]
+008161d9 SETZ AL
+008161dc RET 0x4
+
+bool __thiscall FUN_008161d0(int param_1,int param_2)
+
+{
+  return param_2 == *(int *)(param_1 + 4);
+}
+
+

@@ -1,0 +1,44 @@
+Canonical GTAIV.exe preferred VA 009e6a40
+009e6a40 PUSH ESI
+009e6a41 MOV ESI,dword ptr [ECX + 0x38]
+009e6a44 TEST ESI,ESI
+009e6a46 JZ 0x009e6a72
+009e6a48 MOV EAX,dword ptr [ESI]
+009e6a4a MOV EDX,dword ptr [EAX + 0x4]
+009e6a4d MOV ECX,ESI
+009e6a4f CALL EDX
+009e6a51 CMP EAX,0xd
+009e6a54 JGE 0x009e6a64
+009e6a56 MOV EAX,dword ptr [ESI]
+009e6a58 MOV EDX,dword ptr [EAX + 0x4]
+009e6a5b MOV ECX,ESI
+009e6a5d CALL EDX
+009e6a5f CMP EAX,0x3
+009e6a62 JNZ 0x009e6a72
+009e6a64 MOV ECX,dword ptr [ESP + 0x8]
+009e6a68 MOV EAX,dword ptr [ESI]
+009e6a6a MOV EDX,dword ptr [EAX + 0x8]
+009e6a6d PUSH ECX
+009e6a6e MOV ECX,ESI
+009e6a70 CALL EDX
+009e6a72 POP ESI
+009e6a73 RET 0x4
+
+void __thiscall FUN_009e6a40(int param_1,undefined4 param_2)
+
+{
+  int *piVar1;
+  int iVar2;
+  
+  piVar1 = *(int **)(param_1 + 0x38);
+  if (piVar1 != (int *)0x0) {
+    iVar2 = (**(code **)(*piVar1 + 4))();
+    if ((iVar2 < 0xd) && (iVar2 = (**(code **)(*piVar1 + 4))(), iVar2 != 3)) {
+      return;
+    }
+    (**(code **)(*piVar1 + 8))(param_2);
+  }
+  return;
+}
+
+

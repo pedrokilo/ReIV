@@ -1,0 +1,114 @@
+Canonical GTAIV.exe preferred VA 009eaf60
+009eaf60 PUSH EBP
+009eaf61 MOV EBP,ESP
+009eaf63 AND ESP,0xfffffff0
+009eaf66 SUB ESP,0x18
+009eaf69 PUSH ESI
+009eaf6a MOV ESI,dword ptr [EBP + 0x8]
+009eaf6d PUSH EDI
+009eaf6e MOV EDI,ECX
+009eaf70 CMP dword ptr [EDI + 0x20],0x0
+009eaf74 JNZ 0x009eb001
+009eaf7a MOVSS XMM0,dword ptr [ESI + 0x28]
+009eaf7f UCOMISS XMM0,dword ptr [0x00d50398]
+009eaf86 LAHF
+009eaf87 TEST AH,0x44
+009eaf8a JP 0x009eaffc
+009eaf8c MOVSS XMM0,dword ptr [ESI + 0x30]
+009eaf91 MOVSS XMM1,dword ptr [ESI + 0x14]
+009eaf96 MOVSS dword ptr [ESP + 0x10],XMM0
+009eaf9c MOVSS XMM0,dword ptr [ESI + 0x34]
+009eafa1 MOVSS dword ptr [ESP + 0x14],XMM0
+009eafa7 MOVSS XMM0,dword ptr [ESI + 0x38]
+009eafac MOVSS dword ptr [ESP + 0x18],XMM0
+009eafb2 MOVSS XMM0,dword ptr [0x00ebded0]
+009eafba SUBSS XMM0,dword ptr [ESI + 0x10]
+009eafbf CVTPS2PD XMM0,XMM0
+009eafc2 CVTPS2PD XMM1,XMM1
+009eafc5 CALL 0x00d123ac
+009eafca MOVSS XMM1,dword ptr [ESP + 0x10]
+009eafd0 MOVSS dword ptr [EDI + 0x10],XMM1
+009eafd5 MOVSS XMM1,dword ptr [ESP + 0x14]
+009eafdb MOVSS dword ptr [EDI + 0x14],XMM1
+009eafe0 MOVSS XMM1,dword ptr [ESP + 0x18]
+009eafe6 CVTSD2SS XMM0,XMM0
+009eafea MOVSS dword ptr [EDI + 0x18],XMM1
+009eafef MOVSS dword ptr [EDI + 0x1c],XMM0
+009eaff4 POP EDI
+009eaff5 POP ESI
+009eaff6 MOV ESP,EBP
+009eaff8 POP EBP
+009eaff9 RET 0xc
+009eaffc CALL 0x009ea460
+009eb001 MOV EAX,dword ptr [EDI + 0x20]
+009eb004 FLD float ptr [ESI]
+009eb006 FSTP float ptr [EAX]
+009eb008 POP EDI
+009eb009 FLD float ptr [ESI + 0x4]
+009eb00c FSTP float ptr [EAX + 0x4]
+009eb00f FLD float ptr [ESI + 0x8]
+009eb012 FSTP float ptr [EAX + 0x8]
+009eb015 FLD float ptr [ESI + 0x10]
+009eb018 FSTP float ptr [EAX + 0x10]
+009eb01b FLD float ptr [ESI + 0x14]
+009eb01e FSTP float ptr [EAX + 0x14]
+009eb021 FLD float ptr [ESI + 0x18]
+009eb024 FSTP float ptr [EAX + 0x18]
+009eb027 FLD float ptr [ESI + 0x20]
+009eb02a FSTP float ptr [EAX + 0x20]
+009eb02d FLD float ptr [ESI + 0x24]
+009eb030 FSTP float ptr [EAX + 0x24]
+009eb033 FLD float ptr [ESI + 0x28]
+009eb036 FSTP float ptr [EAX + 0x28]
+009eb039 FLD float ptr [ESI + 0x30]
+009eb03c FSTP float ptr [EAX + 0x30]
+009eb03f FLD float ptr [ESI + 0x34]
+009eb042 FSTP float ptr [EAX + 0x34]
+009eb045 FLD float ptr [ESI + 0x38]
+009eb048 POP ESI
+009eb049 FSTP float ptr [EAX + 0x38]
+009eb04c MOV ESP,EBP
+009eb04e POP EBP
+009eb04f RET 0xc
+
+void __thiscall FUN_009eaf60(int param_1,undefined4 *param_2)
+
+{
+  undefined4 uVar1;
+  undefined4 uVar2;
+  undefined4 uVar3;
+  undefined4 *puVar4;
+  double dVar5;
+  
+  if (*(int *)(param_1 + 0x20) == 0) {
+    if ((float)param_2[10] == DAT_00d50398) {
+      uVar1 = param_2[0xc];
+      uVar2 = param_2[0xd];
+      uVar3 = param_2[0xe];
+      dVar5 = (double)(DAT_00ebded0 - (float)param_2[4]);
+      FUN_00d123ac();
+      *(undefined4 *)(param_1 + 0x10) = uVar1;
+      *(undefined4 *)(param_1 + 0x14) = uVar2;
+      *(undefined4 *)(param_1 + 0x18) = uVar3;
+      *(float *)(param_1 + 0x1c) = (float)dVar5;
+      return;
+    }
+    FUN_009ea460();
+  }
+  puVar4 = *(undefined4 **)(param_1 + 0x20);
+  *puVar4 = *param_2;
+  puVar4[1] = param_2[1];
+  puVar4[2] = param_2[2];
+  puVar4[4] = param_2[4];
+  puVar4[5] = param_2[5];
+  puVar4[6] = param_2[6];
+  puVar4[8] = param_2[8];
+  puVar4[9] = param_2[9];
+  puVar4[10] = param_2[10];
+  puVar4[0xc] = param_2[0xc];
+  puVar4[0xd] = param_2[0xd];
+  puVar4[0xe] = param_2[0xe];
+  return;
+}
+
+

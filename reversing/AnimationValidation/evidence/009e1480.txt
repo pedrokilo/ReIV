@@ -1,0 +1,30 @@
+Canonical GTAIV.exe preferred VA 009e1480
+009e1480 PUSH ESI
+009e1481 PUSH EDI
+009e1482 MOV ESI,ECX
+009e1484 CALL 0x009dff40
+009e1489 MOV EDI,EAX
+009e148b TEST EDI,EDI
+009e148d JNZ 0x009e149d
+009e148f MOV EAX,dword ptr [ESI]
+009e1491 MOV EDX,dword ptr [EAX + 0xcc]
+009e1497 MOV ECX,ESI
+009e1499 CALL EDX
+009e149b MOV EAX,EDI
+009e149d POP EDI
+009e149e POP ESI
+009e149f RET
+
+int __fastcall FUN_009e1480(int *param_1)
+
+{
+  int iVar1;
+  
+  iVar1 = FUN_009dff40();
+  if (iVar1 == 0) {
+    (**(code **)(*param_1 + 0xcc))();
+  }
+  return iVar1;
+}
+
+

@@ -1,0 +1,45 @@
+Canonical GTAIV.exe preferred VA 005e1700
+005e1700 PUSH ESI
+005e1701 MOV ESI,ECX
+005e1703 CMP dword ptr [ESI + 0x34],0x0
+005e1707 MOV dword ptr [ESI],0xeba6d0
+005e170d JZ 0x005e1724
+005e170f MOV ECX,dword ptr [ESI + 0x30]
+005e1712 TEST ECX,ECX
+005e1714 JZ 0x005e1724
+005e1716 MOV EAX,dword ptr [ECX]
+005e1718 MOV EDX,dword ptr [EAX + 0x8]
+005e171b PUSH 0xe0e828
+005e1720 PUSH 0x2
+005e1722 CALL EDX
+005e1724 CMP byte ptr [ESI + 0x2d],0x0
+005e1728 JZ 0x005e174c
+005e172a CMP byte ptr [ESI + 0x38],0x0
+005e172e JNZ 0x005e174c
+005e1730 MOV EAX,dword ptr [ESI + 0x1c]
+005e1733 MOV ECX,dword ptr [ESI + 0x20]
+005e1736 MOV EDX,dword ptr [ESI + 0xc]
+005e1739 PUSH 0xe0e884
+005e173e PUSH 0x0
+005e1740 PUSH 0xe0e888
+005e1745 PUSH EAX
+005e1746 PUSH ECX
+005e1747 CALL EDX
+005e1749 ADD ESP,0x14
+005e174c POP ESI
+005e174d RET
+
+void __fastcall FUN_005e1700(undefined4 *param_1)
+
+{
+  *param_1 = &DAT_00eba6d0;
+  if ((param_1[0xd] != 0) && ((int *)param_1[0xc] != (int *)0x0)) {
+    (**(code **)(*(int *)param_1[0xc] + 8))(2,&DAT_00e0e828);
+  }
+  if ((*(char *)((int)param_1 + 0x2d) != '\0') && (*(char *)(param_1 + 0xe) == '\0')) {
+    (*(code *)param_1[3])(param_1[8],param_1[7],&DAT_00e0e888,0,&DAT_00e0e884);
+  }
+  return;
+}
+
+

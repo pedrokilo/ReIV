@@ -1,0 +1,16 @@
+Canonical GTAIV.exe preferred VA 00acd2e0
+Entry bytes: e9 3b b1 21 00 cc cc cc cc cc cc cc cc cc cc cc 33 c0 83 3c 85 78 00 67 
+Body size: 5
+00acd2e0 JMP 0x00ce8420
+
+void __fastcall thunk_FUN_00ce8420(int param_1)
+
+{
+  undefined2 uVar1;
+  
+  uVar1 = FUN_00ce93d0(param_1);
+  *(undefined2 *)(param_1 + 4) = uVar1;
+  return;
+}
+
+

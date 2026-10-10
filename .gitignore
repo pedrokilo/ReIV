@@ -4,3 +4,7 @@
 /bin/*.lib
 /bin/*.exp
 /reversing/artifacts/
+__pycache__/
+*.py[cod]
+/hs_err_pid*.log
+/replay_pid*.log

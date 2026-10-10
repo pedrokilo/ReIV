@@ -1,0 +1,17 @@
+[info][21:23:50.392][DebugLog.cpp:57]: Debug console always enabled | visible=true writable=true hwnd=0x001C1E9C
+[info][21:23:50.398][ReIV.cpp:36]: ReIV bootstrap loaded | GTA IV 1.0.7.0 | x86
+[info][21:23:50.422][ReIV.cpp:44]: CDynamicEntity::GetBoneMatrix original binding available | RVA 0x005C7710 | root-bone historical test passed
+[debug][21:23:50.430][GetBoneMatrixProbe.h:50]: GetBoneMatrix test enabled: waiting for a live player
+[info][21:23:50.452][ReIV.cpp:68]: atStringHash bank passed; replacement installed
+[debug][21:23:50.463][ReIV.cpp:70]: Runtime catalog exported to ReIV-runtime-hooks.csv
+[info][21:24:07.545][ReIV.cpp:22]: SDK gameLoadEvent received
+[info][21:24:20.291][RageWriteProbe.h:42]: Rage write RVA 0x00154660 calls=64 failures=0
+[info][21:24:20.292][RageWriteProbe.h:42]: Rage write RVA 0x00154710 calls=64 failures=0
+[info][21:24:20.292][RageWriteProbe.h:42]: Rage write RVA 0x0015DE60 calls=64 failures=0
+[info][21:24:20.292][RageWriteProbe.h:42]: Rage write RVA 0x0016A9E0 calls=64 failures=0
+[info][21:24:20.292][RageWriteProbe.h:42]: Rage write RVA 0x0019B9C0 calls=64 failures=0
+[info][21:24:20.292][RageWriteProbe.h:42]: Rage write RVA 0x001AA230 calls=64 failures=0
+[info][21:24:20.293][RageWriteProbe.h:42]: Rage write RVA 0x002848F0 calls=64 failures=0
+[info][21:24:31.493][GetBoneMatrixProbe.h:64]: GetBoneMatrix PASSED | calls=64 failures=0 exceptions=0 | entity=0x06D0A700 matrix=0x08322D10
+[info][21:24:33.591][ReIV.cpp:27]: SDK ingameStartupEvent received
+[info][21:24:34.204][ReIV.cpp:76]: ReIV process detach

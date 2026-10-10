@@ -1,0 +1,22 @@
+Canonical GTAIV.exe preferred VA 00d11d73
+00d11d73 MOV EDI,EDI
+00d11d75 PUSH EBP
+00d11d76 MOV EBP,ESP
+00d11d78 PUSH dword ptr [EBP + 0x14]
+00d11d7b PUSH 0x0
+00d11d7d PUSH dword ptr [EBP + 0x10]
+00d11d80 PUSH dword ptr [EBP + 0xc]
+00d11d83 PUSH dword ptr [EBP + 0x8]
+00d11d86 CALL 0x00d11c9f
+00d11d8b ADD ESP,0x14
+00d11d8e POP EBP
+00d11d8f RET
+
+void FUN_00d11d73(undefined4 param_1,undefined4 param_2,undefined4 param_3,undefined4 param_4)
+
+{
+  FUN_00d11c9f(param_1,param_2,param_3,0,param_4);
+  return;
+}
+
+

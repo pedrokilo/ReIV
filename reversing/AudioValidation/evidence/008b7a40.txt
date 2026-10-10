@@ -1,0 +1,119 @@
+Canonical GTAIV.exe preferred VA 008b7a40
+Entry bytes: 55 8b ec 83 e4 f0 83 ec 24 53 56 57 8b 7d 08 8b d9 0f b6 4f 04 81 f9 ff 
+Body size: 262
+008b7a40 PUSH EBP
+008b7a41 MOV EBP,ESP
+008b7a43 AND ESP,0xfffffff0
+008b7a46 SUB ESP,0x24
+008b7a49 PUSH EBX
+008b7a4a PUSH ESI
+008b7a4b PUSH EDI
+008b7a4c MOV EDI,dword ptr [EBP + 0x8]
+008b7a4f MOV EBX,ECX
+008b7a51 MOVZX ECX,byte ptr [EDI + 0x4]
+008b7a55 CMP ECX,0xff
+008b7a5b JZ 0x008b7a7e
+008b7a5d MOVZX EDX,byte ptr [EDI + 0x40]
+008b7a61 MOV EAX,[0x01719040]
+008b7a66 IMUL EDX,EDX,0x6f40
+008b7a6c IMUL EAX,ECX
+008b7a6f MOV ECX,dword ptr [0x01719060]
+008b7a75 ADD EAX,dword ptr [EDX + ECX*0x1 + 0x6f14]
+008b7a7c JMP 0x008b7a80
+008b7a7e XOR EAX,EAX
+008b7a80 MOV EAX,dword ptr [EAX + 0xcc]
+008b7a86 TEST EAX,EAX
+008b7a88 JNS 0x008b7b3d
+008b7a8e AND EAX,0x7fffffff
+008b7a93 LEA EDX,[ESP + 0x20]
+008b7a97 MOV ESI,EAX
+008b7a99 PUSH EDX
+008b7a9a PUSH ESI
+008b7a9b MOV ECX,EBX
+008b7a9d CALL 0x008b6080
+008b7aa2 LEA EAX,[ESP + 0x20]
+008b7aa6 PUSH EAX
+008b7aa7 MOV ECX,EDI
+008b7aa9 CALL 0x007b9610
+008b7aae PUSH ESI
+008b7aaf MOV ECX,EBX
+008b7ab1 CALL 0x008b5ce0
+008b7ab6 FSTP float ptr [ESP + 0x1c]
+008b7aba XORPS XMM0,XMM0
+008b7abd LEA ECX,[ESI + ESI*0x2]
+008b7ac0 SHL ECX,0x5
+008b7ac3 TEST byte ptr [ECX + EBX*0x1 + 0x8294],0x4
+008b7acb MOVSS dword ptr [ESP + 0x14],XMM0
+008b7ad1 JZ 0x008b7b2a
+008b7ad3 LEA EDX,[ESP + 0x18]
+008b7ad7 PUSH EDX
+008b7ad8 LEA EAX,[ESP + 0x18]
+008b7adc PUSH EAX
+008b7add LEA ECX,[ESP + 0x28]
+008b7ae1 PUSH ECX
+008b7ae2 MOV ECX,0x168cff0
+008b7ae7 CALL 0x00ae6370
+008b7aec MOVZX EAX,byte ptr [EDI + 0x4]
+008b7af0 CMP EAX,0xff
+008b7af5 JZ 0x008b7b18
+008b7af7 MOVZX EDX,byte ptr [EDI + 0x40]
+008b7afb MOV ECX,dword ptr [0x01719040]
+008b7b01 IMUL EDX,EDX,0x6f40
+008b7b07 IMUL ECX,EAX
+008b7b0a MOV EAX,[0x01719060]
+008b7b0f ADD ECX,dword ptr [EDX + EAX*0x1 + 0x6f14]
+008b7b16 JMP 0x008b7b1a
+008b7b18 XOR ECX,ECX
+008b7b1a MOV EDX,dword ptr [ESP + 0x18]
+008b7b1e PUSH EDX
+008b7b1f CALL 0x00cef500
+008b7b24 MOVSS XMM0,dword ptr [ESP + 0x14]
+008b7b2a ADDSS XMM0,dword ptr [ESP + 0x1c]
+008b7b30 PUSH ECX
+008b7b31 MOV ECX,EDI
+008b7b33 MOVSS dword ptr [ESP],XMM0
+008b7b38 CALL 0x007b95c0
+008b7b3d POP EDI
+008b7b3e POP ESI
+008b7b3f POP EBX
+008b7b40 MOV ESP,EBP
+008b7b42 POP EBP
+008b7b43 RET 0x8
+
+void __thiscall FUN_008b7a40(int param_1,int param_2)
+
+{
+  uint uVar1;
+  int iVar2;
+  uint uVar3;
+  float10 fVar4;
+  float fStack_2c;
+  undefined4 uStack_28;
+  float fStack_24;
+  undefined1 auStack_20 [28];
+  
+  if (*(byte *)(param_2 + 4) == 0xff) {
+    iVar2 = 0;
+  }
+  else {
+    iVar2 = DAT_01719040 * (uint)*(byte *)(param_2 + 4) +
+            *(int *)((uint)*(byte *)(param_2 + 0x40) * 0x6f40 + 0x6f14 + DAT_01719060);
+  }
+  uVar1 = *(uint *)(iVar2 + 0xcc);
+  if ((int)uVar1 < 0) {
+    uVar3 = uVar1 & 0x7fffffff;
+    FUN_008b6080(uVar3,auStack_20);
+    FUN_007b9610(auStack_20);
+    fVar4 = (float10)FUN_008b5ce0(uVar3);
+    fStack_24 = (float)fVar4;
+    fStack_2c = 0.0;
+    if ((*(byte *)((uVar3 + uVar1 * 2) * 0x20 + 0x8294 + param_1) & 4) != 0) {
+      FUN_00ae6370(auStack_20,&fStack_2c,&uStack_28);
+      FUN_00cef500(uStack_28);
+    }
+    FUN_007b95c0(fStack_2c + fStack_24);
+  }
+  return;
+}
+
+

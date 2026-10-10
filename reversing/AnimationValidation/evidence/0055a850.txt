@@ -1,0 +1,11 @@
+Canonical GTAIV.exe preferred VA 0055a850
+0055a850 XOR EAX,EAX
+0055a852 RET
+
+undefined4 FUN_0055a850(void)
+
+{
+  return 0;
+}
+
+

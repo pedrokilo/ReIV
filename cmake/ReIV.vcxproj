@@ -63,6 +63,9 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="..\source\core\ReIV.cpp" />
+    <ClCompile Include="..\source\core\OriginalCall.cpp" />
+    <ClCompile Include="..\source\core\DebugLog.cpp" />
+    <ClCompile Include="..\source\game\scene\CDynamicEntity.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

@@ -1,0 +1,13 @@
+Canonical GTAIV.exe preferred VA 008b4da0
+Entry bytes: d9 41 2c c3 cc cc cc cc cc cc cc cc cc cc cc cc 8b c1 f3 0f 10 05 98 03 
+Body size: 4
+008b4da0 FLD float ptr [ECX + 0x2c]
+008b4da3 RET
+
+float10 __fastcall FUN_008b4da0(int param_1)
+
+{
+  return (float10)*(float *)(param_1 + 0x2c);
+}
+
+

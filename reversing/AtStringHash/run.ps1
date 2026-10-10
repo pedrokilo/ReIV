@@ -8,7 +8,7 @@ if ((Get-FileHash -LiteralPath $gameExe).Hash -ne 'ab21c0d90d2ca1c697785aca9dcf4
 if (Get-Process GTAIV -ErrorAction SilentlyContinue) { throw 'Ya hay un GTAIV abierto' }
 $runDir = Join-Path $repoRoot ('reversing\artifacts\atStringHash-' + (Get-Date -Format 'yyyyMMdd-HHmmss'))
 New-Item -ItemType Directory -Path $runDir | Out-Null
-$protectedNames = @('XLivelessAddon.ini','commandline.txt','ReIV.asi','ReIV.pdb','ReIV.log','ReIV-atStringHash.json')
+$protectedNames = @('XLivelessAddon.ini','commandline.txt','ReIV.asi','ReIV.pdb','ReIV.log','ReIV-atStringHash.json','GTAIV_d3d9.log')
 $existingNames = @()
 foreach ($name in $protectedNames) {
     $path = Join-Path $GameDirectory $name
@@ -20,6 +20,11 @@ $probeProcess = $null
 $forcedStop = $false
 $exitCode = $null
 try {
+    # A previous successful report must never be accepted as this run's evidence.
+    foreach ($name in @('ReIV.log','ReIV-atStringHash.json','GTAIV_d3d9.log')) {
+        $path = Join-Path $GameDirectory $name
+        if (Test-Path -LiteralPath $path) { Remove-Item -LiteralPath $path }
+    }
     Copy-Item -LiteralPath (Join-Path $repoRoot 'bin\ReIV.asi'),(Join-Path $repoRoot 'bin\ReIV.pdb') -Destination $GameDirectory
     $isolatedSaves = Join-Path $runDir 'saves'
     $isolatedSettings = Join-Path $runDir 'settings'
@@ -40,7 +45,7 @@ try {
         if (Test-Path -LiteralPath $path) { Copy-Item -LiteralPath $path -Destination (Join-Path $runDir ('result-' + $name)) }
     }
     $report = Get-Content -LiteralPath (Join-Path $runDir 'result-ReIV-atStringHash.json') -Raw | ConvertFrom-Json
-    $passed = !$forcedStop -and $exitCode -eq 0 -and $report.bank_failures -eq 0 -and $report.runtime_failures -eq 0 -and $report.hooked -and $report.hook_calls -gt 1 -and $report.game_loaded -and $report.ingame_started -and $report.script_ticks -gt 1
+    $passed = !$forcedStop -and $exitCode -eq 0 -and $report.bank_pairs -eq 8320 -and $report.bank_failures -eq 0 -and $report.runtime_pairs -eq 4096 -and $report.runtime_failures -eq 0 -and $report.hooked -and $report.hook_calls -gt 4096 -and $report.game_loaded -and $report.ingame_started -and $report.script_ticks -gt 1 -and $report.phase -eq 'process_detach'
     $summary = [ordered]@{
         date = (Get-Date -Format o); exe_sha256 = (Get-FileHash $gameExe).Hash.ToLower()
         asi_sha256 = (Get-FileHash (Join-Path $repoRoot 'bin\ReIV.asi')).Hash.ToLower()
@@ -51,8 +56,13 @@ try {
     $summary | ConvertTo-Json -Depth 6 | Set-Content -LiteralPath (Join-Path $runDir 'summary.json') -Encoding UTF8
     $summary | ConvertTo-Json -Depth 6
     Write-Output ('Evidence: ' + $runDir)
+    if (!$passed) { throw 'La sustitución de atStringHash no aprobó la validación en el juego.' }
 } finally {
     if ($probeProcess -and !$probeProcess.HasExited) { Stop-Process -Id $probeProcess.Id }
     foreach ($name in $existingNames) { Copy-Item -LiteralPath (Join-Path $runDir $name) -Destination (Join-Path $GameDirectory $name) -Force }
+    foreach ($name in $protectedNames) {
+        $path = Join-Path $GameDirectory $name
+        if ($name -notin $existingNames -and (Test-Path -LiteralPath $path)) { Remove-Item -LiteralPath $path }
+    }
     if (Test-Path -LiteralPath $marker) { Remove-Item -LiteralPath $marker }
 }

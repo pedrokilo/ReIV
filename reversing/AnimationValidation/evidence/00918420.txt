@@ -1,0 +1,11 @@
+Canonical GTAIV.exe preferred VA 00918420
+00918420 MOV EAX,0x1
+00918425 RET
+
+undefined4 FUN_00918420(void)
+
+{
+  return 1;
+}
+
+

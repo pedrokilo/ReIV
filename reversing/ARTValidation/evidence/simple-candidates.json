@@ -1,0 +1,185 @@
+{
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "image_base": "0x00400000",
+  "header_count": 45,
+  "reference_count": 353,
+  "unique_destinations": 215,
+  "candidates": [
+    {
+      "va": "0x00447970",
+      "rva": "0x00047970",
+      "bytes": "32 c0 c2 0c 00 cc cc cc cc cc cc cc cc cc cc cc",
+      "length": 5,
+      "pattern": "return_zero_stack_pop",
+      "return_mask": 255,
+      "expected_return": 0,
+      "relocated_imm": false,
+      "stack_pop": 12,
+      "float_return": false,
+      "owners": [
+        "ART::Engine"
+      ],
+      "reference_count": 1,
+      "status": "static_candidate_not_runtime_validated"
+    },
+    {
+      "va": "0x004487A0",
+      "rva": "0x000487A0",
+      "bytes": "b8 64 00 00 00 c3 cc cc cc cc cc cc cc cc cc cc",
+      "length": 6,
+      "pattern": "return_eax_constant",
+      "return_mask": 4294967295,
+      "expected_return": 100,
+      "relocated_imm": false,
+      "stack_pop": 0,
+      "float_return": false,
+      "owners": [
+        "ART::Rockstar::phInstNM"
+      ],
+      "reference_count": 1,
+      "status": "static_candidate_not_runtime_validated"
+    },
+    {
+      "va": "0x004489D0",
+      "rva": "0x000489D0",
+      "bytes": "b8 02 00 00 00 c3 cc cc cc cc cc cc cc cc cc cc",
+      "length": 6,
+      "pattern": "return_eax_constant",
+      "return_mask": 4294967295,
+      "expected_return": 2,
+      "relocated_imm": false,
+      "stack_pop": 0,
+      "float_return": false,
+      "owners": [
+        "ART::SegmentDataBLZPack"
+      ],
+      "reference_count": 2,
+      "status": "static_candidate_not_runtime_validated"
+    },
+    {
+      "va": "0x00549100",
+      "rva": "0x00149100",
+      "bytes": "c3 cc cc cc cc cc cc cc cc cc cc cc cc cc cc cc",
+      "length": 1,
+      "pattern": "return_only",
+      "return_mask": 0,
+      "expected_return": 0,
+      "relocated_imm": false,
+      "stack_pop": 0,
+      "float_return": false,
+      "owners": [
+        "ART::Rockstar::NmRsCBUBraceForImpact",
+        "ART::Rockstar::NmRsCBUCatchFall",
+        "ART::Rockstar::NmRsCBUPointArm",
+        "ART::Rockstar::NmRsCBUShot",
+        "ART::Rockstar::NmRsEngine",
+        "ART::Rockstar::phInstNM"
+      ],
+      "reference_count": 10,
+      "status": "static_candidate_not_runtime_validated"
+    },
+    {
+      "va": "0x00550FF0",
+      "rva": "0x00150FF0",
+      "bytes": "c2 04 00 cc cc cc cc cc cc cc cc cc cc cc cc cc",
+      "length": 3,
+      "pattern": "return_only_stack_pop",
+      "return_mask": 0,
+      "expected_return": 0,
+      "relocated_imm": false,
+      "stack_pop": 4,
+      "float_return": false,
+      "owners": [
+        "ART::Rockstar::phInstNM"
+      ],
+      "reference_count": 3,
+      "status": "static_candidate_not_runtime_validated"
+    },
+    {
+      "va": "0x0055A850",
+      "rva": "0x0015A850",
+      "bytes": "33 c0 c3 cc cc cc cc cc cc cc cc cc cc cc cc cc",
+      "length": 3,
+      "pattern": "return_eax_zero",
+      "return_mask": 4294967295,
+      "expected_return": 0,
+      "relocated_imm": false,
+      "stack_pop": 0,
+      "float_return": false,
+      "owners": [
+        "ART::PluginFactoryBase"
+      ],
+      "reference_count": 1,
+      "status": "static_candidate_not_runtime_validated"
+    },
+    {
+      "va": "0x0055C600",
+      "rva": "0x0015C600",
+      "bytes": "c2 10 00 cc cc cc cc cc cc cc cc cc cc cc cc cc",
+      "length": 3,
+      "pattern": "return_only_stack_pop",
+      "return_mask": 0,
+      "expected_return": 0,
+      "relocated_imm": false,
+      "stack_pop": 16,
+      "float_return": false,
+      "owners": [
+        "ART::Rockstar::phInstNM"
+      ],
+      "reference_count": 3,
+      "status": "static_candidate_not_runtime_validated"
+    },
+    {
+      "va": "0x0059BA00",
+      "rva": "0x0019BA00",
+      "bytes": "c2 08 00 cc cc cc cc cc cc cc cc cc cc cc cc cc",
+      "length": 3,
+      "pattern": "return_only_stack_pop",
+      "return_mask": 0,
+      "expected_return": 0,
+      "relocated_imm": false,
+      "stack_pop": 8,
+      "float_return": false,
+      "owners": [
+        "ART::Rockstar::phInstNM"
+      ],
+      "reference_count": 1,
+      "status": "static_candidate_not_runtime_validated"
+    },
+    {
+      "va": "0x005FDCD0",
+      "rva": "0x001FDCD0",
+      "bytes": "32 c0 c3 cc cc cc cc cc cc cc cc cc cc cc cc cc",
+      "length": 3,
+      "pattern": "return_al_zero",
+      "return_mask": 255,
+      "expected_return": 0,
+      "relocated_imm": false,
+      "stack_pop": 0,
+      "float_return": false,
+      "owners": [
+        "ART::Rockstar::phInstNM"
+      ],
+      "reference_count": 2,
+      "status": "static_candidate_not_runtime_validated"
+    },
+    {
+      "va": "0x00707920",
+      "rva": "0x00307920",
+      "bytes": "b0 01 c3 cc cc cc cc cc cc cc cc cc cc cc cc cc",
+      "length": 3,
+      "pattern": "return_al_constant",
+      "return_mask": 255,
+      "expected_return": 1,
+      "relocated_imm": false,
+      "stack_pop": 0,
+      "float_return": false,
+      "owners": [
+        "ART::Rockstar::NmRsEngine",
+        "ART::Rockstar::phInstNM"
+      ],
+      "reference_count": 4,
+      "status": "static_candidate_not_runtime_validated"
+    }
+  ]
+}

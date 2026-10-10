@@ -1,0 +1,23 @@
+Canonical GTAIV.exe preferred VA 00ce8420
+Entry bytes: 56 8b f1 8b 0d e8 92 71 01 56 e8 a1 0f 00 00 66 89 46 04 5e c3 cc cc cc 
+Body size: 21
+00ce8420 PUSH ESI
+00ce8421 MOV ESI,ECX
+00ce8423 MOV ECX,dword ptr [0x017192e8]
+00ce8429 PUSH ESI
+00ce842a CALL 0x00ce93d0
+00ce842f MOV word ptr [ESI + 0x4],AX
+00ce8433 POP ESI
+00ce8434 RET
+
+void __fastcall FUN_00ce8420(int param_1)
+
+{
+  undefined2 uVar1;
+  
+  uVar1 = FUN_00ce93d0(param_1);
+  *(undefined2 *)(param_1 + 4) = uVar1;
+  return;
+}
+
+

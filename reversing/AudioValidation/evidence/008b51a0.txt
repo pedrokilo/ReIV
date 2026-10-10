@@ -1,0 +1,97 @@
+Canonical GTAIV.exe preferred VA 008b51a0
+Entry bytes: 53 55 8b e9 33 db 39 9d 30 82 00 00 c6 85 50 a5 04 00 00 76 6c 56 57 8d 
+Body size: 172
+008b51a0 PUSH EBX
+008b51a1 PUSH EBP
+008b51a2 MOV EBP,ECX
+008b51a4 XOR EBX,EBX
+008b51a6 CMP dword ptr [EBP + 0x8230],EBX
+008b51ac MOV byte ptr [EBP + 0x4a550],0x0
+008b51b3 JBE 0x008b5221
+008b51b5 PUSH ESI
+008b51b6 PUSH EDI
+008b51b7 LEA ESI,[EBP + 0xe0]
+008b51bd LEA ECX,[ECX]
+008b51c0 CMP byte ptr [ESI + 0x15],0x0
+008b51c4 JZ 0x008b520e
+008b51c6 MOV ECX,dword ptr [ESI + -0x18]
+008b51c9 TEST ECX,ECX
+008b51cb JZ 0x008b51d4
+008b51cd PUSH 0x0
+008b51cf CALL 0x00ce1830
+008b51d4 MOV ECX,dword ptr [ESI]
+008b51d6 TEST ECX,ECX
+008b51d8 JZ 0x008b51e5
+008b51da CALL 0x00cee0b0
+008b51df MOV dword ptr [ESI],0x0
+008b51e5 MOV EAX,dword ptr [ESI + 0xffffff60]
+008b51eb MOV EDX,dword ptr [EAX + 0xc]
+008b51ee LEA EDI,[ESI + 0xffffff60]
+008b51f4 MOV ECX,EDI
+008b51f6 CALL EDX
+008b51f8 TEST EAX,EAX
+008b51fa JZ 0x008b520e
+008b51fc MOV ECX,EAX
+008b51fe CALL 0x00cee0b0
+008b5203 MOV EAX,dword ptr [EDI]
+008b5205 MOV EDX,dword ptr [EAX + 0x10]
+008b5208 PUSH 0x0
+008b520a MOV ECX,EDI
+008b520c CALL EDX
+008b520e ADD EBX,0x1
+008b5211 ADD ESI,0xd0
+008b5217 CMP EBX,dword ptr [EBP + 0x8230]
+008b521d JC 0x008b51c0
+008b521f POP EDI
+008b5220 POP ESI
+008b5221 CMP byte ptr [EBP + 0x4a552],0x0
+008b5228 JNZ 0x008b5243
+008b522a MOV EAX,dword ptr [EBP + 0x38240]
+008b5230 PUSH EAX
+008b5231 CALL 0x005b1c10
+008b5236 ADD ESP,0x4
+008b5239 MOV dword ptr [EBP + 0x38240],0x0
+008b5243 MOV ECX,EBP
+008b5245 POP EBP
+008b5246 POP EBX
+008b5247 JMP 0x00ce8280
+
+void __fastcall FUN_008b51a0(int param_1)
+
+{
+  int iVar1;
+  uint uVar2;
+  int *piVar3;
+  
+  uVar2 = 0;
+  *(undefined1 *)(param_1 + 0x4a550) = 0;
+  if (*(int *)(param_1 + 0x8230) != 0) {
+    piVar3 = (int *)(param_1 + 0xe0);
+    do {
+      if (*(char *)((int)piVar3 + 0x15) != '\0') {
+        if (piVar3[-6] != 0) {
+          FUN_00ce1830(0);
+        }
+        if (*piVar3 != 0) {
+          FUN_00cee0b0();
+          *piVar3 = 0;
+        }
+        iVar1 = (**(code **)(piVar3[-0x28] + 0xc))();
+        if (iVar1 != 0) {
+          FUN_00cee0b0();
+          (**(code **)(piVar3[-0x28] + 0x10))(0);
+        }
+      }
+      uVar2 = uVar2 + 1;
+      piVar3 = piVar3 + 0x34;
+    } while (uVar2 < *(uint *)(param_1 + 0x8230));
+  }
+  if (*(char *)(param_1 + 0x4a552) == '\0') {
+    FUN_005b1c10(*(undefined4 *)(param_1 + 0x38240));
+    *(undefined4 *)(param_1 + 0x38240) = 0;
+  }
+  FUN_00ce8280();
+  return;
+}
+
+

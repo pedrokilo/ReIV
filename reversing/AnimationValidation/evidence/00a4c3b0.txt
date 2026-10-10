@@ -1,0 +1,27 @@
+Canonical GTAIV.exe preferred VA 00a4c3b0
+00a4c3b0 PUSH ECX
+00a4c3b1 MOVSS XMM0,dword ptr [ECX + 0x2c]
+00a4c3b6 MOVSS XMM1,dword ptr [0x00ebded4]
+00a4c3be UCOMISS XMM1,XMM0
+00a4c3c1 LAHF
+00a4c3c2 TEST AH,0x44
+00a4c3c5 MOVSS dword ptr [ESP],XMM0
+00a4c3ca JP 0x00a4c3d7
+00a4c3cc FLD float ptr [ECX + 0x60]
+00a4c3cf FMUL float ptr [0x011dde7c]
+00a4c3d5 POP ECX
+00a4c3d6 RET
+00a4c3d7 FLD float ptr [ESP]
+00a4c3da POP ECX
+00a4c3db RET
+
+float10 __fastcall FUN_00a4c3b0(int param_1)
+
+{
+  if (DAT_00ebded4 == *(float *)(param_1 + 0x2c)) {
+    return (float10)*(float *)(param_1 + 0x60) * (float10)DAT_011dde7c;
+  }
+  return (float10)*(float *)(param_1 + 0x2c);
+}
+
+

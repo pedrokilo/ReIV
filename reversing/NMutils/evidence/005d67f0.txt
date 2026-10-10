@@ -1,0 +1,83 @@
+Canonical GTAIV.exe preferred VA 005d67f0
+005d67f0 PUSH EBP
+005d67f1 MOV EBP,ESP
+005d67f3 PUSH EBX
+005d67f4 PUSH ESI
+005d67f5 PUSH EDI
+005d67f6 MOV EDI,dword ptr [EBP + 0xc]
+005d67f9 MOV EAX,EDI
+005d67fb MOV EBX,ECX
+005d67fd LEA EDX,[EAX + 0x1]
+005d6800 MOV CL,byte ptr [EAX]
+005d6802 ADD EAX,0x1
+005d6805 TEST CL,CL
+005d6807 JNZ 0x005d6800
+005d6809 SUB EAX,EDX
+005d680b MOV ESI,EAX
+005d680d LEA EAX,[ESI + 0x1]
+005d6810 CALL 0x00d12380
+005d6815 XOR EAX,EAX
+005d6817 TEST ESI,ESI
+005d6819 MOV ECX,ESP
+005d681b JBE 0x005d6830
+005d681d LEA ECX,[ECX]
+005d6820 MOVSX DX,byte ptr [EAX + EDI*0x1]
+005d6825 MOV word ptr [ECX + EAX*0x2],DX
+005d6829 ADD EAX,0x1
+005d682c CMP EAX,ESI
+005d682e JC 0x005d6820
+005d6830 MOV word ptr [ECX + EAX*0x2],0x0
+005d6836 MOV EAX,dword ptr [EBX]
+005d6838 MOV EDX,dword ptr [EAX + 0x8]
+005d683b PUSH ECX
+005d683c MOV ECX,dword ptr [EBP + 0x8]
+005d683f PUSH ECX
+005d6840 MOV ECX,EBX
+005d6842 CALL EDX
+005d6844 LEA ESP,[EBP + -0xc]
+005d6847 POP EDI
+005d6848 POP ESI
+005d6849 POP EBX
+005d684a POP EBP
+005d684b RET 0x8
+
+/* WARNING: Function: __alloca_probe_16 replaced with injection: alloca_probe */
+/* WARNING: Unable to track spacebase fully for stack */
+
+void __thiscall FUN_005d67f0(int *param_1,undefined4 param_2,char *param_3)
+
+{
+  char cVar1;
+  code *pcVar2;
+  int iVar3;
+  char *pcVar4;
+  uint uVar5;
+  uint uVar6;
+  undefined4 auStack_1c [2];
+  undefined4 uStack_14;
+  
+  pcVar4 = param_3;
+  do {
+    cVar1 = *pcVar4;
+    pcVar4 = pcVar4 + 1;
+  } while (cVar1 != '\0');
+  uVar5 = (int)pcVar4 - (int)(param_3 + 1);
+  uStack_14 = 0x5d6815;
+  iVar3 = -(uVar5 + 1);
+  uVar6 = 0;
+  if (uVar5 != 0) {
+    do {
+      *(short *)(&stack0xfffffff0 + uVar6 * 2 + iVar3) = (short)param_3[uVar6];
+      uVar6 = uVar6 + 1;
+    } while (uVar6 < uVar5);
+  }
+  *(undefined2 *)(&stack0xfffffff0 + uVar6 * 2 + iVar3) = 0;
+  pcVar2 = *(code **)(*param_1 + 8);
+  *(undefined1 **)((int)&uStack_14 + iVar3) = &stack0xfffffff0 + iVar3;
+  *(undefined4 *)((int)auStack_1c + iVar3 + 4) = param_2;
+  *(undefined4 *)((int)auStack_1c + iVar3) = 0x5d6844;
+  (*pcVar2)();
+  return;
+}
+
+

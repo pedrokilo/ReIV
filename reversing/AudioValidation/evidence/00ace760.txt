@@ -1,0 +1,66 @@
+Canonical GTAIV.exe preferred VA 00ace760
+Entry bytes: 56 8b f1 8b 8e c4 3a 00 00 85 c9 57 74 07 6a 00 e8 bb 30 21 00 8b 8e c0 
+Body size: 137
+00ace760 PUSH ESI
+00ace761 MOV ESI,ECX
+00ace763 MOV ECX,dword ptr [ESI + 0x3ac4]
+00ace769 TEST ECX,ECX
+00ace76b PUSH EDI
+00ace76c JZ 0x00ace775
+00ace76e PUSH 0x0
+00ace770 CALL 0x00ce1830
+00ace775 MOV ECX,dword ptr [ESI + 0x3ac0]
+00ace77b TEST ECX,ECX
+00ace77d JZ 0x00ace78e
+00ace77f CALL 0x00b04140
+00ace784 MOV dword ptr [ESI + 0x3ac0],0x0
+00ace78e MOV ECX,dword ptr [ESI + 0x3acc]
+00ace794 TEST ECX,ECX
+00ace796 LEA EDI,[ESI + 0x3acc]
+00ace79c JZ 0x00ace7aa
+00ace79e PUSH EDI
+00ace79f CALL 0x009e6580
+00ace7a4 MOV dword ptr [EDI],0x0
+00ace7aa OR EAX,0xffffffff
+00ace7ad LEA ECX,[ESI + 0x2be0]
+00ace7b3 MOV dword ptr [ESI + 0x3ad8],EAX
+00ace7b9 MOV dword ptr [ESI + 0x3ad0],EAX
+00ace7bf MOV dword ptr [ESI + 0x3ad4],EAX
+00ace7c5 MOV EAX,dword ptr [ECX]
+00ace7c7 MOV EDX,dword ptr [EAX + 0x8]
+00ace7ca MOV dword ptr [ESI + 0x3ac8],0x0
+00ace7d4 MOV dword ptr [ESI + 0x3adc],0x0
+00ace7de CALL EDX
+00ace7e0 POP EDI
+00ace7e1 MOV ECX,ESI
+00ace7e3 POP ESI
+00ace7e4 JMP 0x00ce8280
+
+void __fastcall FUN_00ace760(int param_1)
+
+{
+  code *pcVar1;
+  
+  if (*(int *)(param_1 + 0x3ac4) != 0) {
+    FUN_00ce1830(0);
+  }
+  if (*(int *)(param_1 + 0x3ac0) != 0) {
+    FUN_00b04140();
+    *(undefined4 *)(param_1 + 0x3ac0) = 0;
+  }
+  if (*(int *)(param_1 + 0x3acc) != 0) {
+    FUN_009e6580((undefined4 *)(param_1 + 0x3acc));
+    *(undefined4 *)(param_1 + 0x3acc) = 0;
+  }
+  *(undefined4 *)(param_1 + 0x3ad8) = 0xffffffff;
+  *(undefined4 *)(param_1 + 0x3ad0) = 0xffffffff;
+  *(undefined4 *)(param_1 + 0x3ad4) = 0xffffffff;
+  pcVar1 = *(code **)(*(int *)(param_1 + 0x2be0) + 8);
+  *(undefined4 *)(param_1 + 0x3ac8) = 0;
+  *(undefined4 *)(param_1 + 0x3adc) = 0;
+  (*pcVar1)();
+  FUN_00ce8280();
+  return;
+}
+
+

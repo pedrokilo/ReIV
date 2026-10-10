@@ -1,0 +1,45 @@
+Canonical GTAIV.exe preferred VA 00c80a40
+Entry bytes: 83 3d 70 01 0d 01 01 74 50 a1 84 19 0e 01 3b 05 7c 44 e3 00 75 43 83 3d 
+Body size: 92
+00c80a40 CMP dword ptr [0x010d0170],0x1
+00c80a47 JZ 0x00c80a99
+00c80a49 MOV EAX,[0x010e1984]
+00c80a4e CMP EAX,dword ptr [0x00e3447c]
+00c80a54 JNZ 0x00c80a99
+00c80a56 CMP dword ptr [0x00f0e4a0],0x12
+00c80a5d JZ 0x00c80a99
+00c80a5f PUSH ESI
+00c80a60 MOV ESI,dword ptr [ESP + 0x8]
+00c80a64 LEA ECX,[ESP + 0x8]
+00c80a68 PUSH ECX
+00c80a69 MOV ECX,ESI
+00c80a6b CALL 0x008b6360
+00c80a70 MOV EDX,dword ptr [ESP + 0x8]
+00c80a74 ADD EDX,0x1388
+00c80a7a CMP dword ptr [ESP + 0xc],EDX
+00c80a7e JBE 0x00c80a98
+00c80a80 MOV EAX,dword ptr [ESI + 0xa4]
+00c80a86 PUSH EAX
+00c80a87 CALL 0x007a9c90
+00c80a8c ADD ESP,0x4
+00c80a8f PUSH 0x0
+00c80a91 MOV ECX,ESI
+00c80a93 CALL 0x00ce1830
+00c80a98 POP ESI
+00c80a99 RET 0x8
+
+void FUN_00c80a40(int param_1,uint param_2)
+
+{
+  int iVar1;
+  
+  iVar1 = param_1;
+  if ((((DAT_010d0170 != 1) && (DAT_010e1984 == DAT_00e3447c)) && (DAT_00f0e4a0 != 0x12)) &&
+     (FUN_008b6360(&param_1), param_1 + 5000U < param_2)) {
+    FUN_007a9c90(*(undefined4 *)(iVar1 + 0xa4));
+    FUN_00ce1830(0);
+  }
+  return;
+}
+
+

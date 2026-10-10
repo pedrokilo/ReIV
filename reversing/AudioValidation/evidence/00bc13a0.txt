@@ -1,0 +1,134 @@
+Canonical GTAIV.exe preferred VA 00bc13a0
+Entry bytes: 55 8b ec 83 e4 f0 83 ec 1c 56 8b f1 8b 46 04 85 c0 0f 84 f4 00 00 00 8b 
+Body size: 277
+00bc13a0 PUSH EBP
+00bc13a1 MOV EBP,ESP
+00bc13a3 AND ESP,0xfffffff0
+00bc13a6 SUB ESP,0x1c
+00bc13a9 PUSH ESI
+00bc13aa MOV ESI,ECX
+00bc13ac MOV EAX,dword ptr [ESI + 0x4]
+00bc13af TEST EAX,EAX
+00bc13b1 JZ 0x00bc14ab
+00bc13b7 MOV ECX,dword ptr [EAX + 0x28]
+00bc13ba SHR ECX,0x6
+00bc13bd AND ECX,0xf
+00bc13c0 CMP ECX,0x3
+00bc13c3 JNZ 0x00bc13db
+00bc13c5 CMP byte ptr [EAX + 0x218],0x0
+00bc13cc JNZ 0x00bc13db
+00bc13ce CMP byte ptr [EAX + 0x219],0x0
+00bc13d5 JNZ 0x00bc14ab
+00bc13db CMP ECX,0x2
+00bc13de JNZ 0x00bc1401
+00bc13e0 CALL 0x00817f40
+00bc13e5 TEST byte ptr [EAX + 0x26c],0x4
+00bc13ec JZ 0x00bc13f6
+00bc13ee MOV EAX,dword ptr [EAX + 0xb40]
+00bc13f4 JMP 0x00bc13f8
+00bc13f6 XOR EAX,EAX
+00bc13f8 CMP EAX,dword ptr [ESI + 0x4]
+00bc13fb JZ 0x00bc14ab
+00bc1401 MOV EAX,dword ptr [ESI]
+00bc1403 MOV EDX,dword ptr [EAX + 0x4]
+00bc1406 LEA ECX,[ESP + 0x10]
+00bc140a PUSH ECX
+00bc140b MOV ECX,ESI
+00bc140d CALL EDX
+00bc140f MOV EAX,[0x017237b0]
+00bc1414 MOV ECX,dword ptr FS:[0x2c]
+00bc141b MOV EDX,dword ptr [ECX + EAX*0x4]
+00bc141e MOV EAX,dword ptr [EDX + 0x8e8]
+00bc1424 SHL EAX,0x6
+00bc1427 ADD EAX,0x1717220
+00bc142c MOVSS XMM1,dword ptr [EAX + 0x4]
+00bc1431 SUBSS XMM1,dword ptr [ESP + 0x14]
+00bc1437 MOVSS XMM2,dword ptr [EAX + 0x8]
+00bc143c SUBSS XMM2,dword ptr [ESP + 0x18]
+00bc1442 MOVSS XMM0,dword ptr [EAX]
+00bc1446 SUBSS XMM0,dword ptr [ESP + 0x10]
+00bc144c MOVAPS XMM3,XMM1
+00bc144f MULSS XMM3,XMM1
+00bc1453 MOVAPS XMM1,XMM2
+00bc1456 MULSS XMM1,XMM2
+00bc145a ADDSS XMM3,XMM1
+00bc145e MOVAPS XMM1,XMM0
+00bc1461 MULSS XMM1,XMM0
+00bc1465 ADDSS XMM3,XMM1
+00bc1469 COMISS XMM3,dword ptr [0x00d5d694]
+00bc1470 JC 0x00bc147c
+00bc1472 MOV EAX,0x1
+00bc1477 POP ESI
+00bc1478 MOV ESP,EBP
+00bc147a POP EBP
+00bc147b RET
+00bc147c MOV ECX,dword ptr [ESI + 0x4]
+00bc147f MOV EAX,dword ptr [ECX + 0x28]
+00bc1482 AND EAX,0x3c0
+00bc1487 CMP EAX,0x80
+00bc148c JNZ 0x00bc14a1
+00bc148e CALL 0x009c61a0
+00bc1493 TEST AL,AL
+00bc1495 JZ 0x00bc14a1
+00bc1497 MOV EAX,0x4
+00bc149c POP ESI
+00bc149d MOV ESP,EBP
+00bc149f POP EBP
+00bc14a0 RET
+00bc14a1 MOV EAX,0x2
+00bc14a6 POP ESI
+00bc14a7 MOV ESP,EBP
+00bc14a9 POP EBP
+00bc14aa RET
+00bc14ab MOV EAX,0x7
+00bc14b0 POP ESI
+00bc14b1 MOV ESP,EBP
+00bc14b3 POP EBP
+00bc14b4 RET
+
+undefined4 __fastcall FUN_00bc13a0(int *param_1)
+
+{
+  char cVar1;
+  int iVar2;
+  uint uVar3;
+  float fStack_24;
+  float fStack_20;
+  float fStack_1c;
+  
+  iVar2 = param_1[1];
+  if ((iVar2 == 0) ||
+     (((uVar3 = *(uint *)(iVar2 + 0x28) >> 6 & 0xf, uVar3 == 3 && (*(char *)(iVar2 + 0x218) == '\0')
+       ) && (*(char *)(iVar2 + 0x219) != '\0')))) {
+    return 7;
+  }
+  if (uVar3 == 2) {
+    iVar2 = FUN_00817f40();
+    if ((*(byte *)(iVar2 + 0x26c) & 4) == 0) {
+      iVar2 = 0;
+    }
+    else {
+      iVar2 = *(int *)(iVar2 + 0xb40);
+    }
+    if (iVar2 == param_1[1]) {
+      return 7;
+    }
+  }
+  (**(code **)(*param_1 + 4))(&fStack_20);
+  iVar2 = *(int *)(*(int *)((int)ThreadLocalStoragePointer + _tls_index * 4) + 0x8e8) * 0x40;
+  if (DAT_00d5d694 <=
+      (*(float *)(&DAT_01717224 + iVar2) - fStack_20) *
+      (*(float *)(&DAT_01717224 + iVar2) - fStack_20) +
+      (*(float *)(&DAT_01717228 + iVar2) - fStack_1c) *
+      (*(float *)(&DAT_01717228 + iVar2) - fStack_1c) +
+      (*(float *)(&DAT_01717220 + iVar2) - fStack_24) *
+      (*(float *)(&DAT_01717220 + iVar2) - fStack_24)) {
+    return 1;
+  }
+  if (((*(uint *)(param_1[1] + 0x28) & 0x3c0) == 0x80) && (cVar1 = FUN_009c61a0(), cVar1 != '\0')) {
+    return 4;
+  }
+  return 2;
+}
+
+

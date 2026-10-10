@@ -1,0 +1,43 @@
+Canonical GTAIV.exe preferred VA 009eecb0
+009eecb0 PUSH ESI
+009eecb1 PUSH EDI
+009eecb2 MOV EDI,dword ptr [ESP + 0xc]
+009eecb6 PUSH EDI
+009eecb7 MOV ESI,ECX
+009eecb9 CALL 0x009eea90
+009eecbe CMP EDI,0x1f
+009eecc1 JNC 0x009eecdd
+009eecc3 MOV ECX,0x1f
+009eecc8 LEA EAX,[ESI + 0x8a4]
+009eecce SUB ECX,EDI
+009eecd0 MOV EDX,dword ptr [EAX + -0x4]
+009eecd3 MOV dword ptr [EAX],EDX
+009eecd5 SUB EAX,0x4
+009eecd8 SUB ECX,0x1
+009eecdb JNZ 0x009eecd0
+009eecdd MOV dword ptr [ESI + EDI*0x4 + 0x828],0x0
+009eece8 POP EDI
+009eece9 POP ESI
+009eecea RET 0x4
+
+void __thiscall FUN_009eecb0(int param_1,uint param_2)
+
+{
+  undefined4 *puVar1;
+  int iVar2;
+  
+  FUN_009eea90(param_2);
+  if (param_2 < 0x1f) {
+    puVar1 = (undefined4 *)(param_1 + 0x8a4);
+    iVar2 = 0x1f - param_2;
+    do {
+      *puVar1 = puVar1[-1];
+      puVar1 = puVar1 + -1;
+      iVar2 = iVar2 + -1;
+    } while (iVar2 != 0);
+  }
+  *(undefined4 *)(param_1 + 0x828 + param_2 * 4) = 0;
+  return;
+}
+
+

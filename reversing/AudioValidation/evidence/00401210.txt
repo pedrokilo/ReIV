@@ -1,0 +1,19 @@
+Canonical GTAIV.exe preferred VA 00401210
+Entry bytes: 6a 00 6a 00 68 78 e3 e9 00 e8 92 7a 1a 00 83 c4 0c 33 c0 c3 cc cc cc cc 
+Body size: 20
+00401210 PUSH 0x0
+00401212 PUSH 0x0
+00401214 PUSH 0xe9e378
+00401219 CALL 0x005a8cb0
+0040121e ADD ESP,0xc
+00401221 XOR EAX,EAX
+00401223 RET
+
+undefined4 FUN_00401210(void)
+
+{
+  FUN_005a8cb0(&UNK_00e9e378,0,0);
+  return 0;
+}
+
+

@@ -1,0 +1,18 @@
+Canonical GTAIV.exe preferred VA 008155a0
+Entry bytes: 8b 44 24 04 8b 4c 24 08 c7 00 ff ff ff ff c7 01 ff ff ff ff c2 08 00 cc 
+Body size: 23
+008155a0 MOV EAX,dword ptr [ESP + 0x4]
+008155a4 MOV ECX,dword ptr [ESP + 0x8]
+008155a8 MOV dword ptr [EAX],0xffffffff
+008155ae MOV dword ptr [ECX],0xffffffff
+008155b4 RET 0x8
+
+void FUN_008155a0(undefined4 *param_1,undefined4 *param_2)
+
+{
+  *param_1 = 0xffffffff;
+  *param_2 = 0xffffffff;
+  return;
+}
+
+

@@ -1,0 +1,43 @@
+Canonical GTAIV.exe preferred VA 0050c0b0
+0050c0b0 PUSH ESI
+0050c0b1 MOV ESI,ECX
+0050c0b3 MOV ECX,dword ptr [ESI + 0x8]
+0050c0b6 TEST ECX,ECX
+0050c0b8 JZ 0x0050c0d7
+0050c0ba MOV EAX,dword ptr [ECX + 0x8]
+0050c0bd TEST EAX,EAX
+0050c0bf JZ 0x0050c0c6
+0050c0c1 CALL 0x00510e40
+0050c0c6 MOV ECX,dword ptr [ESI + 0x8]
+0050c0c9 MOV EAX,dword ptr [ECX]
+0050c0cb MOV EDX,dword ptr [EAX + 0x8]
+0050c0ce CALL EDX
+0050c0d0 MOV dword ptr [ESI + 0x8],0x0
+0050c0d7 MOV ECX,dword ptr [ESI + 0x4]
+0050c0da TEST ECX,ECX
+0050c0dc JZ 0x0050c0ec
+0050c0de MOV EAX,dword ptr [ECX]
+0050c0e0 MOV EDX,dword ptr [EAX + 0x8]
+0050c0e3 CALL EDX
+0050c0e5 MOV dword ptr [ESI + 0x4],0x0
+0050c0ec POP ESI
+0050c0ed RET
+
+void __fastcall FUN_0050c0b0(int param_1)
+
+{
+  if (*(int *)(param_1 + 8) != 0) {
+    if (*(int *)(*(int *)(param_1 + 8) + 8) != 0) {
+      FUN_00510e40();
+    }
+    (**(code **)(**(int **)(param_1 + 8) + 8))();
+    *(undefined4 *)(param_1 + 8) = 0;
+  }
+  if (*(int **)(param_1 + 4) != (int *)0x0) {
+    (**(code **)(**(int **)(param_1 + 4) + 8))();
+    *(undefined4 *)(param_1 + 4) = 0;
+  }
+  return;
+}
+
+

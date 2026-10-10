@@ -1,0 +1,35 @@
+Canonical GTAIV.exe preferred VA 009eb0e0
+009eb0e0 MOV AL,byte ptr [ESP + 0x4]
+009eb0e4 CMP AL,0x1
+009eb0e6 JBE 0x009eb0ec
+009eb0e8 CMP AL,0x15
+009eb0ea JNZ 0x009eb109
+009eb0ec MOV EAX,dword ptr [ECX + 0xc]
+009eb0ef TEST EAX,EAX
+009eb0f1 JZ 0x009eb109
+009eb0f3 MOVZX ECX,word ptr [ESP + 0x8]
+009eb0f8 PUSH ECX
+009eb0f9 PUSH EAX
+009eb0fa CALL 0x00a4bba0
+009eb0ff ADD ESP,0x8
+009eb102 TEST AL,AL
+009eb104 JNZ 0x009eb109
+009eb106 RET 0xc
+009eb109 MOV AL,0x1
+009eb10b RET 0xc
+
+undefined1 __thiscall FUN_009eb0e0(int param_1,byte param_2,undefined2 param_3)
+
+{
+  char cVar1;
+  
+  if (((param_2 < 2) || (param_2 == 0x15)) && (*(int *)(param_1 + 0xc) != 0)) {
+    cVar1 = FUN_00a4bba0(*(int *)(param_1 + 0xc),param_3);
+    if (cVar1 == '\0') {
+      return 0;
+    }
+  }
+  return 1;
+}
+
+

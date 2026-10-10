@@ -1,0 +1,83 @@
+Canonical GTAIV.exe preferred VA 00ac8e60
+Entry bytes: 51 a1 44 84 66 01 53 33 db 55 8b 6c 24 14 83 c0 01 3b eb 89 1d 34 84 66 
+Body size: 139
+00ac8e60 PUSH ECX
+00ac8e61 MOV EAX,[0x01668444]
+00ac8e66 PUSH EBX
+00ac8e67 XOR EBX,EBX
+00ac8e69 PUSH EBP
+00ac8e6a MOV EBP,dword ptr [ESP + 0x14]
+00ac8e6e ADD EAX,0x1
+00ac8e71 CMP EBP,EBX
+00ac8e73 MOV dword ptr [0x01668434],EBX
+00ac8e79 MOV dword ptr [0x0166843c],EBX
+00ac8e7f MOV dword ptr [ESP + 0x8],EAX
+00ac8e83 JBE 0x00ac8ee8
+00ac8e85 PUSH ESI
+00ac8e86 PUSH EDI
+00ac8e87 MOV EDI,dword ptr [ESP + 0x18]
+00ac8e8b JMP 0x00ac8e90
+00ac8e90 MOV ECX,dword ptr [ESP + 0x10]
+00ac8e94 XOR EDX,EDX
+00ac8e96 LEA EAX,[EBX + ECX*0x1]
+00ac8e99 DIV EBP
+00ac8e9b MOV ESI,EDX
+00ac8e9d CMP dword ptr [EDI + ESI*0x4],0x0
+00ac8ea1 JZ 0x00ac8ecd
+00ac8ea3 MOV ECX,0x17171f0
+00ac8ea8 CALL 0x00ce51c0
+00ac8ead TEST AL,AL
+00ac8eaf JZ 0x00ac8ecd
+00ac8eb1 MOV EDX,dword ptr [ESP + 0x20]
+00ac8eb5 MOV ECX,dword ptr [EDI + ESI*0x4]
+00ac8eb8 PUSH 0x0
+00ac8eba PUSH EDX
+00ac8ebb CALL 0x00ac7e90
+00ac8ec0 MOV EAX,dword ptr [ESP + 0x20]
+00ac8ec4 MOV ECX,dword ptr [EDI + ESI*0x4]
+00ac8ec7 PUSH EAX
+00ac8ec8 CALL 0x00ac8460
+00ac8ecd ADD EBX,0x1
+00ac8ed0 CMP EBX,EBP
+00ac8ed2 JC 0x00ac8e90
+00ac8ed4 MOV EAX,[0x0166843c]
+00ac8ed9 CMP EAX,dword ptr [0x01668438]
+00ac8edf POP EDI
+00ac8ee0 POP ESI
+00ac8ee1 JBE 0x00ac8ee8
+00ac8ee3 MOV [0x01668438],EAX
+00ac8ee8 POP EBP
+00ac8ee9 POP EBX
+00ac8eea POP ECX
+00ac8eeb RET 0xc
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_00ac8e60(int param_1,uint param_2,undefined4 param_3)
+
+{
+  char cVar1;
+  int iVar2;
+  uint uVar3;
+  
+  uVar3 = 0;
+  iVar2 = _DAT_01668444 + 1;
+  _DAT_01668434 = 0;
+  _DAT_0166843c = 0;
+  if (param_2 != 0) {
+    do {
+      if ((*(int *)(param_1 + ((uVar3 + iVar2) % param_2) * 4) != 0) &&
+         (cVar1 = func_0x00ce51c0(), cVar1 != '\0')) {
+        FUN_00ac7e90(param_3,0);
+        FUN_00ac8460(param_3);
+      }
+      uVar3 = uVar3 + 1;
+    } while (uVar3 < param_2);
+    if (_DAT_01668438 < _DAT_0166843c) {
+      _DAT_01668438 = _DAT_0166843c;
+    }
+  }
+  return;
+}
+
+

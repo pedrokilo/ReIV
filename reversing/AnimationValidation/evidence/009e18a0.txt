@@ -1,0 +1,58 @@
+Canonical GTAIV.exe preferred VA 009e18a0
+009e18a0 PUSH ESI
+009e18a1 PUSH EDI
+009e18a2 MOV EDI,dword ptr [ESP + 0xc]
+009e18a6 PUSH EDI
+009e18a7 MOV ESI,ECX
+009e18a9 CALL 0x009e6a10
+009e18ae MOV EAX,dword ptr [ESI + 0x100]
+009e18b4 TEST EAX,EAX
+009e18b6 JZ 0x009e18c3
+009e18b8 ADD EAX,0x4
+009e18bb PUSH EAX
+009e18bc MOV ECX,EDI
+009e18be CALL 0x0053bda0
+009e18c3 MOV ECX,dword ptr [ESI + 0x78]
+009e18c6 TEST ECX,ECX
+009e18c8 JZ 0x009e18d0
+009e18ca PUSH EDI
+009e18cb CALL 0x009ebe30
+009e18d0 CMP dword ptr [ESI + 0xd4],0x0
+009e18d7 JZ 0x009e18f9
+009e18d9 MOV ECX,dword ptr [ESI + 0xd0]
+009e18df TEST ECX,ECX
+009e18e1 JZ 0x009e18f9
+009e18e3 PUSH 0x3
+009e18e5 CALL 0x0059a640
+009e18ea TEST EAX,EAX
+009e18ec JZ 0x009e18f9
+009e18ee ADD EAX,0x18
+009e18f1 PUSH EAX
+009e18f2 MOV ECX,EDI
+009e18f4 CALL 0x00cba1f0
+009e18f9 POP EDI
+009e18fa POP ESI
+009e18fb RET 0x4
+
+void __thiscall FUN_009e18a0(int param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  
+  FUN_009e6a10(param_2);
+  if (*(int *)(param_1 + 0x100) != 0) {
+    FUN_0053bda0(*(int *)(param_1 + 0x100) + 4);
+  }
+  if (*(int *)(param_1 + 0x78) != 0) {
+    func_0x009ebe30(param_2);
+  }
+  if ((*(int *)(param_1 + 0xd4) != 0) && (*(int *)(param_1 + 0xd0) != 0)) {
+    iVar1 = FUN_0059a640(3);
+    if (iVar1 != 0) {
+      FUN_00cba1f0(iVar1 + 0x18);
+    }
+  }
+  return;
+}
+
+

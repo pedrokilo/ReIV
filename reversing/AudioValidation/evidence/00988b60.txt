@@ -1,0 +1,13 @@
+Canonical GTAIV.exe preferred VA 00988b60
+Entry bytes: b0 0f c3 cc cc cc cc cc cc cc cc cc cc cc cc cc 8b c1 c7 00 44 d2 d7 00 
+Body size: 3
+00988b60 MOV AL,0xf
+00988b62 RET
+
+undefined1 FUN_00988b60(void)
+
+{
+  return 0xf;
+}
+
+

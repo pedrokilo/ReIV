@@ -1,0 +1,61 @@
+Canonical GTAIV.exe preferred VA 009ee5a0
+009ee5a0 SUB ESP,0x10
+009ee5a3 MOV EDX,dword ptr [ESP + 0x14]
+009ee5a7 MOV AL,byte ptr [ESP + 0x1c]
+009ee5ab PUSH ESI
+009ee5ac MOV ESI,ECX
+009ee5ae MOV ECX,dword ptr [ESP + 0x1c]
+009ee5b2 PUSH EDI
+009ee5b3 PUSH ECX
+009ee5b4 PUSH EDX
+009ee5b5 MOV ECX,ESI
+009ee5b7 MOV byte ptr [ESI + 0x824],AL
+009ee5bd CALL 0x0050c080
+009ee5c2 PUSH 0x4
+009ee5c4 LEA EAX,[ESP + 0x28]
+009ee5c8 PUSH EAX
+009ee5c9 PUSH 0x0
+009ee5cb PUSH ESI
+009ee5cc LEA ECX,[ESP + 0x18]
+009ee5d0 MOV dword ptr [ESP + 0x34],0x9ebd80
+009ee5d8 CALL 0x005af9f0
+009ee5dd LEA ECX,[ESP + 0x8]
+009ee5e1 PUSH ECX
+009ee5e2 LEA EDI,[ESI + 0x80c]
+009ee5e8 PUSH 0x30005
+009ee5ed MOV ECX,EDI
+009ee5ef MOV dword ptr [ESP + 0x1c],0x9ebbb0
+009ee5f7 CALL 0x0050b900
+009ee5fc MOV ECX,ESI
+009ee5fe CALL 0x0050c3b0
+009ee603 TEST EAX,EAX
+009ee605 JZ 0x009ee60f
+009ee607 PUSH EAX
+009ee608 MOV ECX,EDI
+009ee60a CALL 0x0050b790
+009ee60f POP EDI
+009ee610 POP ESI
+009ee611 ADD ESP,0x10
+009ee614 RET 0xc
+
+void __thiscall FUN_009ee5a0(int param_1,undefined4 param_2,undefined4 param_3,undefined *param_4)
+
+{
+  int iVar1;
+  undefined1 auStack_10 [12];
+  undefined *puStack_4;
+  
+  *(undefined1 *)(param_1 + 0x824) = param_4._0_1_;
+  FUN_0050c080(param_2,param_3);
+  param_4 = &DAT_009ebd80;
+  FUN_005af9f0(param_1,0,&param_4,4);
+  puStack_4 = &DAT_009ebbb0;
+  FUN_0050b900(0x30005,auStack_10);
+  iVar1 = FUN_0050c3b0();
+  if (iVar1 != 0) {
+    FUN_0050b790(iVar1);
+  }
+  return;
+}
+
+

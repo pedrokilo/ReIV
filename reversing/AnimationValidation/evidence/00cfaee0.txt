@@ -1,0 +1,11 @@
+Canonical GTAIV.exe preferred VA 00cfaee0
+00cfaee0 MOV AL,0x1
+00cfaee2 RET
+
+undefined1 FUN_00cfaee0(void)
+
+{
+  return 1;
+}
+
+

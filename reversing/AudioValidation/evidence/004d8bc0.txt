@@ -1,0 +1,13 @@
+Canonical GTAIV.exe preferred VA 004d8bc0
+Entry bytes: 8d 41 04 c3 cc cc cc cc cc cc cc cc cc cc cc cc 53 8b 5c 24 08 56 57 8b 
+Body size: 4
+004d8bc0 LEA EAX,[ECX + 0x4]
+004d8bc3 RET
+
+int __fastcall FUN_004d8bc0(int param_1)
+
+{
+  return param_1 + 4;
+}
+
+

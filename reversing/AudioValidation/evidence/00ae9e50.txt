@@ -1,0 +1,41 @@
+Canonical GTAIV.exe preferred VA 00ae9e50
+Entry bytes: 56 57 8b 7c 24 0c 57 8b f1 e8 82 e0 ff ff 57 8b ce e8 da c5 ff ff 57 8b 
+Body size: 59
+00ae9e50 PUSH ESI
+00ae9e51 PUSH EDI
+00ae9e52 MOV EDI,dword ptr [ESP + 0xc]
+00ae9e56 PUSH EDI
+00ae9e57 MOV ESI,ECX
+00ae9e59 CALL 0x00ae7ee0
+00ae9e5e PUSH EDI
+00ae9e5f MOV ECX,ESI
+00ae9e61 CALL 0x00ae6440
+00ae9e66 PUSH EDI
+00ae9e67 MOV ECX,ESI
+00ae9e69 CALL 0x00ae9db0
+00ae9e6e PUSH EDI
+00ae9e6f MOV ECX,ESI
+00ae9e71 CALL 0x00ae77f0
+00ae9e76 PUSH EDI
+00ae9e77 MOV ECX,ESI
+00ae9e79 CALL 0x00ae8a00
+00ae9e7e PUSH EDI
+00ae9e7f MOV ECX,ESI
+00ae9e81 CALL 0x00ae9b20
+00ae9e86 POP EDI
+00ae9e87 POP ESI
+00ae9e88 RET 0x4
+
+void FUN_00ae9e50(undefined4 param_1)
+
+{
+  FUN_00ae7ee0(param_1);
+  FUN_00ae6440(param_1);
+  func_0x00ae9db0(param_1);
+  FUN_00ae77f0(param_1);
+  FUN_00ae8a00(param_1);
+  FUN_00ae9b20(param_1);
+  return;
+}
+
+

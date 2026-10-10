@@ -1,0 +1,41 @@
+Canonical GTAIV.exe preferred VA 008b8fe0
+008b8fe0 MOV EAX,dword ptr [ECX + 0x20]
+008b8fe3 TEST EAX,EAX
+008b8fe5 JZ 0x008b8fec
+008b8fe7 ADD EAX,0x30
+008b8fea JMP 0x008b8fef
+008b8fec LEA EAX,[ECX + 0x10]
+008b8fef FLD float ptr [EAX]
+008b8ff1 MOV ECX,dword ptr [ESP + 0x4]
+008b8ff5 MOVSS XMM0,dword ptr [EAX + 0x4]
+008b8ffa MOVSS XMM1,dword ptr [EAX + 0x8]
+008b8fff FSTP float ptr [ECX]
+008b9001 MOVSS dword ptr [ECX + 0x4],XMM0
+008b9006 MOVSS dword ptr [ECX + 0x8],XMM1
+008b900b FLD float ptr [EAX + 0xc]
+008b900e FSTP float ptr [ECX + 0xc]
+008b9011 RET 0x4
+
+void __thiscall FUN_008b8fe0(int param_1,undefined4 *param_2)
+
+{
+  undefined4 uVar1;
+  undefined4 uVar2;
+  undefined4 *puVar3;
+  
+  if (*(int *)(param_1 + 0x20) == 0) {
+    puVar3 = (undefined4 *)(param_1 + 0x10);
+  }
+  else {
+    puVar3 = (undefined4 *)(*(int *)(param_1 + 0x20) + 0x30);
+  }
+  uVar1 = puVar3[1];
+  uVar2 = puVar3[2];
+  *param_2 = *puVar3;
+  param_2[1] = uVar1;
+  param_2[2] = uVar2;
+  param_2[3] = puVar3[3];
+  return;
+}
+
+

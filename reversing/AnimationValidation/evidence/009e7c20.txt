@@ -1,0 +1,104 @@
+Canonical GTAIV.exe preferred VA 009e7c20
+009e7c20 PUSH EBX
+009e7c21 MOV EBX,dword ptr [ESP + 0x8]
+009e7c25 PUSH ESI
+009e7c26 MOV ESI,ECX
+009e7c28 TEST byte ptr [ESI + 0x28],0x10
+009e7c2c PUSH EDI
+009e7c2d MOV EDI,dword ptr [EBX*0x4 + 0x15f73b0]
+009e7c34 MOV word ptr [ESI + 0x2e],BX
+009e7c38 JNZ 0x009e7c4e
+009e7c3a CALL 0x009e6b10
+009e7c3f MOVZX EAX,AL
+009e7c42 SHL EAX,0x4
+009e7c45 XOR EAX,dword ptr [ESI + 0x28]
+009e7c48 AND EAX,0x10
+009e7c4b XOR dword ptr [ESI + 0x28],EAX
+009e7c4e TEST dword ptr [EDI + 0x40],0x2000
+009e7c55 JZ 0x009e7c5e
+009e7c57 OR dword ptr [ESI + 0x28],0x4000000
+009e7c5e MOV ECX,EDI
+009e7c60 CALL 0x0098ea30
+009e7c65 TEST EAX,EAX
+009e7c67 JG 0x009e7c7c
+009e7c69 TEST byte ptr [EDI + 0x5b],0x40
+009e7c6d JNZ 0x009e7c7c
+009e7c6f PUSH 0x12
+009e7c71 MOV ECX,EDI
+009e7c73 CALL 0x0098ed70
+009e7c78 TEST EAX,EAX
+009e7c7a JLE 0x009e7c83
+009e7c7c OR dword ptr [ESI + 0x24],0x800000
+009e7c83 MOVSS XMM0,dword ptr [0x00dce03c]
+009e7c8b COMISS XMM0,dword ptr [EDI + 0x1c]
+009e7c8f JA 0x009e7c9f
+009e7c91 MOV ECX,dword ptr [ESI + 0x28]
+009e7c94 AND ECX,0x3c0
+009e7c9a CMP ECX,0x40
+009e7c9d JNZ 0x009e7ca6
+009e7c9f OR dword ptr [ESI + 0x24],0x40000000
+009e7ca6 MOV EDX,dword ptr [EDI]
+009e7ca8 MOV EAX,dword ptr [EDX + 0xc]
+009e7cab MOV ECX,EDI
+009e7cad CALL EAX
+009e7caf CMP AL,0x2
+009e7cb1 JZ 0x009e7cc4
+009e7cb3 CMP EBX,dword ptr [0x01690ba8]
+009e7cb9 JZ 0x009e7cc4
+009e7cbb AND dword ptr [ESI + 0x28],0xffff7fff
+009e7cc2 JMP 0x009e7ccb
+009e7cc4 OR dword ptr [ESI + 0x28],0x8000
+009e7ccb FLD float ptr [EDI + 0x2c]
+009e7cce FSTP float ptr [ESI + 0x50]
+009e7cd1 CMP word ptr [EDI + 0x52],-0x1
+009e7cd6 JZ 0x009e7cdf
+009e7cd8 OR dword ptr [ESI + 0x28],0x8000000
+009e7cdf POP EDI
+009e7ce0 POP ESI
+009e7ce1 POP EBX
+009e7ce2 RET 0x4
+
+void __thiscall FUN_009e7c20(int param_1,int param_2)
+
+{
+  int *piVar1;
+  char cVar2;
+  uint uVar3;
+  int iVar4;
+  
+  piVar1 = (int *)(&DAT_015f73b0)[param_2];
+  *(short *)(param_1 + 0x2e) = (short)param_2;
+  if ((*(byte *)(param_1 + 0x28) & 0x10) == 0) {
+    uVar3 = FUN_009e6b10();
+    *(uint *)(param_1 + 0x28) =
+         *(uint *)(param_1 + 0x28) ^ ((uVar3 & 0xff) << 4 ^ *(uint *)(param_1 + 0x28)) & 0x10;
+  }
+  if ((piVar1[0x10] & 0x2000U) != 0) {
+    *(uint *)(param_1 + 0x28) = *(uint *)(param_1 + 0x28) | 0x4000000;
+  }
+  iVar4 = FUN_0098ea30();
+  if ((iVar4 < 1) && ((*(byte *)((int)piVar1 + 0x5b) & 0x40) == 0)) {
+    iVar4 = FUN_0098ed70(0x12);
+    if (iVar4 < 1) goto LAB_009e7c83;
+  }
+  *(uint *)(param_1 + 0x24) = *(uint *)(param_1 + 0x24) | 0x800000;
+LAB_009e7c83:
+  if (((float)piVar1[7] <= DAT_00dce03c && DAT_00dce03c != (float)piVar1[7]) ||
+     ((*(uint *)(param_1 + 0x28) & 0x3c0) == 0x40)) {
+    *(uint *)(param_1 + 0x24) = *(uint *)(param_1 + 0x24) | 0x40000000;
+  }
+  cVar2 = (**(code **)(*piVar1 + 0xc))();
+  if ((cVar2 == '\x02') || (param_2 == DAT_01690ba8)) {
+    *(uint *)(param_1 + 0x28) = *(uint *)(param_1 + 0x28) | 0x8000;
+  }
+  else {
+    *(uint *)(param_1 + 0x28) = *(uint *)(param_1 + 0x28) & 0xffff7fff;
+  }
+  *(int *)(param_1 + 0x50) = piVar1[0xb];
+  if (*(short *)((int)piVar1 + 0x52) != -1) {
+    *(uint *)(param_1 + 0x28) = *(uint *)(param_1 + 0x28) | 0x8000000;
+  }
+  return;
+}
+
+

@@ -1,0 +1,10 @@
+{
+  "date": "2026-10-09T21:41:51.2140353-06:00",
+  "installed_asi_sha256": "0363ce145d2bbc7c4509816f8a60e151f295aacc5acebd7550a8a1f7bc213c9b",
+  "destination": "D:/GTA IV/Grand Theft Auto IV - copia",
+  "backup": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\Install-ART-validation-20261009-214150",
+  "runtime_tested_asi_sha256": "2fdabb3a9334f15a379876197f6357f25bd560d06873def6957462ecb3e0a274",
+  "final_changes": "Generated address metadata and evidence catalog; tested probe implementations unchanged",
+  "build_passed": true,
+  "all_4016_headers_syntax_passed": true
+}

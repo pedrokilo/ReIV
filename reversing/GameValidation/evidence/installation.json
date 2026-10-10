@@ -1,0 +1,8 @@
+{
+  "installed_asi_sha256": "bb13356df666cc031a592b4589280da2ae8d554fa573bd94ad1789efddd1b201",
+  "game_directory": "D:\\GTA IV\\Grand Theft Auto IV - copia",
+  "backup": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\Install-game-validation-20261009-210431",
+  "runtime_tested_asi_sha256": "14bc7290beab588a7f96567847da06c524e589e3163e7e1638abfe3a1ca73671",
+  "final_change": "Regenerated historical catalog and disabled address metadata; probe implementations unchanged",
+  "test_markers_present": []
+}

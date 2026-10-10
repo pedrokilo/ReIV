@@ -1,0 +1,10 @@
+Canonical GTAIV.exe preferred VA 00491800
+00491800 RET 0xc
+
+void FUN_00491800(void)
+
+{
+  return;
+}
+
+

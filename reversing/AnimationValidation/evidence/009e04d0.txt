@@ -1,0 +1,111 @@
+Canonical GTAIV.exe preferred VA 009e04d0
+009e04d0 PUSH EBP
+009e04d1 MOV EBP,ESP
+009e04d3 AND ESP,0xfffffff0
+009e04d6 SUB ESP,0x8
+009e04d9 PUSH ESI
+009e04da MOV ESI,ECX
+009e04dc MOV EAX,dword ptr [ESI]
+009e04de MOV EDX,dword ptr [EAX + 0xa0]
+009e04e4 PUSH EDI
+009e04e5 CALL EDX
+009e04e7 TEST EAX,EAX
+009e04e9 JNZ 0x009e04f6
+009e04eb MOV EAX,dword ptr [ESI + 0x38]
+009e04ee TEST EAX,EAX
+009e04f0 JZ 0x009e059f
+009e04f6 MOV ECX,dword ptr [EAX + 0x4]
+009e04f9 MOV ECX,dword ptr [ECX + 0xc]
+009e04fc MOVSS XMM4,dword ptr [ECX + 0x34]
+009e0501 MOVSS XMM5,dword ptr [ECX + 0x38]
+009e0506 MOVSS XMM0,dword ptr [EAX + 0x30]
+009e050b MOVSS XMM1,dword ptr [EAX + 0x20]
+009e0510 MOVSS XMM3,dword ptr [ECX + 0x30]
+009e0515 MOVSS XMM2,dword ptr [EAX + 0x24]
+009e051a MULSS XMM1,XMM4
+009e051e ADD ECX,0x30
+009e0521 MULSS XMM0,XMM5
+009e0525 ADDSS XMM0,XMM1
+009e0529 MOVSS XMM1,dword ptr [EAX + 0x10]
+009e052e MULSS XMM2,XMM4
+009e0532 MULSS XMM1,XMM3
+009e0536 ADDSS XMM0,XMM1
+009e053a MOVSS XMM1,dword ptr [EAX + 0x34]
+009e053f ADDSS XMM0,dword ptr [EAX + 0x40]
+009e0544 MULSS XMM1,XMM5
+009e0548 ADDSS XMM1,XMM2
+009e054c MOVSS XMM2,dword ptr [EAX + 0x14]
+009e0551 MULSS XMM2,XMM3
+009e0555 ADDSS XMM1,XMM2
+009e0559 MOVSS XMM2,dword ptr [EAX + 0x38]
+009e055e ADDSS XMM1,dword ptr [EAX + 0x44]
+009e0563 MULSS XMM2,XMM5
+009e0567 MOVSS XMM5,dword ptr [EAX + 0x28]
+009e056c MULSS XMM5,XMM4
+009e0570 MOVSS XMM4,dword ptr [EAX + 0x18]
+009e0575 ADDSS XMM2,XMM5
+009e0579 MULSS XMM4,XMM3
+009e057d ADDSS XMM2,XMM4
+009e0581 ADDSS XMM2,dword ptr [EAX + 0x48]
+009e0586 MOV EAX,dword ptr [EBP + 0x8]
+009e0589 MOVSS dword ptr [EAX],XMM0
+009e058d MOVSS dword ptr [EAX + 0x4],XMM1
+009e0592 MOVSS dword ptr [EAX + 0x8],XMM2
+009e0597 POP EDI
+009e0598 POP ESI
+009e0599 MOV ESP,EBP
+009e059b POP EBP
+009e059c RET 0x4
+009e059f MOV EDI,dword ptr [EBP + 0x8]
+009e05a2 PUSH EDI
+009e05a3 MOV ECX,ESI
+009e05a5 CALL 0x009e8280
+009e05aa MOV EAX,EDI
+009e05ac POP EDI
+009e05ad POP ESI
+009e05ae MOV ESP,EBP
+009e05b0 POP EBP
+009e05b1 RET 0x4
+
+float * __thiscall FUN_009e04d0(int *param_1,float *param_2)
+
+{
+  float fVar1;
+  float fVar2;
+  float fVar3;
+  float fVar4;
+  float fVar5;
+  float fVar6;
+  float fVar7;
+  float fVar8;
+  float fVar9;
+  float fVar10;
+  float fVar11;
+  int iVar12;
+  int iVar13;
+  
+  iVar13 = (**(code **)(*param_1 + 0xa0))();
+  if ((iVar13 == 0) && (iVar13 = param_1[0xe], iVar13 == 0)) {
+    FUN_009e8280(param_2);
+    return param_2;
+  }
+  iVar12 = *(int *)(*(int *)(iVar13 + 4) + 0xc);
+  fVar1 = *(float *)(iVar12 + 0x34);
+  fVar2 = *(float *)(iVar12 + 0x38);
+  fVar3 = *(float *)(iVar12 + 0x30);
+  fVar4 = *(float *)(iVar13 + 0x24);
+  fVar5 = *(float *)(iVar13 + 0x34);
+  fVar6 = *(float *)(iVar13 + 0x14);
+  fVar7 = *(float *)(iVar13 + 0x38);
+  fVar8 = *(float *)(iVar13 + 0x44);
+  fVar9 = *(float *)(iVar13 + 0x28);
+  fVar10 = *(float *)(iVar13 + 0x18);
+  fVar11 = *(float *)(iVar13 + 0x48);
+  *param_2 = *(float *)(iVar13 + 0x30) * fVar2 + *(float *)(iVar13 + 0x20) * fVar1 +
+             *(float *)(iVar13 + 0x10) * fVar3 + *(float *)(iVar13 + 0x40);
+  param_2[1] = fVar5 * fVar2 + fVar4 * fVar1 + fVar6 * fVar3 + fVar8;
+  param_2[2] = fVar7 * fVar2 + fVar9 * fVar1 + fVar10 * fVar3 + fVar11;
+  return param_2;
+}
+
+

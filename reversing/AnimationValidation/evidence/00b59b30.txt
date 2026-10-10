@@ -1,0 +1,195 @@
+Canonical GTAIV.exe preferred VA 00b59b30
+00b59b30 JMP 0x009ea680
+
+void __fastcall thunk_FUN_009ea680(int *param_1)
+
+{
+  bool bVar1;
+  uint uVar2;
+  undefined4 *puVar3;
+  undefined4 *puVar4;
+  undefined8 uVar5;
+  undefined4 *puVar6;
+  int iVar7;
+  undefined4 *puVar8;
+  uint uVar9;
+  int iVar10;
+  uint uVar11;
+  int iVar12;
+  undefined4 *puVar13;
+  int iVar14;
+  uint uVar15;
+  float fVar16;
+  float fVar17;
+  float fVar18;
+  float fVar19;
+  float fVar20;
+  float fVar21;
+  float fVar22;
+  float fVar23;
+  undefined8 uStack_1c;
+  float fStack_14;
+  float fStack_10;
+  undefined8 uStack_c;
+  
+  if ((param_1[10] & 0x400000U) == 0) {
+    if (param_1[8] != 0) {
+      FUN_009ea4b0();
+    }
+  }
+  else if (param_1[8] == 0) {
+    FUN_009ea460();
+    FUN_009e9440(param_1[8]);
+  }
+  (**(code **)(*param_1 + 0x68))(&fStack_10);
+  uStack_1c = uStack_c;
+  uVar5 = uStack_1c;
+  if (fStack_14 < DAT_00ebe168) {
+    fStack_14 = DAT_00ebe168;
+  }
+  uStack_1c._0_4_ = (float)uStack_c;
+  bVar1 = DAT_00ebe164 <= (float)uStack_1c;
+  fVar17 = (float)uStack_1c;
+  uStack_1c = uVar5;
+  if (bVar1) {
+    uStack_1c._4_4_ = (float)((ulonglong)uStack_c >> 0x20);
+    uStack_1c = CONCAT44(uStack_1c._4_4_,DAT_00d83c7c);
+    fVar17 = DAT_00d83c7c;
+  }
+  fVar18 = uStack_1c._4_4_;
+  if (uStack_1c._4_4_ < DAT_00ebe168) {
+    fVar18 = DAT_00ebe168;
+  }
+  if (DAT_00ebe164 <= fStack_10) {
+    fStack_10 = DAT_00d83c7c;
+  }
+  if ((*(byte *)(param_1 + 9) & 0x40) == 0) {
+    fVar16 = fStack_14 * DAT_00d529c4 + DAT_00dce040;
+    fVar19 = fStack_10 * DAT_00d529c4 + DAT_00dce040;
+    fVar17 = (float)(DAT_00ebe09c | DAT_00ebded0 & (uint)fVar16);
+    fVar17 = (fVar16 + fVar17) - fVar17;
+    fVar21 = (float)(-(uint)((float)(DAT_00ebded0 & (uint)fVar16) < fVar17 - fVar16) & DAT_00d50398)
+    ;
+    fVar16 = (float)uStack_1c * DAT_00d529c4 + DAT_00dce040;
+    fVar20 = fVar18 * DAT_00d529c4 + DAT_00dce040;
+    fVar18 = (float)(DAT_00ebe09c | DAT_00ebded0 & (uint)fVar16);
+    fVar18 = (fVar16 + fVar18) - fVar18;
+    fVar22 = (float)(-(uint)((float)(DAT_00ebded0 & (uint)fVar16) < fVar18 - fVar16) & DAT_00d50398)
+    ;
+    fVar16 = (float)(DAT_00ebe09c | DAT_00ebded0 & (uint)fVar19);
+    fVar16 = (fVar19 + fVar16) - fVar16;
+    fVar23 = (float)(-(uint)((float)(DAT_00ebded0 & (uint)fVar19) < fVar16 - fVar19) & DAT_00d50398)
+    ;
+    fVar19 = (float)(DAT_00ebe09c | DAT_00ebded0 & (uint)fVar20);
+    fVar19 = (fVar20 + fVar19) - fVar19;
+    for (uVar15 = (uint)(fVar19 - (float)(-(uint)((float)(DAT_00ebded0 & (uint)fVar20) <
+                                                 fVar19 - fVar20) & DAT_00d50398));
+        uVar2 = (int)(fVar17 - fVar21), (int)uVar15 <= (int)(fVar16 - fVar23); uVar15 = uVar15 + 1)
+    {
+      for (; (int)uVar2 <= (int)(fVar18 - fVar22); uVar2 = uVar2 + 1) {
+        puVar8 = (undefined4 *)0x0;
+        switch((uint)param_1[10] >> 6 & 0xf) {
+        case 1:
+          FUN_007db8d0(param_1);
+          goto LAB_009eab1f;
+        case 2:
+          puVar8 = &DAT_011a7160 + ((uVar15 & 0xf) * 0x10 + (uVar2 & 0xf)) * 5;
+          break;
+        case 3:
+          puVar8 = &DAT_011a7164 + ((uVar15 & 0xf) * 0x10 + (uVar2 & 0xf)) * 5;
+          break;
+        case 4:
+          puVar8 = &DAT_011a7168 + ((uVar15 & 0xf) * 0x10 + (uVar2 & 0xf)) * 5;
+          break;
+        case 5:
+          uVar11 = ((int)uVar2 < 1) - 1 & uVar2;
+          if (0x76 < (int)uVar11) {
+            uVar11 = 0x77;
+          }
+          uVar9 = ((int)uVar15 < 1) - 1 & uVar15;
+          if (0x76 < (int)uVar9) {
+            uVar9 = 0x77;
+          }
+LAB_009eaa4f:
+          puVar8 = &DAT_011a856c + (uVar11 + uVar9 * 0x78) * 3;
+          break;
+        case 6:
+          uVar11 = ((int)uVar2 < 1) - 1 & uVar2;
+          if (0x76 < (int)uVar11) {
+            uVar11 = 0x77;
+          }
+          uVar9 = ((int)uVar15 < 1) - 1 & uVar15;
+          if ((int)uVar9 < 0x77) goto LAB_009eaa4f;
+          puVar8 = &DAT_011a856c + (uVar11 + 0x37c8) * 3;
+          break;
+        case 7:
+          puVar8 = &DAT_011a716c + ((uVar15 & 0xf) * 0x10 + (uVar2 & 0xf)) * 5;
+          break;
+        case 8:
+          puVar8 = &DAT_011a7170 + ((uVar15 & 0xf) * 0x10 + (uVar2 & 0xf)) * 5;
+        }
+        for (puVar13 = (undefined4 *)*puVar8; puVar13 != (undefined4 *)0x0;
+            puVar13 = (undefined4 *)puVar13[1]) {
+          if ((int *)*puVar13 == param_1) {
+            if ((undefined4 *)*puVar8 == puVar13) {
+              *puVar8 = puVar13[1];
+            }
+            if (puVar13[2] != 0) {
+              *(undefined4 *)(puVar13[2] + 4) = puVar13[1];
+            }
+            if (puVar13[1] != 0) {
+              *(undefined4 *)(puVar13[1] + 8) = puVar13[2];
+            }
+            FUN_00c79660(puVar13);
+            break;
+          }
+        }
+LAB_009eab1f:
+      }
+    }
+  }
+  else {
+    iVar7 = (int)(fStack_10 * DAT_00ebe284 + DAT_00d50960);
+    iVar10 = (int)(fVar18 * DAT_00ebe284 + DAT_00d50960);
+    iVar12 = (int)(fStack_14 * DAT_00ebe284 + DAT_00d50960);
+    iVar14 = (int)(fVar17 * DAT_00ebe284 + DAT_00d50960);
+    if (iVar10 <= iVar7) {
+      iVar7 = (iVar7 - iVar10) + 1;
+      puVar8 = &DAT_011d2870 + iVar12 + iVar10 * 0x1e;
+      do {
+        if (iVar12 <= iVar14) {
+          iVar10 = (iVar14 - iVar12) + 1;
+          puVar13 = puVar8;
+          do {
+            puVar6 = (undefined4 *)*puVar13;
+            puVar4 = (undefined4 *)0x0;
+            while (puVar3 = puVar6, puVar3 != (undefined4 *)0x0) {
+              if ((int *)*puVar3 == param_1) {
+                if ((undefined4 *)*puVar13 == puVar3) {
+                  *puVar13 = puVar3[1];
+                }
+                else if (puVar4 != (undefined4 *)0x0) {
+                  puVar4[1] = puVar3[1];
+                }
+                FUN_00c79660(puVar3);
+                break;
+              }
+              puVar4 = puVar3;
+              puVar6 = (undefined4 *)puVar3[1];
+            }
+            puVar13 = puVar13 + 1;
+            iVar10 = iVar10 + -1;
+          } while (iVar10 != 0);
+        }
+        puVar8 = puVar8 + 0x1e;
+        iVar7 = iVar7 + -1;
+        if (iVar7 == 0) {
+          return;
+        }
+      } while( true );
+    }
+  }
+  return;
+}
+
+

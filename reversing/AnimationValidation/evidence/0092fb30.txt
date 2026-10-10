@@ -1,0 +1,66 @@
+Canonical GTAIV.exe preferred VA 0092fb30
+0092fb30 PUSH EBX
+0092fb31 PUSH EDI
+0092fb32 XOR EBX,EBX
+0092fb34 XOR EDI,EDI
+0092fb36 CMP dword ptr [0x01548f84],EBX
+0092fb3c JLE 0x0092fb70
+0092fb3e PUSH ESI
+0092fb3f XOR ESI,ESI
+0092fb41 MOV EAX,[0x01548f90]
+0092fb46 MOV EAX,dword ptr [ESI + EAX*0x1 + 0x40]
+0092fb4a CMP EAX,EBX
+0092fb4c JZ 0x0092fb61
+0092fb4e PUSH EAX
+0092fb4f CALL 0x005b1c10
+0092fb54 MOV ECX,dword ptr [0x01548f90]
+0092fb5a ADD ESP,0x4
+0092fb5d MOV dword ptr [ESI + ECX*0x1 + 0x40],EBX
+0092fb61 ADD EDI,0x1
+0092fb64 ADD ESI,0x58
+0092fb67 CMP EDI,dword ptr [0x01548f84]
+0092fb6d JL 0x0092fb41
+0092fb6f POP ESI
+0092fb70 MOV EDX,dword ptr [0x01548f90]
+0092fb76 PUSH EDX
+0092fb77 CALL 0x005b1c10
+0092fb7c ADD ESP,0x4
+0092fb7f POP EDI
+0092fb80 MOV dword ptr [0x01548f90],EBX
+0092fb86 MOV word ptr [0x01548f94],BX
+0092fb8d MOV word ptr [0x01548f96],BX
+0092fb94 MOV dword ptr [0x01548f84],EBX
+0092fb9a POP EBX
+0092fb9b RET
+
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_0092fb30(void)
+
+{
+  int iVar1;
+  int iVar2;
+  int iVar3;
+  
+  iVar3 = 0;
+  if (0 < DAT_01548f84) {
+    iVar2 = 0;
+    do {
+      iVar1 = *(int *)(iVar2 + 0x40 + DAT_01548f90);
+      if (iVar1 != 0) {
+        FUN_005b1c10(iVar1);
+        *(undefined4 *)(iVar2 + 0x40 + DAT_01548f90) = 0;
+      }
+      iVar3 = iVar3 + 1;
+      iVar2 = iVar2 + 0x58;
+    } while (iVar3 < DAT_01548f84);
+  }
+  FUN_005b1c10(DAT_01548f90);
+  DAT_01548f90 = 0;
+  DAT_01548f94 = 0;
+  _DAT_01548f96 = 0;
+  DAT_01548f84 = 0;
+  return;
+}
+
+

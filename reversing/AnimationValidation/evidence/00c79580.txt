@@ -1,0 +1,84 @@
+Canonical GTAIV.exe preferred VA 00c79580
+00c79580 PUSH ESI
+00c79581 MOV ESI,ECX
+00c79583 CALL 0x009e7cf0
+00c79588 TEST AL,AL
+00c7958a JZ 0x00c79605
+00c7958c PUSH EDI
+00c7958d MOV ECX,ESI
+00c7958f CALL 0x009e17b0
+00c79594 PUSH 0x0
+00c79596 MOV ECX,ESI
+00c79598 CALL 0x009e1cf0
+00c7959d MOVSX EAX,word ptr [ESI + 0x2e]
+00c795a1 MOV EAX,dword ptr [EAX*0x4 + 0x15f73b0]
+00c795a8 MOVSX ECX,word ptr [EAX + 0x56]
+00c795ac MOV EAX,dword ptr [EAX + 0x3c]
+00c795af PUSH 0x0
+00c795b1 PUSH 0x20
+00c795b3 PUSH EAX
+00c795b4 PUSH ECX
+00c795b5 MOV ECX,dword ptr [ESI + 0x78]
+00c795b8 CALL 0x009efd70
+00c795bd MOV EDI,EAX
+00c795bf TEST EDI,EDI
+00c795c1 JZ 0x00c795f9
+00c795c3 MOV EAX,dword ptr [ESI + 0x4c]
+00c795c6 TEST EAX,EAX
+00c795c8 JZ 0x00c795f9
+00c795ca MOV ECX,dword ptr [EAX + 0x24]
+00c795cd SHR ECX,0x19
+00c795d0 TEST CL,0x1
+00c795d3 JZ 0x00c795f9
+00c795d5 MOV EAX,dword ptr [EAX + 0x78]
+00c795d8 TEST EAX,EAX
+00c795da JZ 0x00c795f9
+00c795dc MOV ECX,EAX
+00c795de CALL 0x009ebf60
+00c795e3 TEST EAX,EAX
+00c795e5 JZ 0x00c795f9
+00c795e7 MOV ECX,EAX
+00c795e9 CALL 0x00a4c3e0
+00c795ee PUSH ECX
+00c795ef MOV ECX,EDI
+00c795f1 FSTP float ptr [ESP]
+00c795f4 CALL 0x00a4db40
+00c795f9 MOV ECX,ESI
+00c795fb CALL 0x009e1b20
+00c79600 POP EDI
+00c79601 MOV AL,0x1
+00c79603 POP ESI
+00c79604 RET
+00c79605 XOR AL,AL
+00c79607 POP ESI
+00c79608 RET
+
+undefined4 __fastcall FUN_00c79580(int param_1)
+
+{
+  char cVar1;
+  int iVar2;
+  float10 fVar3;
+  
+  cVar1 = FUN_009e7cf0();
+  if (cVar1 != '\0') {
+    FUN_009e17b0();
+    FUN_009e1cf0(0);
+    iVar2 = FUN_009efd70((int)*(short *)((&DAT_015f73b0)[*(short *)(param_1 + 0x2e)] + 0x56),
+                         *(undefined4 *)((&DAT_015f73b0)[*(short *)(param_1 + 0x2e)] + 0x3c),0x20,0)
+    ;
+    if ((((iVar2 != 0) && (iVar2 = *(int *)(param_1 + 0x4c), iVar2 != 0)) &&
+        ((*(uint *)(iVar2 + 0x24) >> 0x19 & 1) != 0)) && (*(int *)(iVar2 + 0x78) != 0)) {
+      iVar2 = FUN_009ebf60();
+      if (iVar2 != 0) {
+        fVar3 = (float10)FUN_00a4c3e0();
+        FUN_00a4db40((float)fVar3);
+      }
+    }
+    FUN_009e1b20();
+    return 1;
+  }
+  return 0;
+}
+
+

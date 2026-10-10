@@ -1,0 +1,386 @@
+[
+  {
+    "va": "0x0044cb40",
+    "rva": "0x0004cb40",
+    "operation": "get_u8",
+    "value": 32,
+    "entry_bytes": "8a 41 20 c3",
+    "body_size": 4,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUBodyWrithe"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005879b0",
+    "rva": "0x001879b0",
+    "operation": "address_offset",
+    "value": 16,
+    "entry_bytes": "8d 41 10 c3",
+    "body_size": 4,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::phInstNM"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005e3570",
+    "rva": "0x001e3570",
+    "operation": "get_u32",
+    "value": 256,
+    "entry_bytes": "8b 81 00 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005e3580",
+    "rva": "0x001e3580",
+    "operation": "get_u32",
+    "value": 260,
+    "entry_bytes": "8b 81 04 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005e3590",
+    "rva": "0x001e3590",
+    "operation": "get_u32",
+    "value": 264,
+    "entry_bytes": "8b 81 08 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005e35b0",
+    "rva": "0x001e35b0",
+    "operation": "get_float",
+    "value": 380,
+    "entry_bytes": "d9 81 7c 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005e35e0",
+    "rva": "0x001e35e0",
+    "operation": "get_float",
+    "value": 388,
+    "entry_bytes": "d9 81 84 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005e3610",
+    "rva": "0x001e3610",
+    "operation": "get_float",
+    "value": 392,
+    "entry_bytes": "d9 81 88 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005e3640",
+    "rva": "0x001e3640",
+    "operation": "get_float",
+    "value": 396,
+    "entry_bytes": "d9 81 8c 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005ee880",
+    "rva": "0x001ee880",
+    "operation": "get_u32",
+    "value": 272,
+    "entry_bytes": "8b 81 10 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005ee890",
+    "rva": "0x001ee890",
+    "operation": "get_u32",
+    "value": 240,
+    "entry_bytes": "8b 81 f0 00 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005ee8a0",
+    "rva": "0x001ee8a0",
+    "operation": "get_u32",
+    "value": 244,
+    "entry_bytes": "8b 81 f4 00 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005ee8b0",
+    "rva": "0x001ee8b0",
+    "operation": "get_float",
+    "value": 296,
+    "entry_bytes": "d9 81 28 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005ee8e0",
+    "rva": "0x001ee8e0",
+    "operation": "get_float",
+    "value": 300,
+    "entry_bytes": "d9 81 2c 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005ee910",
+    "rva": "0x001ee910",
+    "operation": "get_float",
+    "value": 304,
+    "entry_bytes": "d9 81 30 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005ee940",
+    "rva": "0x001ee940",
+    "operation": "get_float",
+    "value": 308,
+    "entry_bytes": "d9 81 34 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005efd40",
+    "rva": "0x001efd40",
+    "operation": "get_u8",
+    "value": 104,
+    "entry_bytes": "8a 41 68 c3",
+    "body_size": 4,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUPointArm"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005f03b0",
+    "rva": "0x001f03b0",
+    "operation": "get_u8",
+    "value": 257,
+    "entry_bytes": "8a 81 01 01 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUCatchFall"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x005ff420",
+    "rva": "0x001ff420",
+    "operation": "get_u8",
+    "value": 192,
+    "entry_bytes": "8a 81 c0 00 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUGrab"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x006038e0",
+    "rva": "0x002038e0",
+    "operation": "get_u8",
+    "value": 172,
+    "entry_bytes": "8a 81 ac 00 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBURollDownStairs"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x00604060",
+    "rva": "0x00204060",
+    "operation": "get_u8",
+    "value": 108,
+    "entry_bytes": "8a 41 6c c3",
+    "body_size": 4,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBURollUp"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x00606880",
+    "rva": "0x00206880",
+    "operation": "get_u8",
+    "value": 84,
+    "entry_bytes": "8a 41 54 c3",
+    "body_size": 4,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUBodyFoetal"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x0060b000",
+    "rva": "0x0020b000",
+    "operation": "get_u8",
+    "value": 213,
+    "entry_bytes": "8a 81 d5 00 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUPedal"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  },
+  {
+    "va": "0x0060f090",
+    "rva": "0x0020f090",
+    "operation": "get_u8",
+    "value": 184,
+    "entry_bytes": "8a 81 b8 00 00 00 c3",
+    "body_size": 7,
+    "abi": "x86_thiscall_fixture",
+    "owners": [
+      "ART::Rockstar::NmRsCBUFallOverWall"
+    ],
+    "reference_count": 1,
+    "runtime_tested": false,
+    "enabled": false,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+  }
+]

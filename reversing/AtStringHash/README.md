@@ -1,8 +1,8 @@
 # rage::atStringHash — primer caso de ReIV
 
-**Reconstruida, hookeada y validada en GTA IV PC 1.0.7.0.** Banco aprobado el 6 de octubre de 2026: **8.320 comparaciones sintéticas y 4.096 comparaciones durante llamadas reales**, con cero diferencias. La sesión recibió ambos eventos de carga, procesó 428 ciclos de scripts y cerró con código 0, sin terminación forzada.
+**Reconstruida, hookeada y validada en GTA IV PC 1.0.7.0.** Última comprobación el 7 de octubre de 2026: **8.320 comparaciones sintéticas y 4.096 comparaciones durante la ejecución**, con cero diferencias. La sesión recibió ambos eventos de carga, procesó 376 ciclos de scripts y cerró con código 0, sin terminación forzada. La compilación validada quedó instalada en `Grand Theft Auto IV - copia`, sin marcador de cierre automático.
 
-La evidencia vinculada a hashes está en [validation-summary.json](evidence/validation-summary.json). Los logs, respaldos y partidas temporales están localmente en `reversing/artifacts/atStringHash-20261006-170938/` y no se publican.
+La evidencia vinculada a hashes está en [validation-summary.json](evidence/validation-summary.json). Los logs, respaldos y partidas temporales de la última prueba están localmente en `reversing/artifacts/atStringHash-20261007-125412/` y no se publican. Se conserva el [resultado del 6 de octubre](evidence/validation-summary-20261006.json).
 
 ## Identificación
 
@@ -39,7 +39,7 @@ Antes de alterar memoria se comprueban los 106 bytes de la función contra la co
 
 Sólo después de aprobar el banco se instala un JMP. El trampoline conserva las dos primeras instrucciones completas (MOV de cuatro bytes y PUSH de un byte) y salta al original después de ellas. Se prueba explícitamente la entrada parcheada y se comprueba que aumenta el contador del reemplazo. Las primeras 4.096 llamadas reales se contrastan con el trampoline.
 
-Se contaron **383.860 llamadas al reemplazo** durante la sesión. Eso mide uso real, no 383.860 comparaciones: únicamente las primeras 4.096 se compararon con el original. No constituye una prueba exhaustiva de todos los inputs ni una campaña de estabilidad general.
+Se contaron **377.945 llamadas al reemplazo** durante la última sesión. Eso mide llamadas al hook, no 377.945 comparaciones: únicamente las primeras 4.096 se compararon con el original, incluida la llamada explícita de comprobación de la entrada parcheada. No constituye una prueba exhaustiva de todos los inputs ni una campaña de estabilidad general.
 
 `standalone=0` en el catálogo: aunque la implementación matemática es independiente, la sonda conserva llamadas al original para la comparación. Todavía no existe un ejecutable standalone.
 

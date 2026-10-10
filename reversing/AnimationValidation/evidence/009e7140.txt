@@ -1,0 +1,28 @@
+Canonical GTAIV.exe preferred VA 009e7140
+009e7140 MOV EDX,dword ptr [ESP + 0x10]
+009e7144 TEST EDX,EDX
+009e7146 JZ 0x009e7160
+009e7148 MOV EAX,dword ptr [ESP + 0x8]
+009e714c MOV ECX,dword ptr [EAX]
+009e714e CMP ECX,dword ptr [ESP + 0xc]
+009e7152 JGE 0x009e7160
+009e7154 PUSH ESI
+009e7155 MOV ESI,dword ptr [ESP + 0x8]
+009e7159 MOV dword ptr [ESI + ECX*0x4],EDX
+009e715c ADD dword ptr [EAX],0x1
+009e715f POP ESI
+009e7160 RET 0x10
+
+void FUN_009e7140(int param_1,int *param_2,int param_3,int param_4)
+
+{
+  if (param_4 != 0) {
+    if (*param_2 < param_3) {
+      *(int *)(param_1 + *param_2 * 4) = param_4;
+      *param_2 = *param_2 + 1;
+    }
+  }
+  return;
+}
+
+

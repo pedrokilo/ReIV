@@ -1,0 +1,8411 @@
+{
+  "passed": true,
+  "date": "2026-10-09T21:17:24.5060705-06:00",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "asi_sha256": "ef474eabd18f516af2f15b7c936e71591fde1bc8ee49c098d4d0f0ce4d69e99e",
+  "implementation_sha256": "4409de3cc18bc5f5d7bb8e2de27cbd1322f3d5b04191a0c204d99592b6529ed6",
+  "result": {
+    "phase": "passed",
+    "exceptions": 0,
+    "slots_checked": 19799,
+    "slots_failed": 0,
+    "scope": "complete pure stub bodies only; slot audit is address-only; no class ABI or gameplay semantics established",
+    "entries": [
+      {
+        "rva": "0x00047970",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 0
+      },
+      {
+        "rva": "0x000489D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 2
+      },
+      {
+        "rva": "0x0004C570",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 3
+      },
+      {
+        "rva": "0x00053AF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 5
+      },
+      {
+        "rva": "0x0005A5F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 28
+      },
+      {
+        "rva": "0x00074200",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 294
+      },
+      {
+        "rva": "0x00096B80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 103
+      },
+      {
+        "rva": "0x000A2140",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 57
+      },
+      {
+        "rva": "0x000C4AC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358952
+      },
+      {
+        "rva": "0x000C4AD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901760
+      },
+      {
+        "rva": "0x000C4B10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358992
+      },
+      {
+        "rva": "0x000C4B20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836224
+      },
+      {
+        "rva": "0x000C4B60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357472
+      },
+      {
+        "rva": "0x000C4B70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901765
+      },
+      {
+        "rva": "0x000C4BB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357508
+      },
+      {
+        "rva": "0x000C4BC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836229
+      },
+      {
+        "rva": "0x000C4C10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357768
+      },
+      {
+        "rva": "0x000C4C20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901762
+      },
+      {
+        "rva": "0x000C4C60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357808
+      },
+      {
+        "rva": "0x000C4C70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836226
+      },
+      {
+        "rva": "0x000C4D00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358872
+      },
+      {
+        "rva": "0x000C4D10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901761
+      },
+      {
+        "rva": "0x000C4D50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358912
+      },
+      {
+        "rva": "0x000C4D60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836225
+      },
+      {
+        "rva": "0x000C4DA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357916
+      },
+      {
+        "rva": "0x000C4DB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901764
+      },
+      {
+        "rva": "0x000C4DF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357952
+      },
+      {
+        "rva": "0x000C4E00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836228
+      },
+      {
+        "rva": "0x000C4E40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358592
+      },
+      {
+        "rva": "0x000C4E50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901763
+      },
+      {
+        "rva": "0x000C4E90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358628
+      },
+      {
+        "rva": "0x000C4EA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836227
+      },
+      {
+        "rva": "0x000C4EE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356900
+      },
+      {
+        "rva": "0x000C4EF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901770
+      },
+      {
+        "rva": "0x000C4F30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356932
+      },
+      {
+        "rva": "0x000C4F40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836234
+      },
+      {
+        "rva": "0x000C4F50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 61
+      },
+      {
+        "rva": "0x000C4F90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356968
+      },
+      {
+        "rva": "0x000C4FA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901771
+      },
+      {
+        "rva": "0x000C4FE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357000
+      },
+      {
+        "rva": "0x000C4FF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836235
+      },
+      {
+        "rva": "0x000C5040",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358140
+      },
+      {
+        "rva": "0x000C5050",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901769
+      },
+      {
+        "rva": "0x000C5090",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358172
+      },
+      {
+        "rva": "0x000C50A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836233
+      },
+      {
+        "rva": "0x000C50E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358804
+      },
+      {
+        "rva": "0x000C50F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901772
+      },
+      {
+        "rva": "0x000C5130",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358836
+      },
+      {
+        "rva": "0x000C5140",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836236
+      },
+      {
+        "rva": "0x000C5180",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357036
+      },
+      {
+        "rva": "0x000C5190",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901775
+      },
+      {
+        "rva": "0x000C51D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357072
+      },
+      {
+        "rva": "0x000C51E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836239
+      },
+      {
+        "rva": "0x000C5220",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357848
+      },
+      {
+        "rva": "0x000C5230",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901774
+      },
+      {
+        "rva": "0x000C5270",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357880
+      },
+      {
+        "rva": "0x000C5280",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836238
+      },
+      {
+        "rva": "0x000C52C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358508
+      },
+      {
+        "rva": "0x000C52D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901773
+      },
+      {
+        "rva": "0x000C5310",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358548
+      },
+      {
+        "rva": "0x000C5320",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836237
+      },
+      {
+        "rva": "0x000C5360",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357320
+      },
+      {
+        "rva": "0x000C5370",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901766
+      },
+      {
+        "rva": "0x000C54C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357356
+      },
+      {
+        "rva": "0x000C54D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836230
+      },
+      {
+        "rva": "0x000C5510",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357992
+      },
+      {
+        "rva": "0x000C5520",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901768
+      },
+      {
+        "rva": "0x000C5560",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358028
+      },
+      {
+        "rva": "0x000C5570",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836232
+      },
+      {
+        "rva": "0x000C55B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358736
+      },
+      {
+        "rva": "0x000C55C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901767
+      },
+      {
+        "rva": "0x000C5600",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358768
+      },
+      {
+        "rva": "0x000C5610",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836231
+      },
+      {
+        "rva": "0x000C5650",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357108
+      },
+      {
+        "rva": "0x000C5660",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901776
+      },
+      {
+        "rva": "0x000C5720",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357140
+      },
+      {
+        "rva": "0x000C5730",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836240
+      },
+      {
+        "rva": "0x000C5770",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358068
+      },
+      {
+        "rva": "0x000C5780",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901778
+      },
+      {
+        "rva": "0x000C57C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358104
+      },
+      {
+        "rva": "0x000C57D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836242
+      },
+      {
+        "rva": "0x000C5810",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358664
+      },
+      {
+        "rva": "0x000C5820",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901779
+      },
+      {
+        "rva": "0x000C5860",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358700
+      },
+      {
+        "rva": "0x000C5870",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836243
+      },
+      {
+        "rva": "0x000C58B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357624
+      },
+      {
+        "rva": "0x000C58C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901780
+      },
+      {
+        "rva": "0x000C5900",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357660
+      },
+      {
+        "rva": "0x000C5910",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836244
+      },
+      {
+        "rva": "0x000C59B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356828
+      },
+      {
+        "rva": "0x000C59C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901781
+      },
+      {
+        "rva": "0x000C5A00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356864
+      },
+      {
+        "rva": "0x000C5A10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836245
+      },
+      {
+        "rva": "0x000C5A50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358360
+      },
+      {
+        "rva": "0x000C5A60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901782
+      },
+      {
+        "rva": "0x000C5AA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358396
+      },
+      {
+        "rva": "0x000C5AB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836246
+      },
+      {
+        "rva": "0x000C5B20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357248
+      },
+      {
+        "rva": "0x000C5B30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901783
+      },
+      {
+        "rva": "0x000C5B70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357284
+      },
+      {
+        "rva": "0x000C5B80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836247
+      },
+      {
+        "rva": "0x000C5BC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358208
+      },
+      {
+        "rva": "0x000C5BD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901777
+      },
+      {
+        "rva": "0x000C5C10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358248
+      },
+      {
+        "rva": "0x000C5C20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836241
+      },
+      {
+        "rva": "0x000C5C60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357696
+      },
+      {
+        "rva": "0x000C5C70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901784
+      },
+      {
+        "rva": "0x000C5CB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357732
+      },
+      {
+        "rva": "0x000C5CC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836248
+      },
+      {
+        "rva": "0x000C5D50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358288
+      },
+      {
+        "rva": "0x000C5D60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901785
+      },
+      {
+        "rva": "0x000C5DA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358324
+      },
+      {
+        "rva": "0x000C5DB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836249
+      },
+      {
+        "rva": "0x000C5DF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357176
+      },
+      {
+        "rva": "0x000C5E00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901786
+      },
+      {
+        "rva": "0x000C5E40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357212
+      },
+      {
+        "rva": "0x000C5E50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836250
+      },
+      {
+        "rva": "0x000C5E90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357548
+      },
+      {
+        "rva": "0x000C5EA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901787
+      },
+      {
+        "rva": "0x000C5EE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357584
+      },
+      {
+        "rva": "0x000C5EF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836251
+      },
+      {
+        "rva": "0x000C5F30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15359032
+      },
+      {
+        "rva": "0x000C5F40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901788
+      },
+      {
+        "rva": "0x000C5F80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15359068
+      },
+      {
+        "rva": "0x000C5F90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836252
+      },
+      {
+        "rva": "0x000C5FD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357396
+      },
+      {
+        "rva": "0x000C5FE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901789
+      },
+      {
+        "rva": "0x000C6020",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15357432
+      },
+      {
+        "rva": "0x000C6030",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836253
+      },
+      {
+        "rva": "0x000C6070",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358432
+      },
+      {
+        "rva": "0x000C6080",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294901790
+      },
+      {
+        "rva": "0x000C60C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15358468
+      },
+      {
+        "rva": "0x000C60D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4294836254
+      },
+      {
+        "rva": "0x000C6270",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340504
+      },
+      {
+        "rva": "0x000C62B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340536
+      },
+      {
+        "rva": "0x000C62C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 95
+      },
+      {
+        "rva": "0x000C6300",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340568
+      },
+      {
+        "rva": "0x000C6340",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340600
+      },
+      {
+        "rva": "0x000C63B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340632
+      },
+      {
+        "rva": "0x000C63C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 98
+      },
+      {
+        "rva": "0x000C64F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340664
+      },
+      {
+        "rva": "0x000C6500",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 99
+      },
+      {
+        "rva": "0x000C6540",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340696
+      },
+      {
+        "rva": "0x000C6550",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 100
+      },
+      {
+        "rva": "0x000C6590",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340728
+      },
+      {
+        "rva": "0x000C65A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 101
+      },
+      {
+        "rva": "0x000C65E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340760
+      },
+      {
+        "rva": "0x000C6670",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340792
+      },
+      {
+        "rva": "0x000C66D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340828
+      },
+      {
+        "rva": "0x000C66E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 104
+      },
+      {
+        "rva": "0x000C6720",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340864
+      },
+      {
+        "rva": "0x000C6730",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 105
+      },
+      {
+        "rva": "0x000C6770",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340900
+      },
+      {
+        "rva": "0x000C6780",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 106
+      },
+      {
+        "rva": "0x000C67C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340936
+      },
+      {
+        "rva": "0x000C67D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 107
+      },
+      {
+        "rva": "0x000C6810",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340972
+      },
+      {
+        "rva": "0x000C6820",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 108
+      },
+      {
+        "rva": "0x000C6860",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341040
+      },
+      {
+        "rva": "0x000C68A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341868
+      },
+      {
+        "rva": "0x000C68E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341904
+      },
+      {
+        "rva": "0x000C68F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 111
+      },
+      {
+        "rva": "0x000C6930",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341940
+      },
+      {
+        "rva": "0x000C6970",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341976
+      },
+      {
+        "rva": "0x000C6980",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 113
+      },
+      {
+        "rva": "0x000C69C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342012
+      },
+      {
+        "rva": "0x000C69D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 114
+      },
+      {
+        "rva": "0x000C6A70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342048
+      },
+      {
+        "rva": "0x000C6A80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 115
+      },
+      {
+        "rva": "0x000C6AC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342084
+      },
+      {
+        "rva": "0x000C6B20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341148
+      },
+      {
+        "rva": "0x000C6B60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341184
+      },
+      {
+        "rva": "0x000C6BA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341688
+      },
+      {
+        "rva": "0x000C6BE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341724
+      },
+      {
+        "rva": "0x000C6C20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341760
+      },
+      {
+        "rva": "0x000C6C60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341796
+      },
+      {
+        "rva": "0x000C6D30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341832
+      },
+      {
+        "rva": "0x000C6EF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342432
+      },
+      {
+        "rva": "0x000C7160",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343116
+      },
+      {
+        "rva": "0x000C71A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343152
+      },
+      {
+        "rva": "0x000C71B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 118
+      },
+      {
+        "rva": "0x000C71F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343188
+      },
+      {
+        "rva": "0x000C7200",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 119
+      },
+      {
+        "rva": "0x000C7240",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343224
+      },
+      {
+        "rva": "0x000C7250",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 120
+      },
+      {
+        "rva": "0x000C7290",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343260
+      },
+      {
+        "rva": "0x000C72D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343296
+      },
+      {
+        "rva": "0x000C72E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 122
+      },
+      {
+        "rva": "0x000C7320",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343332
+      },
+      {
+        "rva": "0x000C7330",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 123
+      },
+      {
+        "rva": "0x000C7370",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343368
+      },
+      {
+        "rva": "0x000C7380",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 124
+      },
+      {
+        "rva": "0x000C73C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343404
+      },
+      {
+        "rva": "0x000C73D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 125
+      },
+      {
+        "rva": "0x000C7410",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343440
+      },
+      {
+        "rva": "0x000C7420",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 126
+      },
+      {
+        "rva": "0x000C7460",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343476
+      },
+      {
+        "rva": "0x000C7470",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 127
+      },
+      {
+        "rva": "0x000C74B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342468
+      },
+      {
+        "rva": "0x000C74F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342504
+      },
+      {
+        "rva": "0x000C7530",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342540
+      },
+      {
+        "rva": "0x000C7570",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342576
+      },
+      {
+        "rva": "0x000C75B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342612
+      },
+      {
+        "rva": "0x000C75F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342648
+      },
+      {
+        "rva": "0x000C7630",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342720
+      },
+      {
+        "rva": "0x000C7670",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342684
+      },
+      {
+        "rva": "0x000C76C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342756
+      },
+      {
+        "rva": "0x000C76D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 53
+      },
+      {
+        "rva": "0x000C77D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342828
+      },
+      {
+        "rva": "0x000C77E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 65
+      },
+      {
+        "rva": "0x000C7820",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342792
+      },
+      {
+        "rva": "0x000C7860",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342864
+      },
+      {
+        "rva": "0x000C78A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342900
+      },
+      {
+        "rva": "0x000C78B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 67
+      },
+      {
+        "rva": "0x000C78C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 6
+      },
+      {
+        "rva": "0x000C79C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342936
+      },
+      {
+        "rva": "0x000C7A00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343008
+      },
+      {
+        "rva": "0x000C7A10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 72
+      },
+      {
+        "rva": "0x000C7A20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4
+      },
+      {
+        "rva": "0x000C7A60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342972
+      },
+      {
+        "rva": "0x000C7A70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 71
+      },
+      {
+        "rva": "0x000C7AB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343044
+      },
+      {
+        "rva": "0x000C7B00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343080
+      },
+      {
+        "rva": "0x000C7B10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 76
+      },
+      {
+        "rva": "0x000C7B60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339964
+      },
+      {
+        "rva": "0x000C7BA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340000
+      },
+      {
+        "rva": "0x000C7BE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340036
+      },
+      {
+        "rva": "0x000C7BF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 81
+      },
+      {
+        "rva": "0x000C7C30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340072
+      },
+      {
+        "rva": "0x000C7C40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 82
+      },
+      {
+        "rva": "0x000C7C80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340108
+      },
+      {
+        "rva": "0x000C7CC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340144
+      },
+      {
+        "rva": "0x000C7D00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340180
+      },
+      {
+        "rva": "0x000C7D40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340216
+      },
+      {
+        "rva": "0x000C7D80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340252
+      },
+      {
+        "rva": "0x000C7D90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 87
+      },
+      {
+        "rva": "0x000C7DF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340288
+      },
+      {
+        "rva": "0x000C7E50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340324
+      },
+      {
+        "rva": "0x000C7E60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 89
+      },
+      {
+        "rva": "0x000C7EC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340360
+      },
+      {
+        "rva": "0x000C7F60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340396
+      },
+      {
+        "rva": "0x000C7F70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 91
+      },
+      {
+        "rva": "0x000C8030",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340432
+      },
+      {
+        "rva": "0x000C8090",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15340468
+      },
+      {
+        "rva": "0x000C80F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341220
+      },
+      {
+        "rva": "0x000C8150",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341256
+      },
+      {
+        "rva": "0x000C81B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341292
+      },
+      {
+        "rva": "0x000C81C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 18
+      },
+      {
+        "rva": "0x000C8220",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341328
+      },
+      {
+        "rva": "0x000C8280",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341364
+      },
+      {
+        "rva": "0x000C8360",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341400
+      },
+      {
+        "rva": "0x000C83C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341436
+      },
+      {
+        "rva": "0x000C83D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 27
+      },
+      {
+        "rva": "0x000C8430",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341472
+      },
+      {
+        "rva": "0x000C8490",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341508
+      },
+      {
+        "rva": "0x000C84F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341544
+      },
+      {
+        "rva": "0x000C8500",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 5
+      },
+      {
+        "rva": "0x000C8560",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341580
+      },
+      {
+        "rva": "0x000C85C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341616
+      },
+      {
+        "rva": "0x000C85D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 48
+      },
+      {
+        "rva": "0x000C8630",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341076
+      },
+      {
+        "rva": "0x000C8690",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341652
+      },
+      {
+        "rva": "0x000C87E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341112
+      },
+      {
+        "rva": "0x000C88B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343512
+      },
+      {
+        "rva": "0x000C88C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 128
+      },
+      {
+        "rva": "0x000C8AA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343548
+      },
+      {
+        "rva": "0x000C8B00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344052
+      },
+      {
+        "rva": "0x000C8B10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 143
+      },
+      {
+        "rva": "0x000C8B70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344088
+      },
+      {
+        "rva": "0x000C8B80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 144
+      },
+      {
+        "rva": "0x000C8BE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344232
+      },
+      {
+        "rva": "0x000C8BF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 148
+      },
+      {
+        "rva": "0x000C8C50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343800
+      },
+      {
+        "rva": "0x000C8C60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 136
+      },
+      {
+        "rva": "0x000C8CC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343656
+      },
+      {
+        "rva": "0x000C8CD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 132
+      },
+      {
+        "rva": "0x000C8D30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344448
+      },
+      {
+        "rva": "0x000C8D40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 154
+      },
+      {
+        "rva": "0x000C8DA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344340
+      },
+      {
+        "rva": "0x000C8DB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 151
+      },
+      {
+        "rva": "0x000C8E70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344376
+      },
+      {
+        "rva": "0x000C8E80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 152
+      },
+      {
+        "rva": "0x000C8F00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344520
+      },
+      {
+        "rva": "0x000C8F10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 156
+      },
+      {
+        "rva": "0x000C8F70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343728
+      },
+      {
+        "rva": "0x000C8FD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343836
+      },
+      {
+        "rva": "0x000C8FE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 137
+      },
+      {
+        "rva": "0x000C9040",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343908
+      },
+      {
+        "rva": "0x000C9050",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 139
+      },
+      {
+        "rva": "0x000C90B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343764
+      },
+      {
+        "rva": "0x000C90C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 135
+      },
+      {
+        "rva": "0x000C9280",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343944
+      },
+      {
+        "rva": "0x000C92E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343980
+      },
+      {
+        "rva": "0x000C92F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 141
+      },
+      {
+        "rva": "0x000C9350",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344160
+      },
+      {
+        "rva": "0x000C9360",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 146
+      },
+      {
+        "rva": "0x000C93D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344412
+      },
+      {
+        "rva": "0x000C93E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 153
+      },
+      {
+        "rva": "0x000C9440",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344016
+      },
+      {
+        "rva": "0x000C9450",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 142
+      },
+      {
+        "rva": "0x000C94B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344124
+      },
+      {
+        "rva": "0x000C94C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 145
+      },
+      {
+        "rva": "0x000C9520",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343620
+      },
+      {
+        "rva": "0x000C9530",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 131
+      },
+      {
+        "rva": "0x000C9590",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343872
+      },
+      {
+        "rva": "0x000C95A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 138
+      },
+      {
+        "rva": "0x000C9600",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344268
+      },
+      {
+        "rva": "0x000C9610",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 149
+      },
+      {
+        "rva": "0x000C9670",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344196
+      },
+      {
+        "rva": "0x000C9680",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 147
+      },
+      {
+        "rva": "0x000C96E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343584
+      },
+      {
+        "rva": "0x000C9740",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15343692
+      },
+      {
+        "rva": "0x000C9750",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 133
+      },
+      {
+        "rva": "0x000C97B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344484
+      },
+      {
+        "rva": "0x000C97C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 155
+      },
+      {
+        "rva": "0x000C9820",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344304
+      },
+      {
+        "rva": "0x000C9830",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 150
+      },
+      {
+        "rva": "0x000C9890",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344556
+      },
+      {
+        "rva": "0x000C98A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 157
+      },
+      {
+        "rva": "0x000C9A90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339028
+      },
+      {
+        "rva": "0x000C9AA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 7
+      },
+      {
+        "rva": "0x000C9CF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339232
+      },
+      {
+        "rva": "0x000C9F80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15338956
+      },
+      {
+        "rva": "0x000CA430",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339156
+      },
+      {
+        "rva": "0x000CA760",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15338992
+      },
+      {
+        "rva": "0x000CABF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339196
+      },
+      {
+        "rva": "0x000CAFA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339412
+      },
+      {
+        "rva": "0x000CB160",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339444
+      },
+      {
+        "rva": "0x000CB2C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339784
+      },
+      {
+        "rva": "0x000CB530",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339376
+      },
+      {
+        "rva": "0x000CB5F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339480
+      },
+      {
+        "rva": "0x000CB700",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339740
+      },
+      {
+        "rva": "0x000CB780",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339120
+      },
+      {
+        "rva": "0x000CB9E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339336
+      },
+      {
+        "rva": "0x000CBAA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339696
+      },
+      {
+        "rva": "0x000CBCB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342188
+      },
+      {
+        "rva": "0x000CBE20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342292
+      },
+      {
+        "rva": "0x000CBF10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342120
+      },
+      {
+        "rva": "0x000CC0E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342220
+      },
+      {
+        "rva": "0x000CC2F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339088
+      },
+      {
+        "rva": "0x000CC650",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339300
+      },
+      {
+        "rva": "0x000CC660",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 38
+      },
+      {
+        "rva": "0x000CC9A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342156
+      },
+      {
+        "rva": "0x000CC9B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 44
+      },
+      {
+        "rva": "0x000CCB40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342260
+      },
+      {
+        "rva": "0x000CCB50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 54
+      },
+      {
+        "rva": "0x000CCEC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339060
+      },
+      {
+        "rva": "0x000CD100",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339268
+      },
+      {
+        "rva": "0x000CD490",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15341008
+      },
+      {
+        "rva": "0x000CD4A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 109
+      },
+      {
+        "rva": "0x000CD9B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339520
+      },
+      {
+        "rva": "0x000CDC10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339556
+      },
+      {
+        "rva": "0x000CDE20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339592
+      },
+      {
+        "rva": "0x000CE1D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339824
+      },
+      {
+        "rva": "0x000CE2A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339868
+      },
+      {
+        "rva": "0x000CE2B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 77
+      },
+      {
+        "rva": "0x000CE420",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339916
+      },
+      {
+        "rva": "0x000CE430",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 78
+      },
+      {
+        "rva": "0x000CE610",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342396
+      },
+      {
+        "rva": "0x000CE6C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342328
+      },
+      {
+        "rva": "0x000CE8E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339628
+      },
+      {
+        "rva": "0x000CE8F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 73
+      },
+      {
+        "rva": "0x000CEB30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15342364
+      },
+      {
+        "rva": "0x000CEB40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 63
+      },
+      {
+        "rva": "0x000CEC80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15339664
+      },
+      {
+        "rva": "0x000CEE40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344592
+      },
+      {
+        "rva": "0x000CEE50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 158
+      },
+      {
+        "rva": "0x000CEFC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346352
+      },
+      {
+        "rva": "0x000CEFD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 161
+      },
+      {
+        "rva": "0x000CF030",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346384
+      },
+      {
+        "rva": "0x000CF040",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 162
+      },
+      {
+        "rva": "0x000CF0A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346416
+      },
+      {
+        "rva": "0x000CF0B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 163
+      },
+      {
+        "rva": "0x000CF120",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346448
+      },
+      {
+        "rva": "0x000CF130",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 164
+      },
+      {
+        "rva": "0x000CF190",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346480
+      },
+      {
+        "rva": "0x000CF1A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 165
+      },
+      {
+        "rva": "0x000CF200",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346512
+      },
+      {
+        "rva": "0x000CF210",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 166
+      },
+      {
+        "rva": "0x000CF270",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346576
+      },
+      {
+        "rva": "0x000CF280",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 168
+      },
+      {
+        "rva": "0x000CF310",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346544
+      },
+      {
+        "rva": "0x000CF320",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 167
+      },
+      {
+        "rva": "0x000CF380",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346608
+      },
+      {
+        "rva": "0x000CF390",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 169
+      },
+      {
+        "rva": "0x000CF3F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346640
+      },
+      {
+        "rva": "0x000CF400",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 170
+      },
+      {
+        "rva": "0x000CF490",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346672
+      },
+      {
+        "rva": "0x000CF4A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 171
+      },
+      {
+        "rva": "0x000CF500",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346704
+      },
+      {
+        "rva": "0x000CF510",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 172
+      },
+      {
+        "rva": "0x000CF570",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346736
+      },
+      {
+        "rva": "0x000CF580",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 173
+      },
+      {
+        "rva": "0x000CF5E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346768
+      },
+      {
+        "rva": "0x000CF5F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 174
+      },
+      {
+        "rva": "0x000CF660",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347772
+      },
+      {
+        "rva": "0x000CF670",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 26
+      },
+      {
+        "rva": "0x000CF790",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347804
+      },
+      {
+        "rva": "0x000CF7A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 211
+      },
+      {
+        "rva": "0x000CF940",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347836
+      },
+      {
+        "rva": "0x000CF9A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346800
+      },
+      {
+        "rva": "0x000CF9B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 251
+      },
+      {
+        "rva": "0x000CFA10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346836
+      },
+      {
+        "rva": "0x000CFA20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 159
+      },
+      {
+        "rva": "0x000CFAA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346872
+      },
+      {
+        "rva": "0x000CFB00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346908
+      },
+      {
+        "rva": "0x000CFB10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 180
+      },
+      {
+        "rva": "0x000CFB70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346944
+      },
+      {
+        "rva": "0x000CFB80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 181
+      },
+      {
+        "rva": "0x000CFBE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347016
+      },
+      {
+        "rva": "0x000CFBF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 183
+      },
+      {
+        "rva": "0x000CFC50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347052
+      },
+      {
+        "rva": "0x000CFC60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 184
+      },
+      {
+        "rva": "0x000CFCE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347088
+      },
+      {
+        "rva": "0x000CFCF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 185
+      },
+      {
+        "rva": "0x000CFD50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347124
+      },
+      {
+        "rva": "0x000CFD60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 186
+      },
+      {
+        "rva": "0x000CFDC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347160
+      },
+      {
+        "rva": "0x000CFDD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 187
+      },
+      {
+        "rva": "0x000CFE40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347196
+      },
+      {
+        "rva": "0x000CFE50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 188
+      },
+      {
+        "rva": "0x000CFEB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347232
+      },
+      {
+        "rva": "0x000CFEC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 189
+      },
+      {
+        "rva": "0x000CFF70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347268
+      },
+      {
+        "rva": "0x000CFF80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 190
+      },
+      {
+        "rva": "0x000CFFE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347304
+      },
+      {
+        "rva": "0x000CFFF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 191
+      },
+      {
+        "rva": "0x000D01C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347340
+      },
+      {
+        "rva": "0x000D01D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 192
+      },
+      {
+        "rva": "0x000D0510",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347376
+      },
+      {
+        "rva": "0x000D0520",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 193
+      },
+      {
+        "rva": "0x000D06F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347412
+      },
+      {
+        "rva": "0x000D0700",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 199
+      },
+      {
+        "rva": "0x000D0710",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 23
+      },
+      {
+        "rva": "0x000D0900",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347448
+      },
+      {
+        "rva": "0x000D0910",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 200
+      },
+      {
+        "rva": "0x000D0990",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347484
+      },
+      {
+        "rva": "0x000D09A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 201
+      },
+      {
+        "rva": "0x000D0A00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347520
+      },
+      {
+        "rva": "0x000D0A10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 202
+      },
+      {
+        "rva": "0x000D0B60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347556
+      },
+      {
+        "rva": "0x000D0B70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 203
+      },
+      {
+        "rva": "0x000D0BD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347592
+      },
+      {
+        "rva": "0x000D0BE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 204
+      },
+      {
+        "rva": "0x000D0C40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347628
+      },
+      {
+        "rva": "0x000D0CD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347664
+      },
+      {
+        "rva": "0x000D0D40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347700
+      },
+      {
+        "rva": "0x000D0D50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 207
+      },
+      {
+        "rva": "0x000D0DB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347736
+      },
+      {
+        "rva": "0x000D0ED0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346980
+      },
+      {
+        "rva": "0x000D0EE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 182
+      },
+      {
+        "rva": "0x000D0F70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344624
+      },
+      {
+        "rva": "0x000D0F80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 175
+      },
+      {
+        "rva": "0x000D0FE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344660
+      },
+      {
+        "rva": "0x000D0FF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 176
+      },
+      {
+        "rva": "0x000D1050",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344696
+      },
+      {
+        "rva": "0x000D1060",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 177
+      },
+      {
+        "rva": "0x000D10C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344732
+      },
+      {
+        "rva": "0x000D10D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 178
+      },
+      {
+        "rva": "0x000D1130",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344768
+      },
+      {
+        "rva": "0x000D1140",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 179
+      },
+      {
+        "rva": "0x000D11A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344804
+      },
+      {
+        "rva": "0x000D11B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 194
+      },
+      {
+        "rva": "0x000D1210",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344840
+      },
+      {
+        "rva": "0x000D1220",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 195
+      },
+      {
+        "rva": "0x000D1280",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344876
+      },
+      {
+        "rva": "0x000D1290",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 196
+      },
+      {
+        "rva": "0x000D12F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344912
+      },
+      {
+        "rva": "0x000D1300",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 197
+      },
+      {
+        "rva": "0x000D1360",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344948
+      },
+      {
+        "rva": "0x000D1370",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 198
+      },
+      {
+        "rva": "0x000D13D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15344984
+      },
+      {
+        "rva": "0x000D13E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 213
+      },
+      {
+        "rva": "0x000D1440",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345020
+      },
+      {
+        "rva": "0x000D1450",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 214
+      },
+      {
+        "rva": "0x000D14B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345056
+      },
+      {
+        "rva": "0x000D14C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 215
+      },
+      {
+        "rva": "0x000D1520",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345092
+      },
+      {
+        "rva": "0x000D1530",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 216
+      },
+      {
+        "rva": "0x000D1590",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345128
+      },
+      {
+        "rva": "0x000D15F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345164
+      },
+      {
+        "rva": "0x000D1650",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345200
+      },
+      {
+        "rva": "0x000D1660",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 219
+      },
+      {
+        "rva": "0x000D16C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345236
+      },
+      {
+        "rva": "0x000D1720",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345272
+      },
+      {
+        "rva": "0x000D1780",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345308
+      },
+      {
+        "rva": "0x000D1790",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 222
+      },
+      {
+        "rva": "0x000D17F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345344
+      },
+      {
+        "rva": "0x000D1800",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 223
+      },
+      {
+        "rva": "0x000D1860",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345380
+      },
+      {
+        "rva": "0x000D1870",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 224
+      },
+      {
+        "rva": "0x000D18D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345416
+      },
+      {
+        "rva": "0x000D18E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 225
+      },
+      {
+        "rva": "0x000D1940",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345452
+      },
+      {
+        "rva": "0x000D1950",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 226
+      },
+      {
+        "rva": "0x000D19B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345488
+      },
+      {
+        "rva": "0x000D19C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 227
+      },
+      {
+        "rva": "0x000D1A20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345560
+      },
+      {
+        "rva": "0x000D1A30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 229
+      },
+      {
+        "rva": "0x000D1A90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345704
+      },
+      {
+        "rva": "0x000D1AA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 233
+      },
+      {
+        "rva": "0x000D1B00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345848
+      },
+      {
+        "rva": "0x000D1B60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345920
+      },
+      {
+        "rva": "0x000D1B70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 239
+      },
+      {
+        "rva": "0x000D1BD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346064
+      },
+      {
+        "rva": "0x000D1BE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 243
+      },
+      {
+        "rva": "0x000D1C50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345668
+      },
+      {
+        "rva": "0x000D1C60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 232
+      },
+      {
+        "rva": "0x000D1CC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345776
+      },
+      {
+        "rva": "0x000D1CD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 235
+      },
+      {
+        "rva": "0x000D1D60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346028
+      },
+      {
+        "rva": "0x000D1D70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 242
+      },
+      {
+        "rva": "0x000D1DD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346136
+      },
+      {
+        "rva": "0x000D1DE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 245
+      },
+      {
+        "rva": "0x000D1E40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346208
+      },
+      {
+        "rva": "0x000D1E50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 247
+      },
+      {
+        "rva": "0x000D1EB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345992
+      },
+      {
+        "rva": "0x000D1EC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 241
+      },
+      {
+        "rva": "0x000D1F20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345956
+      },
+      {
+        "rva": "0x000D1F30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 240
+      },
+      {
+        "rva": "0x000D1F90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345740
+      },
+      {
+        "rva": "0x000D1FA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 234
+      },
+      {
+        "rva": "0x000D2000",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346100
+      },
+      {
+        "rva": "0x000D2060",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346172
+      },
+      {
+        "rva": "0x000D2070",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 246
+      },
+      {
+        "rva": "0x000D20D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345812
+      },
+      {
+        "rva": "0x000D20E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 236
+      },
+      {
+        "rva": "0x000D2140",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345632
+      },
+      {
+        "rva": "0x000D2150",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 231
+      },
+      {
+        "rva": "0x000D21B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345596
+      },
+      {
+        "rva": "0x000D2210",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346244
+      },
+      {
+        "rva": "0x000D2220",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 248
+      },
+      {
+        "rva": "0x000D2280",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345524
+      },
+      {
+        "rva": "0x000D2290",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 228
+      },
+      {
+        "rva": "0x000D22F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346280
+      },
+      {
+        "rva": "0x000D2300",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 249
+      },
+      {
+        "rva": "0x000D2360",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15345884
+      },
+      {
+        "rva": "0x000D2480",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15346316
+      },
+      {
+        "rva": "0x000D2490",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 250
+      },
+      {
+        "rva": "0x000D24F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347868
+      },
+      {
+        "rva": "0x000D2500",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 209
+      },
+      {
+        "rva": "0x000D2560",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347904
+      },
+      {
+        "rva": "0x000D2570",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 252
+      },
+      {
+        "rva": "0x000D25D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347940
+      },
+      {
+        "rva": "0x000D25E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 253
+      },
+      {
+        "rva": "0x000D2640",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15347976
+      },
+      {
+        "rva": "0x000D2650",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 254
+      },
+      {
+        "rva": "0x000D26B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348012
+      },
+      {
+        "rva": "0x000D26C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 255
+      },
+      {
+        "rva": "0x000D2720",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348048
+      },
+      {
+        "rva": "0x000D2730",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 256
+      },
+      {
+        "rva": "0x000D2790",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348084
+      },
+      {
+        "rva": "0x000D27A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 257
+      },
+      {
+        "rva": "0x000D2800",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348120
+      },
+      {
+        "rva": "0x000D2810",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 258
+      },
+      {
+        "rva": "0x000D2870",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348156
+      },
+      {
+        "rva": "0x000D2880",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 259
+      },
+      {
+        "rva": "0x000D28E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348192
+      },
+      {
+        "rva": "0x000D28F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 260
+      },
+      {
+        "rva": "0x000D2950",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348228
+      },
+      {
+        "rva": "0x000D2960",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 261
+      },
+      {
+        "rva": "0x000D29C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348264
+      },
+      {
+        "rva": "0x000D29D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 262
+      },
+      {
+        "rva": "0x000D2A30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348300
+      },
+      {
+        "rva": "0x000D2A40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 263
+      },
+      {
+        "rva": "0x000D2AA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348336
+      },
+      {
+        "rva": "0x000D2AB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 264
+      },
+      {
+        "rva": "0x000D2B10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348372
+      },
+      {
+        "rva": "0x000D2B20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 265
+      },
+      {
+        "rva": "0x000D2B80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348408
+      },
+      {
+        "rva": "0x000D2B90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 266
+      },
+      {
+        "rva": "0x000D2BF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348444
+      },
+      {
+        "rva": "0x000D2C00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 267
+      },
+      {
+        "rva": "0x000D2C10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 19
+      },
+      {
+        "rva": "0x000D2C70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348480
+      },
+      {
+        "rva": "0x000D2C80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 268
+      },
+      {
+        "rva": "0x000D2CE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348516
+      },
+      {
+        "rva": "0x000D2CF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 269
+      },
+      {
+        "rva": "0x000D2D50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348552
+      },
+      {
+        "rva": "0x000D2D60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 270
+      },
+      {
+        "rva": "0x000D2DC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348588
+      },
+      {
+        "rva": "0x000D2E20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348624
+      },
+      {
+        "rva": "0x000D2E30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 272
+      },
+      {
+        "rva": "0x000D2E90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348660
+      },
+      {
+        "rva": "0x000D2EA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 273
+      },
+      {
+        "rva": "0x000D2F00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348696
+      },
+      {
+        "rva": "0x000D2F10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 274
+      },
+      {
+        "rva": "0x000D2F70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348732
+      },
+      {
+        "rva": "0x000D2F80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 275
+      },
+      {
+        "rva": "0x000D2FE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348768
+      },
+      {
+        "rva": "0x000D2FF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 276
+      },
+      {
+        "rva": "0x000D3050",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348804
+      },
+      {
+        "rva": "0x000D3060",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 277
+      },
+      {
+        "rva": "0x000D30C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348840
+      },
+      {
+        "rva": "0x000D3120",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348876
+      },
+      {
+        "rva": "0x000D3130",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 279
+      },
+      {
+        "rva": "0x000D3190",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348912
+      },
+      {
+        "rva": "0x000D31A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 280
+      },
+      {
+        "rva": "0x000D3200",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348948
+      },
+      {
+        "rva": "0x000D3210",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 281
+      },
+      {
+        "rva": "0x000D3270",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15348984
+      },
+      {
+        "rva": "0x000D32D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349020
+      },
+      {
+        "rva": "0x000D3330",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349056
+      },
+      {
+        "rva": "0x000D3390",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349092
+      },
+      {
+        "rva": "0x000D33F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349128
+      },
+      {
+        "rva": "0x000D3400",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 286
+      },
+      {
+        "rva": "0x000D3460",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349164
+      },
+      {
+        "rva": "0x000D3470",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 287
+      },
+      {
+        "rva": "0x000D34D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349200
+      },
+      {
+        "rva": "0x000D3530",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349236
+      },
+      {
+        "rva": "0x000D3540",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 289
+      },
+      {
+        "rva": "0x000D35A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349272
+      },
+      {
+        "rva": "0x000D35B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 290
+      },
+      {
+        "rva": "0x000D3610",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349308
+      },
+      {
+        "rva": "0x000D3620",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 291
+      },
+      {
+        "rva": "0x000D3680",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349344
+      },
+      {
+        "rva": "0x000D3690",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 292
+      },
+      {
+        "rva": "0x000D36F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349380
+      },
+      {
+        "rva": "0x000D3700",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 293
+      },
+      {
+        "rva": "0x000D3760",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349416
+      },
+      {
+        "rva": "0x000D37C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349452
+      },
+      {
+        "rva": "0x000D37D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 295
+      },
+      {
+        "rva": "0x000D3830",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349488
+      },
+      {
+        "rva": "0x000D3890",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349524
+      },
+      {
+        "rva": "0x000D38F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349560
+      },
+      {
+        "rva": "0x000D3950",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349596
+      },
+      {
+        "rva": "0x000D3960",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 299
+      },
+      {
+        "rva": "0x000D39C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349632
+      },
+      {
+        "rva": "0x000D39D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 300
+      },
+      {
+        "rva": "0x000D3A30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349668
+      },
+      {
+        "rva": "0x000D3A90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349704
+      },
+      {
+        "rva": "0x000D3AF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349740
+      },
+      {
+        "rva": "0x000D3B00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 303
+      },
+      {
+        "rva": "0x000D3B60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349780
+      },
+      {
+        "rva": "0x000D3B70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 304
+      },
+      {
+        "rva": "0x000D3BD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349820
+      },
+      {
+        "rva": "0x000D3BE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 305
+      },
+      {
+        "rva": "0x000D3C40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349860
+      },
+      {
+        "rva": "0x000D3CA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349900
+      },
+      {
+        "rva": "0x000D3CB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 307
+      },
+      {
+        "rva": "0x000D3D10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349940
+      },
+      {
+        "rva": "0x000D3D20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 308
+      },
+      {
+        "rva": "0x000D3D80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15349980
+      },
+      {
+        "rva": "0x000D3D90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 309
+      },
+      {
+        "rva": "0x000D3DF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350020
+      },
+      {
+        "rva": "0x000D3E00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 310
+      },
+      {
+        "rva": "0x000D3E60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350060
+      },
+      {
+        "rva": "0x000D3E70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 311
+      },
+      {
+        "rva": "0x000D3ED0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350100
+      },
+      {
+        "rva": "0x000D3F30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350140
+      },
+      {
+        "rva": "0x000D3F90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350180
+      },
+      {
+        "rva": "0x000D3FF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350220
+      },
+      {
+        "rva": "0x000D4050",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350260
+      },
+      {
+        "rva": "0x000D4060",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 316
+      },
+      {
+        "rva": "0x000D40C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350300
+      },
+      {
+        "rva": "0x000D4120",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350340
+      },
+      {
+        "rva": "0x000D4130",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 318
+      },
+      {
+        "rva": "0x000D4190",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350380
+      },
+      {
+        "rva": "0x000D41A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 319
+      },
+      {
+        "rva": "0x000D4200",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350420
+      },
+      {
+        "rva": "0x000D4210",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 320
+      },
+      {
+        "rva": "0x000D4270",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350460
+      },
+      {
+        "rva": "0x000D4280",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 321
+      },
+      {
+        "rva": "0x000D42E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350500
+      },
+      {
+        "rva": "0x000D42F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 322
+      },
+      {
+        "rva": "0x000D4350",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350540
+      },
+      {
+        "rva": "0x000D4360",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 323
+      },
+      {
+        "rva": "0x000D43C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350580
+      },
+      {
+        "rva": "0x000D43D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 324
+      },
+      {
+        "rva": "0x000D4430",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350620
+      },
+      {
+        "rva": "0x000D4490",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350660
+      },
+      {
+        "rva": "0x000D44F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350700
+      },
+      {
+        "rva": "0x000D4500",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 327
+      },
+      {
+        "rva": "0x000D4560",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350740
+      },
+      {
+        "rva": "0x000D4570",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 328
+      },
+      {
+        "rva": "0x000D45D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350780
+      },
+      {
+        "rva": "0x000D4630",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350820
+      },
+      {
+        "rva": "0x000D4640",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 330
+      },
+      {
+        "rva": "0x000D46A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350860
+      },
+      {
+        "rva": "0x000D46B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 331
+      },
+      {
+        "rva": "0x000D4710",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350900
+      },
+      {
+        "rva": "0x000D4720",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 332
+      },
+      {
+        "rva": "0x000D4780",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350940
+      },
+      {
+        "rva": "0x000D4790",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 333
+      },
+      {
+        "rva": "0x000D47F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15350980
+      },
+      {
+        "rva": "0x000D4800",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 334
+      },
+      {
+        "rva": "0x000D4860",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351020
+      },
+      {
+        "rva": "0x000D4870",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 335
+      },
+      {
+        "rva": "0x000D48D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351060
+      },
+      {
+        "rva": "0x000D48E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 336
+      },
+      {
+        "rva": "0x000D4940",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351100
+      },
+      {
+        "rva": "0x000D4950",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 337
+      },
+      {
+        "rva": "0x000D49B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351428
+      },
+      {
+        "rva": "0x000D49C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 351
+      },
+      {
+        "rva": "0x000D4A20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351468
+      },
+      {
+        "rva": "0x000D4A30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 352
+      },
+      {
+        "rva": "0x000D4A90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351508
+      },
+      {
+        "rva": "0x000D4AA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 353
+      },
+      {
+        "rva": "0x000D4B00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351548
+      },
+      {
+        "rva": "0x000D4B10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 354
+      },
+      {
+        "rva": "0x000D4B70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351588
+      },
+      {
+        "rva": "0x000D4B80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 355
+      },
+      {
+        "rva": "0x000D4C00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351628
+      },
+      {
+        "rva": "0x000D4C10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 356
+      },
+      {
+        "rva": "0x000D4C70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351668
+      },
+      {
+        "rva": "0x000D4C80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 357
+      },
+      {
+        "rva": "0x000D4CE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351708
+      },
+      {
+        "rva": "0x000D4CF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 358
+      },
+      {
+        "rva": "0x000D4D50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351748
+      },
+      {
+        "rva": "0x000D4DB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351788
+      },
+      {
+        "rva": "0x000D4E10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351828
+      },
+      {
+        "rva": "0x000D4E20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 361
+      },
+      {
+        "rva": "0x000D4E80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351868
+      },
+      {
+        "rva": "0x000D4EE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351908
+      },
+      {
+        "rva": "0x000D4EF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 363
+      },
+      {
+        "rva": "0x000D4F50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351948
+      },
+      {
+        "rva": "0x000D4FB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351988
+      },
+      {
+        "rva": "0x000D4FC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 365
+      },
+      {
+        "rva": "0x000D5020",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352028
+      },
+      {
+        "rva": "0x000D5080",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352068
+      },
+      {
+        "rva": "0x000D5090",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 367
+      },
+      {
+        "rva": "0x000D50F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352108
+      },
+      {
+        "rva": "0x000D5100",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 368
+      },
+      {
+        "rva": "0x000D5160",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352148
+      },
+      {
+        "rva": "0x000D5170",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 369
+      },
+      {
+        "rva": "0x000D51D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352188
+      },
+      {
+        "rva": "0x000D51E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 370
+      },
+      {
+        "rva": "0x000D5240",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352228
+      },
+      {
+        "rva": "0x000D5250",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 371
+      },
+      {
+        "rva": "0x000D52B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352268
+      },
+      {
+        "rva": "0x000D52C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 372
+      },
+      {
+        "rva": "0x000D5320",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352308
+      },
+      {
+        "rva": "0x000D5330",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 373
+      },
+      {
+        "rva": "0x000D5390",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352348
+      },
+      {
+        "rva": "0x000D53A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 374
+      },
+      {
+        "rva": "0x000D5400",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352388
+      },
+      {
+        "rva": "0x000D5410",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 375
+      },
+      {
+        "rva": "0x000D5470",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352428
+      },
+      {
+        "rva": "0x000D5480",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 376
+      },
+      {
+        "rva": "0x000D54E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352468
+      },
+      {
+        "rva": "0x000D54F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 377
+      },
+      {
+        "rva": "0x000D5550",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352508
+      },
+      {
+        "rva": "0x000D5560",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 378
+      },
+      {
+        "rva": "0x000D55C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352548
+      },
+      {
+        "rva": "0x000D55D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 379
+      },
+      {
+        "rva": "0x000D5630",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352588
+      },
+      {
+        "rva": "0x000D5640",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 380
+      },
+      {
+        "rva": "0x000D56A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352628
+      },
+      {
+        "rva": "0x000D56B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 381
+      },
+      {
+        "rva": "0x000D5710",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352668
+      },
+      {
+        "rva": "0x000D5720",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 382
+      },
+      {
+        "rva": "0x000D5780",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352708
+      },
+      {
+        "rva": "0x000D5790",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 383
+      },
+      {
+        "rva": "0x000D57F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352748
+      },
+      {
+        "rva": "0x000D5800",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 384
+      },
+      {
+        "rva": "0x000D5860",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352788
+      },
+      {
+        "rva": "0x000D5870",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 385
+      },
+      {
+        "rva": "0x000D58D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352828
+      },
+      {
+        "rva": "0x000D58E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 386
+      },
+      {
+        "rva": "0x000D5940",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352868
+      },
+      {
+        "rva": "0x000D5950",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 387
+      },
+      {
+        "rva": "0x000D59B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352908
+      },
+      {
+        "rva": "0x000D59C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 388
+      },
+      {
+        "rva": "0x000D5A20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352948
+      },
+      {
+        "rva": "0x000D5A30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 389
+      },
+      {
+        "rva": "0x000D5A90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15352988
+      },
+      {
+        "rva": "0x000D5AA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 390
+      },
+      {
+        "rva": "0x000D5B00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353028
+      },
+      {
+        "rva": "0x000D5B10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 391
+      },
+      {
+        "rva": "0x000D5B70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353068
+      },
+      {
+        "rva": "0x000D5B80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 392
+      },
+      {
+        "rva": "0x000D5BE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353108
+      },
+      {
+        "rva": "0x000D5BF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 393
+      },
+      {
+        "rva": "0x000D5C50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353148
+      },
+      {
+        "rva": "0x000D5C60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 394
+      },
+      {
+        "rva": "0x000D5CC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353188
+      },
+      {
+        "rva": "0x000D5CD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 395
+      },
+      {
+        "rva": "0x000D5D30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353228
+      },
+      {
+        "rva": "0x000D5D40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 396
+      },
+      {
+        "rva": "0x000D5DA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353268
+      },
+      {
+        "rva": "0x000D5DB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 397
+      },
+      {
+        "rva": "0x000D5E10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353308
+      },
+      {
+        "rva": "0x000D5E20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 398
+      },
+      {
+        "rva": "0x000D5E80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353348
+      },
+      {
+        "rva": "0x000D5E90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 399
+      },
+      {
+        "rva": "0x000D5EF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353388
+      },
+      {
+        "rva": "0x000D5F00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 400
+      },
+      {
+        "rva": "0x000D5F60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353428
+      },
+      {
+        "rva": "0x000D5FC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353468
+      },
+      {
+        "rva": "0x000D5FD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 402
+      },
+      {
+        "rva": "0x000D6030",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353508
+      },
+      {
+        "rva": "0x000D6040",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 403
+      },
+      {
+        "rva": "0x000D60A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353548
+      },
+      {
+        "rva": "0x000D60B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 404
+      },
+      {
+        "rva": "0x000D6110",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353588
+      },
+      {
+        "rva": "0x000D6120",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 405
+      },
+      {
+        "rva": "0x000D6180",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353628
+      },
+      {
+        "rva": "0x000D6190",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 406
+      },
+      {
+        "rva": "0x000D6200",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353668
+      },
+      {
+        "rva": "0x000D6210",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 407
+      },
+      {
+        "rva": "0x000D6270",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353708
+      },
+      {
+        "rva": "0x000D6280",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 408
+      },
+      {
+        "rva": "0x000D62E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353748
+      },
+      {
+        "rva": "0x000D62F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 409
+      },
+      {
+        "rva": "0x000D6350",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353788
+      },
+      {
+        "rva": "0x000D6360",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 410
+      },
+      {
+        "rva": "0x000D63C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353828
+      },
+      {
+        "rva": "0x000D63D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 411
+      },
+      {
+        "rva": "0x000D6430",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353868
+      },
+      {
+        "rva": "0x000D6440",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 412
+      },
+      {
+        "rva": "0x000D64A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353908
+      },
+      {
+        "rva": "0x000D64B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 413
+      },
+      {
+        "rva": "0x000D6510",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353948
+      },
+      {
+        "rva": "0x000D6520",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 414
+      },
+      {
+        "rva": "0x000D6580",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15353988
+      },
+      {
+        "rva": "0x000D6590",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 415
+      },
+      {
+        "rva": "0x000D65F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354028
+      },
+      {
+        "rva": "0x000D6600",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 416
+      },
+      {
+        "rva": "0x000D6660",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354068
+      },
+      {
+        "rva": "0x000D6670",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 417
+      },
+      {
+        "rva": "0x000D66D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354108
+      },
+      {
+        "rva": "0x000D66E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 418
+      },
+      {
+        "rva": "0x000D6740",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354148
+      },
+      {
+        "rva": "0x000D6750",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 419
+      },
+      {
+        "rva": "0x000D67B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354188
+      },
+      {
+        "rva": "0x000D67C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 420
+      },
+      {
+        "rva": "0x000D6820",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354228
+      },
+      {
+        "rva": "0x000D6830",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 421
+      },
+      {
+        "rva": "0x000D6890",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354268
+      },
+      {
+        "rva": "0x000D68A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 422
+      },
+      {
+        "rva": "0x000D6900",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354308
+      },
+      {
+        "rva": "0x000D6910",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 423
+      },
+      {
+        "rva": "0x000D6970",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354348
+      },
+      {
+        "rva": "0x000D6980",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 424
+      },
+      {
+        "rva": "0x000D69E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354388
+      },
+      {
+        "rva": "0x000D69F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 425
+      },
+      {
+        "rva": "0x000D6A50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354428
+      },
+      {
+        "rva": "0x000D6A60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 426
+      },
+      {
+        "rva": "0x000D6AC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354468
+      },
+      {
+        "rva": "0x000D6AD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 427
+      },
+      {
+        "rva": "0x000D6B30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354508
+      },
+      {
+        "rva": "0x000D6B40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 428
+      },
+      {
+        "rva": "0x000D6BA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354548
+      },
+      {
+        "rva": "0x000D6BB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 429
+      },
+      {
+        "rva": "0x000D6C10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354588
+      },
+      {
+        "rva": "0x000D6C20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 430
+      },
+      {
+        "rva": "0x000D6C80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354628
+      },
+      {
+        "rva": "0x000D6CE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354668
+      },
+      {
+        "rva": "0x000D6CF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 432
+      },
+      {
+        "rva": "0x000D6D50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354708
+      },
+      {
+        "rva": "0x000D6D60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 433
+      },
+      {
+        "rva": "0x000D6DC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354748
+      },
+      {
+        "rva": "0x000D6DD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 434
+      },
+      {
+        "rva": "0x000D6E30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354788
+      },
+      {
+        "rva": "0x000D6E40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 435
+      },
+      {
+        "rva": "0x000D6EC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354828
+      },
+      {
+        "rva": "0x000D6ED0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 436
+      },
+      {
+        "rva": "0x000D6F30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354868
+      },
+      {
+        "rva": "0x000D6F40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 437
+      },
+      {
+        "rva": "0x000D6FA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354908
+      },
+      {
+        "rva": "0x000D6FB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 438
+      },
+      {
+        "rva": "0x000D7010",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354948
+      },
+      {
+        "rva": "0x000D7020",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 439
+      },
+      {
+        "rva": "0x000D7030",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 0
+      },
+      {
+        "rva": "0x000D7090",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15354988
+      },
+      {
+        "rva": "0x000D70A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 440
+      },
+      {
+        "rva": "0x000D7100",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355028
+      },
+      {
+        "rva": "0x000D7110",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 441
+      },
+      {
+        "rva": "0x000D7170",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355068
+      },
+      {
+        "rva": "0x000D7180",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 442
+      },
+      {
+        "rva": "0x000D71E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355108
+      },
+      {
+        "rva": "0x000D71F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 443
+      },
+      {
+        "rva": "0x000D7250",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355148
+      },
+      {
+        "rva": "0x000D7260",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 444
+      },
+      {
+        "rva": "0x000D72C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355188
+      },
+      {
+        "rva": "0x000D72D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 445
+      },
+      {
+        "rva": "0x000D7340",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355228
+      },
+      {
+        "rva": "0x000D7350",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 446
+      },
+      {
+        "rva": "0x000D73B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355268
+      },
+      {
+        "rva": "0x000D73C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 447
+      },
+      {
+        "rva": "0x000D7420",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355308
+      },
+      {
+        "rva": "0x000D7430",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 448
+      },
+      {
+        "rva": "0x000D74A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355348
+      },
+      {
+        "rva": "0x000D74B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 449
+      },
+      {
+        "rva": "0x000D7510",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355388
+      },
+      {
+        "rva": "0x000D7520",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 450
+      },
+      {
+        "rva": "0x000D7580",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355428
+      },
+      {
+        "rva": "0x000D7590",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 451
+      },
+      {
+        "rva": "0x000D7730",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355468
+      },
+      {
+        "rva": "0x000D7740",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 452
+      },
+      {
+        "rva": "0x000D77A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355508
+      },
+      {
+        "rva": "0x000D77B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 453
+      },
+      {
+        "rva": "0x000D7810",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355548
+      },
+      {
+        "rva": "0x000D7820",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 454
+      },
+      {
+        "rva": "0x000D7880",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355588
+      },
+      {
+        "rva": "0x000D7890",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 455
+      },
+      {
+        "rva": "0x000D78F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355628
+      },
+      {
+        "rva": "0x000D7900",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 456
+      },
+      {
+        "rva": "0x000D7910",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 65534
+      },
+      {
+        "rva": "0x000D7970",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355668
+      },
+      {
+        "rva": "0x000D7980",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 457
+      },
+      {
+        "rva": "0x000D79E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355708
+      },
+      {
+        "rva": "0x000D79F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 458
+      },
+      {
+        "rva": "0x000D7A50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355748
+      },
+      {
+        "rva": "0x000D7A60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 459
+      },
+      {
+        "rva": "0x000D7AC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355788
+      },
+      {
+        "rva": "0x000D7AD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 460
+      },
+      {
+        "rva": "0x000D7B30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355828
+      },
+      {
+        "rva": "0x000D7B40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 461
+      },
+      {
+        "rva": "0x000D7BA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355868
+      },
+      {
+        "rva": "0x000D7BB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 462
+      },
+      {
+        "rva": "0x000D7C10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355908
+      },
+      {
+        "rva": "0x000D7C20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 463
+      },
+      {
+        "rva": "0x000D7C80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355948
+      },
+      {
+        "rva": "0x000D7C90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 464
+      },
+      {
+        "rva": "0x000D7CF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15355988
+      },
+      {
+        "rva": "0x000D7D00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 465
+      },
+      {
+        "rva": "0x000D7D60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356028
+      },
+      {
+        "rva": "0x000D7D70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 466
+      },
+      {
+        "rva": "0x000D7DD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356068
+      },
+      {
+        "rva": "0x000D7DE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 467
+      },
+      {
+        "rva": "0x000D7E90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356108
+      },
+      {
+        "rva": "0x000D7EA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 468
+      },
+      {
+        "rva": "0x000D7F00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356148
+      },
+      {
+        "rva": "0x000D7F10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 469
+      },
+      {
+        "rva": "0x000D7F70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356188
+      },
+      {
+        "rva": "0x000D7F80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 470
+      },
+      {
+        "rva": "0x000D7FE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356228
+      },
+      {
+        "rva": "0x000D7FF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 346
+      },
+      {
+        "rva": "0x000D8050",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356268
+      },
+      {
+        "rva": "0x000D8060",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 347
+      },
+      {
+        "rva": "0x000D80C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356308
+      },
+      {
+        "rva": "0x000D80D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 348
+      },
+      {
+        "rva": "0x000D8130",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356348
+      },
+      {
+        "rva": "0x000D8140",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 349
+      },
+      {
+        "rva": "0x000D81A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356388
+      },
+      {
+        "rva": "0x000D81B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 471
+      },
+      {
+        "rva": "0x000D8210",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356428
+      },
+      {
+        "rva": "0x000D8220",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 472
+      },
+      {
+        "rva": "0x000D8280",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356468
+      },
+      {
+        "rva": "0x000D8290",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 473
+      },
+      {
+        "rva": "0x000D82F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356508
+      },
+      {
+        "rva": "0x000D8300",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 474
+      },
+      {
+        "rva": "0x000D8360",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356548
+      },
+      {
+        "rva": "0x000D8370",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 475
+      },
+      {
+        "rva": "0x000D83D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356588
+      },
+      {
+        "rva": "0x000D83E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 476
+      },
+      {
+        "rva": "0x000D8440",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356628
+      },
+      {
+        "rva": "0x000D8450",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 477
+      },
+      {
+        "rva": "0x000D84B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356668
+      },
+      {
+        "rva": "0x000D84C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 478
+      },
+      {
+        "rva": "0x000D8520",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356708
+      },
+      {
+        "rva": "0x000D8530",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 479
+      },
+      {
+        "rva": "0x000D8590",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356748
+      },
+      {
+        "rva": "0x000D85A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 480
+      },
+      {
+        "rva": "0x000D8600",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15356788
+      },
+      {
+        "rva": "0x000D8610",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 481
+      },
+      {
+        "rva": "0x000D8670",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351140
+      },
+      {
+        "rva": "0x000D8680",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 338
+      },
+      {
+        "rva": "0x000D8700",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351172
+      },
+      {
+        "rva": "0x000D8710",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 339
+      },
+      {
+        "rva": "0x000D87C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351236
+      },
+      {
+        "rva": "0x000D87D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 341
+      },
+      {
+        "rva": "0x000D8830",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351204
+      },
+      {
+        "rva": "0x000D8840",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 340
+      },
+      {
+        "rva": "0x000D88A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351268
+      },
+      {
+        "rva": "0x000D88B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 342
+      },
+      {
+        "rva": "0x000D8930",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351300
+      },
+      {
+        "rva": "0x000D8940",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 343
+      },
+      {
+        "rva": "0x000D8A80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351332
+      },
+      {
+        "rva": "0x000D8A90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 344
+      },
+      {
+        "rva": "0x000D8AF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351364
+      },
+      {
+        "rva": "0x000D8B00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 345
+      },
+      {
+        "rva": "0x000D8B60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15351396
+      },
+      {
+        "rva": "0x000D8B70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 350
+      },
+      {
+        "rva": "0x000EB380",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 401
+      },
+      {
+        "rva": "0x000EE7C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 208
+      },
+      {
+        "rva": "0x000F3E00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 314
+      },
+      {
+        "rva": "0x0010BC20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339424
+      },
+      {
+        "rva": "0x0010C5C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339448
+      },
+      {
+        "rva": "0x0010F010",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339472
+      },
+      {
+        "rva": "0x0010F420",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339496
+      },
+      {
+        "rva": "0x00110AB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339520
+      },
+      {
+        "rva": "0x00115730",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339544
+      },
+      {
+        "rva": "0x00115920",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339568
+      },
+      {
+        "rva": "0x00115AB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339592
+      },
+      {
+        "rva": "0x00115C70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339616
+      },
+      {
+        "rva": "0x00115E50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339640
+      },
+      {
+        "rva": "0x001160E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339664
+      },
+      {
+        "rva": "0x001164D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17339688
+      },
+      {
+        "rva": "0x0011E890",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17567228
+      },
+      {
+        "rva": "0x0011E8E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17567256
+      },
+      {
+        "rva": "0x0011E930",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17567268
+      },
+      {
+        "rva": "0x0011E980",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17567296
+      },
+      {
+        "rva": "0x0011E9D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17567324
+      },
+      {
+        "rva": "0x0011EA20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17567336
+      },
+      {
+        "rva": "0x0011EA80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17567376
+      },
+      {
+        "rva": "0x0011EAD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17567404
+      },
+      {
+        "rva": "0x0013CB00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432476
+      },
+      {
+        "rva": "0x0013CB10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432500
+      },
+      {
+        "rva": "0x0013CB20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432524
+      },
+      {
+        "rva": "0x0013CB30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432548
+      },
+      {
+        "rva": "0x0013CB40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432568
+      },
+      {
+        "rva": "0x0013CB50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432588
+      },
+      {
+        "rva": "0x0013CB60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432632
+      },
+      {
+        "rva": "0x0013CB70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432652
+      },
+      {
+        "rva": "0x0013CB80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432676
+      },
+      {
+        "rva": "0x0013CB90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432700
+      },
+      {
+        "rva": "0x00149100",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x00150FF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x00154630",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15434504
+      },
+      {
+        "rva": "0x00154650",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15434512
+      },
+      {
+        "rva": "0x00154700",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15434520
+      },
+      {
+        "rva": "0x001547B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15434524
+      },
+      {
+        "rva": "0x00154850",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15434532
+      },
+      {
+        "rva": "0x00154910",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15434540
+      },
+      {
+        "rva": "0x001549D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15434548
+      },
+      {
+        "rva": "0x00154AA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15434556
+      },
+      {
+        "rva": "0x0015A850",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 0
+      },
+      {
+        "rva": "0x0015C570",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15329339
+      },
+      {
+        "rva": "0x0015C5F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x0015C600",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x00176590",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 0
+      },
+      {
+        "rva": "0x001765B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 0
+      },
+      {
+        "rva": "0x00177680",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437032
+      },
+      {
+        "rva": "0x00177690",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437056
+      },
+      {
+        "rva": "0x001776A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437092
+      },
+      {
+        "rva": "0x001776B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437120
+      },
+      {
+        "rva": "0x001776C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437140
+      },
+      {
+        "rva": "0x001776D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437156
+      },
+      {
+        "rva": "0x001776E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437180
+      },
+      {
+        "rva": "0x001776F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437204
+      },
+      {
+        "rva": "0x00177700",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437224
+      },
+      {
+        "rva": "0x00177710",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15432616
+      },
+      {
+        "rva": "0x00177720",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437244
+      },
+      {
+        "rva": "0x00177750",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15437256
+      },
+      {
+        "rva": "0x00181280",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15438556
+      },
+      {
+        "rva": "0x001874A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 32
+      },
+      {
+        "rva": "0x0018C370",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 2
+      },
+      {
+        "rva": "0x0018C5E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 3
+      },
+      {
+        "rva": "0x0019AEC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17342380
+      },
+      {
+        "rva": "0x0019B750",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17342396
+      },
+      {
+        "rva": "0x0019BA00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x0019BA10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 2147483648
+      },
+      {
+        "rva": "0x0019F430",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17342436
+      },
+      {
+        "rva": "0x0019F680",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 2147483649
+      },
+      {
+        "rva": "0x0019F7D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17342452
+      },
+      {
+        "rva": "0x001A2D40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 12
+      },
+      {
+        "rva": "0x001BBFE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 0
+      },
+      {
+        "rva": "0x001FDCD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 0
+      },
+      {
+        "rva": "0x0021D1A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x0025F720",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 0
+      },
+      {
+        "rva": "0x0025F730",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 7
+      },
+      {
+        "rva": "0x00261990",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 10
+      },
+      {
+        "rva": "0x002619B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 0
+      },
+      {
+        "rva": "0x00263330",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 9
+      },
+      {
+        "rva": "0x00264680",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 8
+      },
+      {
+        "rva": "0x00265680",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 4
+      },
+      {
+        "rva": "0x00268AB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 6
+      },
+      {
+        "rva": "0x00285100",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 0
+      },
+      {
+        "rva": "0x002867E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 14672712
+      },
+      {
+        "rva": "0x002BF180",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 14668632
+      },
+      {
+        "rva": "0x002BF1C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x002BF1D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17343296
+      },
+      {
+        "rva": "0x002BF240",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 14668640
+      },
+      {
+        "rva": "0x002BF2C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 14668648
+      },
+      {
+        "rva": "0x002C1340",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 0
+      },
+      {
+        "rva": "0x00307920",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 1
+      },
+      {
+        "rva": "0x00320F80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 0
+      },
+      {
+        "rva": "0x0034BEB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 1
+      },
+      {
+        "rva": "0x0034C1C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15454544
+      },
+      {
+        "rva": "0x0034C1F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 0
+      },
+      {
+        "rva": "0x003BDC00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 0
+      },
+      {
+        "rva": "0x003BE730",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 13
+      },
+      {
+        "rva": "0x003BE8B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 24
+      },
+      {
+        "rva": "0x003BECF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 12
+      },
+      {
+        "rva": "0x003BEE00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 41
+      },
+      {
+        "rva": "0x003BEE60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 42
+      },
+      {
+        "rva": "0x003C0B70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 55
+      },
+      {
+        "rva": "0x003C0D60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 59
+      },
+      {
+        "rva": "0x003C0DF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 116
+      },
+      {
+        "rva": "0x003C1290",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 112
+      },
+      {
+        "rva": "0x003C1370",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 96
+      },
+      {
+        "rva": "0x003C1380",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 66
+      },
+      {
+        "rva": "0x003C2D10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 160
+      },
+      {
+        "rva": "0x003C3070",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 32
+      },
+      {
+        "rva": "0x003C3150",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 110
+      },
+      {
+        "rva": "0x003CB7F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 80
+      },
+      {
+        "rva": "0x003D5970",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 70
+      },
+      {
+        "rva": "0x003D66D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 45
+      },
+      {
+        "rva": "0x003FF970",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 94
+      },
+      {
+        "rva": "0x0040B960",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 20
+      },
+      {
+        "rva": "0x0041D140",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 60
+      },
+      {
+        "rva": "0x0041D150",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 88
+      },
+      {
+        "rva": "0x00426400",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 8
+      },
+      {
+        "rva": "0x00427440",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 47
+      },
+      {
+        "rva": "0x00491140",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 431
+      },
+      {
+        "rva": "0x0049BE10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 283
+      },
+      {
+        "rva": "0x004B4D70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 3
+      },
+      {
+        "rva": "0x004BE7C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 16
+      },
+      {
+        "rva": "0x004BE7D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 75
+      },
+      {
+        "rva": "0x004BE850",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 74
+      },
+      {
+        "rva": "0x004C3640",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 64
+      },
+      {
+        "rva": "0x004F44D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 359
+      },
+      {
+        "rva": "0x004F4520",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 360
+      },
+      {
+        "rva": "0x004F5E60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 366
+      },
+      {
+        "rva": "0x004F72B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 362
+      },
+      {
+        "rva": "0x005171F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 134
+      },
+      {
+        "rva": "0x00517F70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 68
+      },
+      {
+        "rva": "0x005180F0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 56
+      },
+      {
+        "rva": "0x00518240",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 51
+      },
+      {
+        "rva": "0x00518410",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 25
+      },
+      {
+        "rva": "0x00518420",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 1
+      },
+      {
+        "rva": "0x005188A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 31
+      },
+      {
+        "rva": "0x00518E20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 84
+      },
+      {
+        "rva": "0x00518F80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 140
+      },
+      {
+        "rva": "0x00518F90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 62
+      },
+      {
+        "rva": "0x00519230",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 79
+      },
+      {
+        "rva": "0x00519390",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 85
+      },
+      {
+        "rva": "0x00519660",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 50
+      },
+      {
+        "rva": "0x00519A90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 40
+      },
+      {
+        "rva": "0x00519BA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 49
+      },
+      {
+        "rva": "0x0051A1C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 121
+      },
+      {
+        "rva": "0x0051A1D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 97
+      },
+      {
+        "rva": "0x0051A310",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 129
+      },
+      {
+        "rva": "0x0051A3B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 130
+      },
+      {
+        "rva": "0x0052C4D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x0055C1C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 69
+      },
+      {
+        "rva": "0x0055C1D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 90
+      },
+      {
+        "rva": "0x00584DF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 117
+      },
+      {
+        "rva": "0x00590640",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 9
+      },
+      {
+        "rva": "0x00590D80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 15
+      },
+      {
+        "rva": "0x005A3330",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 34
+      },
+      {
+        "rva": "0x005A34C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 83
+      },
+      {
+        "rva": "0x005A37C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 86
+      },
+      {
+        "rva": "0x005A55E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 46
+      },
+      {
+        "rva": "0x005A5670",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 52
+      },
+      {
+        "rva": "0x005A5910",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 14
+      },
+      {
+        "rva": "0x005A5C40",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 22
+      },
+      {
+        "rva": "0x005A68E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 43
+      },
+      {
+        "rva": "0x005C80C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 10
+      },
+      {
+        "rva": "0x005D6A60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 2
+      },
+      {
+        "rva": "0x005E4BF0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 35
+      },
+      {
+        "rva": "0x005F1160",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 296
+      },
+      {
+        "rva": "0x005F1270",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 297
+      },
+      {
+        "rva": "0x005F1330",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 298
+      },
+      {
+        "rva": "0x00609E30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 284
+      },
+      {
+        "rva": "0x0061D700",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 282
+      },
+      {
+        "rva": "0x0061D870",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 285
+      },
+      {
+        "rva": "0x0061DE00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 220
+      },
+      {
+        "rva": "0x0061DEC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 221
+      },
+      {
+        "rva": "0x0061E490",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 237
+      },
+      {
+        "rva": "0x0061E4D0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 238
+      },
+      {
+        "rva": "0x0061E6C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 244
+      },
+      {
+        "rva": "0x0061F4C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 317
+      },
+      {
+        "rva": "0x0061F9B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 364
+      },
+      {
+        "rva": "0x00650C50",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 58
+      },
+      {
+        "rva": "0x00650C60",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 93
+      },
+      {
+        "rva": "0x00650C70",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 92
+      },
+      {
+        "rva": "0x00674B90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 102
+      },
+      {
+        "rva": "0x006AAF20",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x006B42B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 210
+      },
+      {
+        "rva": "0x006B9EB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 11
+      },
+      {
+        "rva": "0x006BB7C0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 302
+      },
+      {
+        "rva": "0x006BB8A0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 306
+      },
+      {
+        "rva": "0x006BBA30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 325
+      },
+      {
+        "rva": "0x006BBAB0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 326
+      },
+      {
+        "rva": "0x006BC560",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 212
+      },
+      {
+        "rva": "0x006BC630",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 278
+      },
+      {
+        "rva": "0x006BC740",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 217
+      },
+      {
+        "rva": "0x006BC850",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 218
+      },
+      {
+        "rva": "0x006BC8B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 230
+      },
+      {
+        "rva": "0x0072C9E0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 37
+      },
+      {
+        "rva": "0x00754E10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 28
+      },
+      {
+        "rva": "0x0075A360",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 21
+      },
+      {
+        "rva": "0x00783DA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 301
+      },
+      {
+        "rva": "0x00783E90",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 271
+      },
+      {
+        "rva": "0x00828820",
+        "calls": 64,
+        "failures": 0,
+        "mask": 0,
+        "expected": 0
+      },
+      {
+        "rva": "0x00873810",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 205
+      },
+      {
+        "rva": "0x00873AD0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 206
+      },
+      {
+        "rva": "0x0088B340",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 39
+      },
+      {
+        "rva": "0x0088CAC0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 36
+      },
+      {
+        "rva": "0x0088DDA0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 33
+      },
+      {
+        "rva": "0x0088EC80",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 30
+      },
+      {
+        "rva": "0x0088ED10",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 29
+      },
+      {
+        "rva": "0x008919B0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 17
+      },
+      {
+        "rva": "0x008ADCE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 288
+      },
+      {
+        "rva": "0x008B8870",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 312
+      },
+      {
+        "rva": "0x008B8A00",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 313
+      },
+      {
+        "rva": "0x008B8B30",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 315
+      },
+      {
+        "rva": "0x008CD550",
+        "calls": 64,
+        "failures": 0,
+        "mask": 4294967295,
+        "expected": 329
+      },
+      {
+        "rva": "0x008FAEE0",
+        "calls": 64,
+        "failures": 0,
+        "mask": 255,
+        "expected": 1
+      }
+    ]
+  },
+  "game_run": {
+    "date": "2026-10-09T21:17:24.5060705-06:00",
+    "passed": true,
+    "forced_stop": false,
+    "exit_code": 0,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "asi_sha256": "ef474eabd18f516af2f15b7c936e71591fde1bc8ee49c098d4d0f0ce4d69e99e",
+    "wrapper_sha256": "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
+    "probe_sha256": "c9eac0fd31fbefba9520983f372ca49332c17935501fbf6dd3f47ce5d69b7970",
+    "result": {
+      "phase": "passed",
+      "rva": "0x005c7710",
+      "bone_index": 0,
+      "calls": 64,
+      "failures": 0,
+      "exceptions": 0,
+      "ticks": 253,
+      "entity": "0x06BEA700",
+      "matrix": "0x08202D10",
+      "position": [
+        -0.000785084208,
+        -0.000992081128,
+        -0.0100206267
+      ],
+      "game_loaded": true,
+      "ingame_started": false
+    },
+    "evidence_directory": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261009-211638",
+    "console": {
+      "console_window": "0x00051F1C",
+      "visible": true,
+      "writable": true,
+      "always_enabled": true
+    },
+    "atStringHash": {
+      "phase": "process_detach",
+      "rva": "0x1b1c30",
+      "bank_pairs": 8320,
+      "bank_failures": 0,
+      "hooked": true,
+      "hook_calls": 367737,
+      "runtime_pairs": 4096,
+      "runtime_failures": 0,
+      "game_loaded": true,
+      "ingame_started": true,
+      "script_ticks": 254
+    },
+    "atStringHash_passed": true
+  },
+  "stub_bindings_sha256": "d33205e0fc00696e4d3a87e2327a9a4a5fe2779d99b3f1d8e00f93864352f3f5",
+  "slot_bindings_sha256": "cdb60a96d9dc863b76d59939e72a732b12e499688e5d4b3b529f12d48955f9e2"
+}

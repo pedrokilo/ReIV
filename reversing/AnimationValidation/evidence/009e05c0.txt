@@ -1,0 +1,51 @@
+Canonical GTAIV.exe preferred VA 009e05c0
+009e05c0 PUSH EBP
+009e05c1 MOV EBP,ESP
+009e05c3 AND ESP,0xfffffff0
+009e05c6 SUB ESP,0xc
+009e05c9 PUSH ESI
+009e05ca MOV ESI,ECX
+009e05cc MOV EAX,dword ptr [ESI]
+009e05ce MOV EDX,dword ptr [EAX + 0xa0]
+009e05d4 CALL EDX
+009e05d6 TEST EAX,EAX
+009e05d8 JNZ 0x009e05e1
+009e05da MOV EAX,dword ptr [ESI + 0x38]
+009e05dd TEST EAX,EAX
+009e05df JZ 0x009e05fd
+009e05e1 MOV EAX,dword ptr [EAX + 0x4]
+009e05e4 MOV ECX,dword ptr [EAX + 0xc]
+009e05e7 MOV EDX,dword ptr [EBP + 0x8]
+009e05ea ADD ECX,0x30
+009e05ed PUSH ECX
+009e05ee PUSH EDX
+009e05ef MOV ECX,ESI
+009e05f1 CALL 0x007d6880
+009e05f6 POP ESI
+009e05f7 MOV ESP,EBP
+009e05f9 POP EBP
+009e05fa RET 0x4
+009e05fd MOV EAX,dword ptr [EBP + 0x8]
+009e0600 PUSH EAX
+009e0601 MOV ECX,ESI
+009e0603 CALL 0x009e8390
+009e0608 POP ESI
+009e0609 MOV ESP,EBP
+009e060b POP EBP
+009e060c RET 0x4
+
+void __thiscall FUN_009e05c0(int *param_1,undefined4 param_2)
+
+{
+  int iVar1;
+  
+  iVar1 = (**(code **)(*param_1 + 0xa0))();
+  if ((iVar1 == 0) && (iVar1 = param_1[0xe], iVar1 == 0)) {
+    FUN_009e8390(param_2);
+    return;
+  }
+  FUN_007d6880(param_2,*(int *)(*(int *)(iVar1 + 4) + 0xc) + 0x30);
+  return;
+}
+
+

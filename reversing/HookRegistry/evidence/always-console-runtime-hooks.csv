@@ -1,0 +1,3 @@
+class,fn_name,preferred_va,rva,module_base,runtime_va,reversed,historical_validated,entry_kind,address_checked_this_run,hook_installed_this_run,evidence
+rage,atStringHash,0x005B1C30,0x001B1C30,0x009F0000,0x00BA1C30,1,1,replacement_hook,1,1,reversing/AtStringHash/evidence/validation-summary.json
+CDynamicEntity,GetBoneMatrix,0x009C7710,0x005C7710,0x009F0000,0x00FB7710,0,1,original_call,1,0,reversing/OriginalCalls/evidence/runtime-summary.json

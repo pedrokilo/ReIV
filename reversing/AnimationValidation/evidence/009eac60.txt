@@ -1,0 +1,84 @@
+Canonical GTAIV.exe preferred VA 009eac60
+009eac60 PUSH ESI
+009eac61 MOV ESI,ECX
+009eac63 CMP dword ptr [ESI + 0x38],0x0
+009eac67 JZ 0x009eacf3
+009eac6d CMP dword ptr [ESI + 0x20],0x0
+009eac71 JNZ 0x009eac84
+009eac73 CALL 0x009ea460
+009eac78 MOV EAX,dword ptr [ESI + 0x20]
+009eac7b PUSH EAX
+009eac7c LEA ECX,[ESI + 0x10]
+009eac7f CALL 0x009e9440
+009eac84 MOV ECX,dword ptr [ESI + 0x20]
+009eac87 MOV EAX,dword ptr [ESI + 0x38]
+009eac8a FLD float ptr [ECX]
+009eac8c FSTP float ptr [EAX + 0x10]
+009eac8f ADD EAX,0x10
+009eac92 FLD float ptr [ECX + 0x4]
+009eac95 FSTP float ptr [EAX + 0x4]
+009eac98 FLD float ptr [ECX + 0x8]
+009eac9b FSTP float ptr [EAX + 0x8]
+009eac9e FLD float ptr [ECX + 0x10]
+009eaca1 FSTP float ptr [EAX + 0x10]
+009eaca4 FLD float ptr [ECX + 0x14]
+009eaca7 FSTP float ptr [EAX + 0x14]
+009eacaa FLD float ptr [ECX + 0x18]
+009eacad FSTP float ptr [EAX + 0x18]
+009eacb0 FLD float ptr [ECX + 0x20]
+009eacb3 FSTP float ptr [EAX + 0x20]
+009eacb6 FLD float ptr [ECX + 0x24]
+009eacb9 FSTP float ptr [EAX + 0x24]
+009eacbc FLD float ptr [ECX + 0x28]
+009eacbf FSTP float ptr [EAX + 0x28]
+009eacc2 FLD float ptr [ECX + 0x30]
+009eacc5 FSTP float ptr [EAX + 0x30]
+009eacc8 FLD float ptr [ECX + 0x34]
+009eaccb FSTP float ptr [EAX + 0x34]
+009eacce FLD float ptr [ECX + 0x38]
+009eacd1 FSTP float ptr [EAX + 0x38]
+009eacd4 MOV ECX,dword ptr [ESI + 0x38]
+009eacd7 CMP word ptr [ECX + 0x8],0xffff
+009eacdd JZ 0x009eacf3
+009eacdf MOV EDX,ECX
+009eace1 MOVZX EAX,word ptr [EDX + 0x8]
+009eace5 MOV ECX,dword ptr [0x01666880]
+009eaceb PUSH 0x0
+009eaced PUSH EAX
+009eacee CALL 0x006a3960
+009eacf3 POP ESI
+009eacf4 RET 0x4
+
+void __fastcall FUN_009eac60(int param_1)
+
+{
+  undefined4 *puVar1;
+  int iVar2;
+  
+  if (*(int *)(param_1 + 0x38) != 0) {
+    if (*(int *)(param_1 + 0x20) == 0) {
+      FUN_009ea460();
+      FUN_009e9440(*(undefined4 *)(param_1 + 0x20));
+    }
+    puVar1 = *(undefined4 **)(param_1 + 0x20);
+    iVar2 = *(int *)(param_1 + 0x38);
+    *(undefined4 *)(iVar2 + 0x10) = *puVar1;
+    *(undefined4 *)(iVar2 + 0x14) = puVar1[1];
+    *(undefined4 *)(iVar2 + 0x18) = puVar1[2];
+    *(undefined4 *)(iVar2 + 0x20) = puVar1[4];
+    *(undefined4 *)(iVar2 + 0x24) = puVar1[5];
+    *(undefined4 *)(iVar2 + 0x28) = puVar1[6];
+    *(undefined4 *)(iVar2 + 0x30) = puVar1[8];
+    *(undefined4 *)(iVar2 + 0x34) = puVar1[9];
+    *(undefined4 *)(iVar2 + 0x38) = puVar1[10];
+    *(undefined4 *)(iVar2 + 0x40) = puVar1[0xc];
+    *(undefined4 *)(iVar2 + 0x44) = puVar1[0xd];
+    *(undefined4 *)(iVar2 + 0x48) = puVar1[0xe];
+    if (*(short *)(*(int *)(param_1 + 0x38) + 8) != -1) {
+      FUN_006a3960(*(undefined2 *)(*(int *)(param_1 + 0x38) + 8),0);
+    }
+  }
+  return;
+}
+
+

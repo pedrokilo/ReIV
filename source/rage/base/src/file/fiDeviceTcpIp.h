@@ -1,0 +1,69 @@
+#pragma once
+#include <cstdint>
+
+// GTA IV PC 1.0.7.0, x86. Reference from docs/MemoryMap/classes.csv.
+// RTTI type: rage::fiDeviceTcpIp
+// Layout, inheritance, signatures and behavior remain unverified.
+// Runtime VA = module base + RVA; these addresses are not instances.
+
+namespace reiv { namespace rage {
+class fiDeviceTcpIp;
+} }
+
+namespace reiv { namespace memory_map { namespace type_78d298df783c4c6c {
+inline constexpr char name[] = "rage::fiDeviceTcpIp";
+inline constexpr char mangled[] = ".?AVfiDeviceTcpIp@rage@@";
+inline constexpr char kind[] = "class";
+inline constexpr char section[] = ".data";
+inline constexpr char status[] = "exe_rtti_with_vtable";
+inline constexpr char bases[] = "rage::fiDevice";
+inline constexpr std::uint32_t type_descriptor_va = 0x010c3ae4u;
+inline constexpr std::uint32_t type_descriptor_rva = 0x00cc3ae4u;
+inline constexpr bool in_sdk = false;
+inline constexpr std::uint32_t locators[] = {0x00f02db4u};
+inline constexpr std::uint32_t locators_count = 1u;
+inline constexpr std::uint32_t vtables[] = {0x00eba32cu};
+inline constexpr std::uint32_t vtables_count = 1u;
+} } }
+// BEGIN GENERATED PENDING HOOK ADDRESSES
+#include "core/PendingHook.h"
+namespace reiv { namespace memory_map { namespace type_78d298df783c4c6c {
+// Destinations from the inventory; names/ABI remain candidates. Never auto-install.
+inline constexpr std::uint32_t pending_hook_count = 32u;
+inline constexpr PendingHook pending_hook_storage[] = {
+    {0x005ac320u, 0x001ac320u, 0x00eba32cu, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005cd740u, 0x001cd740u, 0x00eba32cu, 1, "FUN_005cd740", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005ac220u, 0x001ac220u, 0x00eba32cu, 2, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005bd3f0u, 0x001bd3f0u, 0x00eba32cu, 3, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005cd800u, 0x001cd800u, 0x00eba32cu, 4, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005cd820u, 0x001cd820u, 0x00eba32cu, 5, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005ac230u, 0x001ac230u, 0x00eba32cu, 6, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005ac230u, 0x001ac230u, 0x00eba32cu, 7, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005cd700u, 0x001cd700u, 0x00eba32cu, 8, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005bdb10u, 0x001bdb10u, 0x00eba32cu, 9, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005cd860u, 0x001cd860u, 0x00eba32cu, 10, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005bd3f0u, 0x001bd3f0u, 0x00eba32cu, 11, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005ac1e0u, 0x001ac1e0u, 0x00eba32cu, 12, "FUN_005ac1e0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x005765b0u, 0x001765b0u, 0x00eba32cu, 13, "FUN_005765b0", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_zero_stack_pop machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x006619b0u, 0x002619b0u, 0x00eba32cu, 14, "FUN_006619b0", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_zero_stack_pop machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x00720f80u, 0x00320f80u, 0x00eba32cu, 15, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_zero_stack_pop machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x006619b0u, 0x002619b0u, 0x00eba32cu, 16, "FUN_006619b0", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_zero_stack_pop machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x006619b0u, 0x002619b0u, 0x00eba32cu, 17, "FUN_006619b0", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_zero_stack_pop machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x005ac190u, 0x001ac190u, 0x00eba32cu, 18, "FUN_005ac190", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0043b5b0u, 0x0003b5b0u, 0x00eba32cu, 19, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00447970u, 0x00047970u, 0x00eba32cu, 20, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_zero_stack_pop machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x005ac220u, 0x001ac220u, 0x00eba32cu, 21, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00720f80u, 0x00320f80u, 0x00eba32cu, 22, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_zero_stack_pop machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x005bd3f0u, 0x001bd3f0u, 0x00eba32cu, 23, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x006619b0u, 0x002619b0u, 0x00eba32cu, 24, "FUN_006619b0", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_zero_stack_pop machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x005bd3f0u, 0x001bd3f0u, 0x00eba32cu, 25, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00720f80u, 0x00320f80u, 0x00eba32cu, 26, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_zero_stack_pop machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x005ac240u, 0x001ac240u, 0x00eba32cu, 27, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00510b90u, 0x00110b90u, 0x00eba32cu, 28, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0043b5b0u, 0x0003b5b0u, 0x00eba32cu, 29, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00549100u, 0x00149100u, 0x00eba32cu, 30, "FUN_00549100", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_only machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+    {0x005765b0u, 0x001765b0u, 0x00eba32cu, 31, "FUN_005765b0", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageValidation/evidence/runtime-summary.json; 64 calls of complete return_zero_stack_pop machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
+};
+inline constexpr const PendingHook* pending_hooks = pending_hook_storage;
+} } }
+// END GENERATED PENDING HOOK ADDRESSES

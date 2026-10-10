@@ -1,0 +1,28 @@
+Canonical GTAIV.exe preferred VA 0050b6f0
+0050b6f0 ADD dword ptr [ECX + 0x4],-0x1
+0050b6f4 MOV EAX,dword ptr [ECX + 0x4]
+0050b6f7 JNZ 0x0050b703
+0050b6f9 MOV EAX,dword ptr [ECX]
+0050b6fb MOV EDX,dword ptr [EAX]
+0050b6fd PUSH 0x1
+0050b6ff CALL EDX
+0050b701 XOR EAX,EAX
+0050b703 RET
+
+undefined4 __fastcall FUN_0050b6f0(undefined4 *param_1)
+
+{
+  int *piVar1;
+  undefined4 uVar2;
+  
+  piVar1 = param_1 + 1;
+  *piVar1 = *piVar1 + -1;
+  uVar2 = param_1[1];
+  if (*piVar1 == 0) {
+    (**(code **)*param_1)(1);
+    uVar2 = 0;
+  }
+  return uVar2;
+}
+
+

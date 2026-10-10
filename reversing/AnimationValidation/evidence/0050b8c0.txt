@@ -1,0 +1,55 @@
+Canonical GTAIV.exe preferred VA 0050b8c0
+0050b8c0 PUSH EBX
+0050b8c1 MOV EBX,dword ptr [ESP + 0x8]
+0050b8c5 PUSH ESI
+0050b8c6 MOVZX ESI,word ptr [ECX + 0x14]
+0050b8ca XOR EAX,EAX
+0050b8cc TEST ESI,ESI
+0050b8ce PUSH EDI
+0050b8cf MOV EDI,dword ptr [EBX]
+0050b8d1 JLE 0x0050b8f8
+0050b8d3 MOV EDX,dword ptr [ECX + 0x10]
+0050b8d6 CMP dword ptr [EDX],EDI
+0050b8d8 JZ 0x0050b8ea
+0050b8da ADD EAX,0x1
+0050b8dd ADD EDX,0x14
+0050b8e0 CMP EAX,ESI
+0050b8e2 JL 0x0050b8d6
+0050b8e4 POP EDI
+0050b8e5 POP ESI
+0050b8e6 POP EBX
+0050b8e7 RET 0x4
+0050b8ea PUSH ECX
+0050b8eb LEA EAX,[EDX + 0x4]
+0050b8ee PUSH EBX
+0050b8ef PUSH EAX
+0050b8f0 MOV EAX,dword ptr [EAX + 0xc]
+0050b8f3 CALL EAX
+0050b8f5 ADD ESP,0xc
+0050b8f8 POP EDI
+0050b8f9 POP ESI
+0050b8fa POP EBX
+0050b8fb RET 0x4
+
+void __thiscall FUN_0050b8c0(int param_1,int *param_2)
+
+{
+  int iVar1;
+  int *piVar2;
+  
+  iVar1 = 0;
+  if (*(ushort *)(param_1 + 0x14) != 0) {
+    piVar2 = *(int **)(param_1 + 0x10);
+    while (*piVar2 != *param_2) {
+      iVar1 = iVar1 + 1;
+      piVar2 = piVar2 + 5;
+      if ((int)(uint)*(ushort *)(param_1 + 0x14) <= iVar1) {
+        return;
+      }
+    }
+    (*(code *)piVar2[4])(piVar2 + 1,param_2,param_1);
+  }
+  return;
+}
+
+

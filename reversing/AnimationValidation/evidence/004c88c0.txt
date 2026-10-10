@@ -1,0 +1,11 @@
+Canonical GTAIV.exe preferred VA 004c88c0
+004c88c0 MOV EAX,0x80
+004c88c5 RET
+
+undefined4 FUN_004c88c0(void)
+
+{
+  return 0x80;
+}
+
+

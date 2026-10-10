@@ -1,0 +1,290 @@
+Canonical GTAIV.exe preferred VA 00ab1f00
+Entry bytes: 81 ec 9c 00 00 00 a1 40 3f f4 00 33 c4 89 84 24 98 00 00 00 56 8b f1 8b 
+Body size: 660
+00ab1f00 SUB ESP,0x9c
+00ab1f06 MOV EAX,[0x00f43f40]
+00ab1f0b XOR EAX,ESP
+00ab1f0d MOV dword ptr [ESP + 0x98],EAX
+00ab1f14 PUSH ESI
+00ab1f15 MOV ESI,ECX
+00ab1f17 MOV ECX,dword ptr [ESI + 0x8]
+00ab1f1a TEST ECX,ECX
+00ab1f1c JZ 0x00ab1f31
+00ab1f1e MOV EAX,dword ptr [ESI + 0x120]
+00ab1f24 TEST EAX,EAX
+00ab1f26 JZ 0x00ab1f31
+00ab1f28 MOV EAX,dword ptr [EAX + 0x20]
+00ab1f2b PUSH EAX
+00ab1f2c CALL 0x00ac7af0
+00ab1f31 CMP dword ptr [0x010d0170],0x1
+00ab1f38 JZ 0x00ab217c
+00ab1f3e MOV ECX,dword ptr [0x010e1984]
+00ab1f44 CMP ECX,dword ptr [0x00e3447c]
+00ab1f4a JNZ 0x00ab217c
+00ab1f50 CMP dword ptr [0x00f0e4a0],0x12
+00ab1f57 JZ 0x00ab217c
+00ab1f5d CMP byte ptr [ESI + 0x10],0x0
+00ab1f61 JZ 0x00ab1f8e
+00ab1f63 MOV EAX,dword ptr [ESI + 0xc]
+00ab1f66 TEST EAX,EAX
+00ab1f68 JZ 0x00ab1f8a
+00ab1f6a MOV EDX,dword ptr [EAX + 0xa4]
+00ab1f70 PUSH EDX
+00ab1f71 CALL 0x007a9c90
+00ab1f76 MOV ECX,dword ptr [ESI + 0xc]
+00ab1f79 ADD ESP,0x4
+00ab1f7c PUSH 0x0
+00ab1f7e CALL 0x00ce1830
+00ab1f83 MOV dword ptr [ESI + 0xc],0x0
+00ab1f8a MOV byte ptr [ESI + 0x10],0x0
+00ab1f8e CMP dword ptr [ESI + 0xc],0x0
+00ab1f92 JZ 0x00ab1f9b
+00ab1f94 MOV ECX,ESI
+00ab1f96 CALL 0x00ab1530
+00ab1f9b MOV ECX,dword ptr [ESI + 0x120]
+00ab1fa1 PUSH EDI
+00ab1fa2 MOVZX EDI,byte ptr [ECX + 0xd40]
+00ab1fa9 CMP EDI,0xff
+00ab1faf MOV dword ptr [ESP + 0x8],EDI
+00ab1fb3 JZ 0x00ab2104
+00ab1fb9 CMP dword ptr [ESI + 0x124],0x0
+00ab1fc0 PUSH EBP
+00ab1fc1 LEA EBP,[ESI + 0x124]
+00ab1fc7 JNZ 0x00ab2103
+00ab1fcd CMP EDI,0xa
+00ab1fd0 PUSH EBX
+00ab1fd1 MOV EBX,0xd91928
+00ab1fd6 JBE 0x00ab1fef
+00ab1fd8 CMP byte ptr [0x01667839],0x0
+00ab1fdf JNZ 0x00ab1fea
+00ab1fe1 CALL 0x00454450
+00ab1fe6 TEST AL,AL
+00ab1fe8 JNZ 0x00ab1fef
+00ab1fea MOV EBX,0xd91940
+00ab1fef PUSH EDI
+00ab1ff0 PUSH EBX
+00ab1ff1 LEA EAX,[ESP + 0x70]
+00ab1ff5 PUSH 0x40
+00ab1ff7 PUSH EAX
+00ab1ff8 CALL 0x004387f0
+00ab1ffd ADD ESP,0x10
+00ab2000 LEA ECX,[ESP + 0x20]
+00ab2004 CALL 0x00797520
+00ab2009 MOV ECX,dword ptr [ESI + 0x8]
+00ab200c PUSH 0xd91958
+00ab2011 MOV dword ptr [ESP + 0x44],ECX
+00ab2015 CALL 0x00cdf870
+00ab201a MOV EBX,EAX
+00ab201c MOV EAX,dword ptr [ESI + 0x120]
+00ab2022 ADD ESP,0x4
+00ab2025 MOV dword ptr [ESP + 0x38],EBX
+00ab2029 CMP byte ptr [EAX + 0x218],0x0
+00ab2030 JNZ 0x00ab204a
+00ab2032 CMP byte ptr [EAX + 0x219],0x0
+00ab2039 JZ 0x00ab204a
+00ab203b MOV dword ptr [ESP + 0x60],0x0
+00ab2043 MOV byte ptr [ESP + 0x65],0x2
+00ab2048 JMP 0x00ab2053
+00ab204a ADD EAX,0x790
+00ab204f MOV dword ptr [ESP + 0x2c],EAX
+00ab2053 PUSH 0x0
+00ab2055 PUSH 0x0
+00ab2057 PUSH -0x1
+00ab2059 LEA EDX,[ESP + 0x2c]
+00ab205d PUSH EDX
+00ab205e PUSH EBP
+00ab205f LEA EAX,[ESP + 0x7c]
+00ab2063 PUSH EAX
+00ab2064 MOV ECX,ESI
+00ab2066 CALL 0x00ce8ce0
+00ab206b MOV ECX,dword ptr [EBP]
+00ab206e TEST ECX,ECX
+00ab2070 JZ 0x00ab2102
+00ab2076 FLDZ
+00ab2078 PUSH ECX
+00ab2079 FSTP float ptr [ESP]
+00ab207c CALL 0x00aacfb0
+00ab2081 MOV ECX,dword ptr [ESI + 0x120]
+00ab2087 PUSH -0x1
+00ab2089 PUSH ECX
+00ab208a LEA EDX,[ESP + 0x1c]
+00ab208e PUSH EDX
+00ab208f LEA EAX,[ESP + 0x2c]
+00ab2093 PUSH EAX
+00ab2094 PUSH 0x1
+00ab2096 PUSH 0x1
+00ab2098 PUSH 0x0
+00ab209a LEA ECX,[ESP + 0x84]
+00ab20a1 PUSH 0x0
+00ab20a3 PUSH ECX
+00ab20a4 MOV dword ptr [ESP + 0x38],0x0
+00ab20ac MOV dword ptr [ESP + 0x3c],0xffffffff
+00ab20b4 MOV dword ptr [ESP + 0x40],0x4e
+00ab20bc CALL 0x005b1c30
+00ab20c1 ADD ESP,0x8
+00ab20c4 PUSH EAX
+00ab20c5 CALL 0x007a9810
+00ab20ca MOV EDI,EAX
+00ab20cc PUSH EDI
+00ab20cd CALL 0x00799cc0
+00ab20d2 MOV ECX,dword ptr [EBP]
+00ab20d5 ADD ESP,0x24
+00ab20d8 PUSH 0x9c4
+00ab20dd PUSH 0x1
+00ab20df MOV dword ptr [ECX + 0xa4],EDI
+00ab20e5 MOV dword ptr [ECX + 0xa8],EAX
+00ab20eb MOV dword ptr [ECX + 0xac],0x0
+00ab20f5 MOV ECX,dword ptr [EBP]
+00ab20f8 PUSH EBX
+00ab20f9 CALL 0x00ce1720
+00ab20fe MOV EDI,dword ptr [ESP + 0x10]
+00ab2102 POP EBX
+00ab2103 POP EBP
+00ab2104 MOV ECX,dword ptr [ESI + 0x124]
+00ab210a TEST ECX,ECX
+00ab210c JZ 0x00ab217b
+00ab210e FLDZ
+00ab2110 PUSH ECX
+00ab2111 FSTP float ptr [ESP]
+00ab2114 CALL 0x007b95c0
+00ab2119 CMP EDI,0xff
+00ab211f JNZ 0x00ab2145
+00ab2121 MOV EDX,dword ptr [ESI + 0x124]
+00ab2127 MOV EAX,dword ptr [EDX + 0xa4]
+00ab212d PUSH EAX
+00ab212e CALL 0x007a9c90
+00ab2133 MOV ECX,dword ptr [ESI + 0x124]
+00ab2139 ADD ESP,0x4
+00ab213c PUSH 0x0
+00ab213e CALL 0x00ce1830
+00ab2143 JMP 0x00ab217b
+00ab2145 PUSH 0x4e
+00ab2147 LEA ECX,[ESP + 0x64]
+00ab214b CALL 0x00b22a90
+00ab2150 XORPS XMM0,XMM0
+00ab2153 MOV EDX,dword ptr [ESI + 0x124]
+00ab2159 OR byte ptr [ESP + 0x8d],0x2
+00ab2161 LEA ECX,[ESP + 0x60]
+00ab2165 MOVSS dword ptr [ESP + 0x6c],XMM0
+00ab216b MOV EAX,dword ptr [EDX + 0xa4]
+00ab2171 PUSH ECX
+00ab2172 PUSH EAX
+00ab2173 CALL 0x007a9990
+00ab2178 ADD ESP,0x8
+00ab217b POP EDI
+00ab217c MOV ECX,dword ptr [ESP + 0x9c]
+00ab2183 POP ESI
+00ab2184 XOR ECX,ESP
+00ab2186 CALL 0x00d0cdb8
+00ab218b ADD ESP,0x9c
+00ab2191 RET 0x4
+
+/* WARNING: Type propagation algorithm not settling */
+
+void __fastcall FUN_00ab1f00(int param_1)
+
+{
+  int *piVar1;
+  int iVar2;
+  char cVar3;
+  undefined4 uVar4;
+  undefined4 uVar5;
+  undefined *puVar6;
+  uint uVar7;
+  undefined4 uVar8;
+  undefined4 uVar9;
+  undefined4 uVar10;
+  undefined1 *puVar11;
+  uint *puVar12;
+  undefined4 uVar13;
+  uint auStack_9c [4];
+  undefined1 auStack_8c [12];
+  int iStack_80;
+  undefined4 uStack_74;
+  undefined4 uStack_6c;
+  undefined4 uStack_4c;
+  undefined1 uStack_47;
+  char acStack_44 [12];
+  undefined4 uStack_38;
+  byte bStack_17;
+  uint uStack_4;
+  
+  uStack_4 = DAT_00f43f40 ^ (uint)auStack_9c;
+  if ((*(int *)(param_1 + 8) != 0) && (*(int *)(param_1 + 0x120) != 0)) {
+    FUN_00ac7af0(*(undefined4 *)(*(int *)(param_1 + 0x120) + 0x20));
+  }
+  if (((DAT_010d0170 != 1) && (DAT_010e1984 == DAT_00e3447c)) && (DAT_00f0e4a0 != 0x12)) {
+    if (*(char *)(param_1 + 0x10) != '\0') {
+      if (*(int *)(param_1 + 0xc) != 0) {
+        FUN_007a9c90(*(undefined4 *)(*(int *)(param_1 + 0xc) + 0xa4));
+        FUN_00ce1830(0);
+        *(undefined4 *)(param_1 + 0xc) = 0;
+      }
+      *(undefined1 *)(param_1 + 0x10) = 0;
+    }
+    if (*(int *)(param_1 + 0xc) != 0) {
+      FUN_00ab1530();
+    }
+    uVar7 = (uint)*(byte *)(*(int *)(param_1 + 0x120) + 0xd40);
+    auStack_9c[0] = uVar7;
+    if ((uVar7 != 0xff) && (piVar1 = (int *)(param_1 + 0x124), *(int *)(param_1 + 0x124) == 0)) {
+      puVar6 = &UNK_00d91928;
+      if ((10 < uVar7) && ((DAT_01667839 != '\0' || (cVar3 = FUN_00454450(), cVar3 == '\0')))) {
+        puVar6 = &UNK_00d91940;
+      }
+      FUN_004387f0(acStack_44,0x40,puVar6,uVar7);
+      FUN_00797520();
+      uStack_6c = *(undefined4 *)(param_1 + 8);
+      uVar4 = FUN_00cdf870(&UNK_00d91958);
+      iVar2 = *(int *)(param_1 + 0x120);
+      if ((*(char *)(iVar2 + 0x218) == '\0') && (*(char *)(iVar2 + 0x219) != '\0')) {
+        uStack_4c = 0;
+        uStack_47 = 2;
+      }
+      else {
+        iStack_80 = iVar2 + 0x790;
+      }
+      uStack_74 = uVar4;
+      FUN_00ce8ce0(acStack_44,piVar1,auStack_8c,0xffffffff,0,0);
+      if (*piVar1 != 0) {
+        FUN_00aacfb0(0);
+        uVar5 = *(undefined4 *)(param_1 + 0x120);
+        uVar13 = 0xffffffff;
+        puVar12 = auStack_9c + 1;
+        puVar11 = auStack_8c;
+        uVar10 = 1;
+        uVar9 = 1;
+        uVar8 = 0;
+        auStack_9c[1] = 0;
+        auStack_9c[2] = 0xffffffff;
+        auStack_9c[3] = 0x4e;
+        uVar7 = ReIV_atStringHash(acStack_44,0);
+        uVar5 = FUN_007a9810(uVar7,uVar8,uVar9,uVar10,puVar11,puVar12,uVar5,uVar13);
+        uVar8 = FUN_00799cc0(uVar5);
+        iVar2 = *piVar1;
+        *(undefined4 *)(iVar2 + 0xa4) = uVar5;
+        *(undefined4 *)(iVar2 + 0xa8) = uVar8;
+        *(undefined4 *)(iVar2 + 0xac) = 0;
+        FUN_00ce1720(uVar4,1,0x9c4);
+        uVar7 = auStack_9c[0];
+      }
+    }
+    if (*(int *)(param_1 + 0x124) != 0) {
+      FUN_007b95c0(0);
+      if (uVar7 == 0xff) {
+        FUN_007a9c90(*(undefined4 *)(*(int *)(param_1 + 0x124) + 0xa4));
+        FUN_00ce1830(0);
+      }
+      else {
+        FUN_00b22a90(0x4e);
+        bStack_17 = bStack_17 | 2;
+        uStack_38 = 0;
+        FUN_007a9990(*(undefined4 *)(*(int *)(param_1 + 0x124) + 0xa4),acStack_44);
+      }
+    }
+  }
+  FUN_00d0cdb8();
+  return;
+}
+
+

@@ -1,0 +1,104 @@
+Canonical GTAIV.exe preferred VA 00ae9a40
+Entry bytes: 55 8b ec 83 e4 f0 83 ec 18 56 8b 75 08 0f b6 56 04 81 fa ff 00 00 00 57 
+Body size: 223
+00ae9a40 PUSH EBP
+00ae9a41 MOV EBP,ESP
+00ae9a43 AND ESP,0xfffffff0
+00ae9a46 SUB ESP,0x18
+00ae9a49 PUSH ESI
+00ae9a4a MOV ESI,dword ptr [EBP + 0x8]
+00ae9a4d MOVZX EDX,byte ptr [ESI + 0x4]
+00ae9a51 CMP EDX,0xff
+00ae9a57 PUSH EDI
+00ae9a58 JZ 0x00ae9a7b
+00ae9a5a MOVZX EDI,byte ptr [ESI + 0x40]
+00ae9a5e MOV EAX,[0x01719040]
+00ae9a63 IMUL EDI,EDI,0x6f40
+00ae9a69 IMUL EAX,EDX
+00ae9a6c MOV EDX,dword ptr [0x01719060]
+00ae9a72 ADD EAX,dword ptr [EDI + EDX*0x1 + 0x6f14]
+00ae9a79 JMP 0x00ae9a7d
+00ae9a7b XOR EAX,EAX
+00ae9a7d MOV EDX,dword ptr [EAX + 0xcc]
+00ae9a83 MOV EAX,[0x017237b0]
+00ae9a88 MOV EDI,dword ptr FS:[0x2c]
+00ae9a8f MOV EAX,dword ptr [EDI + EAX*0x4]
+00ae9a92 MOV EAX,dword ptr [EAX + 0x8e8]
+00ae9a98 SHL EAX,0x6
+00ae9a9b ADD EAX,0x1717220
+00ae9aa0 CMP EDX,0x1
+00ae9aa3 MOVSS XMM0,dword ptr [EAX]
+00ae9aa7 MOVSS dword ptr [ESP + 0x10],XMM0
+00ae9aad MOVSS XMM0,dword ptr [EAX + 0x4]
+00ae9ab2 MOVSS dword ptr [ESP + 0x14],XMM0
+00ae9ab8 MOVSS XMM0,dword ptr [EAX + 0x8]
+00ae9abd MOVSS dword ptr [ESP + 0x18],XMM0
+00ae9ac3 JNZ 0x00ae9ad9
+00ae9ac5 LEA ECX,[ESP + 0x10]
+00ae9ac9 PUSH ECX
+00ae9aca MOV ECX,ESI
+00ae9acc CALL 0x007b9610
+00ae9ad1 POP EDI
+00ae9ad2 POP ESI
+00ae9ad3 MOV ESP,EBP
+00ae9ad5 POP EBP
+00ae9ad6 RET 0x8
+00ae9ad9 MOV EAX,EDX
+00ae9adb SHR EAX,0x10
+00ae9ade TEST EAX,EAX
+00ae9ae0 MOV dword ptr [ESP + 0xc],EAX
+00ae9ae4 FILD dword ptr [ESP + 0xc]
+00ae9ae8 JGE 0x00ae9af0
+00ae9aea FADD float ptr [0x00ebdec8]
+00ae9af0 MOVZX EDX,DX
+00ae9af3 SUB ESP,0x8
+00ae9af6 MOV dword ptr [ESP + 0x14],EDX
+00ae9afa FSTP float ptr [ESP + 0x4]
+00ae9afe FILD dword ptr [ESP + 0x14]
+00ae9b02 FSTP float ptr [ESP]
+00ae9b05 PUSH ESI
+00ae9b06 CALL 0x00ae7570
+00ae9b0b LEA EAX,[ESP + 0x10]
+00ae9b0f PUSH EAX
+00ae9b10 MOV ECX,ESI
+00ae9b12 CALL 0x007b9610
+00ae9b17 POP EDI
+00ae9b18 POP ESI
+00ae9b19 MOV ESP,EBP
+00ae9b1b POP EBP
+00ae9b1c RET 0x8
+
+/* WARNING: Removing unreachable block (ram,0x00ae9aea) */
+/* WARNING: Globals starting with '_' overlap smaller symbols at the same address */
+
+void FUN_00ae9a40(int param_1)
+
+{
+  uint uVar1;
+  int iVar2;
+  undefined4 uStack_20;
+  undefined4 uStack_1c;
+  undefined4 uStack_18;
+  
+  if (*(byte *)(param_1 + 4) == 0xff) {
+    iVar2 = 0;
+  }
+  else {
+    iVar2 = DAT_01719040 * (uint)*(byte *)(param_1 + 4) +
+            *(int *)((uint)*(byte *)(param_1 + 0x40) * 0x6f40 + 0x6f14 + DAT_01719060);
+  }
+  uVar1 = *(uint *)(iVar2 + 0xcc);
+  iVar2 = *(int *)(*(int *)((int)ThreadLocalStoragePointer + _tls_index * 4) + 0x8e8) * 0x40;
+  uStack_20 = *(undefined4 *)(&DAT_01717220 + iVar2);
+  uStack_1c = *(undefined4 *)(&DAT_01717224 + iVar2);
+  uStack_18 = *(undefined4 *)(&DAT_01717228 + iVar2);
+  if (uVar1 != 1) {
+    FUN_00ae7570(param_1,(float)(uVar1 & 0xffff),(float)(uVar1 >> 0x10));
+    FUN_007b9610(&uStack_20);
+    return;
+  }
+  FUN_007b9610(&uStack_20);
+  return;
+}
+
+

@@ -1,0 +1,48 @@
+Canonical GTAIV.exe preferred VA 00a4d670
+00a4d670 PUSH ECX
+00a4d671 MOVSS XMM0,dword ptr [ECX + 0x30]
+00a4d676 MOVSS XMM1,dword ptr [0x00ebded4]
+00a4d67e UCOMISS XMM1,XMM0
+00a4d681 LAHF
+00a4d682 TEST AH,0x44
+00a4d685 MOVSS dword ptr [ESP],XMM0
+00a4d68a JP 0x00a4d6d1
+00a4d68c MOV EAX,dword ptr [ECX + 0x40]
+00a4d68f MOVSS XMM1,dword ptr [0x00d50398]
+00a4d697 MOVSS XMM0,dword ptr [EAX + 0xc]
+00a4d69c MULSS XMM0,dword ptr [0x00d50978]
+00a4d6a4 ADDSS XMM0,XMM1
+00a4d6a8 SUBSS XMM0,XMM1
+00a4d6ac COMISS XMM1,XMM0
+00a4d6af JBE 0x00a4d6b8
+00a4d6b1 MOVSS dword ptr [ESP],XMM1
+00a4d6b6 JMP 0x00a4d6bd
+00a4d6b8 MOVSS dword ptr [ESP],XMM0
+00a4d6bd FLD float ptr [0x00d50978]
+00a4d6c3 FDIV float ptr [ESP]
+00a4d6c6 FMUL float ptr [ECX + 0x54]
+00a4d6c9 FMUL float ptr [0x011dde7c]
+00a4d6cf POP ECX
+00a4d6d0 RET
+00a4d6d1 FLD float ptr [ESP]
+00a4d6d4 POP ECX
+00a4d6d5 RET
+
+float10 __fastcall FUN_00a4d670(int param_1)
+
+{
+  float fStack_4;
+  
+  if (DAT_00ebded4 != *(float *)(param_1 + 0x30)) {
+    return (float10)*(float *)(param_1 + 0x30);
+  }
+  fStack_4 = (*(float *)(*(int *)(param_1 + 0x40) + 0xc) * DAT_00d50978 + DAT_00d50398) -
+             DAT_00d50398;
+  if (fStack_4 < DAT_00d50398) {
+    fStack_4 = DAT_00d50398;
+  }
+  return ((float10)DAT_00d50978 / (float10)fStack_4) * (float10)*(float *)(param_1 + 0x54) *
+         (float10)DAT_011dde7c;
+}
+
+

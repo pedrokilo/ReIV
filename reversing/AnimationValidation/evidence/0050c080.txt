@@ -1,0 +1,27 @@
+Canonical GTAIV.exe preferred VA 0050c080
+0050c080 PUSH ESI
+0050c081 MOV ESI,ECX
+0050c083 MOV ECX,dword ptr [ESP + 0x8]
+0050c087 MOV dword ptr [ESI + 0x4],ECX
+0050c08a MOV EAX,dword ptr [ECX]
+0050c08c MOV EDX,dword ptr [EAX + 0x4]
+0050c08f CALL EDX
+0050c091 MOV ECX,dword ptr [ESP + 0xc]
+0050c095 MOV EAX,dword ptr [ESI]
+0050c097 MOV EDX,dword ptr [EAX + 0x14]
+0050c09a PUSH ECX
+0050c09b MOV ECX,ESI
+0050c09d CALL EDX
+0050c09f POP ESI
+0050c0a0 RET 0x8
+
+void __thiscall FUN_0050c080(int *param_1,int *param_2,undefined4 param_3)
+
+{
+  param_1[1] = (int)param_2;
+  (**(code **)(*param_2 + 4))();
+  (**(code **)(*param_1 + 0x14))(param_3);
+  return;
+}
+
+

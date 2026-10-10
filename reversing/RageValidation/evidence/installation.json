@@ -1,0 +1,13 @@
+{
+  "date": "2026-10-09T21:27:52.9008894-06:00",
+  "installed_asi_sha256": "a8eeb41a0eab04e2fd7469717ff7f3d0c67451afaabb788ecfa88c0d848022fb",
+  "destination": "D:/GTA IV/Grand Theft Auto IV - copia",
+  "backup": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\Install-rage-validation-20261009-212751",
+  "runtime_tested_asi_sha256": [
+    "ef474eabd18f516af2f15b7c936e71591fde1bc8ee49c098d4d0f0ce4d69e99e",
+    "125b2e0e88c3626eb946e33ed67a90ce40be662d3939cbe80cd532a5193d85f1"
+  ],
+  "final_changes": "Generated address metadata and evidence catalog; tested probe implementations unchanged",
+  "build_passed": true,
+  "all_4016_headers_syntax_passed": true
+}

@@ -1,0 +1,27 @@
+Canonical GTAIV.exe preferred VA 009e7110
+009e7110 MOV EAX,dword ptr [ECX + 0x38]
+009e7113 TEST EAX,EAX
+009e7115 JZ 0x009e7132
+009e7117 MOVZX EAX,word ptr [EAX + 0x8]
+009e711b CMP AX,0xffff
+009e711f JZ 0x009e7132
+009e7121 MOV ECX,dword ptr [0x01666884]
+009e7127 MOVZX EAX,AX
+009e712a PUSH 0x0
+009e712c PUSH EAX
+009e712d CALL 0x0069a470
+009e7132 RET
+
+void __fastcall FUN_009e7110(int param_1)
+
+{
+  short sVar1;
+  
+  if ((*(int *)(param_1 + 0x38) != 0) &&
+     (sVar1 = *(short *)(*(int *)(param_1 + 0x38) + 8), sVar1 != -1)) {
+    FUN_0069a470(sVar1,0);
+  }
+  return;
+}
+
+

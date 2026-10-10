@@ -1,0 +1,28 @@
+Canonical GTAIV.exe preferred VA 005d4f40
+005d4f40 TEST byte ptr [ESP + 0x4],0x1
+005d4f45 PUSH ESI
+005d4f46 MOV ESI,ECX
+005d4f48 MOV dword ptr [ESI],0xeba548
+005d4f4e JZ 0x005d4f63
+005d4f50 MOV EAX,FS:[0x2c]
+005d4f56 MOV ECX,dword ptr [EAX]
+005d4f58 MOV ECX,dword ptr [ECX + 0x8]
+005d4f5b MOV EDX,dword ptr [ECX]
+005d4f5d MOV EAX,dword ptr [EDX + 0xc]
+005d4f60 PUSH ESI
+005d4f61 CALL EAX
+005d4f63 MOV EAX,ESI
+005d4f65 POP ESI
+005d4f66 RET 0x4
+
+undefined4 * __thiscall FUN_005d4f40(undefined4 *param_1,byte param_2)
+
+{
+  *param_1 = &UNK_00eba548;
+  if ((param_2 & 1) != 0) {
+    (**(code **)(**(int **)(*(int *)ThreadLocalStoragePointer + 8) + 0xc))(param_1);
+  }
+  return param_1;
+}
+
+

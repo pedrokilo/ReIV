@@ -1,0 +1,60 @@
+Canonical GTAIV.exe preferred VA 00bc1510
+Entry bytes: 8b 41 04 85 c0 74 34 8b 48 20 85 c9 74 05 8d 41 30 eb 03 83 c0 10 d9 00 
+Body size: 83
+00bc1510 MOV EAX,dword ptr [ECX + 0x4]
+00bc1513 TEST EAX,EAX
+00bc1515 JZ 0x00bc154b
+00bc1517 MOV ECX,dword ptr [EAX + 0x20]
+00bc151a TEST ECX,ECX
+00bc151c JZ 0x00bc1523
+00bc151e LEA EAX,[ECX + 0x30]
+00bc1521 JMP 0x00bc1526
+00bc1523 ADD EAX,0x10
+00bc1526 FLD float ptr [EAX]
+00bc1528 MOV ECX,dword ptr [ESP + 0x4]
+00bc152c MOVSS XMM0,dword ptr [EAX + 0x4]
+00bc1531 MOVSS XMM1,dword ptr [EAX + 0x8]
+00bc1536 FSTP float ptr [ECX]
+00bc1538 MOVSS dword ptr [ECX + 0x4],XMM0
+00bc153d MOVSS dword ptr [ECX + 0x8],XMM1
+00bc1542 FLD float ptr [EAX + 0xc]
+00bc1545 FSTP float ptr [ECX + 0xc]
+00bc1548 RET 0x4
+00bc154b MOV EAX,dword ptr [ESP + 0x4]
+00bc154f XORPS XMM0,XMM0
+00bc1552 MOVSS dword ptr [EAX],XMM0
+00bc1556 MOVSS dword ptr [EAX + 0x4],XMM0
+00bc155b MOVSS dword ptr [EAX + 0x8],XMM0
+00bc1560 RET 0x4
+
+void __thiscall FUN_00bc1510(int param_1,undefined4 *param_2)
+
+{
+  undefined4 uVar1;
+  undefined4 uVar2;
+  int iVar3;
+  undefined4 *puVar4;
+  
+  iVar3 = *(int *)(param_1 + 4);
+  if (iVar3 != 0) {
+    if (*(int *)(iVar3 + 0x20) == 0) {
+      puVar4 = (undefined4 *)(iVar3 + 0x10);
+    }
+    else {
+      puVar4 = (undefined4 *)(*(int *)(iVar3 + 0x20) + 0x30);
+    }
+    uVar1 = puVar4[1];
+    uVar2 = puVar4[2];
+    *param_2 = *puVar4;
+    param_2[1] = uVar1;
+    param_2[2] = uVar2;
+    param_2[3] = puVar4[3];
+    return;
+  }
+  *param_2 = 0;
+  param_2[1] = 0;
+  param_2[2] = 0;
+  return;
+}
+
+

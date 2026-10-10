@@ -1,0 +1,29 @@
+Canonical GTAIV.exe preferred VA 00bc12c0
+Entry bytes: 8b 49 04 85 c9 b8 5c 5d 00 00 74 17 8b 51 28 81 e2 c0 03 00 00 81 fa 80 
+Body size: 36
+00bc12c0 MOV ECX,dword ptr [ECX + 0x4]
+00bc12c3 TEST ECX,ECX
+00bc12c5 MOV EAX,0x5d5c
+00bc12ca JZ 0x00bc12e3
+00bc12cc MOV EDX,dword ptr [ECX + 0x28]
+00bc12cf AND EDX,0x3c0
+00bc12d5 CMP EDX,0x80
+00bc12db JNZ 0x00bc12e3
+00bc12dd MOV EAX,dword ptr [ECX + 0xd4c]
+00bc12e3 RET
+
+undefined4 __fastcall FUN_00bc12c0(int param_1)
+
+{
+  int iVar1;
+  undefined4 uVar2;
+  
+  iVar1 = *(int *)(param_1 + 4);
+  uVar2 = 0x5d5c;
+  if ((iVar1 != 0) && ((*(uint *)(iVar1 + 0x28) & 0x3c0) == 0x80)) {
+    uVar2 = *(undefined4 *)(iVar1 + 0xd4c);
+  }
+  return uVar2;
+}
+
+

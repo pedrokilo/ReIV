@@ -58,6 +58,10 @@ Por ejemplo, la vtable de `CPed` tiene RVA `0x00969844`. Si el módulo se carga 
 
 ### Fichas por clase
 
+Los 4.016 headers también incluyen sus destinos conocidos como metadatos pendientes: 45.503 registros de slots virtuales y 55 referencias de funciones SDK asociadas por propietario RTTI exacto. Los [detalles de cobertura y estados](PendingHooks.md) explican el [índice de direcciones pendientes](pending_hooks.csv) y las [referencias SDK sin propietario asociado](pending_hooks_unmatched.csv). Estos registros no activan llamadas ni instalan hooks; nombres y ABI siguen pendientes salvo la evidencia específica del catálogo verificado.
+
+La [correlación de clases y hooks](ClassesAndHooks.md) cruza los 4.016 tipos RTTI con `docs/hooks.csv`: direcciones de metadatos, métodos catalogados, estado de reconstrucción, pruebas y enlaces a headers y evidencia. Se regenera con el catálogo de hooks.
+
 El visor enlaza estas fichas al seleccionar su clase en **Tipos RTTI**, mediante «Abrir ficha documentada» y «Abrir datos JSON».
 
 - [CEntity](classes/CEntity.md): RTTI, 51 slots candidatos contrastados con el EXE y tres nombres referenciados al SDK. Incluye [datos estructurados](classes/CEntity.json). Los nombres, firmas y offsets del SDK conservan su estado pendiente de validación.
@@ -106,6 +110,8 @@ El [catálogo de reconstrucción](../functions.csv) permanece separado. Añadir 
 Los nombres anónimos, `FUN_*` y `virtual_entry_*` se conservan como tales. No se adivinan propietarios, nombres de método, direcciones de instancias ni firmas ausentes.
 
 ## Regenerar
+
+Resultados de los bancos de llamadas y auditoría runtime: [game](GameValidation.md), [audio](AudioValidation.md), [animación](AnimationValidation.md), [NMutils](NMutilsValidation.md), [rage](RageValidation.md) y [ART](ARTValidation.md). Una coincidencia de dirección, una llamada de cuerpo simple y una reconstrucción son estados distintos.
 
 Con el proyecto y Ghidra locales disponibles:
 

@@ -1,0 +1,4 @@
+# Preserve bytes of implementations and bindings identified by evidence SHA256.
+/source/hooks/*.h -text
+/source/game/scene/CDynamicEntity.cpp -text
+/source/rage/AtStringHash.h -text

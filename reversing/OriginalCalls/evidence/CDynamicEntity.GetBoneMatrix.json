@@ -1,0 +1,32 @@
+{
+  "exe_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "function": "CDynamicEntity::GetBoneMatrix",
+  "sdk_header_sha256": "e40de71ab5cf3aa10854c8d9a7a3aafe98c5318e7e535c3b02db6748683ca474",
+  "sdk_line": 11,
+  "rva": "0x005c7710",
+  "preferred_va": "0x009c7710",
+  "file_offset": "0x5c7710",
+  "entry_bytes": "568bf18b068b90a000000057ffd285c0",
+  "static_address_checked": true,
+  "abi_source": "IV-SDK signature corroborated by targeted MSVC dumpbin disassembly",
+  "runtime_call_validated": true,
+  "reversed": false,
+  "hooked": false,
+  "verification": {
+    "x86_call_conventions": "passed cdecl/stdcall/thiscall, 10000 iterations",
+    "wrong_host_rejection": "passed",
+    "null_and_unbound_wrapper": "passed",
+    "msbuild_release_win32": "passed"
+  },
+  "static_abi_observations": {
+    "this_pointer": "ECX copied to ESI at 0x009C7711",
+    "argument": "32-bit bone index read from ESP+0xC after two saved registers at 0x009C77DC",
+    "cleanup": "RET 4 at 0x009C77BA and 0x009C77EB",
+    "return": "address returned in EAX; index stride 80 bytes or identity matrix fallback",
+    "limitations": "CMatrix semantic name comes from SDK; no entity lifetime, index bounds, or in-game behavior validated"
+  },
+  "assembly_file": "reversing/OriginalCalls/evidence/GetBoneMatrix.asm.txt",
+  "runtime_evidence": "reversing/OriginalCalls/evidence/runtime-summary.json",
+  "runtime_scope": "64 calls on FindPlayerPed() entity, bone index 0, during scene loading after gameLoadEvent and before ingameStartupEvent; same pointer as SDK, finite matrix, no identity fallback, no SEH exceptions, orderly exit code 0; no validation of other bones, entities, or reconstructed behavior"
+}

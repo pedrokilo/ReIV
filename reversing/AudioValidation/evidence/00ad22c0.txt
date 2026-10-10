@@ -1,0 +1,94 @@
+Canonical GTAIV.exe preferred VA 00ad22c0
+Entry bytes: 56 57 8b f1 e8 37 c8 ff ff 8b 7c 24 0c 57 8b ce e8 7b c8 ff ff 80 7e 08 
+Body size: 189
+00ad22c0 PUSH ESI
+00ad22c1 PUSH EDI
+00ad22c2 MOV ESI,ECX
+00ad22c4 CALL 0x00aceb00
+00ad22c9 MOV EDI,dword ptr [ESP + 0xc]
+00ad22cd PUSH EDI
+00ad22ce MOV ECX,ESI
+00ad22d0 CALL 0x00aceb50
+00ad22d5 CMP byte ptr [ESI + 0x8],0x0
+00ad22d9 JZ 0x00ad22e3
+00ad22db PUSH EDI
+00ad22dc MOV ECX,ESI
+00ad22de CALL 0x00ad1870
+00ad22e3 CMP dword ptr [ESI + 0x3ac8],0x3
+00ad22ea JNZ 0x00ad2319
+00ad22ec MOV ECX,dword ptr [ESI + 0x3ac4]
+00ad22f2 TEST ECX,ECX
+00ad22f4 JNZ 0x00ad231e
+00ad22f6 MOV ECX,dword ptr [ESI + 0x3ac0]
+00ad22fc TEST ECX,ECX
+00ad22fe JZ 0x00ad230f
+00ad2300 CALL 0x00b04140
+00ad2305 MOV dword ptr [ESI + 0x3ac0],0x0
+00ad230f MOV dword ptr [ESI + 0x3ac8],0x0
+00ad2319 POP EDI
+00ad231a POP ESI
+00ad231b RET 0x4
+00ad231e MOV EAX,dword ptr [ESI + 0x3acc]
+00ad2324 TEST EAX,EAX
+00ad2326 JZ 0x00ad234b
+00ad2328 MOV EDX,dword ptr [EAX + 0x20]
+00ad232b TEST EDX,EDX
+00ad232d JZ 0x00ad233d
+00ad232f POP EDI
+00ad2330 LEA EAX,[EDX + 0x30]
+00ad2333 POP ESI
+00ad2334 MOV dword ptr [ESP + 0x4],EAX
+00ad2338 JMP 0x007b9610
+00ad233d POP EDI
+00ad233e ADD EAX,0x10
+00ad2341 POP ESI
+00ad2342 MOV dword ptr [ESP + 0x4],EAX
+00ad2346 JMP 0x007b9610
+00ad234b CMP byte ptr [ESI + 0x3ae0],0x0
+00ad2352 JZ 0x00ad2319
+00ad2354 MOV EDX,dword ptr FS:[0x2c]
+00ad235b MOV EAX,[0x017237b0]
+00ad2360 MOV EAX,dword ptr [EDX + EAX*0x4]
+00ad2363 MOV EDX,dword ptr [EAX + 0x8e8]
+00ad2369 SHL EDX,0x6
+00ad236c ADD EDX,0x1717220
+00ad2372 POP EDI
+00ad2373 POP ESI
+00ad2374 MOV dword ptr [ESP + 0x4],EDX
+00ad2378 JMP 0x007b9610
+
+void __thiscall FUN_00ad22c0(int param_1,undefined4 param_2)
+
+{
+  FUN_00aceb00();
+  FUN_00aceb50(param_2);
+  if (*(char *)(param_1 + 8) != '\0') {
+    FUN_00ad1870(param_2);
+  }
+  if (*(int *)(param_1 + 0x3ac8) == 3) {
+    if (*(int *)(param_1 + 0x3ac4) == 0) {
+      if (*(int *)(param_1 + 0x3ac0) != 0) {
+        FUN_00b04140();
+        *(undefined4 *)(param_1 + 0x3ac0) = 0;
+      }
+      *(undefined4 *)(param_1 + 0x3ac8) = 0;
+    }
+    else {
+      if (*(int *)(param_1 + 0x3acc) != 0) {
+        if (*(int *)(*(int *)(param_1 + 0x3acc) + 0x20) != 0) {
+          FUN_007b9610();
+          return;
+        }
+        FUN_007b9610();
+        return;
+      }
+      if (*(char *)(param_1 + 0x3ae0) != '\0') {
+        FUN_007b9610();
+        return;
+      }
+    }
+  }
+  return;
+}
+
+

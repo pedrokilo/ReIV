@@ -1,0 +1,10 @@
+Canonical GTAIV.exe preferred VA 00c28820
+00c28820 RET
+
+void FUN_00c28820(void)
+
+{
+  return;
+}
+
+

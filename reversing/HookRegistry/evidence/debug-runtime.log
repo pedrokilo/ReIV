@@ -1,0 +1,9 @@
+[info][20:19:29.888][ReIV.cpp:28]: ReIV bootstrap loaded | GTA IV 1.0.7.0 | x86
+[info][20:19:29.908][ReIV.cpp:36]: CDynamicEntity::GetBoneMatrix original binding available | RVA 0x005C7710 | root-bone historical test passed
+[debug][20:19:29.911][GetBoneMatrixProbe.h:50]: GetBoneMatrix test enabled: waiting for a live player
+[info][20:19:29.924][ReIV.cpp:44]: atStringHash bank passed; replacement installed
+[debug][20:19:29.924][ReIV.cpp:46]: Runtime catalog exported to ReIV-runtime-hooks.csv
+[info][20:19:49.667][ReIV.cpp:14]: SDK gameLoadEvent received
+[info][20:20:13.874][GetBoneMatrixProbe.h:64]: GetBoneMatrix PASSED | calls=64 failures=0 exceptions=0 | entity=0x06BCE700 matrix=0x081E6D10
+[info][20:20:15.972][ReIV.cpp:19]: SDK ingameStartupEvent received
+[info][20:20:16.681][ReIV.cpp:52]: ReIV process detach
