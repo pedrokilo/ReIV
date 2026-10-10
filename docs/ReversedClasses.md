@@ -2,7 +2,7 @@
 
 [Inicio](../README.md) · [Clases y hooks](MemoryMap/ClassesAndHooks.md) · [Proceso y evidencia](AddressBindingProcess.md)
 
-> **Fuente:** [hooks.csv](hooks.csv) · [Inventario de clases](../source/class-files.csv) · **Generado:** 2026-10-10 07:38 UTC
+> **Fuente:** [hooks.csv](hooks.csv) · [Inventario de clases](../source/class-files.csv) · **Generado:** 2026-10-10 07:46 UTC
 
 ## Objetivo y dimensiones de progreso
 
