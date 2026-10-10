@@ -44,6 +44,14 @@ for r in rows("docs/MemoryMap/sdk_addresses.csv"):
     (ENTRIES[r["owner"]] if r["owner"] in CLASSES else UNMATCHED).append(entry)
 
 
+# Non-virtual callbacks recovered from validated MSVC exception metadata chains.
+exception_callbacks = ROOT / "reversing/UnknownTypesAnalysis/evidence/pending-overlay.csv"
+if exception_callbacks.exists():
+    for r in rows("reversing/UnknownTypesAnalysis/evidence/pending-overlay.csv"):
+        assert r["owner"] in CLASSES
+        assert r["origin"] in ("ExceptionCopyConstructor", "ExceptionUnwindDestructor")
+        ENTRIES[r["owner"]].append({k: r[k] for k in ("owner", "va", "rva", "vtable_va", "slot", "label", "name_candidates", "evidence", "origin")} | {"vtable_va": r["vtable_va"] or "0x00000000", "slot": r["slot"] or "-1", "runtime_reference_tested": 0})
+
 # Scoped validation records never make references executable or reconstructed.
 for entries in ENTRIES.values():
     for entry in entries:
@@ -51,7 +59,7 @@ for entries in ENTRIES.values():
             entry["label"] = "fatal_assertion_handler_do_not_call"
             entry["name_candidates"] = ""
             entry["evidence"] += "; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called"
-for relative_validation in ("reversing/GameValidation/evidence/reference-results.json", "reversing/RageValidation/evidence/reference-results.json", "reversing/ARTValidation/evidence/reference-results.json"):
+for relative_validation in ("reversing/GameValidation/evidence/reference-results.json", "reversing/RageValidation/evidence/reference-results.json", "reversing/ARTValidation/evidence/reference-results.json", "reversing/PendingAnalysis/evidence/reference-results.json", "reversing/ComplexValidation/evidence/reference-results.json"):
     validation_path = ROOT / relative_validation
     if not validation_path.exists():
         continue

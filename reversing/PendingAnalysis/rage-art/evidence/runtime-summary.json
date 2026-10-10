@@ -1,0 +1,562 @@
+{
+  "passed": true,
+  "date": "2026-10-09T22:22:46.264234-06:00",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "asi_sha256": "2a9eeb17a1f312bd7bce7c76f0d10036ded91bcc63545b1dfe41245407f13a42",
+  "implementation_sha256": "d1cd19724cb5d1da275bfb39181c190dc715ef5dd4567066d56539414f451996",
+  "scope_sha256": "a95e67033b1542994187bbadd41fd6ed40e41a59ce18ac1939a7ba0eaf72fcb9",
+  "result": {
+    "phase": "passed",
+    "fixture_only": true,
+    "exceptions": 0,
+    "entries": [
+      {
+        "rva": "0x00004B90",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0003B5B0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00053AD0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x000C4C00",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x000C5030",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x000E76B0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0010B6E0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00110B90",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001119F0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00111B50",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00115F90",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0011EF10",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0011EF20",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00120110",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00154860",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00154920",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001549E0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0015A860",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0015A8D0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0015A8E0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00167170",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001881F0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0018C350",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0018C360",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0018C380",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0018C5C0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0018C5D0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0018C600",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0019B9D0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0019BC80",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0019F0F0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0019F100",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0019F170",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0019F180",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0019F440",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001A1F00",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001A2920",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001AC220",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001AC230",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001AC850",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001BD3F0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001BDB10",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001BDC60",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x001CB1D0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0022A2C0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0022A2D0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0022A2E0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0022A340",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0022A350",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0024BB00",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0024C060",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0024EDB0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00258F20",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00286780",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0028E0C0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0028E0D0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0029AE90",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0029ED90",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x002A1F30",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x002B8C50",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x002BFBE0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x002C1350",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x002D4870",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x002D4880",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x002D7650",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x002D7670",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x002FE5E0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00303540",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00304070",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00304080",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00304740",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00304750",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0030DD40",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x003139B0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00328C70",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00328C80",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0033AB30",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0033DE50",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00379D80",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00384520",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x007044E0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x008F6A10",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x008F6A20",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      }
+    ]
+  },
+  "game_run": {
+    "date": "2026-10-09T22:22:46.264234-06:00",
+    "passed": true,
+    "forced_stop": false,
+    "exit_code": 0,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "asi_sha256": "2a9eeb17a1f312bd7bce7c76f0d10036ded91bcc63545b1dfe41245407f13a42",
+    "wrapper_sha256": "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
+    "probe_sha256": "c9eac0fd31fbefba9520983f372ca49332c17935501fbf6dd3f47ce5d69b7970",
+    "result": {
+      "phase": "passed",
+      "rva": "0x005c7710",
+      "bone_index": 0,
+      "calls": 64,
+      "failures": 0,
+      "exceptions": 0,
+      "ticks": 253,
+      "entity": "0x073D96D0",
+      "matrix": "0x089F1CE0",
+      "position": [
+        -0.000785722572,
+        -0.000992047833,
+        -0.0100202253
+      ],
+      "game_loaded": true,
+      "ingame_started": false
+    },
+    "evidence_directory": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261009-222202",
+    "console": {
+      "console_window": "0x00C71B20",
+      "visible": true,
+      "writable": true,
+      "always_enabled": true
+    },
+    "atStringHash": {
+      "phase": "process_detach",
+      "rva": "0x1b1c30",
+      "bank_pairs": 8320,
+      "bank_failures": 0,
+      "hooked": true,
+      "hook_calls": 365574,
+      "runtime_pairs": 4096,
+      "runtime_failures": 0,
+      "game_loaded": true,
+      "ingame_started": true,
+      "script_ticks": 254
+    },
+    "atStringHash_passed": true
+  }
+}

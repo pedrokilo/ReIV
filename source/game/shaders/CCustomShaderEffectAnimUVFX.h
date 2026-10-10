@@ -32,7 +32,7 @@ namespace reiv { namespace memory_map { namespace type_0f2ff3f90d3b55b9 {
 inline constexpr std::uint32_t pending_hook_count = 14u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x00cd7eb0u, 0x008d7eb0u, 0x00dd91fcu, 0, "FUN_00cd7eb0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x00919b60u, 0x00519b60u, 0x00dd91fcu, 1, "FUN_00919b60", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00919b60u, 0x00519b60u, 0x00dd91fcu, 1, "FUN_00919b60", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ComplexValidation/game/evidence/scalar-runtime-summary.json; 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; comparison/bit/scalar bodies only; EDX/high return not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x00cd8560u, 0x008d8560u, 0x00dd91fcu, 2, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00cd7f50u, 0x008d7f50u, 0x00dd91fcu, 3, "FUN_00cd7f50", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00cd7dd0u, 0x008d7dd0u, 0x00dd91fcu, 4, "FUN_00cd7dd0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},

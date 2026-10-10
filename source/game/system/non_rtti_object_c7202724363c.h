@@ -29,8 +29,11 @@ inline constexpr std::uint32_t vtables_count = 0u;
 #include "core/PendingHook.h"
 namespace reiv { namespace memory_map { namespace type_c7202724363c58af {
 // Destinations from the inventory; names/ABI remain candidates. Never auto-install.
-inline constexpr std::uint32_t pending_hook_count = 0u;
-// No function destinations associated by exact owner name in the available CSVs.
-inline constexpr const PendingHook* pending_hooks = nullptr;
+inline constexpr std::uint32_t pending_hook_count = 2u;
+inline constexpr PendingHook pending_hook_storage[] = {
+    {0x00d1d905u, 0x0091d905u, 0x00000000u, -1, "msvc_eh_copy_constructor_callback", "", "reversing/UnknownTypesAnalysis/evidence/eh-summary.json; metadata 0x00f0898c; CatchableTypeArray 0x00f0897c", AddressOrigin::ExceptionCopyConstructor, false, false, false},
+    {0x00d1d922u, 0x0091d922u, 0x00000000u, -1, "msvc_eh_unwind_destructor_callback", "", "reversing/UnknownTypesAnalysis/evidence/eh-summary.json; metadata 0x00f08934; CatchableTypeArray 0x00f0897c", AddressOrigin::ExceptionUnwindDestructor, false, false, false},
+};
+inline constexpr const PendingHook* pending_hooks = pending_hook_storage;
 } } }
 // END GENERATED PENDING HOOK ADDRESSES

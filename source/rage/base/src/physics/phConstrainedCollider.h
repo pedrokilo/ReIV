@@ -31,7 +31,7 @@ namespace reiv { namespace memory_map { namespace type_7728996aa829401f {
 // Destinations from the inventory; names/ABI remain candidates. Never auto-install.
 inline constexpr std::uint32_t pending_hook_count = 50u;
 inline constexpr PendingHook pending_hook_storage[] = {
-    {0x006ac2e0u, 0x002ac2e0u, 0x00ebbfccu, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x006ac2e0u, 0x002ac2e0u, 0x00ebbfccu, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ComplexValidation/destructors/evidence/runtime-summary.json; 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; ONLY flags bit0 clear; writes vtable and returns this; freeing/TLS allocator branch statically excluded and NEVER called; does not validate deleting mode", AddressOrigin::VirtualSlot, true, false, false},
     {0x0069c740u, 0x0029c740u, 0x00ebbfccu, 1, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0069c080u, 0x0029c080u, 0x00ebbfccu, 2, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0069cba0u, 0x0029cba0u, 0x00ebbfccu, 3, "FUN_0069cba0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
@@ -47,7 +47,7 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x0069dd00u, 0x0029dd00u, 0x00ebbfccu, 13, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0069de50u, 0x0029de50u, 0x00ebbfccu, 14, "FUN_0069de50", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x006afba0u, 0x002afba0u, 0x00ebbfccu, 15, "FUN_006afba0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x0069ed90u, 0x0029ed90u, 0x00ebbfccu, 16, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0069ed90u, 0x0029ed90u, 0x00ebbfccu, 16, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/PendingAnalysis/rage-art/evidence/runtime-summary.json; 64 isolated-storage calls; straight-line scalar body; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction; integer return validates only mask-defined EAX bits; EDX/high return and class semantics not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x0069eda0u, 0x0029eda0u, 0x00ebbfccu, 17, "FUN_0069eda0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x006af650u, 0x002af650u, 0x00ebbfccu, 18, "FUN_006af650", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x006af010u, 0x002af010u, 0x00ebbfccu, 19, "FUN_006af010", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},

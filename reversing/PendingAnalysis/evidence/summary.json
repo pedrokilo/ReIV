@@ -1,0 +1,47 @@
+{
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "coverage": [
+    {
+      "folder": "game",
+      "references": 25399,
+      "checked_references": 11608,
+      "fatal_references": 272,
+      "rejected_references": 12,
+      "untested_nonfatal_references": 13507,
+      "untested_targets": 4911
+    },
+    {
+      "folder": "rage",
+      "references": 19806,
+      "checked_references": 9891,
+      "fatal_references": 291,
+      "rejected_references": 0,
+      "untested_nonfatal_references": 9624,
+      "untested_targets": 3044
+    },
+    {
+      "folder": "ART",
+      "references": 353,
+      "checked_references": 144,
+      "fatal_references": 52,
+      "rejected_references": 0,
+      "untested_nonfatal_references": 157,
+      "untested_targets": 138
+    }
+  ],
+  "unknown_remaining": 581,
+  "unknown_by_folder": {
+    "rage": 568,
+    "game": 13
+  },
+  "ghidra_boundaries": {
+    "no_function_boundary": 4557,
+    "function_boundary": 3809,
+    "inside_other_function": 11
+  },
+  "fresh_entries_in_initial_pending": 8354,
+  "decompiled_results": {
+    "ok": 8354
+  },
+  "complete_analysis_claimed": false
+}

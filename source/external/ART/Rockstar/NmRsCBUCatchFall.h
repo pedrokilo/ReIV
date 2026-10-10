@@ -29,7 +29,7 @@ namespace reiv { namespace memory_map { namespace type_e143d8aa81fdf9f8 {
 // Destinations from the inventory; names/ABI remain candidates. Never auto-install.
 inline constexpr std::uint32_t pending_hook_count = 8u;
 inline constexpr PendingHook pending_hook_storage[] = {
-    {0x0060c220u, 0x0020c220u, 0x00eba8c0u, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0060c220u, 0x0020c220u, 0x00eba8c0u, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ComplexValidation/destructors/evidence/runtime-summary.json; 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; ONLY flags bit0 clear; writes vtable and returns this; freeing/TLS allocator branch statically excluded and NEVER called; does not validate deleting mode", AddressOrigin::VirtualSlot, true, false, false},
     {0x005efc30u, 0x001efc30u, 0x00eba8c0u, 1, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00549100u, 0x00149100u, 0x00eba8c0u, 2, "FUN_00549100", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ARTValidation/evidence/runtime-summary.json; 64 calls of complete return_only machine-code body; return mask checked; synthetic stack arguments when RET n; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
     {0x005f09b0u, 0x001f09b0u, 0x00eba8c0u, 3, "FUN_005f09b0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},

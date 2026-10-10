@@ -3,7 +3,7 @@
 
 namespace reiv::memory_map {
 // Inventory only. No callable signature, patch or automatic installation.
-enum class AddressOrigin { VirtualSlot, SdkFunctionReference };
+enum class AddressOrigin { VirtualSlot, SdkFunctionReference, ExceptionCopyConstructor, ExceptionUnwindDestructor };
 struct PendingHook {
     std::uint32_t va;
     std::uint32_t rva;

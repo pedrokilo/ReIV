@@ -43,8 +43,8 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x00976020u, 0x00576020u, 0x00d7d344u, 9, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0098ea00u, 0x0058ea00u, 0x00d7d344u, 10, "FUN_0098ea00", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x009745e0u, 0x005745e0u, 0x00d7d344u, 11, "FUN_009745e0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x00988e60u, 0x00588e60u, 0x00d7d344u, 12, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x00988e70u, 0x00588e70u, 0x00d7d344u, 13, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00988e60u, 0x00588e60u, 0x00d7d344u, 12, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/PendingAnalysis/game/evidence/runtime-summary.json; 64 isolated-storage calls; get_u32; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction", AddressOrigin::VirtualSlot, true, false, false},
+    {0x00988e70u, 0x00588e70u, 0x00d7d344u, 13, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/PendingAnalysis/game/evidence/runtime-summary.json; 64 isolated-storage calls; get_u32; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction", AddressOrigin::VirtualSlot, true, false, false},
     {0x00988e80u, 0x00588e80u, 0x00d7d344u, 14, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;

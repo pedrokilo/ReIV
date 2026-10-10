@@ -38,7 +38,7 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x004d9490u, 0x000d9490u, 0x00eb4f84u, 6, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x004d94d0u, 0x000d94d0u, 0x00eb4f84u, 7, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x004d94e0u, 0x000d94e0u, 0x00eb4f84u, 8, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x004d9500u, 0x000d9500u, 0x00eb4f84u, 9, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x004d9500u, 0x000d9500u, 0x00eb4f84u, 9, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/PendingAnalysis/game/evidence/runtime-summary.json; 64 isolated-storage calls; address_offset; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction", AddressOrigin::VirtualSlot, true, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;
 } } }

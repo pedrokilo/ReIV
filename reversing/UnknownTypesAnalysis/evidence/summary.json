@@ -1,0 +1,12 @@
+{
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "unknown_types": 585,
+  "reason_counts": {
+    "base_type_only_no_own_locator_or_vtable": 578,
+    "type_descriptor_only_no_own_locator_or_vtable": 7
+  },
+  "recovered_own_method_references": 0,
+  "scanner_sha256": "2e4a29da8f6d819d39fcee148b3fc76ac9bac264e227a913f68e7823021d5f8e",
+  "validated_complete_object_locators": 3478,
+  "scope": "Aligned file-backed non-executable sections; exact x86 COL owner + bounded hierarchy + executable vtable entries; no inherited method attribution or runtime calls"
+}

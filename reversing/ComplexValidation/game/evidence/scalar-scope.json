@@ -1,0 +1,3415 @@
+[
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "eax=(0);",
+      "Store(expected+164,4,xmm0);",
+      "Store(expected+168,4,eax);",
+      "Store(expected+172,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        164,
+        4
+      ],
+      [
+        168,
+        4
+      ],
+      [
+        172,
+        4
+      ]
+    ],
+    "rva": "0x00035470",
+    "va": "0x00435470",
+    "owners": [
+      "UIBasicClip",
+      "UIBenchMark",
+      "UIButton",
+      "UIClip",
+      "UIClipViewer",
+      "UIFileViewer",
+      "UIFontString",
+      "UIFrame",
+      "UIGTAScrollingRow",
+      "UIGalleryFileViewer",
+      "UILayoutFrame",
+      "UILayoutManager",
+      "UIListHeader",
+      "UIListLayout",
+      "UIMontageClip",
+      "UIMontageClips",
+      "UIMontageContainer",
+      "UIMontageEditor",
+      "UIMontageEditorControls",
+      "UIMontageEditorLayout",
+      "UIMontageGallery",
+      "UIMontageMoviePlayer",
+      "UIMontageOverview",
+      "UIMontageText",
+      "UIMontageTimer",
+      "UIMouseCursor",
+      "UIMusicClip",
+      "UIMusicContainer",
+      "UIMusicViewer",
+      "UIOverviewTexture",
+      "UIParent",
+      "UIRawClipViewer",
+      "UIRowLayout",
+      "UIScreen",
+      "UIScrollBar",
+      "UIScrollingMenu",
+      "UISelectMenu",
+      "UISizedContainer",
+      "UISizedContainerItem",
+      "UISpacers",
+      "UIStackLayout",
+      "UITextContainer",
+      "UITextContainerItem",
+      "UITextContainerItemFake",
+      "UITextField",
+      "UITexture",
+      "UITimeOverview",
+      "UITitleMenu",
+      "UITransition",
+      "UITransitionViewer",
+      "UIUpload",
+      "UIWebBrowser"
+    ],
+    "reference_count": 52,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00435470: movss xmm0, dword ptr [esp + 4]",
+      "00435476: xor eax, eax",
+      "00435478: movss dword ptr [ecx + 0xa4], xmm0",
+      "00435480: mov dword ptr [ecx + 0xa8], eax",
+      "00435486: mov dword ptr [ecx + 0xac], eax",
+      "0043548C: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 33 c0 f3 0f 11 81 a4 00 00 00 89 81 a8 00 00 00 89 81 ac 00 00 00 c2 04 00",
+    "body_size": 31
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "eax=(0);",
+      "Store(expected+176,4,xmm0);",
+      "Store(expected+180,4,eax);",
+      "Store(expected+184,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        176,
+        4
+      ],
+      [
+        180,
+        4
+      ],
+      [
+        184,
+        4
+      ]
+    ],
+    "rva": "0x000354D0",
+    "va": "0x004354D0",
+    "owners": [
+      "UIBasicClip",
+      "UIBenchMark",
+      "UIButton",
+      "UIClip",
+      "UIClipViewer",
+      "UIFileViewer",
+      "UIFontString",
+      "UIFrame",
+      "UIGTAScrollingRow",
+      "UIGalleryFileViewer",
+      "UILayoutFrame",
+      "UILayoutManager",
+      "UIListHeader",
+      "UIListLayout",
+      "UIMontageClip",
+      "UIMontageClips",
+      "UIMontageContainer",
+      "UIMontageEditor",
+      "UIMontageEditorControls",
+      "UIMontageEditorLayout",
+      "UIMontageGallery",
+      "UIMontageMoviePlayer",
+      "UIMontageOverview",
+      "UIMontageText",
+      "UIMontageTimer",
+      "UIMouseCursor",
+      "UIMusicClip",
+      "UIMusicContainer",
+      "UIMusicViewer",
+      "UIOverviewTexture",
+      "UIParent",
+      "UIRawClipViewer",
+      "UIRowLayout",
+      "UIScreen",
+      "UIScrollBar",
+      "UIScrollingMenu",
+      "UISelectMenu",
+      "UISizedContainer",
+      "UISizedContainerItem",
+      "UISpacers",
+      "UIStackLayout",
+      "UITextContainer",
+      "UITextContainerItem",
+      "UITextContainerItemFake",
+      "UITextField",
+      "UITexture",
+      "UITimeOverview",
+      "UITitleMenu",
+      "UITransition",
+      "UITransitionViewer",
+      "UIUpload",
+      "UIWebBrowser"
+    ],
+    "reference_count": 52,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004354D0: movss xmm0, dword ptr [esp + 4]",
+      "004354D6: xor eax, eax",
+      "004354D8: movss dword ptr [ecx + 0xb0], xmm0",
+      "004354E0: mov dword ptr [ecx + 0xb4], eax",
+      "004354E6: mov dword ptr [ecx + 0xb8], eax",
+      "004354EC: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 33 c0 f3 0f 11 81 b0 00 00 00 89 81 b4 00 00 00 89 81 b8 00 00 00 c2 04 00",
+    "body_size": 31
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "xmm0=args[0];",
+      "eax=(0);",
+      "Store(expected+164,4,xmm0);",
+      "xmm0=args[1];",
+      "Store(expected+168,4,eax);",
+      "Store(expected+172,4,eax);",
+      "Store(expected+176,4,xmm0);",
+      "Store(expected+180,4,eax);",
+      "Store(expected+184,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        164,
+        4
+      ],
+      [
+        168,
+        4
+      ],
+      [
+        172,
+        4
+      ],
+      [
+        176,
+        4
+      ],
+      [
+        180,
+        4
+      ],
+      [
+        184,
+        4
+      ]
+    ],
+    "rva": "0x00035520",
+    "va": "0x00435520",
+    "owners": [
+      "UIBenchMark",
+      "UIButton",
+      "UIClipViewer",
+      "UIFileViewer",
+      "UIFontString",
+      "UIFrame",
+      "UIGTAScrollingRow",
+      "UIGalleryFileViewer",
+      "UILayoutFrame",
+      "UILayoutManager",
+      "UIListHeader",
+      "UIListLayout",
+      "UIMontageClips",
+      "UIMontageContainer",
+      "UIMontageEditor",
+      "UIMontageEditorControls",
+      "UIMontageEditorLayout",
+      "UIMontageGallery",
+      "UIMontageMoviePlayer",
+      "UIMontageOverview",
+      "UIMontageText",
+      "UIMontageTimer",
+      "UIMouseCursor",
+      "UIMusicClip",
+      "UIMusicContainer",
+      "UIMusicViewer",
+      "UIOverviewTexture",
+      "UIParent",
+      "UIRawClipViewer",
+      "UIRowLayout",
+      "UIScreen",
+      "UIScrollBar",
+      "UIScrollingMenu",
+      "UISelectMenu",
+      "UISizedContainer",
+      "UISizedContainerItem",
+      "UISpacers",
+      "UIStackLayout",
+      "UITextContainer",
+      "UITextContainerItem",
+      "UITextContainerItemFake",
+      "UITextField",
+      "UITimeOverview",
+      "UITitleMenu",
+      "UITransition",
+      "UITransitionViewer",
+      "UIUpload",
+      "UIWebBrowser"
+    ],
+    "reference_count": 48,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00435520: movss xmm0, dword ptr [esp + 4]",
+      "00435526: xor eax, eax",
+      "00435528: movss dword ptr [ecx + 0xa4], xmm0",
+      "00435530: movss xmm0, dword ptr [esp + 8]",
+      "00435536: mov dword ptr [ecx + 0xa8], eax",
+      "0043553C: mov dword ptr [ecx + 0xac], eax",
+      "00435542: movss dword ptr [ecx + 0xb0], xmm0",
+      "0043554A: mov dword ptr [ecx + 0xb4], eax",
+      "00435550: mov dword ptr [ecx + 0xb8], eax",
+      "00435556: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 33 c0 f3 0f 11 81 a4 00 00 00 f3 0f 10 44 24 08 89 81 a8 00 00 00 89 81 ac 00 00 00 f3 0f 11 81 b0 00 00 00 89 81 b4 00 00 00 89 81 b8 00 00 00 c2 08 00",
+    "body_size": 57
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+4,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        4,
+        4
+      ]
+    ],
+    "rva": "0x00035660",
+    "va": "0x00435660",
+    "owners": [
+      "UIBasicClip",
+      "UIBenchMark",
+      "UIButton",
+      "UIClip",
+      "UIClipViewer",
+      "UIFileViewer",
+      "UIFontString",
+      "UIFrame",
+      "UIGTAScrollingRow",
+      "UIGalleryFileViewer",
+      "UILayoutFrame",
+      "UILayoutManager",
+      "UIListHeader",
+      "UIListLayout",
+      "UIMontageClip",
+      "UIMontageClips",
+      "UIMontageContainer",
+      "UIMontageEditor",
+      "UIMontageEditorControls",
+      "UIMontageEditorLayout",
+      "UIMontageGallery",
+      "UIMontageMoviePlayer",
+      "UIMontageOverview",
+      "UIMontageText",
+      "UIMontageTimer",
+      "UIMouseCursor",
+      "UIMusicClip",
+      "UIMusicContainer",
+      "UIMusicViewer",
+      "UIOverviewTexture",
+      "UIParent",
+      "UIRawClipViewer",
+      "UIRowLayout",
+      "UIScreen",
+      "UIScrollBar",
+      "UIScrollingMenu",
+      "UISelectMenu",
+      "UISizedContainer",
+      "UISizedContainerItem",
+      "UISpacers",
+      "UIStackLayout",
+      "UITextContainer",
+      "UITextContainerItem",
+      "UITextContainerItemFake",
+      "UITextField",
+      "UITexture",
+      "UITimeOverview",
+      "UITitleMenu",
+      "UITransition",
+      "UITransitionViewer",
+      "UIUpload",
+      "UIWebBrowser"
+    ],
+    "reference_count": 52,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00435660: movss xmm0, dword ptr [esp + 4]",
+      "00435666: movss dword ptr [ecx + 4], xmm0",
+      "0043566B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 04 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+8,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        8,
+        4
+      ]
+    ],
+    "rva": "0x00035680",
+    "va": "0x00435680",
+    "owners": [
+      "UIBasicClip",
+      "UIBenchMark",
+      "UIButton",
+      "UIClip",
+      "UIClipViewer",
+      "UIFileViewer",
+      "UIFontString",
+      "UIFrame",
+      "UIGTAScrollingRow",
+      "UIGalleryFileViewer",
+      "UILayoutFrame",
+      "UILayoutManager",
+      "UIListHeader",
+      "UIListLayout",
+      "UIMontageClip",
+      "UIMontageClips",
+      "UIMontageContainer",
+      "UIMontageEditor",
+      "UIMontageEditorControls",
+      "UIMontageEditorLayout",
+      "UIMontageGallery",
+      "UIMontageMoviePlayer",
+      "UIMontageOverview",
+      "UIMontageText",
+      "UIMontageTimer",
+      "UIMouseCursor",
+      "UIMusicClip",
+      "UIMusicContainer",
+      "UIMusicViewer",
+      "UIOverviewTexture",
+      "UIParent",
+      "UIRawClipViewer",
+      "UIRowLayout",
+      "UIScreen",
+      "UIScrollBar",
+      "UIScrollingMenu",
+      "UISelectMenu",
+      "UISizedContainer",
+      "UISizedContainerItem",
+      "UISpacers",
+      "UIStackLayout",
+      "UITextContainer",
+      "UITextContainerItem",
+      "UITextContainerItemFake",
+      "UITextField",
+      "UITexture",
+      "UITimeOverview",
+      "UITitleMenu",
+      "UITransition",
+      "UITransitionViewer",
+      "UIUpload",
+      "UIWebBrowser"
+    ],
+    "reference_count": 52,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00435680: movss xmm0, dword ptr [esp + 4]",
+      "00435686: movss dword ptr [ecx + 8], xmm0",
+      "0043568B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 08 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0x00000001u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00047B40",
+    "va": "0x00447B40",
+    "owners": [
+      "CAutomobile",
+      "CBike",
+      "CBoat",
+      "CCutsceneObject",
+      "CHeli",
+      "CObject",
+      "CPed",
+      "CPhysical",
+      "CPlane",
+      "CPlayerPed",
+      "CTrain",
+      "CVehicle"
+    ],
+    "reference_count": 12,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00447B40: mov eax, 1",
+      "00447B45: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 01 00 00 00 c2 08 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(Load(expected+8,4));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x000496C0",
+    "va": "0x004496C0",
+    "owners": [
+      "CTaskComplexMedicTreatInjuredPed"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004496C0: mov eax, dword ptr [ecx + 8]",
+      "004496C3: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 41 08 c2 04 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0x00000032u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00054080",
+    "va": "0x00454080",
+    "owners": [
+      "CDispatchOrderArrayHandler"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00454080: mov eax, 0x32",
+      "00454085: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 32 00 00 00 c2 08 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+56,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        56,
+        4
+      ]
+    ],
+    "rva": "0x000579A0",
+    "va": "0x004579A0",
+    "owners": [
+      "CTaskComplexMoveSeekEntity<CEntitySeekPosCalculatorStandard>"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004579A0: movss xmm0, dword ptr [esp + 4]",
+      "004579A6: movss dword ptr [ecx + 0x38], xmm0",
+      "004579AB: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 38 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((Load(expected+52,1))&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x0008D8D0",
+    "va": "0x0048D8D0",
+    "owners": [
+      "CResurrectedLocalPlayerEvent"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0048D8D0: mov al, byte ptr [ecx + 0x34]",
+      "0048D8D3: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8a 41 34 c2 04 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+16,1,0x000000ffu);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        16,
+        1
+      ]
+    ],
+    "rva": "0x0009F3E0",
+    "va": "0x0049F3E0",
+    "owners": [
+      "CNetObjAutomobile",
+      "CNetObjBike",
+      "CNetObjBoat",
+      "CNetObjDummyPed",
+      "CNetObjEntity",
+      "CNetObjHeli",
+      "CNetObjObject",
+      "CNetObjPed",
+      "CNetObjPhysical",
+      "CNetObjPlane",
+      "CNetObjPlayer",
+      "CNetObjTrain",
+      "CNetObjVehicle",
+      "CNetworkObject"
+    ],
+    "reference_count": 14,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0049F3E0: mov byte ptr [ecx + 0x10], 0xff",
+      "0049F3E4: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "c6 41 10 ff c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(args[0]);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x000A22B0",
+    "va": "0x004A22B0",
+    "owners": [
+      "CDynamicPickupsArrayHandler",
+      "CNetworkArrayHandler",
+      "CPedGroupsArrayHandler",
+      "CPlayerInfoArrayHandler",
+      "CScriptHostVariablesArrayHandler",
+      "CStaticPickupsArrayHandler"
+    ],
+    "reference_count": 6,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004A22B0: mov eax, dword ptr [esp + 4]",
+      "004A22B4: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 04 c2 04 00",
+    "body_size": 7
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(args[0]);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x000A22C0",
+    "va": "0x004A22C0",
+    "owners": [
+      "CDynamicPickupsArrayHandler",
+      "CNetworkArrayHandler",
+      "CPedGroupsArrayHandler",
+      "CPlayerInfoArrayHandler",
+      "CScriptHostVariablesArrayHandler",
+      "CStaticPickupsArrayHandler"
+    ],
+    "reference_count": 6,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004A22C0: mov eax, dword ptr [esp + 4]",
+      "004A22C4: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 04 c2 08 00",
+    "body_size": 7
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+112,4));",
+      "eax=((eax)-(Load(expected+64,4)));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x000A4EA0",
+    "va": "0x004A4EA0",
+    "owners": [
+      "CNetBlenderBoat",
+      "CNetBlenderDummyPed",
+      "CNetBlenderHeli",
+      "CNetBlenderLinInterp",
+      "CNetBlenderPed",
+      "CNetBlenderPhysical"
+    ],
+    "reference_count": 6,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004A4EA0: mov eax, dword ptr [ecx + 0x70]",
+      "004A4EA3: sub eax, dword ptr [ecx + 0x40]",
+      "004A4EA6: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 41 70 2b 41 40 c3",
+    "body_size": 7
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(0);",
+      "Store(expected+100,4,eax);",
+      "Store(expected+108,4,eax);",
+      "Store(expected+116,4,eax);",
+      "Store(expected+124,4,eax);",
+      "Store(expected+132,4,eax);",
+      "Store(expected+140,4,eax);",
+      "Store(expected+148,4,eax);",
+      "Store(expected+156,4,eax);",
+      "Store(expected+164,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        100,
+        4
+      ],
+      [
+        108,
+        4
+      ],
+      [
+        116,
+        4
+      ],
+      [
+        124,
+        4
+      ],
+      [
+        132,
+        4
+      ],
+      [
+        140,
+        4
+      ],
+      [
+        148,
+        4
+      ],
+      [
+        156,
+        4
+      ],
+      [
+        164,
+        4
+      ]
+    ],
+    "rva": "0x000E4450",
+    "va": "0x004E4450",
+    "owners": [
+      "CNetObjObject::CNetObjObjectSyncData"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004E4450: xor eax, eax",
+      "004E4452: mov dword ptr [ecx + 0x64], eax",
+      "004E4455: mov dword ptr [ecx + 0x6c], eax",
+      "004E4458: mov dword ptr [ecx + 0x74], eax",
+      "004E445B: mov dword ptr [ecx + 0x7c], eax",
+      "004E445E: mov dword ptr [ecx + 0x84], eax",
+      "004E4464: mov dword ptr [ecx + 0x8c], eax",
+      "004E446A: mov dword ptr [ecx + 0x94], eax",
+      "004E4470: mov dword ptr [ecx + 0x9c], eax",
+      "004E4476: mov dword ptr [ecx + 0xa4], eax",
+      "004E447C: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "33 c0 89 41 64 89 41 6c 89 41 74 89 41 7c 89 81 84 00 00 00 89 81 8c 00 00 00 89 81 94 00 00 00 89 81 9c 00 00 00 89 81 a4 00 00 00 c3",
+    "body_size": 45
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0x0000000bu);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x000E6860",
+    "va": "0x004E6860",
+    "owners": [
+      "CStaticPickupsArrayHandler"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004E6860: mov eax, 0xb",
+      "004E6865: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 0b 00 00 00 c2 08 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0x000000d1u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x000E71E0",
+    "va": "0x004E71E0",
+    "owners": [
+      "CDynamicPickupsArrayHandler"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004E71E0: mov eax, 0xd1",
+      "004E71E5: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 d1 00 00 00 c2 08 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0x00000079u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x000E8750",
+    "va": "0x004E8750",
+    "owners": [
+      "CPedGroupsArrayHandler"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004E8750: mov eax, 0x79",
+      "004E8755: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 79 00 00 00 c2 08 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(0x00000028u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x000F54F0",
+    "va": "0x004F54F0",
+    "owners": [
+      "CNetObjPlayer"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004F54F0: mov eax, 0x28",
+      "004F54F5: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 28 00 00 00 c2 04 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(0);",
+      "Store(expected+64,4,eax);",
+      "Store(expected+72,4,eax);",
+      "Store(expected+80,4,eax);",
+      "Store(expected+88,4,eax);",
+      "Store(expected+96,4,eax);",
+      "Store(expected+104,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        64,
+        4
+      ],
+      [
+        72,
+        4
+      ],
+      [
+        80,
+        4
+      ],
+      [
+        88,
+        4
+      ],
+      [
+        96,
+        4
+      ],
+      [
+        104,
+        4
+      ]
+    ],
+    "rva": "0x000FB550",
+    "va": "0x004FB550",
+    "owners": [
+      "CNetObjDummyPed::CNetObjDummyPedSyncData"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004FB550: xor eax, eax",
+      "004FB552: mov dword ptr [ecx + 0x40], eax",
+      "004FB555: mov dword ptr [ecx + 0x48], eax",
+      "004FB558: mov dword ptr [ecx + 0x50], eax",
+      "004FB55B: mov dword ptr [ecx + 0x58], eax",
+      "004FB55E: mov dword ptr [ecx + 0x60], eax",
+      "004FB561: mov dword ptr [ecx + 0x68], eax",
+      "004FB564: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "33 c0 89 41 40 89 41 48 89 41 50 89 41 58 89 41 60 89 41 68 c3",
+    "body_size": 21
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+12,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        12,
+        4
+      ]
+    ],
+    "rva": "0x00303530",
+    "va": "0x00703530",
+    "owners": [
+      "UIBasicClip",
+      "UIBenchMark",
+      "UIButton",
+      "UIClip",
+      "UIClipViewer",
+      "UIFileViewer",
+      "UIFontString",
+      "UIFrame",
+      "UIGTAScrollingRow",
+      "UIGalleryFileViewer",
+      "UILayoutFrame",
+      "UILayoutManager",
+      "UIListHeader",
+      "UIListLayout",
+      "UIMontageClip",
+      "UIMontageClips",
+      "UIMontageContainer",
+      "UIMontageEditor",
+      "UIMontageEditorControls",
+      "UIMontageEditorLayout",
+      "UIMontageGallery",
+      "UIMontageMoviePlayer",
+      "UIMontageOverview",
+      "UIMontageText",
+      "UIMontageTimer",
+      "UIMouseCursor",
+      "UIMusicClip",
+      "UIMusicContainer",
+      "UIMusicViewer",
+      "UIOverviewTexture",
+      "UIParent",
+      "UIRawClipViewer",
+      "UIRowLayout",
+      "UIScreen",
+      "UIScrollBar",
+      "UIScrollingMenu",
+      "UISelectMenu",
+      "UISizedContainer",
+      "UISizedContainerItem",
+      "UISpacers",
+      "UIStackLayout",
+      "UITextContainer",
+      "UITextContainerItem",
+      "UITextContainerItemFake",
+      "UITextField",
+      "UITexture",
+      "UITimeOverview",
+      "UITitleMenu",
+      "UITransition",
+      "UITransitionViewer",
+      "UIUpload",
+      "UIWebBrowser"
+    ],
+    "reference_count": 52,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00703530: movss xmm0, dword ptr [esp + 4]",
+      "00703536: movss dword ptr [ecx + 0xc], xmm0",
+      "0070353B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 0c c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+472,2));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x003C55D0",
+    "va": "0x007C55D0",
+    "owners": [
+      "UIBasicClip",
+      "UIBenchMark",
+      "UIButton",
+      "UIClip",
+      "UIClipViewer",
+      "UIFileViewer",
+      "UIFrame",
+      "UIGalleryFileViewer",
+      "UILayoutManager",
+      "UIListHeader",
+      "UIListLayout",
+      "UIMontageClip",
+      "UIMontageClips",
+      "UIMontageContainer",
+      "UIMontageEditor",
+      "UIMontageEditorControls",
+      "UIMontageEditorLayout",
+      "UIMontageGallery",
+      "UIMontageMoviePlayer",
+      "UIMontageOverview",
+      "UIMontageText",
+      "UIMontageTimer",
+      "UIMouseCursor",
+      "UIMusicClip",
+      "UIMusicContainer",
+      "UIMusicViewer",
+      "UIOverviewTexture",
+      "UIParent",
+      "UIRawClipViewer",
+      "UIRowLayout",
+      "UIScreen",
+      "UIScrollBar",
+      "UISelectMenu",
+      "UISizedContainer",
+      "UISizedContainerItem",
+      "UISpacers",
+      "UIStackLayout",
+      "UITextContainer",
+      "UITextContainerItem",
+      "UITextContainerItemFake",
+      "UITextField",
+      "UITimeOverview",
+      "UITitleMenu",
+      "UITransition",
+      "UITransitionViewer",
+      "UIUpload"
+    ],
+    "reference_count": 46,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "007C55D0: movzx eax, word ptr [ecx + 0x1d8]",
+      "007C55D7: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b7 81 d8 01 00 00 c3",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "xmm0=args[0];",
+      "eax=(0);",
+      "Store(expected+164,4,xmm0);",
+      "xmm0=args[1];",
+      "Store(expected+168,4,eax);",
+      "Store(expected+172,4,eax);",
+      "Store(expected+176,4,xmm0);",
+      "Store(expected+180,4,eax);",
+      "Store(expected+184,4,eax);",
+      "Store(expected+472,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        164,
+        4
+      ],
+      [
+        168,
+        4
+      ],
+      [
+        172,
+        4
+      ],
+      [
+        176,
+        4
+      ],
+      [
+        180,
+        4
+      ],
+      [
+        184,
+        4
+      ],
+      [
+        472,
+        4
+      ]
+    ],
+    "rva": "0x004259D0",
+    "va": "0x008259D0",
+    "owners": [
+      "UITexture"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "008259D0: movss xmm0, dword ptr [esp + 4]",
+      "008259D6: xor eax, eax",
+      "008259D8: movss dword ptr [ecx + 0xa4], xmm0",
+      "008259E0: movss xmm0, dword ptr [esp + 8]",
+      "008259E6: mov dword ptr [ecx + 0xa8], eax",
+      "008259EC: mov dword ptr [ecx + 0xac], eax",
+      "008259F2: movss dword ptr [ecx + 0xb0], xmm0",
+      "008259FA: mov dword ptr [ecx + 0xb4], eax",
+      "00825A00: mov dword ptr [ecx + 0xb8], eax",
+      "00825A06: mov dword ptr [ecx + 0x1d8], eax",
+      "00825A0C: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 33 c0 f3 0f 11 81 a4 00 00 00 f3 0f 10 44 24 08 89 81 a8 00 00 00 89 81 ac 00 00 00 f3 0f 11 81 b0 00 00 00 89 81 b4 00 00 00 89 81 b8 00 00 00 89 81 d8 01 00 00 c2 08 00",
+    "body_size": 63
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(args[0]);",
+      "xmm0=args[1];",
+      "Store(expected+20,4,eax);",
+      "Store(expected+24,4,xmm0);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        20,
+        4
+      ],
+      [
+        24,
+        4
+      ]
+    ],
+    "rva": "0x004399E0",
+    "va": "0x008399E0",
+    "owners": [
+      "UIFontString",
+      "UILayoutFrame",
+      "UITexture",
+      "UIWebBrowser"
+    ],
+    "reference_count": 4,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "008399E0: mov eax, dword ptr [esp + 4]",
+      "008399E4: movss xmm0, dword ptr [esp + 8]",
+      "008399EA: mov dword ptr [ecx + 0x14], eax",
+      "008399ED: movss dword ptr [ecx + 0x18], xmm0",
+      "008399F2: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 04 f3 0f 10 44 24 08 89 41 14 f3 0f 11 41 18 c2 08 00",
+    "body_size": 21
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x004B8740",
+    "va": "0x008B8740",
+    "owners": [
+      "CAlterWantedLevelEvent",
+      "CChangeRadioStationEvent",
+      "CCreatePickupEvent",
+      "CDoorBreakEvent",
+      "CEventFlushTasks",
+      "CEventHandler",
+      "CEventNewTask",
+      "CExplosionEventBase",
+      "CFireEventBase",
+      "CGiveControlEvent",
+      "CGiveWeaponEvent",
+      "CHeli",
+      "CHostVariablesVerifyEvent",
+      "CMarkAsNoLongerNeededEvent",
+      "CNetCloneTask",
+      "CNetCloneTaskBeHit",
+      "CNetCloneTaskComplexClimbLadder",
+      "CNetCloneTaskComplexCombatRetreat",
+      "CNetCloneTaskComplexFallAndGetUp",
+      "CNetCloneTaskComplexGangDriveby",
+      "CNetCloneTaskComplexGun",
+      "CNetCloneTaskComplexInAirAndLand",
+      "CNetCloneTaskComplexJump",
+      "CNetCloneTaskComplexNewExitVehicle",
+      "CNetCloneTaskComplexNewGetInVehicle",
+      "CNetCloneTaskComplexNewUseCover",
+      "CNetCloneTaskComplexOnFire",
+      "CNetCloneTaskComplexSlideIntoCover",
+      "CNetCloneTaskDead",
+      "CNetCloneTaskDie",
+      "CNetCloneTaskPickUpAndCarryObject",
+      "CNetCloneTaskPlayAnim",
+      "CNetCloneTaskPlayRandomAmbients",
+      "CNetCloneTaskPlayScriptAnim",
+      "CNetCloneTaskSimpleCarDrive",
+      "CNetCloneTaskSimpleClimb",
+      "CNetCloneTaskSimpleMeleeActionResult",
+      "CNetCloneTaskSimpleNM",
+      "CNetCloneTaskSimpleNMBalance",
+      "CNetCloneTaskSimpleNMBrace",
+      "CNetCloneTaskSimpleNMExplosion",
+      "CNetCloneTaskSimpleNMFlinch",
+      "CNetCloneTaskSimpleNMHighFall",
+      "CNetCloneTaskSimpleNMJumpRoll",
+      "CNetCloneTaskSimpleNMOnFire",
+      "CNetCloneTaskSimpleNMRelax",
+      "CNetCloneTaskSimpleNMShot",
+      "CNetCloneTaskSimplePlayerAimProjectile",
+      "CNetCloneTaskSimpleSidewaysDive",
+      "CNetCloneTaskSimpleThrowProjectile",
+      "CNetCloneTaskSitDownIdleThenStand",
+      "CNetCloneTaskStandOnObject",
+      "CNetCloneTaskVehicleBase",
+      "CNetObjEntity",
+      "CNetObjPhysical",
+      "CNetworkEvent",
+      "CObjectIdFreedEvent",
+      "CPedMoveBlendBase",
+      "CPlane",
+      "CPlayerTauntEvent",
+      "CRagdollRequestEvent",
+      "CRemoveAllWeaponsEvent",
+      "CRemoveWeaponEvent",
+      "CRequestExplosionEvent",
+      "CRequestFireEvent",
+      "CResurrectPlayerEvent",
+      "CResurrectedLocalPlayerEvent",
+      "CScriptClientVariablesArrayHandler",
+      "CScriptHostVariablesArrayHandler",
+      "CSessionSettingsChangedEvent",
+      "CStartExplosionEvent",
+      "CStartFireEvent",
+      "CStartProjectileEvent",
+      "CTargetting",
+      "CTaskInfo",
+      "CTaskSimpleClimbLadder",
+      "CTaskSimpleHitFromBack",
+      "CTaskSimpleHitFromFront",
+      "CTaskSimpleHitFromLeft",
+      "CTaskSimpleHitFromRight",
+      "CTaskSimpleHitWall",
+      "CTaskSimpleMoveInAir",
+      "CTaskSimpleNetworkClone",
+      "CWeaponHolsterInfo",
+      "WebBrowser",
+      "WebBrowserExtern",
+      "WebBrowserWin32"
+    ],
+    "reference_count": 131,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "008B8740: xor al, al",
+      "008B8742: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "32 c0 c2 04 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0x00000001u)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x00519B60",
+    "va": "0x00919B60",
+    "owners": [
+      "CCustomShaderEffectAnimUVFX",
+      "CCustomShaderEffectBase",
+      "CDrawCommandAllocator",
+      "CEvent",
+      "CEventDeath",
+      "CEventEditableResponse",
+      "CEventFireNearby",
+      "CEventLeaderEnteredCarAsDriver",
+      "CEventLeaderEnteredCover",
+      "CEventLeaderExitedCarAsDriver",
+      "CEventLeaderHolsteredWeapon",
+      "CEventLeaderLeftCover",
+      "CEventLeaderUnholsteredWeapon",
+      "CEventObjectCollision",
+      "CEventPotentialWalkIntoVehicle",
+      "CEventRanOverPed",
+      "CEventShocking",
+      "CGameClockAndWeatherEvent",
+      "CGiveWeaponEvent",
+      "CHeli",
+      "CNetCloneTaskComplexFallAndGetUp",
+      "CNetCloneTaskComplexNewExitVehicle",
+      "CNetCloneTaskDead",
+      "CNetCloneTaskSimpleClimb",
+      "CNetCloneTaskSimpleNM",
+      "CNetCloneTaskSimpleNMBalance",
+      "CNetCloneTaskSimpleNMBrace",
+      "CNetCloneTaskSimpleNMExplosion",
+      "CNetCloneTaskSimpleNMFlinch",
+      "CNetCloneTaskSimpleNMHighFall",
+      "CNetCloneTaskSimpleNMJumpRoll",
+      "CNetCloneTaskSimpleNMOnFire",
+      "CNetCloneTaskSimpleNMRelax",
+      "CNetCloneTaskSimpleNMShot",
+      "CNetObjPlayer",
+      "CNetworkEvent",
+      "CObjectIdFreedEvent",
+      "CPedFormation",
+      "CPedFormation_Arrowhead",
+      "CPedFormation_FollowInLine",
+      "CPedFormation_LineAbreast",
+      "CPedFormation_Loose",
+      "CPedFormation_SurroundFacingAhead",
+      "CPedFormation_SurroundFacingInwards",
+      "CPedFormation_V",
+      "CPedShelterAttractor",
+      "CRemoveAllWeaponsEvent",
+      "CRemoveWeaponEvent",
+      "CResurrectPlayerEvent",
+      "CTaskSimpleCarJumpOut",
+      "CTaskSimpleMoveNone",
+      "phInstGta"
+    ],
+    "reference_count": 56,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00919B60: mov al, 1",
+      "00919B62: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b0 01 c2 04 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(0x00000001u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00548FD0",
+    "va": "0x00948FD0",
+    "owners": [
+      "CPhysical",
+      "CTrain",
+      "CVehicle"
+    ],
+    "reference_count": 3,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00948FD0: mov eax, 1",
+      "00948FD5: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 01 00 00 00 c2 0c 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=0;",
+      "Store(expected+92,4,(Load(expected+92,4))&(0xfffffffeu));",
+      "Store(expected+80,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        92,
+        4
+      ],
+      [
+        80,
+        4
+      ]
+    ],
+    "rva": "0x0054EA70",
+    "va": "0x0094EA70",
+    "owners": [
+      "CTaskSimpleIK"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0094EA70: xorps xmm0, xmm0",
+      "0094EA73: and dword ptr [ecx + 0x5c], 0xfffffffe",
+      "0094EA77: movss dword ptr [ecx + 0x50], xmm0",
+      "0094EA7C: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f 57 c0 83 61 5c fe f3 0f 11 41 50 c2 04 00",
+    "body_size": 15
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0x00000001u)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x005AE3C0",
+    "va": "0x009AE3C0",
+    "owners": [
+      "CDummyTask",
+      "CDummyTask_Flee",
+      "CDummyTask_ShockingEventWatch",
+      "CTaskSimpleClearLookAt",
+      "CTaskSimpleCreateCarAndGetIn",
+      "CTaskSimpleDuckToggle",
+      "CTaskSimpleLeaveGroup",
+      "CTaskSimpleMoveDoNothing",
+      "CTaskSimpleMoveInAir",
+      "CTaskSimpleMoveMeleeMovement",
+      "CTaskSimpleMoveNone",
+      "CTaskSimpleMoveSwim",
+      "CTaskSimpleNetworkClone",
+      "CTaskSimpleSay",
+      "CTaskSimpleSetCharCombatDecisionMaker",
+      "CTaskSimpleTriggerLookAt",
+      "CTaskSimpleWaitForBus",
+      "CTaskSimpleWaitUntilPedIsOutCar"
+    ],
+    "reference_count": 18,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "009AE3C0: mov al, 1",
+      "009AE3C2: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b0 01 c2 0c 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "xmm0=0;",
+      "Store(expected+36,4,xmm0);",
+      "eax=(eax&0xffffff00u)|((0x00000001u)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [
+      [
+        36,
+        4
+      ]
+    ],
+    "rva": "0x005AE480",
+    "va": "0x009AE480",
+    "owners": [
+      "CTaskSimpleMovePlayer"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "009AE480: xorps xmm0, xmm0",
+      "009AE483: movss dword ptr [ecx + 0x24], xmm0",
+      "009AE488: mov al, 1",
+      "009AE48A: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f 57 c0 f3 0f 11 41 24 b0 01 c2 0c 00",
+    "body_size": 13
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+64,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        64,
+        4
+      ]
+    ],
+    "rva": "0x005F0B90",
+    "va": "0x009F0B90",
+    "owners": [
+      "CTaskComplexMoveFollowNavMeshRoute"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "009F0B90: movss xmm0, dword ptr [esp + 4]",
+      "009F0B96: movss dword ptr [ecx + 0x40], xmm0",
+      "009F0B9B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 40 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+60,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        60,
+        4
+      ]
+    ],
+    "rva": "0x0060B900",
+    "va": "0x00A0B900",
+    "owners": [
+      "CTaskComplexMoveCrowdAroundLocation",
+      "CTaskComplexMoveFollowNavMeshRoute"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A0B900: movss xmm0, dword ptr [esp + 4]",
+      "00A0B906: movss dword ptr [ecx + 0x3c], xmm0",
+      "00A0B90B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 3c c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+24,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        24,
+        4
+      ]
+    ],
+    "rva": "0x00618BF0",
+    "va": "0x00A18BF0",
+    "owners": [
+      "CTaskComplexMoveFollowPointRoute"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A18BF0: movss xmm0, dword ptr [esp + 4]",
+      "00A18BF6: movss dword ptr [ecx + 0x18], xmm0",
+      "00A18BFB: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 18 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+28,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        28,
+        4
+      ]
+    ],
+    "rva": "0x00618C00",
+    "va": "0x00A18C00",
+    "owners": [
+      "CTaskComplexMoveFollowPointRoute"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A18C00: movss xmm0, dword ptr [esp + 4]",
+      "00A18C06: movss dword ptr [ecx + 0x1c], xmm0",
+      "00A18C0B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 1c c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 24,
+    "trace": [],
+    "mask": 0,
+    "writes": [],
+    "rva": "0x0061B140",
+    "va": "0x00A1B140",
+    "owners": [
+      "CPlane"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A1B140: ret 0x18"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "c2 18 00",
+    "body_size": 3
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(0);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0061E350",
+    "va": "0x00A1E350",
+    "owners": [
+      "CAnimTaskInfo",
+      "CComplexClearVehicleSeatTaskInfo",
+      "CComplexClimbIntoVehicleTaskInfo",
+      "CComplexClimbLadderTaskInfo",
+      "CComplexCombatRetreatInfo",
+      "CComplexFallAndGetUpTaskInfo",
+      "CComplexGangDrivebyTaskInfo",
+      "CComplexGunTaskInfo",
+      "CComplexJumpTaskInfo",
+      "CComplexNewExitVehicleTaskInfo",
+      "CComplexNewGetInVehicleTaskInfo",
+      "CComplexNewUseCoverInfo",
+      "CComplexOnFireInfo",
+      "CComplexOpenVehicleDoorTaskInfo",
+      "CComplexPickUpAndCarryObjectTaskInfo",
+      "CComplexSlideIntoCoverInfo",
+      "CCustomShaderEffectBase",
+      "CDrawCommandAllocator",
+      "CJackTaskInfo",
+      "CPedIntelligence",
+      "CPedMoveBlendBase",
+      "CPlayRandomAmbientsInfo",
+      "CScriptAnimTaskInfo",
+      "CSimpleAimPlayerProjectileInfo",
+      "CSimpleCarDriveTaskInfo",
+      "CSimpleClimbTaskInfo",
+      "CSimpleMeleeActionResultTaskInfo",
+      "CSimpleNMBalanceTaskInfo",
+      "CSimpleNMBraceTaskInfo",
+      "CSimpleNMExplosionTaskInfo",
+      "CSimpleNMFlinchTaskInfo",
+      "CSimpleNMHighFallTaskInfo",
+      "CSimpleNMJumpRollTaskInfo",
+      "CSimpleNMOnFireTaskInfo",
+      "CSimpleNMRelaxTaskInfo",
+      "CSimpleNMShotTaskInfo",
+      "CSimpleSidewaysDiveTaskInfo",
+      "CSimpleThrowProjectileInfo",
+      "CSitDownIdleThenStandTaskInfo",
+      "CSitIdleTaskInfo",
+      "CStandUpTaskInfo",
+      "CStatusAndTargetTaskInfo",
+      "CStatusTaskInfo",
+      "CTask",
+      "CTaskComplexArrestedAIPedAndDriveAway",
+      "CTaskComplexCarDriveTimed",
+      "CTaskComplexCarSetTempAction",
+      "CTaskComplexChatScenario",
+      "CTaskComplexCombatBustPed",
+      "CTaskComplexCombatChargeSubtask",
+      "CTaskComplexCombatClosestTargetInArea",
+      "CTaskComplexDriveWanderForTime",
+      "CTaskComplexDrivingScenario",
+      "CTaskComplexEnterAnyCarAsDriver",
+      "CTaskComplexGetInCarScenario",
+      "CTaskComplexGoIntoCover",
+      "CTaskComplexGoToPointAiming",
+      "CTaskComplexGoToPointShooting",
+      "CTaskComplexHitResponse",
+      "CTaskComplexLeaveAnyCar",
+      "CTaskComplexMoveGoToPointRelativeToEntityAndStandStill",
+      "CTaskComplexMove_StepAwayFromCollisionObjects",
+      "CTaskComplexSeatedScenario",
+      "CTaskComplexSeekEntityAnyMeans<CEntitySeekPosCalculatorXYOffset>",
+      "CTaskComplexSetAndGuardArea",
+      "CTaskComplexShuffleBetweenSeats",
+      "CTaskComplexTurnToFaceEntityOrCoord",
+      "CTaskComplexUseMobilePhoneAndMovement",
+      "CTaskComplexWaitAtAttractor",
+      "CTaskComplexWaitForCondition",
+      "CTaskComplexWaitForDoorToBeOpen",
+      "CTaskComplexWaitForMyCarToStop",
+      "CTaskComplexWaitForSeatToBeFree",
+      "CTaskComplexWaitForSteppingOut",
+      "CTaskComplexWaitForTime",
+      "CTaskComplexWaitTillItsOkToStop",
+      "CTaskComplexWalkRoundFire",
+      "CTaskComplexWanderFlee",
+      "CTaskComplexWanderStandard",
+      "CTaskComplexWanderingScenario",
+      "CTaskInfo",
+      "CTaskInfoWithCloneTask",
+      "CTaskSimple",
+      "CTaskSimpleAffectSecondaryBehaviour",
+      "CTaskSimpleAimGun",
+      "CTaskSimpleAnim",
+      "CTaskSimpleArrestPed",
+      "CTaskSimpleAssessInjuredPed",
+      "CTaskSimpleBeHit",
+      "CTaskSimpleBlendFromNM",
+      "CTaskSimpleCarAlign",
+      "CTaskSimpleCarCloseDoorFromInside",
+      "CTaskSimpleCarCloseDoorFromOutside",
+      "CTaskSimpleCarGetIn",
+      "CTaskSimpleCarGetOut",
+      "CTaskSimpleCarJumpOut",
+      "CTaskSimpleCarOpenDoorFromOutside",
+      "CTaskSimpleCarOpenLockedDoorFromOutside",
+      "CTaskSimpleCarSetPedInVehicle",
+      "CTaskSimpleCarSetPedOut",
+      "CTaskSimpleCarShuffle",
+      "CTaskSimpleCarSlowBeDraggedOut",
+      "CTaskSimpleCarSlowDragPedOut",
+      "CTaskSimpleClearLookAt",
+      "CTaskSimpleClimb",
+      "CTaskSimpleClimbLadder",
+      "CTaskSimpleCombatRoll",
+      "CTaskSimpleCower",
+      "CTaskSimpleCreateCarAndGetIn",
+      "CTaskSimpleDie",
+      "CTaskSimpleDoNothing",
+      "CTaskSimpleDuck",
+      "CTaskSimpleDuckToggle",
+      "CTaskSimpleFall",
+      "CTaskSimpleFireGun",
+      "CTaskSimpleGetUp",
+      "CTaskSimpleHandsUp",
+      "CTaskSimpleHitFromBack",
+      "CTaskSimpleHitFromFront",
+      "CTaskSimpleHitFromLeft",
+      "CTaskSimpleHitFromRight",
+      "CTaskSimpleHitHead",
+      "CTaskSimpleHitWall",
+      "CTaskSimpleInjuredOnGroundTransition",
+      "CTaskSimpleJumpInAir",
+      "CTaskSimpleJumpLand",
+      "CTaskSimpleJumpLaunch",
+      "CTaskSimpleLeaveGroup",
+      "CTaskSimpleLoadAnimPlayAnim",
+      "CTaskSimpleMeleeActionResult",
+      "CTaskSimpleMove",
+      "CTaskSimpleMoveAchieveHeading",
+      "CTaskSimpleMoveBase",
+      "CTaskSimpleMoveDoNothing",
+      "CTaskSimpleMoveGoToPoint",
+      "CTaskSimpleMoveGoToPointOnRoute",
+      "CTaskSimpleMoveInAir",
+      "CTaskSimpleMoveMeleeMovement",
+      "CTaskSimpleMoveNone",
+      "CTaskSimpleMovePathfindProblem",
+      "CTaskSimpleMovePlayer",
+      "CTaskSimpleMoveSlideToCoord",
+      "CTaskSimpleMoveStandStill",
+      "CTaskSimpleMoveSwim",
+      "CTaskSimpleMoveTrackingEntity",
+      "CTaskSimpleMoveWaitForNavMeshSpecialActionEvent",
+      "CTaskSimpleNM",
+      "CTaskSimpleNMBalance",
+      "CTaskSimpleNMBrace",
+      "CTaskSimpleNMExplosion",
+      "CTaskSimpleNMFallDown",
+      "CTaskSimpleNMFlinch",
+      "CTaskSimpleNMHighFall",
+      "CTaskSimpleNMJumpRollFromRoadVehicle",
+      "CTaskSimpleNMOnFire",
+      "CTaskSimpleNMPose",
+      "CTaskSimpleNMRelax",
+      "CTaskSimpleNMRollUpAndRelax",
+      "CTaskSimpleNMScriptControl",
+      "CTaskSimpleNMShot",
+      "CTaskSimpleNMSit",
+      "CTaskSimpleNetworkClone",
+      "CTaskSimpleNewGangDriveBy",
+      "CTaskSimpleNone",
+      "CTaskSimpleOpenDoor",
+      "CTaskSimplePathfindProblem",
+      "CTaskSimplePause",
+      "CTaskSimplePauseSystemTimer",
+      "CTaskSimplePickUpObject",
+      "CTaskSimplePlayAnimAndSlideIntoCover",
+      "CTaskSimplePlayAnimAndSlideOutOfCover",
+      "CTaskSimplePlayRandomAmbients",
+      "CTaskSimplePlaySwatSignalAnim",
+      "CTaskSimplePlayUpperCombatAnim",
+      "CTaskSimplePlayerAimProjectile",
+      "CTaskSimplePlayerBeArrested",
+      "CTaskSimplePutDownObject",
+      "CTaskSimplePutOnHelmet",
+      "CTaskSimpleReloadGun",
+      "CTaskSimpleRunAnim",
+      "CTaskSimpleRunDictAnim",
+      "CTaskSimpleRunNamedAnim",
+      "CTaskSimpleRunScriptAnim",
+      "CTaskSimpleRunTimedAnim",
+      "CTaskSimpleSay",
+      "CTaskSimpleSayAudio",
+      "CTaskSimpleSetCharCombatDecisionMaker",
+      "CTaskSimpleSetCharDecisionMaker",
+      "CTaskSimpleSetCharIgnoreWeaponRangeFlag",
+      "CTaskSimpleSetPedAsAutoDriver",
+      "CTaskSimpleShakeFist",
+      "CTaskSimpleShovePed",
+      "CTaskSimpleShunt",
+      "CTaskSimpleSidewaysDive",
+      "CTaskSimpleSitDown",
+      "CTaskSimpleSlideToCoord",
+      "CTaskSimpleSmashCarWindow",
+      "CTaskSimpleStandStill",
+      "CTaskSimpleStandUp",
+      "CTaskSimpleStartCar",
+      "CTaskSimpleSwapWeapon",
+      "CTaskSimpleTakeOffHelmet",
+      "CTaskSimpleThrowGrenadeFromVehicle",
+      "CTaskSimpleThrowProjectile",
+      "CTaskSimpleTired",
+      "CTaskSimpleTogglePedThreatScanner",
+      "CTaskSimpleTriggerLookAt",
+      "CTaskSimpleWaitForBus",
+      "CTaskSimpleWaitUntilAreaCodesMatch",
+      "CTaskSimpleWaitUntilPedIsOutCar",
+      "CVehicleTaskInfo",
+      "CWeaponHolsterInfo",
+      "fiStreamingDevice"
+    ],
+    "reference_count": 219,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A1E350: xor eax, eax",
+      "00A1E352: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "33 c0 c2 04 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(Load(expected+8,4));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0061E860",
+    "va": "0x00A1E860",
+    "owners": [
+      "CTaskComplexCarDrive",
+      "CTaskComplexCarDriveMission",
+      "CTaskComplexCarDriveMissionFleeScene",
+      "CTaskComplexCarDriveMissionKillPed",
+      "CTaskComplexCarDriveWander",
+      "CTaskComplexClearVehicleSeat",
+      "CTaskComplexClimbLadderFully",
+      "CTaskComplexCloseVehicleDoor",
+      "CTaskComplexCombatClosestTargetInArea",
+      "CTaskComplexDrivePointRoute",
+      "CTaskComplexDrivingScenario",
+      "CTaskComplexEnterAnyCarAsDriver",
+      "CTaskComplexFallAndGetUp",
+      "CTaskComplexGetUpAndStandStill",
+      "CTaskComplexGoIntoCover",
+      "CTaskComplexGoToAttractor",
+      "CTaskComplexHitResponse",
+      "CTaskComplexLeaveAnyCar",
+      "CTaskComplexLeaveCarAndWander",
+      "CTaskComplexMoveGoToPointStandStillAchieveHeading",
+      "CTaskComplexMoveSequence",
+      "CTaskComplexRevive",
+      "CTaskComplexSequence",
+      "CTaskComplexSetAndGuardArea",
+      "CTaskComplexShuffleBetweenSeats",
+      "CTaskComplexUseMobilePhoneAndMovement",
+      "CTaskComplexUseSequence",
+      "CTaskComplexVehicleSubtask",
+      "CTaskComplexWaitAtAttractor",
+      "CTaskComplexWaitForBus",
+      "CTaskComplexWaitForDryWeather"
+    ],
+    "reference_count": 31,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A1E860: mov eax, dword ptr [ecx + 8]",
+      "00A1E863: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 41 08 c2 04 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+52,4,(Load(expected+52,4))+(0x00000001u));",
+      "eax=(eax&0xffffff00u)|((0)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [
+      [
+        52,
+        4
+      ]
+    ],
+    "rva": "0x0062BF10",
+    "va": "0x00A2BF10",
+    "owners": [
+      "CTaskComplexNewGetInVehicle"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A2BF10: add dword ptr [ecx + 0x34], 1",
+      "00A2BF14: xor al, al",
+      "00A2BF16: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 41 34 01 32 c0 c3",
+    "body_size": 7
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+108,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        108,
+        4
+      ]
+    ],
+    "rva": "0x006353F0",
+    "va": "0x00A353F0",
+    "owners": [
+      "CPedMoveBlendOnFoot"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A353F0: movss xmm0, dword ptr [esp + 4]",
+      "00A353F6: movss dword ptr [ecx + 0x6c], xmm0",
+      "00A353FB: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 6c c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+496,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        496,
+        4
+      ]
+    ],
+    "rva": "0x00647930",
+    "va": "0x00A47930",
+    "owners": [
+      "CAutomobile",
+      "CBike",
+      "CBoat",
+      "CCutsceneObject",
+      "CHeli",
+      "CObject",
+      "CPhysical",
+      "CPlane",
+      "CTrain",
+      "CVehicle"
+    ],
+    "reference_count": 10,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A47930: movss xmm0, dword ptr [esp + 4]",
+      "00A47936: movss dword ptr [ecx + 0x1f0], xmm0",
+      "00A4793E: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 81 f0 01 00 00 c2 04 00",
+    "body_size": 17
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+496,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        496,
+        4
+      ]
+    ],
+    "rva": "0x00647950",
+    "va": "0x00A47950",
+    "owners": [
+      "CAutomobile",
+      "CBike",
+      "CBoat",
+      "CCutsceneObject",
+      "CHeli",
+      "CObject",
+      "CPhysical",
+      "CPlane",
+      "CTrain",
+      "CVehicle"
+    ],
+    "reference_count": 10,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A47950: movss xmm0, dword ptr [esp + 4]",
+      "00A47956: movss dword ptr [ecx + 0x1f0], xmm0",
+      "00A4795E: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 81 f0 01 00 00 c2 08 00",
+    "body_size": 17
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 16,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x0066DD60",
+    "va": "0x00A6DD60",
+    "owners": [
+      "CEventHandler"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A6DD60: xor al, al",
+      "00A6DD62: ret 0x10"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "32 c0 c2 10 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x0066DD70",
+    "va": "0x00A6DD70",
+    "owners": [
+      "CEventHandler",
+      "CNetObjPlayer",
+      "CTaskSimpleAffectSecondaryBehaviour",
+      "CTaskSimpleSetPedAsAutoDriver",
+      "CTaskSimpleTogglePedThreatScanner",
+      "WebBrowserExtern",
+      "fiStreamingDevice",
+      "fragInstNMGta"
+    ],
+    "reference_count": 9,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A6DD70: xor al, al",
+      "00A6DD72: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "32 c0 c2 0c 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x0066DD80",
+    "va": "0x00A6DD80",
+    "owners": [
+      "CDynamicPickupsArrayHandler",
+      "CEventHandler",
+      "CEventScanner",
+      "CNetCloneTaskComplexFallAndGetUp",
+      "CNetCloneTaskComplexJump",
+      "CNetCloneTaskSimpleMeleeActionResult",
+      "CNetCloneTaskSimpleNM",
+      "CNetCloneTaskSimpleNMBalance",
+      "CNetCloneTaskSimpleNMBrace",
+      "CNetCloneTaskSimpleNMExplosion",
+      "CNetCloneTaskSimpleNMFlinch",
+      "CNetCloneTaskSimpleNMHighFall",
+      "CNetCloneTaskSimpleNMJumpRoll",
+      "CNetCloneTaskSimpleNMOnFire",
+      "CNetCloneTaskSimpleNMRelax",
+      "CNetCloneTaskSimpleNMShot",
+      "CNetworkArrayHandler",
+      "CPedGroupsArrayHandler",
+      "CPedIntelligence",
+      "CStaticPickupsArrayHandler",
+      "CTargetting"
+    ],
+    "reference_count": 23,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A6DD80: xor al, al",
+      "00A6DD82: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "32 c0 c2 08 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00675BE0",
+    "va": "0x00A75BE0",
+    "owners": [
+      "CDummyTask_FallDownAndGetUp",
+      "CDummyTask_PlayAnim",
+      "CTaskComplexCombatAdvanceSubtask",
+      "CTaskComplexCombatBustPed",
+      "CTaskComplexCombatChargeSubtask",
+      "CTaskComplexCombatExecutePedSubtask",
+      "CTaskComplexCombatFireSubtask",
+      "CTaskComplexCombatFlankSubtask",
+      "CTaskComplexCombatInvestigateSubtask",
+      "CTaskComplexCombatPersueInCarSubtask",
+      "CTaskComplexCombatPullFromCarSubtask",
+      "CTaskComplexCombatRetreatSubtask",
+      "CTaskComplexCombatSeekCoverSubtask",
+      "CTaskComplexCombatSubtask"
+    ],
+    "reference_count": 15,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A75BE0: xor eax, eax",
+      "00A75BE2: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "33 c0 c2 08 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0x00000001u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00675DB0",
+    "va": "0x00A75DB0",
+    "owners": [
+      "CTaskComplexCombatAdvanceSubtask",
+      "CTaskComplexCombatInvestigateSubtask"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A75DB0: mov eax, 1",
+      "00A75DB5: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 01 00 00 00 c2 08 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(args[1]);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00675E50",
+    "va": "0x00A75E50",
+    "owners": [
+      "CTaskComplexCombatSeekCoverSubtask"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A75E50: mov eax, dword ptr [esp + 8]",
+      "00A75E54: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 08 c2 08 00",
+    "body_size": 7
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0x000001afu);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x006760C0",
+    "va": "0x00A760C0",
+    "owners": [
+      "CTaskComplexCombatChargeSubtask"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A760C0: mov eax, 0x1af",
+      "00A760C5: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 af 01 00 00 c2 08 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0x00000003u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00676740",
+    "va": "0x00A76740",
+    "owners": [
+      "CPlayerInfoArrayHandler",
+      "CTaskComplexCombatFlankSubtask",
+      "CTaskComplexCombatPullFromCarSubtask"
+    ],
+    "reference_count": 3,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A76740: mov eax, 3",
+      "00A76745: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 03 00 00 00 c2 08 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(0x000000c8u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x006769F0",
+    "va": "0x00A769F0",
+    "owners": [
+      "CTaskComplexCombatBustPed",
+      "CTaskComplexCombatChargeSubtask",
+      "CTaskComplexCombatExecutePedSubtask",
+      "CTaskComplexCombatFireSubtask",
+      "CTaskComplexCombatPersueInCarSubtask",
+      "CTaskComplexCombatPullFromCarSubtask",
+      "CTaskComplexCombatRetreatSubtask"
+    ],
+    "reference_count": 7,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A769F0: mov eax, 0xc8",
+      "00A769F5: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 c8 00 00 00 c2 04 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0x0000038bu);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00676A00",
+    "va": "0x00A76A00",
+    "owners": [
+      "CTaskComplexCombatExecutePedSubtask"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A76A00: mov eax, 0x38b",
+      "00A76A05: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 8b 03 00 00 c2 08 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0xffffffffu);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00677700",
+    "va": "0x00A77700",
+    "owners": [
+      "CTaskComplexCombatFlankSubtask"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00A77700: or eax, 0xffffffff",
+      "00A77703: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 c8 ff c2 08 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+56,1,(Load(expected+56,1))&(0x000000fdu));"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        56,
+        1
+      ]
+    ],
+    "rva": "0x006B9A60",
+    "va": "0x00AB9A60",
+    "owners": [
+      "CEventDamage"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00AB9A60: and byte ptr [ecx + 0x38], 0xfd",
+      "00AB9A64: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "80 61 38 fd c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+480,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        480,
+        4
+      ]
+    ],
+    "rva": "0x0074EA60",
+    "va": "0x00B4EA60",
+    "owners": [
+      "UIFontString"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00B4EA60: movss xmm0, dword ptr [esp + 4]",
+      "00B4EA66: movss dword ptr [ecx + 0x1e0], xmm0",
+      "00B4EA6E: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 81 e0 01 00 00 c2 04 00",
+    "body_size": 17
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+484,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        484,
+        4
+      ]
+    ],
+    "rva": "0x0074EA80",
+    "va": "0x00B4EA80",
+    "owners": [
+      "UIFontString",
+      "UIRowLayout",
+      "UIStackLayout"
+    ],
+    "reference_count": 3,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00B4EA80: movss xmm0, dword ptr [esp + 4]",
+      "00B4EA86: movss dword ptr [ecx + 0x1e4], xmm0",
+      "00B4EA8E: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 81 e4 01 00 00 c2 04 00",
+    "body_size": 17
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+488,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        488,
+        4
+      ]
+    ],
+    "rva": "0x0074EEC0",
+    "va": "0x00B4EEC0",
+    "owners": [
+      "UIFontString"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00B4EEC0: movss xmm0, dword ptr [esp + 4]",
+      "00B4EEC6: movss dword ptr [ecx + 0x1e8], xmm0",
+      "00B4EECE: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 81 e8 01 00 00 c2 04 00",
+    "body_size": 17
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+492,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        492,
+        4
+      ]
+    ],
+    "rva": "0x0074EEE0",
+    "va": "0x00B4EEE0",
+    "owners": [
+      "UIFontString"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00B4EEE0: movss xmm0, dword ptr [esp + 4]",
+      "00B4EEE6: movss dword ptr [ecx + 0x1ec], xmm0",
+      "00B4EEEE: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 81 ec 01 00 00 c2 04 00",
+    "body_size": 17
+  },
+  {
+    "kind": "float_zero",
+    "pop": 0,
+    "trace": [],
+    "mask": 4294967295,
+    "expected_float": 0,
+    "rva": "0x007781A0",
+    "va": "0x00B781A0",
+    "owners": [
+      "CIntermezzoEvent",
+      "CIntermezzoEventFalling",
+      "CIntermezzoEventFallingThruAir",
+      "CIntermezzoEventGarage",
+      "CIntermezzoEventIntro",
+      "CIntermezzoEventPlaceBomb",
+      "CIntermezzoEventPlayerJackVehicle",
+      "CIntermezzoEventPlayerJackedVehicle",
+      "CIntermezzoEventStuntJump",
+      "CIntermezzoEventVaultWall",
+      "CPedMoveBlendBase",
+      "CPedMoveBlendOnFoot",
+      "CTaskComplexMoveSequence",
+      "CTaskComplexMoveWaitForTraffic",
+      "CTaskSimpleMoveAchieveHeading",
+      "CTaskSimpleMoveDoNothing",
+      "CTaskSimpleMoveInAir",
+      "CTaskSimpleMoveMeleeMovement",
+      "CTaskSimpleMoveNone",
+      "CTaskSimpleMovePathfindProblem",
+      "CTaskSimpleMovePlayer",
+      "CTaskSimpleMoveSlideToCoord",
+      "CTaskSimpleMoveStandStill",
+      "CTaskSimpleMoveSwim",
+      "CTaskSimpleMoveWaitForNavMeshSpecialActionEvent"
+    ],
+    "reference_count": 25,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00B781A0: fldz ",
+      "00B781A2: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "d9 ee c3",
+    "body_size": 3
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+56,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        56,
+        4
+      ]
+    ],
+    "rva": "0x00786530",
+    "va": "0x00B86530",
+    "owners": [
+      "CTaskComplexMoveSeekEntity<CEntitySeekPosCalculatorRadiusAngleOffset>"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00B86530: movss xmm0, dword ptr [esp + 4]",
+      "00B86536: movss dword ptr [ecx + 0x38], xmm0",
+      "00B8653B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 38 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+36,4,(Load(expected+36,4))|(0x00000400u));"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        36,
+        4
+      ]
+    ],
+    "rva": "0x007C64C0",
+    "va": "0x00BC64C0",
+    "owners": [
+      "CDummyPed"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00BC64C0: or dword ptr [ecx + 0x24], 0x400",
+      "00BC64C7: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "81 49 24 00 04 00 00 c3",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+80,4,(Load(expected+80,4))&(0xffffcfffu));"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        80,
+        4
+      ]
+    ],
+    "rva": "0x007C97D0",
+    "va": "0x00BC97D0",
+    "owners": [
+      "CPedMoveBlendBase",
+      "CPedMoveBlendOnFoot"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00BC97D0: and dword ptr [ecx + 0x50], 0xffffcfff",
+      "00BC97D7: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "81 61 50 ff cf ff ff c3",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(0);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x007CC9F0",
+    "va": "0x00BCC9F0",
+    "owners": [
+      "fiDeviceLiveContent",
+      "fiStreamingDevice"
+    ],
+    "reference_count": 4,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00BCC9F0: xor eax, eax",
+      "00BCC9F2: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "33 c0 c2 0c 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((Load(expected+316,1))&0xffu);",
+      "eax=(eax&0xffffff00u)|((((eax&0xffu))&(0x000000f7u))&0xffu);",
+      "eax=(eax&0xffffff00u)|((((eax&0xffu))|(0x00000004u))&0xffu);",
+      "Store(expected+316,1,(eax&0xffu));",
+      "eax=(eax&0xffffff00u)|((0x00000001u)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [
+      [
+        316,
+        1
+      ]
+    ],
+    "rva": "0x007E1080",
+    "va": "0x00BE1080",
+    "owners": [
+      "CCamIntermezzo"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00BE1080: mov al, byte ptr [ecx + 0x13c]",
+      "00BE1086: and al, 0xf7",
+      "00BE1088: or al, 4",
+      "00BE108A: mov byte ptr [ecx + 0x13c], al",
+      "00BE1090: mov al, 1",
+      "00BE1092: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8a 81 3c 01 00 00 24 f7 0c 04 88 81 3c 01 00 00 b0 01 c3",
+    "body_size": 19
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(ecx+5152u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00803390",
+    "va": "0x00C03390",
+    "owners": [
+      "CBike"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00C03390: lea eax, [ecx + 0x1420]",
+      "00C03396: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8d 81 20 14 00 00 c3",
+    "body_size": 7
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "xmm0=args[0];",
+      "eax=(0);",
+      "Store(expected+164,4,xmm0);",
+      "xmm0=args[1];",
+      "Store(expected+168,4,eax);",
+      "Store(expected+172,4,eax);",
+      "Store(expected+176,4,xmm0);",
+      "Store(expected+180,4,eax);",
+      "Store(expected+184,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        164,
+        4
+      ],
+      [
+        168,
+        4
+      ],
+      [
+        172,
+        4
+      ],
+      [
+        176,
+        4
+      ],
+      [
+        180,
+        4
+      ],
+      [
+        184,
+        4
+      ]
+    ],
+    "rva": "0x008128B0",
+    "va": "0x00C128B0",
+    "owners": [
+      "UIBasicClip",
+      "UIClip",
+      "UIMontageClip"
+    ],
+    "reference_count": 3,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00C128B0: movss xmm0, dword ptr [esp + 4]",
+      "00C128B6: xor eax, eax",
+      "00C128B8: movss dword ptr [ecx + 0xa4], xmm0",
+      "00C128C0: movss xmm0, dword ptr [esp + 8]",
+      "00C128C6: mov dword ptr [ecx + 0xa8], eax",
+      "00C128CC: mov dword ptr [ecx + 0xac], eax",
+      "00C128D2: movss dword ptr [ecx + 0xb0], xmm0",
+      "00C128DA: mov dword ptr [ecx + 0xb4], eax",
+      "00C128E0: mov dword ptr [ecx + 0xb8], eax",
+      "00C128E6: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 33 c0 f3 0f 11 81 a4 00 00 00 f3 0f 10 44 24 08 89 81 a8 00 00 00 89 81 ac 00 00 00 f3 0f 11 81 b0 00 00 00 89 81 b4 00 00 00 89 81 b8 00 00 00 c2 08 00",
+    "body_size": 57
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "Store(expected+526,1,0x00000001u);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        526,
+        1
+      ]
+    ],
+    "rva": "0x008427F0",
+    "va": "0x00C427F0",
+    "owners": [
+      "UITextField"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00C427F0: mov byte ptr [ecx + 0x20e], 1",
+      "00C427F7: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "c6 81 0e 02 00 00 01 c2 04 00",
+    "body_size": 10
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 20,
+    "trace": [],
+    "mask": 0,
+    "writes": [],
+    "rva": "0x0084C720",
+    "va": "0x00C4C720",
+    "owners": [
+      "CTrain",
+      "CVehicle"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00C4C720: ret 0x14"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "c2 14 00",
+    "body_size": 3
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 16,
+    "trace": [],
+    "mask": 0,
+    "writes": [],
+    "rva": "0x00871460",
+    "va": "0x00C71460",
+    "owners": [
+      "CBike",
+      "CBoat",
+      "CNetObjAutomobile",
+      "CNetObjBike",
+      "CNetObjBoat",
+      "CNetObjDummyPed",
+      "CNetObjEntity",
+      "CNetObjHeli",
+      "CNetObjObject",
+      "CNetObjPed",
+      "CNetObjPhysical",
+      "CNetObjPlane",
+      "CNetObjPlayer",
+      "CNetObjTrain",
+      "CNetObjVehicle",
+      "CNetworkObject",
+      "CPedFactory",
+      "CTrain",
+      "CVehicle",
+      "fragInstGta",
+      "fragInstNMGta"
+    ],
+    "reference_count": 21,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00C71460: ret 0x10"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "c2 10 00",
+    "body_size": 3
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0)&0xffu);",
+      "Store(expected+328,1,(eax&0xffu));",
+      "Store(expected+329,1,(eax&0xffu));",
+      "eax=(0x000003e8u);",
+      "Store(expected+320,4,eax);",
+      "Store(expected+324,4,eax);",
+      "eax=(eax&0xffffff00u)|((0x00000001u)&0xffu);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        328,
+        1
+      ],
+      [
+        329,
+        1
+      ],
+      [
+        320,
+        4
+      ],
+      [
+        324,
+        4
+      ]
+    ],
+    "rva": "0x00893E40",
+    "va": "0x00C93E40",
+    "owners": [
+      "CCamScript"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00C93E40: xor al, al",
+      "00C93E42: mov byte ptr [ecx + 0x148], al",
+      "00C93E48: mov byte ptr [ecx + 0x149], al",
+      "00C93E4E: mov eax, 0x3e8",
+      "00C93E53: mov dword ptr [ecx + 0x140], eax",
+      "00C93E59: mov dword ptr [ecx + 0x144], eax",
+      "00C93E5F: mov al, 1",
+      "00C93E61: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "32 c0 88 81 48 01 00 00 88 81 49 01 00 00 b8 e8 03 00 00 89 81 40 01 00 00 89 81 44 01 00 00 b0 01 c3",
+    "body_size": 34
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+24,2));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x008CEB10",
+    "va": "0x00CCEB10",
+    "owners": [
+      "phMaterialMgrGta"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00CCEB10: movzx eax, word ptr [ecx + 0x18]",
+      "00CCEB14: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b7 41 18 c3",
+    "body_size": 5
+  }
+]

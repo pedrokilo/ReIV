@@ -18,6 +18,12 @@
 #include "../hooks/ARTStubsProbe.h"
 #include "../hooks/ARTFixtureProbe.h"
 #include "../hooks/ARTExtraProbe.h"
+#include "../hooks/GamePendingProbe.h"
+#include "../hooks/PendingScalarProbe.h"
+#include "../hooks/GameComplexProbe.h"
+#include "../hooks/ARTComplexProbe.h"
+#include "../hooks/DestructorModeProbe.h"
+#include "../hooks/RageComplexProbe.h"
 
 namespace {
 #define Log(message) REIV_INFO("%s", message)
@@ -73,6 +79,18 @@ void plugin::gameStartupEvent() {
     processScriptsEvent::Add(artfixtures::Tick);
     artextras::Initialize();
     processScriptsEvent::Add(artextras::Tick);
+    gamepending::Initialize();
+    processScriptsEvent::Add(gamepending::Tick);
+    pendingscalar::Initialize();
+    processScriptsEvent::Add(pendingscalar::Tick);
+    gamecomplex::Initialize();
+    processScriptsEvent::Add(gamecomplex::Tick);
+    artcomplex::Initialize();
+    processScriptsEvent::Add(artcomplex::Tick);
+    destructormode::Initialize();
+    processScriptsEvent::Add(destructormode::Tick);
+    ragecomplex::Initialize();
+    processScriptsEvent::Add(ragecomplex::Tick);
     Log(hashprobe::Install() ? "atStringHash bank passed; replacement installed"
                             : "atStringHash validation or signature failed; inspect report");
     reiv::debug::Observe("atStringHash", hashprobe::original != nullptr, hashprobe::hooked);

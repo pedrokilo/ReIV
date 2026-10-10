@@ -1,0 +1,11 @@
+{
+  "tested_asi_sha256": "d453bcf94cf56d68e5493fdaf25b16bb0fdce9c14066277470b214198f078d12",
+  "destination": "D:\\GTA IV\\Grand Theft Auto IV - copia",
+  "release_win32_build_passed": true,
+  "backup": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\Install-complex-validation-20261009-224706",
+  "installed_asi_sha256": "1cb4f4f02ff2b414b17c885d8d40bda95320463872a19aa2e21bf483effa6022",
+  "active_test_markers": 0,
+  "all_4016_headers_syntax_passed": true,
+  "installed_at": "2026-10-09T22:47:07.3794511-06:00",
+  "probe_sources_unchanged": true
+}

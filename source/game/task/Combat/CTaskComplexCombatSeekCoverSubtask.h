@@ -52,10 +52,10 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x00a8f9f0u, 0x0068f9f0u, 0x00d8e1b4u, 18, "FUN_00a8f9f0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00a75410u, 0x00675410u, 0x00d8e1b4u, 19, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00a7b3c0u, 0x0067b3c0u, 0x00d8e1b4u, 20, "FUN_00a7b3c0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x00a75be0u, 0x00675be0u, 0x00d8e1b4u, 21, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00a75be0u, 0x00675be0u, 0x00d8e1b4u, 21, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ComplexValidation/game/evidence/scalar-runtime-summary.json; 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; comparison/bit/scalar bodies only; EDX/high return not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x00a76030u, 0x00676030u, 0x00d8e1b4u, 22, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00a84480u, 0x00684480u, 0x00d8e1b4u, 23, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x00a75e50u, 0x00675e50u, 0x00d8e1b4u, 24, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00a75e50u, 0x00675e50u, 0x00d8e1b4u, 24, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ComplexValidation/game/evidence/scalar-runtime-summary.json; 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; comparison/bit/scalar bodies only; EDX/high return not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x00a84560u, 0x00684560u, 0x00d8e1b4u, 25, "FUN_00a84560", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;

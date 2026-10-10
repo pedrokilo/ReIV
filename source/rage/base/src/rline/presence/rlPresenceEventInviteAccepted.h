@@ -32,7 +32,7 @@ namespace reiv { namespace memory_map { namespace type_1ded6fe94b4597ab {
 inline constexpr std::uint32_t pending_hook_count = 2u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x0075d820u, 0x0035d820u, 0x00ebd550u, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x0075d760u, 0x0035d760u, 0x00ebd550u, 1, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0075d760u, 0x0035d760u, 0x00ebd550u, 1, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ComplexValidation/destructors/evidence/runtime-summary.json; 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; ONLY flags bit0 clear; writes vtable and returns this; freeing/TLS allocator branch statically excluded and NEVER called; does not validate deleting mode", AddressOrigin::VirtualSlot, true, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;
 } } }

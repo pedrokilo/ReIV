@@ -53,7 +53,7 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x00a24530u, 0x00624530u, 0x00d86b34u, 19, "FUN_00a24530", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00a261b0u, 0x006261b0u, 0x00d86b34u, 20, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x009ae370u, 0x005ae370u, 0x00d86b34u, 21, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x00a1ec80u, 0x0061ec80u, 0x00d86b34u, 22, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00a1ec80u, 0x0061ec80u, 0x00d86b34u, 22, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/PendingAnalysis/game/evidence/runtime-summary.json; 64 isolated-storage calls; get_float; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction", AddressOrigin::VirtualSlot, true, false, false},
     {0x00a1ec00u, 0x0061ec00u, 0x00000000u, -1, "CTaskComplexInWater::CTaskComplexInWater", "CTaskComplexInWater::CTaskComplexInWater", "contrib/IV SDK/IV-SDK-main/include/CTaskComplexInWater.h:6; sdk_reference_not_validated", AddressOrigin::SdkFunctionReference, false, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;

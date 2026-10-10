@@ -1,0 +1,400 @@
+[
+  {
+    "va": "0x005e35c0",
+    "rva": "0x001e35c0",
+    "operation": "guarded_float_store",
+    "value": 380,
+    "entry_bytes": "f6 81 e8 00 00 00 04 75 0e f3 0f 10 44 24 04 f3 0f 11 81 7c 01 00 00 c2 04 00",
+    "body_size": 26,
+    "instructions": [
+      "005e35c0: test byte ptr [ecx + 0xe8], 4",
+      "005e35c7: jne 0x5e35d7",
+      "005e35c9: movss xmm0, dword ptr [esp + 4]",
+      "005e35cf: movss dword ptr [ecx + 0x17c], xmm0",
+      "005e35d7: ret 4"
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005e35f0",
+    "rva": "0x001e35f0",
+    "operation": "guarded_float_store",
+    "value": 388,
+    "entry_bytes": "f6 81 e8 00 00 00 04 75 0e f3 0f 10 44 24 04 f3 0f 11 81 84 01 00 00 c2 04 00",
+    "body_size": 26,
+    "instructions": [
+      "005e35f0: test byte ptr [ecx + 0xe8], 4",
+      "005e35f7: jne 0x5e3607",
+      "005e35f9: movss xmm0, dword ptr [esp + 4]",
+      "005e35ff: movss dword ptr [ecx + 0x184], xmm0",
+      "005e3607: ret 4"
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005e3620",
+    "rva": "0x001e3620",
+    "operation": "guarded_float_store",
+    "value": 392,
+    "entry_bytes": "f6 81 e8 00 00 00 04 75 0e f3 0f 10 44 24 04 f3 0f 11 81 88 01 00 00 c2 04 00",
+    "body_size": 26,
+    "instructions": [
+      "005e3620: test byte ptr [ecx + 0xe8], 4",
+      "005e3627: jne 0x5e3637",
+      "005e3629: movss xmm0, dword ptr [esp + 4]",
+      "005e362f: movss dword ptr [ecx + 0x188], xmm0",
+      "005e3637: ret 4"
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005e3650",
+    "rva": "0x001e3650",
+    "operation": "guarded_float_store",
+    "value": 396,
+    "entry_bytes": "f6 81 e8 00 00 00 04 75 0e f3 0f 10 44 24 04 f3 0f 11 81 8c 01 00 00 c2 04 00",
+    "body_size": 26,
+    "instructions": [
+      "005e3650: test byte ptr [ecx + 0xe8], 4",
+      "005e3657: jne 0x5e3667",
+      "005e3659: movss xmm0, dword ptr [esp + 4]",
+      "005e365f: movss dword ptr [ecx + 0x18c], xmm0",
+      "005e3667: ret 4"
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005ee8c0",
+    "rva": "0x001ee8c0",
+    "operation": "guarded_float_store",
+    "value": 296,
+    "entry_bytes": "f6 81 e8 00 00 00 04 75 0e f3 0f 10 44 24 04 f3 0f 11 81 28 01 00 00 c2 04 00",
+    "body_size": 26,
+    "instructions": [
+      "005ee8c0: test byte ptr [ecx + 0xe8], 4",
+      "005ee8c7: jne 0x5ee8d7",
+      "005ee8c9: movss xmm0, dword ptr [esp + 4]",
+      "005ee8cf: movss dword ptr [ecx + 0x128], xmm0",
+      "005ee8d7: ret 4"
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005ee8f0",
+    "rva": "0x001ee8f0",
+    "operation": "guarded_float_store",
+    "value": 300,
+    "entry_bytes": "f6 81 e8 00 00 00 04 75 0e f3 0f 10 44 24 04 f3 0f 11 81 2c 01 00 00 c2 04 00",
+    "body_size": 26,
+    "instructions": [
+      "005ee8f0: test byte ptr [ecx + 0xe8], 4",
+      "005ee8f7: jne 0x5ee907",
+      "005ee8f9: movss xmm0, dword ptr [esp + 4]",
+      "005ee8ff: movss dword ptr [ecx + 0x12c], xmm0",
+      "005ee907: ret 4"
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005ee920",
+    "rva": "0x001ee920",
+    "operation": "guarded_float_store",
+    "value": 304,
+    "entry_bytes": "f6 81 e8 00 00 00 04 75 0e f3 0f 10 44 24 04 f3 0f 11 81 30 01 00 00 c2 04 00",
+    "body_size": 26,
+    "instructions": [
+      "005ee920: test byte ptr [ecx + 0xe8], 4",
+      "005ee927: jne 0x5ee937",
+      "005ee929: movss xmm0, dword ptr [esp + 4]",
+      "005ee92f: movss dword ptr [ecx + 0x130], xmm0",
+      "005ee937: ret 4"
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005ee950",
+    "rva": "0x001ee950",
+    "operation": "guarded_float_store",
+    "value": 308,
+    "entry_bytes": "f6 81 e8 00 00 00 04 75 0e f3 0f 10 44 24 04 f3 0f 11 81 34 01 00 00 c2 04 00",
+    "body_size": 26,
+    "instructions": [
+      "005ee950: test byte ptr [ecx + 0xe8], 4",
+      "005ee957: jne 0x5ee967",
+      "005ee959: movss xmm0, dword ptr [esp + 4]",
+      "005ee95f: movss dword ptr [ecx + 0x134], xmm0",
+      "005ee967: ret 4"
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005e41c0",
+    "rva": "0x001e41c0",
+    "operation": "guarded_copy3",
+    "value": 0,
+    "entry_bytes": "8a 81 e8 00 00 00 c0 e8 02 24 01 75 0c d9 81 4c 01 00 00 d9 99 64 01 00 00 84 c0 75 18 d9 81 50 01 00 00 d9 99 68 01 00 00 d9 81 54 01 00 00 d9 99 6c 01 00 00 c3",
+    "body_size": 54,
+    "instructions": [
+      "005e41c0: mov al, byte ptr [ecx + 0xe8]",
+      "005e41c6: shr al, 2",
+      "005e41c9: and al, 1",
+      "005e41cb: jne 0x5e41d9",
+      "005e41cd: fld dword ptr [ecx + 0x14c]",
+      "005e41d3: fstp dword ptr [ecx + 0x164]",
+      "005e41d9: test al, al",
+      "005e41db: jne 0x5e41f5",
+      "005e41dd: fld dword ptr [ecx + 0x150]",
+      "005e41e3: fstp dword ptr [ecx + 0x168]",
+      "005e41e9: fld dword ptr [ecx + 0x154]",
+      "005e41ef: fstp dword ptr [ecx + 0x16c]",
+      "005e41f5: ret "
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005e4460",
+    "rva": "0x001e4460",
+    "operation": "guarded_zero3",
+    "value": 0,
+    "entry_bytes": "8a 81 e8 00 00 00 0f 57 c0 c0 e8 02 24 01 75 08 f3 0f 11 81 64 01 00 00 84 c0 75 10 f3 0f 11 81 68 01 00 00 f3 0f 11 81 6c 01 00 00 c3",
+    "body_size": 45,
+    "instructions": [
+      "005e4460: mov al, byte ptr [ecx + 0xe8]",
+      "005e4466: xorps xmm0, xmm0",
+      "005e4469: shr al, 2",
+      "005e446c: and al, 1",
+      "005e446e: jne 0x5e4478",
+      "005e4470: movss dword ptr [ecx + 0x164], xmm0",
+      "005e4478: test al, al",
+      "005e447a: jne 0x5e448c",
+      "005e447c: movss dword ptr [ecx + 0x168], xmm0",
+      "005e4484: movss dword ptr [ecx + 0x16c], xmm0",
+      "005e448c: ret "
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs3DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005eee40",
+    "rva": "0x001eee40",
+    "operation": "reset_and_guarded_copy",
+    "value": 0,
+    "entry_bytes": "f6 81 e8 00 00 00 04 0f 57 c0 f3 0f 11 81 34 01 00 00 75 0c d9 81 18 01 00 00 d9 99 20 01 00 00 c3",
+    "body_size": 33,
+    "instructions": [
+      "005eee40: test byte ptr [ecx + 0xe8], 4",
+      "005eee47: xorps xmm0, xmm0",
+      "005eee4a: movss dword ptr [ecx + 0x134], xmm0",
+      "005eee52: jne 0x5eee60",
+      "005eee54: fld dword ptr [ecx + 0x118]",
+      "005eee5a: fstp dword ptr [ecx + 0x120]",
+      "005eee60: ret "
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005ef060",
+    "rva": "0x001ef060",
+    "operation": "guarded_zero1",
+    "value": 0,
+    "entry_bytes": "f6 81 e8 00 00 00 04 75 0b 0f 57 c0 f3 0f 11 81 20 01 00 00 c3",
+    "body_size": 21,
+    "instructions": [
+      "005ef060: test byte ptr [ecx + 0xe8], 4",
+      "005ef067: jne 0x5ef074",
+      "005ef069: xorps xmm0, xmm0",
+      "005ef06c: movss dword ptr [ecx + 0x120], xmm0",
+      "005ef074: ret "
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::NmRs1DofEffector"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005fdcf0",
+    "rva": "0x001fdcf0",
+    "operation": "select_this",
+    "value": 0,
+    "entry_bytes": "8a 41 0a 24 08 f6 d8 1b c0 f7 d0 23 c1 c2 04 00",
+    "body_size": 16,
+    "instructions": [
+      "005fdcf0: mov al, byte ptr [ecx + 0xa]",
+      "005fdcf3: and al, 8",
+      "005fdcf5: neg al",
+      "005fdcf7: sbb eax, eax",
+      "005fdcf9: not eax",
+      "005fdcfb: and eax, ecx",
+      "005fdcfd: ret 4"
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::phInstNM"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x005fdd60",
+    "rva": "0x001fdd60",
+    "operation": "nested_read",
+    "value": 0,
+    "entry_bytes": "8b 41 50 8b 80 4c 03 00 00 c3",
+    "body_size": 10,
+    "instructions": [
+      "005fdd60: mov eax, dword ptr [ecx + 0x50]",
+      "005fdd63: mov eax, dword ptr [eax + 0x34c]",
+      "005fdd69: ret "
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::phInstNM"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  },
+  {
+    "va": "0x00686cd0",
+    "rva": "0x00286cd0",
+    "operation": "zero_output9",
+    "value": 0,
+    "entry_bytes": "8b 44 24 04 0f 57 c0 f3 0f 11 40 08 f3 0f 11 40 04 f3 0f 11 00 f3 0f 11 40 18 f3 0f 11 40 14 f3 0f 11 40 10 f3 0f 11 40 28 f3 0f 11 40 24 f3 0f 11 40 20 c2 18 00",
+    "body_size": 54,
+    "instructions": [
+      "00686cd0: mov eax, dword ptr [esp + 4]",
+      "00686cd4: xorps xmm0, xmm0",
+      "00686cd7: movss dword ptr [eax + 8], xmm0",
+      "00686cdc: movss dword ptr [eax + 4], xmm0",
+      "00686ce1: movss dword ptr [eax], xmm0",
+      "00686ce5: movss dword ptr [eax + 0x18], xmm0",
+      "00686cea: movss dword ptr [eax + 0x14], xmm0",
+      "00686cef: movss dword ptr [eax + 0x10], xmm0",
+      "00686cf4: movss dword ptr [eax + 0x28], xmm0",
+      "00686cf9: movss dword ptr [eax + 0x24], xmm0",
+      "00686cfe: movss dword ptr [eax + 0x20], xmm0",
+      "00686d03: ret 0x18"
+    ],
+    "abi": "synthetic_x86_thiscall",
+    "owners": [
+      "ART::Rockstar::phInstNM"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "runtime_tested": false,
+    "enabled": false,
+    "reconstructed": false,
+    "scope": "entire body; both branch outcomes where present; full 4096-byte object and nested buffer plus 96-byte output guards; no original class ABI assertion"
+  }
+]

@@ -47,7 +47,7 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x0069dd00u, 0x0029dd00u, 0x00ebbd14u, 13, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0069de50u, 0x0029de50u, 0x00ebbd14u, 14, "FUN_0069de50", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0069d690u, 0x0029d690u, 0x00ebbd14u, 15, "FUN_0069d690", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x0069ed90u, 0x0029ed90u, 0x00ebbd14u, 16, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0069ed90u, 0x0029ed90u, 0x00ebbd14u, 16, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/PendingAnalysis/rage-art/evidence/runtime-summary.json; 64 isolated-storage calls; straight-line scalar body; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction; integer return validates only mask-defined EAX bits; EDX/high return and class semantics not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x0069eda0u, 0x0029eda0u, 0x00ebbd14u, 17, "FUN_0069eda0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0069ef20u, 0x0029ef20u, 0x00ebbd14u, 18, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0069f070u, 0x0029f070u, 0x00ebbd14u, 19, "FUN_0069f070", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},

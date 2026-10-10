@@ -33,7 +33,7 @@ inline constexpr std::uint32_t pending_hook_count = 17u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x009a96a0u, 0x005a96a0u, 0x00d7f4a4u, 0, "FUN_009a96a0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x009e4bf0u, 0x005e4bf0u, 0x00d7f4a4u, 1, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/GameValidation/evidence/runtime-summary.json; 64 calls of complete return_eax_constant machine-code body; return mask checked; no class ABI or gameplay semantics established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
-    {0x00a1e350u, 0x0061e350u, 0x00d7f4a4u, 2, "FUN_00a1e350", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00a1e350u, 0x0061e350u, 0x00d7f4a4u, 2, "FUN_00a1e350", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ComplexValidation/game/evidence/scalar-runtime-summary.json; 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; comparison/bit/scalar bodies only; EDX/high return not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x009a3650u, 0x005a3650u, 0x00d7f4a4u, 3, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x009a36c0u, 0x005a36c0u, 0x00d7f4a4u, 4, "FUN_009a36c0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x009a3720u, 0x005a3720u, 0x00d7f4a4u, 5, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},

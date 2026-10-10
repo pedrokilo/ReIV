@@ -29,7 +29,7 @@ namespace reiv { namespace memory_map { namespace type_5294d3ecf4e3f7d4 {
 // Destinations from the inventory; names/ABI remain candidates. Never auto-install.
 inline constexpr std::uint32_t pending_hook_count = 8u;
 inline constexpr PendingHook pending_hook_storage[] = {
-    {0x0060c220u, 0x0020c220u, 0x00ebaad0u, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0060c220u, 0x0020c220u, 0x00ebaad0u, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ComplexValidation/destructors/evidence/runtime-summary.json; 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; ONLY flags bit0 clear; writes vtable and returns this; freeing/TLS allocator branch statically excluded and NEVER called; does not validate deleting mode", AddressOrigin::VirtualSlot, true, false, false},
     {0x005efc30u, 0x001efc30u, 0x00ebaad0u, 1, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x006060d0u, 0x002060d0u, 0x00ebaad0u, 2, "FUN_006060d0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00606310u, 0x00206310u, 0x00ebaad0u, 3, "FUN_00606310", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},

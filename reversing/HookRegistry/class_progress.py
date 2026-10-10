@@ -53,7 +53,9 @@ def render(root, entries):
         rows = groups[anchor]
         lines += [f'<a id="{anchor}"></a>', f"## {icon} {title} · {len(rows):,} clases", ""]
         if anchor == "desconocido":
-            lines += ["Estos headers provienen de los nombres y descriptores RTTI registrados en [classes.csv](MemoryMap/classes.csv). Se conoce la identidad del tipo y la dirección de su descriptor; no hay destinos de métodos asociados en el inventario actual. No implica que el tipo carezca de métodos. Este grupo incluye los 17 headers de game sin referencias conocidas.", ""]
+            game_unknown = sum(row["file"].startswith("source/game/") for row in rows)
+            rage_unknown = sum(row["file"].startswith("source/rage/") for row in rows)
+            lines += [f"Estos headers provienen de los nombres y descriptores RTTI registrados en [classes.csv](MemoryMap/classes.csv). Se conoce la identidad del tipo y la dirección de su descriptor; no hay destinos de métodos asociados en el inventario actual. No implica que el tipo carezca de métodos. Este grupo incluye {game_unknown} headers de game y {rage_unknown} de rage sin referencias conocidas. [Análisis de tipos sin métodos](../reversing/UnknownTypesAnalysis/README.md).", ""]
         if not rows:
             lines += ["Ninguna clase en esta categoría.", ""]
             continue

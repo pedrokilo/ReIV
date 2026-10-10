@@ -1,0 +1,26 @@
+{
+  "coverage": [
+    {
+      "folder": "game",
+      "remaining_references": 13507,
+      "remaining_targets": 4911,
+      "fatal_references": 272
+    },
+    {
+      "folder": "rage",
+      "remaining_references": 9624,
+      "remaining_targets": 3044,
+      "fatal_references": 291
+    },
+    {
+      "folder": "ART",
+      "remaining_references": 157,
+      "remaining_targets": 138,
+      "fatal_references": 52
+    }
+  ],
+  "modes": {
+    "runtime_fixture": 2927,
+    "runtime_restricted_mode": 772
+  }
+}

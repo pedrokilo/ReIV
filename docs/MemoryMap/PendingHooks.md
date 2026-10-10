@@ -5,14 +5,15 @@ Los 4.016 headers de [classes.csv](classes.csv) incluyen un bloque generado de d
 | Cobertura | Cantidad |
 | --- | ---: |
 | Headers con bloque de direcciones pendientes | 4.016 |
-| Tipos con al menos un destino asociado | 3.431 |
-| Tipos sin destino de función asociado por nombre exacto | 585 |
+| Tipos con al menos un destino asociado | 3.435 |
+| Tipos sin destino de función asociado por nombre exacto | 581 |
 | Registros de slots virtuales | 45.503 |
 | Referencias de funciones SDK asociadas | 55 |
-| Registros totales asociados a headers | 45.558 |
+| Callbacks de metadatos de excepciones MSVC | 6 |
+| Registros totales asociados a headers | 45.564 |
 | Referencias SDK sin propietario RTTI exacto | 165 |
 
-Son registros de inventario, no 45.558 funciones distintas. Una dirección puede repetirse en varias tablas, slots y tipos; también puede aparecer como referencia SDK. Los límites de las tablas siguen siendo los estimados por el mapa estático.
+Son registros de inventario, no 45.564 funciones distintas. Una dirección puede repetirse en varias tablas, slots y tipos; también puede aparecer como referencia SDK. Los límites de las tablas siguen siendo los estimados por el mapa estático. Los seis callbacks adicionales pertenecen a cuatro tipos y proceden de [cadenas de metadatos de excepciones](../../reversing/UnknownTypesAnalysis/README.md); permanecen sin prueba de llamada. [Cobertura y pruebas actuales](PendingAnalysis.md).
 
 ## Fuentes y asociación
 
@@ -23,7 +24,7 @@ Una coincidencia de dirección o slot propone nombres; no confirma el significad
 
 ## Qué contiene cada header
 
-El bloque `BEGIN GENERATED PENDING HOOK ADDRESSES` usa [PendingHook.h](../../source/core/PendingHook.h) y el espacio de nombres de metadatos propio del tipo. Expone `pending_hook_count` y `pending_hooks`, con almacenamiento `constexpr` cuando hay destinos. Para los 585 tipos sin destinos asociados, el recuento es cero y el puntero es `nullptr`.
+El bloque `BEGIN GENERATED PENDING HOOK ADDRESSES` usa [PendingHook.h](../../source/core/PendingHook.h) y el espacio de nombres de metadatos propio del tipo. Expone `pending_hook_count` y `pending_hooks`, con almacenamiento `constexpr` cuando hay destinos. Para los 581 tipos sin destinos asociados, el recuento es cero y el puntero es `nullptr`.
 
 Cada registro conserva VA, RVA, vtable, slot, etiqueta, nombres candidatos, evidencia y origen (`VirtualSlot` o `SdkFunctionReference`). Para referencias SDK sin slot, la vtable es cero y el índice es `-1`. Se comprueba que `VA - RVA = 0x00400000`; en ejecución el destino se obtiene como base real del módulo más RVA.
 

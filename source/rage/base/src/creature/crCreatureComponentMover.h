@@ -33,7 +33,7 @@ inline constexpr std::uint32_t pending_hook_count = 12u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x0059f690u, 0x0019f690u, 0x00eb9704u, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0059b9c0u, 0x0019b9c0u, 0x00eb9704u, 1, "FUN_0059b9c0", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/RageWriteValidation/evidence/runtime-summary.json; 64 calls; set_u32 at synthetic field offset/value 8; isolated storage only; no game-owned objects; no complete class layout established; inferred descriptive name", AddressOrigin::VirtualSlot, true, false, false},
-    {0x0059f440u, 0x0019f440u, 0x00eb9704u, 2, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0059f440u, 0x0019f440u, 0x00eb9704u, 2, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/PendingAnalysis/rage-art/evidence/runtime-summary.json; 64 isolated-storage calls; straight-line scalar body; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction; integer return validates only mask-defined EAX bits; EDX/high return and class semantics not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x0059f450u, 0x0019f450u, 0x00eb9704u, 3, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0059f460u, 0x0019f460u, 0x00eb9704u, 4, "FUN_0059f460", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x0059f4a0u, 0x0019f4a0u, 0x00eb9704u, 5, "FUN_0059f4a0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},

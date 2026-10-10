@@ -1,0 +1,233 @@
+{
+  "passed": true,
+  "date": "2026-10-09T22:41:48.8990768-06:00",
+  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+  "asi_sha256": "d453bcf94cf56d68e5493fdaf25b16bb0fdce9c14066277470b214198f078d12",
+  "implementation_sha256": "64869fcf612de630687c0e3515cb47c6eea107a331fee4757d7fa664d806020f",
+  "scope_sha256": "1d6ee6bd1d025745674d6e52dd5df669a2db53e5ef927911204e1849fc93200a",
+  "result": {
+    "phase": "passed",
+    "fixture_only": true,
+    "exceptions": 0,
+    "entries": [
+      {
+        "rva": "0x000352F0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035320",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035330",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035370",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035380",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035390",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035610",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035620",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035700",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035730",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035750",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00035770",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x000357C0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0003B870",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00047B20",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0004CB30",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00054340",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x0008A520",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00093F80",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x000E0B30",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x000F0140",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x000F0CF0",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x005C5360",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x005C5430",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x006B9A50",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00828260",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00828270",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      },
+      {
+        "rva": "0x00828830",
+        "calls": 64,
+        "failures": 0,
+        "disabled": false
+      }
+    ]
+  },
+  "game_run": {
+    "date": "2026-10-09T22:41:48.8990768-06:00",
+    "passed": true,
+    "forced_stop": false,
+    "exit_code": 0,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "asi_sha256": "d453bcf94cf56d68e5493fdaf25b16bb0fdce9c14066277470b214198f078d12",
+    "wrapper_sha256": "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
+    "probe_sha256": "c9eac0fd31fbefba9520983f372ca49332c17935501fbf6dd3f47ce5d69b7970",
+    "result": {
+      "phase": "passed",
+      "rva": "0x005c7710",
+      "bone_index": 0,
+      "calls": 64,
+      "failures": 0,
+      "exceptions": 0,
+      "ticks": 253,
+      "entity": "0x07398710",
+      "matrix": "0x089B0C70",
+      "position": [
+        -0.000783575291,
+        -0.000992114423,
+        -0.0100214565
+      ],
+      "game_loaded": true,
+      "ingame_started": false
+    },
+    "evidence_directory": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261009-224102",
+    "console": {
+      "console_window": "0x007D138A",
+      "visible": true,
+      "writable": true,
+      "always_enabled": true
+    },
+    "atStringHash": {
+      "phase": "process_detach",
+      "rva": "0x1b1c30",
+      "bank_pairs": 8320,
+      "bank_failures": 0,
+      "hooked": true,
+      "hook_calls": 366695,
+      "runtime_pairs": 4096,
+      "runtime_failures": 0,
+      "game_loaded": true,
+      "ingame_started": true,
+      "script_ticks": 254
+    },
+    "atStringHash_passed": true
+  },
+  "scalar_implementation_sha256": "4e08679df60b2f5c13026eda7fd35296bfac7fd35caccb5d7991b96b7a17885d"
+}

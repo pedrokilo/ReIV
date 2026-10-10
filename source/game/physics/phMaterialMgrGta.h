@@ -34,7 +34,7 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x00ccf1d0u, 0x008cf1d0u, 0x00dce4ecu, 0, "FUN_00ccf1d0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00ccec60u, 0x008cec60u, 0x00dce4ecu, 1, "FUN_00ccec60", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00cce5b0u, 0x008ce5b0u, 0x00dce4ecu, 2, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x00cceb10u, 0x008ceb10u, 0x00dce4ecu, 3, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x00cceb10u, 0x008ceb10u, 0x00dce4ecu, 3, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ComplexValidation/game/evidence/scalar-runtime-summary.json; 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; comparison/bit/scalar bodies only; EDX/high return not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x00cceb20u, 0x008ceb20u, 0x00dce4ecu, 4, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00cce5d0u, 0x008ce5d0u, 0x00dce4ecu, 5, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00687ed0u, 0x00287ed0u, 0x00dce4ecu, 6, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},

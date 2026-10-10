@@ -1,0 +1,3071 @@
+[
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(ecx);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00004B90",
+    "va": "0x00404B90",
+    "owners": [
+      "rage::grcRenderTarget",
+      "rage::grcRenderTargetPC",
+      "rage::grcTexturePC"
+    ],
+    "reference_count": 6,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00404B90: mov eax, ecx",
+      "00404B92: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b c1 c3",
+    "body_size": 3
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(0);",
+      "edx=(0);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0003B5B0",
+    "va": "0x0043B5B0",
+    "owners": [
+      "rage::fiCachedDevice",
+      "rage::fiDevice",
+      "rage::fiDeviceLocal",
+      "rage::fiDeviceMemory",
+      "rage::fiDeviceTcpIp"
+    ],
+    "reference_count": 7,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0043B5B0: xor eax, eax",
+      "0043B5B2: xor edx, edx",
+      "0043B5B4: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "33 c0 33 d2 c2 04 00",
+    "body_size": 7
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0x00000001u)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x00053AD0",
+    "va": "0x00453AD0",
+    "owners": [
+      "rage::TriangleShape",
+      "rage::parInitVisitor",
+      "rage::parInstanceVisitor",
+      "rage::phBound",
+      "rage::phBoundBVH",
+      "rage::phBoundBox",
+      "rage::phBoundCapsule",
+      "rage::phBoundComposite",
+      "rage::phBoundCurvedGeometry",
+      "rage::phBoundGeomCullable",
+      "rage::phBoundGeometry",
+      "rage::phBoundGrid",
+      "rage::phBoundOctree",
+      "rage::phBoundPolyhedron",
+      "rage::phBoundQuadtree",
+      "rage::phBoundRibbon",
+      "rage::phBoundSphere",
+      "rage::phBoundSurface",
+      "rage::phBoundTaperedCapsule"
+    ],
+    "reference_count": 19,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00453AD0: mov al, 1",
+      "00453AD2: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b0 01 c2 08 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(0xffffffffu);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x000C4C00",
+    "va": "0x004C4C00",
+    "owners": [
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompAntagonizeRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompAntagonizeStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompCarStealRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompCarStealStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompDeathMatchRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompDeathMatchStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompRandEventRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompRandEventStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopDrugFactoryRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopDrugFactoryStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopSWATRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopSWATStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopSnipeRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopSnipeStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_10Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_10Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_11Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_11Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_12Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_12Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_13Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_13Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_1Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_1Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_2Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_2Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_3Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_3Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_4Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_4Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_5Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_5Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_6Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_6Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_7Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_7Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_8Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_8Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_9Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_9Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_FreemodeRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_FreemodeStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceAtoBRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceAtoBStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceDriveByRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceDriveByStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceStandardRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceStandardStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamBankRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamBankStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamBaseRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamBaseStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamCarStealRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamCarStealStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamDeathMatchRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamDeathMatchStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamFortRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamFortStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamMafyaRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamMafyaStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamVIPRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamVIPStandard,1>"
+    ],
+    "reference_count": 124,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004C4C00: or eax, 0xffffffff",
+      "004C4C03: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 c8 ff c2 04 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 24,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x000C5030",
+    "va": "0x004C5030",
+    "owners": [
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompAntagonizeRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompAntagonizeStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompCarStealRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompCarStealStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompDeathMatchRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompDeathMatchStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompRandEventRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CompRandEventStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopDrugFactoryRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopDrugFactoryStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopSWATRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopSWATStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopSnipeRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_CoopSnipeStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_10Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_10Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_11Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_11Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_12Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_12Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_13Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_13Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_1Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_1Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_2Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_2Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_3Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_3Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_4Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_4Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_5Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_5Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_6Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_6Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_7Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_7Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_8Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_8Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_9Ranked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_Episodic_9Standard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_FreemodeRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_FreemodeStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceAtoBRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceAtoBStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceDriveByRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceDriveByStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceStandardRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_RaceStandardStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamBankRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamBankStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamBaseRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamBaseStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamCarStealRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamCarStealStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamDeathMatchRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamDeathMatchStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamFortRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamFortStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamMafyaRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamMafyaStandard,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamVIPRanked,1>",
+      "rage::rlConcreteLeaderboardInfo<SkillLeaderboard_TeamVIPStandard,1>"
+    ],
+    "reference_count": 62,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004C5030: xor al, al",
+      "004C5032: ret 0x18"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "32 c0 c2 18 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0x00000001u)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x000E76B0",
+    "va": "0x004E76B0",
+    "owners": [
+      "rage::audConvolutionEffectPC"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "004E76B0: mov al, 1",
+      "004E76B2: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b0 01 c2 08 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+4,4,(Load(expected+4,4))+(0x00000001u));"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        4,
+        4
+      ]
+    ],
+    "rva": "0x0010B6E0",
+    "va": "0x0050B6E0",
+    "owners": [
+      "rage::atReferenceCounter",
+      "rage::crExpressionProcessor",
+      "rage::crExpressionProcessor::ExpressionFilter",
+      "rage::crFrameFilter",
+      "rage::crFrameFilterMover",
+      "rage::crFrameFilterN",
+      "rage::crFrameFilters<8,0>",
+      "rage::crmtComposerOptimized::CombiningFilter",
+      "rage::crmtMotionTree",
+      "rage::crmtObserver",
+      "rage::crmtObserverFunctor",
+      "rage::ptxEffectRule",
+      "rage::ptxEffectRuleStd",
+      "rage::ptxEmitRule",
+      "rage::ptxEmitRuleStd",
+      "rage::ptxGpuRenderShader",
+      "rage::ptxGpuShader",
+      "rage::ptxGpuUpdateShader",
+      "rage::ptxModel",
+      "rage::ptxRule",
+      "rage::ptxSprite"
+    ],
+    "reference_count": 21,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0050B6E0: add dword ptr [ecx + 4], 1",
+      "0050B6E4: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 41 04 01 c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(0xffffffffu);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00110B90",
+    "va": "0x00510B90",
+    "owners": [
+      "rage::crmtNodeParent",
+      "rage::fiCachedDevice",
+      "rage::fiDevice",
+      "rage::fiDeviceLocal",
+      "rage::fiDeviceMemory",
+      "rage::fiDeviceTcpIp",
+      "rage::fragInst",
+      "rage::phInst",
+      "rage::phInstBreakable"
+    ],
+    "reference_count": 10,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00510B90: or eax, 0xffffffff",
+      "00510B93: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 c8 ff c3",
+    "body_size": 4
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+28,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        28,
+        4
+      ]
+    ],
+    "rva": "0x001119F0",
+    "va": "0x005119F0",
+    "owners": [
+      "rage::spdApical"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005119F0: movss xmm0, dword ptr [esp + 4]",
+      "005119F6: movss dword ptr [ecx + 0x1c], xmm0",
+      "005119FB: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 1c c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(0);",
+      "Store(expected+28,4,eax);",
+      "Store(expected+32,4,eax);",
+      "Store(expected+20,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        28,
+        4
+      ],
+      [
+        32,
+        4
+      ],
+      [
+        20,
+        4
+      ]
+    ],
+    "rva": "0x00111B50",
+    "va": "0x00511B50",
+    "owners": [
+      "rage::crmtRequestExtrapolate"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00511B50: xor eax, eax",
+      "00511B52: mov dword ptr [ecx + 0x1c], eax",
+      "00511B55: mov dword ptr [ecx + 0x20], eax",
+      "00511B58: mov dword ptr [ecx + 0x14], eax",
+      "00511B5B: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "33 c0 89 41 1c 89 41 20 89 41 14 c3",
+    "body_size": 12
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+32,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        32,
+        4
+      ]
+    ],
+    "rva": "0x00115F90",
+    "va": "0x00515F90",
+    "owners": [
+      "rage::crmtNodeAddSubtract",
+      "rage::crmtNodePair",
+      "rage::rmPtfxShaderVar_Float"
+    ],
+    "reference_count": 3,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00515F90: movss xmm0, dword ptr [esp + 4]",
+      "00515F96: movss dword ptr [ecx + 0x20], xmm0",
+      "00515F9B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 20 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+20,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        20,
+        4
+      ]
+    ],
+    "rva": "0x0011EF10",
+    "va": "0x0051EF10",
+    "owners": [
+      "rage::spdApical"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0051EF10: movss xmm0, dword ptr [esp + 4]",
+      "0051EF16: movss dword ptr [ecx + 0x14], xmm0",
+      "0051EF1B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 14 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+24,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        24,
+        4
+      ]
+    ],
+    "rva": "0x0011EF20",
+    "va": "0x0051EF20",
+    "owners": [
+      "rage::spdApical"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0051EF20: movss xmm0, dword ptr [esp + 4]",
+      "0051EF26: movss dword ptr [ecx + 0x18], xmm0",
+      "0051EF2B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 18 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(args[0]);",
+      "Store(expected+544,4,(Load(expected+544,4))+(eax));"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        544,
+        4
+      ]
+    ],
+    "rva": "0x00120110",
+    "va": "0x00520110",
+    "owners": [
+      "rage::fiAsciiTokenizer",
+      "rage::fiTokenizer"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00520110: mov eax, dword ptr [esp + 4]",
+      "00520114: add dword ptr [ecx + 0x220], eax",
+      "0052011A: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 04 01 81 20 02 00 00 c2 04 00",
+    "body_size": 13
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+32,4,xmm0);",
+      "xmm0=args[1];",
+      "Store(expected+36,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        32,
+        4
+      ],
+      [
+        36,
+        4
+      ]
+    ],
+    "rva": "0x00154860",
+    "va": "0x00554860",
+    "owners": [
+      "rage::rmPtfxShaderVar_Float2"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00554860: movss xmm0, dword ptr [esp + 4]",
+      "00554866: movss dword ptr [ecx + 0x20], xmm0",
+      "0055486B: movss xmm0, dword ptr [esp + 8]",
+      "00554871: movss dword ptr [ecx + 0x24], xmm0",
+      "00554876: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 20 f3 0f 10 44 24 08 f3 0f 11 41 24 c2 08 00",
+    "body_size": 25
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+32,4,xmm0);",
+      "xmm0=args[1];",
+      "Store(expected+36,4,xmm0);",
+      "xmm0=args[2];",
+      "Store(expected+40,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        32,
+        4
+      ],
+      [
+        36,
+        4
+      ],
+      [
+        40,
+        4
+      ]
+    ],
+    "rva": "0x00154920",
+    "va": "0x00554920",
+    "owners": [
+      "rage::rmPtfxShaderVar_Float3"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00554920: movss xmm0, dword ptr [esp + 4]",
+      "00554926: movss dword ptr [ecx + 0x20], xmm0",
+      "0055492B: movss xmm0, dword ptr [esp + 8]",
+      "00554931: movss dword ptr [ecx + 0x24], xmm0",
+      "00554936: movss xmm0, dword ptr [esp + 0xc]",
+      "0055493C: movss dword ptr [ecx + 0x28], xmm0",
+      "00554941: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 20 f3 0f 10 44 24 08 f3 0f 11 41 24 f3 0f 10 44 24 0c f3 0f 11 41 28 c2 0c 00",
+    "body_size": 36
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 16,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+32,4,xmm0);",
+      "xmm0=args[1];",
+      "Store(expected+36,4,xmm0);",
+      "xmm0=args[2];",
+      "Store(expected+40,4,xmm0);",
+      "xmm0=args[3];",
+      "Store(expected+44,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        32,
+        4
+      ],
+      [
+        36,
+        4
+      ],
+      [
+        40,
+        4
+      ],
+      [
+        44,
+        4
+      ]
+    ],
+    "rva": "0x001549E0",
+    "va": "0x005549E0",
+    "owners": [
+      "rage::rmPtfxShaderVar_Float4"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005549E0: movss xmm0, dword ptr [esp + 4]",
+      "005549E6: movss dword ptr [ecx + 0x20], xmm0",
+      "005549EB: movss xmm0, dword ptr [esp + 8]",
+      "005549F1: movss dword ptr [ecx + 0x24], xmm0",
+      "005549F6: movss xmm0, dword ptr [esp + 0xc]",
+      "005549FC: movss dword ptr [ecx + 0x28], xmm0",
+      "00554A01: movss xmm0, dword ptr [esp + 0x10]",
+      "00554A07: movss dword ptr [ecx + 0x2c], xmm0",
+      "00554A0C: ret 0x10"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 20 f3 0f 10 44 24 08 f3 0f 11 41 24 f3 0f 10 44 24 0c f3 0f 11 41 28 f3 0f 10 44 24 10 f3 0f 11 41 2c c2 10 00",
+    "body_size": 47
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 24,
+    "trace": [
+      "eax=(0);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0015A860",
+    "va": "0x0055A860",
+    "owners": [
+      "rage::ptxRule"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0055A860: xor eax, eax",
+      "0055A862: ret 0x18"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "33 c0 c2 18 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "Store(expected+284,4,(Load(expected+284,4))&(0xfffffffdu));"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        284,
+        4
+      ]
+    ],
+    "rva": "0x0015A8D0",
+    "va": "0x0055A8D0",
+    "owners": [
+      "rage::ptxRule"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0055A8D0: and dword ptr [ecx + 0x11c], 0xfffffffd",
+      "0055A8D7: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 a1 1c 01 00 00 fd c2 04 00",
+    "body_size": 10
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+284,4,(Load(expected+284,4))&(0xfffffffdu));"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        284,
+        4
+      ]
+    ],
+    "rva": "0x0015A8E0",
+    "va": "0x0055A8E0",
+    "owners": [
+      "rage::ptxRule"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0055A8E0: and dword ptr [ecx + 0x11c], 0xfffffffd",
+      "0055A8E7: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 a1 1c 01 00 00 fd c3",
+    "body_size": 8
+  },
+  {
+    "kind": "float_zero",
+    "pop": 0,
+    "trace": [],
+    "mask": 4294967295,
+    "expected_float": 0,
+    "rva": "0x00167170",
+    "va": "0x00567170",
+    "owners": [
+      "rage::fragInst",
+      "rage::fragInstNM",
+      "rage::phInstBreakable",
+      "rage::ptxEffectRule",
+      "rage::ptxEmitRule"
+    ],
+    "reference_count": 9,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00567170: fldz ",
+      "00567172: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "d9 ee c3",
+    "body_size": 3
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+4,1,(Load(expected+4,1))|(0x00000010u));",
+      "eax=(0x7f800001u);",
+      "Store(expected+16,4,eax);",
+      "Store(expected+20,4,eax);",
+      "Store(expected+24,4,eax);",
+      "Store(expected+28,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        4,
+        1
+      ],
+      [
+        16,
+        4
+      ],
+      [
+        20,
+        4
+      ],
+      [
+        24,
+        4
+      ],
+      [
+        28,
+        4
+      ]
+    ],
+    "rva": "0x001881F0",
+    "va": "0x005881F0",
+    "owners": [
+      "rage::crFrameDofQuaternion"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005881F0: or byte ptr [ecx + 4], 0x10",
+      "005881F4: mov eax, 0x7f800001",
+      "005881F9: mov dword ptr [ecx + 0x10], eax",
+      "005881FC: mov dword ptr [ecx + 0x14], eax",
+      "005881FF: mov dword ptr [ecx + 0x18], eax",
+      "00588202: mov dword ptr [ecx + 0x1c], eax",
+      "00588205: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "80 49 04 10 b8 01 00 80 7f 89 41 10 89 41 14 89 41 18 89 41 1c c3",
+    "body_size": 22
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "xmm0=0;",
+      "Store(expected+4,1,(Load(expected+4,1))&(0x000000efu));",
+      "Store(expected+16,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        4,
+        1
+      ],
+      [
+        16,
+        4
+      ]
+    ],
+    "rva": "0x0018C350",
+    "va": "0x0058C350",
+    "owners": [
+      "rage::crFrameDofFloat"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0058C350: xorps xmm0, xmm0",
+      "0058C353: and byte ptr [ecx + 4], 0xef",
+      "0058C357: movss dword ptr [ecx + 0x10], xmm0",
+      "0058C35C: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f 57 c0 80 61 04 ef f3 0f 11 41 10 c3",
+    "body_size": 13
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+4,1,(Load(expected+4,1))|(0x00000010u));",
+      "Store(expected+16,4,0x7f800001u);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        4,
+        1
+      ],
+      [
+        16,
+        4
+      ]
+    ],
+    "rva": "0x0018C360",
+    "va": "0x0058C360",
+    "owners": [
+      "rage::crFrameDofFloat"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0058C360: or byte ptr [ecx + 4], 0x10",
+      "0058C364: mov dword ptr [ecx + 0x10], 0x7f800001",
+      "0058C36B: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "80 49 04 10 c7 41 10 01 00 80 7f c3",
+    "body_size": 12
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+4,1,(Load(expected+4,1))&(0x000000efu));",
+      "Store(expected+16,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        4,
+        1
+      ],
+      [
+        16,
+        4
+      ]
+    ],
+    "rva": "0x0018C380",
+    "va": "0x0058C380",
+    "owners": [
+      "rage::crFrameDofFloat"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0058C380: movss xmm0, dword ptr [esp + 4]",
+      "0058C386: and byte ptr [ecx + 4], 0xef",
+      "0058C38A: movss dword ptr [ecx + 0x10], xmm0",
+      "0058C38F: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 80 61 04 ef f3 0f 11 41 10 c2 04 00",
+    "body_size": 18
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+4,1,(Load(expected+4,1))&(0x000000efu));",
+      "Store(expected+16,4,0x00000000u);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        4,
+        1
+      ],
+      [
+        16,
+        4
+      ]
+    ],
+    "rva": "0x0018C5C0",
+    "va": "0x0058C5C0",
+    "owners": [
+      "rage::crFrameDofInt"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0058C5C0: and byte ptr [ecx + 4], 0xef",
+      "0058C5C4: mov dword ptr [ecx + 0x10], 0",
+      "0058C5CB: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "80 61 04 ef c7 41 10 00 00 00 00 c3",
+    "body_size": 12
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+4,1,(Load(expected+4,1))|(0x00000010u));",
+      "Store(expected+16,4,0x80000000u);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        4,
+        1
+      ],
+      [
+        16,
+        4
+      ]
+    ],
+    "rva": "0x0018C5D0",
+    "va": "0x0058C5D0",
+    "owners": [
+      "rage::crFrameDofInt"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0058C5D0: or byte ptr [ecx + 4], 0x10",
+      "0058C5D4: mov dword ptr [ecx + 0x10], 0x80000000",
+      "0058C5DB: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "80 49 04 10 c7 41 10 00 00 00 80 c3",
+    "body_size": 12
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(args[0]);",
+      "Store(expected+4,1,(Load(expected+4,1))&(0x000000efu));",
+      "Store(expected+16,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        4,
+        1
+      ],
+      [
+        16,
+        4
+      ]
+    ],
+    "rva": "0x0018C600",
+    "va": "0x0058C600",
+    "owners": [
+      "rage::crFrameDofInt"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0058C600: mov eax, dword ptr [esp + 4]",
+      "0058C604: and byte ptr [ecx + 4], 0xef",
+      "0058C608: mov dword ptr [ecx + 0x10], eax",
+      "0058C60B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 04 80 61 04 ef 89 41 10 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(0);",
+      "Store(expected+4,4,eax);",
+      "Store(expected+8,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        4
+      ]
+    ],
+    "rva": "0x0019B9D0",
+    "va": "0x0059B9D0",
+    "owners": [
+      "rage::crCreatureComponent"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0059B9D0: xor eax, eax",
+      "0059B9D2: mov dword ptr [ecx + 4], eax",
+      "0059B9D5: mov dword ptr [ecx + 8], eax",
+      "0059B9D8: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "33 c0 89 41 04 89 41 08 c3",
+    "body_size": 9
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0x00000001u)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x0019BC80",
+    "va": "0x0059BC80",
+    "owners": [
+      "rage::crFrameFilter",
+      "rage::phInstBehavior"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0059BC80: mov al, 1",
+      "0059BC82: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b0 01 c2 0c 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(0x00000064u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0019F0F0",
+    "va": "0x0059F0F0",
+    "owners": [
+      "rage::crAnimTolerance"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0059F0F0: mov eax, 0x64",
+      "0059F0F5: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 64 00 00 00 c2 0c 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(0x00000028u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0019F100",
+    "va": "0x0059F100",
+    "owners": [
+      "rage::crAnimTolerance"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0059F100: mov eax, 0x28",
+      "0059F105: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 28 00 00 00 c2 0c 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(Load(expected+16,4));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0019F170",
+    "va": "0x0059F170",
+    "owners": [
+      "rage::crAnimToleranceSimple"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0059F170: mov eax, dword ptr [ecx + 0x10]",
+      "0059F173: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 41 10 c2 0c 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(Load(expected+20,4));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0019F180",
+    "va": "0x0059F180",
+    "owners": [
+      "rage::crAnimToleranceSimple"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0059F180: mov eax, dword ptr [ecx + 0x14]",
+      "0059F183: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 41 14 c2 0c 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(0);",
+      "Store(expected+12,4,eax);",
+      "Store(expected+4,4,eax);",
+      "Store(expected+8,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        12,
+        4
+      ],
+      [
+        4,
+        4
+      ],
+      [
+        8,
+        4
+      ]
+    ],
+    "rva": "0x0019F440",
+    "va": "0x0059F440",
+    "owners": [
+      "rage::crCreatureComponentMover",
+      "rage::crCreatureComponentSkeleton"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0059F440: xor eax, eax",
+      "0059F442: mov dword ptr [ecx + 0xc], eax",
+      "0059F445: mov dword ptr [ecx + 4], eax",
+      "0059F448: mov dword ptr [ecx + 8], eax",
+      "0059F44B: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "33 c0 89 41 0c 89 41 04 89 41 08 c3",
+    "body_size": 12
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+12,2));",
+      "eax=((eax)+(0x00000001u));",
+      "eax=((eax)<<(0x00000004u));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x001A1F00",
+    "va": "0x005A1F00",
+    "owners": [
+      "rage::crAnimChannelRawQuaternion",
+      "rage::crAnimChannelRawVector3"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005A1F00: movzx eax, word ptr [ecx + 0xc]",
+      "005A1F04: add eax, 1",
+      "005A1F07: shl eax, 4",
+      "005A1F0A: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b7 41 0c 83 c0 01 c1 e0 04 c3",
+    "body_size": 11
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+12,2));",
+      "eax=((eax)+(0x00000010u));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x001A2920",
+    "va": "0x005A2920",
+    "owners": [
+      "rage::crAnimChannelRawBool"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005A2920: movzx eax, word ptr [ecx + 0xc]",
+      "005A2924: add eax, 0x10",
+      "005A2927: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b7 41 0c 83 c0 10 c3",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(0xffffffffu);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x001AC220",
+    "va": "0x005AC220",
+    "owners": [
+      "rage::fiCachedDevice",
+      "rage::fiDevice",
+      "rage::fiDeviceMemory",
+      "rage::fiDeviceTcpIp"
+    ],
+    "reference_count": 7,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005AC220: or eax, 0xffffffff",
+      "005AC223: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 c8 ff c2 08 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 20,
+    "trace": [
+      "eax=(0xffffffffu);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x001AC230",
+    "va": "0x005AC230",
+    "owners": [
+      "rage::fiCachedDevice",
+      "rage::fiDevice",
+      "rage::fiDeviceMemory",
+      "rage::fiDeviceRelative",
+      "rage::fiDeviceTcpIp",
+      "rage::fiPackfile"
+    ],
+    "reference_count": 8,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005AC230: or eax, 0xffffffff",
+      "005AC233: ret 0x14"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 c8 ff c2 14 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(0x00000080u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x001AC850",
+    "va": "0x005AC850",
+    "owners": [
+      "rage::fiDeviceMemory"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005AC850: mov eax, 0x80",
+      "005AC855: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 80 00 00 00 c2 04 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(0xffffffffu);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x001BD3F0",
+    "va": "0x005BD3F0",
+    "owners": [
+      "rage::fiCachedDevice",
+      "rage::fiDevice",
+      "rage::fiDeviceMemory",
+      "rage::fiDeviceRelative",
+      "rage::fiDeviceTcpIp",
+      "rage::fiPackfile"
+    ],
+    "reference_count": 18,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005BD3F0: or eax, 0xffffffff",
+      "005BD3F3: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 c8 ff c2 04 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(0xffffffffu);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x001BDB10",
+    "va": "0x005BDB10",
+    "owners": [
+      "rage::fiDeviceTcpIp",
+      "rage::fiPackfile"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005BDB10: or eax, 0xffffffff",
+      "005BDB13: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "83 c8 ff c2 0c 00",
+    "body_size": 6
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(Load(expected+16,4));",
+      "edx=(Load(expected+20,4));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x001BDC60",
+    "va": "0x005BDC60",
+    "owners": [
+      "rage::fiPackfile"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005BDC60: mov eax, dword ptr [ecx + 0x10]",
+      "005BDC63: mov edx, dword ptr [ecx + 0x14]",
+      "005BDC66: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 41 10 8b 51 14 c2 04 00",
+    "body_size": 9
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(ecx);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x001CB1D0",
+    "va": "0x005CB1D0",
+    "owners": [
+      "rage::crMiniHeapAllocator",
+      "rage::fragHeapAllocator",
+      "rage::miniheapAllocator",
+      "rage::parRTStructure",
+      "rage::sysMemAllocator",
+      "rage::sysMemBuddyAllocator",
+      "rage::sysMemSimpleAllocator"
+    ],
+    "reference_count": 13,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "005CB1D0: mov eax, ecx",
+      "005CB1D2: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b c1 c2 04 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+28,2));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0022A2C0",
+    "va": "0x0062A2C0",
+    "owners": [
+      "rage::grcTexturePC"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0062A2C0: movzx eax, word ptr [ecx + 0x1c]",
+      "0062A2C4: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b7 41 1c c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+30,2));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0022A2D0",
+    "va": "0x0062A2D0",
+    "owners": [
+      "rage::grcTexturePC"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0062A2D0: movzx eax, word ptr [ecx + 0x1e]",
+      "0062A2D4: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b7 41 1e c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+39,1));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0022A2E0",
+    "va": "0x0062A2E0",
+    "owners": [
+      "rage::grcTexturePC"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0062A2E0: movzx eax, byte ptr [ecx + 0x27]",
+      "0062A2E4: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b6 41 27 c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+60,2));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0022A340",
+    "va": "0x0062A340",
+    "owners": [
+      "rage::grcRenderTargetPC"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0062A340: movzx eax, word ptr [ecx + 0x3c]",
+      "0062A344: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b7 41 3c c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+62,2));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0022A350",
+    "va": "0x0062A350",
+    "owners": [
+      "rage::grcRenderTargetPC"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0062A350: movzx eax, word ptr [ecx + 0x3e]",
+      "0062A354: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b7 41 3e c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(eax&0xffff0000u)|((0)&0xffffu);"
+    ],
+    "mask": 65535,
+    "writes": [],
+    "rva": "0x0024BB00",
+    "va": "0x0064BB00",
+    "owners": [
+      "rage::grmGeometry"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0064BB00: xor ax, ax",
+      "0064BB03: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "66 33 c0 c3",
+    "body_size": 4
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(eax&0xffff0000u)|((Load(expected+54,2))&0xffffu);"
+    ],
+    "mask": 65535,
+    "writes": [],
+    "rva": "0x0024C060",
+    "va": "0x0064C060",
+    "owners": [
+      "rage::grmGeometryQB"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0064C060: mov ax, word ptr [ecx + 0x36]",
+      "0064C064: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "66 8b 41 36 c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(eax&0xffff0000u)|((Load(expected+62,2))&0xffffu);"
+    ],
+    "mask": 65535,
+    "writes": [],
+    "rva": "0x0024EDB0",
+    "va": "0x0064EDB0",
+    "owners": [
+      "rage::grmGeometryQB"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0064EDB0: mov ax, word ptr [ecx + 0x3e]",
+      "0064EDB4: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "66 8b 41 3e c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+6,1,0x00000000u);",
+      "Store(expected+20,4,0xffffffffu);",
+      "eax=(eax&0xffffff00u)|((0x00000001u)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [
+      [
+        6,
+        1
+      ],
+      [
+        20,
+        4
+      ]
+    ],
+    "rva": "0x00258F20",
+    "va": "0x00658F20",
+    "owners": [
+      "rage::grcVertexBufferGCM"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00658F20: mov byte ptr [ecx + 6], 0",
+      "00658F24: mov dword ptr [ecx + 0x14], 0xffffffff",
+      "00658F2B: mov al, 1",
+      "00658F2D: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "c6 41 06 00 c7 41 14 ff ff ff ff b0 01 c3",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+4,1));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00286780",
+    "va": "0x00686780",
+    "owners": [
+      "rage::phBound",
+      "rage::phBoundBVH",
+      "rage::phBoundBox",
+      "rage::phBoundCapsule",
+      "rage::phBoundComposite",
+      "rage::phBoundCurvedGeometry",
+      "rage::phBoundGeomCullable",
+      "rage::phBoundGeometry",
+      "rage::phBoundGrid",
+      "rage::phBoundOctree",
+      "rage::phBoundPolyhedron",
+      "rage::phBoundQuadtree",
+      "rage::phBoundRibbon",
+      "rage::phBoundSphere",
+      "rage::phBoundSurface",
+      "rage::phBoundTaperedCapsule"
+    ],
+    "reference_count": 16,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00686780: movzx eax, byte ptr [ecx + 4]",
+      "00686784: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b6 41 04 c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(Load(expected+208,4));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0028E0C0",
+    "va": "0x0068E0C0",
+    "owners": [
+      "rage::phBoundCapsule"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0068E0C0: mov eax, dword ptr [ecx + 0xd0]",
+      "0068E0C6: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 81 d0 00 00 00 c2 04 00",
+    "body_size": 9
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(args[0]);",
+      "Store(expected+208,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        208,
+        4
+      ]
+    ],
+    "rva": "0x0028E0D0",
+    "va": "0x0068E0D0",
+    "owners": [
+      "rage::phBoundCapsule"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0068E0D0: mov eax, dword ptr [esp + 4]",
+      "0068E0D4: mov dword ptr [ecx + 0xd0], eax",
+      "0068E0DA: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 04 89 81 d0 00 00 00 c2 08 00",
+    "body_size": 13
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "Store(expected+24,4,0x00000001u);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        24,
+        4
+      ]
+    ],
+    "rva": "0x0029AE90",
+    "va": "0x0069AE90",
+    "owners": [
+      "rage::phSleep"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0069AE90: mov dword ptr [ecx + 0x18], 1",
+      "0069AE97: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "c7 41 18 01 00 00 00 c3",
+    "body_size": 8
+  },
+  {
+    "kind": "float_zero",
+    "pop": 4,
+    "trace": [],
+    "mask": 4294967295,
+    "expected_float": 0,
+    "rva": "0x0029ED90",
+    "va": "0x0069ED90",
+    "owners": [
+      "rage::phCollider",
+      "rage::phConstrainedCollider"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0069ED90: fldz ",
+      "0069ED92: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "d9 ee c2 04 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(eax&0xffff0000u)|((Load(expected+24,2))&0xffffu);"
+    ],
+    "mask": 65535,
+    "writes": [],
+    "rva": "0x002A1F30",
+    "va": "0x006A1F30",
+    "owners": [
+      "rage::btAxisSweep1",
+      "rage::btImmediateModeBroadphase",
+      "rage::btNxN",
+      "rage::btSpatialHash"
+    ],
+    "reference_count": 4,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "006A1F30: mov ax, word ptr [ecx + 0x18]",
+      "006A1F34: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "66 8b 41 18 c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+216,1));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x002B8C50",
+    "va": "0x006B8C50",
+    "owners": [
+      "rage::phBoundBVH",
+      "rage::phBoundCurvedGeometry",
+      "rage::phBoundGeomCullable",
+      "rage::phBoundGeometry",
+      "rage::phBoundOctree",
+      "rage::phBoundQuadtree"
+    ],
+    "reference_count": 6,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "006B8C50: movzx eax, byte ptr [ecx + 0xd8]",
+      "006B8C57: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f b6 81 d8 00 00 00 c3",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+36,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        36,
+        4
+      ]
+    ],
+    "rva": "0x002BFBE0",
+    "va": "0x006BFBE0",
+    "owners": [
+      "rage::phArchetypeDamp",
+      "rage::phArchetypePhys"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "006BFBE0: movss xmm0, dword ptr [esp + 4]",
+      "006BFBE6: movss dword ptr [ecx + 0x24], xmm0",
+      "006BFBEB: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 24 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 24,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x002C1350",
+    "va": "0x006C1350",
+    "owners": [
+      "rage::TriangleShape",
+      "rage::phBound",
+      "rage::phBoundBVH",
+      "rage::phBoundSurface"
+    ],
+    "reference_count": 4,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "006C1350: xor al, al",
+      "006C1352: ret 0x18"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "32 c0 c2 18 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(Load(expected+144,4));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x002D4870",
+    "va": "0x006D4870",
+    "owners": [
+      "rage::phBoundSphere"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "006D4870: mov eax, dword ptr [ecx + 0x90]",
+      "006D4876: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 81 90 00 00 00 c2 04 00",
+    "body_size": 9
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(args[0]);",
+      "Store(expected+144,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        144,
+        4
+      ]
+    ],
+    "rva": "0x002D4880",
+    "va": "0x006D4880",
+    "owners": [
+      "rage::phBoundSphere"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "006D4880: mov eax, dword ptr [esp + 4]",
+      "006D4884: mov dword ptr [ecx + 0x90], eax",
+      "006D488A: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 04 89 81 90 00 00 00 c2 08 00",
+    "body_size": 13
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(Load(expected+544,4));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x002D7650",
+    "va": "0x006D7650",
+    "owners": [
+      "rage::phBoundBox"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "006D7650: mov eax, dword ptr [ecx + 0x220]",
+      "006D7656: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 81 20 02 00 00 c2 04 00",
+    "body_size": 9
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(args[0]);",
+      "Store(expected+544,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        544,
+        4
+      ]
+    ],
+    "rva": "0x002D7670",
+    "va": "0x006D7670",
+    "owners": [
+      "rage::phBoundBox"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "006D7670: mov eax, dword ptr [esp + 4]",
+      "006D7674: mov dword ptr [ecx + 0x220], eax",
+      "006D767A: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 04 89 81 20 02 00 00 c2 08 00",
+    "body_size": 13
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "xmm0=0;",
+      "Store(expected+408,4,xmm0);",
+      "Store(expected+404,4,xmm0);",
+      "Store(expected+400,4,xmm0);",
+      "Store(expected+392,4,xmm0);",
+      "Store(expected+388,4,xmm0);",
+      "Store(expected+384,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        408,
+        4
+      ],
+      [
+        404,
+        4
+      ],
+      [
+        400,
+        4
+      ],
+      [
+        392,
+        4
+      ],
+      [
+        388,
+        4
+      ],
+      [
+        384,
+        4
+      ]
+    ],
+    "rva": "0x002FE5E0",
+    "va": "0x006FE5E0",
+    "owners": [
+      "rage::phJoint",
+      "rage::phJoint1Dof",
+      "rage::phJoint3Dof",
+      "rage::phPrismaticJoint"
+    ],
+    "reference_count": 4,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "006FE5E0: xorps xmm0, xmm0",
+      "006FE5E3: movss dword ptr [ecx + 0x198], xmm0",
+      "006FE5EB: movss dword ptr [ecx + 0x194], xmm0",
+      "006FE5F3: movss dword ptr [ecx + 0x190], xmm0",
+      "006FE5FB: movss dword ptr [ecx + 0x188], xmm0",
+      "006FE603: movss dword ptr [ecx + 0x184], xmm0",
+      "006FE60B: movss dword ptr [ecx + 0x180], xmm0",
+      "006FE613: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "0f 57 c0 f3 0f 11 81 98 01 00 00 f3 0f 11 81 94 01 00 00 f3 0f 11 81 90 01 00 00 f3 0f 11 81 88 01 00 00 f3 0f 11 81 84 01 00 00 f3 0f 11 81 80 01 00 00 c3",
+    "body_size": 52
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+16,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        16,
+        4
+      ]
+    ],
+    "rva": "0x00303540",
+    "va": "0x00703540",
+    "owners": [
+      "rage::spdApical"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00703540: movss xmm0, dword ptr [esp + 4]",
+      "00703546: movss dword ptr [ecx + 0x10], xmm0",
+      "0070354B: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 41 10 c2 04 00",
+    "body_size": 14
+  },
+  {
+    "kind": "float_zero",
+    "pop": 20,
+    "trace": [],
+    "mask": 4294967295,
+    "expected_float": 0,
+    "rva": "0x00304070",
+    "va": "0x00704070",
+    "owners": [
+      "rage::cvCurve<rage::Vector3>"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00704070: fldz ",
+      "00704072: ret 0x14"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "d9 ee c2 14 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 24,
+    "trace": [],
+    "mask": 0,
+    "writes": [],
+    "rva": "0x00304080",
+    "va": "0x00704080",
+    "owners": [
+      "rage::cvCurve<rage::Vector3>",
+      "rage::cvCurveCatRom"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00704080: ret 0x18"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "c2 18 00",
+    "body_size": 3
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(Load(expected+256,4));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00304740",
+    "va": "0x00704740",
+    "owners": [
+      "rage::phBoundTaperedCapsule"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00704740: mov eax, dword ptr [ecx + 0x100]",
+      "00704746: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 81 00 01 00 00 c2 04 00",
+    "body_size": 9
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(args[0]);",
+      "Store(expected+256,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        256,
+        4
+      ]
+    ],
+    "rva": "0x00304750",
+    "va": "0x00704750",
+    "owners": [
+      "rage::phBoundTaperedCapsule"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00704750: mov eax, dword ptr [esp + 4]",
+      "00704754: mov dword ptr [ecx + 0x100], eax",
+      "0070475A: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 04 89 81 00 01 00 00 c2 08 00",
+    "body_size": 13
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(Load(expected+2368,4));",
+      "eax=((eax)+(0x00000002u));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x0030DD40",
+    "va": "0x0070DD40",
+    "owners": [
+      "rage::phRopeContact"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0070DD40: mov eax, dword ptr [ecx + 0x940]",
+      "0070DD46: add eax, 2",
+      "0070DD49: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 81 40 09 00 00 83 c0 02 c3",
+    "body_size": 10
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "xmm0=args[0];",
+      "Store(expected+624,4,xmm0);",
+      "Store(expected+632,4,xmm0);",
+      "xmm0=args[1];",
+      "Store(expected+628,4,xmm0);",
+      "Store(expected+636,4,xmm0);"
+    ],
+    "mask": 0,
+    "writes": [
+      [
+        624,
+        4
+      ],
+      [
+        632,
+        4
+      ],
+      [
+        628,
+        4
+      ],
+      [
+        636,
+        4
+      ]
+    ],
+    "rva": "0x003139B0",
+    "va": "0x007139B0",
+    "owners": [
+      "rage::phPrismaticJoint"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "007139B0: movss xmm0, dword ptr [esp + 4]",
+      "007139B6: movss dword ptr [ecx + 0x270], xmm0",
+      "007139BE: movss dword ptr [ecx + 0x278], xmm0",
+      "007139C6: movss xmm0, dword ptr [esp + 8]",
+      "007139CC: movss dword ptr [ecx + 0x274], xmm0",
+      "007139D4: movss dword ptr [ecx + 0x27c], xmm0",
+      "007139DC: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "f3 0f 10 44 24 04 f3 0f 11 81 70 02 00 00 f3 0f 11 81 78 02 00 00 f3 0f 10 44 24 08 f3 0f 11 81 74 02 00 00 f3 0f 11 81 7c 02 00 00 c2 08 00",
+    "body_size": 47
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(Load(expected+180,4));"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00328C70",
+    "va": "0x00728C70",
+    "owners": [
+      "rage::phBoundRibbon"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00728C70: mov eax, dword ptr [ecx + 0xb4]",
+      "00728C76: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 81 b4 00 00 00 c2 04 00",
+    "body_size": 9
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 8,
+    "trace": [
+      "eax=(args[0]);",
+      "Store(expected+180,4,eax);"
+    ],
+    "mask": 4294967295,
+    "writes": [
+      [
+        180,
+        4
+      ]
+    ],
+    "rva": "0x00328C80",
+    "va": "0x00728C80",
+    "owners": [
+      "rage::phBoundRibbon"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00728C80: mov eax, dword ptr [esp + 4]",
+      "00728C84: mov dword ptr [ecx + 0xb4], eax",
+      "00728C8A: ret 8"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b 44 24 04 89 81 b4 00 00 00 c2 08 00",
+    "body_size": 13
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(eax&0xffff0000u)|((Load(expected+20,2))&0xffffu);"
+    ],
+    "mask": 65535,
+    "writes": [],
+    "rva": "0x0033AB30",
+    "va": "0x0073AB30",
+    "owners": [
+      "rage::phLevelBroadPhase"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0073AB30: mov ax, word ptr [ecx + 0x14]",
+      "0073AB34: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "66 8b 41 14 c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(eax&0xffff0000u)|((Load(expected+64,2))&0xffffu);"
+    ],
+    "mask": 65535,
+    "writes": [],
+    "rva": "0x0033DE50",
+    "va": "0x0073DE50",
+    "owners": [
+      "rage::btAxisSweep3"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "0073DE50: mov ax, word ptr [ecx + 0x40]",
+      "0073DE54: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "66 8b 41 40 c3",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 12,
+    "trace": [
+      "eax=(0x00000001u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x00379D80",
+    "va": "0x00779D80",
+    "owners": [
+      "rage::netVSocket"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00779D80: mov eax, 1",
+      "00779D85: ret 0xc"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b8 01 00 00 00 c2 0c 00",
+    "body_size": 8
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(eax&0xffffff00u)|((0x00000001u)&0xffu);"
+    ],
+    "mask": 255,
+    "writes": [],
+    "rva": "0x00384520",
+    "va": "0x00784520",
+    "owners": [
+      "rage::btAxisSweep1",
+      "rage::btImmediateModeBroadphase",
+      "rage::btNxN",
+      "rage::btSpatialHash",
+      "rage::fiBinTokenizer",
+      "rage::fragInst",
+      "rage::fragInstNM",
+      "rage::phBoundBVH",
+      "rage::phBoundBox",
+      "rage::phBoundCurvedGeometry",
+      "rage::phBoundGeomCullable",
+      "rage::phBoundGeometry",
+      "rage::phBoundOctree",
+      "rage::phBoundPolyhedron",
+      "rage::phBoundQuadtree",
+      "rage::phBroadPhase",
+      "rage::phInst",
+      "rage::phInstBreakable",
+      "rage::phLevelBroadPhase",
+      "rage::sysMemAllocator"
+    ],
+    "reference_count": 21,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00784520: mov al, 1",
+      "00784522: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "b0 01 c2 04 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 4,
+    "trace": [
+      "eax=(ecx);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x007044E0",
+    "va": "0x00B044E0",
+    "owners": [
+      "rage::sysEmergencyAllocator"
+    ],
+    "reference_count": 2,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00B044E0: mov eax, ecx",
+      "00B044E2: ret 4"
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8b c1 c2 04 00",
+    "body_size": 5
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(ecx+131124u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x008F6A10",
+    "va": "0x00CF6A10",
+    "owners": [
+      "rage::CWMStreamReader"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00CF6A10: lea eax, [ecx + 0x20034]",
+      "00CF6A16: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8d 81 34 00 02 00 c3",
+    "body_size": 7
+  },
+  {
+    "kind": "scalar_fixture",
+    "pop": 0,
+    "trace": [
+      "eax=(ecx+131188u);"
+    ],
+    "mask": 4294967295,
+    "writes": [],
+    "rva": "0x008F6A20",
+    "va": "0x00CF6A20",
+    "owners": [
+      "rage::CWMStreamReader"
+    ],
+    "reference_count": 1,
+    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "classification": "safe scalar candidate not runtime checked",
+    "complete_linear_body": true,
+    "instructions": [
+      "00CF6A20: lea eax, [ecx + 0x20074]",
+      "00CF6A26: ret "
+    ],
+    "direct_calls": [],
+    "branches": [],
+    "global_operands": [],
+    "runtime_tested": false,
+    "enabled": false,
+    "entry_bytes": "8d 81 74 00 02 00 c3",
+    "body_size": 7
+  }
+]

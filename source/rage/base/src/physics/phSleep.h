@@ -32,7 +32,7 @@ namespace reiv { namespace memory_map { namespace type_210cdffabc93189b {
 inline constexpr std::uint32_t pending_hook_count = 3u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x00697e40u, 0x00297e40u, 0x00ebbce0u, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x0069ae90u, 0x0029ae90u, 0x00ebbce0u, 1, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0069ae90u, 0x0029ae90u, 0x00ebbce0u, 1, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/PendingAnalysis/rage-art/evidence/runtime-summary.json; 64 isolated-storage calls; straight-line scalar body; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction; integer return validates only mask-defined EAX bits; EDX/high return and class semantics not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x0069b1f0u, 0x0029b1f0u, 0x00ebbce0u, 2, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;

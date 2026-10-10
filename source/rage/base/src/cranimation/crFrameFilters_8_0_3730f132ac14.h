@@ -30,7 +30,7 @@ namespace reiv { namespace memory_map { namespace type_decec30ae11f9536 {
 inline constexpr std::uint32_t pending_hook_count = 5u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x005129d0u, 0x001129d0u, 0x00eb6f70u, 0, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
-    {0x0050b6e0u, 0x0010b6e0u, 0x00eb6f70u, 1, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
+    {0x0050b6e0u, 0x0010b6e0u, 0x00eb6f70u, 1, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/PendingAnalysis/rage-art/evidence/runtime-summary.json; 64 isolated-storage calls; straight-line scalar body; complete entry bytes checked; full object guard; synthetic x86 convention only; not original class ABI or reconstruction; integer return validates only mask-defined EAX bits; EDX/high return and class semantics not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x0050b6f0u, 0x0010b6f0u, 0x00eb6f70u, 2, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00513360u, 0x00113360u, 0x00eb6f70u, 3, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x005133b0u, 0x001133b0u, 0x00eb6f70u, 4, "FUN_005133b0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},

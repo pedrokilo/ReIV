@@ -1,0 +1,93 @@
+[info][22:22:02.768][DebugLog.cpp:57]: Debug console always enabled | visible=true writable=true hwnd=0x00C71B20
+[info][22:22:02.769][ReIV.cpp:41]: ReIV bootstrap loaded | GTA IV 1.0.7.0 | x86
+[info][22:22:02.805][ReIV.cpp:49]: CDynamicEntity::GetBoneMatrix original binding available | RVA 0x005C7710 | root-bone historical test passed
+[debug][22:22:02.806][GetBoneMatrixProbe.h:50]: GetBoneMatrix test enabled: waiting for a live player
+[info][22:22:02.821][ReIV.cpp:83]: atStringHash bank passed; replacement installed
+[debug][22:22:02.844][ReIV.cpp:85]: Runtime catalog exported to ReIV-runtime-hooks.csv
+[info][22:22:18.881][ReIV.cpp:27]: SDK gameLoadEvent received
+[info][22:22:31.736][PendingScalarProbe.h:294]: Pending scalar RVA 0x00004B90 calls=64 failures=0
+[info][22:22:31.737][PendingScalarProbe.h:294]: Pending scalar RVA 0x0003B5B0 calls=64 failures=0
+[info][22:22:31.737][PendingScalarProbe.h:294]: Pending scalar RVA 0x00053AD0 calls=64 failures=0
+[info][22:22:31.738][PendingScalarProbe.h:294]: Pending scalar RVA 0x000C4C00 calls=64 failures=0
+[info][22:22:31.738][PendingScalarProbe.h:294]: Pending scalar RVA 0x000C5030 calls=64 failures=0
+[info][22:22:31.738][PendingScalarProbe.h:294]: Pending scalar RVA 0x000E76B0 calls=64 failures=0
+[info][22:22:31.739][PendingScalarProbe.h:294]: Pending scalar RVA 0x0010B6E0 calls=64 failures=0
+[info][22:22:31.739][PendingScalarProbe.h:294]: Pending scalar RVA 0x00110B90 calls=64 failures=0
+[info][22:22:31.739][PendingScalarProbe.h:294]: Pending scalar RVA 0x001119F0 calls=64 failures=0
+[info][22:22:31.740][PendingScalarProbe.h:294]: Pending scalar RVA 0x00111B50 calls=64 failures=0
+[info][22:22:31.740][PendingScalarProbe.h:294]: Pending scalar RVA 0x00115F90 calls=64 failures=0
+[info][22:22:31.740][PendingScalarProbe.h:294]: Pending scalar RVA 0x0011EF10 calls=64 failures=0
+[info][22:22:31.740][PendingScalarProbe.h:294]: Pending scalar RVA 0x0011EF20 calls=64 failures=0
+[info][22:22:31.741][PendingScalarProbe.h:294]: Pending scalar RVA 0x00120110 calls=64 failures=0
+[info][22:22:31.741][PendingScalarProbe.h:294]: Pending scalar RVA 0x00154860 calls=64 failures=0
+[info][22:22:31.741][PendingScalarProbe.h:294]: Pending scalar RVA 0x00154920 calls=64 failures=0
+[info][22:22:31.741][PendingScalarProbe.h:294]: Pending scalar RVA 0x001549E0 calls=64 failures=0
+[info][22:22:31.741][PendingScalarProbe.h:294]: Pending scalar RVA 0x0015A860 calls=64 failures=0
+[info][22:22:31.741][PendingScalarProbe.h:294]: Pending scalar RVA 0x0015A8D0 calls=64 failures=0
+[info][22:22:31.741][PendingScalarProbe.h:294]: Pending scalar RVA 0x0015A8E0 calls=64 failures=0
+[info][22:22:31.742][PendingScalarProbe.h:294]: Pending scalar RVA 0x00167170 calls=64 failures=0
+[info][22:22:31.742][PendingScalarProbe.h:294]: Pending scalar RVA 0x001881F0 calls=64 failures=0
+[info][22:22:31.742][PendingScalarProbe.h:294]: Pending scalar RVA 0x0018C350 calls=64 failures=0
+[info][22:22:31.742][PendingScalarProbe.h:294]: Pending scalar RVA 0x0018C360 calls=64 failures=0
+[info][22:22:31.742][PendingScalarProbe.h:294]: Pending scalar RVA 0x0018C380 calls=64 failures=0
+[info][22:22:31.742][PendingScalarProbe.h:294]: Pending scalar RVA 0x0018C5C0 calls=64 failures=0
+[info][22:22:31.742][PendingScalarProbe.h:294]: Pending scalar RVA 0x0018C5D0 calls=64 failures=0
+[info][22:22:31.742][PendingScalarProbe.h:294]: Pending scalar RVA 0x0018C600 calls=64 failures=0
+[info][22:22:31.742][PendingScalarProbe.h:294]: Pending scalar RVA 0x0019B9D0 calls=64 failures=0
+[info][22:22:31.744][PendingScalarProbe.h:294]: Pending scalar RVA 0x0019BC80 calls=64 failures=0
+[info][22:22:31.744][PendingScalarProbe.h:294]: Pending scalar RVA 0x0019F0F0 calls=64 failures=0
+[info][22:22:31.744][PendingScalarProbe.h:294]: Pending scalar RVA 0x0019F100 calls=64 failures=0
+[info][22:22:31.744][PendingScalarProbe.h:294]: Pending scalar RVA 0x0019F170 calls=64 failures=0
+[info][22:22:31.744][PendingScalarProbe.h:294]: Pending scalar RVA 0x0019F180 calls=64 failures=0
+[info][22:22:31.744][PendingScalarProbe.h:294]: Pending scalar RVA 0x0019F440 calls=64 failures=0
+[info][22:22:31.745][PendingScalarProbe.h:294]: Pending scalar RVA 0x001A1F00 calls=64 failures=0
+[info][22:22:31.745][PendingScalarProbe.h:294]: Pending scalar RVA 0x001A2920 calls=64 failures=0
+[info][22:22:31.745][PendingScalarProbe.h:294]: Pending scalar RVA 0x001AC220 calls=64 failures=0
+[info][22:22:31.745][PendingScalarProbe.h:294]: Pending scalar RVA 0x001AC230 calls=64 failures=0
+[info][22:22:31.745][PendingScalarProbe.h:294]: Pending scalar RVA 0x001AC850 calls=64 failures=0
+[info][22:22:31.745][PendingScalarProbe.h:294]: Pending scalar RVA 0x001BD3F0 calls=64 failures=0
+[info][22:22:31.746][PendingScalarProbe.h:294]: Pending scalar RVA 0x001BDB10 calls=64 failures=0
+[info][22:22:31.746][PendingScalarProbe.h:294]: Pending scalar RVA 0x001BDC60 calls=64 failures=0
+[info][22:22:31.746][PendingScalarProbe.h:294]: Pending scalar RVA 0x001CB1D0 calls=64 failures=0
+[info][22:22:31.747][PendingScalarProbe.h:294]: Pending scalar RVA 0x0022A2C0 calls=64 failures=0
+[info][22:22:31.747][PendingScalarProbe.h:294]: Pending scalar RVA 0x0022A2D0 calls=64 failures=0
+[info][22:22:31.747][PendingScalarProbe.h:294]: Pending scalar RVA 0x0022A2E0 calls=64 failures=0
+[info][22:22:31.747][PendingScalarProbe.h:294]: Pending scalar RVA 0x0022A340 calls=64 failures=0
+[info][22:22:31.749][PendingScalarProbe.h:294]: Pending scalar RVA 0x0022A350 calls=64 failures=0
+[info][22:22:31.749][PendingScalarProbe.h:294]: Pending scalar RVA 0x0024BB00 calls=64 failures=0
+[info][22:22:31.749][PendingScalarProbe.h:294]: Pending scalar RVA 0x0024C060 calls=64 failures=0
+[info][22:22:31.750][PendingScalarProbe.h:294]: Pending scalar RVA 0x0024EDB0 calls=64 failures=0
+[info][22:22:31.750][PendingScalarProbe.h:294]: Pending scalar RVA 0x00258F20 calls=64 failures=0
+[info][22:22:31.751][PendingScalarProbe.h:294]: Pending scalar RVA 0x00286780 calls=64 failures=0
+[info][22:22:31.751][PendingScalarProbe.h:294]: Pending scalar RVA 0x0028E0C0 calls=64 failures=0
+[info][22:22:31.751][PendingScalarProbe.h:294]: Pending scalar RVA 0x0028E0D0 calls=64 failures=0
+[info][22:22:31.751][PendingScalarProbe.h:294]: Pending scalar RVA 0x0029AE90 calls=64 failures=0
+[info][22:22:31.753][PendingScalarProbe.h:294]: Pending scalar RVA 0x0029ED90 calls=64 failures=0
+[info][22:22:31.753][PendingScalarProbe.h:294]: Pending scalar RVA 0x002A1F30 calls=64 failures=0
+[info][22:22:31.753][PendingScalarProbe.h:294]: Pending scalar RVA 0x002B8C50 calls=64 failures=0
+[info][22:22:31.754][PendingScalarProbe.h:294]: Pending scalar RVA 0x002BFBE0 calls=64 failures=0
+[info][22:22:31.754][PendingScalarProbe.h:294]: Pending scalar RVA 0x002C1350 calls=64 failures=0
+[info][22:22:31.754][PendingScalarProbe.h:294]: Pending scalar RVA 0x002D4870 calls=64 failures=0
+[info][22:22:31.755][PendingScalarProbe.h:294]: Pending scalar RVA 0x002D4880 calls=64 failures=0
+[info][22:22:31.755][PendingScalarProbe.h:294]: Pending scalar RVA 0x002D7650 calls=64 failures=0
+[info][22:22:31.756][PendingScalarProbe.h:294]: Pending scalar RVA 0x002D7670 calls=64 failures=0
+[info][22:22:31.756][PendingScalarProbe.h:294]: Pending scalar RVA 0x002FE5E0 calls=64 failures=0
+[info][22:22:31.756][PendingScalarProbe.h:294]: Pending scalar RVA 0x00303540 calls=64 failures=0
+[info][22:22:31.757][PendingScalarProbe.h:294]: Pending scalar RVA 0x00304070 calls=64 failures=0
+[info][22:22:31.757][PendingScalarProbe.h:294]: Pending scalar RVA 0x00304080 calls=64 failures=0
+[info][22:22:31.757][PendingScalarProbe.h:294]: Pending scalar RVA 0x00304740 calls=64 failures=0
+[info][22:22:31.758][PendingScalarProbe.h:294]: Pending scalar RVA 0x00304750 calls=64 failures=0
+[info][22:22:31.758][PendingScalarProbe.h:294]: Pending scalar RVA 0x0030DD40 calls=64 failures=0
+[info][22:22:31.758][PendingScalarProbe.h:294]: Pending scalar RVA 0x003139B0 calls=64 failures=0
+[info][22:22:31.758][PendingScalarProbe.h:294]: Pending scalar RVA 0x00328C70 calls=64 failures=0
+[info][22:22:31.759][PendingScalarProbe.h:294]: Pending scalar RVA 0x00328C80 calls=64 failures=0
+[info][22:22:31.759][PendingScalarProbe.h:294]: Pending scalar RVA 0x0033AB30 calls=64 failures=0
+[info][22:22:31.759][PendingScalarProbe.h:294]: Pending scalar RVA 0x0033DE50 calls=64 failures=0
+[info][22:22:31.759][PendingScalarProbe.h:294]: Pending scalar RVA 0x00379D80 calls=64 failures=0
+[info][22:22:31.760][PendingScalarProbe.h:294]: Pending scalar RVA 0x00384520 calls=64 failures=0
+[info][22:22:31.760][PendingScalarProbe.h:294]: Pending scalar RVA 0x007044E0 calls=64 failures=0
+[info][22:22:31.760][PendingScalarProbe.h:294]: Pending scalar RVA 0x008F6A10 calls=64 failures=0
+[info][22:22:31.760][PendingScalarProbe.h:294]: Pending scalar RVA 0x008F6A20 calls=64 failures=0
+[info][22:22:43.283][GetBoneMatrixProbe.h:64]: GetBoneMatrix PASSED | calls=64 failures=0 exceptions=0 | entity=0x073D96D0 matrix=0x089F1CE0
+[info][22:22:45.381][ReIV.cpp:32]: SDK ingameStartupEvent received
+[info][22:22:46.018][ReIV.cpp:91]: ReIV process detach

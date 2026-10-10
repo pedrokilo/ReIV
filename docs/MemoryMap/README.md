@@ -113,6 +113,10 @@ Los nombres anónimos, `FUN_*` y `virtual_entry_*` se conservan como tales. No s
 
 Resultados de los bancos de llamadas y auditoría runtime: [game](GameValidation.md), [audio](AudioValidation.md), [animación](AnimationValidation.md), [NMutils](NMutilsValidation.md), [rage](RageValidation.md) y [ART](ARTValidation.md). Una coincidencia de dirección, una llamada de cuerpo simple y una reconstrucción son estados distintos.
 
+La [pasada adicional de pendientes](PendingAnalysis.md) contiene la cobertura actual, los nuevos bancos, el reanálisis de Ghidra y los callbacks recuperados para tipos antes desconocidos. Sus totales posteriores complementan los reportes históricos anteriores.
+
+La [pasada de funciones complejas](ComplexValidation.md) añade fixtures con ramas, objetos anidados y modos de destructor sin liberación; distingue esas pruebas restringidas de la validación completa de funciones.
+
 Con el proyecto y Ghidra locales disponibles:
 
 ```powershell

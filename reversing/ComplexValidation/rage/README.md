@@ -1,0 +1,5 @@
+# RAGE complete-CFG scalar fixtures
+
+The generator proves every reachable instruction in a forward-only DAG within 256 bytes /64 nodes. It rejects backward/indirect branches, calls, globals/TLS, pointer chasing, unsupported flags/registers, unknown operand bits and inconsistent RET cleanup. All paths terminate RET. Entire byte envelopes are checked before native execution. `fixture-scope.json` lists each CFG node/successor, exact bytes, field boundaries, EAX defined-bit mask and expected scalar trace. Saved Ghidra pseudocode is correlated in decompilation.json and is secondary to the canonical machine bytes.
+
+64 samples mix small switch inputs, negative/boundary values, zero/nonzero/equal/unequal fields and varied isolated 4096-byte objects. Full buffer guards and defined EAX bits are checked. `expected_nodes_mask` records nodes traversed by the independent expected scalar model; it is not instrumentation of the original function. A mathematically impossible branch may remain unvisited. Original class ABI and gameplay behavior are not established. All functions remain unreconstructed/disabled.

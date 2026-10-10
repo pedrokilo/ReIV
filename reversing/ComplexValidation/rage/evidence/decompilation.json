@@ -1,0 +1,176 @@
+[
+  {
+    "address": "0x4ca290",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004ca290(int param_1)\r\n\r\n{\r\n  if (param_1 < 4) {\r\n    if (param_1 == 3) {\r\n      return 0x2000000d;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 0x1000000e;\r\n    }\r\n    if (param_1 == 2) {\r\n      return 0x1000000f;\r\n    }\r\n  }\r\n  else if (param_1 == 0xfffe) {\r\n    return 0x20000037;\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-003.json"
+  },
+  {
+    "address": "0x4ca440",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004ca440(int param_1)\r\n\r\n{\r\n  if (param_1 < 4) {\r\n    if (param_1 == 3) {\r\n      return 0;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 1;\r\n    }\r\n    if (param_1 == 2) {\r\n      return 2;\r\n    }\r\n  }\r\n  else if (param_1 == 0xfffe) {\r\n    return 3;\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-003.json"
+  },
+  {
+    "address": "0x4ca6e0",
+    "status": "ok",
+    "pseudocode": "\r\nint FUN_004ca6e0(uint param_1)\r\n\r\n{\r\n  int in_ECX;\r\n  \r\n  if (param_1 < *(uint *)(in_ECX + 8)) {\r\n    return param_1 * 0x160 + *(int *)(in_ECX + 0xc);\r\n  }\r\n  return 0;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-003.json"
+  },
+  {
+    "address": "0x4cd2f0",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004cd2f0(int param_1)\r\n\r\n{\r\n  if (param_1 < 4) {\r\n    if (param_1 == 3) {\r\n      return 0x2000000d;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 0x10000026;\r\n    }\r\n    if (param_1 == 2) {\r\n      return 0x10000027;\r\n    }\r\n  }\r\n  else if (param_1 == 0xfffe) {\r\n    return 0x2000003e;\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4cd4b0",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004cd4b0(int param_1)\r\n\r\n{\r\n  if (param_1 < 4) {\r\n    if (param_1 == 3) {\r\n      return 1;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 2;\r\n    }\r\n    if (param_1 == 2) {\r\n      return 3;\r\n    }\r\n  }\r\n  else if (param_1 == 0xfffe) {\r\n    return 0;\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4cd810",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004cd810(int param_1)\r\n\r\n{\r\n  if (param_1 < 7) {\r\n    if (param_1 == 6) {\r\n      return 0x2000000d;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 0x10000027;\r\n    }\r\n    if (param_1 == 3) {\r\n      return 0x10000026;\r\n    }\r\n  }\r\n  else if (param_1 == 0xfffe) {\r\n    return 0x20000037;\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4cd9c0",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004cd9c0(int param_1)\r\n\r\n{\r\n  if (param_1 < 7) {\r\n    if (param_1 == 6) {\r\n      return 2;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 1;\r\n    }\r\n    if (param_1 == 3) {\r\n      return 0;\r\n    }\r\n  }\r\n  else if (param_1 == 0xfffe) {\r\n    return 3;\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4cdbc0",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004cdbc0(int param_1)\r\n\r\n{\r\n  if (param_1 < 6) {\r\n    if (param_1 == 5) {\r\n      return 0x2000000d;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 0x10000026;\r\n    }\r\n    if (param_1 == 3) {\r\n      return 0x10000027;\r\n    }\r\n  }\r\n  else if (param_1 == 0xfffe) {\r\n    return 0x20000037;\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4cdc20",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004cdc20(int param_1)\r\n\r\n{\r\n  if (param_1 < 6) {\r\n    if (param_1 == 5) {\r\n      return 2;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 0;\r\n    }\r\n    if (param_1 == 3) {\r\n      return 1;\r\n    }\r\n  }\r\n  else if (param_1 == 0xfffe) {\r\n    return 3;\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4cddd0",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004cddd0(int param_1)\r\n\r\n{\r\n  if (param_1 < 7) {\r\n    if (param_1 == 6) {\r\n      return 0x2000000d;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 0x10000026;\r\n    }\r\n    if (param_1 == 3) {\r\n      return 0x10000027;\r\n    }\r\n  }\r\n  else if (param_1 == 0xfffe) {\r\n    return 0x20000037;\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4cde30",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004cde30(int param_1)\r\n\r\n{\r\n  if (param_1 < 7) {\r\n    if (param_1 == 6) {\r\n      return 2;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 0;\r\n    }\r\n    if (param_1 == 3) {\r\n      return 1;\r\n    }\r\n  }\r\n  else if (param_1 == 0xfffe) {\r\n    return 3;\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4ce620",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004ce620(int param_1)\r\n\r\n{\r\n  if (param_1 < 8) {\r\n    if (param_1 == 7) {\r\n      return 1;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 3;\r\n    }\r\n    if (param_1 == 6) {\r\n      return 0;\r\n    }\r\n  }\r\n  else {\r\n    if (param_1 == 8) {\r\n      return 2;\r\n    }\r\n    if (param_1 == 0xfffe) {\r\n      return 4;\r\n    }\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4ce890",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004ce890(int param_1)\r\n\r\n{\r\n  if (param_1 < 8) {\r\n    if (param_1 == 7) {\r\n      return 0x10000026;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 0x2000001d;\r\n    }\r\n    if (param_1 == 6) {\r\n      return 0x10000027;\r\n    }\r\n  }\r\n  else {\r\n    if (param_1 == 8) {\r\n      return 0x2000000d;\r\n    }\r\n    if (param_1 == 0xfffe) {\r\n      return 0x20000037;\r\n    }\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4ce900",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004ce900(int param_1)\r\n\r\n{\r\n  if (param_1 < 8) {\r\n    if (param_1 == 7) {\r\n      return 0;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 3;\r\n    }\r\n    if (param_1 == 6) {\r\n      return 1;\r\n    }\r\n  }\r\n  else {\r\n    if (param_1 == 8) {\r\n      return 2;\r\n    }\r\n    if (param_1 == 0xfffe) {\r\n      return 4;\r\n    }\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4ceae0",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004ceae0(int param_1)\r\n\r\n{\r\n  if (param_1 < 8) {\r\n    if (param_1 == 7) {\r\n      return 0x10000027;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 0x2000001d;\r\n    }\r\n    if (param_1 == 6) {\r\n      return 0x10000026;\r\n    }\r\n  }\r\n  else {\r\n    if (param_1 == 8) {\r\n      return 0x2000000d;\r\n    }\r\n    if (param_1 == 0xfffe) {\r\n      return 0x20000037;\r\n    }\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4cec30",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004cec30(int param_1)\r\n\r\n{\r\n  if (param_1 < 7) {\r\n    if (param_1 == 6) {\r\n      return 0x10000027;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 0x2000001d;\r\n    }\r\n    if (param_1 == 5) {\r\n      return 0x10000026;\r\n    }\r\n  }\r\n  else {\r\n    if (param_1 == 8) {\r\n      return 0x2000000d;\r\n    }\r\n    if (param_1 == 0xfffe) {\r\n      return 0x20000037;\r\n    }\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x4cec90",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_004cec90(int param_1)\r\n\r\n{\r\n  if (param_1 < 7) {\r\n    if (param_1 == 6) {\r\n      return 1;\r\n    }\r\n    if (param_1 == 1) {\r\n      return 3;\r\n    }\r\n    if (param_1 == 5) {\r\n      return 0;\r\n    }\r\n  }\r\n  else {\r\n    if (param_1 == 8) {\r\n      return 2;\r\n    }\r\n    if (param_1 == 0xfffe) {\r\n      return 4;\r\n    }\r\n  }\r\n  return 0xffffffff;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-004.json"
+  },
+  {
+    "address": "0x53be10",
+    "status": "ok",
+    "pseudocode": "\r\nvoid FUN_0053be10(void)\r\n\r\n{\r\n  byte bVar1;\r\n  int in_ECX;\r\n  \r\n  bVar1 = *(byte *)(in_ECX + 8);\r\n  if (((bVar1 & 2) == 0) && ((bVar1 & 1) != 0)) {\r\n    *(byte *)(in_ECX + 8) = bVar1 & 0xfb | 2;\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-008.json"
+  },
+  {
+    "address": "0x57a170",
+    "status": "ok",
+    "pseudocode": "\r\nvoid FUN_0057a170(void)\r\n\r\n{\r\n  byte bVar1;\r\n  int in_ECX;\r\n  \r\n  bVar1 = *(byte *)(in_ECX + 8);\r\n  *(undefined4 *)(in_ECX + 0x1c) = 0;\r\n  if (((bVar1 & 2) == 0) && ((bVar1 & 1) != 0)) {\r\n    *(byte *)(in_ECX + 8) = bVar1 & 0xfb | 2;\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-009.json"
+  },
+  {
+    "address": "0x5c9680",
+    "status": "ok",
+    "pseudocode": "\r\nvoid FUN_005c9680(void)\r\n\r\n{\r\n  int in_ECX;\r\n  \r\n  *(undefined4 *)(in_ECX + 0xc34) = 0;\r\n  if (*(int *)(in_ECX + 0x14) != 0) {\r\n    *(undefined4 *)(in_ECX + 0x10) = *(undefined4 *)(in_ECX + 4);\r\n    *(undefined4 *)(in_ECX + 0x24) = *(undefined4 *)(in_ECX + 0x20);\r\n  }\r\n  *(undefined4 *)(in_ECX + 4) = 0;\r\n  return;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-011.json"
+  },
+  {
+    "address": "0x5c9700",
+    "status": "ok",
+    "pseudocode": "\r\nundefined4 FUN_005c9700(void)\r\n\r\n{\r\n  int in_ECX;\r\n  \r\n  if (((*(int *)(in_ECX + 4) == 0) && (*(int *)(in_ECX + 0xc34) == 0)) &&\r\n     (*(int *)(in_ECX + 0xc) == 0)) {\r\n    return 0;\r\n  }\r\n  return 1;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-011.json"
+  },
+  {
+    "address": "0x5c9830",
+    "status": "ok",
+    "pseudocode": "\r\nvoid FUN_005c9830(int param_1)\r\n\r\n{\r\n  int in_ECX;\r\n  \r\n  if (*(int *)(in_ECX + 0xc) == param_1) {\r\n    *(undefined4 *)(in_ECX + 0xc) = 0;\r\n  }\r\n  if (*(int *)(in_ECX + 0x10) == param_1) {\r\n    *(undefined4 *)(in_ECX + 0x10) = 0;\r\n  }\r\n  if (*(int *)(in_ECX + 4) == param_1) {\r\n    *(undefined4 *)(in_ECX + 4) = 0;\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-011.json"
+  },
+  {
+    "address": "0x62c8e0",
+    "status": "ok",
+    "pseudocode": "\r\nint FUN_0062c8e0(void)\r\n\r\n{\r\n  int iVar1;\r\n  int in_ECX;\r\n  \r\n  iVar1 = *(int *)(in_ECX + 0x48);\r\n  if (iVar1 == 0) {\r\n    iVar1 = 1;\r\n  }\r\n  return iVar1;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-013.json"
+  },
+  {
+    "address": "0x65fb10",
+    "status": "ok",
+    "pseudocode": "\r\nundefined1 FUN_0065fb10(char param_1)\r\n\r\n{\r\n  int in_ECX;\r\n  \r\n  if (*(char *)(in_ECX + 0x3c) != param_1) {\r\n    *(char *)(in_ECX + 0x3c) = param_1;\r\n    return 1;\r\n  }\r\n  return 0;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-014.json"
+  },
+  {
+    "address": "0x70d5f0",
+    "status": "ok",
+    "pseudocode": "\r\nint FUN_0070d5f0(int param_1)\r\n\r\n{\r\n  int in_ECX;\r\n  \r\n  if (param_1 == 0) {\r\n    return in_ECX + 0x60;\r\n  }\r\n  if (param_1 == 1) {\r\n    return in_ECX + 0x70;\r\n  }\r\n  return param_1 * 0x40 + 0x50 + in_ECX;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-016.json"
+  },
+  {
+    "address": "0x70d620",
+    "status": "ok",
+    "pseudocode": "\r\nint FUN_0070d620(int param_1)\r\n\r\n{\r\n  int in_ECX;\r\n  \r\n  if (param_1 == 0) {\r\n    return in_ECX + 0x40;\r\n  }\r\n  if (param_1 == 1) {\r\n    return in_ECX + 0x50;\r\n  }\r\n  return param_1 * 0x40 + 0x60 + in_ECX;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-016.json"
+  },
+  {
+    "address": "0x70de40",
+    "status": "ok",
+    "pseudocode": "\r\nint FUN_0070de40(void)\r\n\r\n{\r\n  int in_ECX;\r\n  \r\n  if (in_ECX != -0x140) {\r\n    return in_ECX + 0x150;\r\n  }\r\n  return 0;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-016.json"
+  },
+  {
+    "address": "0x7756f0",
+    "status": "ok",
+    "pseudocode": "\r\nvoid FUN_007756f0(void)\r\n\r\n{\r\n  byte bVar1;\r\n  int in_ECX;\r\n  \r\n  bVar1 = *(byte *)(in_ECX + 8);\r\n  *(undefined4 *)(in_ECX + 0x180) = 0;\r\n  if (((bVar1 & 2) == 0) && ((bVar1 & 1) != 0)) {\r\n    *(byte *)(in_ECX + 8) = bVar1 & 0xfb | 2;\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-017.json"
+  },
+  {
+    "address": "0x775b20",
+    "status": "ok",
+    "pseudocode": "\r\nvoid FUN_00775b20(void)\r\n\r\n{\r\n  byte bVar1;\r\n  int in_ECX;\r\n  \r\n  bVar1 = *(byte *)(in_ECX + 8);\r\n  *(undefined4 *)(in_ECX + 0x10) = 0;\r\n  if (((bVar1 & 2) == 0) && ((bVar1 & 1) != 0)) {\r\n    *(byte *)(in_ECX + 8) = bVar1 & 0xfb | 2;\r\n  }\r\n  return;\r\n}\r\n\r\n",
+    "batch": "reversing/PendingAnalysis/evidence/decompilation/batch-017.json"
+  }
+]

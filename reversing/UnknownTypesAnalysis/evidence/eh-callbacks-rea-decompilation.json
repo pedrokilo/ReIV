@@ -1,0 +1,168 @@
+{
+  "result": {
+    "items": [
+      {
+        "address": "0x00d1d8cb",
+        "status": "ok",
+        "pseudocode": "\r\nvoid FUN_00d1d8cb(undefined4 param_1)\r\n\r\n{\r\n  undefined4 *in_ECX;\r\n  \r\n  FUN_00d1d7fa(param_1);\r\n  *in_ECX = &PTR_FUN_00decd38;\r\n  return;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x00d1d7fa",
+        "status": "ok",
+        "pseudocode": "\r\nvoid FUN_00d1d7fa(int param_1)\r\n\r\n{\r\n  char *pcVar1;\r\n  char cVar2;\r\n  char *pcVar3;\r\n  int iVar4;\r\n  undefined4 *in_ECX;\r\n  \r\n  *in_ECX = &PTR_FUN_00decd1c;\r\n  in_ECX[2] = 0;\r\n  pcVar3 = *(char **)(param_1 + 4);\r\n  if (*(int *)(param_1 + 8) == 0) {\r\n    in_ECX[1] = pcVar3;\r\n  }\r\n  else if (pcVar3 == (char *)0x0) {\r\n    in_ECX[1] = 0;\r\n  }\r\n  else {\r\n    pcVar1 = pcVar3 + 1;\r\n    do {\r\n      cVar2 = *pcVar3;\r\n      pcVar3 = pcVar3 + 1;\r\n    } while (cVar2 != '\\0');\r\n    iVar4 = FUN_00d15b50(pcVar3 + (1 - (int)pcVar1));\r\n    in_ECX[1] = iVar4;\r\n    if (iVar4 != 0) {\r\n      FUN_00d1c57a(iVar4,pcVar3 + (1 - (int)pcVar1),*(undefined4 *)(param_1 + 4));\r\n      in_ECX[2] = 1;\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x00d1d905",
+        "status": "ok",
+        "pseudocode": "\r\nvoid FUN_00d1d905(undefined4 param_1)\r\n\r\n{\r\n  undefined4 *in_ECX;\r\n  \r\n  FUN_00d1d8cb(param_1);\r\n  *in_ECX = &PTR_FUN_00decd38;\r\n  return;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x00d1d885",
+        "status": "ok",
+        "pseudocode": "\r\nvoid FUN_00d1d885(undefined4 param_1)\r\n\r\n{\r\n  undefined4 *in_ECX;\r\n  \r\n  FUN_00d1d7fa(param_1);\r\n  *in_ECX = &PTR_FUN_00de1398;\r\n  return;\r\n}\r\n\r\n"
+      },
+      {
+        "address": "0x00d1d922",
+        "status": "error",
+        "error": {
+          "code": "invalid_request",
+          "category": "invalid_input",
+          "message": "Analysis input is invalid. Check the arguments and try again.",
+          "retryable": true,
+          "remediation": {
+            "action": "Correct the listed arguments and retry."
+          }
+        }
+      },
+      {
+        "address": "0x00d1d8a2",
+        "status": "ok",
+        "pseudocode": "\r\nvoid FUN_00d1d8a2(void)\r\n\r\n{\r\n  exception *in_ECX;\r\n  \r\n  *(undefined ***)in_ECX = &PTR_FUN_00de1398;\r\n  exception::~exception(in_ECX);\r\n  return;\r\n}\r\n\r\n"
+      }
+    ],
+    "total": 6,
+    "succeeded": 5,
+    "failed": 1
+  },
+  "evidence_id": "ev_705028ef720a71cfbab4b532a1a2d6f159c9592798bc227cb9e2f694d0050453",
+  "evidence": {
+    "evidence_id": "ev_705028ef720a71cfbab4b532a1a2d6f159c9592798bc227cb9e2f694d0050453",
+    "subject": {
+      "name": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe",
+      "digest": {
+        "sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
+      },
+      "format": "pe",
+      "architecture": "x86",
+      "local_path": "D:\\GTA IV\\Grand Theft Auto IV\\GTAIV.exe"
+    },
+    "provider": {
+      "id": "rea-workflow",
+      "name": "REA composed investigation workflow",
+      "version": "1"
+    },
+    "predicate_type": "rea.analysis",
+    "operation": "batch_decompile",
+    "parameters": {
+      "addresses": [
+        "0x00d1d8cb",
+        "0x00d1d7fa",
+        "0x00d1d905",
+        "0x00d1d885",
+        "0x00d1d922",
+        "0x00d1d8a2"
+      ]
+    },
+    "raw_result": null,
+    "normalized_result": {
+      "items": [
+        {
+          "address": "0x00d1d8cb",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_00d1d8cb(undefined4 param_1)\r\n\r\n{\r\n  undefined4 *in_ECX;\r\n  \r\n  FUN_00d1d7fa(param_1);\r\n  *in_ECX = &PTR_FUN_00decd38;\r\n  return;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x00d1d7fa",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_00d1d7fa(int param_1)\r\n\r\n{\r\n  char *pcVar1;\r\n  char cVar2;\r\n  char *pcVar3;\r\n  int iVar4;\r\n  undefined4 *in_ECX;\r\n  \r\n  *in_ECX = &PTR_FUN_00decd1c;\r\n  in_ECX[2] = 0;\r\n  pcVar3 = *(char **)(param_1 + 4);\r\n  if (*(int *)(param_1 + 8) == 0) {\r\n    in_ECX[1] = pcVar3;\r\n  }\r\n  else if (pcVar3 == (char *)0x0) {\r\n    in_ECX[1] = 0;\r\n  }\r\n  else {\r\n    pcVar1 = pcVar3 + 1;\r\n    do {\r\n      cVar2 = *pcVar3;\r\n      pcVar3 = pcVar3 + 1;\r\n    } while (cVar2 != '\\0');\r\n    iVar4 = FUN_00d15b50(pcVar3 + (1 - (int)pcVar1));\r\n    in_ECX[1] = iVar4;\r\n    if (iVar4 != 0) {\r\n      FUN_00d1c57a(iVar4,pcVar3 + (1 - (int)pcVar1),*(undefined4 *)(param_1 + 4));\r\n      in_ECX[2] = 1;\r\n    }\r\n  }\r\n  return;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x00d1d905",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_00d1d905(undefined4 param_1)\r\n\r\n{\r\n  undefined4 *in_ECX;\r\n  \r\n  FUN_00d1d8cb(param_1);\r\n  *in_ECX = &PTR_FUN_00decd38;\r\n  return;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x00d1d885",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_00d1d885(undefined4 param_1)\r\n\r\n{\r\n  undefined4 *in_ECX;\r\n  \r\n  FUN_00d1d7fa(param_1);\r\n  *in_ECX = &PTR_FUN_00de1398;\r\n  return;\r\n}\r\n\r\n"
+        },
+        {
+          "address": "0x00d1d922",
+          "status": "error",
+          "error": {
+            "code": "invalid_request",
+            "category": "invalid_input",
+            "message": "Analysis input is invalid. Check the arguments and try again.",
+            "retryable": true,
+            "remediation": {
+              "action": "Correct the listed arguments and retry."
+            }
+          }
+        },
+        {
+          "address": "0x00d1d8a2",
+          "status": "ok",
+          "pseudocode": "\r\nvoid FUN_00d1d8a2(void)\r\n\r\n{\r\n  exception *in_ECX;\r\n  \r\n  *(undefined ***)in_ECX = &PTR_FUN_00de1398;\r\n  exception::~exception(in_ECX);\r\n  return;\r\n}\r\n\r\n"
+        }
+      ],
+      "total": 6,
+      "succeeded": 5,
+      "failed": 1
+    },
+    "confidence": "derived",
+    "authority": "shipped-artifact",
+    "environment": null,
+    "limitations": [
+      "Derived by an REA workflow from one or more provider observations."
+    ],
+    "locations": [],
+    "evidence_links": [],
+    "analysis_profile": {
+      "provider": {
+        "id": "rea-workflow",
+        "name": "REA composed investigation workflow",
+        "version": "1"
+      },
+      "parameters": {
+        "upstream_analysis_profile": {
+          "provider": {
+            "id": "ghidra",
+            "name": "Ghidra",
+            "version": "12.1.4"
+          },
+          "parameters": {
+            "target_kind": "executable",
+            "target_format": "pe",
+            "architecture": "x86",
+            "available_architectures": [
+              "x86"
+            ],
+            "import_mode": "ephemeral-source-immutable",
+            "annotation_policy": "atomic-function-entry-metadata-v1",
+            "load_image_observations": "source-mappings-entry-context-v2",
+            "function_body_evidence": "complete-inclusive-ranges-v1",
+            "jump_table_evidence": "typed-case-default-blocks-v1",
+            "decompiler_jump_loads": true,
+            "loader": "auto-from-header",
+            "language_id": "auto-from-header",
+            "compiler_spec_id": "auto-default",
+            "analyzer_preset": "ghidra-default",
+            "local_provider_extension": "gta-x86-sha256-bound-v2"
+          },
+          "digest": "ed9849defb0c22419206978ced1a83f82146b1a2b4d405ebb3a61fc64ca492e5"
+        }
+      },
+      "digest": "fe71db632b57bd0c478c5bbd9ca5b17a8189d25db100beff7846c8bf5205be9d"
+    }
+  }
+}
