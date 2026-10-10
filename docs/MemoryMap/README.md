@@ -82,6 +82,8 @@ Se distinguen tres criterios:
 
 No se propagan nombres por herencia ni se elige uno cuando hay varios candidatos. Todos estos cruces tienen estado `sdk_name_not_validated`; no constituyen funciones identificadas semánticamente, reconstruidas ni validadas. El generador actualiza los cruces y enlaces del visor al regenerar el mapa.
 
+plugin_IV e IV-SDK.Net aportan nombres por dirección con el mismo criterio: `contrib/plugin-iv-patterns.py` busca cada patrón en las secciones ejecutables y solo conserva coincidencias únicas; `contrib/sdknet-addresses.py` lee `1070.ini`; `contrib/crossref-sdks.py` compara offsets de campos. Todo queda como pista no validada y la columna `reference_names` de [hooks.csv](../hooks.csv) recoge las coincidencias exactas por dirección.
+
 | Archivo | Contenido |
 | --- | --- |
 | [classes.csv](classes.csv) | Nombre decorado y legible, dirección del descriptor, vtables y bases RTTI |
@@ -93,7 +95,9 @@ No se propagan nombres por herencia ni se elige uno cuando hay varios candidatos
 | [code_addresses.csv](code_addresses.csv) | Entradas de Ghidra y destinos virtuales adicionales, sin duplicar direcciones |
 | [sdk_classes.csv](sdk_classes.csv) | Declaraciones del SDK y sus coincidencias RTTI por nombre |
 | [sdk_addresses.csv](sdk_addresses.csv) | Direcciones del SDK, archivo y línea de origen |
-| [historical_references.csv](historical_references.csv) | Direcciones del documento, línea, contexto y versión cuando aparece en esa misma línea |
+| [plugin_iv_patterns.csv](plugin_iv_patterns.csv) | Patrones `gpattern` de plugin_IV resueltos en el EXE, con número de coincidencias ([resumen](PluginIvPatterns.md)) |
+| [sdknet_addresses.csv](sdknet_addresses.csv) | Offsets nombrados de IV-SDK.Net para 1.0.7.0 (`1070.ini`) resueltos en el EXE |
+| [SdkCrossReference.md](SdkCrossReference.md) | Cruce de offsets de campos entre IV-SDK, plugin_IV e IV-SDK.Net y el layout observado de CPlayerPed || [historical_references.csv](historical_references.csv) | Direcciones del documento, línea, contexto y versión cuando aparece en esa misma línea |
 | [sections.json](sections.json) | Rangos y permisos de las secciones del PE |
 | [summary.json](summary.json) | Recuentos y hash del binario |
 

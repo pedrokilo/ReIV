@@ -130,12 +130,12 @@ def rtti_map(pe, symbols):
             slot=index,function_va=hx(function),function_rva=hx(function-pe.base),status='rtti_slot'))
     return list(classes.values()), tables, slots
 
-def sdk_map(pe):
+def sdk_map(pe, directory=None):
     classes, addresses, virtual_methods = [], [], []
     token_re = re.compile(r'\bnamespace\s+([A-Za-z_]\w*(?:::\w+)*)\s*\{|\b(class|struct)\s+([A-Za-z_]\w*)[^;{}]*\{|[{}]')
     call_re = re.compile(r'AddressSetter::(GetRef(?:<[^\n;]*?>)?|Get)\s*\(\s*(0x[\da-fA-F]+|\d+)\s*,\s*(0x[\da-fA-F]+|\d+)')
     virtual_re = re.compile(r'\(\*\(void\*\*\*\)this\)\s*\[\s*(\d+)\s*\]')
-    for path in sorted((ROOT/'contrib/IV SDK/IV-SDK-main/include').glob('*.h')):
+    for path in sorted((directory or ROOT/'contrib/IV SDK/IV-SDK-main/include').glob('*.h')):
         text = path.read_text(encoding='utf-8-sig',errors='replace')
         clean = re.sub(r'//[^\n]*|/\*.*?\*/',lambda m: ''.join('\n' if c=='\n' else ' ' for c in m.group()),text,flags=re.S)
         events = [(m.start(), 'scope',m) for m in token_re.finditer(clean)]

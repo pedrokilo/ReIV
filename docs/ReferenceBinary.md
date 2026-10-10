@@ -28,3 +28,7 @@ $referenceExe = 'C:\Users\pedro\OneDrive\Desktop\GTA IV\Grand Theft Auto IV\GTAI
 (Get-Item -LiteralPath $referenceExe).VersionInfo | Select-Object FileVersion, ProductVersion
 Get-FileHash -LiteralPath $referenceExe -Algorithm SHA256
 ```
+
+## Referencias de nombres contra este binario
+
+Los offsets de IV-SDK, los patrones de bytes de plugin_IV y el `1070.ini` de IV-SDK.Net se resuelven siempre contra este hash (los scripts rechazan otro EXE). De 361 patrones de plugin_IV, 67 coinciden una sola vez; 283 no coinciden, lo que sugiere que parte de sus patrones corresponden a otra compilación. Ver [PluginIvPatterns.md](MemoryMap/PluginIvPatterns.md) y [SdkCrossReference.md](MemoryMap/SdkCrossReference.md).

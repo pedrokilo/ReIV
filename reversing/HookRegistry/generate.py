@@ -6,11 +6,13 @@ from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[2]
 HASH = "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c"
-FIELDS = "class fn_name address reversed locked validated type rva exe_sha256 entry_kind address_checked runtime_checked reconstruction_validated standalone source evidence scope source_matches_evidence".split()
+FIELDS = "class fn_name address reversed locked validated type rva exe_sha256 entry_kind address_checked runtime_checked reconstruction_validated standalone source evidence scope source_matches_evidence reference_names".split()
 
 
 def main():
     entries = json.loads(Path(__file__).with_name("catalog.json").read_text())
+    from sdk_refs import load as load_references
+    names_by_address, _ = load_references(ROOT)
     for row in entries:
         evidence = json.loads((ROOT / row["evidence"]).read_text(encoding="utf-8-sig"))
         assert evidence["passed"] and evidence["exe_sha256"].lower() == HASH
@@ -23,6 +25,7 @@ def main():
         for source, digest in evidence.get("additional_source_sha256", {}).items():
             matches = matches and hashlib.sha256((ROOT / source).read_bytes()).hexdigest() == digest
         row["source_matches_evidence"] = int(matches)
+        row["reference_names"] = ";".join(names_by_address.get(row["address"].lower(), []))
     for filename, rows in (("hooks.csv", entries), ("hooks_notiv.csv", [])):
         with (ROOT / "docs" / filename).open("w", encoding="utf-8", newline="") as stream:
             writer = csv.DictWriter(stream, fieldnames=FIELDS)

@@ -1,1 +1,1 @@
-class,fn_name,address,reversed,locked,validated,type,rva,exe_sha256,entry_kind,address_checked,runtime_checked,reconstruction_validated,standalone,source,evidence,scope,source_matches_evidence
+class,fn_name,address,reversed,locked,validated,type,rva,exe_sha256,entry_kind,address_checked,runtime_checked,reconstruction_validated,standalone,source,evidence,scope,source_matches_evidence,reference_names

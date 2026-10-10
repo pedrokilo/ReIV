@@ -1,5 +1,6 @@
 """Render class reconstruction progress independently of address validation."""
 import csv
+from sdk_refs import load as load_references
 from collections import defaultdict
 from datetime import datetime, timezone
 
@@ -10,6 +11,7 @@ def render(root, entries):
             return list(csv.DictReader(stream))
 
     classes = read("source/class-files.csv")
+    _, references = load_references(root)
     known = defaultdict(set)
     for row in read("docs/MemoryMap/pending_hooks.csv"):
         known[row["owner"]].add(int(row["rva"], 16))
@@ -49,6 +51,13 @@ def render(root, entries):
              f"| **{unreversed:,}** | **{count}** | **0** | **{unknown:,}** |", "",
              "**Ir a:** [Sin revertir](#sin-revertir) · [Parcialmente revertidas](#parciales) · [Completamente revertidas](#completas) · [Desconocido](#desconocido) · [Cómo leer y actualizar](#metodo)", "",
              "> [!NOTE]", "> Una llamada comprobada al original, un retorno simple probado y una dirección virtual coincidente no convierten una clase en parcialmente revertida. No se declara completa ninguna clase sin un inventario exhaustivo de sus métodos.", ""]
+    sdk_counts = {sdk: sum(sdk in references.get(row["name"], ()) for row in classes) for sdk in ("IV-SDK", "plugin_IV", "IV-SDK.Net")}
+    lines += ["## Referencias de nombres (SDKs)", "",
+              "📚 marca las clases que alguna referencia declara con direcciones de métodos o campos: [IV-SDK](../contrib/IV%20SDK/IV-SDK-main), [plugin_IV](MemoryMap/PluginIvPatterns.md) e [IV-SDK.Net](MemoryMap/sdknet_addresses.csv). "
+              "Son pistas no validadas; el EXE canónico decide. Cruce de offsets de campos: [SdkCrossReference.md](MemoryMap/SdkCrossReference.md). Los nombres por dirección de función se anotan en la columna `reference_names` de [hooks.csv](hooks.csv).", "",
+              "| Referencia | Clases del inventario con entradas |", "| --- | ---: |"]
+    lines += [f"| {sdk} | {count:,} |" for sdk, count in sdk_counts.items()]
+    lines += [""]
     for anchor, title, icon in (("sin-revertir", "Sin revertir", "🔴"), ("parciales", "Parcialmente revertidas", "🟡"), ("completas", "Completamente revertidas", "🟢"), ("desconocido", "Desconocido", "⚪")):
         rows = groups[anchor]
         lines += [f'<a id="{anchor}"></a>', f"## {icon} {title} · {len(rows):,} clases", ""]
@@ -71,7 +80,7 @@ def render(root, entries):
                 row = rows[position]
                 name = row["name"]
                 label = name.replace("|", "&#124;").replace("[", "&#91;").replace("]", "&#93;").replace("<", "&lt;").replace(">", "&gt;")
-                cells.append(f"[{label}](../{row['file']}) ({len(known[name])}) · R {len(reconstructed[name])}" + (f" · ✅ {len(validated[name])}" if validated[name] else ""))
+                cells.append(f"[{label}](../{row['file']}) ({len(known[name])}) · R {len(reconstructed[name])}" + (f" · ✅ {len(validated[name])}" if validated[name] else "") + (f" · 📚 {', '.join(sorted(references[name]))}" if references.get(name) else ""))
             lines.append("| " + " | ".join(cells) + " |")
         lines += ["", "</details>", ""]
     lines += ["## Funciones fuera del inventario de clases", "", "`rage::atStringHash` está reconstruida y tiene evidencia de comparación. El propietario `rage` es un espacio de nombres, no una clase RTTI; por eso no se clasifica todo el motor como parcialmente revertido.", "", "[Implementación](../source/rage/AtStringHash.h) · [Evidencia](../reversing/AtStringHash/evidence/validation-summary.json)", "", '<a id="metodo"></a>', "## Cómo leer y actualizar", "", "- **Desconocido:** tipo identificado por RTTI, sin direcciones de métodos asociadas. La reconstrucción todavía no puede medirse.", "- **Sin revertir:** ninguna función registrada como reconstruida. Puede tener direcciones y llamadas al original comprobadas.", "- **Parcialmente revertida:** tiene al menos una función reconstruida y todavía no se acredita la reconstrucción completa de la clase.", "- **Completamente revertida:** todos los métodos de un inventario exhaustivo están reconstruidos. El inventario actual no permite acreditar esta categoría.", "- `reversed=1` mide reconstrucción; `reconstruction_validated=1` acredita la prueba de esa reconstrucción. `validated=1` también puede acreditar solo una llamada al original. Los porcentajes no miden estabilidad del juego ni vigencia completa del ASI.", "", "Actualizar el catálogo y regenerar con `python reversing/HookRegistry/generate.py`. El detalle de direcciones, fuentes, pruebas y alcance permanece en [hooks.csv](hooks.csv) y [Clases y hooks](MemoryMap/ClassesAndHooks.md).", ""]

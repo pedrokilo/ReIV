@@ -73302,7 +73302,7 @@ Regenerar con `python reversing/HookRegistry/correlate_classes.py`, o con el gen
 SHA-256 de las fuentes usadas:
 
 - `docs/MemoryMap/classes.csv`: `8ae4cd3af3eccf750400d883445c1759a358d5c3695ec4522f8072db3d181f60`.
-- `docs/hooks.csv`: `608a5e81462e3e50a0765b0e79476b413f43b11a632ca669c652b6acbab4fec6`.
+- `docs/hooks.csv`: `3fea01a41189a4b44badda8d7e913084a26e61f24dee5466982492a5ddc35f32`.
 - `source/class-files.csv`: `ba7b8bfae19c49aeda7d54b89946960571541e3b846458e4f6bd69cbeb3510c3`.
 
 [Proceso de vinculación](../AddressBindingProcess.md) · [Progreso de reconstrucción](../ReversedClasses.md).

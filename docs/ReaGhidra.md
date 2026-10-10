@@ -50,3 +50,7 @@ Para usar la misma instalación desde una terminal, `C:\Users\pedro\Tools\ReIV-a
 Para reproducir las adaptaciones tras reinstalar REA, ejecutar los scripts locales de parche y después ambas pruebas. Una reinstalación de npm puede reemplazar los archivos modificados; el respaldo de configuración permite volver al servidor oficial y `Base.jar.upstream` permite restaurar el lector original de esta instalación separada.
 
 IDA sigue sin configurarse: esta ruta de análisis utiliza Ghidra. Hopper no ofrece el proveedor Windows que requiere REA.
+
+## Nombres de referencia como semillas
+
+Para etiquetar el análisis de Ghidra/REA se pueden usar como candidatos las direcciones nombradas por IV-SDK, plugin_IV e IV-SDK.Net: [sdk_addresses.csv](MemoryMap/sdk_addresses.csv), [plugin_iv_patterns.csv](MemoryMap/plugin_iv_patterns.csv) y [sdknet_addresses.csv](MemoryMap/sdknet_addresses.csv). Son pistas sin validar; confirmar firma y comportamiento en el desensamblado antes de renombrar nada.
