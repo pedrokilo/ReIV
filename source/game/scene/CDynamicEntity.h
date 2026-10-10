@@ -38,7 +38,7 @@ inline constexpr std::uint32_t vtables_count = 1u;
 #include "core/PendingHook.h"
 namespace reiv { namespace memory_map { namespace type_45deafb354926df8 {
 // Destinations from the inventory; names/ABI remain candidates. Never auto-install.
-inline constexpr std::uint32_t pending_hook_count = 57u;
+inline constexpr std::uint32_t pending_hook_count = 58u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x009e2300u, 0x005e2300u, 0x00d82e14u, 0, "FUN_009e2300", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x009eaf60u, 0x005eaf60u, 0x00d82e14u, 1, "FUN_009eaf60", "CEntity::Teleport", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CEntity.h:43", AddressOrigin::VirtualSlot, false, false, false},
@@ -97,6 +97,7 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x009dfe70u, 0x005dfe70u, 0x00d82e14u, 54, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x009c7710u, 0x005c7710u, 0x00000000u, -1, "CDynamicEntity::GetBoneMatrix", "CDynamicEntity::GetBoneMatrix", "contrib/IV SDK/IV-SDK-main/include/CDynamicEntity.h:11; sdk_reference_not_validated; runtime reference test: reversing/OriginalCalls/evidence/runtime-summary.json", AddressOrigin::SdkFunctionReference, true, false, false},
     {0x004d9100u, 0x000d9100u, 0x00000000u, -1, "CDynamicEntity::GetBoneMatrix2", "CDynamicEntity::GetBoneMatrix2", "contrib/IV SDK/IV-SDK-main/include/CDynamicEntity.h:17; sdk_reference_not_validated", AddressOrigin::SdkFunctionReference, false, false, false},
+    {0x009eff90u, 0x005eff90u, 0x00000000u, -1, "CDynamicEntity::PlayAnimation", "CDynamicEntity::PlayAnimation", "contrib/IV SDK.Net/IV-SDK-DotNet-main/IVSDKDotNet/Memory Offset Config Files/IVSDK/1070.ini:137; sdknet_1070_reference_not_validated", AddressOrigin::SdkNetFunctionReference, false, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;
 } } }

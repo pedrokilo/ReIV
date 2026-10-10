@@ -100,9 +100,14 @@ def main():
         assert len(str(target)) < 250, target
         planned.append((row, relative, target, header(row)))
     # Refuse to replace edited or pre-existing headers. Validate before writing.
-    for _, _, target, content in planned:
-        if target.exists() and target.read_text(encoding="utf-8").split(MARKER)[0] != content.split(MARKER)[0]:
-            raise RuntimeError(f"Existing header differs; preserve it: {target}")
+    # Hand-edited headers (for example CPlayerPed.h) keep everything above the marker; only the generated block is refreshed.
+    for index, (row, relative, target, content) in enumerate(planned):
+        if target.exists():
+            existing = target.read_text(encoding="utf-8")
+            if existing.split(MARKER)[0] != content.split(MARKER)[0]:
+                if MARKER not in existing:
+                    raise RuntimeError(f"Existing header differs and has no generated block; preserve it: {target}")
+                planned[index] = (row, relative, target, existing.split(MARKER)[0] + MARKER + content.split(MARKER, 1)[1])
     for _, _, target, content in planned:
         target.parent.mkdir(parents=True, exist_ok=True)
         if not target.exists() or target.read_text(encoding="utf-8") != content:

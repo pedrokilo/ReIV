@@ -44,6 +44,30 @@ for r in rows("docs/MemoryMap/sdk_addresses.csv"):
     (ENTRIES[r["owner"]] if r["owner"] in CLASSES else UNMATCHED).append(entry)
 
 
+# IV-SDK.Net (1070.ini) and plugin_IV (unique byte-pattern matches) name more addresses. Exact-VA matches only add
+# name candidates to an existing entry; other addresses become new, unvalidated reference entries.
+def add_reference(owner, va, rva, name, origin, evidence):
+    target = ENTRIES[owner] if owner in CLASSES else UNMATCHED
+    same = [e for e in target if e["owner"] == owner and e["va"].lower() == va.lower()]
+    for entry in same:
+        names = [n for n in entry["name_candidates"].split(";") if n]
+        if name not in names:
+            entry["name_candidates"] = ";".join(names + [name])
+            entry["evidence"] += "; " + evidence
+    if not same:
+        target.append(dict(owner=owner, va=va, rva=rva, vtable_va="0x00000000", slot="-1", label=name, name_candidates=name,
+                           evidence=evidence, origin=origin, runtime_reference_tested=0))
+
+
+for r in rows("docs/MemoryMap/sdknet_addresses.csv"):
+    if r["kind"] == "function_or_code" and r["owner"]:
+        add_reference(r["owner"], r["va"], r["rva"], r["owner"] + "::" + r["name"], "SdkNetFunctionReference",
+                      f"{r['file']}:{r['line']}; {r['status']}")
+for r in rows("docs/MemoryMap/plugin_iv_patterns.csv"):
+    if r["kind"] == "function_start" and r["target_va"] and r["owner"]:
+        add_reference(r["owner"], r["target_va"], r["target_rva"], r["owner"] + "::" + r["name"], "PluginIvPatternReference",
+                      f"{r['file']}:{r['line']}; {r['status']}")
+
 # Non-virtual callbacks recovered from validated MSVC exception metadata chains.
 exception_callbacks = ROOT / "reversing/UnknownTypesAnalysis/evidence/pending-overlay.csv"
 if exception_callbacks.exists():

@@ -29,7 +29,7 @@ inline constexpr std::uint32_t vtables_count = 1u;
 #include "core/PendingHook.h"
 namespace reiv { namespace memory_map { namespace type_cc624134cb2e9236 {
 // Destinations from the inventory; names/ABI remain candidates. Never auto-install.
-inline constexpr std::uint32_t pending_hook_count = 13u;
+inline constexpr std::uint32_t pending_hook_count = 14u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x009ad740u, 0x005ad740u, 0x00d80464u, 0, "FUN_009ad740", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00401210u, 0x00001210u, 0x00d80464u, 1, "fatal_assertion_handler_do_not_call", "", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCam.h:70; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called; reversing/NMutils/evidence/00401210.txt; reversing/NMutils/evidence/005a8cb0.txt; process termination path excluded, never test-called", AddressOrigin::VirtualSlot, false, false, false},
@@ -44,6 +44,7 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x00401210u, 0x00001210u, 0x00d80464u, 10, "fatal_assertion_handler_do_not_call", "", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCam.h:70; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called; reversing/NMutils/evidence/00401210.txt; reversing/NMutils/evidence/005a8cb0.txt; process termination path excluded, never test-called", AddressOrigin::VirtualSlot, false, false, false},
     {0x009ad2d0u, 0x005ad2d0u, 0x00000000u, -1, "CCam::GetCamOfType", "CCam::GetCamOfType", "contrib/IV SDK/IV-SDK-main/include/CCam.h:62; sdk_reference_not_validated", AddressOrigin::SdkFunctionReference, false, false, false},
     {0x009acc00u, 0x005acc00u, 0x00000000u, -1, "CCam::Activate", "CCam::Activate", "contrib/IV SDK/IV-SDK-main/include/CCam.h:66; sdk_reference_not_validated", AddressOrigin::SdkFunctionReference, false, false, false},
+    {0x00c924c0u, 0x008924c0u, 0x00000000u, -1, "CCam::SetTargetEntity", "CCam::SetTargetEntity", "contrib/Plugin SDK (es el mismo que se usa para GTA SA)/plugin-sdk-master/plugin_IV/game_IV/CCam.cpp:25; plugin_iv_unique_pattern_not_validated", AddressOrigin::PluginIvPatternReference, false, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;
 } } }

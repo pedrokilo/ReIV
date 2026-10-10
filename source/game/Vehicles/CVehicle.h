@@ -29,7 +29,7 @@ inline constexpr std::uint32_t vtables_count = 1u;
 #include "core/PendingHook.h"
 namespace reiv { namespace memory_map { namespace type_4468dd29f712c2b1 {
 // Destinations from the inventory; names/ABI remain candidates. Never auto-install.
-inline constexpr std::uint32_t pending_hook_count = 122u;
+inline constexpr std::uint32_t pending_hook_count = 123u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x009d5ed0u, 0x005d5ed0u, 0x00d82164u, 0, "FUN_009d5ed0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00a48eb0u, 0x00648eb0u, 0x00d82164u, 1, "FUN_00a48eb0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
@@ -153,6 +153,7 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x009c5d60u, 0x005c5d60u, 0x00000000u, -1, "CVehicle::IsDriver", "CVehicle::IsDriver", "contrib/IV SDK/IV-SDK-main/include/CVehicle.h:609; sdk_reference_not_validated", AddressOrigin::SdkFunctionReference, false, false, false},
     {0x009c6100u, 0x005c6100u, 0x00000000u, -1, "CVehicle::HeightAboveCeiling", "CVehicle::HeightAboveCeiling", "contrib/IV SDK/IV-SDK-main/include/CVehicle.h:614; sdk_reference_not_validated", AddressOrigin::SdkFunctionReference, false, false, false},
     {0x009c5f50u, 0x005c5f50u, 0x00000000u, -1, "CVehicle::UsesSiren", "CVehicle::UsesSiren", "contrib/IV SDK/IV-SDK-main/include/CVehicle.h:618; sdk_reference_not_validated", AddressOrigin::SdkFunctionReference, false, false, false},
+    {0x009c5570u, 0x005c5570u, 0x00000000u, -1, "CVehicle::GetNumberOfWheelsTouchingGround", "CVehicle::GetNumberOfWheelsTouchingGround", "contrib/IV SDK.Net/IV-SDK-DotNet-main/IVSDKDotNet/Memory Offset Config Files/IVSDK/1070.ini:625; sdknet_1070_reference_not_validated", AddressOrigin::SdkNetFunctionReference, false, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;
 } } }

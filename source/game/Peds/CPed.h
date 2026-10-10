@@ -29,7 +29,7 @@ inline constexpr std::uint32_t vtables_count = 1u;
 #include "core/PendingHook.h"
 namespace reiv { namespace memory_map { namespace type_ed2d58262c404aa3 {
 // Destinations from the inventory; names/ABI remain candidates. Never auto-install.
-inline constexpr std::uint32_t pending_hook_count = 85u;
+inline constexpr std::uint32_t pending_hook_count = 90u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x008acac0u, 0x004acac0u, 0x00d69844u, 0, "FUN_008acac0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00a48eb0u, 0x00648eb0u, 0x00d69844u, 1, "FUN_00a48eb0", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
@@ -116,6 +116,11 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x009be5d0u, 0x005be5d0u, 0x00000000u, -1, "CPed::GetPadFromPlayer", "CPed::GetPadFromPlayer", "contrib/IV SDK/IV-SDK-main/include/CPed.h:168; sdk_reference_not_validated", AddressOrigin::SdkFunctionReference, false, false, false},
     {0x00426ab0u, 0x00026ab0u, 0x00000000u, -1, "CPed::GetVehicle", "CPed::GetVehicle", "contrib/IV SDK/IV-SDK-main/include/CPed.h:172; sdk_reference_not_validated", AddressOrigin::SdkFunctionReference, false, false, false},
     {0x008a28b0u, 0x004a28b0u, 0x00000000u, -1, "CPed::ProcessHeading", "CPed::ProcessHeading", "contrib/IV SDK/IV-SDK-main/include/CPed.h:184; sdk_reference_not_validated", AddressOrigin::SdkFunctionReference, false, false, false},
+    {0x00a47990u, 0x00647990u, 0x00000000u, -1, "CPed::SetLastDamageEntity", "CPed::SetLastDamageEntity", "contrib/Plugin SDK (es el mismo que se usa para GTA SA)/plugin-sdk-master/plugin_IV/game_IV/CPed.cpp:14; plugin_iv_unique_pattern_not_validated", AddressOrigin::PluginIvPatternReference, false, false, false},
+    {0x008a70c0u, 0x004a70c0u, 0x00000000u, -1, "CPed::SetDuck", "CPed::SetDuck", "contrib/Plugin SDK (es el mismo que se usa para GTA SA)/plugin-sdk-master/plugin_IV/game_IV/CPed.cpp:18; plugin_iv_unique_pattern_not_validated", AddressOrigin::PluginIvPatternReference, false, false, false},
+    {0x00b4ef10u, 0x0074ef10u, 0x00000000u, -1, "CPed::SetMoney", "CPed::SetMoney", "contrib/Plugin SDK (es el mismo que se usa para GTA SA)/plugin-sdk-master/plugin_IV/game_IV/CPed.cpp:22; plugin_iv_unique_pattern_not_validated", AddressOrigin::PluginIvPatternReference, false, false, false},
+    {0x008aa480u, 0x004aa480u, 0x00000000u, -1, "CPed::RemoveHelmet", "CPed::RemoveHelmet", "contrib/Plugin SDK (es el mismo que se usa para GTA SA)/plugin-sdk-master/plugin_IV/game_IV/CPed.cpp:34; plugin_iv_unique_pattern_not_validated", AddressOrigin::PluginIvPatternReference, false, false, false},
+    {0x00803e10u, 0x00403e10u, 0x00000000u, -1, "CPed::IsPedDead", "CPed::IsPedDead", "contrib/Plugin SDK (es el mismo que se usa para GTA SA)/plugin-sdk-master/plugin_IV/game_IV/CPed.cpp:54; plugin_iv_unique_pattern_not_validated", AddressOrigin::PluginIvPatternReference, false, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;
 } } }

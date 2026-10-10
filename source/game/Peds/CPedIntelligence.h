@@ -29,7 +29,7 @@ inline constexpr std::uint32_t vtables_count = 1u;
 #include "core/PendingHook.h"
 namespace reiv { namespace memory_map { namespace type_7815865b783d32bc {
 // Destinations from the inventory; names/ABI remain candidates. Never auto-install.
-inline constexpr std::uint32_t pending_hook_count = 9u;
+inline constexpr std::uint32_t pending_hook_count = 10u;
 inline constexpr PendingHook pending_hook_storage[] = {
     {0x009c4d10u, 0x005c4d10u, 0x00d81ce8u, 0, "FUN_009c4d10", "", "docs/MemoryMap/virtual_slots.csv; ", AddressOrigin::VirtualSlot, false, false, false},
     {0x00401210u, 0x00001210u, 0x00d81ce8u, 1, "fatal_assertion_handler_do_not_call", "", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCam.h:70; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called; reversing/NMutils/evidence/00401210.txt; reversing/NMutils/evidence/005a8cb0.txt; process termination path excluded, never test-called", AddressOrigin::VirtualSlot, false, false, false},
@@ -40,6 +40,7 @@ inline constexpr PendingHook pending_hook_storage[] = {
     {0x00a6dd80u, 0x0066dd80u, 0x00d81ce8u, 6, "unknown_entry", "", "docs/MemoryMap/virtual_slots.csv; ; reversing/ComplexValidation/game/evidence/scalar-runtime-summary.json; 64 isolated-object samples; full body/envelope bytes checked; full memory guard; synthetic x86 convention; original class ABI and gameplay not established; comparison/bit/scalar bodies only; EDX/high return not established", AddressOrigin::VirtualSlot, true, false, false},
     {0x00401210u, 0x00001210u, 0x00d81ce8u, 7, "fatal_assertion_handler_do_not_call", "", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCam.h:70; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called; reversing/NMutils/evidence/00401210.txt; reversing/NMutils/evidence/005a8cb0.txt; process termination path excluded, never test-called", AddressOrigin::VirtualSlot, false, false, false},
     {0x00401210u, 0x00001210u, 0x00d81ce8u, 8, "fatal_assertion_handler_do_not_call", "", "docs/MemoryMap/virtual_slots.csv; sdk_shared_virtual_target contrib/IV SDK/IV-SDK-main/include/CCam.h:70; reversing/NMutils/evidence/00401210.txt and 005a8cb0.txt: fatal handler, never test-called; reversing/NMutils/evidence/00401210.txt; reversing/NMutils/evidence/005a8cb0.txt; process termination path excluded, never test-called", AddressOrigin::VirtualSlot, false, false, false},
+    {0x009c3090u, 0x005c3090u, 0x00000000u, -1, "CPedIntelligence::IsSwimming", "CPedIntelligence::IsSwimming", "contrib/Plugin SDK (es el mismo que se usa para GTA SA)/plugin-sdk-master/plugin_IV/game_IV/CPedIntelligence.cpp:10; plugin_iv_unique_pattern_not_validated", AddressOrigin::PluginIvPatternReference, false, false, false},
 };
 inline constexpr const PendingHook* pending_hooks = pending_hook_storage;
 } } }

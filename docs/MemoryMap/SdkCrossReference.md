@@ -155,6 +155,30 @@ Candidatos para nombrar campos aún sin etiqueta. Si el offset aparece en el lay
 | 0xEA8 | `component_models_address` | `CPed::m_pComponentModels` | `CPed::m_pComponentModels` |  |
 | 0xEAC | `protected_handle_eac` |  | `CPed::field_840` |  |
 
+## Acuerdo de direcciones de funciones
+
+Para cada par de referencias se comparan las funciones con el mismo propietario y nombre. Un desacuerdo no dice cuál es correcta: hay que decidirlo con el desensamblado.
+
+| Par | Nombres en común | Misma dirección | Distinta dirección |
+| --- | ---: | ---: | ---: |
+| IV-SDK / IV-SDK.Net | 201 | 198 | 3 |
+| IV-SDK / plugin_IV | 7 | 4 | 3 |
+| IV-SDK.Net / plugin_IV | 7 | 4 | 3 |
+
+### Desacuerdos
+
+| Función | Referencia A | Dirección A | Referencia B | Dirección B | Entrada de función en Ghidra (A / B) |
+| --- | --- | --- | --- | --- | --- |
+| `CRadar::SetBlipParameter` | IV-SDK | `0x0080e720` | IV-SDK.Net | `0x00810dc0` | sí / sí |
+| `CTxdStore::FindTxdSlot` | IV-SDK | `0x0041ece0` | IV-SDK.Net | `0x0041f130` | sí / sí |
+| `CWeaponInfo::FindWeaponType` | IV-SDK | `0x009257e0` | IV-SDK.Net | `0x00924ea0` | sí / sí |
+| `CFont::SetScale` | IV-SDK | `0x00bb06b0` | plugin_IV | `0x007f8d60` | no / sí |
+| `CPad::GetPad` | IV-SDK | `0x007c3900` | plugin_IV | `0x00ba93d0` | sí / no |
+| `CText::Get` | IV-SDK | `0x007b54c0` | plugin_IV | `0x007e6df0` | sí / sí |
+| `CFont::SetScale` | IV-SDK.Net | `0x00bb06b0` | plugin_IV | `0x007f8d60` | no / sí |
+| `CPad::GetPad` | IV-SDK.Net | `0x007c3900` | plugin_IV | `0x00ba93d0` | sí / no |
+| `CText::Get` | IV-SDK.Net | `0x007b54c0` | plugin_IV | `0x007e6df0` | sí / sí |
+
 ## Notas
 
 - plugin_IV `CPlayerPed.h` está vacío: solo hereda de CPed y valida tamaño `0xF00`. IV-SDK e IV-SDK.Net no declaran CPlayerPed.
