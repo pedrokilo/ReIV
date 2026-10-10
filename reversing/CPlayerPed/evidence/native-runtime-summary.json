@@ -1,12 +1,12 @@
 ﻿{
     "passed":  true,
     "exe_sha256":  "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
-    "asi_sha256":  "2ecac976589abb2127ebc35aa38c8cc31e4ef17991058a33d245584bf908dc7f",
-    "implementation_sha256":  "1b07c4f36a9fef859a3f361b32fb819112e95276e1d720f02fb171869d4c2d97",
+    "asi_sha256":  "78fecfc90dde32d2049e19bde76f68d5748e78b5b0d74b4fa59c183d576b3b04",
+    "implementation_sha256":  "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
     "additional_source_sha256":  {
                                      "source/core/ReIV.cpp":  "d9941657566c32094298552abcc10fa64d1a15728dd0f1f508fdfb6f04a9fcdf",
                                      "source/hooks/PlayerPedNativeProbe.h":  "64fa5558a216251c6a0a966fd1a14208393be6896b0e1572f807ed2709539116",
-                                     "source/game/Peds/PlayerPedUpdate.h":  "1b07c4f36a9fef859a3f361b32fb819112e95276e1d720f02fb171869d4c2d97",
+                                     "source/game/Peds/CPlayerPed.h":  "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
                                      "reversing/CPlayerPed/CoffClone.h":  "677eb1e06507744df1efea089832e512f3156fa05c97e7ed617ac93d81be5822",
                                      "reversing/CPlayerPed/NativeObserverBridge.h":  "41703e431fcfb981bb2c959ee4dca9d141873f10131c53d2ad4c6d3c0bdf2048",
                                      "reversing/CPlayerPed/NativeValidatedResolver.h":  "ed710ac7d1b96fe1c62f04c1e3334fa49fe618047be7468af94feedb0da4d3d9",
@@ -25,12 +25,12 @@
                    "scope":  "Update slot29 only; no duplicate stateful comparison"
                },
     "baseline":  {
-                     "date":  "2026-10-10T01:57:24.5922905-06:00",
+                     "date":  "2026-10-10T02:21:10.7349608-06:00",
                      "passed":  true,
                      "forced_stop":  false,
                      "exit_code":  0,
                      "exe_sha256":  "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
-                     "asi_sha256":  "2ecac976589abb2127ebc35aa38c8cc31e4ef17991058a33d245584bf908dc7f",
+                     "asi_sha256":  "78fecfc90dde32d2049e19bde76f68d5748e78b5b0d74b4fa59c183d576b3b04",
                      "wrapper_sha256":  "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
                      "probe_sha256":  "c9eac0fd31fbefba9520983f372ca49332c17935501fbf6dd3f47ce5d69b7970",
                      "result":  {
@@ -41,19 +41,19 @@
                                     "failures":  0,
                                     "exceptions":  0,
                                     "ticks":  253,
-                                    "entity":  "0x06B14710",
-                                    "matrix":  "0x0812CC70",
+                                    "entity":  "0x0725D6D0",
+                                    "matrix":  "0x08875CE0",
                                     "position":  [
-                                                     -0.000785852608,
-                                                     -0.000992010231,
-                                                     -0.0100200623
+                                                     -0.000785697368,
+                                                     -0.000992055051,
+                                                     -0.010020257
                                                  ],
                                     "game_loaded":  true,
                                     "ingame_started":  false
                                 },
-                     "evidence_directory":  "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261010-015640",
+                     "evidence_directory":  "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261010-022027",
                      "console":  {
-                                     "console_window":  "0x00072388",
+                                     "console_window":  "0x00A020C0",
                                      "visible":  true,
                                      "writable":  true,
                                      "always_enabled":  true
@@ -64,7 +64,7 @@
                                           "bank_pairs":  8320,
                                           "bank_failures":  0,
                                           "hooked":  true,
-                                          "hook_calls":  367036,
+                                          "hook_calls":  367629,
                                           "runtime_pairs":  4096,
                                           "runtime_failures":  0,
                                           "game_loaded":  true,

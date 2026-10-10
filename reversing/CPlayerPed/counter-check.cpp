@@ -2,7 +2,7 @@
 #include <array>
 #include <vector>
 #include <cstdio>
-#include "game/Peds/PlayerPedCounter.h"
+#include "game/Peds/CPlayerPed.h"
 using C = reiv::game::PlayerPedCounter;
 static std::uint8_t related[0x2700], receiver[0x400], threshold;
 static bool q1,q2,q3,resolveOk,stateOk;

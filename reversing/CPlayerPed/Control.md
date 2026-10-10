@@ -1,6 +1,6 @@
 # CPlayerPed: selección de modelo y creación de control
 
-`PlayerPedControl.h` reconstruye el flujo propio de los slots 14 (`0x009C0AA0`, 87 bytes) y 47 (`0x009C1E10`, 74 bytes). Las siete funciones externas permanecen explícitas en una interfaz de callbacks y no están reconstruidas en este archivo. No se instaló ningún reemplazo ni se cambiaron estos estados del jugador real.
+`CPlayerPed.h` reconstruye el flujo propio de los slots 14 (`0x009C0AA0`, 87 bytes) y 47 (`0x009C1E10`, 74 bytes). Las siete funciones externas permanecen explícitas en una interfaz de callbacks y no están reconstruidas en este archivo. No se instaló ningún reemplazo ni se cambiaron estos estados del jugador real.
 
 El slot 14 consulta el descriptor en el array global `0x015F73B0`, indexado por el argumento, y prueba el byte `+0x8C`. Para cero llama únicamente `0x008AC500`. Para otro valor llama, en orden, `0x008DB2B0`, `0x008AC500`, `0x009BF660` y `0x008DD530`. El argumento booleano de `0x009BF660` resulta de comparar `[this+0x68]` con `-1` después de `0x008AC500`. Su argumento original conserva bits altos indeterminados porque usa `SETNE CL`; la dependencia lee solamente el byte bajo (`CMP BYTE [ESP+8],0`). El argumento final de `0x008DD530` se lee de `this+0x21C` después de `0x009BF660`. El retorno representa el EAX final; su significado de gameplay permanece desconocido.
 

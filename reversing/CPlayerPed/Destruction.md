@@ -1,6 +1,6 @@
 # CPlayerPed: destructor y wrapper de liberación
 
-`source/game/Peds/PlayerPedDestruction.h` reconstruye el flujo propio de `0x009C1E60` (299 bytes, incluido el salto final al destructor de CPed) y el wrapper virtual `0x009C2260` (33 bytes, `RET 4`). Las funciones externas se expresan como callbacks explícitos; sus implementaciones siguen pendientes. Esta separación permite comparar el cuerpo propio sin destruir al jugador real.
+`source/game/Peds/CPlayerPed.h` reconstruye el flujo propio de `0x009C1E60` (299 bytes, incluido el salto final al destructor de CPed) y el wrapper virtual `0x009C2260` (33 bytes, `RET 4`). Las funciones externas se expresan como callbacks explícitos; sus implementaciones siguen pendientes. Esta separación permite comparar el cuerpo propio sin destruir al jugador real.
 
 El destructor escribe la vtable `0x00D819C4`, limpia el puntero en `+0xEA8` y lo vuelve a leer tras la primera limpieza. Libera dos referencias almacenadas en el bloque que resulta de `[this+0x228]+0x60`, offsets `+0x3E4` y `+0x3E8`: consulta el objeto global de `0x01548F88` mediante `0x0092F4D0`, transforma el resultado mediante `0x008631E0` y llama `0x009C0A70`. Vuelve a leer el bloque antes de escribir cero. Después llama `0x00920CD0` con argumento cero, limpia el miembro `this+0xEAC` con `0x004475F0` y termina en el destructor base `0x008AC1E0`.
 

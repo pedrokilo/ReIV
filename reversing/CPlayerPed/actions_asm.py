@@ -1,7 +1,7 @@
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2];items=json.loads((ROOT/'reversing/CPlayerPed/evidence/actions-static.json').read_text())['methods']
-for va,file,ns,name,args,ret in [(0x9C1F90,'PlayerPedActionRange.h','player_action_range','Act','void* object, void*, std::uint32_t flag','std::uint8_t'),(0x9C2180,'PlayerPedActionRequest.h','player_action_request','Act','void* object, void*, std::uint32_t flag, std::uint32_t argument','std::uint8_t')]:
+for va,file,ns,name,args,ret in [(0x9C1F90,'CPlayerPed.h','player_action_range','Act','void* object, void*, std::uint32_t flag','std::uint8_t'),(0x9C2180,'CPlayerPed.h','player_action_request','Act','void* object, void*, std::uint32_t flag, std::uint32_t argument','std::uint8_t')]:
  s=next(s for s in items if int(s['va'],16)==va);globals_=sorted(int(g,16) for g in s['global_uses']);calls=s['direct_dependencies'];tables=s['jump_tables']
  lines=['#pragma once','#include <cstdint>','#if !defined(_MSC_VER) || !defined(_M_IX86)','#error Player operations require MSVC x86 inline assembly.','#endif',f'namespace reiv::game::{ns} {{','// Complete own caller transcription. Dependencies and storage are explicit.','// ISOLATED SINGLE-THREAD FIXTURES ONLY; no game-global mapping or installed hook.']
  for g in globals_:lines.append(f'inline std::uint32_t g{g:08X}=0;')

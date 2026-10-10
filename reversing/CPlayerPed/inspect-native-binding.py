@@ -12,14 +12,14 @@ from capstone import Cs, CS_ARCH_X86, CS_MODE_32
 
 ROOT = Path(__file__).resolve().parents[2]
 SPECS = [
-    ("Update", "build/privateNativeBinding/check-update.obj", "source/game/Peds/PlayerPedUpdate.h"),
-    ("Adjust", "build/privateNativeBinding/check-value-adjust.obj", "source/game/Peds/PlayerPedValueAdjustment.h"),
-    ("Select", "build/privateNativeBinding/check-input-select.obj", "source/game/Peds/PlayerPedInputSelection.h"),
+    ("Update", "build/privateNativeBinding/check-update.obj", "source/game/Peds/CPlayerPed.h"),
+    ("Adjust", "build/privateNativeBinding/check-value-adjust.obj", "source/game/Peds/CPlayerPed.h"),
+    ("Select", "build/privateNativeBinding/check-input-select.obj", "source/game/Peds/CPlayerPed.h"),
 ]
 SNAPSHOT_HASHES = {
-    "Update": ("14b8b812cf6570d71e8a8c1c4eebc4e3c0160f13c8c5d83d1f0eeb0dfae152b0", "1b07c4f36a9fef859a3f361b32fb819112e95276e1d720f02fb171869d4c2d97"),
-    "Adjust": ("ba3d092a00d42f1d30212797318c81dc55c419ae2b7c8e43433c1fdd98aa5eb7", "84036a3bba98e3be804478614d56f5a17b4bccf3d00607c513ca96603954a978"),
-    "Select": ("4ac4434bd2472deed0ae5a798c0598f5448ae1fe3c8b293795999568e5991567", "05f32ef6b09ed86af00b8141f6ece3e48f8ae4a599d3ef0a92564a94707d49ab"),
+    "Update": ("cf34ebdac8a2f0012f358da3779a5b7941522803ffd3a0d56de4d2eb31d4e1f8", "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3"),
+    "Adjust": ("fee014ed9e645079a9a4d9ad4300eab383a5d42472d660038d3379abc566a616", "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3"),
+    "Select": ("a3169bef417fc5c41e85e2c7d95c59520791b6b044e7f20f8b996c7f1938005d", "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3"),
 }
 
 

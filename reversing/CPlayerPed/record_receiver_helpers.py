@@ -23,7 +23,7 @@ assert len(contracts)==5
 contracts.append(dict(va='0x924e80',callee_pop=0,stack_words=1,return_semantics='EAX info pointer',evidence='rea-input-callee-instructions.json'))
 r=subprocess.run([str(ROOT/'build/player-receiver-helpers-check.exe')],cwd=ROOT,capture_output=True,text=True);print(r.stdout,end='');assert r.returncode==0 and 'PASS comparisons=38400 per_method=7680 failures=0' in r.stdout
 counts={m[1]:int(m[2]) for m in re.finditer(r'dependency ([0-9A-F]{8}) calls=(\d+)',r.stdout)};assert len(counts)==6 and all(counts.values())
-source='source/game/Peds/PlayerPedReceiverHelpers.h'
+source='source/game/Peds/CPlayerPed.h'
 paths=[source,'reversing/CPlayerPed/check-receiver-helpers.cpp','reversing/CPlayerPed/receiver-helpers-fixture.h','reversing/CPlayerPed/evidence/neighbor-receiver-adjudication.json','reversing/CPlayerPed/evidence/rea-neighbor-dependency-contracts.json','build/player-receiver-helpers-check.exe']+[f'build/player-receiver-{i}-patched.bin' for i in range(5)]
 data=dict(passed=True,failures=0,comparisons=38400,per_method_comparisons=7680,exe_sha256=ledger['exe_sha256'],implementation_sha256=sha(Path(source)),implementation_kind='MSVC_x86_ASM',methods=ledger['methods'],contracts=contracts,dependency_counts=counts,output=r.stdout,hashes={p:sha(Path(p)) for p in paths},scope=dict(isolated_only=True,runtime_checked=False,dependencies_reconstructed=False,original_declaring_cpp_class_recovered=False,receiver_player_confirmed=True,concurrent_bindings_supported=False,native_null_dependency_behavior_validated=False,exhaustive_edge_coverage=False,live_player_execution=False))
 (ROOT/'reversing/CPlayerPed/evidence/receiver-helpers-validation.json').write_text(json.dumps(data,indent=2)+'\n',encoding='utf-8')

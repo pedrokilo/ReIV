@@ -4,7 +4,7 @@
 #include <cstdio>
 #include <cstring>
 #include <xmmintrin.h>
-#include "game/Peds/PlayerPedActionSelection.h"
+#include "game/Peds/CPlayerPed.h"
 #include "selection-fixture.h"
 namespace S=reiv::game::player_action_selection;
 static std::array<unsigned char,4096> player,candidate,candidate2,transform,direction,tls;

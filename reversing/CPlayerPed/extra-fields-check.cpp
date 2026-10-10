@@ -3,7 +3,7 @@
 #include <array>
 #include <cstdio>
 #include <cstring>
-#include "game/Peds/PlayerPedExtraFields.h"
+#include "game/Peds/CPlayerPed.h"
 #include "extra-fields-body.inc"
 int main() {
  auto code=static_cast<std::uint8_t*>(VirtualAlloc(nullptr,4096,MEM_COMMIT|MEM_RESERVE,PAGE_READWRITE));if(!code)return 1;

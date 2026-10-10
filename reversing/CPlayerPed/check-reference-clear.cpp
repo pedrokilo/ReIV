@@ -2,7 +2,7 @@
 #include <array>
 #include <vector>
 #include <cstdio>
-#include "game/Peds/PlayerPedReferenceClear.h"
+#include "game/Peds/CPlayerPed.h"
 using R=reiv::game::PlayerPedReferenceClear;
 static std::array<unsigned char,4096> object;static std::vector<unsigned> trace;static unsigned sample;
 static unsigned U(const void*p){return static_cast<unsigned>(reinterpret_cast<std::uintptr_t>(p));}

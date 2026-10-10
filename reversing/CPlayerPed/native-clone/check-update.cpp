@@ -3,7 +3,7 @@
 #include <vector>
 #include <cstdio>
 #include <xmmintrin.h>
-#include "game/Peds/PlayerPedUpdate.h"
+#include "game/Peds/CPlayerPed.h"
 #include "update-fixture.h"
 namespace P=reiv::game::player_update;
 static std::array<unsigned char,16384> player,member,transform,related,action,actionInfo,query,task,vehicle,taskNested;

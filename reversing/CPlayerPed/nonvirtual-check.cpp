@@ -2,7 +2,7 @@
 #include <array>
 #include <vector>
 #include <cstdio>
-#include "game/Peds/PlayerPedNonvirtual.h"
+#include "game/Peds/CPlayerPed.h"
 #include "nonvirtual-body.inc"
 using C=reiv::game::PlayerPedNonvirtual;
 static std::vector<std::uint32_t> trace;

@@ -4,7 +4,7 @@
 #include <cstring>
 #include <initializer_list>
 #include <xmmintrin.h>
-#include "../../source/game/Peds/PlayerPedFloatCopy.h"
+#include "../../source/game/Peds/CPlayerPed.h"
 
 using Original = void(__thiscall*)(void*, const void*);
 using Rebuilt = void(*)(void*, const void*);

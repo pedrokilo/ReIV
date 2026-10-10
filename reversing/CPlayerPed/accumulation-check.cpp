@@ -3,7 +3,7 @@
 #include <array>
 #include <cstdio>
 #include <cstring>
-#include "game/Peds/PlayerPedAccumulation.h"
+#include "game/Peds/CPlayerPed.h"
 int main() {
  const std::uint8_t body[]={
 #include "accumulation-body.inc"

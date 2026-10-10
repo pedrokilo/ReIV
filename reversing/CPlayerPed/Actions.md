@@ -2,7 +2,7 @@
 
 El ejecutable canónico aporta tres cuerpos completos: `9C1F90` (483 bytes, 141 instrucciones, AL, RET4), `9C2180` (218 bytes, 71 instrucciones, AL, RET8) y `9C1300` (1549 bytes, 400 instrucciones, EAX, RET14). No contienen tablas de saltos. Las implementaciones son transcripciones MSVC x86 ASM del caller, con almacenamiento y dependencias explícitos. No delegan la función completa al ejecutable.
 
-`9C1300` recibe el objeto auxiliar embebido en `CPlayerPed + E7C`: las acciones lo llaman mediante `LEA ECX,[ESI+E7C]` en `9C211B` y `9C220E`. Su primer miembro apunta al jugador. Por ello `PlayerPedActionSelection.h` representa un auxiliar; no se contabiliza como otro método directo del jugador. Su llamada recursiva utiliza su propia reconstrucción.
+`9C1300` recibe el objeto auxiliar embebido en `CPlayerPed + E7C`: las acciones lo llaman mediante `LEA ECX,[ESI+E7C]` en `9C211B` y `9C220E`. Su primer miembro apunta al jugador. Por ello `CPlayerPed.h` representa un auxiliar; no se contabiliza como otro método directo del jugador. Su llamada recursiva utiliza su propia reconstrucción.
 
 APIs integradas en `CPlayerPed.h` y el override `declarations/CPlayerPed.inc`:
 

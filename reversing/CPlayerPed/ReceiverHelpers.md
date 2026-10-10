@@ -2,7 +2,7 @@
 
 Las cinco funciones adicionales tienen receptor jugador confirmado por los callers en `evidence/neighbor-receiver-adjudication.json`, corroborados por `rea-neighbor-caller-proof.json`. Esto demuestra qué objeto reciben; no recupera la declaración C++ original ni su clase propietaria.
 
-`PlayerPedReceiverHelpers.h` contiene los cuerpos íntegros transcritos en MSVC x86 ASM:
+`CPlayerPed.h` contiene los cuerpos íntegros transcritos en MSVC x86 ASM:
 
 | VA | API aislada propuesta | Tamaño | Contrato propio |
 | --- | --- | --- | --- |
@@ -30,7 +30,7 @@ Evidencia final: `evidence/receiver-helpers-validation.json`, con bytes canónic
 
 ## Iterador adicional 9BF250
 
-`PlayerPedRelatedFlags.h` reconstruye las 37 instrucciones / 114 bytes del caller en C++ con callbacks explícitos. Su receptor jugador está confirmado por `B91D70`: llamada al getter `817F40`, `MOV ECX,EAX`, salto a `9BF250`. Conserva siete iteraciones, consulta fresca del bloque en cada una, aritmética módulo 2³² de `block+3D4` multiplicado por `5C` y sumado al base suministrado `1662178`, búsqueda del candidato por índice y rechazo de candidato nulo o byte `A70==2`.
+`CPlayerPed.h` reconstruye las 37 instrucciones / 114 bytes del caller en C++ con callbacks explícitos. Su receptor jugador está confirmado por `B91D70`: llamada al getter `817F40`, `MOV ECX,EAX`, salto a `9BF250`. Conserva siete iteraciones, consulta fresca del bloque en cada una, aritmética módulo 2³² de `block+3D4` multiplicado por `5C` y sumado al base suministrado `1662178`, búsqueda del candidato por índice y rechazo de candidato nulo o byte `A70==2`.
 
 Los candidatos restantes ejecutan el slot virtual 12 con argumento 1 antes de releer flags. Se aplica OR de bit cero a `candidate+24` cuando el byte `26C` no tiene bit 2, y se actualiza sólo bit 12 de `candidate+260` con el byte correspondiente de `16180E0`. La API `PlayerPedRelatedFlags::UpdateRaw(player,deps)` conserva también los bits EAX de cada salida: puntero de candidato en rutas rechazadas o diferencia XOR en la ruta actualizada. No atribuye tipo de retorno C++ nativo.
 

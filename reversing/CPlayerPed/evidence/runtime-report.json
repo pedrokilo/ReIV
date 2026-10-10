@@ -1,1 +1,1 @@
-{"passed":true,"samples_per_method":64,"comparisons":768,"method_count":12,"accumulator_scope":"isolated-buffer-only","extra_fields_scope":"isolated-buffer-only","failures":0,"exceptions":0,"player":"0x076256D0","live_writes":"same-value only","replacement_installed":false}
+{"passed":true,"samples_per_method":64,"comparisons":768,"method_count":12,"accumulator_scope":"isolated-buffer-only","extra_fields_scope":"isolated-buffer-only","failures":0,"exceptions":0,"player":"0x06F22700","live_writes":"same-value only","replacement_installed":false}

@@ -1,6 +1,6 @@
 # Player storage and pool stride
 
-`source/game/Peds/PlayerPedLayout.h` provides a flat, standard-layout x86 storage
+`source/game/Peds/CPlayerPed.h` provides a flat, standard-layout x86 storage
 view with individually asserted observed offsets. Addresses remain 32-bit words
 on any parsing host. Floating fields are represented as bits to avoid implicit
 NaN conversions. Unknown bytes remain explicit padding. Semantic names are

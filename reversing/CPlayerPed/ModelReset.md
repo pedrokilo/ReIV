@@ -1,6 +1,6 @@
 # CPlayerPed: reset posterior al cambio de modelo
 
-`PlayerPedModelReset.h` reconstruye el cuerpo propio completo de `0x009BF660`, **163 bytes**, llamado desde la selección de modelo. Sus dependencias explícitas son seis funciones directas y el slot virtual 68 (`vtable+0x110`). Las implementaciones de esas siete dependencias siguen pendientes. No se instaló un reemplazo ni se ejecutó este reset sobre el jugador real.
+`CPlayerPed.h` reconstruye el cuerpo propio completo de `0x009BF660`, **163 bytes**, llamado desde la selección de modelo. Sus dependencias explícitas son seis funciones directas y el slot virtual 68 (`vtable+0x110`). Las implementaciones de esas siete dependencias siguen pendientes. No se instaló un reemplazo ni se ejecutó este reset sobre el jugador real.
 
 El método copia exactamente los bits del global `0x00D50398` a `0x00F1D9D8`; `MOVSS` realiza una transferencia, sin conversión numérica. Activa el bit 0 en `this+0x24`, pone cero en `this+0xA80` y llama `8A92C0(0)`, `8A07E0(1)`, `8A70C0(0,-1)` y `89C8B0(-1)`, en ese orden. Después lee `this+0x228`, activa `0x20000` en `this+0x26C` y limpia el bit 1 de `[member+0x60]+0x3D0`, cuando el puntero y su suma de 32 bits no son cero.
 

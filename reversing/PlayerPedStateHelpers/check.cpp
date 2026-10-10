@@ -2,7 +2,7 @@
 #include <cstdio>
 #include <cstring>
 #include <xmmintrin.h>
-#include "../../source/game/Peds/PlayerPedStateHelpers.h"
+#include "../../source/game/Peds/CPlayerPed.h"
 #include "../../build/player-state-fixture.h"
 namespace pd=reiv::game::player_detail;
 static unsigned char player[4096],a[4096],b[4096];

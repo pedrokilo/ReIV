@@ -3,7 +3,7 @@
 #include <vector>
 #include <cstdio>
 #include <xmmintrin.h>
-#include "game/Peds/PlayerPedValueAdjustment.h"
+#include "game/Peds/CPlayerPed.h"
 #include "value-fixture.h"
 namespace V=reiv::game::player_adjustment;
 static std::array<unsigned char,4096> player,a,b;static unsigned scenario,pattern,lookups;

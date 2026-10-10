@@ -66,23 +66,7 @@
     <ClCompile Include="..\source\core\OriginalCall.cpp" />
     <ClCompile Include="..\source\core\DebugLog.cpp" />
     <ClCompile Include="..\source\game\scene\CDynamicEntity.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedCounter.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedActionRange.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedActionRequest.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedActionSelection.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedFloatCopy.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedProtectedValue.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedReceiverHelpers.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedStateHelpers.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedAccumulation.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedConstruction.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedControl.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedDestruction.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedExtraFields.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedModelReset.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedNonvirtual.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedReferenceClear.cpp" />
-    <ClCompile Include="..\source\game\Peds\PlayerPedRelatedFlags.cpp" />
+    <ClCompile Include="..\source\game\Peds\CPlayerPed.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

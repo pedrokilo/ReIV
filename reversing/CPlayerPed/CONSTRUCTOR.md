@@ -99,7 +99,7 @@ La entrada `0x00D0D21A` contiene la rutina CRT rand: el estado por hilo obtenido
 
 ## Implementación y comparación del cuerpo
 
-`source/game/Peds/PlayerPedConstruction.h` implementa el cuerpo con callbacks explícitos para dependencias y acceso a globales. El helper de aritmética flotante usa las instrucciones x87 FILD, FMUL, FNSTCW, FLDCW y FISTP de 64 bits con restauración del control word, sin aproximar con long double.
+`source/game/Peds/CPlayerPed.h` implementa el cuerpo con callbacks explícitos para dependencias y acceso a globales. El helper de aritmética flotante usa las instrucciones x87 FILD, FMUL, FNSTCW, FLDCW y FISTP de 64 bits con restauración del control word, sin aproximar con long double.
 
 Pasaron 49.152 comparaciones Win32 contra los 884 bytes originales completos, con 18 llamadas directas y un import sustituidos. El banco prueba 1.024 combinaciones de condiciones, doce control words (tres precisiones por cuatro redondeos, excepciones enmascaradas) y cuatro valores de rand. Compara cinco buffers de 4.096 bytes, 28 globales, orden/receptores/argumentos de dependencias, retorno y status/control word x87. Incluye una constante float con NaN señalizante para la secuencia de FLD/FSTP. Evidencia: `constructor-validation-summary.json` y `constructor-fixture.json`; repetir con `constructor-check.cpp`.
 

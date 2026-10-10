@@ -28,7 +28,7 @@ def main():
             matches = matches and hashlib.sha256((ROOT / source).read_bytes()).hexdigest() == digest
         if not matches:
             # Revalidacion tras mover cuerpos de .h a .cpp: valida solo si todos los hashes actuales coinciden.
-            item = revalidation.get("items", {}).get(Path(row["source"]).name)
+            item = revalidation.get("items", {}).get(row["evidence"])
             matches = bool(item) and revalidation.get("passed") is True and all(
                 hashlib.sha256((ROOT / path).read_bytes()).hexdigest() == digest for path, digest in item["sources"].items())
         row["source_matches_evidence"] = int(matches)

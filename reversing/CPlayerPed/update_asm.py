@@ -23,7 +23,7 @@ for i in s['instructions']:
   op=re.sub(r'0x([0-9a-f]+)',lambda m:'0'+m[1].upper()+'h',op)
  lines.append('        '+m+' '+op)
 lines+=['    }','}','}']
-(ROOT/'source/game/Peds/PlayerPedUpdate.h').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+(ROOT/'source/game/Peds/CPlayerPed.h').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 fixture=['#pragma once','inline constexpr unsigned char UpdateBytes[]={'+','.join('0x'+x for x in s['body_bytes'].split())+'};','struct UpdateCallPatch{unsigned offset,target;};','inline constexpr UpdateCallPatch UpdateCallPatches[]={']
 fixture += ['{'+str(int(i['va'],16)-0x9C0B00+1)+','+i['operands']+'},' for i in s['instructions'] if i['mnemonic']=='call' and i['operands'].startswith('0x')]
 fixture+=['};','struct UpdateGlobalPatch{unsigned offset,original;};','inline constexpr UpdateGlobalPatch UpdateGlobalPatches[]={']

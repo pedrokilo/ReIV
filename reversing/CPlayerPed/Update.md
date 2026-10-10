@@ -1,6 +1,6 @@
 # CPlayerPed: actualización propia, slot 29
 
-`PlayerPedUpdate.h` transcribe las **567 instrucciones** del cuerpo completo `0x009C0B00..0x009C12FD` (**2046 bytes**) a ensamblador inline MSVC x86. `CPlayerPed::UpdateIsolated` expone esta operación para fixtures aislados. Se conservan el frame alineado, registros preservados, argumentos de stack, saltos, lecturas repetidas y orden de acceso. El retorno definido es solamente `AL=1`; no se atribuye significado a los bits altos de EAX.
+`CPlayerPed.h` transcribe las **567 instrucciones** del cuerpo completo `0x009C0B00..0x009C12FD` (**2046 bytes**) a ensamblador inline MSVC x86. `CPlayerPed::UpdateIsolated` expone esta operación para fixtures aislados. Se conservan el frame alineado, registros preservados, argumentos de stack, saltos, lecturas repetidas y orden de acceso. El retorno definido es solamente `AL=1`; no se atribuye significado a los bits altos de EAX.
 
 La implementación mantiene las operaciones SSE `COMISS`, `MULSS`, `ADDSS`, `SUBSS` y `SQRTSS`, y los `FLD`/`FSTP` x87 utilizados para argumentos. Los campos `+0xEE0`, `+0xEE4`, `+0xEE8` y `+0xEEC` almacenan bits IEEE-754; las conversiones a entero que sugiere el pseudocódigo Ghidra no se trasladaron al código. Se conservaron las condiciones unordered de COMISS y el tratamiento de denormales del hardware.
 

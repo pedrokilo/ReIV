@@ -271416,7 +271416,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedDestruction.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/destruction-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271433,7 +271433,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedDestruction.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/destruction-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271450,7 +271450,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedControl.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/control-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271467,7 +271467,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedControl.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/control-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271484,7 +271484,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedCounter.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/counter-validation-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271501,7 +271501,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedCounter.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/counter-validation-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271518,7 +271518,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedProtectedValue.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/PlayerPedProtectedValue/native-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271535,7 +271535,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedProtectedValue.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/PlayerPedProtectedValue/native-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271552,7 +271552,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedProtectedValue.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/PlayerPedProtectedValue/native-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271569,7 +271569,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedProtectedValue.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/PlayerPedProtectedValue/native-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271586,7 +271586,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedConstruction.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/constructor-validation-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271603,7 +271603,7 @@
     "runtime_checked": 1,
     "reconstruction_validated": 1,
     "standalone": 0,
-    "source": "source/game/Peds/PlayerPedUpdate.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/native-runtime-summary.json",
     "scope": "Natural Update calls redirected to compiled reconstructed caller with original external callees. No duplicate update comparison or complete class certification.",
     "class": "CPlayerPed"
@@ -271620,7 +271620,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedModelReset.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/model-reset-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271637,7 +271637,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedNonvirtual.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/nonvirtual-validation-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271654,7 +271654,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedNonvirtual.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/nonvirtual-validation-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271671,7 +271671,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedNonvirtual.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/nonvirtual-validation-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271688,7 +271688,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedStateHelpers.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/PlayerPedStateHelpers/native-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271705,7 +271705,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedStateHelpers.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/PlayerPedStateHelpers/native-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271722,7 +271722,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedStateHelpers.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/PlayerPedStateHelpers/native-summary.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271739,7 +271739,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedReferenceClear.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/reference-clear-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271756,7 +271756,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedValueAdjustment.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/value-adjustment-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271773,7 +271773,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedInputSelection.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/input-selection-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271790,7 +271790,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedReceiverHelpers.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/receiver-helpers-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271807,7 +271807,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedReceiverHelpers.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/receiver-helpers-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271824,7 +271824,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedReceiverHelpers.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/receiver-helpers-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271841,7 +271841,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedReceiverHelpers.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/receiver-helpers-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271858,7 +271858,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedReceiverHelpers.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/receiver-helpers-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271875,7 +271875,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedRelatedFlags.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/related-flags-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271892,7 +271892,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedActionRange.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/actions-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"
@@ -271909,7 +271909,7 @@
     "runtime_checked": 0,
     "reconstruction_validated": 1,
     "standalone": 1,
-    "source": "source/game/Peds/PlayerPedActionRequest.h",
+    "source": "source/game/Peds/CPlayerPed.h",
     "evidence": "reversing/CPlayerPed/evidence/actions-validation.json",
     "scope": "Complete own caller body compared with canonical instructions; external dependencies patched to deterministic fixtures. Not a native replacement or complete class/gameplay validation.",
     "class": "CPlayerPed"

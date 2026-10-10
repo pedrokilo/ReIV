@@ -1,304 +1,319 @@
 {
-  "schema": 1,
+  "schema": 2,
   "passed": true,
   "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
-  "generated": "2026-10-10T07:52:56Z",
-  "scope": "Isolated Win32 banks rerun after moving bodies from PlayerPed*.h to PlayerPed*.cpp; same comparison counts as the original evidence. Not an in-game validation.",
+  "generated": "2026-10-10T08:22:11Z",
+  "scope": "Isolated Win32 banks rerun after merging the PlayerPed* modules into CPlayerPed.h/.cpp; same comparison counts as the original evidence. Not an in-game validation.",
   "items": {
-    "PlayerPedDestruction.h": {
-      "evidence": "reversing/CPlayerPed/evidence/destruction-validation.json",
+    "reversing/CPlayerPed/evidence/destruction-validation.json": {
       "comparisons": 256,
       "runs": [
         {
           "check": "reversing/CPlayerPed/check-destructor.cpp",
-          "check_sha256": "a83e13ba79c12c0917306816414543e07783337da5cc3d196e732b9dc0731c5a",
+          "check_sha256": "2fe8b331e70b56e3b055e30827599afd122933569ce31f4ec30e6182f1a87df7",
           "exe": "check-destructor-CPlayerPed.exe",
-          "exe_sha256": "bc3f70911a70e6f5589c1e37c65a0c0d6a47982a6c6a294d9e02b2eb0c128914",
+          "exe_sha256": "35103759d5f76a51b46d21c46960825d028a91bba9ad56f6fe0c9a9969fde078",
           "comparisons": 256
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedDestruction.h": "8ae07594a024d7f21843d0d3769a9ccb60a8c31433539a4f042a6b0d79306201",
-        "source/game/Peds/PlayerPedDestruction.cpp": "f830d95e4cd0c07fd2161eebddad3148f8d5fc281b54a0d606c7dce4be84dea6"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedControl.h": {
-      "evidence": "reversing/CPlayerPed/evidence/control-validation.json",
+    "reversing/CPlayerPed/evidence/control-validation.json": {
       "comparisons": 512,
       "runs": [
         {
           "check": "reversing/CPlayerPed/check-control.cpp",
-          "check_sha256": "aa0d8620943e4a606b55fa2c7f6afa51c069dd4a1abacadd69b71d474af953f4",
+          "check_sha256": "5af4ce4f02bebe71434973be9519655655132e6dd88d3108709cad02eb83eddc",
           "exe": "check-control-CPlayerPed.exe",
-          "exe_sha256": "125e3727e6e9e84256c940b60bc966210030b0a5b8e23401cdcfb240a7cfcb9b",
+          "exe_sha256": "8a5d924bfede4ab6b5ecd19ed2881bd68298a4aeed393817b083c70915bc406a",
           "comparisons": 512
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedControl.h": "967e9e51b220747d9577680f9c665e6e5c5f3a63e9d77f1b1c22d663cf4a1829",
-        "source/game/Peds/PlayerPedControl.cpp": "8f721ed4ae9261e9241509c30a4d7218ce1a182cc736314a99bb4a6194677cb4"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedCounter.h": {
-      "evidence": "reversing/CPlayerPed/evidence/counter-validation-summary.json",
+    "reversing/CPlayerPed/evidence/counter-validation-summary.json": {
       "comparisons": 258048,
       "runs": [
         {
           "check": "reversing/CPlayerPed/counter-check.cpp",
-          "check_sha256": "87fb070c4df9bfdbfcac104560068daaf4fa1afe2b422b45a41f8b33843557a6",
+          "check_sha256": "8827b9aaac99e9c6c67b358665afb751829656482f2d4f354bf28dca3220f05e",
           "exe": "counter-check-CPlayerPed.exe",
-          "exe_sha256": "7eb199cdde3f032be2c7436fb584e3ff48c12c4090d624a7890adce1ffeb6afd",
+          "exe_sha256": "ad7ac68414db2c672b429cf20a247c645b1d26ee80a05f8635527eff81b0d2f4",
           "comparisons": 258048
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedCounter.h": "2ba3e92aa99c88fb827c15975f2ad720f85163eb2a0cdac8afe91fe465ea9ec6",
-        "source/game/Peds/PlayerPedCounter.cpp": "c006c2e18da58dcd5eb9c36895ee26d04b79e306e6d4ff229ab268ad194ccba1"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedProtectedValue.h": {
-      "evidence": "reversing/PlayerPedProtectedValue/native-summary.json",
+    "reversing/PlayerPedProtectedValue/native-summary.json": {
       "comparisons": 325248,
       "runs": [
         {
           "check": "reversing/PlayerPedProtectedValue/check.cpp",
-          "check_sha256": "7736033b3eda4381d8b57f37e81e97eb570e00787ee6297d899d51d4a510cd78",
+          "check_sha256": "30b5d3df0a534e0a19313f19b75fbbcabb3b60e67486ff54593f79c3471b975e",
           "exe": "check-PlayerPedProtectedValue.exe",
-          "exe_sha256": "a178b50e15fca851dd939bd6c2d57dc733c4e171db54127550ff15f5724da9ef",
+          "exe_sha256": "6773bce4b0e626fa233a28651cbfaabd5a91e4b0d0c5aa4aea1c08e27e5c9143",
           "comparisons": 325248
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedProtectedValue.h": "038b4796943777dd463da1e12d2cf0df294ee807ce0f77354192dd911bfc9182",
-        "source/game/Peds/PlayerPedProtectedValue.cpp": "73c1f8fe81ee91c98487c8b8f56854cea1a1d4587c6f6640d122b8b88bf33b78"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedConstruction.h": {
-      "evidence": "reversing/CPlayerPed/evidence/constructor-validation-summary.json",
+    "reversing/CPlayerPed/evidence/constructor-validation-summary.json": {
       "comparisons": 49152,
       "runs": [
         {
           "check": "reversing/CPlayerPed/constructor-check.cpp",
-          "check_sha256": "3bf1d86250a190b687aa6a2987c29305e4cf37d069d58c468467bbbc4cbd44ee",
+          "check_sha256": "0dd2a9ac3f8dd3b07ed145ad766e1bb4b403daa3211dc3ecf3abc2e32f5eb631",
           "exe": "constructor-check-CPlayerPed.exe",
-          "exe_sha256": "aef0d4aabe6ef6d6a29fa46aa9581182f7d985fac8ec5cd411a7f052f7e8cb3a",
+          "exe_sha256": "05ef3d9d70aa6d69d2f546cfd505701925327012b99136fa4b7f33c0c8d9d016",
           "comparisons": 49152
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedConstruction.h": "512fbd941d832a48544ea3ea80e8da298bb0dc601f61b013e440a290da60fae5",
-        "source/game/Peds/PlayerPedConstruction.cpp": "5f18fcadc0eaabf5a31f83aa1c72de972b0ed3b46b3b53afde8db4017e53c4ea"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedModelReset.h": {
-      "evidence": "reversing/CPlayerPed/evidence/model-reset-validation.json",
+    "reversing/CPlayerPed/evidence/model-reset-validation.json": {
       "comparisons": 10752,
       "runs": [
         {
           "check": "reversing/CPlayerPed/check-model-reset.cpp",
-          "check_sha256": "f7ce81da6c495a406499052df6d7cf87659bac82c8ebcb209d32640a00367751",
+          "check_sha256": "4fc31174c1f162f959107598b42926b0a37360eecd5cf3243efe66174a410a6b",
           "exe": "check-model-reset-CPlayerPed.exe",
-          "exe_sha256": "92ca8ad04c75eedb3b60235e692551d217ca7621c7ab1a2f939dc87592403347",
+          "exe_sha256": "0824b42a7caa932473be08a44465ecd3d388e969b4b4f616988b89013a5c51e1",
           "comparisons": 10752
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedModelReset.h": "f058e80313adabe8e2ff12de7076ad047608fdf5538e4362889a62753887c48c",
-        "source/game/Peds/PlayerPedModelReset.cpp": "582601e74c95f22b3783323fec253fecec0cf86129b94556d3ba9eece9e9f623"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedNonvirtual.h": {
-      "evidence": "reversing/CPlayerPed/evidence/nonvirtual-validation-summary.json",
+    "reversing/CPlayerPed/evidence/nonvirtual-validation-summary.json": {
       "comparisons": 57856,
       "runs": [
         {
           "check": "reversing/CPlayerPed/nonvirtual-check.cpp",
-          "check_sha256": "26b0fa7302008d38a848a25d73f8580969bc805d4531cb9d8b69ceb5810133f9",
+          "check_sha256": "1d4ecdcd747009f9cc947b5e870d3168657191aeb29b71922045e30f48c33dcb",
           "exe": "nonvirtual-check-CPlayerPed.exe",
-          "exe_sha256": "3c666dd367b2f8db860a577b78c17942ca7c1e6c1e9e9683c11115d534d873de",
+          "exe_sha256": "b228b21c2c049dad91bac9ab93aadaf61ccc2fa1dcbefc5934cfaf2bcb040535",
           "comparisons": 16384
         },
         {
           "check": "reversing/CPlayerPed/initialization-check.cpp",
-          "check_sha256": "705c1d5f79e6364763cc485626ac516483c2931f62294fb0b35bbc9bd568fe9e",
+          "check_sha256": "f42ab7f475a685ce8b926a5e0b97de8aea37d2bb695d56bba10f26dae38ac433",
           "exe": "initialization-check-CPlayerPed.exe",
-          "exe_sha256": "c4fa75651b946e5fbf86135619f4917733357285d4ddbdd0aeccaa77cd2a1b0b",
+          "exe_sha256": "904b6ce784aaaca32ac9020bcd7550e2caaf86613f916095d7aa145723b05107",
           "comparisons": 41472
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedNonvirtual.h": "42fd600c729db0fa4792d6b7c678d4fb93fd353f84c1d2c186d972afdcb11190",
-        "source/game/Peds/PlayerPedNonvirtual.cpp": "1c3e05ffb9a22f6656c66025d207ab3bca5103f7c82875f89aa7f54aab3c9000"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedStateHelpers.h": {
-      "evidence": "reversing/PlayerPedStateHelpers/native-summary.json",
+    "reversing/PlayerPedStateHelpers/native-summary.json": {
       "comparisons": 73728,
       "runs": [
         {
           "check": "reversing/PlayerPedStateHelpers/check.cpp",
-          "check_sha256": "537effbf574e08f645fdff09fba0449d4211f37845fe7cfd629d2d44dbdf06d1",
+          "check_sha256": "91e1257d90223555f418cfc9f264627ef14805d840661beb45bc13cf5412faf0",
           "exe": "check-PlayerPedStateHelpers.exe",
-          "exe_sha256": "88f74fef276799c5ba1728493ba96a66768f92da08ed6f5d3e9e60186c378516",
+          "exe_sha256": "7da89759933ebcc73031d593dc1a01e69c091c7b7f9d2f523eeaf61bbc0442c2",
           "comparisons": 73728
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedStateHelpers.h": "34532a3e1ac4234e4d2c63d9112825f1a0318b03217c675393555d745b58b65b",
-        "source/game/Peds/PlayerPedStateHelpers.cpp": "8b405ebf33617d8cf8b6beb9f9a5d1c8bfc56471ac3aa30df816c66dde779594"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedReferenceClear.h": {
-      "evidence": "reversing/CPlayerPed/evidence/reference-clear-validation.json",
+    "reversing/CPlayerPed/evidence/reference-clear-validation.json": {
       "comparisons": 512,
       "runs": [
         {
           "check": "reversing/CPlayerPed/check-reference-clear.cpp",
-          "check_sha256": "d4119903e6a09ba12e04fdae9ecb37afdd696247647e537113b0d84d2c1934ba",
+          "check_sha256": "30d6651c003dc04ab63ea4db44ca35464d96f9c6bce163be74903515c703c1b9",
           "exe": "check-reference-clear-CPlayerPed.exe",
-          "exe_sha256": "4722f74fd72b1ee82d7475d5ad5543a12200035259560c208ecee166a29cbd00",
+          "exe_sha256": "e2c817acf6c458b5c1b975496ac40c6e24443edcd67ecf64ca3bdb4e4526ede4",
           "comparisons": 512
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedReferenceClear.h": "f08ddc046e20d0305548090b1b5783e91a30c61ebd3f25404bc2bb0727a8814e",
-        "source/game/Peds/PlayerPedReferenceClear.cpp": "5142325987b8d39698b499bed7886965d0cf1d46e1b885a226c00ced8706a612"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedReceiverHelpers.h": {
-      "evidence": "reversing/CPlayerPed/evidence/receiver-helpers-validation.json",
+    "reversing/CPlayerPed/evidence/receiver-helpers-validation.json": {
       "comparisons": 38400,
       "runs": [
         {
           "check": "reversing/CPlayerPed/check-receiver-helpers.cpp",
-          "check_sha256": "a54182e1675260fabb73aae6ebe006147828386adcc4a8afc04944f0c10d0bff",
+          "check_sha256": "525d99fa18864208d64599e3d32b09469f4191b4aad903921ef596d0885a1230",
           "exe": "check-receiver-helpers-CPlayerPed.exe",
-          "exe_sha256": "3442bf02e810b05ccd1d8a795fe6893b766a6e32d935b3ce1e490d06e142327b",
+          "exe_sha256": "a4391385e664bfe5a5ce0c34706b3f56ac4fa2c3ec6661dad79e251e21eab845",
           "comparisons": 38400
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedReceiverHelpers.h": "a1d5368d47f1a35893c8f819dab9b5a516d5883d568c5526678365b1a668771b",
-        "source/game/Peds/PlayerPedReceiverHelpers.cpp": "a28c308248811b1a1715c4d4b5e144db340caf4151a621ce491cd043056b78d6"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedRelatedFlags.h": {
-      "evidence": "reversing/CPlayerPed/evidence/related-flags-validation.json",
+    "reversing/CPlayerPed/evidence/related-flags-validation.json": {
       "comparisons": 4096,
       "runs": [
         {
           "check": "reversing/CPlayerPed/check-related-flags.cpp",
-          "check_sha256": "de5eea6ca71aacfb760a8febb3f984fd369cea4dcf369d78098cade9318b3a5d",
+          "check_sha256": "21013df7c4d8bb8649516f2bb34261a85157678e4e360c3b98e43a52d1c69058",
           "exe": "check-related-flags-CPlayerPed.exe",
-          "exe_sha256": "db26790c4e92cd067a58530ccbca7a8fac1c7a47044d3bd78ae7e9cce8f9592c",
+          "exe_sha256": "b5025cc74731e7557bd45d4cd014751830c7ae3d01a9ff4fb24aa4dd9abee82b",
           "comparisons": 4096
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedRelatedFlags.h": "8e7396d288ced054684998b69b568b0c877ca9018a46d335ad3f794b8ab01fc9",
-        "source/game/Peds/PlayerPedRelatedFlags.cpp": "13f0eac92968372659afaa6fa6c075e974ecad465abb87097fe307c35fe0e94f"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedActionRange.h": {
-      "evidence": "reversing/CPlayerPed/evidence/actions-validation.json",
+    "reversing/CPlayerPed/evidence/actions-validation.json": {
       "comparisons": 42320,
       "runs": [
         {
           "check": "reversing/CPlayerPed/check-actions.cpp",
-          "check_sha256": "10d20c0af297999882b38108b6a59c425b40bcbe68dc05f0bbb2bb6a525295bd",
+          "check_sha256": "843e3340461383780ae49babf03984b2ea3a9e11e184d1c8189fd914e0818580",
           "exe": "check-actions-CPlayerPed.exe",
-          "exe_sha256": "aa8a814c2060bf599aca73fe6b12f0fbfdc0053ae6b7946705c11638095dacab",
+          "exe_sha256": "4807fa7ea156c697f5dd415f861e5dab5b22304d3d6ca13e69a64355371296f1",
           "comparisons": 42320
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedActionRange.h": "88ec18b1adcbaf3eb58d2aff7f0599460c608ad7fdcdf56c5929b561512a2afb",
-        "source/game/Peds/PlayerPedActionRange.cpp": "39d5181eaecf75843702b76098b8310aee84dbb171a99c01900a4bc3f1a05373"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedActionRequest.h": {
-      "evidence": "reversing/CPlayerPed/evidence/actions-validation.json",
-      "comparisons": 42320,
-      "runs": [
-        {
-          "check": "reversing/CPlayerPed/check-actions.cpp",
-          "check_sha256": "10d20c0af297999882b38108b6a59c425b40bcbe68dc05f0bbb2bb6a525295bd",
-          "exe": "check-actions-CPlayerPed.exe",
-          "exe_sha256": "aa8a814c2060bf599aca73fe6b12f0fbfdc0053ae6b7946705c11638095dacab",
-          "comparisons": 42320
-        }
-      ],
-      "sources": {
-        "source/game/Peds/PlayerPedActionRequest.h": "82c0607c2d0e284ad52fed6caad788fe549a687cc996f922b9067858a5cc2dc3",
-        "source/game/Peds/PlayerPedActionRequest.cpp": "6c3b5301f22ed3b40b7388b811d6a054d1a28f01c21aaa51dc9cad9f223ca246"
-      }
-    },
-    "PlayerPedActionSelection.h": {
-      "evidence": "reversing/CPlayerPed/evidence/action-selection-validation.json",
+    "reversing/CPlayerPed/evidence/action-selection-validation.json": {
       "comparisons": 168960,
       "runs": [
         {
           "check": "reversing/CPlayerPed/check-action-selection.cpp",
-          "check_sha256": "fe9a20f8ee7fa77de353b8423205800bf51423e550c01efad30f36c9067832ce",
+          "check_sha256": "5ab6856055b02e8235d15291b12d34a44c3df3a66bea9e64f0ebb95d05841735",
           "exe": "check-action-selection-CPlayerPed.exe",
-          "exe_sha256": "6e22f120f5cd609d6c7cea23a962e08c55d26795953c002eac72853475aab168",
+          "exe_sha256": "eef6d5c52a58ccd25620a02908f487d7ed997c74bcb0dd985e9cbd2c1ebfbe1d",
           "comparisons": 168960
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedActionSelection.h": "87fafd765741deb80bfa24b8dac0d07a829edc599a5e716225be1f369883366e",
-        "source/game/Peds/PlayerPedActionSelection.cpp": "b728f2b8cd2ad26f5867113f1f97ae5660c0578b161da9b9b0a1b208fbb3554b"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedAccumulation.h": {
-      "evidence": "reversing/CPlayerPed/evidence/accumulation-validation-summary.json",
+    "reversing/CPlayerPed/evidence/accumulation-validation-summary.json": {
       "comparisons": 204800,
       "runs": [
         {
           "check": "reversing/CPlayerPed/accumulation-check.cpp",
-          "check_sha256": "8c6aa0a258e1f1f8189ea60ad0d6c43d20d51475384c0ffc46bacb67c9b3f313",
+          "check_sha256": "b8041f6f7de54695e0ef1d5ec56c9822329f51c8b5c3222a714e63a0ccb6ca2f",
           "exe": "accumulation-check-CPlayerPed.exe",
-          "exe_sha256": "8dca221720f55eb653ef41ab291b6363b666ad390c24fda08b4a28bf06e92e61",
+          "exe_sha256": "15b334ce080b7d8c17366a20147e6c636f326340b0a2f6804c3e895f57100e01",
           "comparisons": 204800
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedAccumulation.h": "c13e6b6a94aab679823eebe13595f1f1f0627319344002e874fde0e8f2b8aeb2",
-        "source/game/Peds/PlayerPedAccumulation.cpp": "a22152d7aa194ba8e8e26336a1d957dcc86174fcdb6c2da96b92592a03008dfe"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedExtraFields.h": {
-      "evidence": "reversing/CPlayerPed/evidence/extra-fields-validation-summary.json",
+    "reversing/CPlayerPed/evidence/extra-fields-validation-summary.json": {
       "comparisons": 409600,
       "runs": [
         {
           "check": "reversing/CPlayerPed/extra-fields-check.cpp",
-          "check_sha256": "aea5674afc26cdddbe8f8226bee5e77082e370128e6b5aebc8e909b8b5e3a7af",
+          "check_sha256": "10bbad9da9be81d9df206869977cb30ec15de39b89c499a25ecd8883ebe65fbd",
           "exe": "extra-fields-check-CPlayerPed.exe",
-          "exe_sha256": "ef6fbdf596aecbd7f089e2026911ff1d15fa0d44933f079aed8eb7528f681c6e",
+          "exe_sha256": "d2e1f82d19e5c94cac3d5bd5409e4b77512292554e26116e636fcad452deade7",
           "comparisons": 409600
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedExtraFields.h": "2379893f808ebd83686b96cafef495aab1b4e8858bf73bf9545a8b5b122ff8c2",
-        "source/game/Peds/PlayerPedExtraFields.cpp": "f3603b7bb6fb1976f2b0be8cc796303c9cb7f16e18908310cd4c845c74f1bd96"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     },
-    "PlayerPedFloatCopy.h": {
-      "evidence": "reversing/CPlayerPed/evidence/runtime-summary.json",
+    "reversing/CPlayerPed/evidence/update-validation.json": {
+      "comparisons": 139920,
+      "runs": [
+        {
+          "check": "reversing/CPlayerPed/check-update.cpp",
+          "check_sha256": "6a000fed476ba35123dc08692a9e0fa3e17024ca92ab26fc8066d9cc50d991e1",
+          "exe": "check-upd-CPlayerPed.exe",
+          "exe_sha256": "413639f740259e2d26ee30205fa18ca6915809525803c25bc248c517ecadc93e",
+          "comparisons": 139920
+        }
+      ],
+      "sources": {
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
+      }
+    },
+    "reversing/CPlayerPed/evidence/value-adjustment-validation.json": {
+      "comparisons": 2457600,
+      "runs": [
+        {
+          "check": "reversing/CPlayerPed/check-value-adjust.cpp",
+          "check_sha256": "ece1af67dac4b4ea3d54f66dc3ed6a37cc03b2c8e2f4bd4a69e13668459fad49",
+          "exe": "check-value-adjust-CPlayerPed.exe",
+          "exe_sha256": "9afdbe237dd4e32dac9ec24df1bd7178921759414fd980f66c1129408f84469f",
+          "comparisons": 2457600
+        }
+      ],
+      "sources": {
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
+      }
+    },
+    "reversing/CPlayerPed/evidence/input-selection-validation.json": {
+      "comparisons": 74448,
+      "runs": [
+        {
+          "check": "reversing/CPlayerPed/check-input-select.cpp",
+          "check_sha256": "d19d57c5c20d24d0ed50fa5af5fc50c104f4bf1c6088ed8b15d4909ae468152c",
+          "exe": "check-input-select-CPlayerPed.exe",
+          "exe_sha256": "857d0396880d234cc17cdf8f42baec068266da0a704e75745fce621ccb66325b",
+          "comparisons": 74448
+        }
+      ],
+      "sources": {
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
+      }
+    },
+    "reversing/PlayerPedFloatCopy/native-summary.json": {
       "comparisons": 62976,
       "runs": [
         {
           "check": "reversing/PlayerPedFloatCopy/check.cpp",
-          "check_sha256": "425eca39bde904c916c1bbbfb9aae11c959ae85f6ded124414b37cc59114d32a",
+          "check_sha256": "656637c787c4e33a77dbd808c731709a6a712aee2556c1998a4fe8b38e5a4515",
           "exe": "check-PlayerPedFloatCopy.exe",
-          "exe_sha256": "40c549395a2daee73b903b696cb9eb208383a88405070d6377ff946c5d58d8d3",
+          "exe_sha256": "264b473bfa5b88c6e03301452395e597c5eac66479609f3d7d3989a2d23777a7",
           "comparisons": 62976
         }
       ],
       "sources": {
-        "source/game/Peds/PlayerPedFloatCopy.h": "0d7c212cb9d4f77c4ff3980b5587e3c549f9100f21fba2a7f9e423d544f61a3f",
-        "source/game/Peds/PlayerPedFloatCopy.cpp": "d2566d3eaea262f06c895e435aa6cfe74bec620ca70ec5597ef9b7e2d1e83022"
+        "source/game/Peds/CPlayerPed.h": "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+        "source/game/Peds/CPlayerPed.cpp": "1df9a02d379caee7730dfc74e01bd894f5b74003c3e56e78585f0111e526f905"
       }
     }
   }

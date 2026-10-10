@@ -3,7 +3,7 @@
 #include <cstdio>
 #include <cstring>
 #include <xmmintrin.h>
-#include "../../source/game/Peds/PlayerPedProtectedValue.h"
+#include "../../source/game/Peds/CPlayerPed.h"
 #include "../../build/player-protected-fixture.h"
 namespace pd = reiv::game::player_detail;
 static unsigned protectedBits, mode, callbackFailures, eventCount, events[8];

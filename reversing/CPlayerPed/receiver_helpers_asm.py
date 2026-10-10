@@ -31,6 +31,6 @@ for item in items:
  fixture += [f'inline constexpr unsigned char Bytes{va:X}[]={{'+','.join('0x'+x for x in item['body_bytes'].split())+'};',f'inline constexpr HelperPatch Patches{va:X}[]={{'+','.join('{'+str(off)+','+hex(t)+'}' for off,t in patches)+'};']
  item['external_tail_dependencies']=[hex(p[1]) for p in patches if p[1] not in [int(d,16) for d in item['direct_dependencies']]]
 lines+=['}'];fixture+=['inline constexpr HelperFixture Helpers[]={']+[f'{{0x{int(i["va"],16):X},{i["size"]},'+('0xFF' if signatures[int(i['va'],16)][2]=='std::uint8_t' else '0xFFFFFFFF')+f',Bytes{int(i["va"],16):X},Patches{int(i["va"],16):X},sizeof(Patches{int(i["va"],16):X})/sizeof(HelperPatch)}},' for i in items]+['};','struct HelperBinding{unsigned va;void**target;};','inline HelperBinding HelperBindings[]={']+[f'{{0x{d:X},&reiv::game::player_receiver_helpers::call{d:08X}}},' for d in sorted(deps)]+['};']
-(ROOT/'source/game/Peds/PlayerPedReceiverHelpers.h').write_text('\n'.join(lines)+'\n',encoding='utf-8')
+(ROOT/'source/game/Peds/CPlayerPed.h').write_text('\n'.join(lines)+'\n',encoding='utf-8')
 (ROOT/'reversing/CPlayerPed/receiver-helpers-fixture.h').write_text('\n'.join(fixture)+'\n',encoding='utf-8')
 (ROOT/'reversing/CPlayerPed/evidence/receiver-helpers-static.json').write_text(json.dumps(dict(exe_sha256='ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c',methods=items),indent=2)+'\n',encoding='utf-8')

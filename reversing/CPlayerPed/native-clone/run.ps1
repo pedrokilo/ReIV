@@ -16,7 +16,7 @@ foreach ($taskName in @('loader-contract','update','value-adjust','input-select'
     $taskExecutableName = if ($taskName -eq 'update') { 'tick-check' } else { $taskName }
     $taskExe = "build/privateNativeBinding/clone-$taskExecutableName.exe"
     New-Item -ItemType Directory -Force "build/privateNativeBinding/clone-obj-$taskName" | Out-Null
-    $taskPlayerSources = (Get-ChildItem source/game/Peds -Filter 'PlayerPed*.cpp' | ForEach-Object { "source/game/Peds/$($_.Name)" })
+    $taskPlayerSources = "source/game/Peds/CPlayerPed.cpp"
     & cl /nologo /std:c++17 /O2 /EHsc /I source /I reversing/CPlayerPed "reversing/CPlayerPed/native-clone/check-$taskName.cpp" $taskPlayerSources "/Fe$taskExe" "/Fobuild/privateNativeBinding/clone-obj-$taskName/"
     if ($LASTEXITCODE) { throw "Compilation failed: $taskName" }
     $taskOutput = & ".\$taskExe" 2>&1

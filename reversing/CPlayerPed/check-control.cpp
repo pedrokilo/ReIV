@@ -2,7 +2,7 @@
 #include <array>
 #include <vector>
 #include <cstdio>
-#include "game/Peds/PlayerPedControl.h"
+#include "game/Peds/CPlayerPed.h"
 #include "control-fixture.h"
 using C=reiv::game::PlayerPedControl;using D=reiv::game::PlayerPedControlDependencies;
 struct Event{unsigned function,self,args[6];bool operator==(const Event&o)const{return std::memcmp(this,&o,sizeof(*this))==0;}};

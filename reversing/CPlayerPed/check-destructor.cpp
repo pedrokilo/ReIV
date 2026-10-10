@@ -4,7 +4,7 @@
 #include <cstdint>
 #include <cstring>
 #include <cstdio>
-#include "game/Peds/PlayerPedDestruction.h"
+#include "game/Peds/CPlayerPed.h"
 #include "destruction-fixture.h"
 using Dependencies=reiv::game::PlayerPedDestructionDependencies;
 using Rebuilt=reiv::game::PlayerPedDestruction;

@@ -3,7 +3,7 @@
 #include <vector>
 #include <cstdio>
 #include <xmmintrin.h>
-#include "game/Peds/PlayerPedModelReset.h"
+#include "game/Peds/CPlayerPed.h"
 #include "model-reset-fixture.h"
 using M=reiv::game::PlayerPedModelReset;using D=reiv::game::PlayerPedModelResetDependencies;
 static std::array<unsigned char,4096> player,a,b;

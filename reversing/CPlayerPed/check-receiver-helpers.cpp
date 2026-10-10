@@ -5,7 +5,7 @@
 #include <cstdio>
 #include <cstring>
 #include <xmmintrin.h>
-#include "game/Peds/PlayerPedReceiverHelpers.h"
+#include "game/Peds/CPlayerPed.h"
 #include "receiver-helpers-fixture.h"
 namespace H=reiv::game::player_receiver_helpers;
 static std::array<unsigned char,4096> player,related,transform,info;

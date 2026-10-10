@@ -1,6 +1,6 @@
 # Cruce de SDKs: IV-SDK, plugin_IV e IV-SDK.Net
 
-Generado por `contrib/crossref-sdks.py`. Compara los `VALIDATE_OFFSET` de CEntity, CDynamicEntity, CPhysical y CPed. Una coincidencia entre SDKs es una pista; **el ejecutable decide**. `PlayerPedLayout.h` aporta los offsets observados en cuerpos del EXE.
+Generado por `contrib/crossref-sdks.py`. Compara los `VALIDATE_OFFSET` de CEntity, CDynamicEntity, CPhysical y CPed. Una coincidencia entre SDKs es una pista; **el ejecutable decide**. `CPlayerPed.h` aporta los offsets observados en cuerpos del EXE.
 
 ## Cobertura
 
@@ -131,7 +131,7 @@ Candidatos para nombrar campos aún sin etiqueta. Si el offset aparece en el lay
 
 ## Layout observado de CPlayerPed con nombre en algún SDK
 
-19 offsets de `PlayerPedLayout.h` tienen nombre en al menos un SDK.
+19 offsets de `CPlayerPed.h` tienen nombre en al menos un SDK.
 
 | Offset | Layout observado | IV-SDK | plugin_IV | IV-SDK.Net |
 | ---: | --- | --- | --- | --- |

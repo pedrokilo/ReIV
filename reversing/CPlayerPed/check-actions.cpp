@@ -4,8 +4,8 @@
 #include <cstdio>
 #include <cstring>
 #include <xmmintrin.h>
-#include "game/Peds/PlayerPedActionRange.h"
-#include "game/Peds/PlayerPedActionRequest.h"
+#include "game/Peds/CPlayerPed.h"
+#include "game/Peds/CPlayerPed.h"
 #include "range-fixture.h"
 #include "request-fixture.h"
 namespace A=reiv::game::player_action_range;namespace B=reiv::game::player_action_request;

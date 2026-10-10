@@ -4,9 +4,9 @@ Los cuerpos canónicos enumerados en `remaining-update-methods.json` se reconstr
 
 | VA | Archivo | Comparaciones | Alcance |
 |---|---|---:|---|
-| `0x009BEED0` | `PlayerPedReferenceClear.h` | 512 | C++ propio, 27 bytes, un callback |
-| `0x009BFD80` | `PlayerPedValueAdjustment.h` | 2.457.600 | ASM propio, 332 bytes, tres callbacks y seis globals |
-| `0x009BE7D0` | `PlayerPedInputSelection.h` | 74.448 | ASM propio, 1652 bytes, 19 callbacks, dos globals y dos tablas de cuatro entradas |
+| `0x009BEED0` | `CPlayerPed.h` | 512 | C++ propio, 27 bytes, un callback |
+| `0x009BFD80` | `CPlayerPed.h` | 2.457.600 | ASM propio, 332 bytes, tres callbacks y seis globals |
+| `0x009BE7D0` | `CPlayerPed.h` | 74.448 | ASM propio, 1652 bytes, 19 callbacks, dos globals y dos tablas de cuatro entradas |
 
 Todas las comparaciones terminaron sin diferencias. `record_extra_methods.py` ejecuta los tres bancos y registra hashes de fuente, test, binario y bytes parcheados, además de los límites, en los archivos `*-validation.json` correspondientes.
 

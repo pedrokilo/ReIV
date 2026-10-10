@@ -1,6 +1,6 @@
 # CPlayerPed protected value operations
 
-`source/game/Peds/PlayerPedProtectedValue.h` reconstructs four player bodies and
+`source/game/Peds/CPlayerPed.h` reconstructs four player bodies and
 three helper bodies with MSVC x86 assembly. The public operations take the real
 object pointer and an explicit `ProtectedCallbacks` dependency. Neither XLive
 ordinal is implemented or resolved by this header.

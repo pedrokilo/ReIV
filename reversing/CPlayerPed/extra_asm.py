@@ -1,7 +1,7 @@
 import json,re
 from pathlib import Path
 ROOT=Path(__file__).resolve().parents[2];items=json.loads((ROOT/'reversing/CPlayerPed/evidence/remaining-update-methods.json').read_text())['methods']
-for va,file,ns,name,args,ret in [(0x9BFD80,'PlayerPedValueAdjustment.h','player_adjustment','Adjust','void* object, void*, std::uint32_t flag, float value','std::uint8_t'),(0x9BE7D0,'PlayerPedInputSelection.h','player_input','Select','void* object, void*','void')]:
+for va,file,ns,name,args,ret in [(0x9BFD80,'CPlayerPed.h','player_adjustment','Adjust','void* object, void*, std::uint32_t flag, float value','std::uint8_t'),(0x9BE7D0,'CPlayerPed.h','player_input','Select','void* object, void*','void')]:
  s=next(s for s in items if int(s['va'],16)==va);globals_=sorted(int(g,16) for g in s['global_uses']);calls=s['direct_dependencies'];tables=s['jump_tables']
  lines=['#pragma once','#include <cstdint>','#if !defined(_MSC_VER) || !defined(_M_IX86)','#error Player operations require MSVC x86 inline assembly.','#endif',f'namespace reiv::game::{ns} {{','// Complete own caller transcription. Dependencies and storage are explicit.','// ISOLATED SINGLE-THREAD FIXTURES ONLY; no game-global mapping or installed hook.']
  for g in globals_:lines.append(f'inline std::uint32_t g{g:08X}=0;')

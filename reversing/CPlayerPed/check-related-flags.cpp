@@ -3,7 +3,7 @@
 #include <vector>
 #include <cstdio>
 #include <xmmintrin.h>
-#include "game/Peds/PlayerPedRelatedFlags.h"
+#include "game/Peds/CPlayerPed.h"
 #include "related-flags-fixture.h"
 using D=reiv::game::PlayerPedRelatedFlagDependencies;using R=reiv::game::PlayerPedRelatedFlags;
 static std::array<unsigned char,4096> player,block;static std::array<std::array<unsigned char,4096>,7> candidates;

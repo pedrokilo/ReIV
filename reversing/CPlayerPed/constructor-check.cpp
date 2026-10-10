@@ -4,7 +4,7 @@
 #include <cstdio>
 #include <cstdlib>
 #include <initializer_list>
-#include "game/Peds/PlayerPedConstruction.h"
+#include "game/Peds/CPlayerPed.h"
 using C=reiv::game::PlayerPedConstruction;
 struct Patch { unsigned offset,va; }; struct Call { unsigned offset,target; };
 #include "constructor-patches.inc"

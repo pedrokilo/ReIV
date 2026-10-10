@@ -3,7 +3,7 @@
 #include <vector>
 #include <cstdio>
 #include <xmmintrin.h>
-#include "game/Peds/PlayerPedInputSelection.h"
+#include "game/Peds/CPlayerPed.h"
 #include "input-fixture.h"
 namespace I=reiv::game::player_input;
 static std::array<unsigned char,4096> player,query,action,actionInfo,transform;
