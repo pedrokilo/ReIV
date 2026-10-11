@@ -11,6 +11,7 @@ Proyecto `tools/ReIV.Tools/ReIV.Tools.csproj` (.NET Framework 4.5, sin dependenc
 bin\tools\ReIV.Tools.exe          # all
 bin\tools\ReIV.Tools.exe provenance
 bin\tools\ReIV.Tools.exe progress
+bin	oolsReIV.Tools.exe audit
 ```
 
 | Comando | Genera |
