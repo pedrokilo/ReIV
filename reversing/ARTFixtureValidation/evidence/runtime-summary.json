@@ -1,207 +1,211 @@
 {
-  "passed": true,
-  "date": "2026-10-09T21:40:29.3336558-06:00",
-  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
-  "asi_sha256": "2fdabb3a9334f15a379876197f6357f25bd560d06873def6957462ecb3e0a274",
-  "implementation_sha256": "c3f9b4eaea3a6c2f7bfb5d82c74eca3477a6124a40f3b1e818011406400d1c08",
-  "result": {
-    "phase": "passed",
-    "fixture_only": true,
-    "exceptions": 0,
-    "entries": [
-      {
-        "rva": "0x0004CB40",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001879B0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001E3570",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001E3580",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001E3590",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001E35B0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001E35E0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001E3610",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001E3640",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001EE880",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001EE890",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001EE8A0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001EE8B0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001EE8E0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001EE910",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001EE940",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001EFD40",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001F03B0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001FF420",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x002038E0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x00204060",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x00206880",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x0020B000",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x0020F090",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      }
-    ]
-  },
-  "game_run": {
-    "date": "2026-10-09T21:40:29.3336558-06:00",
-    "passed": true,
-    "forced_stop": false,
-    "exit_code": 0,
-    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
-    "asi_sha256": "2fdabb3a9334f15a379876197f6357f25bd560d06873def6957462ecb3e0a274",
-    "wrapper_sha256": "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
-    "probe_sha256": "c9eac0fd31fbefba9520983f372ca49332c17935501fbf6dd3f47ce5d69b7970",
-    "result": {
-      "phase": "passed",
-      "rva": "0x005c7710",
-      "bone_index": 0,
-      "calls": 64,
-      "failures": 0,
-      "exceptions": 0,
-      "ticks": 253,
-      "entity": "0x072216D0",
-      "matrix": "0x08839CE0",
-      "position": [
-        -0.000840883586,
-        -0.000975700619,
-        -0.00995009113
-      ],
-      "game_loaded": true,
-      "ingame_started": false
-    },
-    "evidence_directory": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261009-213941",
-    "console": {
-      "console_window": "0x07A715B8",
-      "visible": true,
-      "writable": true,
-      "always_enabled": true
-    },
-    "atStringHash": {
-      "phase": "process_detach",
-      "rva": "0x1b1c30",
-      "bank_pairs": 8320,
-      "bank_failures": 0,
-      "hooked": true,
-      "hook_calls": 366933,
-      "runtime_pairs": 4096,
-      "runtime_failures": 0,
-      "game_loaded": true,
-      "ingame_started": true,
-      "script_ticks": 254
-    },
-    "atStringHash_passed": true
+    "passed":  true,
+    "date":  "2026-10-11T14:04:36.6878595-06:00",
+    "exe_sha256":  "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "asi_sha256":  "e25d681877752d54cf7dfad4af28dd38daf7c700fae2faf923f32b5603b395d4",
+    "implementation_sha256":  "8d4d265cd1b332ae50f5556ec3b2816b7da401966aa461c0fbae731e71dfbd45",
+    "result":  {
+                   "phase":  "passed",
+                   "fixture_only":  true,
+                   "exceptions":  0,
+                   "entries":  [
+                                   {
+                                       "rva":  "0x0004CB40",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001879B0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001E3570",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001E3580",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001E3590",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001E35B0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001E35E0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001E3610",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001E3640",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001EE880",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001EE890",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001EE8A0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001EE8B0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001EE8E0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001EE910",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001EE940",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001EFD40",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001F03B0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001FF420",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x002038E0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x00204060",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x00206880",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x0020B000",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x0020F090",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   }
+                               ]
+               },
+    "game_run":  {
+                     "date":  "2026-10-11T14:04:36.6878595-06:00",
+                     "passed":  true,
+                     "forced_stop":  false,
+                     "exit_code":  0,
+                     "exe_sha256":  "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+                     "asi_sha256":  "e25d681877752d54cf7dfad4af28dd38daf7c700fae2faf923f32b5603b395d4",
+                     "wrapper_sha256":  "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
+                     "probe_sha256":  "9238db9e7b5f42459461158963734d7702510d89f536daee331a00ae04bf6eb5",
+                     "result":  {
+                                    "phase":  "passed",
+                                    "rva":  "0x005c7710",
+                                    "bone_index":  0,
+                                    "calls":  64,
+                                    "failures":  0,
+                                    "exceptions":  0,
+                                    "ticks":  253,
+                                    "entity":  "0x068A36A0",
+                                    "matrix":  "0x07EBBCB0",
+                                    "position":  [
+                                                     -0.000700004399,
+                                                     -0.0009938234,
+                                                     -0.010067299
+                                                 ],
+                                    "game_loaded":  true,
+                                    "ingame_started":  false
+                                },
+                     "evidence_directory":  "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261011-140354",
+                     "console":  {
+                                     "console_window":  "0x00170020",
+                                     "visible":  true,
+                                     "writable":  true,
+                                     "always_enabled":  true
+                                 },
+                     "atStringHash":  {
+                                          "phase":  "process_detach",
+                                          "rva":  "0x1b1c30",
+                                          "bank_pairs":  8320,
+                                          "bank_failures":  0,
+                                          "hooked":  true,
+                                          "hook_calls":  367394,
+                                          "runtime_pairs":  4096,
+                                          "runtime_failures":  0,
+                                          "game_loaded":  true,
+                                          "ingame_started":  true,
+                                          "script_ticks":  254
+                                      },
+                     "atStringHash_passed":  true
+                 },
+  "additional_source_sha256":  {
+    "source/hooks/ARTFixtureProbe.h":  "8d4d265cd1b332ae50f5556ec3b2816b7da401966aa461c0fbae731e71dfbd45",
+    "source/hooks/ARTFixtureProbe.cpp":  "90448f8e79887fca52708dab2e6461289ab57b4497e59db453561699197135fc"
   }
 }

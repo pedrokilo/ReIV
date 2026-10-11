@@ -67,6 +67,25 @@
     <ClCompile Include="..\source\core\DebugLog.cpp" />
     <ClCompile Include="..\source\game\scene\CDynamicEntity.cpp" />
     <ClCompile Include="..\source\game\Peds\CPlayerPed.cpp" />
+    <ClCompile Include="..\source\hooks\ARTComplexProbe.cpp" />
+    <ClCompile Include="..\source\hooks\ARTExtraProbe.cpp" />
+    <ClCompile Include="..\source\hooks\ARTFixtureProbe.cpp" />
+    <ClCompile Include="..\source\hooks\ARTStubsProbe.cpp" />
+    <ClCompile Include="..\source\hooks\AnimationFixtureProbe.cpp" />
+    <ClCompile Include="..\source\hooks\AudioFixtureProbe.cpp" />
+    <ClCompile Include="..\source\hooks\DestructorModeProbe.cpp" />
+    <ClCompile Include="..\source\hooks\ExtraStubsProbe.cpp" />
+    <ClCompile Include="..\source\hooks\GameComplexProbe.cpp" />
+    <ClCompile Include="..\source\hooks\GameComplexScalarProbe.cpp" />
+    <ClCompile Include="..\source\hooks\GamePendingProbe.cpp" />
+    <ClCompile Include="..\source\hooks\GameStubsProbe.cpp" />
+    <ClCompile Include="..\source\hooks\NMutilsProbe.cpp" />
+    <ClCompile Include="..\source\hooks\PendingScalarProbe.cpp" />
+    <ClCompile Include="..\source\hooks\RageComplexProbe.cpp" />
+    <ClCompile Include="..\source\hooks\RageFixtureProbe.cpp" />
+    <ClCompile Include="..\source\hooks\RageStubsProbe.cpp" />
+    <ClCompile Include="..\source\hooks\RageWriteProbe.cpp" />
+    <ClCompile Include="..\source\rage\AtStringHash.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

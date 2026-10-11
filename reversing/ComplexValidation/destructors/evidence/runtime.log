@@ -1,222 +1,222 @@
-[info][22:41:02.996][DebugLog.cpp:57]: Debug console always enabled | visible=true writable=true hwnd=0x007D138A
-[info][22:41:02.997][ReIV.cpp:45]: ReIV bootstrap loaded | GTA IV 1.0.7.0 | x86
-[info][22:41:03.036][ReIV.cpp:53]: CDynamicEntity::GetBoneMatrix original binding available | RVA 0x005C7710 | root-bone historical test passed
-[debug][22:41:03.036][GetBoneMatrixProbe.h:50]: GetBoneMatrix test enabled: waiting for a live player
-[info][22:41:03.054][ReIV.cpp:95]: atStringHash bank passed; replacement installed
-[debug][22:41:03.075][ReIV.cpp:97]: Runtime catalog exported to ReIV-runtime-hooks.csv
-[info][22:41:21.401][ReIV.cpp:31]: SDK gameLoadEvent received
-[info][22:41:34.306][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00035470 calls=64 failures=0
-[info][22:41:34.332][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000354D0 calls=64 failures=0
-[info][22:41:34.333][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00035520 calls=64 failures=0
-[info][22:41:34.333][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00035660 calls=64 failures=0
-[info][22:41:34.334][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00035680 calls=64 failures=0
-[info][22:41:34.334][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00047B40 calls=64 failures=0
-[info][22:41:34.334][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000496C0 calls=64 failures=0
-[info][22:41:34.335][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00054080 calls=64 failures=0
-[info][22:41:34.335][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000579A0 calls=64 failures=0
-[info][22:41:34.336][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0008D8D0 calls=64 failures=0
-[info][22:41:34.337][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0009F3E0 calls=64 failures=0
-[info][22:41:34.337][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000A22B0 calls=64 failures=0
-[info][22:41:34.337][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000A22C0 calls=64 failures=0
-[info][22:41:34.338][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000A4EA0 calls=64 failures=0
-[info][22:41:34.338][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000E4450 calls=64 failures=0
-[info][22:41:34.338][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000E6860 calls=64 failures=0
-[info][22:41:34.339][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000E71E0 calls=64 failures=0
-[info][22:41:34.339][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000E8750 calls=64 failures=0
-[info][22:41:34.339][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000F54F0 calls=64 failures=0
-[info][22:41:34.339][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x000FB550 calls=64 failures=0
-[info][22:41:34.340][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00303530 calls=64 failures=0
-[info][22:41:34.340][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x003C55D0 calls=64 failures=0
-[info][22:41:34.341][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x004259D0 calls=64 failures=0
-[info][22:41:34.341][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x004399E0 calls=64 failures=0
-[info][22:41:34.341][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x004B8740 calls=64 failures=0
-[info][22:41:34.341][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00519B60 calls=64 failures=0
-[info][22:41:34.342][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00548FD0 calls=64 failures=0
-[info][22:41:34.342][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0054EA70 calls=64 failures=0
-[info][22:41:34.342][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x005AE3C0 calls=64 failures=0
-[info][22:41:34.342][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x005AE480 calls=64 failures=0
-[info][22:41:34.343][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x005F0B90 calls=64 failures=0
-[info][22:41:34.343][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0060B900 calls=64 failures=0
-[info][22:41:34.344][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00618BF0 calls=64 failures=0
-[info][22:41:34.344][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00618C00 calls=64 failures=0
-[info][22:41:34.344][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0061B140 calls=64 failures=0
-[info][22:41:34.344][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0061E350 calls=64 failures=0
-[info][22:41:34.346][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0061E860 calls=64 failures=0
-[info][22:41:34.346][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0062BF10 calls=64 failures=0
-[info][22:41:34.346][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x006353F0 calls=64 failures=0
-[info][22:41:34.347][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00647930 calls=64 failures=0
-[info][22:41:34.347][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00647950 calls=64 failures=0
-[info][22:41:34.348][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0066DD60 calls=64 failures=0
-[info][22:41:34.348][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0066DD70 calls=64 failures=0
-[info][22:41:34.348][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0066DD80 calls=64 failures=0
-[info][22:41:34.349][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00675BE0 calls=64 failures=0
-[info][22:41:34.349][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00675DB0 calls=64 failures=0
-[info][22:41:34.349][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00675E50 calls=64 failures=0
-[info][22:41:34.350][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x006760C0 calls=64 failures=0
-[info][22:41:34.350][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00676740 calls=64 failures=0
-[info][22:41:34.350][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x006769F0 calls=64 failures=0
-[info][22:41:34.351][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00676A00 calls=64 failures=0
-[info][22:41:34.351][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00677700 calls=64 failures=0
-[info][22:41:34.351][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x006B9A60 calls=64 failures=0
-[info][22:41:34.351][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0074EA60 calls=64 failures=0
-[info][22:41:34.351][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0074EA80 calls=64 failures=0
-[info][22:41:34.351][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0074EEC0 calls=64 failures=0
-[info][22:41:34.351][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0074EEE0 calls=64 failures=0
-[info][22:41:34.352][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x007781A0 calls=64 failures=0
-[info][22:41:34.352][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00786530 calls=64 failures=0
-[info][22:41:34.352][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x007C64C0 calls=64 failures=0
-[info][22:41:34.352][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x007C97D0 calls=64 failures=0
-[info][22:41:34.352][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x007CC9F0 calls=64 failures=0
-[info][22:41:34.352][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x007E1080 calls=64 failures=0
-[info][22:41:34.353][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00803390 calls=64 failures=0
-[info][22:41:34.353][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x008128B0 calls=64 failures=0
-[info][22:41:34.353][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x008427F0 calls=64 failures=0
-[info][22:41:34.354][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x0084C720 calls=64 failures=0
-[info][22:41:34.354][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00871460 calls=64 failures=0
-[info][22:41:34.354][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x00893E40 calls=64 failures=0
-[info][22:41:34.354][GameComplexScalarProbe.h:255]: Game complex scalar RVA 0x008CEB10 calls=64 failures=0
-[info][22:41:34.355][GameComplexProbe.h:101]: Game complex RVA 0x000352F0 calls=64 failures=0
-[info][22:41:34.356][GameComplexProbe.h:101]: Game complex RVA 0x00035320 calls=64 failures=0
-[info][22:41:34.356][GameComplexProbe.h:101]: Game complex RVA 0x00035330 calls=64 failures=0
-[info][22:41:34.357][GameComplexProbe.h:101]: Game complex RVA 0x00035370 calls=64 failures=0
-[info][22:41:34.357][GameComplexProbe.h:101]: Game complex RVA 0x00035380 calls=64 failures=0
-[info][22:41:34.358][GameComplexProbe.h:101]: Game complex RVA 0x00035390 calls=64 failures=0
-[info][22:41:34.358][GameComplexProbe.h:101]: Game complex RVA 0x00035610 calls=64 failures=0
-[info][22:41:34.359][GameComplexProbe.h:101]: Game complex RVA 0x00035620 calls=64 failures=0
-[info][22:41:34.360][GameComplexProbe.h:101]: Game complex RVA 0x00035700 calls=64 failures=0
-[info][22:41:34.360][GameComplexProbe.h:101]: Game complex RVA 0x00035730 calls=64 failures=0
-[info][22:41:34.360][GameComplexProbe.h:101]: Game complex RVA 0x00035750 calls=64 failures=0
-[info][22:41:34.361][GameComplexProbe.h:101]: Game complex RVA 0x00035770 calls=64 failures=0
-[info][22:41:34.361][GameComplexProbe.h:101]: Game complex RVA 0x000357C0 calls=64 failures=0
-[info][22:41:34.362][GameComplexProbe.h:101]: Game complex RVA 0x0003B870 calls=64 failures=0
-[info][22:41:34.362][GameComplexProbe.h:101]: Game complex RVA 0x00047B20 calls=64 failures=0
-[info][22:41:34.362][GameComplexProbe.h:101]: Game complex RVA 0x0004CB30 calls=64 failures=0
-[info][22:41:34.363][GameComplexProbe.h:101]: Game complex RVA 0x00054340 calls=64 failures=0
-[info][22:41:34.363][GameComplexProbe.h:101]: Game complex RVA 0x0008A520 calls=64 failures=0
-[info][22:41:34.363][GameComplexProbe.h:101]: Game complex RVA 0x00093F80 calls=64 failures=0
-[info][22:41:34.364][GameComplexProbe.h:101]: Game complex RVA 0x000E0B30 calls=64 failures=0
-[info][22:41:34.364][GameComplexProbe.h:101]: Game complex RVA 0x000F0140 calls=64 failures=0
-[info][22:41:34.364][GameComplexProbe.h:101]: Game complex RVA 0x000F0CF0 calls=64 failures=0
-[info][22:41:34.365][GameComplexProbe.h:101]: Game complex RVA 0x005C5360 calls=64 failures=0
-[info][22:41:34.365][GameComplexProbe.h:101]: Game complex RVA 0x005C5430 calls=64 failures=0
-[info][22:41:34.366][GameComplexProbe.h:101]: Game complex RVA 0x006B9A50 calls=64 failures=0
-[info][22:41:34.366][GameComplexProbe.h:101]: Game complex RVA 0x00828260 calls=64 failures=0
-[info][22:41:34.366][GameComplexProbe.h:101]: Game complex RVA 0x00828270 calls=64 failures=0
-[info][22:41:34.366][GameComplexProbe.h:101]: Game complex RVA 0x00828830 calls=64 failures=0
-[info][22:41:34.367][ARTComplexProbe.h:70]: ART complex RVA 0x001E35C0 calls=64 failures=0
-[info][22:41:34.367][ARTComplexProbe.h:70]: ART complex RVA 0x001E35F0 calls=64 failures=0
-[info][22:41:34.367][ARTComplexProbe.h:70]: ART complex RVA 0x001E3620 calls=64 failures=0
-[info][22:41:34.368][ARTComplexProbe.h:70]: ART complex RVA 0x001E3650 calls=64 failures=0
-[info][22:41:34.368][ARTComplexProbe.h:70]: ART complex RVA 0x001EE8C0 calls=64 failures=0
-[info][22:41:34.368][ARTComplexProbe.h:70]: ART complex RVA 0x001EE8F0 calls=64 failures=0
-[info][22:41:34.369][ARTComplexProbe.h:70]: ART complex RVA 0x001EE920 calls=64 failures=0
-[info][22:41:34.369][ARTComplexProbe.h:70]: ART complex RVA 0x001EE950 calls=64 failures=0
-[info][22:41:34.369][ARTComplexProbe.h:70]: ART complex RVA 0x001E41C0 calls=64 failures=0
-[info][22:41:34.369][ARTComplexProbe.h:70]: ART complex RVA 0x001E4460 calls=64 failures=0
-[info][22:41:34.370][ARTComplexProbe.h:70]: ART complex RVA 0x001EEE40 calls=64 failures=0
-[info][22:41:34.370][ARTComplexProbe.h:70]: ART complex RVA 0x001EF060 calls=64 failures=0
-[info][22:41:34.370][ARTComplexProbe.h:70]: ART complex RVA 0x001FDCF0 calls=64 failures=0
-[info][22:41:34.370][ARTComplexProbe.h:70]: ART complex RVA 0x001FDD60 calls=64 failures=0
-[info][22:41:34.371][ARTComplexProbe.h:70]: ART complex RVA 0x00286CD0 calls=64 failures=0
-[info][22:41:34.371][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00022150 calls=64 failures=0
-[info][22:41:34.371][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0003B880 calls=64 failures=0
-[info][22:41:34.372][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00040600 calls=64 failures=0
-[info][22:41:34.372][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00041E30 calls=64 failures=0
-[info][22:41:34.373][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00043CF0 calls=64 failures=0
-[info][22:41:34.373][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00054710 calls=64 failures=0
-[info][22:41:34.373][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0005DEC0 calls=64 failures=0
-[info][22:41:34.374][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0006D1A0 calls=64 failures=0
-[info][22:41:34.374][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00081200 calls=64 failures=0
-[info][22:41:34.374][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00096800 calls=64 failures=0
-[info][22:41:34.375][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00096840 calls=64 failures=0
-[info][22:41:34.375][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x000A5840 calls=64 failures=0
-[info][22:41:34.375][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x000A5870 calls=64 failures=0
-[info][22:41:34.376][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x000C34A0 calls=64 failures=0
-[info][22:41:34.376][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001050B0 calls=64 failures=0
-[info][22:41:34.376][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0010A6F0 calls=64 failures=0
-[info][22:41:34.376][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00113EB0 calls=64 failures=0
-[info][22:41:34.377][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001155B0 calls=64 failures=0
-[info][22:41:34.377][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00116F20 calls=64 failures=0
-[info][22:41:34.377][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00117080 calls=64 failures=0
-[info][22:41:34.377][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0011F250 calls=64 failures=0
-[info][22:41:34.378][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00120120 calls=64 failures=0
-[info][22:41:34.378][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0012D8E0 calls=64 failures=0
-[info][22:41:34.378][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0012D910 calls=64 failures=0
-[info][22:41:34.378][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0012D970 calls=64 failures=0
-[info][22:41:34.379][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0012D9A0 calls=64 failures=0
-[info][22:41:34.379][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00134B90 calls=64 failures=0
-[info][22:41:34.379][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0013CCE0 calls=64 failures=0
-[info][22:41:34.379][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001538B0 calls=64 failures=0
-[info][22:41:34.379][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00167B30 calls=64 failures=0
-[info][22:41:34.379][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00172CC0 calls=64 failures=0
-[info][22:41:34.379][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00175740 calls=64 failures=0
-[info][22:41:34.381][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0017F820 calls=64 failures=0
-[info][22:41:34.381][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001879E0 calls=64 failures=0
-[info][22:41:34.381][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0018B630 calls=64 failures=0
-[info][22:41:34.381][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0019AE90 calls=64 failures=0
-[info][22:41:34.381][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0019E4D0 calls=64 failures=0
-[info][22:41:34.381][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0019F0C0 calls=64 failures=0
-[info][22:41:34.382][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001AC320 calls=64 failures=0
-[info][22:41:34.382][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001B5630 calls=64 failures=0
-[info][22:41:34.382][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001C13C0 calls=64 failures=0
-[info][22:41:34.382][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001C9990 calls=64 failures=0
-[info][22:41:34.382][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001D4F10 calls=64 failures=0
-[info][22:41:34.383][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001D4F40 calls=64 failures=0
-[info][22:41:34.383][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001D64D0 calls=64 failures=0
-[info][22:41:34.383][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001D6500 calls=64 failures=0
-[info][22:41:34.383][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001D6FC0 calls=64 failures=0
-[info][22:41:34.383][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001D7010 calls=64 failures=0
-[info][22:41:34.384][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001E0A70 calls=64 failures=0
-[info][22:41:34.384][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001E0AA0 calls=64 failures=0
-[info][22:41:34.384][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001E0AD0 calls=64 failures=0
-[info][22:41:34.384][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001E2B20 calls=64 failures=0
-[info][22:41:34.384][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001E3540 calls=64 failures=0
-[info][22:41:34.384][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x001FDCA0 calls=64 failures=0
-[info][22:41:34.385][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0020C220 calls=64 failures=0
-[info][22:41:34.385][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x002AC2E0 calls=64 failures=0
-[info][22:41:34.385][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x002BF150 calls=64 failures=0
-[info][22:41:34.385][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x002F8640 calls=64 failures=0
-[info][22:41:34.386][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0030BAD0 calls=64 failures=0
-[info][22:41:34.386][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0030BB60 calls=64 failures=0
-[info][22:41:34.386][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00328920 calls=64 failures=0
-[info][22:41:34.386][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00332E60 calls=64 failures=0
-[info][22:41:34.387][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00334080 calls=64 failures=0
-[info][22:41:34.387][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x003340B0 calls=64 failures=0
-[info][22:41:34.387][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00339A00 calls=64 failures=0
-[info][22:41:34.387][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0034C2C0 calls=64 failures=0
-[info][22:41:34.388][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x00358890 calls=64 failures=0
-[info][22:41:34.388][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0035D760 calls=64 failures=0
-[info][22:41:34.388][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0036C1F0 calls=64 failures=0
-[info][22:41:34.389][DestructorModeProbe.h:171]: Destructor restricted mode RVA0x0036EEC0 calls=64 failures=0
-[info][22:41:34.390][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CA290 calls=64 failures=0
-[info][22:41:34.391][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CA440 calls=64 failures=0
-[info][22:41:34.391][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CA6E0 calls=64 failures=0
-[info][22:41:34.392][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CD2F0 calls=64 failures=0
-[info][22:41:34.393][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CD4B0 calls=64 failures=0
-[info][22:41:34.393][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CD810 calls=64 failures=0
-[info][22:41:34.393][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CD9C0 calls=64 failures=0
-[info][22:41:34.394][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CDBC0 calls=64 failures=0
-[info][22:41:34.395][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CDC20 calls=64 failures=0
-[info][22:41:34.395][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CDDD0 calls=64 failures=0
-[info][22:41:34.396][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CDE30 calls=64 failures=0
-[info][22:41:34.396][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CE620 calls=64 failures=0
-[info][22:41:34.397][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CE890 calls=64 failures=0
-[info][22:41:34.397][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CE900 calls=64 failures=0
-[info][22:41:34.398][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CEAE0 calls=64 failures=0
-[info][22:41:34.398][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CEC30 calls=64 failures=0
-[info][22:41:34.398][RageComplexProbe.h:689]: Rage complete CFG RVA 0x000CEC90 calls=64 failures=0
-[info][22:41:34.399][RageComplexProbe.h:689]: Rage complete CFG RVA 0x0013BE10 calls=64 failures=0
-[info][22:41:34.399][RageComplexProbe.h:689]: Rage complete CFG RVA 0x0017A170 calls=64 failures=0
-[info][22:41:34.399][RageComplexProbe.h:689]: Rage complete CFG RVA 0x001C9680 calls=64 failures=0
-[info][22:41:34.400][RageComplexProbe.h:689]: Rage complete CFG RVA 0x001C9700 calls=64 failures=0
-[info][22:41:34.400][RageComplexProbe.h:689]: Rage complete CFG RVA 0x001C9830 calls=64 failures=0
-[info][22:41:34.400][RageComplexProbe.h:689]: Rage complete CFG RVA 0x0022C8E0 calls=64 failures=0
-[info][22:41:34.401][RageComplexProbe.h:689]: Rage complete CFG RVA 0x0025FB10 calls=64 failures=0
-[info][22:41:34.401][RageComplexProbe.h:689]: Rage complete CFG RVA 0x0030D5F0 calls=64 failures=0
-[info][22:41:34.401][RageComplexProbe.h:689]: Rage complete CFG RVA 0x0030D620 calls=64 failures=0
-[info][22:41:34.401][RageComplexProbe.h:689]: Rage complete CFG RVA 0x0030DE40 calls=64 failures=0
-[info][22:41:34.402][RageComplexProbe.h:689]: Rage complete CFG RVA 0x003756F0 calls=64 failures=0
-[info][22:41:34.402][RageComplexProbe.h:689]: Rage complete CFG RVA 0x00375B20 calls=64 failures=0
-[info][22:41:45.958][GetBoneMatrixProbe.h:64]: GetBoneMatrix PASSED | calls=64 failures=0 exceptions=0 | entity=0x07398710 matrix=0x089B0C70
-[info][22:41:48.054][ReIV.cpp:36]: SDK ingameStartupEvent received
-[info][22:41:48.657][ReIV.cpp:103]: ReIV process detach
+[info][14:04:37.567][DebugLog.cpp:57]: Debug console always enabled | visible=true writable=true hwnd=0x00180020
+[info][14:04:37.568][ReIV.cpp:52]: ReIV bootstrap loaded | GTA IV 1.0.7.0 | x86
+[info][14:04:37.606][ReIV.cpp:60]: CDynamicEntity::GetBoneMatrix original binding available | RVA 0x005C7710 | root-bone historical test passed
+[debug][14:04:37.607][GetBoneMatrixProbe.cpp:42]: GetBoneMatrix test enabled: waiting for a live player
+[info][14:04:37.620][ReIV.cpp:106]: atStringHash bank passed; replacement installed
+[debug][14:04:37.648][ReIV.cpp:108]: Runtime catalog exported to ReIV-runtime-hooks.csv
+[info][14:04:52.379][ReIV.cpp:38]: SDK gameLoadEvent received
+[info][14:05:04.950][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00035470 calls=64 failures=0
+[info][14:05:04.953][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000354D0 calls=64 failures=0
+[info][14:05:04.953][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00035520 calls=64 failures=0
+[info][14:05:04.953][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00035660 calls=64 failures=0
+[info][14:05:04.954][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00035680 calls=64 failures=0
+[info][14:05:04.954][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00047B40 calls=64 failures=0
+[info][14:05:04.954][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000496C0 calls=64 failures=0
+[info][14:05:04.956][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00054080 calls=64 failures=0
+[info][14:05:04.956][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000579A0 calls=64 failures=0
+[info][14:05:04.956][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0008D8D0 calls=64 failures=0
+[info][14:05:04.957][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0009F3E0 calls=64 failures=0
+[info][14:05:04.957][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000A22B0 calls=64 failures=0
+[info][14:05:04.957][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000A22C0 calls=64 failures=0
+[info][14:05:04.957][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000A4EA0 calls=64 failures=0
+[info][14:05:04.958][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000E4450 calls=64 failures=0
+[info][14:05:04.958][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000E6860 calls=64 failures=0
+[info][14:05:04.958][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000E71E0 calls=64 failures=0
+[info][14:05:04.958][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000E8750 calls=64 failures=0
+[info][14:05:04.959][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000F54F0 calls=64 failures=0
+[info][14:05:04.959][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x000FB550 calls=64 failures=0
+[info][14:05:04.959][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00303530 calls=64 failures=0
+[info][14:05:04.959][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x003C55D0 calls=64 failures=0
+[info][14:05:04.959][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x004259D0 calls=64 failures=0
+[info][14:05:04.960][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x004399E0 calls=64 failures=0
+[info][14:05:04.960][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x004B8740 calls=64 failures=0
+[info][14:05:04.960][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00519B60 calls=64 failures=0
+[info][14:05:04.960][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00548FD0 calls=64 failures=0
+[info][14:05:04.961][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0054EA70 calls=64 failures=0
+[info][14:05:04.961][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x005AE3C0 calls=64 failures=0
+[info][14:05:04.962][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x005AE480 calls=64 failures=0
+[info][14:05:04.962][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x005F0B90 calls=64 failures=0
+[info][14:05:04.963][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0060B900 calls=64 failures=0
+[info][14:05:04.963][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00618BF0 calls=64 failures=0
+[info][14:05:04.963][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00618C00 calls=64 failures=0
+[info][14:05:04.964][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0061B140 calls=64 failures=0
+[info][14:05:04.964][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0061E350 calls=64 failures=0
+[info][14:05:04.965][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0061E860 calls=64 failures=0
+[info][14:05:04.965][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0062BF10 calls=64 failures=0
+[info][14:05:04.966][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x006353F0 calls=64 failures=0
+[info][14:05:04.966][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00647930 calls=64 failures=0
+[info][14:05:04.966][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00647950 calls=64 failures=0
+[info][14:05:04.966][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0066DD60 calls=64 failures=0
+[info][14:05:04.967][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0066DD70 calls=64 failures=0
+[info][14:05:04.967][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0066DD80 calls=64 failures=0
+[info][14:05:04.967][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00675BE0 calls=64 failures=0
+[info][14:05:04.968][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00675DB0 calls=64 failures=0
+[info][14:05:04.968][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00675E50 calls=64 failures=0
+[info][14:05:04.969][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x006760C0 calls=64 failures=0
+[info][14:05:04.969][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00676740 calls=64 failures=0
+[info][14:05:04.969][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x006769F0 calls=64 failures=0
+[info][14:05:04.970][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00676A00 calls=64 failures=0
+[info][14:05:04.970][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00677700 calls=64 failures=0
+[info][14:05:04.970][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x006B9A60 calls=64 failures=0
+[info][14:05:04.970][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0074EA60 calls=64 failures=0
+[info][14:05:04.971][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0074EA80 calls=64 failures=0
+[info][14:05:04.971][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0074EEC0 calls=64 failures=0
+[info][14:05:04.971][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0074EEE0 calls=64 failures=0
+[info][14:05:04.971][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x007781A0 calls=64 failures=0
+[info][14:05:04.971][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00786530 calls=64 failures=0
+[info][14:05:04.972][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x007C64C0 calls=64 failures=0
+[info][14:05:04.972][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x007C97D0 calls=64 failures=0
+[info][14:05:04.973][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x007CC9F0 calls=64 failures=0
+[info][14:05:04.973][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x007E1080 calls=64 failures=0
+[info][14:05:04.973][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00803390 calls=64 failures=0
+[info][14:05:04.974][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x008128B0 calls=64 failures=0
+[info][14:05:04.974][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x008427F0 calls=64 failures=0
+[info][14:05:04.974][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x0084C720 calls=64 failures=0
+[info][14:05:04.974][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00871460 calls=64 failures=0
+[info][14:05:04.974][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x00893E40 calls=64 failures=0
+[info][14:05:04.974][GameComplexScalarProbe.cpp:115]: Game complex scalar RVA 0x008CEB10 calls=64 failures=0
+[info][14:05:04.976][GameComplexProbe.cpp:26]: Game complex RVA 0x000352F0 calls=64 failures=0
+[info][14:05:04.976][GameComplexProbe.cpp:26]: Game complex RVA 0x00035320 calls=64 failures=0
+[info][14:05:04.977][GameComplexProbe.cpp:26]: Game complex RVA 0x00035330 calls=64 failures=0
+[info][14:05:04.977][GameComplexProbe.cpp:26]: Game complex RVA 0x00035370 calls=64 failures=0
+[info][14:05:04.977][GameComplexProbe.cpp:26]: Game complex RVA 0x00035380 calls=64 failures=0
+[info][14:05:04.978][GameComplexProbe.cpp:26]: Game complex RVA 0x00035390 calls=64 failures=0
+[info][14:05:04.978][GameComplexProbe.cpp:26]: Game complex RVA 0x00035610 calls=64 failures=0
+[info][14:05:04.979][GameComplexProbe.cpp:26]: Game complex RVA 0x00035620 calls=64 failures=0
+[info][14:05:04.979][GameComplexProbe.cpp:26]: Game complex RVA 0x00035700 calls=64 failures=0
+[info][14:05:04.979][GameComplexProbe.cpp:26]: Game complex RVA 0x00035730 calls=64 failures=0
+[info][14:05:04.979][GameComplexProbe.cpp:26]: Game complex RVA 0x00035750 calls=64 failures=0
+[info][14:05:04.980][GameComplexProbe.cpp:26]: Game complex RVA 0x00035770 calls=64 failures=0
+[info][14:05:04.980][GameComplexProbe.cpp:26]: Game complex RVA 0x000357C0 calls=64 failures=0
+[info][14:05:04.981][GameComplexProbe.cpp:26]: Game complex RVA 0x0003B870 calls=64 failures=0
+[info][14:05:04.981][GameComplexProbe.cpp:26]: Game complex RVA 0x00047B20 calls=64 failures=0
+[info][14:05:04.981][GameComplexProbe.cpp:26]: Game complex RVA 0x0004CB30 calls=64 failures=0
+[info][14:05:04.982][GameComplexProbe.cpp:26]: Game complex RVA 0x00054340 calls=64 failures=0
+[info][14:05:04.982][GameComplexProbe.cpp:26]: Game complex RVA 0x0008A520 calls=64 failures=0
+[info][14:05:04.982][GameComplexProbe.cpp:26]: Game complex RVA 0x00093F80 calls=64 failures=0
+[info][14:05:04.983][GameComplexProbe.cpp:26]: Game complex RVA 0x000E0B30 calls=64 failures=0
+[info][14:05:04.983][GameComplexProbe.cpp:26]: Game complex RVA 0x000F0140 calls=64 failures=0
+[info][14:05:04.983][GameComplexProbe.cpp:26]: Game complex RVA 0x000F0CF0 calls=64 failures=0
+[info][14:05:04.984][GameComplexProbe.cpp:26]: Game complex RVA 0x005C5360 calls=64 failures=0
+[info][14:05:04.984][GameComplexProbe.cpp:26]: Game complex RVA 0x005C5430 calls=64 failures=0
+[info][14:05:04.984][GameComplexProbe.cpp:26]: Game complex RVA 0x006B9A50 calls=64 failures=0
+[info][14:05:04.984][GameComplexProbe.cpp:26]: Game complex RVA 0x00828260 calls=64 failures=0
+[info][14:05:04.986][GameComplexProbe.cpp:26]: Game complex RVA 0x00828270 calls=64 failures=0
+[info][14:05:04.986][GameComplexProbe.cpp:26]: Game complex RVA 0x00828830 calls=64 failures=0
+[info][14:05:04.987][ARTComplexProbe.cpp:35]: ART complex RVA 0x001E35C0 calls=64 failures=0
+[info][14:05:04.987][ARTComplexProbe.cpp:35]: ART complex RVA 0x001E35F0 calls=64 failures=0
+[info][14:05:04.988][ARTComplexProbe.cpp:35]: ART complex RVA 0x001E3620 calls=64 failures=0
+[info][14:05:04.988][ARTComplexProbe.cpp:35]: ART complex RVA 0x001E3650 calls=64 failures=0
+[info][14:05:04.988][ARTComplexProbe.cpp:35]: ART complex RVA 0x001EE8C0 calls=64 failures=0
+[info][14:05:04.989][ARTComplexProbe.cpp:35]: ART complex RVA 0x001EE8F0 calls=64 failures=0
+[info][14:05:04.989][ARTComplexProbe.cpp:35]: ART complex RVA 0x001EE920 calls=64 failures=0
+[info][14:05:04.989][ARTComplexProbe.cpp:35]: ART complex RVA 0x001EE950 calls=64 failures=0
+[info][14:05:04.990][ARTComplexProbe.cpp:35]: ART complex RVA 0x001E41C0 calls=64 failures=0
+[info][14:05:04.990][ARTComplexProbe.cpp:35]: ART complex RVA 0x001E4460 calls=64 failures=0
+[info][14:05:04.990][ARTComplexProbe.cpp:35]: ART complex RVA 0x001EEE40 calls=64 failures=0
+[info][14:05:04.990][ARTComplexProbe.cpp:35]: ART complex RVA 0x001EF060 calls=64 failures=0
+[info][14:05:04.991][ARTComplexProbe.cpp:35]: ART complex RVA 0x001FDCF0 calls=64 failures=0
+[info][14:05:04.991][ARTComplexProbe.cpp:35]: ART complex RVA 0x001FDD60 calls=64 failures=0
+[info][14:05:04.991][ARTComplexProbe.cpp:35]: ART complex RVA 0x00286CD0 calls=64 failures=0
+[info][14:05:04.992][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00022150 calls=64 failures=0
+[info][14:05:04.993][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0003B880 calls=64 failures=0
+[info][14:05:04.993][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00040600 calls=64 failures=0
+[info][14:05:04.994][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00041E30 calls=64 failures=0
+[info][14:05:04.994][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00043CF0 calls=64 failures=0
+[info][14:05:04.995][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00054710 calls=64 failures=0
+[info][14:05:04.995][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0005DEC0 calls=64 failures=0
+[info][14:05:04.996][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0006D1A0 calls=64 failures=0
+[info][14:05:04.996][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00081200 calls=64 failures=0
+[info][14:05:04.996][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00096800 calls=64 failures=0
+[info][14:05:04.996][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00096840 calls=64 failures=0
+[info][14:05:04.996][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x000A5840 calls=64 failures=0
+[info][14:05:04.997][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x000A5870 calls=64 failures=0
+[info][14:05:04.997][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x000C34A0 calls=64 failures=0
+[info][14:05:04.997][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001050B0 calls=64 failures=0
+[info][14:05:04.998][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0010A6F0 calls=64 failures=0
+[info][14:05:04.998][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00113EB0 calls=64 failures=0
+[info][14:05:04.998][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001155B0 calls=64 failures=0
+[info][14:05:04.998][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00116F20 calls=64 failures=0
+[info][14:05:04.999][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00117080 calls=64 failures=0
+[info][14:05:04.999][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0011F250 calls=64 failures=0
+[info][14:05:04.999][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00120120 calls=64 failures=0
+[info][14:05:04.999][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0012D8E0 calls=64 failures=0
+[info][14:05:05.000][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0012D910 calls=64 failures=0
+[info][14:05:05.000][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0012D970 calls=64 failures=0
+[info][14:05:05.000][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0012D9A0 calls=64 failures=0
+[info][14:05:05.000][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00134B90 calls=64 failures=0
+[info][14:05:05.001][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0013CCE0 calls=64 failures=0
+[info][14:05:05.001][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001538B0 calls=64 failures=0
+[info][14:05:05.001][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00167B30 calls=64 failures=0
+[info][14:05:05.001][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00172CC0 calls=64 failures=0
+[info][14:05:05.001][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00175740 calls=64 failures=0
+[info][14:05:05.002][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0017F820 calls=64 failures=0
+[info][14:05:05.002][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001879E0 calls=64 failures=0
+[info][14:05:05.002][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0018B630 calls=64 failures=0
+[info][14:05:05.002][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0019AE90 calls=64 failures=0
+[info][14:05:05.002][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0019E4D0 calls=64 failures=0
+[info][14:05:05.003][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0019F0C0 calls=64 failures=0
+[info][14:05:05.003][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001AC320 calls=64 failures=0
+[info][14:05:05.003][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001B5630 calls=64 failures=0
+[info][14:05:05.003][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001C13C0 calls=64 failures=0
+[info][14:05:05.004][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001C9990 calls=64 failures=0
+[info][14:05:05.004][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001D4F10 calls=64 failures=0
+[info][14:05:05.004][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001D4F40 calls=64 failures=0
+[info][14:05:05.004][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001D64D0 calls=64 failures=0
+[info][14:05:05.004][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001D6500 calls=64 failures=0
+[info][14:05:05.004][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001D6FC0 calls=64 failures=0
+[info][14:05:05.004][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001D7010 calls=64 failures=0
+[info][14:05:05.006][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001E0A70 calls=64 failures=0
+[info][14:05:05.006][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001E0AA0 calls=64 failures=0
+[info][14:05:05.006][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001E0AD0 calls=64 failures=0
+[info][14:05:05.006][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001E2B20 calls=64 failures=0
+[info][14:05:05.007][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001E3540 calls=64 failures=0
+[info][14:05:05.007][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x001FDCA0 calls=64 failures=0
+[info][14:05:05.007][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0020C220 calls=64 failures=0
+[info][14:05:05.007][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x002AC2E0 calls=64 failures=0
+[info][14:05:05.007][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x002BF150 calls=64 failures=0
+[info][14:05:05.008][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x002F8640 calls=64 failures=0
+[info][14:05:05.008][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0030BAD0 calls=64 failures=0
+[info][14:05:05.008][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0030BB60 calls=64 failures=0
+[info][14:05:05.008][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00328920 calls=64 failures=0
+[info][14:05:05.009][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00332E60 calls=64 failures=0
+[info][14:05:05.009][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00334080 calls=64 failures=0
+[info][14:05:05.009][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x003340B0 calls=64 failures=0
+[info][14:05:05.009][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00339A00 calls=64 failures=0
+[info][14:05:05.009][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0034C2C0 calls=64 failures=0
+[info][14:05:05.010][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x00358890 calls=64 failures=0
+[info][14:05:05.010][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0035D760 calls=64 failures=0
+[info][14:05:05.010][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0036C1F0 calls=64 failures=0
+[info][14:05:05.010][DestructorModeProbe.cpp:28]: Destructor restricted mode RVA0x0036EEC0 calls=64 failures=0
+[info][14:05:05.011][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CA290 calls=64 failures=0
+[info][14:05:05.011][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CA440 calls=64 failures=0
+[info][14:05:05.011][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CA6E0 calls=64 failures=0
+[info][14:05:05.012][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CD2F0 calls=64 failures=0
+[info][14:05:05.012][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CD4B0 calls=64 failures=0
+[info][14:05:05.012][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CD810 calls=64 failures=0
+[info][14:05:05.013][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CD9C0 calls=64 failures=0
+[info][14:05:05.013][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CDBC0 calls=64 failures=0
+[info][14:05:05.013][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CDC20 calls=64 failures=0
+[info][14:05:05.013][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CDDD0 calls=64 failures=0
+[info][14:05:05.014][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CDE30 calls=64 failures=0
+[info][14:05:05.014][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CE620 calls=64 failures=0
+[info][14:05:05.014][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CE890 calls=64 failures=0
+[info][14:05:05.015][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CE900 calls=64 failures=0
+[info][14:05:05.015][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CEAE0 calls=64 failures=0
+[info][14:05:05.015][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CEC30 calls=64 failures=0
+[info][14:05:05.016][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x000CEC90 calls=64 failures=0
+[info][14:05:05.016][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x0013BE10 calls=64 failures=0
+[info][14:05:05.016][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x0017A170 calls=64 failures=0
+[info][14:05:05.016][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x001C9680 calls=64 failures=0
+[info][14:05:05.016][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x001C9700 calls=64 failures=0
+[info][14:05:05.017][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x001C9830 calls=64 failures=0
+[info][14:05:05.017][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x0022C8E0 calls=64 failures=0
+[info][14:05:05.017][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x0025FB10 calls=64 failures=0
+[info][14:05:05.018][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x0030D5F0 calls=64 failures=0
+[info][14:05:05.018][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x0030D620 calls=64 failures=0
+[info][14:05:05.018][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x0030DE40 calls=64 failures=0
+[info][14:05:05.018][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x003756F0 calls=64 failures=0
+[info][14:05:05.018][RageComplexProbe.cpp:662]: Rage complete CFG RVA 0x00375B20 calls=64 failures=0
+[info][14:05:16.398][GetBoneMatrixProbe.cpp:56]: GetBoneMatrix PASSED | calls=64 failures=0 exceptions=0 | entity=0x068B67D0 matrix=0x07ECED90
+[info][14:05:18.488][ReIV.cpp:43]: SDK ingameStartupEvent received
+[info][14:05:18.990][ReIV.cpp:115]: ReIV process detach

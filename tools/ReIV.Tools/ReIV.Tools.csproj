@@ -32,6 +32,8 @@
     <Compile Include="ProgressReport.cs" />
     <Compile Include="ProvenanceReport.cs" />
     <Compile Include="AuditReport.cs" />
+    <Compile Include="SplitHeader.cs" />
+    <Compile Include="StampEvidence.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -46,6 +46,7 @@ namespace ReIV.Tools
                 bool generated = text.Contains("// BEGIN GENERATED PENDING HOOK ADDRESSES");
                 item.Kind = header ? (generated ? "h-rtti" : "h-manual") : "cpp";
                 if (header && !generated) item.InlineBodies = Body.Matches(StripComments(text)).Count;
+                if (header && !generated && item.InlineBodies == 0) item.Kind = "h-data";
                 items.Add(item);
             }
 
@@ -53,6 +54,8 @@ namespace ReIV.Tools
             var cpps = items.Where(i => i.Kind == "cpp").ToList();
             var rtti = headers.Where(i => i.Kind == "h-rtti").ToList();
             var manual = headers.Where(i => i.Kind == "h-manual").ToList();
+            var data = headers.Where(i => i.Kind == "h-data").ToList();
+            var missing = headers.Where(i => i.Kind == "h-manual" && !i.HasPair).ToList();
             var asm = items.Where(i => i.AsmBlocks > 0 || i.NakedFunctions > 0).OrderBy(i => i.Path, StringComparer.Ordinal).ToList();
 
             Csv.Write(Path.Combine(root, "docs", "source_audit.csv"),
@@ -78,10 +81,12 @@ namespace ReIV.Tools
             line("| --- | ---: |");
             line("| Headers | " + headers.Count.ToString("N0") + " |");
             line("| — de tipos RTTI generados (identidad y tabla de direcciones, sin código) | " + rtti.Count.ToString("N0") + " |");
-            line("| — escritos a mano | " + manual.Count.ToString("N0") + " |");
+            line("| — escritos a mano con código | " + manual.Count.ToString("N0") + " |");
+            line("| — de solo datos o declaraciones (sin cuerpos de función) | " + data.Count.ToString("N0") + " |");
             line("| Archivos `.cpp` | " + cpps.Count.ToString("N0") + " |");
             line("| Headers con su `.cpp` | " + headers.Count(h => h.HasPair).ToString("N0") + " |");
             line("| Headers sin `.cpp` | " + headers.Count(h => !h.HasPair).ToString("N0") + " |");
+            line("| — de ellos, con código que debería tener `.cpp` | " + missing.Count.ToString("N0") + " |");
             line("| `.cpp` sin `.h` | " + cpps.Count(c => !c.HasPair).ToString("N0") + " |");
             line("| Archivos con ensamblador (`__asm` o `naked`) | " + asm.Count + " |");
             line("| Bloques `__asm` | " + asm.Sum(a => a.AsmBlocks).ToString("N0") + " |");
@@ -89,21 +94,28 @@ namespace ReIV.Tools
             line("");
             line("## Headers sin `.cpp` por carpeta");
             line("");
-            line("| Carpeta | Headers | De tipos RTTI | A mano | Con `.cpp` | Sin `.cpp` | Con ensamblador |");
+            line("| Carpeta | Headers | De tipos RTTI | A mano o datos | Con `.cpp` | Sin `.cpp` | Con ensamblador |");
             line("| --- | ---: | ---: | ---: | ---: | ---: | ---: |");
             foreach (var g in headers.GroupBy(h => h.Folder).OrderBy(g => g.Key, StringComparer.Ordinal))
-                line("| `" + g.Key + "` | " + g.Count() + " | " + g.Count(h => h.Kind == "h-rtti") + " | " + g.Count(h => h.Kind == "h-manual") + " | " +
+                line("| `" + g.Key + "` | " + g.Count() + " | " + g.Count(h => h.Kind == "h-rtti") + " | " + g.Count(h => h.Kind != "h-rtti") + " | " +
                      g.Count(h => h.HasPair) + " | " + g.Count(h => !h.HasPair) + " | " + g.Count(h => h.AsmBlocks > 0 || h.NakedFunctions > 0) + " |");
             line("");
-            line("## Headers escritos a mano");
+            line("## Headers escritos a mano o de datos");
             line("");
-            line("Los que tienen cuerpos de función dentro del header deberían tener su `.cpp`, como en ReSA. «Cuerpos» es una cuenta aproximada de definiciones con llaves.");
+            line("Los que tienen cuerpos de función dentro del header deben tener su `.cpp`, como en ReSA. «Cuerpos» es una cuenta aproximada de definiciones con llaves; los cuerpos que quedan en un header que sí tiene `.cpp` son plantillas o miembros de clase.");
             line("");
             line("| Header | Líneas | Cuerpos en el header | `.cpp` | Ensamblador |");
             line("| --- | ---: | ---: | :---: | :---: |");
-            foreach (var h in manual.OrderBy(h => h.Path, StringComparer.Ordinal))
+            foreach (var h in manual.Concat(data).OrderBy(h => h.Path, StringComparer.Ordinal))
                 line("| [" + h.Path + "](../" + h.Path + ") | " + h.Lines + " | " + h.InlineBodies + " | " + (h.HasPair ? "sí" : "no") + " | " +
                      (h.AsmBlocks > 0 || h.NakedFunctions > 0 ? "sí" : "no") + " |");
+            line("");
+            line("## Excepciones documentadas");
+            line("");
+            line("- `core/ReIV.cpp` es el punto de entrada del plugin y no tiene header, como `app.cpp` en ReSA.");
+            line("- `hooks/AtStringHashProbe.cpp`, `hooks/GetBoneMatrixProbe.cpp`, `hooks/PlayerPedProbe.cpp` y `hooks/PlayerPedNativeProbe.cpp` dependen del IV-SDK, que solo admite una unidad de compilación (`IVSDK.cpp`): se incluyen dentro de `core/ReIV.cpp` y no figuran por separado en el vcxproj.");
+            line("- Los tipos RTTI generados no tienen código; su `.cpp` se crea cuando la clase se reconstruye.");
+            line("- Los headers de datos (`HooksCatalog.h`, `PendingHook.h`, tablas `*Bindings.h`) solo contienen constantes y declaraciones.");
             line("");
             line("## Ensamblador en línea");
             line("");

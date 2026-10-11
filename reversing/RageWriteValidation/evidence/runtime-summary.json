@@ -1,105 +1,109 @@
 {
-  "passed": true,
-  "date": "2026-10-09T21:24:34.5647507-06:00",
-  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
-  "asi_sha256": "125b2e0e88c3626eb946e33ed67a90ce40be662d3939cbe80cd532a5193d85f1",
-  "implementation_sha256": "fad38b37c97506e7e0a9e7d493520413874f24248e001671b269dd0279c34813",
-  "result": {
-    "phase": "passed",
-    "fixture_only": true,
-    "exceptions": 0,
-    "entries": [
-      {
-        "rva": "0x00154660",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x00154710",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x0015DE60",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x0016A9E0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x0019B9C0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x001AA230",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      },
-      {
-        "rva": "0x002848F0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false
-      }
-    ]
-  },
-  "game_run": {
-    "date": "2026-10-09T21:24:34.5647507-06:00",
-    "passed": true,
-    "forced_stop": false,
-    "exit_code": 0,
-    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
-    "asi_sha256": "125b2e0e88c3626eb946e33ed67a90ce40be662d3939cbe80cd532a5193d85f1",
-    "wrapper_sha256": "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
-    "probe_sha256": "c9eac0fd31fbefba9520983f372ca49332c17935501fbf6dd3f47ce5d69b7970",
-    "result": {
-      "phase": "passed",
-      "rva": "0x005c7710",
-      "bone_index": 0,
-      "calls": 64,
-      "failures": 0,
-      "exceptions": 0,
-      "ticks": 253,
-      "entity": "0x06D0A700",
-      "matrix": "0x08322D10",
-      "position": [
-        -0.000864650123,
-        -0.000946034677,
-        -0.00986245461
-      ],
-      "game_loaded": true,
-      "ingame_started": false
-    },
-    "evidence_directory": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261009-212349",
-    "console": {
-      "console_window": "0x001C1E9C",
-      "visible": true,
-      "writable": true,
-      "always_enabled": true
-    },
-    "atStringHash": {
-      "phase": "process_detach",
-      "rva": "0x1b1c30",
-      "bank_pairs": 8320,
-      "bank_failures": 0,
-      "hooked": true,
-      "hook_calls": 366675,
-      "runtime_pairs": 4096,
-      "runtime_failures": 0,
-      "game_loaded": true,
-      "ingame_started": true,
-      "script_ticks": 254
-    },
-    "atStringHash_passed": true
+    "passed":  true,
+    "date":  "2026-10-11T14:03:54.4017760-06:00",
+    "exe_sha256":  "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "asi_sha256":  "e25d681877752d54cf7dfad4af28dd38daf7c700fae2faf923f32b5603b395d4",
+    "implementation_sha256":  "98cd5a4bbf85cca6b9bb181aeda1168861af32add295263deeec135919c645b7",
+    "result":  {
+                   "phase":  "passed",
+                   "fixture_only":  true,
+                   "exceptions":  0,
+                   "entries":  [
+                                   {
+                                       "rva":  "0x00154660",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x00154710",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x0015DE60",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x0016A9E0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x0019B9C0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x001AA230",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   },
+                                   {
+                                       "rva":  "0x002848F0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false
+                                   }
+                               ]
+               },
+    "game_run":  {
+                     "date":  "2026-10-11T14:03:54.4017760-06:00",
+                     "passed":  true,
+                     "forced_stop":  false,
+                     "exit_code":  0,
+                     "exe_sha256":  "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+                     "asi_sha256":  "e25d681877752d54cf7dfad4af28dd38daf7c700fae2faf923f32b5603b395d4",
+                     "wrapper_sha256":  "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
+                     "probe_sha256":  "9238db9e7b5f42459461158963734d7702510d89f536daee331a00ae04bf6eb5",
+                     "result":  {
+                                    "phase":  "passed",
+                                    "rva":  "0x005c7710",
+                                    "bone_index":  0,
+                                    "calls":  64,
+                                    "failures":  0,
+                                    "exceptions":  0,
+                                    "ticks":  253,
+                                    "entity":  "0x06776700",
+                                    "matrix":  "0x07D8ED10",
+                                    "position":  [
+                                                     -0.000700009579,
+                                                     -0.000993826659,
+                                                     -0.010067299
+                                                 ],
+                                    "game_loaded":  true,
+                                    "ingame_started":  false
+                                },
+                     "evidence_directory":  "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261011-140312",
+                     "console":  {
+                                     "console_window":  "0x00160020",
+                                     "visible":  true,
+                                     "writable":  true,
+                                     "always_enabled":  true
+                                 },
+                     "atStringHash":  {
+                                          "phase":  "process_detach",
+                                          "rva":  "0x1b1c30",
+                                          "bank_pairs":  8320,
+                                          "bank_failures":  0,
+                                          "hooked":  true,
+                                          "hook_calls":  367001,
+                                          "runtime_pairs":  4096,
+                                          "runtime_failures":  0,
+                                          "game_loaded":  true,
+                                          "ingame_started":  true,
+                                          "script_ticks":  254
+                                      },
+                     "atStringHash_passed":  true
+                 },
+  "additional_source_sha256":  {
+    "source/hooks/RageWriteProbe.h":  "98cd5a4bbf85cca6b9bb181aeda1168861af32add295263deeec135919c645b7",
+    "source/hooks/RageWriteProbe.cpp":  "f32c95110655d94fb390b300f589ae9710d8151d2a8af520ced7aa3701070db8"
   }
 }

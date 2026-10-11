@@ -26,6 +26,11 @@
 #include "../hooks/RageComplexProbe.h"
 #include "../hooks/PlayerPedProbe.h"
 #include "../hooks/PlayerPedNativeProbe.h"
+// Fuentes que dependen del IV-SDK: se compilan en esta unidad.
+#include "../hooks/AtStringHashProbe.cpp"
+#include "../hooks/GetBoneMatrixProbe.cpp"
+#include "../hooks/PlayerPedNativeProbe.cpp"
+#include "../hooks/PlayerPedProbe.cpp"
 
 namespace {
 #define Log(message) REIV_INFO("%s", message)

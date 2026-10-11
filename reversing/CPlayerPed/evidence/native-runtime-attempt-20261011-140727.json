@@ -1,0 +1,77 @@
+﻿{
+    "passed":  true,
+    "exe_sha256":  "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "asi_sha256":  "e25d681877752d54cf7dfad4af28dd38daf7c700fae2faf923f32b5603b395d4",
+    "implementation_sha256":  "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+    "additional_source_sha256":  {
+                                     "source/core/ReIV.cpp":  "467089b5fa0651736597e461fbac77daa758cb07996f265122bb01442c1a1ecf",
+                                     "source/hooks/PlayerPedNativeProbe.h":  "0cfc195942f33a41890d890f79495dc0b7ed148767d88982a4198432da789a7d",
+                                     "source/game/Peds/CPlayerPed.h":  "45c299b8ecbf1dafc2c163e0aab4a3a9fa7e5c812e75965825e0582cc779d1c3",
+                                     "reversing/CPlayerPed/CoffClone.h":  "677eb1e06507744df1efea089832e512f3156fa05c97e7ed617ac93d81be5822",
+                                     "reversing/CPlayerPed/NativeObserverBridge.h":  "41703e431fcfb981bb2c959ee4dca9d141873f10131c53d2ad4c6d3c0bdf2048",
+                                     "reversing/CPlayerPed/NativeValidatedResolver.h":  "ed710ac7d1b96fe1c62f04c1e3334fa49fe618047be7468af94feedb0da4d3d9",
+                                     "reversing/CPlayerPed/native-clone/templates.h":  "435226a030fc7a0d59b5d90a35b24e5c0ef7bcd2ead21bbf1ad42da8285599cb",
+                                     "reversing/CPlayerPed/native-clone/native-validation.h":  "5277cbd7bfa825a2e892e6f601a23e66e35f51f1e6e8f9acf771fc24876ab784"
+                                 },
+    "result":  {
+                   "passed":  true,
+                   "phase":  "passed",
+                   "original_calls":  32,
+                   "clone_calls":  64,
+                   "exceptions":  0,
+                   "restored":  true,
+                   "natural_calls_only":  true,
+                   "external_callees":  "original game",
+                   "scope":  "Update slot29 only; no duplicate stateful comparison"
+               },
+    "baseline":  {
+                     "date":  "2026-10-11T14:08:08.1203866-06:00",
+                     "passed":  true,
+                     "forced_stop":  false,
+                     "exit_code":  0,
+                     "exe_sha256":  "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+                     "asi_sha256":  "e25d681877752d54cf7dfad4af28dd38daf7c700fae2faf923f32b5603b395d4",
+                     "wrapper_sha256":  "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
+                     "probe_sha256":  "9238db9e7b5f42459461158963734d7702510d89f536daee331a00ae04bf6eb5",
+                     "result":  {
+                                    "phase":  "passed",
+                                    "rva":  "0x005c7710",
+                                    "bone_index":  0,
+                                    "calls":  64,
+                                    "failures":  0,
+                                    "exceptions":  0,
+                                    "ticks":  252,
+                                    "entity":  "0x069F16D0",
+                                    "matrix":  "0x08009CE0",
+                                    "position":  [
+                                                     -0.000864546804,
+                                                     -0.000946163549,
+                                                     -0.00986283552
+                                                 ],
+                                    "game_loaded":  true,
+                                    "ingame_started":  false
+                                },
+                     "evidence_directory":  "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261011-140727",
+                     "console":  {
+                                     "console_window":  "0x001E0020",
+                                     "visible":  true,
+                                     "writable":  true,
+                                     "always_enabled":  true
+                                 },
+                     "atStringHash":  {
+                                          "phase":  "process_detach",
+                                          "rva":  "0x1b1c30",
+                                          "bank_pairs":  8320,
+                                          "bank_failures":  0,
+                                          "hooked":  true,
+                                          "hook_calls":  366879,
+                                          "runtime_pairs":  4096,
+                                          "runtime_failures":  0,
+                                          "game_loaded":  true,
+                                          "ingame_started":  true,
+                                          "script_ticks":  253
+                                      },
+                     "atStringHash_passed":  true
+                 },
+    "scope":  "Natural Update calls redirected to compiled reconstructed caller with original external callees. No duplicate update comparison or complete class certification."
+}

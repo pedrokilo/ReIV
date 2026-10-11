@@ -2,7 +2,7 @@
 
 [Inicio](../README.md) · [Clases y hooks](MemoryMap/ClassesAndHooks.md) · [Clasificación de funciones](MemoryMap/FunctionClassification.md) · [Procedencia de dependencias](MemoryMap/DependencyProvenance.md) · [Proceso y evidencia](AddressBindingProcess.md)
 
-> **Fuente:** [hooks.csv](hooks.csv) · [Inventario de clases](../source/class-files.csv) · **Generado:** 2026-10-11 19:36 UTC por `tools/ReIV.Tools`
+> **Fuente:** [hooks.csv](hooks.csv) · [Inventario de clases](../source/class-files.csv) · **Generado:** 2026-10-11 20:09 UTC por `tools/ReIV.Tools`
 
 ## Objetivo y dimensiones de progreso
 

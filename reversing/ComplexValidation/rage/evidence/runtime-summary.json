@@ -1,267 +1,271 @@
 {
-  "passed": true,
-  "date": "2026-10-09T22:41:48.8990768-06:00",
-  "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
-  "asi_sha256": "d453bcf94cf56d68e5493fdaf25b16bb0fdce9c14066277470b214198f078d12",
-  "implementation_sha256": "664038a4fe3229933c564266b1b3d55539b5d3bc8676ffffe93038fa97058f8e",
-  "scope_sha256": "2c744cf24fd6baf044c8bdbdedb1c69cab51b953491c74e51211ef1a98fb51d7",
-  "result": {
-    "phase": "passed",
-    "fixture_only": true,
-    "exceptions": 0,
-    "entries": [
-      {
-        "rva": "0x000CA290",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000003FFFF"
-      },
-      {
-        "rva": "0x000CA440",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000003FFFF"
-      },
-      {
-        "rva": "0x000CA6E0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x00000000000000C7"
-      },
-      {
-        "rva": "0x000CD2F0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000003FFFF"
-      },
-      {
-        "rva": "0x000CD4B0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000003FFFF"
-      },
-      {
-        "rva": "0x000CD810",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000003FFFF"
-      },
-      {
-        "rva": "0x000CD9C0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000001FFFF"
-      },
-      {
-        "rva": "0x000CDBC0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000003FFFF"
-      },
-      {
-        "rva": "0x000CDC20",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000003FFFF"
-      },
-      {
-        "rva": "0x000CDDD0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000003FFFF"
-      },
-      {
-        "rva": "0x000CDE30",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000003FFFF"
-      },
-      {
-        "rva": "0x000CE620",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000067FFFF"
-      },
-      {
-        "rva": "0x000CE890",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x0000000000CFFFFF"
-      },
-      {
-        "rva": "0x000CE900",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x0000000000CFFFFF"
-      },
-      {
-        "rva": "0x000CEAE0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x0000000000CFFFFF"
-      },
-      {
-        "rva": "0x000CEC30",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x0000000000CFFFFF"
-      },
-      {
-        "rva": "0x000CEC90",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000067FFFF"
-      },
-      {
-        "rva": "0x0013BE10",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x00000000000001FF"
-      },
-      {
-        "rva": "0x0017A170",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x00000000000003FF"
-      },
-      {
-        "rva": "0x001C9680",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x00000000000003FF"
-      },
-      {
-        "rva": "0x001C9700",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x00000000000003FF"
-      },
-      {
-        "rva": "0x001C9830",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x0000000000000FFF"
-      },
-      {
-        "rva": "0x0022C8E0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000000001F"
-      },
-      {
-        "rva": "0x0025FB10",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x00000000000000FF"
-      },
-      {
-        "rva": "0x0030D5F0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x0000000000000FFF"
-      },
-      {
-        "rva": "0x0030D620",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x0000000000000FFF"
-      },
-      {
-        "rva": "0x0030DE40",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x000000000000001F"
-      },
-      {
-        "rva": "0x003756F0",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x00000000000003FF"
-      },
-      {
-        "rva": "0x00375B20",
-        "calls": 64,
-        "failures": 0,
-        "disabled": false,
-        "expected_nodes_mask": "0x00000000000003FF"
-      }
-    ]
-  },
-  "game_run": {
-    "date": "2026-10-09T22:41:48.8990768-06:00",
-    "passed": true,
-    "forced_stop": false,
-    "exit_code": 0,
-    "exe_sha256": "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
-    "asi_sha256": "d453bcf94cf56d68e5493fdaf25b16bb0fdce9c14066277470b214198f078d12",
-    "wrapper_sha256": "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
-    "probe_sha256": "c9eac0fd31fbefba9520983f372ca49332c17935501fbf6dd3f47ce5d69b7970",
-    "result": {
-      "phase": "passed",
-      "rva": "0x005c7710",
-      "bone_index": 0,
-      "calls": 64,
-      "failures": 0,
-      "exceptions": 0,
-      "ticks": 253,
-      "entity": "0x07398710",
-      "matrix": "0x089B0C70",
-      "position": [
-        -0.000783575291,
-        -0.000992114423,
-        -0.0100214565
-      ],
-      "game_loaded": true,
-      "ingame_started": false
-    },
-    "evidence_directory": "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261009-224102",
-    "console": {
-      "console_window": "0x007D138A",
-      "visible": true,
-      "writable": true,
-      "always_enabled": true
-    },
-    "atStringHash": {
-      "phase": "process_detach",
-      "rva": "0x1b1c30",
-      "bank_pairs": 8320,
-      "bank_failures": 0,
-      "hooked": true,
-      "hook_calls": 366695,
-      "runtime_pairs": 4096,
-      "runtime_failures": 0,
-      "game_loaded": true,
-      "ingame_started": true,
-      "script_ticks": 254
-    },
-    "atStringHash_passed": true
+    "passed":  true,
+    "date":  "2026-10-11T14:05:19.1753617-06:00",
+    "exe_sha256":  "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+    "asi_sha256":  "e25d681877752d54cf7dfad4af28dd38daf7c700fae2faf923f32b5603b395d4",
+    "implementation_sha256":  "747e12ff7a62ba71abb8c84a8333feeb0779c55c1850e2e727a691d608c26fc8",
+    "scope_sha256":  "2c744cf24fd6baf044c8bdbdedb1c69cab51b953491c74e51211ef1a98fb51d7",
+    "result":  {
+                   "phase":  "passed",
+                   "fixture_only":  true,
+                   "exceptions":  0,
+                   "entries":  [
+                                   {
+                                       "rva":  "0x000CA290",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000003FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CA440",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000003FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CA6E0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x00000000000000C7"
+                                   },
+                                   {
+                                       "rva":  "0x000CD2F0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000003FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CD4B0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000003FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CD810",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000003FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CD9C0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000001FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CDBC0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000003FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CDC20",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000003FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CDDD0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000003FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CDE30",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000003FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CE620",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000067FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CE890",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x0000000000CFFFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CE900",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x0000000000CFFFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CEAE0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x0000000000CFFFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CEC30",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x0000000000CFFFFF"
+                                   },
+                                   {
+                                       "rva":  "0x000CEC90",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000067FFFF"
+                                   },
+                                   {
+                                       "rva":  "0x0013BE10",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x00000000000001FF"
+                                   },
+                                   {
+                                       "rva":  "0x0017A170",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x00000000000003FF"
+                                   },
+                                   {
+                                       "rva":  "0x001C9680",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x00000000000003FF"
+                                   },
+                                   {
+                                       "rva":  "0x001C9700",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x00000000000003FF"
+                                   },
+                                   {
+                                       "rva":  "0x001C9830",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x0000000000000FFF"
+                                   },
+                                   {
+                                       "rva":  "0x0022C8E0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000000001F"
+                                   },
+                                   {
+                                       "rva":  "0x0025FB10",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x00000000000000FF"
+                                   },
+                                   {
+                                       "rva":  "0x0030D5F0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x0000000000000FFF"
+                                   },
+                                   {
+                                       "rva":  "0x0030D620",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x0000000000000FFF"
+                                   },
+                                   {
+                                       "rva":  "0x0030DE40",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x000000000000001F"
+                                   },
+                                   {
+                                       "rva":  "0x003756F0",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x00000000000003FF"
+                                   },
+                                   {
+                                       "rva":  "0x00375B20",
+                                       "calls":  64,
+                                       "failures":  0,
+                                       "disabled":  false,
+                                       "expected_nodes_mask":  "0x00000000000003FF"
+                                   }
+                               ]
+               },
+    "game_run":  {
+                     "date":  "2026-10-11T14:05:19.1753617-06:00",
+                     "passed":  true,
+                     "forced_stop":  false,
+                     "exit_code":  0,
+                     "exe_sha256":  "ab21c0d90d2ca1c697785aca9dcf44635e1f8d48aa0df1d737e9190bddf0cb4c",
+                     "asi_sha256":  "e25d681877752d54cf7dfad4af28dd38daf7c700fae2faf923f32b5603b395d4",
+                     "wrapper_sha256":  "d5f5d7e70167c725060ac1cbeb24416d991c1c374e2d3387fb280ae1da0e2ad3",
+                     "probe_sha256":  "9238db9e7b5f42459461158963734d7702510d89f536daee331a00ae04bf6eb5",
+                     "result":  {
+                                    "phase":  "passed",
+                                    "rva":  "0x005c7710",
+                                    "bone_index":  0,
+                                    "calls":  64,
+                                    "failures":  0,
+                                    "exceptions":  0,
+                                    "ticks":  253,
+                                    "entity":  "0x068B67D0",
+                                    "matrix":  "0x07ECED90",
+                                    "position":  [
+                                                     -0.000859060441,
+                                                     -0.000953011797,
+                                                     -0.00988306571
+                                                 ],
+                                    "game_loaded":  true,
+                                    "ingame_started":  false
+                                },
+                     "evidence_directory":  "D:\\GTA IV\\ReIV\\reversing\\artifacts\\GetBoneMatrix-20261011-140437",
+                     "console":  {
+                                     "console_window":  "0x00180020",
+                                     "visible":  true,
+                                     "writable":  true,
+                                     "always_enabled":  true
+                                 },
+                     "atStringHash":  {
+                                          "phase":  "process_detach",
+                                          "rva":  "0x1b1c30",
+                                          "bank_pairs":  8320,
+                                          "bank_failures":  0,
+                                          "hooked":  true,
+                                          "hook_calls":  367571,
+                                          "runtime_pairs":  4096,
+                                          "runtime_failures":  0,
+                                          "game_loaded":  true,
+                                          "ingame_started":  true,
+                                          "script_ticks":  254
+                                      },
+                     "atStringHash_passed":  true
+                 },
+  "additional_source_sha256":  {
+    "source/hooks/RageComplexProbe.h":  "747e12ff7a62ba71abb8c84a8333feeb0779c55c1850e2e727a691d608c26fc8",
+    "source/hooks/RageComplexProbe.cpp":  "af6c4fb67c67f5d20a8ec3842091f0e2eabfedeb9bcc2b3a2b4e278f474f95c1"
   }
 }
