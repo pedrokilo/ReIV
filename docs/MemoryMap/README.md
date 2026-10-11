@@ -97,6 +97,8 @@ plugin_IV e IV-SDK.Net aportan nombres por dirección con el mismo criterio: `co
 | [sdk_addresses.csv](sdk_addresses.csv) | Direcciones del SDK, archivo y línea de origen |
 | [plugin_iv_patterns.csv](plugin_iv_patterns.csv) | Patrones `gpattern` de plugin_IV resueltos en el EXE, con número de coincidencias ([resumen](PluginIvPatterns.md)) |
 | [sdknet_addresses.csv](sdknet_addresses.csv) | Offsets nombrados de IV-SDK.Net para 1.0.7.0 (`1070.ini`) resueltos en el EXE |
+| [FunctionClassification.md](FunctionClassification.md) | Clasificación de funciones binarias por procedencia y estado de reversión ([CSV](function_classification.csv), `tools/ReIV.Tools`) |
+| [DependencyProvenance.md](DependencyProvenance.md) | Procedencia de las dependencias externas de los cuerpos de CPlayerPed ([CSV](dependency_provenance.csv)) |
 | [SdkCrossReference.md](SdkCrossReference.md) | Cruce de offsets de campos entre IV-SDK, plugin_IV e IV-SDK.Net y el layout observado de CPlayerPed || [historical_references.csv](historical_references.csv) | Direcciones del documento, línea, contexto y versión cuando aparece en esa misma línea |
 | [sections.json](sections.json) | Rangos y permisos de las secciones del PE |
 | [summary.json](summary.json) | Recuentos y hash del binario |

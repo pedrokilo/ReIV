@@ -1,0 +1,155 @@
+va,rva,kind,section,provenance,basis,status,owners,reference_names,uses,modules
+0x00401950,0x00001950,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,5,Update
+0x004255a0,0x000255a0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,InputSelection
+0x00426780,0x00026780,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,21,InputSelection
+0x00426910,0x00026910,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,4,Counter;InputSelection
+0x004269b0,0x000269b0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x004389d0,0x000389d0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,9,Update;ValueAdjustment
+0x00439cb0,0x00039cb0,funcion,.text,GTA IV (juego),solo nombre de referencia (SDK),Sin revertir,,IV-SDK.Net:CPool::New;IV-SDK:CPool::New,1,Control
+0x00441f20,0x00041f20,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ActionSelection
+0x004475f0,0x000475f0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Destruction
+0x00448300,0x00048300,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Destruction
+0x00448330,0x00048330,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Counter
+0x00462f90,0x00062f90,funcion,.text,GTA IV (juego),solo nombre de referencia (SDK),Sin revertir,,IV-SDK.Net:CNetwork::IsNetworkGameRunning;IV-SDK:CNetwork::IsNetworkGameRunning,9,ActionRange;ActionRequest;ActionSelection;InputSelection;Update;ValueAdjustment
+0x0049f330,0x0009f330,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Control
+0x004f4d20,0x000f4d20,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Control
+0x005b1c10,0x001b1c10,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Destruction
+0x00785eb0,0x00385eb0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,InputSelection
+0x007c3900,0x003c3900,funcion,.text,GTA IV (juego),solo nombre de referencia (SDK),Sin revertir,,IV-SDK.Net:CPad::GetPad;IV-SDK:CPad::GetPad,1,Nonvirtual
+0x00817f20,0x00417f20,funcion,.text,GTA IV (juego),solo nombre de referencia (SDK),Sin revertir,,IV-SDK.Net:CPlayerInfo::GetPlayerInfo;IV-SDK:CPlayerInfo::GetPlayerInfo,1,Construction
+0x008631e0,0x004631e0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Destruction
+0x008793f0,0x004793f0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ModelReset
+0x0088f5d0,0x0048f5d0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x0089c8b0,0x0049c8b0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ModelReset
+0x0089dfb0,0x0049dfb0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ReceiverHelpers
+0x0089e300,0x0049e300,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,3,InputSelection
+0x0089ea80,0x0049ea80,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x008a07e0,0x004a07e0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ModelReset
+0x008a3390,0x004a3390,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ReceiverHelpers
+0x008a3990,0x004a3990,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Sin revertir,CPed,,1,Counter
+0x008a70c0,0x004a70c0,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Sin revertir,CPed,plugin_IV:CPed::SetDuck,1,ModelReset
+0x008a92c0,0x004a92c0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ModelReset
+0x008aadc0,0x004aadc0,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Sin revertir,CPed,,3,Update
+0x008ac1e0,0x004ac1e0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Destruction
+0x008ac500,0x004ac500,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Sin revertir,CPed,,1,Control
+0x008ae670,0x004ae670,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x008db2b0,0x004db2b0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Control
+0x008dd270,0x004dd270,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Destruction
+0x008dd530,0x004dd530,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Control
+0x008dd8b0,0x004dd8b0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Destruction
+0x008ff470,0x004ff470,funcion,.text,GTA IV (juego),solo nombre de referencia (SDK),Sin revertir,,IV-SDK.Net:CGarages::CameraShouldBeOutside;IV-SDK:CGarages::CameraShouldBeOutside,2,InputSelection
+0x0091a050,0x0051a050,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x0091a0a0,0x0051a0a0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x00920cd0,0x00520cd0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Destruction
+0x00921320,0x00521320,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ReceiverHelpers
+0x00921e00,0x00521e00,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ReceiverHelpers
+0x00922020,0x00522020,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ReceiverHelpers
+0x00922850,0x00522850,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x00924e80,0x00524e80,funcion,.text,GTA IV (juego),solo nombre de referencia (SDK),Sin revertir,,IV-SDK.Net:CWeaponInfo::GetWeaponInfo;IV-SDK:CWeaponInfo::GetWeaponInfo;plugin_IV:CWeaponInfo::GetWeaponInfo,8,ActionRange;ActionRequest;InputSelection;ReceiverHelpers;Update
+0x009252d0,0x005252d0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,InputSelection
+0x0092f4d0,0x0052f4d0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Destruction
+0x00962b20,0x00562b20,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,3,StateHelpers;ValueAdjustment
+0x00976e90,0x00576e90,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x0097d7c0,0x0057d7c0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x00987730,0x00587730,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,5,InputSelection;Update
+0x0099c5e0,0x0059c5e0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,InputSelection
+0x009a9cf0,0x005a9cf0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,8,ActionRequest;InputSelection;Update
+0x009a9ef0,0x005a9ef0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,3,ActionRange;ActionRequest;Nonvirtual
+0x009aa330,0x005aa330,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,InputSelection
+0x009ac110,0x005ac110,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,InputSelection
+0x009adb90,0x005adb90,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,InputSelection
+0x009b3b00,0x005b3b00,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,InputSelection
+0x009be4a0,0x005be4a0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,InputSelection
+0x009be5d0,0x005be5d0,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Completamente revertidas,CPed;CPlayerPed,IV-SDK.Net:CPed::GetPadFromPlayer;IV-SDK:CPed::GetPadFromPlayer,5,Counter;InputSelection;Update
+0x009be7d0,0x005be7d0,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Completamente revertidas,CPed;CPlayerPed,IV-SDK.Net:CPed::ProcessWeaponSwitch;IV-SDK:CPed::ProcessWeaponSwitch,2,Update
+0x009bee44,0x005bee44,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,6,InputSelection
+0x009bee54,0x005bee54,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,6,InputSelection
+0x009bee70,0x005bee70,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Completamente revertidas,CPlayerPed,,2,Update
+0x009beed0,0x005beed0,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Completamente revertidas,CPlayerPed,,2,Update
+0x009bf0d0,0x005bf0d0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ModelReset
+0x009bf360,0x005bf360,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ActionSelection
+0x009bf390,0x005bf390,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ActionSelection
+0x009bf420,0x005bf420,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ActionSelection
+0x009bf660,0x005bf660,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Completamente revertidas,CPlayerPed,,1,Control
+0x009bfd80,0x005bfd80,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Completamente revertidas,CPlayerPed,,2,Update
+0x009c03e0,0x005c03e0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ActionSelection
+0x009c0660,0x005c0660,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ActionSelection
+0x009c07a0,0x005c07a0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ActionSelection
+0x009c0a70,0x005c0a70,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Destruction
+0x009c1300,0x005c1300,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,3,ActionRange;ActionRequest;ActionSelection
+0x009c2720,0x005c2720,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,Counter
+0x009c5d60,0x005c5d60,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Sin revertir,CVehicle,IV-SDK.Net:CVehicle::IsDriver;IV-SDK:CVehicle::IsDriver,2,InputSelection
+0x009e6580,0x005e6580,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ReferenceClear
+0x009e6630,0x005e6630,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x009e9090,0x005e9090,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ActionSelection
+0x009e9340,0x005e9340,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ActionSelection
+0x00aa80d0,0x006a80d0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x00aa83f0,0x006a83f0,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x00ab3b60,0x006b3b60,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x00afe160,0x006fe160,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,2,Update
+0x00afea00,0x006fea00,funcion,.text,GTA IV (juego),"RTTI/vtable, referencia o catalogo con propietario",Sin revertir,CCamScriptInstruction,plugin_IV:CCamScriptInstruction::SetInstruction,2,Update
+0x00c28820,0x00828820,funcion,.text,Compartida entre varios origenes,"RTTI/vtable, referencia o catalogo con propietario",Sin revertir,CAddModelInfoReferenceDC;CAddTxdReferenceDC;CAlterWantedLevelEvent;CAnimatedBuilding;CAutomobile;CBike;(+170),,2,ActionRange;ActionSelection
+0x00d0c8e4,0x0090c8e4,funcion,.text,Sin procedencia identificada,ninguna,Desconocido,,,1,ActionSelection
+0x00d50398,0x00950398,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,3,ActionSelection;Update
+0x00d582a0,0x009582a0,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x00d5a154,0x0095a154,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,2,ValueAdjustment
+0x00d796e4,0x009796e4,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x00d81944,0x00981944,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x00d81958,0x00981958,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,3,ActionSelection;Update
+0x00d819b4,0x009819b4,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,3,ValueAdjustment
+0x00d819b8,0x009819b8,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x00d8f340,0x0098f340,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x00dc9290,0x009c9290,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,4,ActionSelection;Update
+0x00dcb2a8,0x009cb2a8,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00dcb2ac,0x009cb2ac,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,4,Update
+0x00dce03c,0x009ce03c,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00dcea38,0x009cea38,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,2,ValueAdjustment
+0x00decd60,0x009ecd60,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,3,ActionSelection;ValueAdjustment
+0x00e3447c,0x00a3447c,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x00ebded4,0x00abded4,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x00ebdee4,0x00abdee4,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00ebe128,0x00abe128,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00ebe294,0x00abe294,dato,.rdata,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00f0e4a0,0x00b0e4a0,dato,.data,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x00f21a70,0x00b21a70,dato,.data,Dato con nombre de referencia,nombre de referencia (SDK),n/a,,IV-SDK.Net:CCamera::g_pFinalCam;IV-SDK:CCamera::g_pFinalCam,2,Update
+0x00f2f067,0x00b2f067,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,Counter
+0x00f2f869,0x00b2f869,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00f2f86a,0x00b2f86a,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00f317a8,0x00b317a8,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00f317ac,0x00b317ac,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00f317b0,0x00b317b0,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00f317b4,0x00b317b4,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x00f317b8,0x00b317b8,dato,.data,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x00fc7eff,0x00bc7eff,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionRange
+0x010c7a08,0x00cc7a08,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionRange
+0x010d0170,0x00cd0170,dato,.data,Dato con nombre de referencia,nombre de referencia (SDK),n/a,,IV-SDK.Net:CGarages::bCamShouldBeOutside;IV-SDK.Net:CReplay::Mode;IV-SDK:CGarages::bCamShouldBeOutside;IV-SDK:CReplay::Mode,2,Update
+0x010e1984,0x00ce1984,dato,.data,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x010f8044,0x00cf8044,dato,.data,Dato con nombre de referencia,nombre de referencia (SDK),n/a,,IV-SDK.Net:CGame::m_nCurrentEpisode;IV-SDK:CGame::m_nCurrentEpisode,4,ActionRange;ActionRequest;InputSelection
+0x011dc4c0,0x00ddc4c0,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x011dc4c4,0x00ddc4c4,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x011dc4c8,0x00ddc4c8,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x011dc4e0,0x00ddc4e0,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x011dc4e4,0x00ddc4e4,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x011dc4e8,0x00ddc4e8,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x011dde74,0x00ddde74,dato,.data,Dato con nombre de referencia,nombre de referencia (SDK),n/a,,IV-SDK.Net:CTimer::m_snTimeInMilliseconds;IV-SDK:CTimer::m_snTimeInMilliseconds,10,Update
+0x011dde7c,0x00ddde7c,dato,.data,Dato con nombre de referencia,nombre de referencia (SDK),n/a,,IV-SDK.Net:CTimer::ms_fTimeStep;IV-SDK:CTimer::ms_fTimeStep,8,Update;ValueAdjustment
+0x011ddf38,0x00dddf38,dato,.data,Dato con nombre de referencia,nombre de referencia (SDK),n/a,,IV-SDK.Net:CTimer::m_FrameCounter;IV-SDK:CTimer::m_FrameCounter,4,InputSelection;Update
+0x01548f88,0x01148f88,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,Destruction
+0x015f73b0,0x011f73b0,dato,.data,Dato con nombre de referencia,nombre de referencia (SDK),n/a,,IV-SDK.Net:CModelInfo::ms_modelInfoPtrs;IV-SDK:CModelInfo::address_line_174;plugin_IV:CModelInfo::ms_modelInfoPtrs,1,Control
+0x01618020,0x01218020,dato,.data,Dato con nombre de referencia,nombre de referencia (SDK),n/a,,IV-SDK.Net:CPools::ms_pCameraPool;IV-SDK:CPools::ms_pCameraPool,2,Update
+0x016180e8,0x012180e8,dato,.data,Dato global sin nombre,ninguna,n/a,,,6,Update
+0x016180ec,0x012180ec,dato,.data,Dato global sin nombre,ninguna,n/a,,,6,Update
+0x016180f0,0x012180f0,dato,.data,Dato global sin nombre,ninguna,n/a,,,4,Update
+0x016180f4,0x012180f4,dato,.data,Dato global sin nombre,ninguna,n/a,,,3,Update
+0x016180f8,0x012180f8,dato,.data,Dato global sin nombre,ninguna,n/a,,,3,Update
+0x01618101,0x01218101,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x01618104,0x01218104,dato,.data,Dato global sin nombre,ninguna,n/a,,,2,ValueAdjustment
+0x01618106,0x01218106,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x0161810c,0x0121810c,dato,.data,Dato global sin nombre,ninguna,n/a,,,4,Update
+0x01618110,0x01218110,dato,.data,Dato global sin nombre,ninguna,n/a,,,3,Update
+0x01662170,0x01262170,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,Nonvirtual
+0x0168f910,0x0128f910,dato,.data,Dato global sin nombre,ninguna,n/a,,,3,Update
+0x017237b0,0x013237b0,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,ActionSelection
+0x01724286,0x01324286,dato,.data,Dato global sin nombre,ninguna,n/a,,,2,Update
+0x018a82ac,0x014a82ac,dato,.data,Dato con nombre de referencia,nombre de referencia (SDK),n/a,,IV-SDK.Net:CPools::ms_pPedPool;IV-SDK:CPools::ms_pPedPool,1,Destruction
+0x018a839c,0x014a839c,dato,.data,Dato global sin nombre,ninguna,n/a,,,1,Control
