@@ -17,5 +17,6 @@ bin\tools\ReIV.Tools.exe progress
 | --- | --- |
 | `provenance` | [FunctionClassification.md](../docs/MemoryMap/FunctionClassification.md) y `function_classification.csv`: **clasificación de funciones binarias** (*Binary Function Classification*) de cada entrada de código del EXE por procedencia y estado de reversión. [DependencyProvenance.md](../docs/MemoryMap/DependencyProvenance.md) y `dependency_provenance.csv`: **análisis de procedencia de dependencias** (*Dependency Provenance Analysis*) de los cuerpos de CPlayerPed. |
 | `progress` | [ReversedClasses.md](../docs/ReversedClasses.md), con la estructura de ReSA y este orden: completamente revertidas, parcialmente revertidas, sin revertir, desconocido. |
+| `audit` | [SourceAudit.md](../docs/SourceAudit.md) y `source_audit.csv`: audita `source/` — pares `.h`/`.cpp` por carpeta (como en ReSA) y uso de ensamblador en línea. |
 
 Ejecutar siempre después de `python reversing/HookRegistry/generate.py`, que produce `docs/hooks.csv`. Una clase solo cuenta como completamente revertida si figura en `reversing/HookRegistry/exhaustive-classes.txt` (inventario exhaustivo acreditado) y todo lo conocido está reconstruido.
